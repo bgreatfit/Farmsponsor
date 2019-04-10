@@ -1,0 +1,40 @@
+.page-footer{
+    background-color: $color-grey-dark-3;
+    padding: 10rem 0;
+    font-size: 1.4rem;
+    .footer__logo-box{
+        text-align: center;
+        margin-bottom: 5rem;
+        .logo{
+            width: 25rem;
+            height: auto;
+        }
+    }
+    .footer__navigation {
+        text-align: center;
+    }
+
+    .footer__list{
+        list-style: none;
+    }
+    .footer__item{
+      display: inline-block;          
+    }
+    .footer__link:link,
+    .footer__link:visited{
+        text-decoration: none;
+        color: $color-white;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+    .footer__link:hover{
+        color:$color-grey-dark;
+    }
+    .footer__text-box {
+        padding: 0 2rem;
+        .footer__copyright{
+            color: $color-grey-dark;
+
+        }
+    }
+}

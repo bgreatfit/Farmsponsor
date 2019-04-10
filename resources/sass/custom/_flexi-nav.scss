@@ -1,0 +1,293 @@
+/* NAVIGATION */
+.flexi-nav{
+    display: inline-block;
+    .nav {
+        flex: 1 1;
+        background-color: dodgerblue;
+        min-width: 10rem;
+        min-height: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    .logo,
+    .avatar,
+    &__container {
+        width: 100%;
+    }
+    .logo__picture{
+        width: 100%;
+        height: auto;
+    }
+
+        /* NAVIGATION HAMBURGER MENU STYLING */
+    .nav__toggle{
+        display: none;
+    }
+    .nav__menu {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        border-radius: .5rem;
+        background-color: green;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 0;
+        display: none;
+
+        &--icon {
+            margin-top: 48%;
+            position: relative;
+            transition: all .3s;
+        }
+
+        &--icon,
+        &--icon::before,
+        &--icon::after {
+            display: inline-block;
+            width: 2.5rem;
+            height: 3px;
+            background-color:black;
+        }
+        &--icon::before,
+        &--icon::after {
+            content: "";
+            position: absolute;
+        }
+        &--icon::before{
+            top: -8px;
+            left: 0;
+        }
+        &--icon::after {
+            top: 8px;
+            left: 0;
+        }
+        .nav__menu:hover .nav__menu--icon::before {
+            top: -1rem;
+        }
+    
+        .nav__menu:hover .nav__menu--icon::after {
+            top: 1rem;
+        }
+    }
+        /* END OF NAV HAMBURGER  */
+
+    // .menu__screen {
+    //     visibility: hidden;
+    //     height: 0;
+    //     opacity: 0;
+    //     transition: all .3s;
+    // }
+
+    /* HAMBURGER TOGGLE FUNCTIONALITY */
+    .nav__toggle:checked ~ .nav__container > li.nav__item {
+        height: auto;
+        display: initial;
+    }
+    /* END OF HAMBURGER FUNCTIONALITY */
+    .nav__container {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+    .nav__item{ 
+        margin-left: 2rem;
+
+        .nav__link:link,
+        .nav__link:visited {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            padding: 1.4rem 1rem;
+        }
+
+        .nav__link {    
+            &--icon {margin-right: 1rem;}
+        }
+
+        &:not(:last-child) {margin-bottom: 1rem;}
+    }
+   }
+  }
+}
+
+
+/* MEDIA QUERIES */
+/* LARGE/DESKTOP SCREENS */
+@media screen and (min-width:969px) {
+  .flexi-nav {
+    .avatar {
+        margin-top: 1rem;
+        border: 2px solid black;
+
+        .profile__picture {
+            width: 8rem;
+            height: auto;
+            margin-left: 3rem;
+        }
+        .profile__text {
+            margin: .2rem 0 0 5rem;
+            color: #fff;
+        }
+    }
+   }
+}
+/* MEDIUM SCREENS */
+@media screen and (max-width: 968px) {
+    .flexi-dashboard__pageWrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexi-nav {
+      .nav{
+        flex-direction: row;
+        flex: 0;
+
+        .logo,
+        .avatar,
+        .nav__container {width: auto;}
+
+        .avatar {
+            order:2;
+            margin-left: auto;
+            margin-right: 1rem;
+
+            .profile:link,
+            .profile:visited {
+                text-decoration: none;
+                color: #fff;
+            }
+            .profile {
+                &__picture {
+                    width: 4rem;
+                    height: auto;
+                    }
+                &__text {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__container {
+            flex-direction: row;
+            justify-content: space-around;
+            order: 3;
+            width: 100%;
+            margin-bottom: 0;
+            border-top: 1px solid aliceblue;
+
+            li.nav__item:not(:last-child){ 
+                margin-bottom: 0;
+            }
+
+        }
+      }
+    }   
+}
+/* SMALL SCREENS */
+@media screen and  (max-width: 660px) {
+    html{font-size: 55%;}
+
+    /* NAVIGATION AREA */
+    .flexi-nav {
+      .nav{
+        .avatar {
+            display: inline-block;
+    
+            .profile__picture{
+                width: 3rem;
+                height: auto;
+                margin-left: .5rem;
+            }
+        }
+
+        &__toggle:checked ~ &__container {
+            display: flex;
+            z-index: 100;
+            height: 24.6rem;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &__menu {
+            order: 3;
+            position: relative;
+            width: 4rem;
+            height: 4rem;
+            border-radius: .5rem;
+            background-color: green;
+            text-align: center;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: 1rem;
+            display: inline-block;
+            z-index: 100;
+        }
+
+        &__container {
+            flex-direction: column;
+            background-color: orange;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .3s;
+
+            .nav__item{
+                height: 0;
+                display: none;
+            }
+        }
+      }
+    }
+}
+/* EXTRA SMALL SCREENS */
+@media screen and  (min-width: 390px) and (max-width:480px) {
+   .flexi-nav {
+      .logo__picture {
+        width: 86%;
+        height: auto;
+      }
+    }
+}
+@media screen and  (min-width: 335px) and (max-width:389px) {
+   .flexi-nav{
+      .logo {
+        width: 100%;
+          
+        .logo__picture {
+            width: 26rem;
+            height: auto;
+            margin-left: .5rem;
+        }
+        
+       }
+      .avatar {
+        order: 3;
+        margin-left: auto;
+        margin-right: 1rem;
+       }
+      .nav__menu {
+            order: 2;
+            margin-left: 1rem;
+       }
+    }
+}
+@media screen and (max-width:335px) {
+  .flexi-nav{
+    .logo {
+        width: 100%;
+        .logo__picture {
+            width: 86%;
+            height: auto;
+        }
+    }
+
+    .avatar {
+        margin-left: auto;
+    }
+    .nav__menu {
+        order: 1;
+        margin-left: .6rem;
+    }
+   }
+}

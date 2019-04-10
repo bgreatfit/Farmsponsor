@@ -1,0 +1,30 @@
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Mukta, cursive;
+    font-size: 1.6rem;
+    color: $color-black;
+    // padding: 0 10rem;
+
+}
+
+.heading__secondary{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.heading__tertiary{
+    font-weight: 600;
+    font-size: 1.65rem;
+}
