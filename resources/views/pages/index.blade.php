@@ -155,7 +155,7 @@
                   <i class="fas fa-user-tie sponsors"></i>
               </div>
               <div class="row justify-content-center">
-                  <span class="sponsor stat-update__figure">NUMBER</span>
+                  <span class="sponsor stat-update__figure"></span>
               </div>
               <div class="row justify-content-center">
                   <span class="stat-update__figure--label">Sponsors</span>
@@ -168,7 +168,7 @@
                   <i class="fas fa-user-circle cycles"></i>
               </div>
               <div class="row justify-content-center">
-                  <span class="cycle stat-update__figure">NUMBER</span>
+                  <span class="cycle stat-update__figure"></span>
               </div>
               <div class="row justify-content-center">
                 <span class="stat-update__figure--label">cycles</span>

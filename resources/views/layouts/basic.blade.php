@@ -23,20 +23,64 @@
     <body>
         @include('includes.navi')
 
-
         @yield('content')
 
         @include('includes.footer')
 
-
+            {{-- J QUERY --}}
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
                 integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
                 crossorigin="anonymous"> 
         </script>
-
+            {{-- POPPER. JS --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
                 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
                 crossorigin="anonymous">
         </script>
+            {{-- BOOTSTRAP --}}
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous">
+        </script>
+            <!-- NUMBER COUNT UP JQUERY -->
+        <script src="{{asset('js/jquery.easy_number_animate.min.js')}}"></script>
+
+        <script>
+            $('.sponsor').easy_number_animate({
+            start_value: 0,
+            end_value: 1000,
+            duration: 2000,
+            delimiter: ','
+              });
+          
+            $('.cycle').easy_number_animate({
+            start_value: 0,
+            end_value: 18,
+            duration: 2000,
+            delimiter: ','
+              });
+          
+              $('.farms').easy_number_animate({
+            start_value: 0,
+            end_value: 50,
+            duration: 2000,
+            delimiter: ','
+              });
+          
+              $('.farmers').easy_number_animate({
+            start_value: 0,
+            end_value: 300,
+            duration: 2000,
+            delimiter: ','
+              });
+          
+              $('.reviews').easy_number_animate({
+            start_value: 0,
+            end_value: 100,
+            duration: 2000,
+            delimiter: ','
+              });
+        </script>
+          
     </body>
 </html>
