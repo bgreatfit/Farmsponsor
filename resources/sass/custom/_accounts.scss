@@ -1,3 +1,4 @@
+// GENERAL STYLING (LOGIN AND REGISTER PAGE)
 .section-form{
     background-image:linear-gradient(to right bottom, 
     rgba(0, 0, 0, 0.6), 
@@ -111,6 +112,58 @@
             }
 
 
+        }
+    }
+}
+
+// REGISTER PAGE SPECIFIC STYLES
+.section-form{
+    .form-box{
+        .register {
+            .form__input--labelRegister {
+                width: 100%;
+                height: 3rem;
+                display: flex;
+
+                span.label-spanRegister {
+                    display: inline-flex;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 1rem;
+                    font-size: 1.2rem;
+                    background-color: $color-white;
+                    border: 1px solid $color-grey-soft;
+                    transition: all .2s;
+
+            // CHECKBOX INSIDE STYLING
+                    .label-span__icon{
+                        font-size: .9rem;
+                        margin: auto;
+                        display: none;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all .5s .1s;
+                    } 
+            //END OF CHECKBOX INSIDE STYLING
+                }
+
+                .label-textRegister{
+                   margin: .5rem 0 0 .5rem;
+                   font-size: 1.4rem;
+                   color: $color-white;
+                }
+            }
+            // CHECKBOX TOGGLE FUNCTIONALITY (COLOR)
+                  #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
+                    background-color: $color-primary;
+                    }
+            // CHECKBOX TOGGLE FUNCTIONALITY (ICON)
+                #form__input--checkbox:checked + .form__input--labelRegister > span.label-spanRegister > .label-span__icon {
+                    color: $color-black;
+                    display: inline-block;
+                    visibility: visible;
+                    opacity: 1;
+                } //END OF TOGGLE FUNCTIONALITY
         }
     }
 }

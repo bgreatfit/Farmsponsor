@@ -10771,6 +10771,49 @@ a.text-dark:focus {
   color: #80a580;
 }
 
+.section-form .form-box .register .form__input--labelRegister {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+}
+
+.section-form .form-box .register .form__input--labelRegister span.label-spanRegister {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  transition: all 0.2s;
+}
+
+.section-form .form-box .register .form__input--labelRegister span.label-spanRegister .label-span__icon {
+  font-size: 0.9rem;
+  margin: auto;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s 0.1s;
+}
+
+.section-form .form-box .register .form__input--labelRegister .label-textRegister {
+  margin: 0.5rem 0 0 0.5rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.section-form .form-box .register #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
+  background-color: #55c57a;
+}
+
+.section-form .form-box .register #form__input--checkbox:checked + .form__input--labelRegister > span.label-spanRegister > .label-span__icon {
+  color: #000;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+}
+
 .how-it-works {
   color: #000;
 }
