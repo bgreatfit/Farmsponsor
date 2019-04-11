@@ -1,13 +1,13 @@
 @extends('layouts.accounts')
 
 @section('content')
-<section class="section-form container">
+<section class="section-form container-fluid">
     <div class="row">
         <div class="col-10 col-md-6 mx-auto">
             <div class="form-box">
                 <div class="formHeadingContainer text-center">
                     <i class="form-heading__icon far fa-user"></i>
-                    <h2 class="heading-secondary form-heading">Login</h2>
+                    <h2 class="heading__secondary form-heading">Login</h2>
                 </div>
 
                 <form action="" method="POST" class="form__main">
@@ -28,7 +28,7 @@
                         <input type="password" class="form__input form-control mx-auto px-3" id="form__input--confirm-password" name="password" placeholder="Confirm Password">
                     </div>
                 </div>
-                <div class="form-group ml-md-4 pl-md-2">
+                <div class="form-group mb-4">
                     <div class="form-group__content">
                         <input type="checkbox" class="form__input--checkbox" id="form__input--checkbox" name="yes">
                         <label for="form__input--checkbox" class="form__input--label ">
@@ -41,8 +41,8 @@
                     </div>
                 </div>
                 <div class="form-group form-btnbox">
-                    <button type="submit" class="btn btn-info btn-lg form__btn">Login</button>
-                    <p class="form__text">Not a member? <a href="#" class="form__input--link">Create An Account</a> </p>
+                    <button type="submit" class="form-control form__btn mb-4">Login</button>
+                    <p class="form__text">Not a member? <a href="#" class="form__input--link mb-4">Create An Account</a> </p>
                     <a href="#" class="form__input--link">Forgot your password?</a>
                 </div>
 
