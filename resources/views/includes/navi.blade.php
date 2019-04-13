@@ -1,4 +1,4 @@
-
+{{-- 
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
@@ -22,7 +22,7 @@
                         <a class="nav-link" href="#">text</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a class="nav-link" href="#">text</a>
                     </li>
                 
                     <li class="nav-item dropdown">
@@ -37,5 +37,61 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav> --}}
 
+<nav class="navi navi-bar">
+    <div class="navi-content container">
+        <a href="#" class="navi__logo-box">
+        <img src="{{asset('img/fs-logo.png')}}" alt="Farmsponsor Logo" class="navi__logo">
+        </a>
+
+        <input type="checkbox" class="navi__menu-toggle" id="navi__menu-toggle">
+        <label for="navi__menu-toggle" class="navi__menu-icon"></label>
+        <ul class="navi__navigation navi__navigation-lg">
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">Home</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">About Us</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">Farm List</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">VestBanking</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">Blog</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">FAQs</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">Contact</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">Account</a>
+            </li>
+        </ul>
+        <ul class="navi__navigation navi__navigation-sm">
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">link</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">link</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">link</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">link</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">link</a>
+            </li>
+            <li class="navi__navigation--item">
+                <a href="#" class="navi__navigation--link">link</a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,47 @@
+.farmlist{
+
+    .card-box {
+        margin-bottom: 3rem;
+
+        .farms__display {
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 1rem 2rem rgba($color-black, .6);
+
+
+            .farms__image {
+                width: 100%;
+                height: auto;
+            }
+            .card__heading {
+                text-transform: uppercase;
+                margin: 2.5rem 0 2rem 0;
+
+            }
+            .card__text-box {
+                text-align: center;
+
+                .farms__btn {
+                    margin-bottom: 2rem;
+                    text-decoration: none;
+                    font-size: 1.4rem;
+                }
+
+                .farms__text {
+                    margin-bottom: 2rem;
+                    
+                    &--status{
+                        text-align: center;
+                        display: inline-block;
+                        padding: .6rem 5rem;
+                        background-color: dodgerblue;
+                        border-radius: 2px;
+                        color: $color-white;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
