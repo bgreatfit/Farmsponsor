@@ -13,6 +13,7 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
+Route::get('/faq', 'PagesController@faq');
 Route::get('/login', 'PagesController@login');
 Route::get('/register', 'PagesController@register');
 Route::get('/farmlist', 'PagesController@farmList');

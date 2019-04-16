@@ -38,11 +38,11 @@
                 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
                 crossorigin="anonymous">
         </script>
-            {{-- BOOTSTRAP --}}
+            {{-- BOOTSTRAP
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
         crossorigin="anonymous">
-        </script>
+        </script> --}}
             <!-- NUMBER COUNT UP JQUERY -->
         <script src="{{asset('js/jquery.easy_number_animate.min.js')}}"></script>
 

@@ -1,0 +1,16 @@
+.section-faq {
+    padding-top: 10rem;
+    .faq{
+        &-general,
+        &-returns,
+        &-farmers {
+            margin-bottom: 10rem;
+            padding: 0 3rem;
+        }
+
+        &-general{}
+        &-returns{}
+        &-farmers{}
+
+    }
+}

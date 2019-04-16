@@ -53,4 +53,25 @@
     </div>
 </section>
 
+{{-- <aside class="trials">
+    <h1>collapse</h1>
+    <div class="collapse" id="myContent">
+        <div class="well">this is a collapse</div>
+    </div>
+    <button class="btn btn-info" data-toggle="collapse" data-target="#myContent">click to collapse</button><hr>
+    <h1>dropdown</h1>
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">CLICK HERE</button>
+        <ul class="dropdown-menu">
+            <li>Cars</li>
+            <li>Girls</li>
+            <li>Game console</li>
+            <li>Money bags </li>
+        </ul>
+    </div>
+
+    <hr>
+    <h1>accordion</h1>
+</aside> --}}
+
 @endsection

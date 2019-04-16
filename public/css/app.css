@@ -11354,6 +11354,17 @@ a.text-dark:focus {
   border-color: #55c57a;
 }
 
+.section-faq {
+  padding-top: 10rem;
+}
+
+.section-faq .faq-general,
+.section-faq .faq-returns,
+.section-faq .faq-farmers {
+  margin-bottom: 10rem;
+  padding: 0 3rem;
+}
+
 .page-footer {
   background-color: #333;
   padding: 10rem 0;
