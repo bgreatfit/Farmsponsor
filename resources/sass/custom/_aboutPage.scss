@@ -12,30 +12,41 @@
 
         .aboutWrap {
             margin-bottom: 10rem;
+
+            .content__about {
+                margin-bottom: 5rem;
+
+                &--heading{
+                    margin-bottom: 3rem;
+                    font-size: 6rem;
+                }
+                &--text {
+                    font-family: kalam;
+                    color: #747;
+                }
+    
+            }
+
+            .introWrap {
+                .intro-text {
+                    font-family: kalam;
+                    color: #747;
+    
+                }
+            }
         }
         .our-valuesWrap {
             .values__heading {
                 text-align: center;
-                font-size: 5rem;
+                font-size: 6rem;
                 letter-spacing: 2px;
                 font-weight: 600;
                 margin-bottom: 4rem;
+
             }
         }
 
-        .content__about {
-            &--textWrap {
-                margin-bottom: 5rem;
-            }
-            &--heading{
-                padding: 1rem 0;
-                font-size: 5rem;
-            }
-            &--text {
-                font-family: lato;
-            }
 
-        }
         .visuals-box {
             display: flex;
             flex-direction: column;
@@ -77,18 +88,6 @@
         }
     }
 
-    
-    .section-intro {
-        margin-top:-3rem;
-        margin-bottom: 10rem;
-
-        .introWrap {
-            .intro-text {
-
-            }
-        }
-    }
-
     .section-vision {
         margin-bottom: 10rem;
         &__heading {
@@ -114,7 +113,6 @@
             }
         }
     }
-
 
     .section-remark {
         margin-bottom: 10rem;
@@ -146,7 +144,6 @@
                     border-radius: 100rem;
                     margin-left: auto;
                     margin-right: 1rem;
-        
                 }
                 .fs-remark__text-box {
                     display: flex;
@@ -170,7 +167,6 @@
                 text-align: center;
                 font-weight: 600;
                 font-size: 6rem;
-
             }
             &--text {
                 text-align: center;
@@ -178,7 +174,6 @@
                 letter-spacing: 1px;
                 color: $color-grey-dark;
                 padding: 1rem 0;
-
             }
             &--image-box {
                 display: flex;

@@ -24,70 +24,104 @@
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="row ">
+                    <div class="col-md-12 col-12">
+                        <div class="introWrap">
+                            <p class="intro-text">
+                                This is Globetrot Farmsponsor Nig. Ltd, the farm financing company for everyone.
+                            </p>
+                            <p class="intro-text">
+                                The idea behind the company was conceived in December 2017 by the Co-Founder/CEO, 
+                                Akpa Innocent Bill. All resources were channeled towards engaging the rest of the 
+                                team in seamless research and study of the industry in order to achieve all company 
+                                set goals. We launched the first beta version, Farmsponsor 1.0 in February, 2018. 
+                                Farmsponsor launched officially to the public in May, 2018.
+                            </p>
+                            <p class="intro-text">
+                                Farmsponsor is using technology to ensure food is available for everyone in Nigeria by getting everyone to participate in agriculture.
+                            </p>
+                            <p class="intro-text">
+                                At Farmsponsor, every employee is outgoing, dynamic and engaging. This is why we are all marketing and sales representatives 
+                                who wear organizational objectives on our sleeves and stitch company image and presence on 
+                                our minds to achieve results. Therefore if you are thrilled by success and you have passion 
+                                to ensure food security in Africa, as well as posses the energy, wit and vibe required for 
+                                the big task; Farmsponsor is the place to be.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         <div class="our-valuesWrap">
             <h1 class="heading__primary values__heading">Our Values</h1>
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-6">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="visuals-box item1">
                         <i class="far visuals-icon fa-handshake visuals-commit"></i>
                         <h4 class="visuals-heading">Commitment</h4>
                         <p class="visuals-text">We do what we say we will do</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-6">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="visuals-box item2">
                         <i class="fas visuals-icon fa-binoculars visuals-focus"></i>
                         <h4 class="visuals-heading">Focus</h4>
                         <p class="visuals-text">We have our vision and mission in mind always</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-6">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="visuals-box item3">
                         <i class="far visuals-icon fa-calendar-check visuals-time"></i>
                         <h4 class="visuals-heading">Time</h4>
                         <p class="visuals-text">We always keep to Farm Sponsor time.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-6">
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="visuals-box item4">
                         <i class="fas visuals-icon fa-lightbulb visuals-creative"></i>
                         <h4 class="visuals-heading">Creative</h4>
-                        <p class="visuals-text">We have our vision and mission in mind always</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-6">
-                    <div class="visuals-box item5">
-                        <i class="fas visuals-icon fa-balance-scale visuals-honest"></i>
-                        <h4 class="visuals-heading">Honesty</h4>
                         <p class="visuals-text">We're creative. We think outside the box.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-6">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="visuals-box item5">
+                        <i class="fas visuals-icon fa-balance-scale visuals-honest"></i>
+                        <h4 class="visuals-heading">Honesty</h4>
+                        <p class="visuals-text">We are true to our words.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
                     <div class="visuals-box item6">
                         <i class="fas visuals-icon fa-users visuals-team"></i>
                         <h4 class="visuals-heading">Team players</h4>
-                        <p class="visuals-text">We always work hand-in-hand to ensure the success of our firm.</p>
+                        <p class="visuals-text">We work together to ensure constant success.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-intro container">
+    {{-- <section class="section-intro container">
         <div class="row ">
             <div class="col-md-12 col-12">
                 <div class="introWrap">
                     <p class="intro-text">
                         This is Globetrot Farmsponsor Nig. Ltd, the farm financing company for everyone.
+                    </p>
+                    <p class="intro-text">
                         The idea behind the company was conceived in December 2017 by the Co-Founder/CEO, 
                         Akpa Innocent Bill. All resources were channeled towards engaging the rest of the 
                         team in seamless research and study of the industry in order to achieve all company 
                         set goals. We launched the first beta version, Farmsponsor 1.0 in February, 2018. 
                         Farmsponsor launched officially to the public in May, 2018.
-                        Farmsponsor is using technology to ensure food is available for everyone in Nigeria 
-                        by getting everyone to participate in agriculture. At Farmsponsor, every employee is 
-                        outgoing, dynamic and engaging. This is why we are all marketing and sales representatives 
+                    </p>
+                    <p class="intro-text">
+                        Farmsponsor is using technology to ensure food is available for everyone in Nigeria by getting everyone to participate in agriculture.
+                    </p>
+                    <p class="intro-text">
+                        At Farmsponsor, every employee is outgoing, dynamic and engaging. This is why we are all marketing and sales representatives 
                         who wear organizational objectives on our sleeves and stitch company image and presence on 
                         our minds to achieve results. Therefore if you are thrilled by success and you have passion 
                         to ensure food security in Africa, as well as posses the energy, wit and vibe required for 
@@ -96,7 +130,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="section-vision container">
         <h1 class="heading__primary section-vision__heading">Our Vision And Mission</h1>
@@ -106,7 +140,7 @@
                     <img src="{{asset('img/vision.png')}}" alt="vision illustration" class="vision-content--image">
                 </div>
             </div>
-            <div class="col-md-6 col-10">
+            <div class="col-md-6 col-12">
                 <div class="vision-content ">
                     <p class="vision-content--text">
                         Our vision is to ensure food is available for everyone by getting everyone involved in agriculture.
@@ -115,7 +149,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-10">
+            <div class="col-md-6 col-12">
                 <div class="mission-content">
                     <p class="mission-content--text">
                         Our mission is to use technology to drive the participation of everyone in agriculture.”

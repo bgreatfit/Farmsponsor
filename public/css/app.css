@@ -10677,25 +10677,31 @@ a.text-dark:focus {
   margin-bottom: 10rem;
 }
 
-.main-about .section-about .our-valuesWrap .values__heading {
-  text-align: center;
-  font-size: 5rem;
-  letter-spacing: 2px;
-  font-weight: 600;
-  margin-bottom: 4rem;
-}
-
-.main-about .section-about .content__about--textWrap {
+.main-about .section-about .aboutWrap .content__about {
   margin-bottom: 5rem;
 }
 
-.main-about .section-about .content__about--heading {
-  padding: 1rem 0;
-  font-size: 5rem;
+.main-about .section-about .aboutWrap .content__about--heading {
+  margin-bottom: 3rem;
+  font-size: 6rem;
 }
 
-.main-about .section-about .content__about--text {
-  font-family: lato;
+.main-about .section-about .aboutWrap .content__about--text {
+  font-family: kalam;
+  color: #747;
+}
+
+.main-about .section-about .aboutWrap .introWrap .intro-text {
+  font-family: kalam;
+  color: #747;
+}
+
+.main-about .section-about .our-valuesWrap .values__heading {
+  text-align: center;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 4rem;
 }
 
 .main-about .section-about .visuals-box {
@@ -10751,11 +10757,6 @@ a.text-dark:focus {
   font-size: 120%;
   font-weight: 300;
   text-align: center;
-}
-
-.main-about .section-intro {
-  margin-top: -3rem;
-  margin-bottom: 10rem;
 }
 
 .main-about .section-vision {

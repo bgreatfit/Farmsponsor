@@ -1,4 +1,4 @@
-{{-- 
+
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
@@ -37,9 +37,9 @@
             </ul>
         </div>
     </div>
-</nav> --}}
+</nav>
 
-<nav class="navi navi-bar">
+{{-- <nav class="navi navi-bar">
     <div class="navi-content container">
         <a href="#" class="navi__logo-box">
         <img src="{{asset('img/fs-logo.png')}}" alt="Farmsponsor Logo" class="navi__logo">
@@ -94,4 +94,4 @@
             </li>
         </ul>
     </div>
-</nav>
+</nav> --}}
