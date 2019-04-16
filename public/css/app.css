@@ -10659,6 +10659,274 @@ a.text-dark:focus {
   }
 }
 
+.main-about {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+.main-about .section-about {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.main-about .section-about .aboutWrap {
+  margin-bottom: 10rem;
+}
+
+.main-about .section-about .our-valuesWrap .values__heading {
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+.main-about .section-about .content__about--textWrap {
+  margin-bottom: 5rem;
+}
+
+.main-about .section-about .content__about--heading {
+  padding: 1rem 0;
+  font-size: 5rem;
+}
+
+.main-about .section-about .content__about--text {
+  font-family: lato;
+}
+
+.main-about .section-about .visuals-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-bottom: 5rem;
+  border-radius: 3px;
+  background-color: rgba(195, 200, 165, 0.1);
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.main-about .section-about .visuals-box .visuals-icon {
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+
+.main-about .section-about .visuals-box .visuals-focus {
+  color: #AC321F;
+}
+
+.main-about .section-about .visuals-box .visuals-team {
+  color: #777;
+}
+
+.main-about .section-about .visuals-box .visuals-commit {
+  color: #09033a;
+}
+
+.main-about .section-about .visuals-box .visuals-time {
+  color: #7B343A;
+}
+
+.main-about .section-about .visuals-box .visuals-creative {
+  color: #F2D86A;
+}
+
+.main-about .section-about .visuals-box .visuals-honest {
+  background-image: linear-gradient(to right bottom, #000, #ffb900);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-about .section-about .visuals-box .visuals-heading {
+  font-size: 2.1rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.main-about .section-about .visuals-box .visuals-text {
+  font-size: 120%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.main-about .section-intro {
+  margin-top: -3rem;
+  margin-bottom: 10rem;
+}
+
+.main-about .section-vision {
+  margin-bottom: 10rem;
+}
+
+.main-about .section-vision__heading {
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+.main-about .section-vision .vision-content {
+  margin-bottom: 3rem;
+}
+
+.main-about .section-vision .vision-content--text {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  color: #777;
+}
+
+.main-about .section-vision .mission-content--text {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  color: #777;
+}
+
+.main-about .section-remark {
+  margin-bottom: 10rem;
+}
+
+.main-about .section-remark .fs-remark__content .fs-remark__icon {
+  display: block;
+  text-align: center;
+  font-size: 5rem;
+  padding: 1rem 0;
+  background-image: linear-gradient(to right, #000, #ffb900);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-about .section-remark .fs-remark__content .fs-remark__text {
+  font-family: dosis;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-about .section-remark .fs-remark__content .fs-remark__image-box {
+  display: flex;
+}
+
+.main-about .section-remark .fs-remark__content .fs-remark__image-box--picture {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 100rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.main-about .section-remark .fs-remark__content .fs-remark__image-box .fs-remark__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.main-about .section-remark .fs-remark__content .fs-remark__image-box .fs-remark__text-box--text {
+  margin: 0;
+}
+
+.main-about .section-remark .fs-remark__content .fs-remark__image-box .fs-remark__text-box--text-staff {
+  font-weight: 600;
+  font-size: 120%;
+}
+
+.main-about .section-partners {
+  margin-bottom: 10rem;
+}
+
+.main-about .section-partners .partners__content--heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+.main-about .section-partners .partners__content--text {
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #777;
+  padding: 1rem 0;
+}
+
+.main-about .section-partners .partners__content--image-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: 1px solid #777;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.main-about .section-partners .partners__content--image-box .partners__content--image {
+  width: 100%;
+  height: auto;
+}
+
+.main-about .section-testimonials {
+  padding-bottom: 5rem;
+}
+
+.main-about .section-testimonials .testimonials__content {
+  margin-bottom: 5rem;
+}
+
+.main-about .section-testimonials .testimonials__content--heading-main {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+.main-about .section-testimonials .testimonials__content--text-main {
+  text-align: center;
+  font-size: 3rem;
+  color: #777;
+}
+
+.main-about .section-testimonials .testimonials__content--heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.main-about .section-testimonials .testimonials__content--text-client {
+  font-size: 120%;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.main-about .section-testimonials .testimonials__content--image-box {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.main-about .section-testimonials .testimonials__content--image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.main-about .section-testimonials .testimonials__content--text-box {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .section-form {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
   background-size: cover;
@@ -10906,7 +11174,11 @@ a.text-dark:focus {
 .navi-content .navi__navigation--link {
   text-decoration: none;
   color: #ffffff;
-  padding: 2rem;
+  padding: 2.3rem 1.5rem;
+}
+
+.navi-content .navi__navigation--link:hover {
+  background-color: #000;
 }
 
 .how-it-works {
@@ -11560,6 +11832,11 @@ body {
   font-family: Mukta, cursive;
   font-size: 1.6rem;
   color: #000;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .heading__secondary {

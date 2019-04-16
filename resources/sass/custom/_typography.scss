@@ -20,10 +20,16 @@ body {
 
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .heading__secondary{
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .heading__tertiary{
     font-weight: 600;
     font-size: 1.65rem;

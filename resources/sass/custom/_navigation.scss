@@ -44,10 +44,14 @@
             &--link{
                 text-decoration: none;
                 color: $color-white;
-                padding: 2rem;
+                padding: 2.3rem 1.5rem;
 
+            }
+            &--link:hover {
+                background-color: $color-black;
             }
 
         }
     }
 }
+

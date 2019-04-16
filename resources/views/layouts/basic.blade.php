@@ -16,6 +16,7 @@
         crossorigin="anonymous">
 
         <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
+        {{-- <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/style.css')}}"> --}}
         
         <script src="{{ asset('js/app.js') }}" defer></script>
 
