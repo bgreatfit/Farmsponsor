@@ -11128,58 +11128,48 @@ a.text-dark:focus {
   font-weight: 300;
 }
 
-.navi {
+.navi-bar {
+  padding: 0.5rem 1rem;
   background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.8), rgba(126, 213, 111, 0.6));
+  font-family: Questrial;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
-.navi-content {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
+.navi-bar__picture {
+  width: 21rem;
+  height: 5rem;
 }
 
-.navi-content .navi__logo-box {
-  display: inline-block;
-  width: 14rem;
-  height: 3rem;
+.navi-bar .navbar__navi .navi__item {
+  padding: 0rem 0.25rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.navi-content .navi__logo-box .navi__logo {
-  width: 100%;
-  height: auto;
-}
-
-.navi-content .navi__menu-toggle {
-  display: none;
-}
-
-.navi-content .navi__menu-icon {
-  display: none;
-}
-
-.navi-content .navi__navigation {
-  margin-bottom: 0;
-  list-style-type: none;
-  font-size: 1.4rem;
-}
-
-.navi-content .navi__navigation-lg {
-  margin-left: auto;
-  display: flex;
-}
-
-.navi-content .navi__navigation-sm {
-  display: none;
-}
-
-.navi-content .navi__navigation--link {
-  text-decoration: none;
+.navi-bar .navbar__navi .navi__item--link:link,
+.navi-bar .navbar__navi .navi__item--link:visited {
   color: #ffffff;
-  padding: 2.3rem 1.5rem;
+  transition: all 0.4s;
 }
 
-.navi-content .navi__navigation--link:hover {
-  background-color: #000;
+.navi-bar .navbar__navi .navi__item--link:hover {
+  color: #eee;
+}
+
+.navi-bar .navbar__navi .navi__item .dropdown-menu {
+  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.8), rgba(126, 213, 111, 0.6));
+  padding: 0rem;
+}
+
+.navi-bar .navbar__navi .navi__item .dropdown-menu .dropdown-item__link:link,
+.navi-bar .navbar__navi .navi__item .dropdown-menu .dropdown-item__link:visited {
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+}
+
+.navi-bar .navbar__navi .navi__item .dropdown-menu .dropdown-item__link:hover {
+  background-color: rgba(126, 213, 111, 0.4);
 }
 
 .how-it-works {
@@ -11363,6 +11353,19 @@ a.text-dark:focus {
 .section-faq .faq-farmers {
   margin-bottom: 10rem;
   padding: 0 3rem;
+}
+
+.section-faq .faq-general .faq-returns__heading,
+.section-faq .faq-returns .faq-returns__heading,
+.section-faq .faq-farmers .faq-returns__heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #4e3d3d;
+}
+
+.section-faq .card-wrap .card__btn {
+  display: block;
+  text-decoration: none;
 }
 
 .page-footer {

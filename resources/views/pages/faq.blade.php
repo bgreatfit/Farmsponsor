@@ -5,13 +5,14 @@
     <section class="section-faq">
         <div class="container">
             <div class="faq-general">
+                <h2 class="heading__secondary faq-returns__heading">GENERAL</h2>
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingOne">
+                                <div class="card-wrap" role="tab" id="headingOne">
                                     <h4 class="mb-0">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                        <a class="card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
                                             Who is a sponsor?
                                         </a>
                                     </h4>
@@ -23,9 +24,9 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingTwo">
+                                <div class="card-wrap" role="tab" id="headingTwo">
                                 <h4 class="mb-0">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+                                    <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
                                         About Farm/Farmer
                                     </a>
                                 </h4>
@@ -38,9 +39,9 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingThree">
+                                <div class="card-wrap" role="tab" id="headingThree">
                                 <h4 class="mb-0">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree">
+                                    <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree">
                                         What is a Sponsoring Window?
                                     </a>
                                 </h4>
@@ -58,9 +59,9 @@
                     <div class="col-md-6 col-12">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingOne">
+                                <div class="card-wrap" role="tab" id="headingOne">
                                     <h4 class="mb-0">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                        <a class="card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
                                             What is a Farm Cycle?
                                         </a>
                                     </h4>
@@ -74,9 +75,9 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingTwo">
+                                <div class="card-wrap" role="tab" id="headingTwo">
                                 <h4 class="mb-0">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                    <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
                                         What is a unit?
                                     </a>
                                 </h4>
@@ -90,9 +91,9 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingThree">
+                                <div class="card-wrap" role="tab" id="headingThree">
                                 <h4 class="mb-0">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                    <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
                                         What are returns? 
                                     </a>
                                 </h4>
@@ -116,9 +117,9 @@
                         <div class="col-md-6 col-12">
                             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="card">
-                                    <div class="card-header" role="tab" id="headingOne">
+                                    <div class="card-wrap" role="tab" id="headingOne">
                                         <h4 class="mb-0">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapseOne">
+                                            <a class="card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapseOne">
                                                 What is my return? 
                                             </a>
                                         </h4>
@@ -132,9 +133,9 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="card-header" role="tab" id="headingTwo">
+                                    <div class="card-wrap" role="tab" id="headingTwo">
                                     <h4 class="mb-0">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapseTwo">
+                                        <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapseTwo">
                                             When do I get my returns? 
                                         </a>
                                     </h4>
@@ -148,9 +149,9 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="card-header" role="tab" id="headingThree">
+                                    <div class="card-wrap" role="tab" id="headingThree">
                                     <h4 class="mb-0">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapseThree">
+                                        <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapseThree">
                                             Can I have multiple sponsorships? 
                                         </a>
                                     </h4>
@@ -168,9 +169,9 @@
                         <div class="col-md-6 col-12">
                             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="card">
-                                    <div class="card-header" role="tab" id="headingOne">
+                                    <div class="card-wrap" role="tab" id="headingOne">
                                         <h4 class="mb-0">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="true" aria-controls="collapseOne">
+                                            <a class="card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="true" aria-controls="collapseOne">
                                                 What is the minimum I can sponsor with? 
                                             </a>
                                         </h4>
@@ -184,9 +185,9 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="card-header" role="tab" id="headingTwo">
+                                    <div class="card-wrap" role="tab" id="headingTwo">
                                     <h4 class="mb-0">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapseTwo">
+                                        <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapseTwo">
                                             Are you covered by insurance? 
                                         </a>
                                     </h4>
@@ -200,9 +201,9 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="card-header" role="tab" id="headingThree">
+                                    <div class="card-wrap" role="tab" id="headingThree">
                                     <h4 class="mb-0">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapseThree">
+                                        <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapseThree">
                                             Can I sponsor from any country? 
                                         </a>
                                     </h4>
@@ -224,9 +225,9 @@
                     <div class="col-md-12 col-12">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingOne">
+                                <div class="card-wrap" role="tab" id="headingOne">
                                     <h4 class="mb-0">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="true" aria-controls="collapseOne">
+                                        <a class="card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="true" aria-controls="collapseOne">
                                             How can I sponsor a farm?
                                         </a>
                                     </h4>
@@ -238,9 +239,9 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingTwo">
+                                <div class="card-wrap" role="tab" id="headingTwo">
                                 <h4 class="mb-0">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapseTwo">
+                                    <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapseTwo">
                                         Who's eligible to sponsor?
                                     </a>
                                 </h4>
@@ -254,9 +255,9 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" role="tab" id="headingThree">
+                                <div class="card-wrap" role="tab" id="headingThree">
                                 <h4 class="mb-0">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapseThree">
+                                    <a class="collapsed card-header card__btn" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapseThree">
                                         I am a farmer, how do I join farmsponsor programme? 
                                     </a>
                                 </h4>
