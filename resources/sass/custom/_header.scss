@@ -1,0 +1,30 @@
+.header{
+    margin-bottom: 8rem;
+    .jumbotron{
+        &__home{
+            &--heading{
+                margin: 10rem 0 2.5rem 0;
+                font-family: exo;
+                font-size: 5.5rem;
+                font-weight: 700;
+                color: $color-white;
+            }
+            &--text{
+                line-height: 2;
+                color: $color-white;
+                margin-bottom: 3.5rem;
+                font-size: 2rem;
+
+            }
+            &--btn{
+                padding: 1.1rem 4.5rem;
+                border-radius: 5rem;
+                font-size: 1.4rem;
+                margin-bottom: 12rem;
+                background-image: radial-gradient(rgb(22, 195, 30),rgb(69, 132, 27));
+                border:none;
+
+            }
+        }
+    }
+}

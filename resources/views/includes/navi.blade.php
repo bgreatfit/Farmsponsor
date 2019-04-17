@@ -35,7 +35,7 @@
                         <a class="nav-link navi__item--link" href="{{url('/gallery')}}">Gallery</a>
                         </li>
                     <li class="nav-item navi__item">
-                        <a class="nav-link navi__item--link" href="#">FAQs</a>
+                        <a class="nav-link navi__item--link" href="{{url('/faq')}}">FAQs</a>
                     </li>
                     <li class="nav-item navi__item dropdown">
                         <a id="navbarDropdown" class="nav-link navi__item--link dropdown-toggle" 

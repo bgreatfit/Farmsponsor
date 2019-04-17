@@ -1,6 +1,7 @@
 @extends ('layouts.basic')
 
 @section('content')
+@include('includes.header')
   <section class="how-it-works">
     <div class="container">
       <div class="row">

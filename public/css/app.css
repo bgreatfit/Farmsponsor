@@ -10661,7 +10661,7 @@ a.text-dark:focus {
 
 .main-about {
   background-color: #f7f7f7;
-  color: #000;
+  color: #000000;
 }
 
 .main-about .section-about {
@@ -10741,7 +10741,7 @@ a.text-dark:focus {
 }
 
 .main-about .section-about .visuals-box .visuals-honest {
-  background-image: linear-gradient(to right bottom, #000, #ffb900);
+  background-image: linear-gradient(to right bottom, #000000, #ffb900);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -10796,7 +10796,7 @@ a.text-dark:focus {
   text-align: center;
   font-size: 5rem;
   padding: 1rem 0;
-  background-image: linear-gradient(to right, #000, #ffb900);
+  background-image: linear-gradient(to right, #000000, #ffb900);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -10904,7 +10904,7 @@ a.text-dark:focus {
   font-size: 120%;
   font-weight: 300;
   margin-bottom: 0;
-  color: #000;
+  color: #000000;
 }
 
 .main-about .section-testimonials .testimonials__content--image-box {
@@ -11007,7 +11007,7 @@ a.text-dark:focus {
 }
 
 .section-form .form-box .form-group__content #form__input--checkbox:checked + .form__input--label > span.label-span .label-span__icon {
-  color: #000;
+  color: #000000;
   display: inline-block;
   visibility: visible;
   opacity: 1;
@@ -11077,7 +11077,7 @@ a.text-dark:focus {
 }
 
 .section-form .form-box .register #form__input--checkbox:checked + .form__input--labelRegister > span.label-spanRegister > .label-span__icon {
-  color: #000;
+  color: #000000;
   display: inline-block;
   visibility: visible;
   opacity: 1;
@@ -11128,9 +11128,37 @@ a.text-dark:focus {
   font-weight: 300;
 }
 
+.header {
+  margin-bottom: 8rem;
+}
+
+.header .jumbotron__home--heading {
+  margin: 10rem 0 2.5rem 0;
+  font-family: exo;
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.header .jumbotron__home--text {
+  line-height: 2;
+  color: #ffffff;
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
+}
+
+.header .jumbotron__home--btn {
+  padding: 1.1rem 4.5rem;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  margin-bottom: 12rem;
+  background-image: radial-gradient(#16c31e, #45841b);
+  border: none;
+}
+
 .navi-bar {
   padding: 0.5rem 1rem;
-  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.8), rgba(126, 213, 111, 0.6));
+  background-image: linear-gradient(to top, #28b485, #7ed56f);
   font-family: Questrial;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
@@ -11173,7 +11201,7 @@ a.text-dark:focus {
 }
 
 .how-it-works {
-  color: #000;
+  color: #000000;
 }
 
 .how-it-works .content-wrap {
@@ -11846,7 +11874,7 @@ body {
   box-sizing: border-box;
   font-family: Mukta, cursive;
   font-size: 1.6rem;
-  color: #000;
+  color: #000000;
 }
 
 img {
