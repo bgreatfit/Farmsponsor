@@ -11083,6 +11083,52 @@ a.text-dark:focus {
   opacity: 1;
 }
 
+.dashboard__pageWrap {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__panel {
+  background-color: dodgerblue;
+  padding: 0 3rem;
+  display: flex;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__brand {
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__profile {
+  margin-left: auto;
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard__pageWrap .section-dashboard .wrapper {
+  padding: 8rem 1.5rem 8rem 1.5rem;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap {
+  background-color: #f7f7f7;
+  border-right: 2px solid #eee;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi {
+  list-style-type: none;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--link {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__content-wrap .dashboard__content {
+  border: 2px solid black;
+  height: 20rem;
+}
+
 .farmlist .card-box {
   margin-bottom: 3rem;
 }

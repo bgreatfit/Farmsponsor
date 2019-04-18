@@ -21,13 +21,12 @@
 
     </head>
     <body>
-        <section class="flexi-dashboard__pageWrap">
-
-        @include('includes.dashboardNavi')
+        <main class="dashboard__pageWrap">
+        {{-- @include('includes.dashboardNavi') --}}
 
         @yield('content')
         
-        </section>
+        </main>
 
 
 

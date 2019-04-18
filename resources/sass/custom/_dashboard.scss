@@ -1,0 +1,54 @@
+.dashboard__pageWrap {
+    background-color: $color-grey-light-1;
+    min-height: 100vh;
+    .section-dashboard{
+        .dashboard__panel-wrap{
+            .dashboard{
+                &__panel {
+                    background-color: dodgerblue;
+                    padding: 0 3rem;
+                    display: flex;
+
+                }
+                &__brand {
+                    color: white;
+                    text-decoration: none;
+                }
+                &__profile {
+                    margin-left: auto;
+                    color: white;
+                    text-decoration: none;
+                }
+
+            }
+        }
+        .wrapper {
+            padding: 8rem 1.5rem 8rem 1.5rem;
+        }
+        .dashboard__navi-wrap {
+            background-color: $color-grey-light-1;
+            border-right: 2px solid $color-grey-soft;
+            .dashboard__navi{
+                list-style-type: none;
+                &--item{
+
+                }
+                &--link {
+                    text-decoration: none;
+                    display: block;
+                    padding: 1rem 0;
+
+                }
+
+            }
+        }
+        .dashboard__content-wrap {
+            .dashboard__content {
+                border: 2px solid black;
+                height: 20rem;
+            }
+        }
+
+    }
+
+}
