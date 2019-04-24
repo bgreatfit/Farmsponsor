@@ -2,7 +2,7 @@
     <div class="footer__logo-box">
       <img src="img/fs-logo.png" alt="full logo" class="logo">
     </div>
-    <div class="row">
+    <div class="row foot">
       <div class="col-md-5 col-12">
         <div class="footer__navigation">
           <ul class="footer__list">

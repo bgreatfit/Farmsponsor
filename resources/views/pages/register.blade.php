@@ -1,7 +1,8 @@
 @extends('layouts.accounts')
 
 @section('content')
-    <section class="section-form container">
+    <section class="section-form">
+      <div class="sectionWrap container">
         <div class="row">
             <div class="col-10 col-md-6 mx-auto">
                 <div class="form-box">
@@ -69,6 +70,7 @@
                 </div>
             </div>
         </div>
+      </div>
     </section>
 
 @endsection

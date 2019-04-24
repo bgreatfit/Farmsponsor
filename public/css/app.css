@@ -11464,6 +11464,10 @@ a.text-dark:focus {
   height: auto;
 }
 
+.page-footer .row.foot {
+  width: 100%;
+}
+
 .page-footer .footer__navigation {
   text-align: center;
 }
