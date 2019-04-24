@@ -14,7 +14,7 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/faq', 'PagesController@faq');
-Route::get('/login', 'PagesController@login');
+// Route::get('/login', 'PagesController@login');
 Route::get('/register', 'PagesController@register');
 Route::get('/farmlist', 'PagesController@farmList');
 Route::get('/gallery', 'PagesController@gallery');
@@ -24,6 +24,6 @@ Route::get('/about', 'PagesController@about');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-// Auth::routes();
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

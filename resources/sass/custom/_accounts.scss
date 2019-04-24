@@ -2,8 +2,8 @@
 .section-form{
     background-image:linear-gradient(to right bottom, 
     rgba(0, 0, 0, 0.6), 
-    rgba(0, 0, 0, 0.8)); 
-    // url(../img/farm-3.jpg);
+    rgba(0, 0, 0, 0.8)), 
+    url('../../../public/img/farm-3.jpg');
     background-size: cover;
     background-position: top;
     padding: 10rem 1.5rem;

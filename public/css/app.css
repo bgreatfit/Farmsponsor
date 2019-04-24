@@ -10929,7 +10929,7 @@ a.text-dark:focus {
 }
 
 .section-form {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/images/farm-3.jpg?c17efd2be0a93911867a416a4c8f0e46);
   background-size: cover;
   background-position: top;
   padding: 10rem 1.5rem;
@@ -11105,20 +11105,20 @@ a.text-dark:focus {
   text-decoration: none;
 }
 
-.dashboard__pageWrap .section-dashboard .wrapper {
-  padding: 8rem 1.5rem 8rem 1.5rem;
-}
-
-.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap {
-  background-color: #f7f7f7;
-  border-right: 2px solid #eee;
-}
-
 .dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi {
   list-style-type: none;
 }
 
-.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--link {
+.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--item {
+  padding: 0 2rem 0 3rem;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--item:hover {
+  background-color: #eee;
+}
+
+.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--link:link,
+.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--link:visited {
   text-decoration: none;
   display: block;
   padding: 1rem 0;
@@ -11127,6 +11127,12 @@ a.text-dark:focus {
 .dashboard__pageWrap .section-dashboard .dashboard__content-wrap .dashboard__content {
   border: 2px solid black;
   height: 20rem;
+}
+
+@media screen and (max-width: 650px) {
+  .dashboard__navi-wrap {
+    display: none;
+  }
 }
 
 .farmlist .card-box {
