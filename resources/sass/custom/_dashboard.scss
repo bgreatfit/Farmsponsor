@@ -8,19 +8,26 @@
                     background-color: dodgerblue;
                     padding: 0 3rem;
                     display: flex;
+                    a[class^=dashboard__]{
+                         padding: 1rem 1rem 1rem 1rem;
+                    }
 
                 }
                 &__brand {
                     color: white;
                     text-decoration: none;
+
                 }
                 &__profile {
                     margin-left: auto;
                     color: white;
                     text-decoration: none;
+
                 }
+               
 
             }
+           
         }
 
         .dashboard__navi-wrap {
@@ -45,9 +52,9 @@
 
             }
         }
-        .wrapper{
-            // padding: 8rem 3rem 8rem 0;
-        }
+        // .wrapper{
+        //     padding: 8rem 3rem 8rem 0;
+        // }
         .dashboard__content-wrap {
             .dashboard__content {
                 border: 2px solid black;
@@ -59,8 +66,10 @@
 
 }
 
-@media screen and (max-width:650px) {
+@media screen and (min-width:575px) {
     .dashboard__navi-wrap {
-        display: none;
+        height: 100vh;
+        border-right: 1px solid rgba($color-black, .3);
+        padding-top: 8rem;
     }
 }

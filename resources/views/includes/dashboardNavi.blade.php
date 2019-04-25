@@ -1,4 +1,4 @@
-<div class="flexi-nav">
+{{-- <div class="flexi-nav">
     <nav class="nav">
         <div class="logo">
             <a href="#" class="logo__img">
@@ -24,4 +24,4 @@
             
         </ul>
     </nav>
-</div>
+</div> --}}
