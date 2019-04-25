@@ -15,19 +15,31 @@
                     @csrf
                     <div class="form-group">
                         <div class="form-group__content">
-                            <input required type="text" class="form__input form-control mx-auto" id="form__input--first-name" name="first-name" value="{{ old('name') }}" placeholder="First Name">
+                            <input required type="text" class="form__input form-control {{ $errors->has('first-name') ? ' is-invalid' : '' }} mx-auto" id="form__input--first-name" name="first-name" value="{{ old('first-name') }}" placeholder="First Name">
+                            @if ($errors->has('first-name'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('first-name') }}</strong>
+                            </span> @endif
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="form-group__content">
-                            <input required type="text" class="form__input form-control mx-auto px-3" id="form__input--last-name" name="last-name" value="{{ old('name') }}" placeholder="Last Name">
+                            <input required type="text" class="form__input form-control {{ $errors->has('last-name') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--last-name" name="last-name" value="{{ old('last-name') }}" placeholder="Last Name">
+                            @if ($errors->has('last-name'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('last-name') }}</strong>
+                            </span> @endif
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="form-group__content">
-                            <input required type="text" class="form__input form-control mx-auto px-3" id="form__input--username" name="username" value="{{ old('name') }}" placeholder="Username">
+                            <input required type="text" class="form__input form-control {{ $errors->has('username') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--username" name="username" value="{{ old('username') }}" placeholder="Username">
+                            @if ($errors->has('username'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('username') }}</strong>
+                            </span> @endif
                         </div>
                     </div>
 
