@@ -10,7 +10,7 @@
                     <h2 class="heading__secondary form-heading">Login</h2>
                 </div>
 
-            <form action="{{ route('register')}}" method="POST" class="form__main">
+            <form action="{{ route('login')}}" method="POST" class="form__main">
                 @csrf
                 <div class="form-group">
                     <div class="form-group__content">
@@ -24,7 +24,7 @@
                         @endif
                     </div>
                 </div>
-            
+
                 <div class="form-group">
                     <div class="form-group__content">
                         <input type="password" class="form__input form-control{{ $errors->has('password') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--password" name="password" placeholder="Password">
@@ -48,7 +48,7 @@
                             <!-- custom checkbox style -->
                             <span class="label-span">
                                 <i class="label-span__icon fas fa-check"></i>
-                            </span> 
+                            </span>
                             <p class="label-text">Remember me</p>
                         </label>
                     </div>

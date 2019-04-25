@@ -34,7 +34,7 @@
                                 <input type="email" class="form__input form-control mx-auto px-3" id="form__input--email" name="email" placeholder="Email">
                             </div>
                     </div>
-                
+
                     <div class="form-group">
                         <div class="form-group__content">
                             <input type="password" class="form__input form-control mx-auto px-3" id="form__input--password" name="password" placeholder="Password">
@@ -53,7 +53,7 @@
                                         <!-- custom checkbox style -->
                                         <span class="label-spanRegister">
                                             <i class="label-span__icon fas fa-check"></i>
-                                        </span> 
+                                        </span>
                                         <span class="label-textRegister">
                                             I Accept <a href="#" class="form__input--link form__input--terms-link">Terms and Conditions</a>
                                         </span>
@@ -92,7 +92,7 @@
 
 
 
-{{-- 
+{{--
 @extends('layouts.app')
 
 @section('content')

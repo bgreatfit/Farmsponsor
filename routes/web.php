@@ -21,9 +21,6 @@ Route::get('/gallery', 'PagesController@gallery');
 Route::get('/dashboard', 'PagesController@dashboard');
 Route::get('/about', 'PagesController@about');
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
