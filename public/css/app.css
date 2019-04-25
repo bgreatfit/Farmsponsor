@@ -11088,49 +11088,28 @@ a.text-dark:focus {
   min-height: 100vh;
 }
 
-.dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__panel {
-  background-color: dodgerblue;
-  padding: 0 3rem;
-  display: flex;
-}
-
-.dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__panel a[class^=dashboard__] {
-  padding: 1rem 1rem 1rem 1rem;
-}
-
-.dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__brand {
-  color: white;
-  text-decoration: none;
-}
-
-.dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__profile {
-  margin-left: auto;
-  color: white;
-  text-decoration: none;
-}
-
-.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi {
-  list-style-type: none;
-}
-
-.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--item {
-  padding: 0 2rem 0 3rem;
-}
-
-.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--item:hover {
-  background-color: #eee;
-}
-
-.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--link:link,
-.dashboard__pageWrap .section-dashboard .dashboard__navi-wrap .dashboard__navi--link:visited {
-  text-decoration: none;
-  display: block;
-  padding: 1rem 0;
-}
-
 .dashboard__pageWrap .section-dashboard .dashboard__content-wrap .dashboard__content {
   border: 2px solid black;
   height: 20rem;
+}
+
+.dashboard__navi-wrap .dashboard__navi {
+  list-style-type: none;
+}
+
+.dashboard__navi-wrap .dashboard__navi--item {
+  padding: 0 2rem 0 3rem;
+}
+
+.dashboard__navi-wrap .dashboard__navi--item:hover {
+  background-color: #eee;
+}
+
+.dashboard__navi-wrap .dashboard__navi--link:link,
+.dashboard__navi-wrap .dashboard__navi--link:visited {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0;
 }
 
 @media screen and (min-width: 575px) {
@@ -11139,6 +11118,27 @@ a.text-dark:focus {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding-top: 8rem;
   }
+}
+
+.dashboard__panel-wrap .dashboard__panel {
+  background-color: dodgerblue;
+  padding: 0 3rem;
+  display: flex;
+}
+
+.dashboard__panel-wrap .dashboard__panel a[class^=dashboard__] {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.dashboard__panel-wrap .dashboard__brand {
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard__panel-wrap .dashboard__profile {
+  margin-left: auto;
+  color: white;
+  text-decoration: none;
 }
 
 .farmlist .card-box {

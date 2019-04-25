@@ -22,14 +22,18 @@
     </head>
     <body>
         <main class="dashboard__pageWrap">
-
-        @yield('content')
-        
+            <section class="section-dashboard container-fluid">
+                @include('includes.dash-panel')
+                    <div class="content-wrap">
+                        <div class="row">
+                            @include('includes.dash-navi')
+                            <div class="col-md-9 col-sm-9 col-12">
+                                @yield('content')
+                            </div>
+                        </div>
+                    </div>
+            </section>
         </main>
-
-
-
-
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
     integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 

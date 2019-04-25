@@ -1,0 +1,29 @@
+.dashboard__navi-wrap {
+
+    .dashboard__navi{
+        list-style-type: none;
+        &--item{
+            padding: 0 2rem 0 3rem;
+
+        }
+        &--item:hover{
+            background-color: $color-grey-soft;
+        }
+        &--link:link,
+        &--link:visited {
+            text-decoration: none;
+            display: block;
+            padding: 1rem 0;
+        }
+
+    }
+}
+
+
+@media screen and (min-width:575px) {
+    .dashboard__navi-wrap {
+        height: 100vh;
+        border-right: 1px solid rgba($color-black, .3);
+        padding-top: 8rem;
+    }
+}

@@ -20,6 +20,7 @@ Route::get('/farmlist', 'PagesController@farmList');
 Route::get('/gallery', 'PagesController@gallery');
 Route::get('/dashboard', 'PagesController@dashboard');
 Route::get('/about', 'PagesController@about');
+Route::get('/admin', 'PagesController@admin');
 
 Auth::routes();
 

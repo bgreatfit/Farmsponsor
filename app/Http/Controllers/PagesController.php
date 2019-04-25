@@ -30,4 +30,7 @@ class PagesController extends Controller
     public function faq(){
         return view('pages.faq');
     }
+    public function admin(){
+        return view('pages.admin');
+    }
 }
