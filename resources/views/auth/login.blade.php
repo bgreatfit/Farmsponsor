@@ -10,11 +10,11 @@
                     <h2 class="heading__secondary form-heading">Login</h2>
                 </div>
 
-            <form action="{{ route('register')}}" method="POST" class="form__main">
+            <form action="{{ route('login')}}" method="POST" class="form__main">
                 @csrf
                 <div class="form-group">
                     <div class="form-group__content">
-                        <input type="email" class="form__input form-control{{ $errors->has('email') ? ' is-invalid' : '' }} mx-auto px-3"
+                        <input required type="email" class="form__input form-control{{ $errors->has('email') ? ' is-invalid' : '' }} mx-auto px-3"
                             id="form__input--username" name="email" placeholder="Email Address"
                             value="{{ old('email') }}">
                         @if ($errors->has('email'))
@@ -27,7 +27,7 @@
             
                 <div class="form-group">
                     <div class="form-group__content">
-                        <input type="password" class="form__input form-control{{ $errors->has('password') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--password" name="password" placeholder="Password">
+                        <input required type="password" class="form__input form-control{{ $errors->has('password') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--password" name="password" placeholder="Password">
                         @if ($errors->has('password'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('password') }}</strong>

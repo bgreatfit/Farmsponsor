@@ -11094,6 +11094,10 @@ a.text-dark:focus {
   display: flex;
 }
 
+.dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__panel a[class^=dashboard__] {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
 .dashboard__pageWrap .section-dashboard .dashboard__panel-wrap .dashboard__brand {
   color: white;
   text-decoration: none;
@@ -11129,9 +11133,11 @@ a.text-dark:focus {
   height: 20rem;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 575px) {
   .dashboard__navi-wrap {
-    display: none;
+    height: 100vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 8rem;
   }
 }
 

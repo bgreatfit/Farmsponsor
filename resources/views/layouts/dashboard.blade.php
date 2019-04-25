@@ -22,7 +22,6 @@
     </head>
     <body>
         <main class="dashboard__pageWrap">
-        {{-- @include('includes.dashboardNavi') --}}
 
         @yield('content')
         

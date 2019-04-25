@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-12">
-                        <div class="dashboard__navi-wrap mt-md-5 mt-sm-5 pt-md-5 pt-sm-5">
+                        <div class="dashboard__navi-wrap">
                             <ul class="dashboard__navi">
                                 <li class="dashboard__navi--item"><a href="#" class="dashboard__navi--link">Farm List</a></li>
                                 <li class="dashboard__navi--item"><a href="#" class="dashboard__navi--link">Transactions</a></li>
