@@ -14,14 +14,12 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/faq', 'PagesController@faq');
-// Route::get('/login', 'PagesController@login');
-Route::get('/register', 'PagesController@register');
 Route::get('/farmlist', 'PagesController@farmList');
 Route::get('/gallery', 'PagesController@gallery');
-Route::get('/dashboard', 'PagesController@dashboard');
 Route::get('/about', 'PagesController@about');
 Route::get('/admin', 'PagesController@admin');
+Route::get('/dashboard/profile', 'PagesController@profile');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

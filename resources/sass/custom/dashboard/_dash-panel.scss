@@ -1,27 +1,22 @@
-.dashboard__panel-wrap{
     .dashboard{
         &__panel {
             background-color: dodgerblue;
-            padding: 0 3rem;
+            padding: 0 2rem;
             display: flex;
             a[class^=dashboard__]{
-                 padding: 1rem 1rem 1rem 1rem;
+                padding: 1rem 1rem 1rem 1rem;
+                text-decoration: none;
+                outline: none;
             }
 
         }
         &__brand {
             color: white;
-            text-decoration: none;
 
         }
         &__profile {
             margin-left: auto;
             color: white;
-            text-decoration: none;
-
         }
-       
-
     }
    
-}

@@ -118,6 +118,7 @@
 
 // REGISTER PAGE SPECIFIC STYLES
 .section-form{
+ .sectionWrap{padding: 0 .5rem;
     .form-box{
         .register {
             .form__input--labelRegister {
@@ -148,13 +149,13 @@
                 }
 
                 .label-textRegister{
-                   margin: .5rem 0 0 .5rem;
-                   font-size: 1.4rem;
-                   color: $color-white;
+                    margin: .5rem 0 0 .5rem;
+                    font-size: 1.4rem;
+                    color: $color-white;
                 }
             }
             // CHECKBOX TOGGLE FUNCTIONALITY (COLOR)
-                  #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
+                    #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
                     background-color: $color-primary;
                     }
             // CHECKBOX TOGGLE FUNCTIONALITY (ICON)
@@ -165,5 +166,22 @@
                     opacity: 1;
                 } //END OF TOGGLE FUNCTIONALITY
         }
+    }
+ }
+}
+
+//PASSWORD RESET PAGE STYLES
+.reset-card {
+    background-image: radial-gradient(rgba(255, 185, 0, 0.8), rgba(242, 216, 106, 0.9));
+    margin: 12.5rem 2rem;
+
+    &__btn {
+        background-color: $color-primary-dark;
+        color: $color-white;
+        font-size: 1.25rem;
+    }
+    &__btn:hover{
+        background-color: rgba($color-primary-dark, .7);
+        color: $color-white;
     }
 }

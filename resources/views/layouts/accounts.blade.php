@@ -21,7 +21,9 @@
 <body>
     @include('includes.navi')
 
-    @yield('content')
+    <section class="section-form container-fluid">
+        @yield('content')
+    </section>
 
 </body>
 </html>

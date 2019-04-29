@@ -3,7 +3,7 @@
     .dashboard__navi{
         list-style-type: none;
         &--item{
-            padding: 0 2rem 0 3rem;
+            padding: 0 2rem 0 2rem;
 
         }
         &--item:hover{
@@ -14,16 +14,29 @@
             text-decoration: none;
             display: block;
             padding: 1rem 0;
+            outline: none;
         }
 
     }
 }
 
-
-@media screen and (min-width:575px) {
+@media screen and (min-width:850px) {
+    .dashboard__navi--link {
+        margin-left: 1.5rem;
+    }
+}
+@media screen and (min-width:576px) {
     .dashboard__navi-wrap {
         height: 100vh;
         border-right: 1px solid rgba($color-black, .3);
         padding-top: 8rem;
+    }
+    .section-dashboard {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:575px) {
+    .dashboard__navi--item{
+        text-align: center;
     }
 }

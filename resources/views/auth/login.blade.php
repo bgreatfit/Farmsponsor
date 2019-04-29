@@ -1,7 +1,6 @@
 @extends('layouts.accounts')
 
 @section('content')
-<section class="section-form container-fluid">
     <div class="row">
         <div class="col-10 col-md-6 mx-auto">
             <div class="form-box">
@@ -57,7 +56,7 @@
                 @if (Route::has('password.request'))
                 <div class="form-group form-btnbox">
                     <button type="submit" class="form-control form__btn mb-4">Login</button>
-                    <p class="form__text">Not a member? <a href="{{ route('login') }}" class="form__input--link mb-4">Create An Account</a> </p>
+                    <p class="form__text">Not a member? <a href="{{ route('register') }}" class="form__input--link mb-4">Create An Account</a> </p>
                     <a href="{{ route('password.request') }}" class="form__input--link">Forgot your password?</a>
                 </div>
                 @endif
@@ -67,6 +66,5 @@
             </div>
         </div>
     </div>
-</section>
 
 @endsection
