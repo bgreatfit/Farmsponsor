@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 
 @section('content')
@@ -21,9 +21,9 @@
         </div>
     </div>
 </div>
-@endsection
+@endsection --}}
 
-{{-- @extends('layouts.dashboard')
+@extends('layouts.dashboard')
 
 @section('content')
     @include('includes.balance')
@@ -47,4 +47,4 @@
             </div>
         </div>
     </div>
-@endsection --}}
+@endsection

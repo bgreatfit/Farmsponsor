@@ -12,9 +12,6 @@
 @import 'custom/aboutPage';
 @import 'custom/balance';
 @import 'custom/accounts';
-@import 'custom/dashboard';
-@import 'custom/dash-navi';
-@import 'custom/dash-panel';
 @import 'custom/farmsCard';
 @import 'custom/header';
 @import 'custom/navigation';
@@ -24,4 +21,6 @@
 @import 'custom/flexi-nav';
 @import 'custom/gallery';
 @import 'custom/typography';
-
+@import 'custom/dashboard/dash-navi';
+@import 'custom/dashboard/dash-panel';
+@import 'custom/dashboard/profile';

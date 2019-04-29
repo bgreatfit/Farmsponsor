@@ -11057,13 +11057,17 @@ a.text-dark:focus {
   color: #80a580;
 }
 
-.section-form .form-box .register .form__input--labelRegister {
+.section-form .sectionWrap {
+  padding: 0 0.5rem;
+}
+
+.section-form .sectionWrap .form-box .register .form__input--labelRegister {
   width: 100%;
   height: 3rem;
   display: flex;
 }
 
-.section-form .form-box .register .form__input--labelRegister span.label-spanRegister {
+.section-form .sectionWrap .form-box .register .form__input--labelRegister span.label-spanRegister {
   display: inline-flex;
   width: 1.5rem;
   height: 1.5rem;
@@ -11074,7 +11078,7 @@ a.text-dark:focus {
   transition: all 0.2s;
 }
 
-.section-form .form-box .register .form__input--labelRegister span.label-spanRegister .label-span__icon {
+.section-form .sectionWrap .form-box .register .form__input--labelRegister span.label-spanRegister .label-span__icon {
   font-size: 0.9rem;
   margin: auto;
   display: none;
@@ -11083,95 +11087,37 @@ a.text-dark:focus {
   transition: all 0.5s 0.1s;
 }
 
-.section-form .form-box .register .form__input--labelRegister .label-textRegister {
+.section-form .sectionWrap .form-box .register .form__input--labelRegister .label-textRegister {
   margin: 0.5rem 0 0 0.5rem;
   font-size: 1.4rem;
   color: #ffffff;
 }
 
-.section-form .form-box .register #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
+.section-form .sectionWrap .form-box .register #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
   background-color: #55c57a;
 }
 
-.section-form .form-box .register #form__input--checkbox:checked + .form__input--labelRegister > span.label-spanRegister > .label-span__icon {
+.section-form .sectionWrap .form-box .register #form__input--checkbox:checked + .form__input--labelRegister > span.label-spanRegister > .label-span__icon {
   color: #000000;
   display: inline-block;
   visibility: visible;
   opacity: 1;
 }
 
-.dashboard__pageWrap {
-  background-color: #f7f7f7;
-  min-height: 100vh;
-  width: 100%;
+.reset-card {
+  background-image: radial-gradient(rgba(255, 185, 0, 0.8), rgba(242, 216, 106, 0.9));
+  margin: 12.5rem 2rem;
 }
 
-.dashboard__pageWrap .section-dashboard .dashboard__content-wrap .dashboard__content {
-  border: 2px solid black;
-  height: 20rem;
+.reset-card__btn {
+  background-color: #28b485;
+  color: #ffffff;
+  font-size: 1.25rem;
 }
 
-.dashboard__navi-wrap .dashboard__navi {
-  list-style-type: none;
-}
-
-.dashboard__navi-wrap .dashboard__navi--item {
-  padding: 0 2rem 0 2rem;
-}
-
-.dashboard__navi-wrap .dashboard__navi--item:hover {
-  background-color: #eee;
-}
-
-.dashboard__navi-wrap .dashboard__navi--link:link,
-.dashboard__navi-wrap .dashboard__navi--link:visited {
-  text-decoration: none;
-  display: block;
-  padding: 1rem 0;
-}
-
-@media screen and (min-width: 850px) {
-  .dashboard__navi--link {
-    margin-left: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .dashboard__navi-wrap {
-    height: 100vh;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    padding-top: 8rem;
-  }
-
-  .section-dashboard {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .dashboard__navi--item {
-    text-align: center;
-  }
-}
-
-.dashboard__panel {
-  background-color: dodgerblue;
-  padding: 0 2rem;
-  display: flex;
-}
-
-.dashboard__panel a[class^=dashboard__] {
-  padding: 1rem 1rem 1rem 1rem;
-  text-decoration: none;
-}
-
-.dashboard__brand {
-  color: white;
-}
-
-.dashboard__profile {
-  margin-left: auto;
-  color: white;
+.reset-card__btn:hover {
+  background-color: rgba(40, 180, 133, 0.7);
+  color: #ffffff;
 }
 
 .farmlist .card-box {
@@ -11985,5 +11931,80 @@ img {
 .heading__tertiary {
   font-weight: 600;
   font-size: 1.65rem;
+}
+
+.dashboard__navi-wrap .dashboard__navi {
+  list-style-type: none;
+}
+
+.dashboard__navi-wrap .dashboard__navi--item {
+  padding: 0 2rem 0 2rem;
+}
+
+.dashboard__navi-wrap .dashboard__navi--item:hover {
+  background-color: #eee;
+}
+
+.dashboard__navi-wrap .dashboard__navi--link:link,
+.dashboard__navi-wrap .dashboard__navi--link:visited {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0;
+  outline: none;
+}
+
+@media screen and (min-width: 850px) {
+  .dashboard__navi--link {
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .dashboard__navi-wrap {
+    height: 100vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 8rem;
+  }
+
+  .section-dashboard {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .dashboard__navi--item {
+    text-align: center;
+  }
+}
+
+.dashboard__panel {
+  background-color: dodgerblue;
+  padding: 0 2rem;
+  display: flex;
+}
+
+.dashboard__panel a[class^=dashboard__] {
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  outline: none;
+}
+
+.dashboard__brand {
+  color: white;
+}
+
+.dashboard__profile {
+  margin-left: auto;
+  color: white;
+}
+
+.profile__card {
+  padding: 1rem 3rem 1rem 1.5rem;
+  max-height: 100vh;
+  overflow: hidden scroll;
+}
+
+.profile__form {
+  padding: 2rem 0;
 }
 

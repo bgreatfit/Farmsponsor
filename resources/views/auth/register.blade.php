@@ -1,8 +1,7 @@
 @extends('layouts.accounts')
 
 @section('content')
-<section class="section-form">
-  <div class="sectionWrap container">
+  <div class="sectionWrap">
     <div class="row">
         <div class="col-10 col-md-6 mx-auto">
             <div class="form-box">
@@ -93,7 +92,7 @@
                     </div>
                     <div class="form-group form-btnbox">
                         <button type="submit" class="form-control form__btn mb-4">Create An Account</button>
-                        <p class="form__text">Already a member? <a href="#" class="form__input--link">Login Here</a> </p>
+                        <p class="form__text">Already a member? <a href="{{ route('login') }}" class="form__input--link">Login Here</a> </p>
                     </div>
                 </form>
 
@@ -101,8 +100,6 @@
         </div>
     </div>
   </div>
-</section>
-
 @endsection
 
 
