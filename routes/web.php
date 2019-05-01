@@ -19,6 +19,9 @@ Route::get('/gallery', 'PagesController@gallery');
 Route::get('/about', 'PagesController@about');
 Route::get('/admin', 'PagesController@admin');
 Route::get('/dashboard/profile', 'PagesController@profile');
+Route::get('/dashboard/farmlist', 'PagesController@dashboardFarms');
+Route::get('/dashboard/transactions', 'PagesController@transactions');
+Route::get('/dashboard/vestbanking', 'PagesController@dvestbanking');
 
 Auth::routes();
 

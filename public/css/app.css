@@ -11120,49 +11120,55 @@ a.text-dark:focus {
   color: #ffffff;
 }
 
-.farmlist .card-box {
+.card-box {
   margin-bottom: 3rem;
 }
 
-.farmlist .card-box .farms__display {
-  border-radius: 2rem;
+.card-box .farms__display {
+  border-radius: 0.3rem;
   overflow: hidden;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
-.farmlist .card-box .farms__display .farms__image {
+.card-box .farms__display .farms__image {
   width: 100%;
   height: auto;
 }
 
-.farmlist .card-box .farms__display .card__heading {
+.card-box .farms__display .card__heading {
   text-transform: uppercase;
   margin: 2.5rem 0 2rem 0;
+  padding: 0 1rem;
+  font-size: 1.6rem;
 }
 
-.farmlist .card-box .farms__display .card__text-box {
-  text-align: center;
-}
-
-.farmlist .card-box .farms__display .card__text-box .farms__btn {
+.card-box .farms__display .farms__btn {
   margin-bottom: 2rem;
   text-decoration: none;
   font-size: 1.4rem;
 }
 
-.farmlist .card-box .farms__display .card__text-box .farms__text {
-  margin-bottom: 2rem;
+.card-box .farms__display .farms__text {
+  text-align: start;
+  padding: 0 2rem;
+  letter-spacing: 1.5px;
+  color: #777;
 }
 
-.farmlist .card-box .farms__display .card__text-box .farms__text--status {
+.card-box .farms__display .farms__text p:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.card-box .farms__display .farms__text--status {
   text-align: center;
   display: inline-block;
   padding: 0.6rem 5rem;
   background-color: dodgerblue;
-  border-radius: 2px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 300;
+  margin: 0;
 }
 
 .header {
@@ -11961,7 +11967,8 @@ img {
 
 @media screen and (min-width: 576px) {
   .dashboard__navi-wrap {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding-top: 8rem;
   }
@@ -12002,6 +12009,18 @@ img {
   padding: 1rem 3rem 1rem 1.5rem;
   max-height: 100vh;
   overflow: hidden scroll;
+}
+
+.profile__card .profile-heading__icon {
+  display: inline-block;
+  font-size: 4rem;
+  color: #eee;
+  border: 2px solid #eee;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 4rem;
+  text-align: center;
+  padding: 10px;
 }
 
 .profile__form {

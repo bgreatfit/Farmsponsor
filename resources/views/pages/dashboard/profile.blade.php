@@ -1,7 +1,10 @@
 @extends('layouts.dashboard')
 
 @section('content')
-    <div class="profile__card">
+    <div class="profile__card mt-5">
+        <div class="profileHeadingContainer text-center">
+            <i class="profile-heading__icon far fa-user"></i>
+        </div>
         <form action="" class="profile__form">
             <h2 class="text-center">Personal Information</h2>
             <div class="form-row">
@@ -39,12 +42,12 @@
                     <input type="text" class="form-control" id="inputZip">
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-5">
                     <label for="input__phone-number">Phone number</label>
                     <input type="text" class="form-control" id="input__phone-number" placeholder="080xxx">
                 </div>
             <hr>
-            <h2 class="text-center">Bank Information</h2>
+            <h2 class="text-center my-3">Bank Information</h2>
 
             <div class="row">
                 <div class="form-group col-md-6">
@@ -56,7 +59,7 @@
                     <input type="text" class="form-control" id="input__acc-no" placeholder="Account number">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg profile__btn">Save</button>
+            <button type="submit" class="btn btn-primary btn-lg profile__btn px-5 mt-2">Save</button>
         </form>
     </div>
 @endsection
