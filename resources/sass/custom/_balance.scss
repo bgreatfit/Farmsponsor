@@ -1,15 +1,19 @@
 .balance {
+    text-align: end;
     margin: .5rem 0;
-    &__text {
-        text-align: end;
+    .balance__text {
         font-size: 1.8rem;
         margin: 0;
-    }
-    &__link:link,
-    &__link:visited {
         text-decoration: none;
-        padding: 1rem 2rem;
         color:$color-grey-dark;
-        
     }
+    &__dropdown{
+        &--link:link,
+        &--link:visited {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+        }
+
+    }
+    
 }

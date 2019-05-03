@@ -1,0 +1,4 @@
+@mixin contentScroll-y {
+    max-height: 100vh;
+    overflow: hidden scroll;
+}
