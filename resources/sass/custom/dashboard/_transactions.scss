@@ -38,3 +38,44 @@
         }
     }
 }
+
+@media screen and (max-width:574px){
+    html{
+        font-size: 58%;
+    }
+    .transaction-page-wrap{
+        .transaction__content{
+            .transaction__heading{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:445px){
+    html{
+        font-size: 55%;
+    }
+    .transaction-page-wrap{
+        .transaction__content{
+            .transaction__heading{
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:390px){
+    html{
+        font-size: 50%;
+    }
+    .transaction-page-wrap{
+        .transaction__content{
+            &-wrap{padding: 0; }
+            .transaction__heading{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+}

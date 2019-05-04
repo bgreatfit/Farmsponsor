@@ -1,0 +1,37 @@
+.dashboard__content-wrap {
+    .dashboard__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .dashboard__welcome {
+            display: inline-block;
+            width: 35rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            &--image{border-radius: 50%;}
+            &--heading{
+                font-size: 200%;
+                color: #e79e26;
+                font-weight: 300;
+                letter-spacing: 2px;
+                font-family: sans-serif;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5rem;
+            }
+        }
+        .dashboard__sponsor-cta {
+            width: 100%;
+            &--btn{
+                background-color: #0d47a1;
+                color: #f5f5f5;
+                padding: 1.5rem 3rem;
+                border-radius: 3rem;
+                display: inline-block;
+            }
+        }
+    }
+}

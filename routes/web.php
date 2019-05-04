@@ -21,7 +21,7 @@ Route::get('/admin', 'PagesController@admin');
 Route::get('/dashboard/profile', 'PagesController@profile');
 Route::get('/dashboard/farmlist', 'PagesController@dashboardFarms');
 Route::get('/dashboard/transactions', 'PagesController@transactions');
-Route::get('/dashboard/vestbanking', 'PagesController@dvestbanking');
+Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 
 Auth::routes();
 
