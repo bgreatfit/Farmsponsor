@@ -5,9 +5,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12">
-                    <div class="transaction__content justify-content-center">
+                    <div class="transaction__content">
                         <div class="transaction__content-wrap mx-auto">
-                            <img src="{{asset('img/dash-3.png')}}" alt="credit card illustration" class="transaction__image mb-5">
+                            <div class="transaction__image-box">
+                                <img src="{{asset('img/dash-3.png')}}" alt="credit card illustration" class="transaction__image mb-5">
+                            </div>
                             <h1 class="transaction__heading text-center">Transactions</h1>
                         </div>
                         <div class="transaction__rule"><hr></div>

@@ -11940,6 +11940,10 @@ img {
   font-size: 1.65rem;
 }
 
+.dashboard__content-wrap {
+  padding-bottom: 8rem;
+}
+
 .dashboard__content-wrap .dashboard__content {
   display: flex;
   flex-direction: column;
@@ -11950,7 +11954,7 @@ img {
 
 .dashboard__content-wrap .dashboard__content .dashboard__welcome {
   display: inline-block;
-  width: 35rem;
+  max-width: 35rem;
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -12078,11 +12082,19 @@ img {
 .transaction__content {
   width: 100%;
   height: 100%;
+  text-align: center;
 }
 
 .transaction__content-wrap {
-  width: 60%;
-  padding: 5rem 5rem 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.transaction__content-wrap .transaction__image-box {
+  max-width: 35rem;
 }
 
 .transaction__content .transaction__image {
