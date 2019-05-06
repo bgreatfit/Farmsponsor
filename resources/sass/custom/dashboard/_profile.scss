@@ -3,6 +3,17 @@
         padding: 1rem 3rem 1rem 1.5rem;
         max-height: 100vh;
         overflow: hidden scroll;
+        .profile-heading__icon{
+            display: inline-block;
+            font-size: 4rem;
+            color: $color-grey-soft;
+            border: 2px solid $color-grey-soft;
+            width: 7rem;
+            height: 7rem;
+            border-radius: 4rem;
+            text-align: center;
+            padding: 10px;
+        }
     }
     &__form {
         padding: 2rem 0;

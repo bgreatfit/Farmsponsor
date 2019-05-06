@@ -36,4 +36,13 @@ class PagesController extends Controller
     public function profile(){
         return view('pages.dashboard.profile');
     }
+    public function dashboardFarms(){
+        return view('pages.dashboard.farmlist');
+    }
+    public function vestbanking(){
+        return view('pages.dashboard.vestbanking');
+    }
+    public function transactions(){
+        return view('pages.dashboard.transactions');
+    }
 }

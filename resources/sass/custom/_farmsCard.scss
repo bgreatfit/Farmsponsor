@@ -1,12 +1,13 @@
-.farmlist{
-
     .card-box {
         margin-bottom: 3rem;
 
         .farms__display {
-            border-radius: 2rem;
+            border-radius: .3rem;
             overflow: hidden;
-            box-shadow: 0 1rem 2rem rgba($color-black, .6);
+            box-shadow: 0 1rem 1rem rgba($color-black, .3);
+            text-align: center;
+
+            
 
 
             .farms__image {
@@ -16,10 +17,11 @@
             .card__heading {
                 text-transform: uppercase;
                 margin: 2.5rem 0 2rem 0;
+                padding: 0 1rem;
+                font-size: 1.6rem;
 
             }
-            .card__text-box {
-                text-align: center;
+            // .card__text-box {
 
                 .farms__btn {
                     margin-bottom: 2rem;
@@ -28,20 +30,26 @@
                 }
 
                 .farms__text {
-                    margin-bottom: 2rem;
+                    text-align: start;
+                    padding: 0 2rem;
+                    letter-spacing: 1.5px;
+                    color: $color-grey-dark;
+                     p:first-of-type {
+                         margin-bottom: .5rem;
+
+                    }
                     
                     &--status{
                         text-align: center;
                         display: inline-block;
                         padding: .6rem 5rem;
                         background-color: dodgerblue;
-                        border-radius: 2px;
                         color: $color-white;
                         text-transform: uppercase;
                         font-weight: 300;
+                        margin: 0;
                     }
                 }
-            }
+            // }
         }
     }
-}

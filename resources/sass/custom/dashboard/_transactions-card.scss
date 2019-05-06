@@ -1,0 +1,16 @@
+.transaction__card{
+    background-image: linear-gradient(to right bottom, rgb(123, 52, 58), rgb(172, 50, 31));
+    color: $color-white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    margin-top: 3rem;
+    .card__heading {
+        margin: 0;
+        font-weight: 300;
+    }
+    .card__text{
+        font-size: 4rem;
+        margin: 0;
+    }
+}
