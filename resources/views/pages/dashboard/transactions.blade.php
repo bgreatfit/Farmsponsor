@@ -5,8 +5,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12">
-                    <div class="transaction__content">
-                        <div class="transaction__content-wrap mx-auto">
+                    <div class="transaction__content mt-3">
+                        <div class="transaction__content-wrap">
                             <div class="transaction__image-box">
                                 <img src="{{asset('img/dash-3.png')}}" alt="credit card illustration" class="transaction__image mb-5">
                             </div>
@@ -16,7 +16,7 @@
                     </div>
                  </div>
             </div>
-            <div class="transaction-cards-section-wrap">
+            <div class="transaction-cards-section-wrap mt-3">
                 <div class="row">
                     <div class="col-md-6 col-12 col-sm-6">
                         <div class="transaction__card">

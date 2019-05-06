@@ -34,3 +34,8 @@ img {
     font-weight: 600;
     font-size: 1.65rem;
 }
+a[class*=__btn]:link,
+a[class*=__btn]:visited {
+    text-decoration: none;
+    outline: none;
+}
