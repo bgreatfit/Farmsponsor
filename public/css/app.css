@@ -12194,7 +12194,7 @@ a[class*=__btn]:visited {
   width: 80%;
   text-align: center;
   position: relative;
-  background-image: linear-gradient(to bottom, #7b343a, #ac321f);
+  background-image: linear-gradient(to bottom right, rgba(89, 8, 57, 0.9), #892b64);
   box-shadow: 0.1rem 0.5rem 2rem rgba(0, 0, 0, 0.6);
   border-radius: 2px;
 }
@@ -12211,14 +12211,43 @@ a[class*=__btn]:visited {
 }
 
 .vestbank-wrap .vestbank__balance-wrap .vestbank__balance .vestbank__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  z-index: 999;
-  width: 12rem;
-  top: 60%;
-  left: 6rem;
+  z-index: -999;
+  width: 100%;
+  opacity: 0.12;
+}
+
+.vestbank-wrap .vestbank__balance-wrap .vestbank__balance .vestbank__logo--wrap {
+  display: inline-block;
+  width: 35rem;
+  height: 30rem;
 }
 
 .vestbank-wrap .vestbank-bank-card-section {
   text-align: center;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn {
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn .vestbank__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn .vestbank__card--image-box {
+  margin: 2rem 0 1rem 0;
+  width: 10rem;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn .vestbank__card--text {
+  margin-bottom: 2rem;
 }
 

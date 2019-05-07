@@ -8,8 +8,8 @@
             width: 80%;
             text-align: center;
             position: relative;
-            background-image: linear-gradient( to bottom, 
-            rgba($color-red-chick, 1), rgba($color-brown-dark, 1));
+            background-image: linear-gradient(to bottom right, 
+            rgba(89, 8, 57, 0.9), rgb(137, 43, 100));
             box-shadow: .1rem .5rem 2rem rgba($color-black, .6);
             border-radius: 2px;
 
@@ -23,13 +23,17 @@
                 margin: 0 0 3rem 0;
             }
             .vestbank__logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 position: absolute;
-                z-index:999;
-                width: 12rem;
-                top: 60%;
-                left: 6rem;
-
-                &--image{
+                z-index: -999;
+                width: 100%;
+                opacity: .12;
+                &--wrap{
+                    display: inline-block;
+                    width: 35rem;
+                    height: 30rem;
                 }
             }
         }
@@ -38,10 +42,20 @@
     .vestbank-bank-card-section{
         text-align: center;
         .vestbank__btn{
+            display: inline-block;
+            border-radius: 2px;
             .vestbank__card{
-                &--image-box{}
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 4rem;
+
+                &--image-box{
+                    margin: 2rem 0 1rem 0;
+                    width: 10rem;
+                }
                 &--image{}
-                &--text{}
+                &--text{margin-bottom: 2rem;}
             }
             .vestbank__deposit{}
             .vestbank__withdraw{}

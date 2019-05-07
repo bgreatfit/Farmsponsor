@@ -10,7 +10,9 @@
                             <p class="vestbank__balance--label">Vestbank Balance</p>
                             <h3 class="vestbank__balance--text"> 0.00 NGN </h3>
                             <div class="vestbank__logo">
-                            <img src="{{asset('img/vestbank-logo.png')}}" alt="" class="vestbank__logo--image">
+                                <div class="vestbank__logo--wrap">
+                                    <img src="{{asset('img/vestbank-logo.png')}}" alt="Vestbank logo" class="vestbank__logo--image">
+                                </div>
                             </div>
                         </div>
                       
@@ -23,7 +25,7 @@
                         <a href="#" class="vestbank__btn">
                             <div class="vestbank__card vestbank__deposit">
                                 <div class="vestbank__card--image-box">
-                                    <img src="" alt="" class="vestbank__card--image">    
+                                <img src="{{asset('img/vestbank-03.svg')}}" alt="Credit card" class="vestbank__card--image">    
                                 </div> 
                                 <p class="vestbank__card--text">Add Money</p>
                             </div>
@@ -35,7 +37,7 @@
                         <a href="#" class="vestbank__btn">
                             <div class="vestbank__card vestbank__withdraw">
                                 <div class="vestbank__card--image-box">
-                                    <img src="" alt="" class="vestbank__card--image">    
+                                    <img src="{{asset('img/vestbank-01.svg')}}" alt="Safe illustration" class="vestbank__card--image">    
                                 </div> 
                                 <p class="vestbank__card--text">Withdraw Money</p>
                             </div>
@@ -47,7 +49,7 @@
                         <a href="#" class="vestbank__btn">
                             <div class="vestbank__card vestbank__standing-order">
                                 <div class="vestbank__card--image-box">
-                                    <img src="" alt="" class="vestbank__card--image">    
+                                    <img src="{{asset('img/vestbank-4.svg')}}" alt="files order" class="vestbank__card--image">    
                                 </div> 
                                 <p class="vestbank__card--text">Standing Order</p>
                             </div>
