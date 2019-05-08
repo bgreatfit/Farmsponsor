@@ -233,6 +233,9 @@
             </p>
             <form class="news-letter__form" method="POST" action="{{route('newsletter.subcribe')}}">
                 @csrf
+            <h3 class="heading__tertiary text-center">OR</h3>
+            <p class="news-letter__text">Subscribe to our mailing list to get first hand information on our latest offers, products and services.</p>
+            <form class="news-letter__form">
                 <div class="form-group news-letter__form-group">
                   <label for="news-letter-email">Email address: </label>
                   <input type="email" class="form-control" id="news-letter-email" aria-describedby="emailHelp" name="email" placeholder="Enter email">
