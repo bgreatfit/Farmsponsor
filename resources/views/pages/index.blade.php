@@ -12,20 +12,20 @@
                       Farm Sponsor is here to help you invest your money in Agriculture
                   </h2>
                   <p class="fs-intro--text">
-                      Food security is the responsibility of everyone of us. 
-                      If you feel farming is dirty, sponsor a farmer. 
+                      Food security is the responsibility of everyone of us.
+                      If you feel farming is dirty, sponsor a farmer.
                       Together we can stop hunger.
                   </p>
               </div>
             </div>
-          </div>    
+          </div>
 
           <div class="col-12 col-md-5">
               <div class="content-wrap">
                 <img src="{{asset('img/asset 1.png')}}" alt="iphone" class="fs-process__photo" width="100%">
               </div>
           </div>
-      </div>   
+      </div>
 
       <div class="row">
             <div class="col-12 col-md-4">
@@ -34,7 +34,7 @@
                     <img src="img/asset 2.png" alt="iphone" class="fs-process__photo" width="100%">
                 </div>
               </div>
-            </div>    
+            </div>
 
             <div class="col-12 col-md-6 offset-md-2">
               <div class="content-wrap">
@@ -48,7 +48,7 @@
                             <Span><i class="heading__tertiary--icon icon-basic-compass"></i></Span>Create A User Account
                         </h3>
                         <p class="fs-process__text">
-                            Simply signup using your email or social media 
+                            Simply signup using your email or social media
                             (Facebook and Twitter). Creating an account takes just a few seconds.
                         </p>
                     </div>
@@ -58,9 +58,9 @@
                             <Span><i class="heading__tertiary--icon icon-basic-magnifier"></i></Span>Find A Farm To Sponsor
                         </h3>
                         <p class="fs-process__text">
-                            Select a farm from our list of available farms ready 
+                            Select a farm from our list of available farms ready
                             for sponsorship on the current farm cycle, buy a specific
-                            number of units at N100,000 per unit and that's it. Just sit 
+                            number of units at N100,000 per unit and that's it. Just sit
                             back and watch your investment grow.
                         </p>
                     </div>
@@ -70,8 +70,8 @@
                             <Span><i class="heading__tertiary--icon icon-basic-clockwise"></i></Span>Stay Updated
                         </h3>
                         <p class="fs-process__text">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                          Natus quae fugit accusantium non nihil, reprehenderit sit vero 
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Natus quae fugit accusantium non nihil, reprehenderit sit vero
                           amet quae quaerat quia omnis?
                         </p>
                     </div>
@@ -80,7 +80,7 @@
                 </div>
               </div>
             </div>
-      </div>  
+      </div>
 
       <div class="row">
           <div class="col-md-6 col-12">
@@ -91,8 +91,8 @@
                       We Empower Farmers
                   </h3>
                   <p class="fs-invest__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Nemo quaerat, voluptatum voluptate quidem doloribus voluptates 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nemo quaerat, voluptatum voluptate quidem doloribus voluptates
                     Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
                   </p>
                 </div>
@@ -102,8 +102,8 @@
                         We Have High Returns On Investments
                     </h3>
                     <p class="fs-invest__text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Nemo quaerat, voluptatum voluptate quidem doloribus voluptates 
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo quaerat, voluptatum voluptate quidem doloribus voluptates
                       Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
                     </p>
                 </div>
@@ -113,8 +113,8 @@
                       Multiple Farming Cycles
                     </h3>
                     <p class="fs-invest__text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Nemo quaerat, voluptatum voluptate quidem doloribus voluptates 
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo quaerat, voluptatum voluptate quidem doloribus voluptates
                       Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
                     </p>
                 </div>
@@ -132,7 +132,7 @@
             </div>
           </div>
       </div>
-        
+
     </div> <!-- container -->
   </section>
 
@@ -228,13 +228,14 @@
           <div class="content-wrap">
             <h2 class="heading__secondary heading__secondary--news-letter">Say hello to farm sponsor</h2>
             <p class="news-letter__text">
-                If you have any questions, simply say hello 
+                If you have any questions, simply say hello
                 to us at hello@farmsponsor.com.ng and we’ll respond to you immediately
             </p>
-            <form class="news-letter__form">
+            <form class="news-letter__form" method="POST" action="{{route('newsletter.subcribe')}}">
+                @csrf
                 <div class="form-group news-letter__form-group">
                   <label for="news-letter-email">Email address: </label>
-                  <input type="email" class="form-control" id="news-letter-email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="email" class="form-control" id="news-letter-email" aria-describedby="emailHelp" name="email" placeholder="Enter email">
                 </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-success btn-lg btn__news-letter">Submit</button>
