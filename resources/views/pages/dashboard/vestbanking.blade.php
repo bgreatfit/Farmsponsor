@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-md-4 col-12">
                     <div class="vestbank-bank-card-section">
-                        <a href="#" class="vestbank__btn">
+                        <a href="#" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__deposit">
                                 <div class="vestbank__card--image-box">
                                 <img src="{{asset('img/vestbank-03.svg')}}" alt="Credit card" class="vestbank__card--image">    
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="vestbank-bank-card-section">
-                        <a href="#" class="vestbank__btn">
+                        <a href="#" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__withdraw">
                                 <div class="vestbank__card--image-box">
                                     <img src="{{asset('img/vestbank-01.svg')}}" alt="Safe illustration" class="vestbank__card--image">    
@@ -46,14 +46,15 @@
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="vestbank-bank-card-section">
-                        <a href="#" class="vestbank__btn">
+                        <div class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__standing-order">
                                 <div class="vestbank__card--image-box">
                                     <img src="{{asset('img/vestbank-4.svg')}}" alt="files order" class="vestbank__card--image">    
                                 </div> 
-                                <p class="vestbank__card--text">Standing Order</p>
+                                <p class="vestbank__card--text">Standing Order:</p>
+                                <p class="vestbank__card--order">You have no standing order</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>

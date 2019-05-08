@@ -231,6 +231,8 @@
                 If you have any questions, simply say hello 
                 to us at hello@farmsponsor.com.ng and we’ll respond to you immediately
             </p>
+            <h3 class="heading__tertiary text-center">OR</h3>
+            <p class="news-letter__text">Subscribe to our mailing list to get first hand information on our latest offers, products and services.</p>
             <form class="news-letter__form">
                 <div class="form-group news-letter__form-group">
                   <label for="news-letter-email">Email address: </label>

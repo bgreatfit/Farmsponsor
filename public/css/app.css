@@ -12220,6 +12220,7 @@ a[class*=__btn]:visited {
   align-items: center;
   position: absolute;
   z-index: -999;
+  top: 13rem;
   width: 100%;
   opacity: 0.12;
 }
@@ -12234,27 +12235,67 @@ a[class*=__btn]:visited {
   text-align: center;
 }
 
-.vestbank-wrap .vestbank-bank-card-section .vestbank__btn {
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap {
   display: inline-block;
   border-radius: 2px;
 }
 
-.vestbank-wrap .vestbank-bank-card-section .vestbank__btn .vestbank__card {
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 4rem;
 }
 
-.vestbank-wrap .vestbank-bank-card-section .vestbank__btn .vestbank__card--image-box {
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__card--image-box {
   margin: 2rem 0 2rem 0;
   width: 10rem;
 }
 
-.vestbank-wrap .vestbank-bank-card-section .vestbank__btn .vestbank__card--text {
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__card--image {
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__card--image:hover {
+  -webkit-transform: scale(1.14);
+          transform: scale(1.14);
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__card--text {
   border: 1.2px solid rgba(128, 128, 128, 0.3);
   padding: 1rem 2rem;
   border-radius: 5rem;
   margin-bottom: 2rem;
+  color: #6f2251;
+  transition: all 0.2s ease-in;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__card--text:hover {
+  background-color: #6f2251;
+  color: #ffffff;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__standing-order .vestbank__card--image:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__standing-order .vestbank__card--text {
+  border: none;
+  padding: 0;
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__standing-order .vestbank__card--text:hover {
+  color: #6f2251;
+  background-color: transparent;
+}
+
+.vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__standing-order .vestbank__card--order {
+  color: #9a9ea7;
+  line-height: 1.3;
 }
 

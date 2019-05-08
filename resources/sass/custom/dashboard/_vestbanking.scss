@@ -29,6 +29,7 @@
                 align-items: center;
                 position: absolute;
                 z-index: -999;
+                top: 13rem;
                 width: 100%;
                 opacity: .12;
                 &--wrap{
@@ -42,7 +43,7 @@
 
     .vestbank-bank-card-section{
         text-align: center;
-        .vestbank__btn{
+        .vestbank__btn-wrap{
             display: inline-block;
             border-radius: 2px;
             .vestbank__card{
@@ -55,16 +56,46 @@
                     margin: 2rem 0 2rem 0;
                     width: 10rem;
                 }
-                &--image{}
+                &--image{
+                    transition: transform .2s ease-in;
+                }
+                &--image:hover {
+                    transform: scale(1.14);
+                }
                 &--text{
                     border: 1.2px solid rgba(128, 128, 128, .3);
                     padding: 1rem 2rem;
                     border-radius: 5rem;
-                    margin-bottom: 2rem;}
+                    margin-bottom: 2rem;
+                    color: #6f2251;
+                    transition: all .2s ease-in;
+                }
+                &--text:hover{
+                    background-color: #6f2251;
+                    color: $color-white;
+                }
             }
             .vestbank__deposit{}
             .vestbank__withdraw{}
-            .vestbank__standing-order{}
+            .vestbank__standing-order{
+                .vestbank__card--image:hover{
+                    transform: scale(1);
+                }
+                .vestbank__card--text{
+                    border: none;
+                    padding: 0;
+                    border-radius: 2px;
+                    margin-bottom: .5rem;
+                    &:hover {
+                        color: #6f2251;
+                        background-color: transparent;
+                    }
+                }
+                .vestbank__card--order{
+                    color: #9a9ea7;
+                    line-height: 1.3;
+                }
+            }
         }
     }
 }
