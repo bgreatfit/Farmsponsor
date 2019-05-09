@@ -12278,8 +12278,9 @@ a[class*=__btn]:visited {
 }
 
 .vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__standing-order .vestbank__card--image:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: revert;
+  -webkit-transform: revert;
+  transition: none;
 }
 
 .vestbank-wrap .vestbank-bank-card-section .vestbank__btn-wrap .vestbank__standing-order .vestbank__card--text {
@@ -12322,8 +12323,38 @@ a[class*=__btn]:visited {
 
 .vestbank-wrap .vestbank-withdraw-popup .vestbank-withdraw__body {
   border: 2px solid white;
-  padding: 2rem;
+  padding: 1rem 0.5rem;
   background-color: white;
+  margin: 0 3rem;
+}
+
+.vestbank-wrap .vestbank-withdraw-popup .vestbank-withdraw__back-btn {
+  text-decoration: none;
+  font-weight: 600;
+  color: #ea5050;
+  transition: all 0.2s ease-in;
+  padding: 0.1rem 1rem;
+  border-radius: 3px;
+}
+
+.vestbank-wrap .vestbank-withdraw-popup .vestbank-withdraw__back-btn:hover {
+  color: #ffffff;
+  background-color: #ea5050;
+}
+
+.vestbank-wrap .vestbank-withdraw-popup .vestbank-withdraw__content .vestbank-withdraw__amount--label {
+  display: block;
+  text-align: right;
+  color: #777;
+}
+
+.vestbank-wrap .vestbank-withdraw-popup .vestbank-withdraw__content .vestbank-withdraw__btn {
+  font-size: 1.25rem;
+}
+
+.vestbank-wrap .vestbank-withdraw-popup .vestbank-withdraw__content #vestbank-withdraw__amount {
+  height: 3rem;
+  font-size: 1.3rem;
 }
 
 .vestbank-wrap .vestbank-withdraw-popup:target {
