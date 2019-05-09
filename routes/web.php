@@ -24,7 +24,11 @@ Route::get('/dashboard/transactions', 'PagesController@transactions');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subcribe');
-Route::get('newsletter', 'NewsletterController@getMembers');
-Auth::routes();
+Route::get('/pass', function(){
+    return view('auth.passwords.reset');
+});
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+// Auth Routes
+Auth::routes(['verify' => true]);

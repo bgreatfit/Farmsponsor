@@ -31,7 +31,7 @@
           }
         </style>
 
-        @include('includes.scripts')
+        {{-- @include('includes.scripts') --}}
     </head>
     <body>
         @include('includes.navi')

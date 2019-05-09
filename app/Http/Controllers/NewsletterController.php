@@ -43,8 +43,4 @@ class NewsletterController extends Controller
         // return Newsletter::getLastError();
     }
 
-    public function getMembers()
-    {
-    return Newsletter::getMembers();
-    }
 }
