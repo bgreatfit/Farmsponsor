@@ -91,8 +91,9 @@
                                         </label>
                                     </div>
                                     <div class="form-group mt-3">
-                                        <input type="number" name="amount" id="vestbank-withdraw__amount" class="form-control vestbank-withdraw__form--input">
                                         <label for="vestbank-withdraw__amount" class="vestbank-withdraw__amount--label">
+                                        <input type="number" name="amount" id="vestbank-withdraw__amount" class="form-control vestbank-withdraw__form--input">
+
                                             <small>Specify amount</small>
                                         </label>
                                     </div>
