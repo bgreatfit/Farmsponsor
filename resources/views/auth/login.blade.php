@@ -35,11 +35,6 @@
                     </div>
                 </div>
 
-                {{-- <div class="form-group">
-                    <div class="form-group__content">
-                        <input type="password" class="form__input form-control mx-auto px-3" id="form__input--confirm-password" name="password" placeholder="Confirm Password">
-                    </div>
-                </div> --}}
                 <div class="form-group mb-4">
                     <div class="form-group__content">
                         <input type="checkbox" class="form__input--checkbox" id="form__input--checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>

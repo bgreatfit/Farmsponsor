@@ -6,6 +6,7 @@
             <i class="profile-heading__icon far fa-user"></i>
         </div>
         <form action="" class="profile__form">
+            @csrf
             <h2 class="text-center">Personal Information</h2>
             <div class="form-row">
                 <div class="form-group col-md-6">
