@@ -63,34 +63,43 @@
                     <div class="vestbank-withdraw__body">
                         <div class="container">
                             <a href="{{url('/dashboard/vestbanking')}}" class="vestbank-withdraw__back-btn">X</a>
-                            <div class="vestbank-withdraw--content">
+                            <div class="row">
+                                <div class="col-md-12 col-12"><h2 class="vestbank-withdraw__heading heading__secondary text-center">Withdraw Funds</h2></div>
+                            </div>
+                            <hr>
+                            <div class="vestbank-withdraw__content mt-4">
                                 <form action="" class="vestbank-withdraw__form">
-                                    <div class="row">
-                                        <p class="vestbank-withdraw__form--text">How much do would you like to withdraw?</p>
+                                    <p class="vestbank-withdraw__form--text mb-3">How much do would you like to withdraw?</p>
+                                    <div class="form-check form-check-inline">
+                                        <label for="vestbank-withdraw__capital" class="radio-inline">
+                                            <input type="radio" name="option" value="capital" id="vestbank-withdraw__capital" class="vestbank-withdraw__form--input"> Capital
+                                        </label>
                                     </div>
-                                    <div class="row">
-                                        <div class="form-check form-check-inline">
-                                            <label for="vestbank-withdraw__capital radio-inline">
-                                                <input type="radio" name="option" value="capital" id="vestbank-withdraw__capital" class="vestbank-withdraw__form--input"> Capital
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label for="vestbank-withdraw__interest radio-inline">
-                                                <input type="radio" name="option" value="interest" id="vestbank-withdraw__interest" class="vestbank-withdraw__form--input"> Interest
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label for="vestbank-withdraw__all radio-inline">
-                                                <input type="radio" name="option" value="all" id="vestbank-withdraw__all" class="vestbank-withdraw__form--input"> All
-                                            </label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <label for="vestbank-withdraw__other radio-inline">
-                                                <input type="radio" name="option" value="other" id="vestbank-withdraw__other" class="vestbank-withdraw__form--input"> Other
-                                            </label>
-                                        </div>
+                                    <div class="form-check form-check-inline">
+                                        <label for="vestbank-withdraw__interest" class="radio-inline">
+                                            <input type="radio" name="option" value="interest" id="vestbank-withdraw__interest" class="vestbank-withdraw__form--input"> Interest
+                                        </label>
                                     </div>
-                                    
+                                    <div class="form-check form-check-inline">
+                                        <label for="vestbank-withdraw__all" class="radio-inline">
+                                            <input type="radio" name="option" value="all" id="vestbank-withdraw__all" class="vestbank-withdraw__form--input"> All
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label for="vestbank-withdraw__other" class="radio-inline">
+                                            <input type="radio" name="option" value="other" id="vestbank-withdraw__other" class="vestbank-withdraw__form--input"> Other
+                                        </label>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="vestbank-withdraw__amount" class="vestbank-withdraw__amount--label">
+                                        <input type="number" name="amount" id="vestbank-withdraw__amount" class="form-control vestbank-withdraw__form--input">
+
+                                            <small>Specify amount</small>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="vestbank-withdraw__btn form-control btn btn-lg btn-success">Make withdrawal</button>
+                                    </div>
                                 </form>
                             </div>
 

@@ -15,8 +15,6 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
     
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    
 </head>
 <body>
     @include('includes.navi')
@@ -24,6 +22,6 @@
     <section class="section-form container-fluid">
         @yield('content')
     </section>
-
+    @include('includes.scripts')
 </body>
 </html>
