@@ -10,31 +10,35 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="input__first-name">First name</label>
-                    <input type="text" class="form-control" id="input__first-name" placeholder="first-name">
+                    <input type="text" class="form-control" id="input__first-name" placeholder="first-name" value={{Auth::user()->firstname}}>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="input__last-name">Last name</label>
-                    <input type="text" class="form-control" id="input__last-name" placeholder="Last name">
+                    <input type="text" class="form-control" id="input__last-name" placeholder="Last name" value={{Auth::user()->lastname}}>
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Nnewi St">
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Nnewi St" value={{Auth::user()->address1}}>
             </div>
             <div class="form-group">
                 <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, flat, or floor">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, flat, or floor" value={{Auth::user()->address2}}>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control" id="inputCity" value={{Auth::user()->city}}>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputState">State</label>
                     <select id="inputState" class="form-control">
                         <option selected>Choose...</option>
-                        <option>...</option>
+                        @foreach ($states as $state)
+                            <option value="{{$state->id}}">
+                                {{$state->name}}
+                            </option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="form-group col-md-2">

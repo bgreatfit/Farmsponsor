@@ -14,20 +14,20 @@
                     @csrf
                     <div class="form-group">
                         <div class="form-group__content">
-                            <input required type="text" class="form__input form-control {{ $errors->has('first-name') ? ' is-invalid' : '' }} mx-auto" id="form__input--first-name" name="first-name" value="{{ old('first-name') }}" placeholder="First Name">
-                            @if ($errors->has('first-name'))
+                            <input required type="text" class="form__input form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }} mx-auto" id="form__input--first-name" name="firstname" value="{{ old('firstname') }}" placeholder="First Name">
+                            @if ($errors->has('firstname'))
                             <span class="invalid-feedback" role="alert">
-                                <strong>{{ $errors->first('first-name') }}</strong>
+                                <strong>{{ $errors->first('firstname') }}</strong>
                             </span> @endif
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="form-group__content">
-                            <input required type="text" class="form__input form-control {{ $errors->has('last-name') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--last-name" name="last-name" value="{{ old('last-name') }}" placeholder="Last Name">
-                            @if ($errors->has('last-name'))
+                            <input required type="text" class="form__input form-control {{ $errors->has('lastname') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--last-name" name="lastname" value="{{ old('last-name') }}" placeholder="Last Name">
+                            @if ($errors->has('lastname'))
                             <span class="invalid-feedback" role="alert">
-                                <strong>{{ $errors->first('last-name') }}</strong>
+                                <strong>{{ $errors->first('lastname') }}</strong>
                             </span> @endif
                         </div>
                     </div>

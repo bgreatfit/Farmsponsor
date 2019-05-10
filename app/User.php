@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
+
     use Notifiable;
 
     /**
@@ -17,7 +18,8 @@ class User extends Authenticatable implements MustVerifyEmail
      */
 
     protected $fillable = [
-        'first-name', 'last-name', 'username', 'email', 'password',
+        'firstname', 'lastname', 'username', 'email', 'password', 'address1', 'address2','city',
+        'state', 'zip', 'phone'
     ];
 
     /**
