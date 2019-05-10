@@ -23,9 +23,6 @@ Route::get('/dashboard/transactions', 'PagesController@transactions');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subcribe');
-Route::get('/pass', function(){
-    return view('auth.passwords.reset');
-});
 
 // Users
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
