@@ -23,12 +23,12 @@ class UserController extends Controller
         $rules = [
             'firstname' => 'required|string',
             'lastname' => 'required|string',
-            'bank_name' => 'required|string',
-            'bank_account_number' => 'required|numeric',
+            // 'bank_name' => 'required|string',
+            // 'bank_account_number' => 'required|numeric',
         ];
 
         $this->validate($request, $rules);
-       return $user = Auth::user();
+       $user = Auth::user();
 
        $user->update($request->except(['_token', 'bank_name', 'bank_account_number']));
        return $user;
