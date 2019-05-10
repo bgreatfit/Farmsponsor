@@ -26,6 +26,7 @@ Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('new
 
 // Users
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
+Route::post('/profile', 'UserController@update')->name('user.store');
 
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
