@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Models\Bank;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -65,7 +66,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'firstname' => $data['firstname'],
             'lastname' => $data['lastname'],
             'username' => $data['username'],
@@ -73,5 +74,13 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
 
         ]);
+
+        if($user){
+            Bank::create([
+                'user_id' => $user->id
+            ]);
+        };
+
+        return $user;
     }
 }

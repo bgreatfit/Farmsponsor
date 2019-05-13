@@ -19,7 +19,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
     protected $fillable = [
         'firstname', 'lastname', 'username', 'email', 'password', 'address1', 'address2','city',
-        'state', 'zip', 'phone'
+        'state', 'zip', 'phone', 'bank_id'
     ];
 
     /**
@@ -39,4 +39,14 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function bank()
+    {
+        return $this->hasOne('App\Models\Bank');
+    }
+
+    public function state()
+    {
+        return $this->belongsTo('App\Models\State');
+    }
 }

@@ -21,8 +21,6 @@ class UserController extends Controller
     public function update(Request $request)
     {
         $rules = [
-            'firstname' => 'required|string',
-            'lastname' => 'required|string',
             // 'bank_name' => 'required|string',
             // 'bank_account_number' => 'required|numeric',
         ];
@@ -31,7 +29,14 @@ class UserController extends Controller
        $user = Auth::user();
 
        $user->update($request->except(['_token', 'bank_name', 'bank_account_number']));
-       return $user;
+       $this->updateBankAccountDetails($user, $request->only(['bank_name', 'bank_account_number']));
        return redirect()->back();
+    }
+
+    public function updateBankAccountDetails($user, array $data){
+        if(! $user->bank->update($data)){
+            Session::flash('error', 'Can not update bank account details!');
+            return redirect()->back();
+        }
     }
 }
