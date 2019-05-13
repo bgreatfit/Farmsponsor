@@ -34,3 +34,7 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 // Auth Routes
 Auth::routes(['verify' => true]);
+
+Route::get('dd', function(){
+    return Auth::user()->bank;
+});
