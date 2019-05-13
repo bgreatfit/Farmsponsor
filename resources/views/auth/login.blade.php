@@ -26,7 +26,7 @@
 
                 <div class="form-group">
                     <div class="form-group__content">
-                        <input required type="password" class="form__input form-control{{ $errors->has('password') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--password" name="password" placeholder="Password">
+                        <input required type="password" class="form__input form-control {{ $errors->has('password') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--password" name="password" placeholder="Password">
                         @if ($errors->has('password'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('password') }}</strong>
