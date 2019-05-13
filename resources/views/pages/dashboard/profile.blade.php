@@ -5,17 +5,19 @@
         <div class="profileHeadingContainer text-center">
             <i class="profile-heading__icon far fa-user"></i>
         </div>
-<<<<<<< HEAD
-        <form action="" class="profile__form">
-=======
         <form action="{{route('user.store')}}" method="POST" class="profile__form">
->>>>>>> ab3b10b5add355a52be85adfa3fa93dcc671f27d
             @csrf
             <h2 class="text-center">Personal Information</h2>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="input__first-name">First name</label>
-                    <input type="text" class="form-control" id="input__first-name" name="firstname" placeholder="first-name" value={{Auth::user()->firstname}}>
+                    <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" name="firstname" placeholder="first-name" value={{Auth::user()->firstname}}>
+               
+                    @if ($errors->has('firstname'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('firstname') }}</strong>
+                    </span>
+                    @endif
                 </div>
                 <div class="form-group col-md-6">
                     <label for="input__last-name">Last name</label>
@@ -26,10 +28,10 @@
                 <label for="inputAddress">Address</label>
                 <input type="text" class="form-control" id="inputAddress" name="address1" placeholder="1234 Nnewi St" value={{Auth::user()->address1}}>
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="inputAddress2">Address 2</label>
                 <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, flat, or floor" value={{Auth::user()->address2}}>
-            </div>
+            </div> --}}
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">City</label>

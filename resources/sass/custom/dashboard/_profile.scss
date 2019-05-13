@@ -17,5 +17,9 @@
     }
     &__form {
         padding: 2rem 0;
+        .form-group input.form-control{
+            @include inputSizeIncrease;
+        }
     }
+
 }

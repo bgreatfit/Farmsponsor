@@ -2,3 +2,8 @@
     max-height: 100vh;
     overflow: hidden scroll;
 }
+
+@mixin inputSizeIncrease {
+    height: 3rem;
+    font-size: 1.3rem;
+}

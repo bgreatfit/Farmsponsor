@@ -12091,6 +12091,11 @@ a[class*=__btn]:visited {
   padding: 2rem 0;
 }
 
+.profile__form .form-group input.form-control {
+  height: 3rem;
+  font-size: 1.3rem;
+}
+
 .transaction-page-wrap {
   max-height: 100vh;
   overflow: hidden scroll;

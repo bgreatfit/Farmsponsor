@@ -115,12 +115,7 @@
 
     // POPUP SECTION STYLES
      
-    // deposit and withdrawal popup hide/reveal functionality
-     .vestbank-deposit-popup:target,
-     .vestbank-withdraw-popup:target {
-         visibility: visible;
-         opacity: 1;
-     }
+    
     //  popup background and body 
     .vestbank-deposit-popup,
     .vestbank-withdraw-popup {
@@ -134,6 +129,13 @@
         visibility: hidden;
         opacity: 0;
         transition: all .2s ease-in;
+
+    // deposit and withdrawal popup hide/reveal functionality
+    //  &:target,
+     &:target {
+         visibility: visible;
+         opacity: 1;
+     }
 
         .vestbank-deposit,
         .vestbank-withdraw {
@@ -183,7 +185,6 @@
     }
     #vestbank-deposit__amount,
     #vestbank-withdraw__amount{
-        height: 3rem;
-        font-size: 1.3rem;
+        @include inputSizeIncrease;
     }
 }

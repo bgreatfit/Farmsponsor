@@ -43,4 +43,7 @@ class PagesController extends Controller
     public function transactions(){
         return view('pages.dashboard.transactions');
     }
+    public function payout(){
+        return view('pages.dashboard.payout');
+    }
 }

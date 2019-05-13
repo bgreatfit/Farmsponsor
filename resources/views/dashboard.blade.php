@@ -42,7 +42,7 @@
                                 <div class="col-12 col-md-12 text-center">
                                     <div class="row">
                                         <div class="col-md-5 col-sm-12 col-12">
-                                            <a href="#" class="dashboard__sponsor-cta--btn mb-3">Sponsor a farm</a>
+                                        <a href="{{url('/dashboard/farmlist')}}" class="dashboard__sponsor-cta--btn mb-3">Sponsor a farm</a>
                                         </div>
                                         <div class="col-md-7 col-sm-12 col-12">
                                              <a href="#" class="dashboard__sponsor-cta--btn">Request for sponsorship</a>
@@ -54,17 +54,6 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="col-md-6 col-12">
-                <div class="dashboard__content-wrap">
-                    <div class="dashboard__content">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-                    </div>
-                </div> 
-            </div> --}}
         </div>
     </div>
 @endsection

@@ -70,31 +70,17 @@
                             <hr>
                             <div class="vestbank-deposit__content mt-4">
                                 <form action="" class="vestbank-deposit__form">
+                                    @csrf
                                     <p class="vestbank-deposit__form--text mb-3">How much do would you like to deposit?</p>
-                                    {{-- <div class="form-check form-check-inline">
-                                        <label for="vestbank-deposit__capital" class="radio-inline">
-                                            <input type="radio" name="option" value="capital" id="vestbank-deposit__capital" class="vestbank-deposit__form--input"> Capital
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <label for="vestbank-deposit__interest" class="radio-inline">
-                                            <input type="radio" name="option" value="interest" id="vestbank-deposit__interest" class="vestbank-deposit__form--input"> Interest
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <label for="vestbank-deposit__all" class="radio-inline">
-                                            <input type="radio" name="option" value="all" id="vestbank-deposit__all" class="vestbank-deposit__form--input"> All
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <label for="vestbank-deposit__other" class="radio-inline">
-                                            <input type="radio" name="option" value="other" id="vestbank-deposit__other" class="vestbank-deposit__form--input"> Other
-                                        </label>
-                                    </div> --}}
                                     <div class="form-group mt-3">
                                         <label for="vestbank-deposit__amount" class="vestbank-deposit__amount--label">
-                                        <input type="number" name="amount" id="vestbank-deposit__amount" class="form-control vestbank-deposit__form--input">
-
+                                        <input type="number" name="amount" id="vestbank-deposit__amount" 
+                                        class="form-control vestbank-deposit__form--input {{ $errors->has('amount') ? ' is-invalid' : '' }} ">
+                                        @if ($errors->has('amount'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('amount') }}</strong>
+                                            </span>
+                                        @endif
                                             <small>Specify amount</small>
                                         </label>
                                     </div>
@@ -103,14 +89,10 @@
                                     </div>
                                 </form>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
 
             <div class="vestbank-withdraw-popup" id="vestbank-withdraw">
                 <div class="vestbank-withdraw__background">
@@ -118,15 +100,18 @@
                         <div class="container">
                             <a href="{{url('/dashboard/vestbanking')}}" class="vestbank-withdraw__back-btn">X</a>
                             <div class="row">
-                                <div class="col-md-12 col-12"><h2 class="vestbank-withdraw__heading heading__secondary text-center">Withdraw Funds</h2></div>
+                                <div class="col-md-12 col-12">
+                                    <h2 class="vestbank-withdraw__heading heading__secondary text-center">Withdraw Funds</h2>
+                                </div>
                             </div>
                             <hr>
                             <div class="vestbank-withdraw__content mt-4">
                                 <form action="" class="vestbank-withdraw__form">
+                                    @csrf
                                     <p class="vestbank-withdraw__form--text mb-3">How much do would you like to withdraw?</p>
                                     <div class="form-check form-check-inline">
                                         <label for="vestbank-withdraw__capital" class="radio-inline">
-                                            <input type="radio" name="option" value="capital" id="vestbank-withdraw__capital" class="vestbank-withdraw__form--input"> Capital
+                                            <input type="radio" name="option" value="capital" id="vestbank-withdraw__capital" class="vestbank-withdraw__form--input "> Capital
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
@@ -146,8 +131,8 @@
                                     </div>
                                     <div class="form-group mt-3">
                                         <label for="vestbank-withdraw__amount" class="vestbank-withdraw__amount--label">
-                                        <input type="number" name="amount" id="vestbank-withdraw__amount" class="form-control vestbank-withdraw__form--input">
-
+                                        <input type="number" name="withdrawAmount" id="vestbank-withdraw__amount" 
+                                        class="form-control vestbank-withdraw__form--input">
                                             <small>Specify amount</small>
                                         </label>
                                     </div>
