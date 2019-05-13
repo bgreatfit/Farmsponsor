@@ -21,17 +21,38 @@ class UserController extends Controller
     public function update(Request $request)
     {
         $rules = [
-            'firstname' => 'required|string',
-            'lastname' => 'required|string',
-            // 'bank_name' => 'required|string',
-            // 'bank_account_number' => 'required|numeric',
+            'address' => 'string',
+            'city' => 'string',
+            'state_id' => 'numeric',
+            'zip' => 'numeric',
+            'phone' => 'numeric',
+            'bank_name' => 'required|string',
+            'bank_account_number' => 'required|numeric',
         ];
 
         $this->validate($request, $rules);
-       $user = Auth::user();
 
-       $user->update($request->except(['_token', 'bank_name', 'bank_account_number']));
-       return $user;
+        $user = Auth::user();
+
+       $user->update($request->except(['_token', 'bank_name', 'bank_account_number', 'firstname', 'lastname']));
+
+       $bankDetails = [
+           'name' => $request->bank_name,
+           'account_number' => $request->bank_account_number
+       ];
+
+       $this->updateBankAccountDetails(
+                $user,
+                $bankDetails
+        );
+
        return redirect()->back();
+    }
+
+    public function updateBankAccountDetails($user, array $data){
+        if(! $user->bank()->update($data)){
+            Session::flash('error', 'Can not update bank account details!');
+            return redirect()->back();
+        }
     }
 }
