@@ -22,6 +22,7 @@ Route::get('/dashboard/farmlist', 'PagesController@dashboardFarms');
 Route::get('/dashboard/transactions', 'PagesController@transactions');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 Route::get('/dashboard/payout', 'PagesController@payout');
+Route::get('/dashboard/farmcycle', 'PagesController@farmcycle');
 
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subcribe');
 

@@ -7,7 +7,7 @@
             <p>15% Returns</p>
         </div>
         <div class="card__progress-bar"> </div>
-        <a href="#" class="farms__btn btn-lg">Sponsor Now</a>
+        <a href="{{asset('dashboard/farmcycle')}}" class="farms__btn btn-lg">Sponsor Now</a>
         <p class="farms__text farms__text--status">Open</p>
     </div>
 </div>

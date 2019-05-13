@@ -46,4 +46,7 @@ class PagesController extends Controller
     public function payout(){
         return view('pages.dashboard.payout');
     }
+    public function farmcycle(){
+        return view('pages.dashboard.farmcycle');
+    }
 }
