@@ -23,6 +23,7 @@ Route::get('/dashboard/transactions', 'PagesController@transactions');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 Route::get('/dashboard/payout', 'PagesController@payout');
 
+// Newsletter Route
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subcribe');
 
 // Users
@@ -35,6 +36,6 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 // Auth Routes
 Auth::routes(['verify' => true]);
 
-Route::get('dd', function(){
-    return Auth::user()->bank;
-});
+// VestBanking Routes
+Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
+

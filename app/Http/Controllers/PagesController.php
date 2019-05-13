@@ -37,9 +37,7 @@ class PagesController extends Controller
     public function dashboardFarms(){
         return view('pages.dashboard.farmlist');
     }
-    public function vestbanking(){
-        return view('pages.dashboard.vestbanking');
-    }
+
     public function transactions(){
         return view('pages.dashboard.transactions');
     }

@@ -48,4 +48,9 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->belongsTo('App\Models\State');
     }
+
+    public function vestbank()
+    {
+        return $this->hasOne('App\Models\Vestbank');
+    }
 }
