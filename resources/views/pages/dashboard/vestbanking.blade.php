@@ -154,60 +154,6 @@
                 </div>
             </div>
 
-
-            {{-- <div class="vestbank-withdraw-popup" id="vestbank-withdraw">
-                <div class="vestbank-withdraw__background">
-                    <div class="vestbank-withdraw__body">
-                        <div class="container">
-                            <a href="{{url('/dashboard/vestbanking')}}" class="vestbank-withdraw__back-btn">X</a>
-                            <div class="row">
-                                <div class="col-md-12 col-12">
-                                    <h2 class="vestbank-withdraw__heading heading__secondary text-center">Withdraw Funds</h2>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="vestbank-withdraw__content mt-4">
-                                <form action="" class="vestbank-withdraw__form">
-                                    @csrf
-                                    <p class="vestbank-withdraw__form--text mb-3">How much do would you like to withdraw?</p>
-                                    <div class="form-check form-check-inline">
-                                        <label for="vestbank-withdraw__capital" class="radio-inline">
-                                            <input type="radio" name="option" value="capital" id="vestbank-withdraw__capital" class="vestbank-withdraw__form--input "> Capital
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <label for="vestbank-withdraw__interest" class="radio-inline">
-                                            <input type="radio" name="option" value="interest" id="vestbank-withdraw__interest" class="vestbank-withdraw__form--input"> Interest
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <label for="vestbank-withdraw__all" class="radio-inline">
-                                            <input type="radio" name="option" value="all" id="vestbank-withdraw__all" class="vestbank-withdraw__form--input"> All
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <label for="vestbank-withdraw__other" class="radio-inline">
-                                            <input type="radio" name="option" value="other" id="vestbank-withdraw__other" class="vestbank-withdraw__form--input"> Other
-                                        </label>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <label for="vestbank-withdraw__amount" class="vestbank-withdraw__amount--label">
-                                        <input type="number" name="withdrawAmount" id="vestbank-withdraw__amount" 
-                                        class="form-control vestbank-withdraw__form--input">
-                                            <small>Specify amount</small>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="vestbank-withdraw__btn form-control btn btn-lg btn-success">Make withdrawal</button>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-
             <div class="vestbank-withdraw__content">
                 <div class="modal fade" id="vestbank-withdraw" tabindex="-1" role="dialog" aria-labelledby="vestbankwithdrawTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">

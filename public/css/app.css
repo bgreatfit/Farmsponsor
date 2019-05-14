@@ -12069,6 +12069,41 @@ a[class*=__btn]:visited {
   color: white;
 }
 
+.farmcycle-wrap .farmcycle__image-box {
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.farmcycle-wrap .farmcycle__heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  border-bottom: 2px solid;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+}
+
+.farmcycle-wrap .farmcycle__span {
+  color: #777;
+}
+
+.farmcycle-wrap .farmcycle__popup .heading__secondary {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.farmcycle-wrap .farmcycle__popup .sponsor-farmcycle__form--input {
+  height: 3rem;
+  font-size: 1.3rem;
+}
+
+.farmcycle-wrap .farmcycle__popup .sponsor-farmcycle__form--label {
+  color: #777;
+}
+
+.farmcycle-wrap .farmcycle__popup .sponsor-farmcycle__btn {
+  font-size: 1.3rem;
+}
+
 .profile__card {
   padding: 1rem 3rem 1rem 1.5rem;
   max-height: 100vh;
@@ -12099,7 +12134,7 @@ a[class*=__btn]:visited {
 
 .transaction-page-wrap {
   max-height: 100vh;
-  overflow: hidden scroll;
+  overflow: hidden auto;
 }
 
 .transaction__content {
@@ -12418,6 +12453,22 @@ a[class*=__btn]:visited {
 .vestbank-wrap #vestbank-deposit__amount,
 .vestbank-wrap #vestbank-withdraw__amount {
   height: 3rem;
+  font-size: 1.3rem;
+}
+
+.farming-cycle__add--cta {
+  font-size: 1.3rem;
+}
+
+.farming-cycle__details {
+  overflow-x: auto;
+}
+
+.sponsors-list__content {
+  overflow-x: auto;
+}
+
+.sponsors-list__content .sponsor-confirm {
   font-size: 1.3rem;
 }
 

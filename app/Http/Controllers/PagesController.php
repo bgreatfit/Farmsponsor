@@ -47,4 +47,10 @@ class PagesController extends Controller
     public function farmcycle(){
         return view('pages.dashboard.farmcycle');
     }
+    public function farmingcycle(){
+        return view('pages.admin.farmingcycle');
+    }
+    public function sponsorsList(){
+        return view('pages.admin.sponsors-list');
+    }
 }

@@ -1,0 +1,6 @@
+.sponsors-list__content{
+    .sponsor-confirm{
+        @include buttonTextSizeDefault;
+    }
+@include contentScroll-x;
+}

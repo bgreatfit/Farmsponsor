@@ -1,0 +1,37 @@
+.farmcycle-wrap {
+    .farmcycle {
+        &__image-box {
+            overflow: hidden;
+            border-radius: 2px;
+        }
+        &__heading {
+            text-transform: uppercase;
+            font-weight: 300;
+            border-bottom: 2px solid;
+            display: inline-block;
+            padding: .2rem .5rem;
+        }
+       
+        &__span{
+            color: $color-grey-dark;
+        }
+        &__popup {
+            .heading__secondary {
+                @include modalHeadingStyle;
+            }
+            .sponsor-farmcycle{
+                &__form{
+                    &--input{
+                        @include inputSizeIncrease;
+                    }
+                    &--label{
+                        color: $color-grey-dark;
+                    }
+                }
+                &__btn {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

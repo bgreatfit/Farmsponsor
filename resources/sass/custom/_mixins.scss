@@ -1,9 +1,21 @@
 @mixin contentScroll-y {
     max-height: 100vh;
-    overflow: hidden scroll;
+    overflow: hidden auto;
 }
+@mixin contentScroll-x {
+    overflow-x: auto;
+} 
 
 @mixin inputSizeIncrease {
     height: 3rem;
+    font-size: 1.3rem;
+}
+
+@mixin modalHeadingStyle {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+@mixin buttonTextSizeDefault {
     font-size: 1.3rem;
 }

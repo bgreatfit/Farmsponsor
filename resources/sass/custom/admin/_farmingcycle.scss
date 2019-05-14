@@ -1,0 +1,8 @@
+.farming-cycle {
+    &__add--cta{
+      @include  buttonTextSizeDefault;
+    }
+    &__details{
+        @include contentScroll-x;
+    }
+}

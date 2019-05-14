@@ -22,10 +22,15 @@
 @import 'custom/gallery';
 @import 'custom/mixins';
 @import 'custom/typography';
+
 @import 'custom/dashboard/dashboard-home';
 @import 'custom/dashboard/dash-navi';
 @import 'custom/dashboard/dash-panel';
+@import 'custom/dashboard/farmcycle';
 @import 'custom/dashboard/profile';
 @import 'custom/dashboard/transactions';
 @import 'custom/dashboard/transactions-card';
 @import 'custom/dashboard/vestbanking';
+
+@import 'custom/admin/farmingcycle';
+@import 'custom/admin/sponsors-list';

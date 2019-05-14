@@ -18,11 +18,14 @@ Route::get('/farmlist', 'PagesController@farmList');
 Route::get('/gallery', 'PagesController@gallery');
 Route::get('/about', 'PagesController@about');
 Route::get('/admin', 'PagesController@admin');
+Route::get('/admin/farmingcycle', 'PagesController@farmingcycle');
+Route::get('/admin/sponsors-list', 'PagesController@sponsorsList');
 Route::get('/dashboard/farmlist', 'PagesController@dashboardFarms');
 Route::get('/dashboard/transactions', 'PagesController@transactions');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 Route::get('/dashboard/payout', 'PagesController@payout');
 Route::get('/dashboard/farmcycle', 'PagesController@farmcycle');
+
 
 // Newsletter Route
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subcribe');
