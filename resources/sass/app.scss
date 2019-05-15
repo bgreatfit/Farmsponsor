@@ -23,14 +23,18 @@
 @import 'custom/mixins';
 @import 'custom/typography';
 
+// dashboard sass
 @import 'custom/dashboard/dashboard-home';
 @import 'custom/dashboard/dash-navi';
 @import 'custom/dashboard/dash-panel';
 @import 'custom/dashboard/farmcycle';
 @import 'custom/dashboard/profile';
+@import 'custom/dashboard/payout';
 @import 'custom/dashboard/transactions';
 @import 'custom/dashboard/transactions-card';
 @import 'custom/dashboard/vestbanking';
 
+// admin sass
 @import 'custom/admin/farmingcycle';
 @import 'custom/admin/sponsors-list';
+@import 'custom/admin/create-farming-cycle';

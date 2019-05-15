@@ -17,9 +17,15 @@ Route::get('/faq', 'PagesController@faq');
 Route::get('/farmlist', 'PagesController@farmList');
 Route::get('/gallery', 'PagesController@gallery');
 Route::get('/about', 'PagesController@about');
+
+// Admin Routes
 Route::get('/admin', 'PagesController@admin');
 Route::get('/admin/farmingcycle', 'PagesController@farmingcycle');
 Route::get('/admin/sponsors-list', 'PagesController@sponsorsList');
+Route::get('/admin/create-farming-cycle', 'PagesController@createFarmingCycle');
+Route::get('/admin/edit-farming-cycle', 'PagesController@editFarmingCycle');
+
+// Dashboard Routes
 Route::get('/dashboard/farmlist', 'PagesController@dashboardFarms');
 Route::get('/dashboard/transactions', 'PagesController@transactions');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');

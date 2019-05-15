@@ -19,20 +19,20 @@
     
 </head>
 <body>
-        <div class="admin__pageWrap">
-        @include('includes.admin-panel')
+    <div class="dashboard__pageWrap">
+    @include('includes.admin-panel')
 
-        <section class="section-admin container-fluid">
-            <div class="content-wrap">
-                <div class="row">
-                    @include('includes.admin-navi')
-                    <div class="col-md-9 col-sm-9 col-12">
-                        @yield('content')
-                    </div>
+    <section class="section-dashboard container-fluid">
+        <div class="content-wrap">
+            <div class="row">
+                @include('includes.admin-navi')
+                <div class="col-md-9 col-sm-9 col-12">
+                    @yield('content')
                 </div>
             </div>
-        </section>
         </div>
-        @include('includes.scripts')
+    </section>
+    </div>
+    @include('includes.scripts')
 </body>
 </html>

@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="vestbank-deposit-popup" id="vestbank-deposit-method">
+            {{-- <div class="vestbank-deposit-popup" id="vestbank-deposit-method">
                 <div class="vestbank-deposit__background">
                     <div class="vestbank-deposit__body">
                         <div class="container">
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="vestbank-deposit__content">
                 <div class="modal fade" id="vestbank-deposit" tabindex="-1" role="dialog" aria-labelledby="vestbank-depositTitle" aria-hidden="true">

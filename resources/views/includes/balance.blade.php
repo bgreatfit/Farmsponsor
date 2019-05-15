@@ -1,4 +1,4 @@
-<div class="balance dropdown">
+<div class="balance dropdown mt-3">
     <a href="#" class="balance__text dropdown-toggle" role="button" id="dropdownMenu1" 
     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
         0.00NGN 

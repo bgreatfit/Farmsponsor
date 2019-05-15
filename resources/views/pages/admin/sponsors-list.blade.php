@@ -1,10 +1,19 @@
 @extends('layouts.admin')
 
 @section('content')
+<div class="sponsors-list-wrap my-5 py-5">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-12">
-                <div class="sponsors-list__content my-5 py-5">
+                <div class="sponsors-list__content ">
+                    <h1 class="sponsors-list__heading text-center mb-5">20th Farming Cycle</h1> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="sponsors-list__content ">
                     <table class="table table-bordered">
                         <thead>
                           <tr>
@@ -104,4 +113,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection

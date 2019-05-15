@@ -1,6 +1,12 @@
 .sponsors-list__content{
+    @include contentScroll-x;
+
+    .sponsors-list__heading{
+        font-size: 3rem;
+        text-transform: capitalize;
+    }
     .sponsor-confirm{
         @include buttonTextSizeDefault;
     }
-@include contentScroll-x;
+
 }

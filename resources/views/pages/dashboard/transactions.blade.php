@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-md-6 col-12 col-sm-6">
                         <div class="transaction__card">
-                            <h3 class="card__heading">Transaction History</h3>
+                            <a href="#" class="card__heading">Transaction History</a>
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@
 @section('content')
     @include('includes.balance')
 
-    <div class="farmcycle-wrap mt-2 pt-4">
+    <div class="farmcycle-wrap mt-2 pt-2">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-md-12">
@@ -30,8 +30,8 @@
                                 <div class="row">
                                     <div class="col-md-12 col-12">
                                         <div class="farmcycle__information">
-                                            <h2 class="farmcycle__farm-cycle mb-3">20th Farm cycle</h2>
-                                            <p class="farmcycle__sponsored mb-3">
+                                            <h2 class="farmcycle__cycle-title mb-3">20th Farm cycle</h2>
+                                            <p class="farmcycle__units mb-3">
                                                 Number Of Units Available: <span class="farmcycle__span">5000</span>
                                             </p>
                                             <p class="farmcycle__date mb-3">
@@ -39,7 +39,16 @@
                                             </p>
                                             <p class="farmcycle__interest mb-4">Farmcycle Interest: <span class="farmcycle__span">15%</span></p>
                                           
-                                            <a href="#" data-toggle="modal" data-target="#sponsor-farmcycle" role="button" class="farmcycle__cta btn btn-lg btn-success">Sponsor Now</a>
+                                            <div class="row mb-4">
+                                                <div class="col-12 col-md-4">
+                                                    <a href="#" data-toggle="modal" data-target="#sponsor-farmcycle" role="button" class="farmcycle__cta form-control btn btn-lg btn-success">Sponsor Now</a>
+                                                    {{-- <button type="submit" class="btn payout__btn form-control btn-lg btn-success" disabled>Submit</button> --}}
+                                                </div>
+                                                <div class="col-12 offset-md-4 col-md-4">
+                                                    <a href="{{asset('dashboard/farmlist')}}" class=" btn form-control btn-lg btn-info ml-auto">back</a>
+                                                </div>
+                                            </div>
+                                            {{-- <a href="#" data-toggle="modal" data-target="#sponsor-farmcycle" role="button" class="farmcycle__cta btn btn-lg btn-success">Sponsor Now</a> --}}
                                         </div>
                                     </div>
                                 </div>

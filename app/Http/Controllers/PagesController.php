@@ -53,4 +53,10 @@ class PagesController extends Controller
     public function sponsorsList(){
         return view('pages.admin.sponsors-list');
     }
+    public function createFarmingCycle(){
+        return view('pages.admin.create-farming-cycle');
+    }
+    public function editFarmingCycle(){
+        return view('pages.admin.edit-farming-cycle');
+    }
 }

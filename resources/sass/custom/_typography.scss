@@ -13,7 +13,7 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: Mukta, cursive;
+    font-family: Mukta, sans-serif;
     font-size: 1.6rem;
     color: $color-black;
     // padding: 0 10rem;
@@ -38,4 +38,8 @@ a[class*=__btn]:link,
 a[class*=__btn]:visited {
     text-decoration: none;
     outline: none;
+}
+
+.btn {
+    @include buttonTextSizeDefault;
 }

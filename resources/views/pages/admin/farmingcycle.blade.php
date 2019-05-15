@@ -7,8 +7,8 @@
             <div class="farming-cycle__content my-4 py-5">
               
               <div class="farming-cycle__add text-center mb-4">
-                <a href="#" class="farming-cycle__add--cta btn btn-lg btn-success mr-2" role="button">Add New farming cycle</a>
-                <a href="#" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit farming cycle</a>
+                <a href="{{asset('/admin/create-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-success mr-2" role="button">Add New farming cycle</a>
+                <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit farming cycle</a>
               </div>
 
               <div class="farming-cycle__details">
@@ -16,6 +16,7 @@
                   <thead class="thead-dark">
                     <tr>
                       <th scope="col">#</th>
+                      <th scope="col">Cycle Image</th>
                       <th scope="col">Farming Cycle</th>
                       <th scope="col">Number Of Units</th>
                       <th scope="col">Start Date</th>
@@ -26,6 +27,12 @@
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
+                      <td>
+                        <div class="cycle-image-box ml-4">
+                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
+                        </div>
+                      </td>
+
                       <td>
                         <a href="{{url('/admin/sponsors-list')}}" class="farming-cycle__info">20th</a>
                       </td>
@@ -39,6 +46,11 @@
                     <tr>
                       <th scope="row">2</th>
                       <td>
+                        <div class="cycle-image-box ml-4">
+                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
+                        </div>
+                      </td>
+                      <td>
                         <a href="#" class="farming-cycle__info">19th</a>
                       </td>
                       <td>400 </td>
@@ -50,6 +62,11 @@
                     </tr>
                     <tr>
                       <th scope="row">3</th>
+                      <td>
+                        <div class="cycle-image-box ml-4">
+                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
+                        </div>
+                      </td>
                       <td>
                         <a href="#" class="farming-cycle__info">18th</a>
                       </td>
@@ -63,6 +80,11 @@
                     <tr>
                       <th scope="row">4</th>
                       <td>
+                        <div class="cycle-image-box ml-4">
+                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
+                        </div>
+                      </td>
+                      <td>
                         <a href="#" class="farming-cycle__info">17th</a>
                       </td>
                       <td>400 </td>
@@ -75,6 +97,11 @@
                     <tr>
                       <th scope="row">5</th>
                       <td>
+                        <div class="cycle-image-box ml-4">
+                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
+                        </div>
+                      </td>
+                      <td>
                         <a href="#" class="farming-cycle__info">16th</a>
                       </td>
                       <td>400 </td>
@@ -85,7 +112,12 @@
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">5</th>
+                      <th scope="row">6</th>
+                      <td>
+                        <div class="cycle-image-box ml-4">
+                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
+                        </div>
+                      </td>
                       <td>
                         <a href="#" class="farming-cycle__info">15th</a>
                       </td>
@@ -97,7 +129,12 @@
                       </td>
                     </tr>
                     <tr>
-                      <th scope="row">6</th>
+                      <th scope="row">7</th>
+                      <td>
+                        <div class="cycle-image-box ml-4">
+                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
+                        </div>
+                      </td>
                       <td>
                         <a href="#" class="farming-cycle__info">14th</a>
                       </td>
@@ -110,6 +147,10 @@
                     </tr>
                   </tbody>
                 </table>
+              </div>
+
+              <div class="farming-cycle__heading-box mt-5 ">
+                <h1 class="farming-cycle__heading text-center">Farming Cycles</h1>
               </div>
 
             </div>
