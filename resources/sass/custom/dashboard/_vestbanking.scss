@@ -114,77 +114,17 @@
     }
 
     // POPUP SECTION STYLES
-     
-    
-    //  popup background and body 
-    .vestbank-deposit-popup,
-    .vestbank-withdraw-popup {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10000;
-        background-color: rgba(18, 6, 6, 0.7);
-        visibility: hidden;
-        opacity: 0;
-        transition: all .2s ease-in;
-
-    // deposit and withdrawal popup hide/reveal functionality
-    //  &:target,
-     &:target {
-         visibility: visible;
-         opacity: 1;
-     }
-
-        .vestbank-deposit,
-        .vestbank-withdraw {
-            &__background{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-
+    .vestbank {
+        &-deposit__content,
+        &-withdraw__content{
+            .heading__secondary{
+                @include modalHeadingStyle;
             }
-            &__body {
-                border: 2px solid white;
-                padding: 1rem 0.5rem;
-                background-color: white;
-                margin: 0 3rem;
-                
+            input.form-control,
+            select.form-control {
+                @include inputSizeIncrease;
             }
-            &__back-btn{
-                text-decoration: none;
-                font-weight: 600;
-                color:#ea5050;
-                transition: all .2s ease-in;
-                padding: .1rem 1rem;
-                border-radius: 3px;
-
-                &:hover{
-                    color: $color-white;
-                    background-color: #ea5050;
-                }
-            }
-            // &__form--text{}
-            &__form--input{
-                outline: none;
-            }
-            &__amount--label{
-                display: block;
-                text-align: right;
-                color: $color-grey-dark;
-            }
-            &__btn{
-                font-size: 1.25rem;
-            }
-
         }
 
-    }
-    #vestbank-deposit__amount,
-    #vestbank-withdraw__amount{
-        @include inputSizeIncrease;
     }
 }

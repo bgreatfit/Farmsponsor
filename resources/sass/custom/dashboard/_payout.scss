@@ -29,6 +29,7 @@
 
             // payout details section styles
             &__popup{
+                .heading__secondary {@include modalHeadingStyle;}
                 .payout{
                     &__cycle-title{
                         font-weight: 600;

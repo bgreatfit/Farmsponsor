@@ -26,11 +26,12 @@ Route::get('/admin/create-farming-cycle', 'PagesController@createFarmingCycle');
 Route::get('/admin/edit-farming-cycle', 'PagesController@editFarmingCycle');
 
 // Dashboard Routes
+Route::get('/dashboard/deposit', 'PagesController@deposit');
+Route::get('/dashboard/farmcycle', 'PagesController@farmcycle');
 Route::get('/dashboard/farmlist', 'PagesController@dashboardFarms');
+Route::get('/dashboard/payout', 'PagesController@payout');
 Route::get('/dashboard/transactions', 'PagesController@transactions');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
-Route::get('/dashboard/payout', 'PagesController@payout');
-Route::get('/dashboard/farmcycle', 'PagesController@farmcycle');
 
 
 // Newsletter Route

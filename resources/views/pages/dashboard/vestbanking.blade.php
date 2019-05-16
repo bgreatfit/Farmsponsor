@@ -104,7 +104,7 @@
                             <div class="modal-header">
                             <h5 class="modal-title heading__secondary text-center" id="exampleModalLongTitle">deposit Funds</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">X</span>
                             </button>
                             </div>
                             <div class="modal-body">
@@ -161,7 +161,7 @@
                             <div class="modal-header">
                             <h5 class="modal-title heading__secondary text-center" id="exampleModalLongTitle">Withdraw Funds</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true">X</span>
                             </button>
                             </div>
                             <div class="modal-body">

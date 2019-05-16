@@ -24,22 +24,25 @@ class PagesController extends Controller
     public function dashboard() {
         return view('pages.dashboard');
     }
-    public function about(){
+    public function about() {
         return view('pages.about');
     }
-    public function faq(){
+    public function faq() {
         return view('pages.faq');
     }
-    public function admin(){
+    public function admin() {
         return view('pages.admin');
     }
 
+    // Dashboard views
     public function dashboardFarms(){
         return view('pages.dashboard.farmlist');
     }
-
     public function transactions(){
         return view('pages.dashboard.transactions');
+    }
+    public function deposit(){
+        return view('pages.dashboard.deposit');
     }
     public function payout(){
         return view('pages.dashboard.payout');
@@ -47,6 +50,8 @@ class PagesController extends Controller
     public function farmcycle(){
         return view('pages.dashboard.farmcycle');
     }
+
+    // Admin views
     public function farmingcycle(){
         return view('pages.admin.farmingcycle');
     }

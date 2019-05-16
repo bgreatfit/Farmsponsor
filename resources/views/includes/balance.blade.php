@@ -5,6 +5,6 @@
     </a>
     <div  class="balance__dropdown dropdown-menu dropdown-menu-right" aria-labelledby="DropdownMenu1">
     <a href="{{url('/dashboard/payout')}}" class="dropdown-item balance__dropdown--link">Payout</a>
-        <a href="#" class="dropdown-item balance__dropdown--link">Deposit</a>
+        <a href="{{url('/dashboard/deposit')}}" class="dropdown-item balance__dropdown--link">Deposit</a>
     </div>
 </div>

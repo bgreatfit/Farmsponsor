@@ -30,25 +30,25 @@
                                 <div class="row">
                                     <div class="col-md-12 col-12">
                                         <div class="farmcycle__information">
-                                            <h2 class="farmcycle__cycle-title mb-3">20th Farm cycle</h2>
-                                            <p class="farmcycle__units mb-3">
+                                            <h2 class="farmcycle__cycle-title mb-4">20th Farm cycle</h2>
+                                            <p class="farmcycle__units mb-4">
                                                 Number Of Units Available: <span class="farmcycle__span">5000</span>
                                             </p>
-                                            <p class="farmcycle__date mb-3">
+                                            <p class="farmcycle__date mb-4">
                                                 Window Duration: <span class="farmcycle__span">29th May 2019 - 16th June 2019</span>
                                             </p>
                                             <p class="farmcycle__interest mb-4">Farmcycle Interest: <span class="farmcycle__span">15%</span></p>
                                           
                                             <div class="row mb-4">
-                                                <div class="col-12 col-md-4">
+                                                <div class="col-12 col-md-6">
                                                     <a href="#" data-toggle="modal" data-target="#sponsor-farmcycle" role="button" class="farmcycle__cta form-control btn btn-lg btn-success">Sponsor Now</a>
-                                                    {{-- <button type="submit" class="btn payout__btn form-control btn-lg btn-success" disabled>Submit</button> --}}
                                                 </div>
-                                                <div class="col-12 offset-md-4 col-md-4">
-                                                    <a href="{{asset('dashboard/farmlist')}}" class=" btn form-control btn-lg btn-info ml-auto">back</a>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="btn-box py-3 py-md-0">
+                                                     <a href="{{asset('dashboard/farmlist')}}" class=" btn form-control btn-lg btn-info ml-auto">back</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            {{-- <a href="#" data-toggle="modal" data-target="#sponsor-farmcycle" role="button" class="farmcycle__cta btn btn-lg btn-success">Sponsor Now</a> --}}
                                         </div>
                                     </div>
                                 </div>
