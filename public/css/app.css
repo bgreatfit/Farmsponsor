@@ -12226,6 +12226,11 @@ a[class*=__btn]:visited {
   padding: 1rem 2rem;
 }
 
+.transaction-details__heading {
+  font-size: 4.3rem;
+  color: #777;
+}
+
 .transaction-page-wrap {
   max-height: 100vh;
   overflow: hidden auto;

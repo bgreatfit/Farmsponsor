@@ -17,7 +17,7 @@
                             </li>
                             <li class="list-group-item deposit-method">
                                 <a href="#" class="deposit-method__link">
-                                    Paystack Deposit
+                                    Web Deposit
                                 </a>
                             </li>
                         </ul>

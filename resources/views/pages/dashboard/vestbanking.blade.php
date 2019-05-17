@@ -21,9 +21,9 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 col-12">
+                <div class="col-md-6 col-12">
                     <div class="vestbank-bank-card-section">
-                        <a href="#" data-toggle="modal" data-target="#vestbank-deposit" role="button" class="vestbank__btn-wrap">
+                        <a href="{{url('/dashboard/deposit')}}" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__deposit">
                                 <div class="vestbank__card--image-box">
                                 <img src="{{asset('img/vestbank-03.svg')}}" alt="Credit card" class="vestbank__card--image">    
@@ -33,7 +33,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-6 col-12">
                     <div class="vestbank-bank-card-section">
                         <a href="#" data-toggle="modal" data-target="#vestbank-withdraw" role="button" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__withdraw">
@@ -45,7 +45,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
+                {{-- <div class="col-md-4 col-12">
                     <div class="vestbank-bank-card-section">
                         <div class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__standing-order">
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
             {{-- <div class="vestbank-deposit-popup" id="vestbank-deposit-method">

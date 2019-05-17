@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-md-6 col-12 col-sm-6">
                         <div class="transaction__card">
-                            <a href="#" class="card__heading">Transaction History</a>
+                        <a href="{{url('/dashboard/transaction-details')}}" class="card__heading">Transaction History</a>
                         </div>
                     </div>
                 </div>

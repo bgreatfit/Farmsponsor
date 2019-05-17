@@ -13,7 +13,7 @@
 
               <div class="farming-cycle__details">
                 <table class="table">
-                  <thead class="thead-dark">
+                  <thead>
                     <tr>
                       <th scope="col">#</th>
                       <th scope="col">Cycle Image</th>
@@ -21,7 +21,7 @@
                       <th scope="col">Number Of Units</th>
                       <th scope="col">Start Date</th>
                       <th scope="col">Due Date</th>
-                      <th scope="col">Sold Out</th>
+                      <th scope="col">Status</th>
                     </tr>
                   </thead>
                   <tbody>

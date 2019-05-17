@@ -27,6 +27,7 @@ Route::get('/admin/edit-farming-cycle', 'PagesController@editFarmingCycle');
 
 // Dashboard Routes
 Route::get('/dashboard/deposit', 'PagesController@deposit');
+Route::get('/dashboard/transaction-details', 'PagesController@transactionDetails');
 Route::get('/dashboard/farmcycle', 'PagesController@farmcycle');
 Route::get('/dashboard/farmlist', 'PagesController@dashboardFarms');
 Route::get('/dashboard/payout', 'PagesController@payout');

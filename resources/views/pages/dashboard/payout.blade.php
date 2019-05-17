@@ -252,7 +252,7 @@
                                                                         Payout date: <span class="payout__date--span">29th August 2019</span>
                                                                     </p>
                                                                     <p class="payout__interest mb-4">Payout interest: <span class="payout__date--span">15%</span></p>
-                                                                    <form action="" class="payout__form">
+                                                                    {{-- <form action="" class="payout__form">
                                                                         @csrf
                                                                         <div class="form-group">
                                                                             <input type="number" name="payoutAmount" id="payout__amount" class="payout__amount form-control" disabled>
@@ -276,7 +276,12 @@
                                                                                 <strong>Withdrawals will become available from payout date.</strong>
                                                                             </p>
                                                                         </div>
-                                                                    </form>
+                                                                    </form> --}}
+                                                                    <div class="form-group">
+                                                                        <p class="payout__note">
+                                                                            <strong>Withdrawals will become available from payout date.</strong>
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
