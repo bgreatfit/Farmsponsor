@@ -17,8 +17,8 @@
                                 <div class="col-12 col-md-12">
                                     <h2 class="payout__cycles-sponsored--heading mb-4">Farm Cycles Sponsored</h2>
                                     <div class="payout__cycles-sponsored--table-box">
-                                        <table class="table">
-                                            <thead class="payout__thead thead-dark">
+                                        <table class="table table-bordered">
+                                            <thead class="payout__thead">
                                                 <tr>
                                                 <th scope="col">#</th>
                                                 <th scope="col">Cycle Image</th>

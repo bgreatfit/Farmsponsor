@@ -22,6 +22,7 @@
                       <th scope="col">Start Date</th>
                       <th scope="col">Due Date</th>
                       <th scope="col">Status</th>
+                      <th scope="col">Payout Status</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -42,6 +43,9 @@
                       <td>
                         <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
                       </td>
+                      <td>
+                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
@@ -58,6 +62,9 @@
                       <td>28 May 2019 </td>
                       <td>
                         <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
                       </td>
                     </tr>
                     <tr>
@@ -76,6 +83,9 @@
                       <td>
                         <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
                       </td>
+                      <td>
+                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
@@ -92,6 +102,9 @@
                       <td>28 May 2019 </td>
                       <td>
                         <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
                       </td>
                     </tr>
                     <tr>
@@ -110,6 +123,9 @@
                       <td>
                         <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
                       </td>
+                      <td>
+                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">6</th>
@@ -127,6 +143,9 @@
                       <td>
                         <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
                       </td>
+                      <td>
+                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">7</th>
@@ -143,6 +162,9 @@
                       <td>28 May 2019 </td>
                       <td>
                         <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
                       </td>
                     </tr>
                   </tbody>
