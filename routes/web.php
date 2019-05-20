@@ -24,6 +24,9 @@ Route::get('/admin/farmingcycle', 'PagesController@farmingcycle');
 Route::get('/admin/sponsors-list', 'PagesController@sponsorsList');
 Route::get('/admin/create-farming-cycle', 'PagesController@createFarmingCycle');
 Route::get('/admin/edit-farming-cycle', 'PagesController@editFarmingCycle');
+Route::get('/admin/deposit-requests', 'PagesController@depositRequests');
+Route::get('/admin/withdrawal-requests', 'PagesController@withdrawalRequests');
+Route::get('/admin/receipt', 'PagesController@receipt');
 
 // Dashboard Routes
 Route::get('/dashboard/deposit', 'PagesController@deposit');

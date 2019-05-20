@@ -3,8 +3,8 @@
             <ul class="dashboard__navi">
                 <li class="dashboard__navi--item"><a href="{{url('/admin/farmingcycle')}}" class="dashboard__navi--link">Farming Cycles</a></li>
                 {{-- <li class="dashboard__navi--item"><a href="{{url('/admin/transactions')}}" class="dashboard__navi--link">Transactions</a></li> --}}
-                <li class="dashboard__navi--item"><a href="#" class="dashboard__navi--link">Deposit Requests</a></li>
-                <li class="dashboard__navi--item"><a href="#" class="dashboard__navi--link">Withdrawal Requests</a></li>
+                <li class="dashboard__navi--item"><a href="{{asset('admin/deposit-requests')}}" class="dashboard__navi--link">Deposit Requests</a></li>
+                <li class="dashboard__navi--item"><a href="{{asset('admin/withdrawal-requests')}}" class="dashboard__navi--link">Withdrawal Requests</a></li>
                 {{-- <li class="dashboard__navi--item"><a href="{{url('/admin/help')}}" class="dashboard__navi--link">Help Center</a></li> --}}
                 <li class="dashboard__navi--item">
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"

@@ -1,0 +1,82 @@
+.container-fluid
+    {.background {
+        width: 85rem;
+        height: 100%;
+        margin: auto;
+        @include contentScroll-x;
+    }
+    .receipt__content {
+        min-width: 85rem;
+        background-color: $color-white;
+        padding: 2rem 2.5rem;
+    }
+    .receipt__heading {
+        &--main{
+        background-color: rgb(22, 195, 30);
+        font-weight: 600;
+        padding: .2rem 0;
+        }
+        &--text{
+        font-size: 1.2rem;
+        margin-bottom: 0rem;
+        letter-spacing: .4px;
+        }
+    }
+    .receipt__id-box{
+        display: flex;
+        width: 100%;
+    }
+    .receipt__info--title {
+        font-size: 1.8rem;
+        font-style: italic;
+        font-family: sans;
+        background-color: rgb(100, 203, 118);
+        display: inline-block;
+        padding: 0rem 3rem;
+    }
+    .receipt__id{
+        margin-left: auto;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .receipt-id,
+    .receipt-date {
+        font-weight: bold;
+    }
+    
+    // p.receipt__info--date{
+    //     font-size: 1.2rem;
+    // }
+   
+    .receipt__info{
+        text-transform: capitalize;
+
+    }
+    .depositor,
+    .depositor-address,
+    .deposit-amount,
+    .deposit-purpose {
+        border-bottom: 1px solid $color-black;
+        display: block;
+        font-weight: bold;
+        text-align: center;
+    }
+ 
+    .deposit-amount-figure {
+        background-color: rgb(100, 203, 118);
+        padding: 0 1rem;
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    .receipt__foot-note {
+        font-style: italic;
+        font-family: sans;
+        font-weight: bolder;
+        font-size: 120%;
+    }
+    .receipt__table--heading {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+ 
+}
