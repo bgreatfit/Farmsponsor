@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Sponsor;
+use App\Models\Sponsor;
+use App\Models\Farm;
 use Illuminate\Http\Request;
 
 class SponsorController extends Controller
@@ -14,18 +15,12 @@ class SponsorController extends Controller
      */
     public function index()
     {
-        $data['farms'] = Farms::all();
-        return view('pages.farmlist');
+
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function sponsor(Farm $farm)
     {
-        //
+        return $this->request;
     }
 
     /**

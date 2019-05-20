@@ -16,6 +16,7 @@ class CreateFarmsTable extends Migration
         Schema::create('farms', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('slug');
             $table->integer('user_id');
             $table->string('ip_address');
             $table->dateTime('start_date');
@@ -23,6 +24,7 @@ class CreateFarmsTable extends Migration
             $table->integer('units');
             $table->integer('returns');
             $table->string('avatar');
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

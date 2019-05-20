@@ -8,11 +8,11 @@
             <div class="row">
                 <div class="col-12 col-md-12">
                     <div class="farmcycle-content">
-    
+
                         <div class="farmcycle__ruler my-5">
                             <hr>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-md-6 col-12 text-center">
                                 <div class="farmcycle__image-box">
@@ -30,22 +30,22 @@
                                 <div class="row">
                                     <div class="col-md-12 col-12">
                                         <div class="farmcycle__information">
-                                            <h2 class="farmcycle__cycle-title mb-4">20th Farm cycle</h2>
+                                            <h2 class="farmcycle__cycle-title mb-4">{{$farm->name}}</h2>
                                             <p class="farmcycle__units mb-4">
-                                                Number Of Units Available: <span class="farmcycle__span">5000</span>
+                                                Number Of Units Available: <span class="farmcycle__span">{{$farm->units}}</span>
                                             </p>
                                             <p class="farmcycle__date mb-4">
-                                                Window Duration: <span class="farmcycle__span">29th May 2019 - 16th June 2019</span>
+                                                Window Duration: <span class="farmcycle__span">{{$farm->start_date->format('jS F')}} to {{$farm->due_date->format('jS F')}}</span>
                                             </p>
-                                            <p class="farmcycle__interest mb-4">Farmcycle Interest: <span class="farmcycle__span">15%</span></p>
-                                          
+                                            <p class="farmcycle__interest mb-4">Farmcycle Interest: <span class="farmcycle__span">{{$farm->returns}}%</span></p>
+
                                             <div class="row mb-4">
                                                 <div class="col-12 col-md-6">
                                                     <a href="#" data-toggle="modal" data-target="#sponsor-farmcycle" role="button" class="farmcycle__cta form-control btn btn-lg btn-success">Sponsor Now</a>
                                                 </div>
                                                 <div class="col-12 col-md-6">
                                                     <div class="btn-box py-3 py-md-0">
-                                                     <a href="{{asset('dashboard/farmlist')}}" class=" btn form-control btn-lg btn-info ml-auto">back</a>
+                                                     <a href="{{route('farms.all')}}" class=" btn form-control btn-lg btn-info ml-auto">back</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -54,7 +54,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="farmcycle__ruler my-5">
                             <hr>
                         </div>
@@ -71,20 +71,20 @@
                                         </div>
                                         <div class="modal-body">
                                             <p class="sponsor-farmcycle__form--text mb-3 text-center">How many units would you like to sponsor?</p>
-                                            <form action="" class="sponsor-farmcycle__form">
+                                            <form action="{{route('farms.sponsor', $farm->slug)}}" method="POST" class="sponsor-farmcycle__form">
                                                 @csrf
                                                 <div class="form-group mt-3">
-                                                    <input type="number" name="sponsor-unit" id="sponsor-unit" 
-                                                    class="form-control sponsor-farmcycle__form--input {{ $errors->has('sponsor-unit') ? ' is-invalid' : '' }}">
-                                                    <label for="sponsor-unit" class="sponsor-farmcycle__form--label">
+                                                    <input type="number" name="unit" id="unit"
+                                                    class="form-control sponsor-farmcycle__form--input {{ $errors->has('unit') ? ' is-invalid' : '' }}">
+                                                    <label for="unit" class="sponsor-farmcycle__form--label">
                                                         <small>a unit is N100,000 </small>
                                                     </label>
-                                                    @if ($errors->has('sponsor-unit'))
+                                                    @if ($errors->has('unit'))
                                                         <span class="invalid-feedback" role="alert">
-                                                            <strong>{{ $errors->first('sponsor-unit') }}</strong>
+                                                            <strong>{{ $errors->first('unit') }}</strong>
                                                         </span>
                                                     @endif
-                                                    
+
                                                 </div>
                                                 <div class="form-group">
                                                     <button type="button" class="btn btn-secondary sponsor-farmcycle__btn btn-lg mr-3" data-dismiss="modal">Close</button>
@@ -96,11 +96,11 @@
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
         </div>
-                
+
     </div>
 @endsection

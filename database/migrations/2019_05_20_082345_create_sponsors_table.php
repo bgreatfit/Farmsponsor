@@ -15,6 +15,13 @@ class CreateSponsorsTable extends Migration
     {
         Schema::create('sponsors', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('user_id');
+            $table->integer('farm_id');
+            $table->integer('units');
+            $table->string('ip_address');
+            $table->string('status')->default(0);
+            $table->string('approve_user_id')->nullable();
+            $table->string('approve_ip_address')->nullable();
             $table->timestamps();
         });
     }

@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Farm;
 use Auth;
+use App\Models\Farm;
+use App\Models\Sponsor;
 use Illuminate\Http\Request;
 
 class FarmController extends Controller
@@ -21,9 +22,8 @@ class FarmController extends Controller
      */
     public function index()
     {
-        $data = [];
-        // $data['farms'] = Farms::all();
-        return view('pages.farmlist', $data);
+        $data['farms'] = $this->farm->all();
+        return view('pages.farms.index', $data);
     }
 
     /**
@@ -46,25 +46,29 @@ class FarmController extends Controller
     {
         $rules = [
             'name' => 'string | required',
-            'start_date' => 'string | required',
-            'due_date' => 'string | required',
+            'start_date' => 'date | required',
+            'due_date' => 'date | required',
             'units' => 'integer | required',
             'returns' => 'integer | required',
+            'avatar' => 'image | required'
         ];
 
         $this->validate($this->request, $rules);
         // Image Upload
         $image = $this->request->file('avatar');
         $imageName = str_slug($this->request->name) . '.' . time() . '.' . $image->getClientOriginalExtension();
-        // $request->avatarobject->storeAs('public/farms', $imageName);
+        $this->request->avatar->storeAs('public/farms', $imageName);
 
         $dataToStore = $this->request->except('_token');
         $dataToStore['user_id'] = Auth::id();
         $dataToStore['ip_address'] = request()->ip();
         $dataToStore['avatar'] = $imageName;
+        $dataToStore['slug'] = str_slug($this->request->name);
+
 
         $this->farm->create($dataToStore);
-        return redirect('/');
+        $this->request->session()->flash('success', 'Farm Cycle Created');
+        return redirect()->route('farms.all');
     }
 
     /**
@@ -73,9 +77,38 @@ class FarmController extends Controller
      * @param  \App\Farms  $farms
      * @return \Illuminate\Http\Response
      */
-    public function show(Farms $farms)
+    public function show(Farm $farm)
     {
-        //
+        $data['farm'] = $farm;
+        return view('pages.farms.show', $data);
+    }
+
+
+    public function sponsor(Farm $farm)
+    {
+        $this->validate($this->request, [
+            'unit' => 'string | required'
+        ]);
+
+        if(! $this->isUnitsAvailable($farm->units, $this->request->unit)){
+            $this->request->session()->flash('error', 'Your units exceeds remaining farm unit');
+            return back();
+        }
+
+        $sponsor = new Sponsor;
+        $sponsor->farm_id = $farm->id;
+        $sponsor->units = $this->request->unit;
+        $sponsor->ip_address = request()->ip();
+        $sponsor->user_id = Auth::id();
+        $sponsor->save();
+
+        $this->request->session()->flash('success', 'Farm Sponsored');
+        return redirect()->route('farms.all');
+    }
+
+    public function isUnitsAvailable($farmUnitsRemaining, $unitsNeeded)
+    {
+        return $unitsNeeded <= $farmUnitsRemaining ? true : false;
     }
 
     /**

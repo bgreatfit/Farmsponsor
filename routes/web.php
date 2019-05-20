@@ -35,6 +35,8 @@ Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 Route::get('/farmlist', 'FarmController@index')->name('farms.all');
 Route::get('/farmlist/create', 'FarmController@create')->name('farms.create');
 Route::post('/farmlist/create', 'FarmController@store')->name('farms.store');
+Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
+Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor');
 
 // Route::get('/farmlist', 'FarmsController@index');
 

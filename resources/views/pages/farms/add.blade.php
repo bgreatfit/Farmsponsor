@@ -32,7 +32,7 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="cycle-title" class="add-cycle__input--label">Cycle start date:</label>
-                                    <input type="datetime-local" id="start-date" name="start_date" class="add-cycle__input form-control {{ $errors->has('start_date') ? ' is-invalid' : '' }}" placeholder="Enter cycle start date">
+                                    <input type="date" id="start-date" name="start_date" class="add-cycle__input form-control {{ $errors->has('start_date') ? ' is-invalid' : '' }}" placeholder="Enter cycle start date">
                                     @if ($errors->has('start_date'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('start_date') }}</strong>
@@ -43,7 +43,7 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="cycle-title" class="add-cycle__input--label">Cycle due date:</label>
-                                    <input type="datetime-local" id="due-date" name="due_date" class="add-cycle__input form-control {{ $errors->has('due_date') ? ' is-invalid' : '' }}" placeholder="Enter cycle due date">
+                                    <input type="date" id="due-date" name="due_date" class="add-cycle__input form-control {{ $errors->has('due_date') ? ' is-invalid' : '' }}" placeholder="Enter cycle due date">
                                     @if ($errors->has('due_date'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('due_date') }}</strong>
