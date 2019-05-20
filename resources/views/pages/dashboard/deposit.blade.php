@@ -77,10 +77,24 @@
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
                                             <label for="depositAmount" class="deposit-method-bank__amount--label">Username: </label>
-                                            <input type="text" class="form-control deposit-method-bank__username {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" id="username">
+                                            <input type="text" class="form-control deposit-method-bank__username {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" id="username" placeholder="Enter Username">
                                             @if ($errors->has('username'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('username') }}</strong>
+                                            </span>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="form-group mb-4">
+                                            <label for="depositAddress" class="deposit-method-bank__address--label">Addresss: </label>
+                                            <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address">
+                                            @if ($errors->has('address'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('address') }}</strong>
                                             </span>
                                             @endif
                                         </div>

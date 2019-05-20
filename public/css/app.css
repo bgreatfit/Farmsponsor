@@ -12492,6 +12492,89 @@ a[class*=__btn]:visited {
   max-height: 5rem;
 }
 
+.container-fluid .background {
+  width: 85rem;
+  height: 100%;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.container-fluid .receipt__content {
+  min-width: 85rem;
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+}
+
+.container-fluid .receipt__heading--main {
+  background-color: #16c31e;
+  font-weight: 600;
+  padding: 0.2rem 0;
+}
+
+.container-fluid .receipt__heading--text {
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
+  letter-spacing: 0.4px;
+}
+
+.container-fluid .receipt__id-box {
+  display: flex;
+  width: 100%;
+}
+
+.container-fluid .receipt__info--title {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-family: sans;
+  background-color: #64cb76;
+  display: inline-block;
+  padding: 0rem 3rem;
+}
+
+.container-fluid .receipt__id {
+  margin-left: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container-fluid .receipt-id,
+.container-fluid .receipt-date {
+  font-weight: bold;
+}
+
+.container-fluid .receipt__info {
+  text-transform: capitalize;
+}
+
+.container-fluid .depositor,
+.container-fluid .depositor-address,
+.container-fluid .deposit-amount,
+.container-fluid .deposit-purpose {
+  border-bottom: 1px solid #000000;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-fluid .deposit-amount-figure {
+  background-color: #64cb76;
+  padding: 0 1rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.container-fluid .receipt__foot-note {
+  font-style: italic;
+  font-family: sans;
+  font-weight: bolder;
+  font-size: 120%;
+}
+
+.container-fluid .receipt__table--heading {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
 .sponsors-list__content {
   overflow-x: auto;
 }
