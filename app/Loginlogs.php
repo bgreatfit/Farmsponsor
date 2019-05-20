@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class StandingOrder extends Model
+class Loginlogs extends Model
 {
     //
 }

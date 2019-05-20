@@ -40,6 +40,7 @@ class NewsletterController extends Controller
             Session::flash('error',  Newsletter::getLastError());
             return redirect()->back();
         }
+        
         // return Newsletter::getLastError();
     }
 
