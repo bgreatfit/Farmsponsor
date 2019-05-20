@@ -39,9 +39,9 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
-    public function bank()
+    public function cyclesSponsored()
     {
-        return $this->hasOne('App\Models\Bank');
+        return $this->hasMany('App\Models\Sponsor');
     }
 
     public function state()

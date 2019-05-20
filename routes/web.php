@@ -22,13 +22,12 @@ Route::get('/admin', 'PagesController@admin');
 Route::get('/admin/farmingcycle', 'PagesController@farmingcycle');
 Route::get('/admin/sponsors-list', 'PagesController@sponsorsList');
 Route::get('/admin/edit-farming-cycle', 'PagesController@editFarmingCycle');
-
 // Dashboard Routes
+Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
 Route::get('/dashboard/deposit', 'PagesController@deposit');
 Route::get('/dashboard/transaction-details', 'PagesController@transactionDetails');
 Route::get('/dashboard/farmcycle', 'PagesController@farmcycle');
 Route::get('/dashboard/payout', 'PagesController@payout');
-Route::get('/dashboard/transactions', 'PagesController@transactions');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 
 // Farm Routes
@@ -47,8 +46,9 @@ Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('new
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
 Route::post('/profile', 'UserController@update')->name('user.store');
 
-
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+// Transactions Route
+Route::get('/transactions', 'TransactionsController@index')->name('transactions.all');
+Route::get('/transactions/history', 'TransactionsController@history')->name('transactions.history');
 
 // Auth Routes
 Auth::routes(['verify' => true]);

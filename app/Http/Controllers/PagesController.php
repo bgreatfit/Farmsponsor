@@ -22,7 +22,7 @@ class PagesController extends Controller
         return view('pages.gallery');
     }
     public function dashboard() {
-        return view('pages.dashboard');
+        return view('pages.dashboard.index');
     }
     public function about() {
         return view('pages.about');
@@ -35,9 +35,7 @@ class PagesController extends Controller
     }
 
     // Dashboard views
-    public function dashboardFarms(){
-        return view('pages.dashboard.farmlist');
-    }
+
     public function transactions(){
         return view('pages.dashboard.transactions');
     }
@@ -61,9 +59,7 @@ class PagesController extends Controller
     public function sponsorsList(){
         return view('pages.admin.sponsors-list');
     }
-    public function createFarmingCycle(){
-        return view('pages.admin.create-farming-cycle');
-    }
+
     public function editFarmingCycle(){
         return view('pages.admin.edit-farming-cycle');
     }
