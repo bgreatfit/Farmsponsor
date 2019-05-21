@@ -45,19 +45,6 @@
                         </a>
                     </div>
                 </div>
-                {{-- <div class="col-md-4 col-12">
-                    <div class="vestbank-bank-card-section">
-                        <div class="vestbank__btn-wrap">
-                            <div class="vestbank__card vestbank__standing-order">
-                                <div class="vestbank__card--image-box">
-                                    <img src="{{asset('img/vestbank-4.svg')}}" alt="files order" class="vestbank__card--image">    
-                                </div> 
-                                <p class="vestbank__card--text">Standing Order:</p>
-                                <p class="vestbank__card--order">You have no standing order</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
 
             {{-- <div class="vestbank-deposit-popup" id="vestbank-deposit-method">
@@ -97,7 +84,7 @@
                 </div>
             </div> --}}
 
-            <div class="vestbank-deposit__content">
+            {{-- <div class="vestbank-deposit__content">
                 <div class="modal fade" id="vestbank-deposit" tabindex="-1" role="dialog" aria-labelledby="vestbank-depositTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -152,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="vestbank-withdraw__content">
                 <div class="modal fade" id="vestbank-withdraw" tabindex="-1" role="dialog" aria-labelledby="vestbankwithdrawTitle" aria-hidden="true">

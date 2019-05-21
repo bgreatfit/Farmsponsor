@@ -117,12 +117,11 @@
 
                                 <div class="row mb-4">
                                     <div class="col-12 col-md-6">
-                                        <a href="#" class="deposit-method-bank__btn btn btn-primary form-control">Submit</a>
+                                        <button type="submit" class="deposit-method-bank__btn btn btn-primary form-control">Submit</button>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="btn-box py-3 py-md-0">
                                             <button type="button" class="btn btn-secondary form-control deposit-method-bank__btn btn-lg" data-dismiss="modal">Close</button>
-                                            {{-- <a href="{{asset('dashboard/de')}}" class=" btn form-control btn-lg btn-info ml-auto">back</a> --}}
                                         </div>
                                     </div>
                                 </div>
