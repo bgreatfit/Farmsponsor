@@ -16,4 +16,9 @@ class Sponsor extends Model
     {
         return $this->status ? true : false;
     }
+
+    public function user()
+    {
+        return $this->hasMany('App\User');
+    }
 }

@@ -21,7 +21,7 @@
                     <div class="col-md-6 col-12 col-sm-6">
                         <div class="transaction__card">
                             <h3 class="card__heading mt-2">Farms Sponsored</h3>
-                            <p class="card__text">0</p>
+                            <p class="card__text">{{Auth::user()->cyclesSponsored->count()}}</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 col-sm-6">
