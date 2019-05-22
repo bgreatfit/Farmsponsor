@@ -12,10 +12,10 @@
 */
 
 Route::get('/', 'PagesController@index');
-Route::get('/about', 'PagesController@about');
-Route::get('/faq', 'PagesController@faq');
-Route::get('/gallery', 'PagesController@gallery');
-Route::get('/about', 'PagesController@about');
+Route::get('about', 'PagesController@about')->name('about');
+Route::get('/farmlist', 'FarmController@index')->name('farmlist');
+Route::get('faq', 'PagesController@faq')->name('faq');
+Route::get('gallery', 'PagesController@gallery')->name('gallery');
 
 // Admin Routes
 Route::get('/admin', 'PagesController@admin');
@@ -35,7 +35,7 @@ Route::get('/dashboard/payout', 'PagesController@payout');
 Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 
 // Farm Routes
-Route::get('/farmlist', 'FarmController@index')->name('farms.all');
+Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
 Route::get('/farmlist/create', 'FarmController@create')->name('farms.create');
 Route::post('/farmlist/create', 'FarmController@store')->name('farms.store');
 Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');

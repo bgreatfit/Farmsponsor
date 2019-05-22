@@ -26,6 +26,12 @@ class FarmController extends Controller
         return view('pages.farms.index', $data);
     }
 
+    public function dashboardFarmlist()
+    {
+        $data['farms'] = $this->farm->all();
+        return view('pages.farms.dashboardfarmlist', $data);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
