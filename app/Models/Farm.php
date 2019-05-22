@@ -24,4 +24,8 @@ class Farm extends Model
     {
         return 'slug';
     }
+    public function getAvatarAttribute($value)
+    {
+        return 'storage/farms/' . $value;
+    }
 }

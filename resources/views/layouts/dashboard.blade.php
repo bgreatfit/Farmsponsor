@@ -8,16 +8,20 @@
     <title>Farm Sponsor | Dashboard </title>
     {{-- fonts --}}
     <link rel="stylesheet" type="text/css" media="screen" href="/css/icon-font.css">
+    <link rel="canonical" href="url()->current()" />
 
     <link href="https://fonts.googleapis.com/css?family=Mukta|Questrial|Exo" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
-    
 </head>
+
 <body>
     <div class="dashboard__pageWrap">
     @include('includes.dash-panel')
@@ -27,6 +31,7 @@
             <div class="row">
                 @include('includes.dash-navi')
                 <div class="col-md-9 col-sm-9 col-12">
+                    @include('includes.alerts')
                     @yield('content')
                 </div>
             </div>

@@ -16,7 +16,7 @@
                         <div class="row">
                             <div class="col-md-6 col-12 text-center">
                                 <div class="farmcycle__image-box">
-                                    <img src="{{asset('img/Chick-2.jpg')}}" alt="photo of farm cycle" class="farmcycle__image">
+                                    <img src="{{asset($farm->avatar)}}" alt="photo of farm cycle" class="farmcycle__image">
                                 </div>
                             </div>
                             <div class="col-md-6 col-12">

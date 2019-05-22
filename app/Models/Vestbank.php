@@ -14,4 +14,9 @@ class Vestbank extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    public function getbalanceForDisplayAttribute()
+    {
+        return number_format($this->balance);
+    }
 }

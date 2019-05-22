@@ -8,14 +8,14 @@
                     <div class="vestbank__balance-wrap">
                         <div class="vestbank__balance">
                             <p class="vestbank__balance--label">Vestbank Balance</p>
-                            <h3 class="vestbank__balance--text"> 0.00 NGN </h3>
+                            <h3 class="vestbank__balance--text"> {{Auth::user()->vestbank->balanceforDisplay}} NGN </h3>
                             <div class="vestbank__logo">
                                 <div class="vestbank__logo--wrap">
                                     <img src="{{asset('img/vestbank-logo.png')}}" alt="Vestbank logo" class="vestbank__logo--image">
                                 </div>
                             </div>
                         </div>
-                      
+
                     </div>
                 </div>
             </div>
@@ -26,8 +26,8 @@
                         <a href="{{url('/dashboard/deposit')}}" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__deposit">
                                 <div class="vestbank__card--image-box">
-                                <img src="{{asset('img/vestbank-03.svg')}}" alt="Credit card" class="vestbank__card--image">    
-                                </div> 
+                                <img src="{{asset('img/vestbank-03.svg')}}" alt="Credit card" class="vestbank__card--image">
+                                </div>
                                 <p class="vestbank__card--text">Add Money</p>
                             </div>
                         </a>
@@ -38,8 +38,8 @@
                         <a href="#" data-toggle="modal" data-target="#vestbank-withdraw" role="button" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__withdraw">
                                 <div class="vestbank__card--image-box">
-                                    <img src="{{asset('img/vestbank-01.svg')}}" alt="Safe illustration" class="vestbank__card--image">    
-                                </div> 
+                                    <img src="{{asset('img/vestbank-01.svg')}}" alt="Safe illustration" class="vestbank__card--image">
+                                </div>
                                 <p class="vestbank__card--text">Withdraw Money</p>
                             </div>
                         </a>
@@ -50,8 +50,8 @@
                         <div class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__standing-order">
                                 <div class="vestbank__card--image-box">
-                                    <img src="{{asset('img/vestbank-4.svg')}}" alt="files order" class="vestbank__card--image">    
-                                </div> 
+                                    <img src="{{asset('img/vestbank-4.svg')}}" alt="files order" class="vestbank__card--image">
+                                </div>
                                 <p class="vestbank__card--text">Standing Order:</p>
                                 <p class="vestbank__card--order">You have no standing order</p>
                             </div>
@@ -77,7 +77,7 @@
                                     <p class="vestbank-deposit__form--text mb-3">How much do would you like to deposit?</p>
                                     <div class="form-group mt-3">
                                         <label for="vestbank-deposit__amount" class="vestbank-deposit__amount--label">
-                                        <input type="number" name="amount" id="vestbank-deposit__amount" 
+                                        <input type="number" name="amount" id="vestbank-deposit__amount"
                                         class="form-control vestbank-deposit__form--input {{ $errors->has('amount') ? ' is-invalid' : '' }} ">
                                         @if ($errors->has('amount'))
                                             <span class="invalid-feedback" role="alert">
@@ -112,7 +112,7 @@
                                     @csrf
                                     <p class="vestbank-deposit__form--text mb-3 text-center">How much do would you like to deposit?</p>
                                     <div class="form-group mt-3">
-                                        <input type="number" name="amount" id="vestbank-deposit__amount" 
+                                        <input type="number" name="amount" id="vestbank-deposit__amount"
                                             class="form-control vestbank-deposit__form--input {{ $errors->has('amount') ? ' is-invalid' : '' }} ">
                                             @if ($errors->has('amount'))
                                                 <span class="invalid-feedback" role="alert">
@@ -136,7 +136,7 @@
                                     <div class="form-group">
                                         <label for="input-standing-order">Enter amount: </label>
                                         <input type="number" id="input-standing-order" name="standing-order-amount" class="form-control {{ $errors->has('standing-order') ? ' is-invalid' : '' }}">
-                                
+
                                         @if ($errors->has('standing-order-amount'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('standing-order-amount') }}</strong>
@@ -189,7 +189,7 @@
                                         </label>
                                     </div>
                                     <div class="form-group mt-3">
-                                        <input type="number" name="withdrawAmount" id="vestbank-withdraw__amount" 
+                                        <input type="number" name="withdrawAmount" id="vestbank-withdraw__amount"
                                         class="form-control vestbank-withdraw__form--input {{ $errors->has('withdrawAmount') ? ' is-invalid' : '' }}">
                                         <label for="vestbank-withdraw__amount" class="vestbank-withdraw__amount--label">
                                             <small>Specify amount</small>
@@ -199,7 +199,7 @@
                                                 <strong>{{ $errors->first('withdrawAmount') }}</strong>
                                             </span>
                                         @endif
-                                        
+
                                     </div>
                                     <div class="form-group">
                                         <button type="button" class="btn btn-secondary vestbankwithdraw__btn btn-lg" data-dismiss="modal">Close</button>
