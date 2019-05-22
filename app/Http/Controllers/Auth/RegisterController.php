@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-use App\Models\Bank;
+use App\Models\Vestbank;
+use App\Models\Registerlogs;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -72,12 +73,15 @@ class RegisterController extends Controller
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-
         ]);
 
         if($user){
-            Bank::create([
+            Vestbank::create([
                 'user_id' => $user->id
+            ]);
+            Registerlogs::create([
+                'user_id' => $user->id,
+                'ip_address' => request()->ip()
             ]);
         };
 

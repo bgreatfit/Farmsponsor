@@ -96,7 +96,9 @@ class FarmController extends Controller
             'unit' => 'string | required'
         ]);
 
-        if(! $this->isUnitsAvailable($farm->units, $this->request->unit)){
+        $this->hasFundsToSponsorRequestedUnits($this->request);
+
+        if(! $this->isRequestedUnitsAvailable($farm->units, $this->request->unit)){
             $this->request->session()->flash('error', 'Your units exceeds remaining farm unit');
             return back();
         }
@@ -112,7 +114,7 @@ class FarmController extends Controller
         return redirect()->route('farms.all');
     }
 
-    public function isUnitsAvailable($farmUnitsRemaining, $unitsNeeded)
+    public function isRequestedsUnitsAvailable($farmUnitsRemaining, $unitsNeeded)
     {
         return $unitsNeeded <= $farmUnitsRemaining ? true : false;
     }

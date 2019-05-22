@@ -23,7 +23,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <h1 class="farmcycle__heading mb-5">
-                                            farm cycle Information
+                                            Farm Cycle Information
                                         </h1>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <p class="sponsor-farmcycle__form--text mb-3 text-center">How many units would you like to sponsor?</p>
-                                            <form action="{{route('farms.sponsor', $farm->slug)}}" method="POST" class="sponsor-farmcycle__form">
+                                        <form action="{{route('farms.sponsor', $farm->slug)}}" method="POST"                               class="sponsor-farmcycle__form">
                                                 @csrf
                                                 <div class="form-group mt-3">
                                                     <input type="number" name="unit" id="unit"

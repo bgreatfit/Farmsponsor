@@ -14,9 +14,4 @@ class Vestbank extends Model
     {
         return $this->belongsTo('App\User');
     }
-
-    public function standingOrder()
-    {
-        return $this->belongsTo('App\Models\StandingOrder');
-    }
 }
