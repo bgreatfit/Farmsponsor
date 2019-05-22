@@ -12009,6 +12009,22 @@ a[class*=__btn]:visited {
   text-transform: capitalize;
 }
 
+.dashboard__navi-wrap .dashboard__navi--toggle {
+  display: none;
+}
+
+.dashboard__navi-wrap .dashboard__navi--menu {
+  visibility: hidden;
+  opacity: 0;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
 .dashboard__navi-wrap .dashboard__navi {
   list-style-type: none;
 }
@@ -12045,6 +12061,12 @@ a[class*=__btn]:visited {
 
   .section-dashboard {
     padding-left: 0;
+  }
+
+  .dashboard__navi--menu {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -12326,6 +12348,17 @@ a[class*=__btn]:visited {
 .transaction__card .card__heading {
   margin: 0;
   font-weight: 300;
+}
+
+.transaction__card .transaction-history:link,
+.transaction__card .transaction-history:visited {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.transaction__card .transaction-history:hover {
+  color: #cccccc;
 }
 
 .transaction__card .card__text {

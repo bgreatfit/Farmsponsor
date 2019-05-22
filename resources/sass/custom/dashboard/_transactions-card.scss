@@ -9,6 +9,16 @@
         margin: 0;
         font-weight: 300;
     }
+    
+    .transaction-history:link,
+    .transaction-history:visited {
+        display: block;
+        color: $color-white;
+        text-decoration: none;
+    }
+    .transaction-history:hover {
+        color: darken( $color-white, 20%);
+    }
     .card__text{
         font-size: 4rem;
         margin: 0;

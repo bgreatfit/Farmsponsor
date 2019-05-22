@@ -17,5 +17,7 @@
                 </form>
             </li>
         </ul>
+        <input type="checkbox" class="dashboard__navi--toggle" id="dashboard__navi--toggle">
+        <label for="dashboard__navi--toggle" class="dashboard__navi--menu"></label>
     </div>
 </div>
