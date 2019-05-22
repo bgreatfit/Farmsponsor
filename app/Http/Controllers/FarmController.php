@@ -123,6 +123,7 @@ class FarmController extends Controller
         $sponsor->user_id = Auth::id();
         $sponsor->save();
 
+        $farm->decrement('units', $this->request->unit);
         $this->request->session()->flash('success', 'Farm Sponsored');
         return redirect()->route('farms.all');
     }

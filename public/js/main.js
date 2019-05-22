@@ -16,7 +16,6 @@ function showAmount() {
     } else {
         console.log("other is checked");
         // amount.style.display = "block";
-
     }
 
     // switch (choice){
@@ -40,4 +39,4 @@ function showAmount() {
 
 }
 
-other.addEventListener('click', showAmount);
+// other.addEventListener('click', showAmount);

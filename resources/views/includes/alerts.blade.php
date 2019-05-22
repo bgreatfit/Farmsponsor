@@ -1,20 +1,17 @@
 @if (session('success'))
-<script>
-    toastr.success(" {{session('success')}} ")
-</script>
+    <script>
+        toastr.success(" {{session('success')}} ")
+    </script>
 @endif
 @if (session('error'))
-<script>
-    toastr.error(" {{session('error')}} ")
-</script>
+    <script>
+        toastr.error(" {{session('error')}} ")
+    </script>
 @endif
 
 @if (session('info'))
-<script>
-    toastr.info(" {{session('info')}} ")
-</script>
+    <script>
+        toastr.info(" {{session('info')}} ")
+    </script>
 @endif
 
-<script>
-    toastr.error(" Test ")
-</script>
