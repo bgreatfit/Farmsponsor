@@ -15,9 +15,7 @@ class PagesController extends Controller
     public function register() {
         return view('pages.register');
     }
-    public function farmList() {
-        return view('pages.farmlist');
-    }
+
     public function gallery() {
         return view('pages.gallery');
     }
