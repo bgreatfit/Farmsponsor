@@ -1,19 +1,10 @@
 .dashboard__navi-wrap {
+    position: relative;
 
     .dashboard__navi--toggle {
         display: none;
     }
-    .dashboard__navi--menu {
-        visibility: hidden;
-        opacity: 0;
-        width: 4rem;
-        height: 4rem;
-        border: 2px solid black;
-        border-radius: 4px;
-        position: absolute;
-        right: 0;
-        top: 5px;
-    }
+    
     .dashboard__navi{
         list-style-type: none;
         &--item{
@@ -49,11 +40,7 @@
     .section-dashboard {
         padding-left: 0;
     }
-    .dashboard__navi--menu {
-        display: inline-block;
-        visibility: visible;
-        opacity: 1;
-    }
+  
     // .dashboard__navi--toggle:checked ~ .dashboard__navi {
     //     display: none;
     // }
@@ -61,5 +48,15 @@
 @media screen and (max-width:575px) {
     .dashboard__navi--item{
         text-align: center;
+    }
+    .dashboard__navi--menu {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        border: 2px solid black;
+        border-radius: 4px;
+        position: absolute;
+        right: 0;
+        top: 5px;
     }
 }

@@ -12009,20 +12009,12 @@ a[class*=__btn]:visited {
   text-transform: capitalize;
 }
 
-.dashboard__navi-wrap .dashboard__navi--toggle {
-  display: none;
+.dashboard__navi-wrap {
+  position: relative;
 }
 
-.dashboard__navi-wrap .dashboard__navi--menu {
-  visibility: hidden;
-  opacity: 0;
-  width: 4rem;
-  height: 4rem;
-  border: 2px solid black;
-  border-radius: 4px;
-  position: absolute;
-  right: 0;
-  top: 5px;
+.dashboard__navi-wrap .dashboard__navi--toggle {
+  display: none;
 }
 
 .dashboard__navi-wrap .dashboard__navi {
@@ -12062,17 +12054,22 @@ a[class*=__btn]:visited {
   .section-dashboard {
     padding-left: 0;
   }
-
-  .dashboard__navi--menu {
-    display: inline-block;
-    visibility: visible;
-    opacity: 1;
-  }
 }
 
 @media screen and (max-width: 575px) {
   .dashboard__navi--item {
     text-align: center;
+  }
+
+  .dashboard__navi--menu {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+    top: 5px;
   }
 }
 
