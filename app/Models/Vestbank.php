@@ -15,8 +15,8 @@ class Vestbank extends Model
         return $this->belongsTo('App\User');
     }
 
-    public function standingOrder()
+    public function getbalanceForDisplayAttribute()
     {
-        return $this->belongsTo('App\Models\StandingOrder');
+        return number_format($this->balance);
     }
 }

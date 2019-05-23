@@ -16,14 +16,14 @@
                         <div class="row">
                             <div class="col-md-6 col-12 text-center">
                                 <div class="farmcycle__image-box">
-                                    <img src="{{asset('img/Chick-2.jpg')}}" alt="photo of farm cycle" class="farmcycle__image">
+                                    <img src="{{asset($farm->avatar)}}" alt="photo of farm cycle" class="farmcycle__image">
                                 </div>
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="row">
                                     <div class="col">
                                         <h1 class="farmcycle__heading mb-5">
-                                            farm cycle Information
+                                            Farm Cycle Information
                                         </h1>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <p class="sponsor-farmcycle__form--text mb-3 text-center">How many units would you like to sponsor?</p>
-                                            <form action="{{route('farms.sponsor', $farm->slug)}}" method="POST" class="sponsor-farmcycle__form">
+                                        <form action="{{route('farms.sponsor', $farm->slug)}}" method="POST"                               class="sponsor-farmcycle__form">
                                                 @csrf
                                                 <div class="form-group mt-3">
                                                     <input type="number" name="unit" id="unit"

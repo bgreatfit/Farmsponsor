@@ -11,10 +11,14 @@ class FarmController extends Controller
 {
     protected $request;
     protected $farm;
+    protected $amountPerUnit;
+
     public function __construct(Request $request, Farm $farm){
         $this->request = $request;
         $this->farm = $farm;
+        $this->amountPerUnit = 100000;
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -23,12 +27,20 @@ class FarmController extends Controller
     public function index()
     {
         $data['farms'] = $this->farm->all();
+        if($data['farms']->count() == 0){
+            $this->equest->session()->flash('info', 'No farm list available');
+            return back();
+        };
         return view('pages.farms.index', $data);
     }
 
     public function dashboardFarmlist()
     {
         $data['farms'] = $this->farm->all();
+        if($data['farms']->count() == 0){
+            $this->request->session()->flash('info', 'No farm list available');
+            return back();
+         }
         return view('pages.farms.dashboardfarmlist', $data);
     }
 
@@ -67,10 +79,10 @@ class FarmController extends Controller
 
         $dataToStore = $this->request->except('_token');
         $dataToStore['user_id'] = Auth::id();
+        $dataToStore['start_unit'] = $this->request->units;
         $dataToStore['ip_address'] = request()->ip();
         $dataToStore['avatar'] = $imageName;
         $dataToStore['slug'] = str_slug($this->request->name);
-
 
         $this->farm->create($dataToStore);
         $this->request->session()->flash('success', 'Farm Cycle Created');
@@ -93,11 +105,16 @@ class FarmController extends Controller
     public function sponsor(Farm $farm)
     {
         $this->validate($this->request, [
-            'unit' => 'string | required'
+            'unit' => 'integer | required'
         ]);
 
-        if(! $this->isUnitsAvailable($farm->units, $this->request->unit)){
-            $this->request->session()->flash('error', 'Your units exceeds remaining farm unit');
+        if(! $this->hasFundsToSponsorRequestedUnits($this->request->unit)){
+            $this->request->session()->flash('error', 'You do not have enough funds to sponsor farm cycle, please deposit some funds into your ves bank and try again.');
+            return back();
+        }
+
+        if(! $this->isRequestedUnitsAvailable($farm->units, $this->request->unit)){
+            $this->request->session()->flash('error', 'Your requested units exceeds remaining farm unit');
             return back();
         }
 
@@ -108,11 +125,29 @@ class FarmController extends Controller
         $sponsor->user_id = Auth::id();
         $sponsor->save();
 
+        $this->deductSponsoredAmountFromUserVestBank($this->request->unit);
+        $this->reduceRemainingFarmUnits($farm, $this->request);
+
         $this->request->session()->flash('success', 'Farm Sponsored');
         return redirect()->route('farms.all');
     }
 
-    public function isUnitsAvailable($farmUnitsRemaining, $unitsNeeded)
+    private function deductSponsoredAmountFromUserVestBank($units){
+        $value = $units * $this->amountPerUnit;
+        return Auth::user()->vestbank->decrement('balance', $value);
+    }
+
+    private function reduceRemainingFarmUnits(Farm $farm, Request $request){
+        return $farm->decrement('units', $request->unit);
+    }
+
+     public function hasFundsToSponsorRequestedUnits($farmUnitsRequested)
+    {
+        $amountNeededToSponsor = $farmUnitsRequested * $this->amountPerUnit;
+        return Auth::user()->vestbank->balance >= $amountNeededToSponsor ? true : false;
+    }
+
+    public function isRequestedUnitsAvailable($farmUnitsRemaining, $unitsNeeded)
     {
         return $unitsNeeded <= $farmUnitsRemaining ? true : false;
     }

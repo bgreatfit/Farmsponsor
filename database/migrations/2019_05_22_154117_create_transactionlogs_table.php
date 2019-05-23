@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLoginlogsTable extends Migration
+class CreateTransactionlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateLoginlogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('loginlogs', function (Blueprint $table) {
-           $table->bigIncrements('id');
-            $table->string('email');
-            $table->string('ip_address');
-            $table->string('status');
+        Schema::create('transactionlogs', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->timestamps();
         });
     }
@@ -29,6 +26,6 @@ class CreateLoginlogsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('loginlogs');
+        Schema::dropIfExists('transactionlogs');
     }
 }

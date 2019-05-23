@@ -13,7 +13,6 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('about', 'PagesController@about')->name('about');
-Route::get('/farmlist', 'FarmController@index')->name('farmlist');
 Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('gallery', 'PagesController@gallery')->name('gallery');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('vestbanking');
@@ -31,16 +30,21 @@ Route::get('/admin/receipt', 'PagesController@receipt');
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
 Route::get('/dashboard/deposit', 'PagesController@deposit');
 Route::get('/dashboard/transaction-details', 'PagesController@transactionDetails');
-Route::get('/dashboard/farmcycle', 'PagesController@farmcycle');
-Route::get('/dashboard/payout', 'PagesController@payout');
-Route::get('/dashboard/vestbanking', 'PagesController@vestbanking');
 
 // Farm Routes
+Route::get('/farmlist', 'FarmController@index')->name('farmlist');
 Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
 Route::get('/farmlist/create', 'FarmController@create')->name('farms.create');
 Route::post('/farmlist/create', 'FarmController@store')->name('farms.store');
 Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
 Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor');
+
+
+// VestBanking Routes
+Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
+
+// Payout Routes
+Route::get('/dashboard/payout', 'PayoutController@inde x');
 
 // Route::get('/farmlist', 'FarmsController@index');
 
@@ -58,6 +62,4 @@ Route::get('/transactions/history', 'TransactionsController@history')->name('tra
 // Auth Routes
 Auth::routes(['verify' => true]);
 
-// VestBanking Routes
-Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
 

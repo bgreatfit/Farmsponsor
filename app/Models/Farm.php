@@ -9,7 +9,7 @@ class Farm extends Model
 {
     protected $fillable = [
         'name','start_date','due_date','units','returns','avatar',
-        'user_id', 'ip_address', 'slug'
+        'user_id', 'ip_address', 'slug', 'start_unit'
     ];
 
     protected $dates = [
@@ -23,5 +23,9 @@ class Farm extends Model
     public function getRouteKeyName()
     {
         return 'slug';
+    }
+    public function getAvatarAttribute($value)
+    {
+        return 'storage/farms/' . $value;
     }
 }
