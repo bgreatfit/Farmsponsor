@@ -18,8 +18,6 @@
         crossorigin="anonymous">
 
         <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
-        {{-- <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/style.css')}}"> --}}
-
         <style>
           .header > .jumbotron{
             background-image: linear-gradient(to right bottom,
@@ -31,16 +29,15 @@
           }
         </style>
 
-        {{-- @include('includes.scripts') --}}
     </head>
     <body>
         @include('includes.navi')
+        
         @include('includes.alerts')
 
         @yield('content')
 
         @include('includes.footer')
-
 
     </body>
     @include('includes.scripts')

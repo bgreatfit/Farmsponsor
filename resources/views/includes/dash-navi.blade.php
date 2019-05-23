@@ -1,6 +1,8 @@
 
 <div class="col-md-3 col-sm-3 col-12">
     <div class="dashboard__navi-wrap">
+        <label for="dashboard__navi--toggle" class="dashboard__navi--menu"></label>
+        <input type="checkbox" class="dashboard__navi--toggle" id="dashboard__navi--toggle">
         <ul class="dashboard__navi">
             <li class="dashboard__navi--item"><a href="{{route('dashboard')}}" class="dashboard__navi--link">Dashboard</a></li>
             <li class="dashboard__navi--item"><a href="{{route('farms.all')}}" class="dashboard__navi--link">Farm List</a></li>
@@ -17,7 +19,6 @@
                 </form>
             </li>
         </ul>
-        <input type="checkbox" class="dashboard__navi--toggle" id="dashboard__navi--toggle">
-        <label for="dashboard__navi--toggle" class="dashboard__navi--menu"></label>
+       
     </div>
 </div>

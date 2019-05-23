@@ -16,6 +16,7 @@ Route::get('about', 'PagesController@about')->name('about');
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
 Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('gallery', 'PagesController@gallery')->name('gallery');
+Route::get('vestbanking', 'PagesController@vestbanking')->name('vestbanking');
 
 // Admin Routes
 Route::get('/admin', 'PagesController@admin');
