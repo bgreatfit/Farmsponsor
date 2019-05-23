@@ -11960,6 +11960,10 @@ a[class*=__btn]:visited {
   font-size: 1.3rem;
 }
 
+.intro-section__image-box {
+  max-width: 57.1rem;
+}
+
 .dashboard__content-wrap {
   padding-bottom: 8rem;
 }
