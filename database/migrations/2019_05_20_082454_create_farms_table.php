@@ -21,6 +21,7 @@ class CreateFarmsTable extends Migration
             $table->string('ip_address');
             $table->dateTime('start_date');
             $table->dateTime('due_date');
+            $table->integer('start_unit');
             $table->integer('units');
             $table->integer('returns');
             $table->string('avatar');

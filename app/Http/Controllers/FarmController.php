@@ -18,6 +18,7 @@ class FarmController extends Controller
         $this->farm = $farm;
         $this->amountPerUnit = 100000;
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -78,6 +79,7 @@ class FarmController extends Controller
 
         $dataToStore = $this->request->except('_token');
         $dataToStore['user_id'] = Auth::id();
+        $dataToStore['start_unit'] = $this->request->units;
         $dataToStore['ip_address'] = request()->ip();
         $dataToStore['avatar'] = $imageName;
         $dataToStore['slug'] = str_slug($this->request->name);
@@ -103,7 +105,7 @@ class FarmController extends Controller
     public function sponsor(Farm $farm)
     {
         $this->validate($this->request, [
-            'unit' => 'string | required'
+            'unit' => 'integer | required'
         ]);
 
         if(! $this->hasFundsToSponsorRequestedUnits($this->request->unit)){
@@ -123,9 +125,20 @@ class FarmController extends Controller
         $sponsor->user_id = Auth::id();
         $sponsor->save();
 
-        $farm->decrement('units', $this->request->unit);
+        $this->deductSponsoredAmountFromUserVestBank($this->request->unit);
+        $this->reduceRemainingFarmUnits($farm, $this->request);
+
         $this->request->session()->flash('success', 'Farm Sponsored');
         return redirect()->route('farms.all');
+    }
+
+    private function deductSponsoredAmountFromUserVestBank($units){
+        $value = $units * $this->amountPerUnit;
+        return Auth::user()->vestbank->decrement('balance', $value);
+    }
+
+    private function reduceRemainingFarmUnits(Farm $farm, Request $request){
+        return $farm->decrement('units', $request->unit);
     }
 
      public function hasFundsToSponsorRequestedUnits($farmUnitsRequested)
