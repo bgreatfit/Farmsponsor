@@ -37,7 +37,7 @@
 
         @yield('content')
 
-        {{-- @include('includes.footer') --}}
+        @include('includes.footer')
 
     </body>
     @include('includes.scripts')
