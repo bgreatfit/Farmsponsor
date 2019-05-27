@@ -28,4 +28,9 @@ class Farm extends Model
     {
         return 'storage/farms/' . $value;
     }
+
+    public function status()
+    {
+        return $this->belongsTo('App\Models\Status');
+    }
 }

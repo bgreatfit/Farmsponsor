@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTransactionlogsTable extends Migration
+class CreateStatusesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateTransactionlogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('transactionlogs', function (Blueprint $table) {
+        Schema::create('statuses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id')->unsigned();
-            $table->integer('status_id')->default(1);
-            $table->integer('transactionable_id')->unsigned();
-            $table->string('transactionable_type');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreateTransactionlogsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transactionlogs');
+        Schema::dropIfExists('statuses');
     }
 }

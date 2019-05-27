@@ -18,6 +18,7 @@ class CreateFarmsTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->integer('user_id');
+            $table->integer('status_id')->default(1);
             $table->string('ip_address');
             $table->dateTime('start_date');
             $table->dateTime('due_date');
@@ -25,7 +26,6 @@ class CreateFarmsTable extends Migration
             $table->integer('units');
             $table->integer('returns');
             $table->string('avatar');
-            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }
