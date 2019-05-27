@@ -53,4 +53,9 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasOne('App\Models\Vestbank');
     }
+
+     public function transactionlog()
+    {
+        return $this->morphMany(Transactionlogs::class, 'transactionable');
+    }
 }
