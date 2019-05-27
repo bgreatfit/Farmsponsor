@@ -63,6 +63,10 @@ Route::get('/transactions/history', 'TransactionsController@history')->name('tra
 Auth::routes(['verify' => true]);
 
 
-Route::get('namespace',function(){
-    echo \App\Models\Status::all()->random(1)[0]->id;
+Route::get('date',function(){
+    $faker = Faker\Factory::create('de_DE');
+    return [
+        'name' => $faker->bank,
+        'account_number' => $faker->bankAccountNumber,
+    ];
 });
