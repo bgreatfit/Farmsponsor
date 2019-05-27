@@ -1,15 +1,14 @@
 @extends('layouts.basic')
 
 @section('content')
-<section class="farmlist">
+<section class="farmlist my-5 py-5">
     <div class="container">
         <div class="row">
             @foreach($farms as $farm)
                 <div class="col-md-4 col-12 col-sm-8 mx-sm-auto mx-auto">
                     <div class="content-wrap card-box">
                         <div class="farms__display card">
-                            <a href="#" class="card__info"> <img src="{{asset($farm->avatar)}}" alt="hen image"
-                                    class="farms__image card-img"></a>
+                            <a href="{{route('farms.show', $farm->slug)}}" class="card__info"> <img src="{{asset($farm->avatar)}}" alt="hen image" class="farms__image card-img"></a>
                             <h3 class="heading__tertiary card__heading text-center">{{$farm->name}} </h3>
                             <div class="farms__text ">
                                 <p>Farm cycle: {{$farm->start_date->format('jS F')}} to {{$farm->due_date->format('jS F')}}</p>

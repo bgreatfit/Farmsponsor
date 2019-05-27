@@ -21,7 +21,7 @@
                         <a class="nav-link navi__item--link" href="{{route('farmlist')}}">Farm List</a>
                     </li>
                     <li class="nav-item navi__item">
-                        <a class="nav-link navi__item--link" href="#">VestBanking</a>
+                        <a class="nav-link navi__item--link" href="{{route('aboutVestbanking')}}">VestBanking</a>
                     </li>
                     <li class="nav-item navi__item">
                         <a class="nav-link navi__item--link" href="https://farmsponsor.com.ng/latest-updates" target="_blank">Blog</a>

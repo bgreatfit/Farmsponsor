@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
-<section class="farmlist">
+<section class="farmlist py-5 my-5">
     <div class="container">
         <div class="row">
             @foreach($farms as $farm)

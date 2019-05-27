@@ -19,6 +19,9 @@ class PagesController extends Controller
     public function gallery() {
         return view('pages.gallery');
     }
+    public function vestbanking() {
+        return view('pages.vestbanking');
+    }
     public function dashboard() {
         return view('pages.dashboard.index');
     }

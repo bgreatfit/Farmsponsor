@@ -1,0 +1,57 @@
+.vestbanking-page-heading {
+    font-size: 5.3rem;
+    font-weight: 600;
+}
+.intro-section{
+    margin-top: 12rem;
+    &__content {
+        padding: 1rem 10rem;
+    }
+    &__heading {
+        margin-bottom: 4rem;
+    }
+   
+    &__text {
+        margin-bottom: 10rem;
+        letter-spacing: 1px;
+    }
+    &__image{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10rem;
+        mar
+        &-box{
+            max-width: 57.1rem;
+        }
+    }
+    
+}
+.how-it-works-section {
+    .how-it-works {
+        &__heading {
+            margin-bottom: 13rem;
+        }
+        &__picture{
+            display: flex;
+            flex-direction: column;
+        }
+       
+        &__img-box {
+            max-width: 31.5rem;
+        }
+       
+        
+    }
+}
+
+.the-process-section {
+    .how-it-works__picture {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .arrow1 {
+            margin: auto;
+            max-width: 15rem;
+        }
+    }
+}
