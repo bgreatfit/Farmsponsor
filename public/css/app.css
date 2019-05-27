@@ -11975,7 +11975,7 @@ a[class*=__btn]:visited {
 }
 
 .intro-section {
-  margin-top: 12rem;
+  margin-top: 11.7rem;
 }
 
 .intro-section__content {
@@ -11983,7 +11983,7 @@ a[class*=__btn]:visited {
 }
 
 .intro-section__heading {
-  margin-bottom: 4rem;
+  margin-bottom: 2.75rem;
 }
 
 .intro-section__text {
@@ -12083,6 +12083,10 @@ mar .intro-section__image-box {
 }
 
 @media screen and (max-width: 768px) {
+  .intro-section .intro-section__content {
+    padding: 1rem 4rem;
+  }
+
   .the-process-section .the-process__content {
     margin-bottom: 8rem;
   }
@@ -12100,9 +12104,70 @@ mar .intro-section__image-box {
     margin-bottom: 2rem;
   }
 
+  .the-process-section .the-process__text-content {
+    max-width: 45.5rem;
+  }
+
   .the-process-section .the-process__text--heading {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 55%;
+  }
+
+  .vestbanking-page-heading {
+    font-size: 3.3rem;
+    font-weight: bold;
+    color: #000000;
+  }
+}
+
+.footer {
+  background-color: #293737;
+  padding: 8rem 3rem 2rem 3rem;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin-bottom: 3rem;
+}
+
+.footer__text--newsletter-heading {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__text--newsletter-text {
+  font-size: 1.3rem;
+}
+
+.footer__item {
+  margin-bottom: 2rem;
+}
+
+.footer__links:link,
+.footer__links:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__links:hover {
+  color: #cccccc;
+}
+
+.footer__input {
+  min-height: 3.1rem;
+  font-size: 1.3rem;
+}
+
+.footer__copyright--text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .dashboard__content-wrap {
