@@ -15,6 +15,11 @@ class Vestbank extends Model
         return $this->belongsTo('App\User');
     }
 
+    public function transactionlog()
+    {
+        return $this->morphMany(Transactionlogs::class, 'commentable');
+    }
+
     public function getbalanceForDisplayAttribute()
     {
         return number_format($this->balance);

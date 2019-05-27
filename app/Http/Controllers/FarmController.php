@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Auth;
 use App\Models\Farm;
 use App\Models\Sponsor;
+use App\Models\Transactionlogs;
 use Illuminate\Http\Request;
 
 class FarmController extends Controller
@@ -125,14 +126,15 @@ class FarmController extends Controller
         $sponsor->user_id = Auth::id();
         $sponsor->save();
 
-        $this->deductSponsoredAmountFromUserVestBank($this->request->unit);
+        $this->deductSponsoredAmountFromUsersVestBank($this->request->unit);
         $this->reduceRemainingFarmUnits($farm, $this->request);
+        $this->logTransaction($sponsor);
 
         $this->request->session()->flash('success', 'Farm Sponsored');
         return redirect()->route('farms.all');
     }
 
-    private function deductSponsoredAmountFromUserVestBank($units){
+    private function deductSponsoredAmountFromUsersVestBank($units){
         $value = $units * $this->amountPerUnit;
         return Auth::user()->vestbank->decrement('balance', $value);
     }
@@ -141,10 +143,19 @@ class FarmController extends Controller
         return $farm->decrement('units', $request->unit);
     }
 
-     public function hasFundsToSponsorRequestedUnits($farmUnitsRequested)
+    public function hasFundsToSponsorRequestedUnits($farmUnitsRequested)
     {
         $amountNeededToSponsor = $farmUnitsRequested * $this->amountPerUnit;
         return Auth::user()->vestbank->balance >= $amountNeededToSponsor ? true : false;
+    }
+
+    public function logTransaction(Sponsor $sponsor)
+    {
+       return  Transactionlogs::create([
+            'user_id' => Auth::id(),
+            'transactionable_id' => $sponsor->id,
+            'transactionable_type' => 'App\Models\Sponsor',
+        ]);
     }
 
     public function isRequestedUnitsAvailable($farmUnitsRemaining, $unitsNeeded)

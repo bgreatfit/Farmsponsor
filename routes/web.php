@@ -44,7 +44,7 @@ Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor')
 Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
 
 // Payout Routes
-Route::get('/dashboard/payout', 'PayoutController@inde x');
+Route::get('/dashboard/payout', 'PayoutController@index');
 
 // Route::get('/farmlist', 'FarmsController@index');
 
@@ -63,3 +63,6 @@ Route::get('/transactions/history', 'TransactionsController@history')->name('tra
 Auth::routes(['verify' => true]);
 
 
+Route::get('namespace',function(){
+    echo \App\Models\Status::all()->random(1)[0]->id;
+});
