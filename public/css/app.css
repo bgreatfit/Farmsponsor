@@ -11963,6 +11963,15 @@ a[class*=__btn]:visited {
 .vestbanking-page-heading {
   font-size: 5.3rem;
   font-weight: 600;
+  color: #000000;
+}
+
+.intro-section,
+.how-it-works-section,
+.the-process-section {
+  font-family: Roboto;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .intro-section {
@@ -11979,7 +11988,8 @@ a[class*=__btn]:visited {
 
 .intro-section__text {
   margin-bottom: 10rem;
-  letter-spacing: 1px;
+  line-height: 2.8rem;
+  letter-spacing: 0.5px;
 }
 
 .intro-section__image {
@@ -11992,6 +12002,10 @@ mar .intro-section__image-box {
   max-width: 57.1rem;
 }
 
+.how-it-works-section {
+  margin-bottom: 5rem;
+}
+
 .how-it-works-section .how-it-works__heading {
   margin-bottom: 13rem;
 }
@@ -11999,21 +12013,96 @@ mar .intro-section__image-box {
 .how-it-works-section .how-it-works__picture {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.how-it-works-section .how-it-works__img--heading {
+  color: #279B37;
+  font-weight: bold;
+  font-size: 110%;
 }
 
 .how-it-works-section .how-it-works__img-box {
+  margin-bottom: 5rem;
+}
+
+.how-it-works-section .how-it-works__img--text {
+  margin-bottom: 5rem;
+}
+
+.how-it-works-section .how-it-works__img-box,
+.how-it-works-section .how-it-works__text {
   max-width: 31.5rem;
 }
 
-.the-process-section .how-it-works__picture {
+.the-process-section .the-process__content {
+  margin-bottom: 20rem;
+}
+
+.the-process-section .the-process__heading {
+  margin-bottom: 9rem;
+}
+
+.the-process-section .the-process__text {
+  display: flex;
+  justify-content: center;
+}
+
+.the-process-section .the-process__text-content {
+  max-width: 31.5rem;
+}
+
+.the-process-section .the-process__text--heading {
+  color: #279B37;
+  font-size: 110%;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.the-process-section .the-process__picture {
   width: 100%;
   height: 100%;
   display: flex;
 }
 
-.the-process-section .how-it-works__picture .arrow1 {
+.the-process-section .the-process__picture .arrow1 {
   margin: auto;
   max-width: 15rem;
+}
+
+.the-process-section .the-process__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.the-process-section .the-process__img-box {
+  max-width: 31.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .the-process-section .the-process__content {
+    margin-bottom: 8rem;
+  }
+
+  .the-process-section .the-process__content-row2 {
+    flex-direction: column-reverse;
+  }
+
+  .the-process-section .the-process__picture .the-process__arrow-box {
+    margin-bottom: 5rem;
+  }
+
+  .the-process-section .the-process__text {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .the-process-section .the-process__text--heading {
+    text-align: center;
+  }
 }
 
 .dashboard__content-wrap {
