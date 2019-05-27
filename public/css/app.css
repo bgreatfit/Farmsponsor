@@ -11450,56 +11450,71 @@ a.text-dark:focus {
   text-decoration: none;
 }
 
-.page-footer {
-  background-color: #333;
-  padding: 10rem 0;
-  font-size: 1.4rem;
+.footer {
+  background-color: #293737;
+  padding: 8rem 3rem 2rem 3rem;
 }
 
-.page-footer .footer__logo-box {
-  text-align: center;
-  margin-bottom: 5rem;
+.footer__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin-bottom: 3rem;
 }
 
-.page-footer .footer__logo-box .logo {
-  width: 25rem;
-  height: auto;
+.footer__text--newsletter-heading {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.page-footer .row.foot {
-  width: 100%;
+.footer__text--newsletter-text {
+  font-size: 1.3rem;
 }
 
-.page-footer .footer__navigation {
-  text-align: center;
+.footer__item {
+  margin-bottom: 2rem;
 }
 
-.page-footer .footer__list {
-  list-style: none;
-}
-
-.page-footer .footer__item {
-  display: inline-block;
-}
-
-.page-footer .footer__link:link,
-.page-footer .footer__link:visited {
-  text-decoration: none;
+.footer__links:link,
+.footer__links:visited {
   color: #ffffff;
-  padding: 1rem;
-  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.page-footer .footer__link:hover {
-  color: #777;
+.footer__links:hover {
+  color: #cccccc;
 }
 
-.page-footer .footer__text-box {
-  padding: 0 2rem;
+.footer__icon {
+  font-size: 2.3rem;
+  transition: scale 0.3s ease-in-out;
 }
 
-.page-footer .footer__text-box .footer__copyright {
-  color: #777;
+.footer__icon--fb {
+  color: #2367dd;
+}
+
+.footer__icon--twt {
+  color: #5cb1ff;
+}
+
+.footer__icon--ig {
+  color: #ba5b63;
+}
+
+.footer__icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer__input {
+  min-height: 3.1rem;
+  font-size: 1.3rem;
+}
+
+.footer__copyright--text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  line-height: 16px;
 }
 
 /* NAVIGATION */
@@ -11975,7 +11990,7 @@ a[class*=__btn]:visited {
 }
 
 .intro-section {
-  margin-top: 12rem;
+  margin-top: 11.7rem;
 }
 
 .intro-section__content {
@@ -11983,7 +11998,7 @@ a[class*=__btn]:visited {
 }
 
 .intro-section__heading {
-  margin-bottom: 4rem;
+  margin-bottom: 2.75rem;
 }
 
 .intro-section__text {
@@ -12083,6 +12098,10 @@ mar .intro-section__image-box {
 }
 
 @media screen and (max-width: 768px) {
+  .intro-section .intro-section__content {
+    padding: 1rem 4rem;
+  }
+
   .the-process-section .the-process__content {
     margin-bottom: 8rem;
   }
@@ -12100,8 +12119,24 @@ mar .intro-section__image-box {
     margin-bottom: 2rem;
   }
 
+  .the-process-section .the-process__text-content {
+    max-width: 45.5rem;
+  }
+
   .the-process-section .the-process__text--heading {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 55%;
+  }
+
+  .vestbanking-page-heading {
+    font-size: 3.3rem;
+    font-weight: bold;
+    color: #000000;
   }
 }
 

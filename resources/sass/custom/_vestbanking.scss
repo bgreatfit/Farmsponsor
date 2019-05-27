@@ -11,13 +11,13 @@
     color: rgba(0, 0, 0, 0.7);
 }
 .intro-section{
-    margin-top: 12rem;
+    margin-top: 11.7rem;
 
     &__content {
         padding: 1rem 10rem;
     }
     &__heading {
-        margin-bottom: 4rem;
+        margin-bottom: 2.75rem;
     }
    
     &__text {
@@ -109,6 +109,11 @@
 }
 
 @media screen and (max-width:768px ) {
+    .intro-section{
+        .intro-section__content {
+            padding: 1rem 4rem;
+        }
+    }
     .the-process-section{
         .the-process{
             &__content {
@@ -124,6 +129,9 @@
             }
             
             &__text {
+                &-content{
+                    max-width: 45.5rem;
+                }
                 text-align: center;
                 margin-bottom: 2rem;
 
@@ -134,4 +142,15 @@
         }
     }
 
+}
+
+@media screen and (max-width:540px) {
+    html {
+        font-size: 55%;
+    }
+    .vestbanking-page-heading {
+        font-size: 3.3rem;
+        font-weight: bold;
+        color: $color-black;
+    }
 }
