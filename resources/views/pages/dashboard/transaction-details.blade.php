@@ -11,22 +11,22 @@
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Transaction</th>
+                  <th scope="col">Transaction ID</th>
+                  <th scope="col">Transaction type</th>
                   <th scope="col">Date</th>
-                  <th scope="col">Description</th>
                   <th scope="col">Amount(NGN)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
+                  <td><p class="transaction__table--id">11231</p></td>
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="transaction-details__item">
                       Sponsored Farm
                     </a>
                   </td>
                   <td> 17/05/2019 11:39</td>
-                  <td>20th Farm cycle</td>
                   <td>N400000</td>
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="btn btn-primary form-control transaction-details__item">
@@ -37,13 +37,14 @@
       
                 <tr>
                   <th scope="row">2</th>
+                  <td><p class="transaction__table--id">11231</p></td>
+
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="transaction-details__item">
                       Deposit
                   </a>
                   </td>
                   <td> 19/05/2019 13:39</td>
-                  <td>Bank Transfer</td>
                   <td>N100000</td>
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="btn btn-primary form-control transaction-details__item">
@@ -54,13 +55,14 @@
       
                 <tr>
                   <th scope="row">3</th>
+                  <td><p class="transaction__table--id">11231</p></td>
+
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="transaction-details__item">
-                      Vestbank Deposit
+                      Deposit
                   </a>
                   </td>
                   <td> 23/05/2019 15:08</td>
-                  <td>Bank Transfer</td>
                   <td>N300000</td>
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="btn btn-primary form-control transaction-details__item">
@@ -71,13 +73,14 @@
                 
                 <tr>
                   <th scope="row">4</th>
+                  <td><p class="transaction__table--id">11231</p></td>
+
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="transaction-details__item">
-                      Vestbank Withdraw
+                      Withdraw
                     </a>
                   </td>
                   <td> 30/05/2019 18:49</td>
-                  <td>Bank Transfer</td>
                   <td>N310000</td>
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="btn btn-primary form-control transaction-details__item">
@@ -88,13 +91,14 @@
       
                 <tr>
                   <th scope="row">5</th>
+                  <td><p class="transaction__table--id">11231</p></td>
+
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="transaction-details__item">
                       Payout
                   </a>
                   </td>
                   <td> 13/07/2019 12:21</td>
-                  <td>19th Farm cycle</td>
                   <td>N230000</td>
                   <td>
                     <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="btn btn-primary form-control transaction-details__item">
@@ -125,17 +129,14 @@
                         <div class="modal-body">
                           <h2 class="transaction-info__heading">Transaction Information</h2>
                           <p class="transaction-info__text">Transaction Id: <span class="transaction-info__text--content">127761</span></p>
-                          <p class="transaction-info__text">Trasaction Type: <span class="transaction-info__text--content">Deposit</span></p>
+                          <p class="transaction-info__text">Trasaction Type: <span class="transaction-info__text--content">Sponsored farm</span></p>
+                          <p class="transaction-info__text">Description: <span class="transaction-info__text--content">20th cycle sponsorship</span></p>
                           <p class="transaction-info__text">Amount: <span class="transaction-info__text--content">N700000</span></p>
                           <p class="transaction-info__text">Date: <span class="transaction-info__text--content">23/5/2019</span></p>
                         
                             <div class="row">
-                                {{-- <div class="col-12 col-md-6">
-                                    <button type="submit" class="btn btn-primary form-control btn-lg add-cycle__btn">Save changes</button>
-                                </div> --}}
                                 <div class="col-12 offset-md-6 text-right col-md-6">
                                   <button type="button" class="btn btn-secondary vestbank-deposit__btn btn-lg" data-dismiss="modal">Back</button>
-                                  {{-- <a href="{{asset('/admin/farmingcycle')}}" class="btn btn-secondary form-control btn-lg add-cycle__btn">Back</a> --}}
                                 </div>
                             </div>
                         </div>

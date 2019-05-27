@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <div class="intro-section__content text-center">
-                                <h1 class="intro-section__heading">What is Vestbanking</h1>
+                                <h1 class="intro-section__heading vestbanking-page-heading">What is Vestbanking</h1>
                                 <p class="intro-section__text">
                                     To further our commitment to delivering superior value all year round, 
                                     sponsors can now vest their funds with Farmsponsor! With VestBanking: Sponsors 
@@ -20,18 +20,242 @@
                                         can be used to sponsor local farmers in Farmsponsor sponsoring windows.
                                 </p>
                                 <div class="intro-section__image">
-                                    <div class="intro-section__image-box">
-                                        <img src="{{asset('img/group 8.png')}}" alt="Illustration of money dropping credit card" class="intro-section__img">
+                                    <div class="intro-section__image">
+                                        <div class="how-it-work__image-box">
+                                            <img src="{{asset('img/group 8.png')}}" alt="Illustration of money dropping credit card" class="intro-section__img">
+                                        </div>
                                     </div>
                                 </div>
-                               
                             </div>
                         </div>
                     </div>
-                   
+                </div>
+                
+                <div class="how-it-works-section">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <h1 class="how-it-works__heading vestbanking-page-heading text-center">How does it Work?</h1>
+                            <div class="how-it-works__content">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="how-it-works__picture">
+                                            <div class="how-it-works__img-box ">
+                                                <img src="{{asset('img/Group 6.png')}}" alt="Two men standing in front of a white board" class="how-it-works__img">
+                                            </div>
+                                            <div class="how-it-works__text text-center">
+                                                <h2 class="how-it-works__img--heading ">Express Interest</h2>
+                                                <p class="how-it-works__img--text">Indicate interest to fund your Vestbanking account.</p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="how-it-works__picture">
+                                            <div class="how-it-works__img-box">
+                                                <img src="{{asset('img/Group 7.png')}}" alt="Two men standing in front of a white board" class="how-it-works__img">
+                                            </div>
+                                            <div class="how-it-works__text text2 text-center">
+                                                <h2 class="how-it-works__img--heading">Express Interest</h2>
+                                                <p class="how-it-works__img--text">
+                                                    Send us the details of how you want your Vestbanking 
+                                                    balance to be used to sponsor local farmers in Farmsponsor sponsoring windows/cycles.
+                                                </p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="the-process-section">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <h1 class="the-process__heading text-center">The Process</h1>
+                            <div class="the-process__content">
+                                <div class="row">
+                                    <div class="col-12 col-md-5">
+                                        <div class="the-process__text">
+                                            <h2 class="the-process__heading ">Balance</h2>
+                                            <p class="the-process__text">
+                                                Once part of your Vestbanking balance is used in a 
+                                                sponsoring window, your remaining balance is frozen from 
+                                                sponsorship until the payout date of the window you 
+                                                participated in. However, the remaining balance keeps 
+                                                growing according to the Vestbanking interest rate within 
+                                                the period of the cycle you participated in.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                                        <div class="how-it-works__picture">
+                                            <div class="how-it-work__img-box arrow1">
+                                                <img src="{{asset('img/Vector.png')}}" alt="Two men standing in front of a white board" class="how-it-works__img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5">
+                                        <div class="the-process__arrow">
+                                            <div class="the-process__arrow-box">
+                                                <img src="{{asset('img/Group 5.png')}}" alt="A wallet icon and a user icon" class="how-it-works__img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div class="the-process__content">
+                                <div class="row">
+                                    <div class="col-12 col-md-5">
+                                        <div class="the-process__arrow">
+                                            <div class="the-process__arrow-box">
+                                                <img src="{{asset('img/Group 5.png')}}" alt="A wallet icon and a user icon" class="how-it-works__img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-2">
+                                        <div class="how-it-works__picture">
+                                            <div class="how-it-work__img-box arrow1">
+                                                <img src="{{asset('img/Vector.png')}}" alt="Two men standing in front of a white board" class="how-it-works__img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-5">
+                                        <div class="the-process__text">
+                                            <h2 class="the-process__heading ">Withdraw</h2>
+                                            <p class="the-process__text">
+                                                Withdrawals can be made anytime.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="footer__content">
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <p class="footer__text">Help</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">Contact</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">Terms and Conditions</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">Pricy Policy</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer__content">
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <p class="footer__text">Company</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">About</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer__content">
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <p class="footer__text">Social</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer__content mt-md-4">
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <p class="footer__text">Newsletter</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <p class="footer__item">Be the first to know about our current news.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <form action="" class="footer__form">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="text" class="footer__input"><button type="submit" class="footer__links">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 @endsection

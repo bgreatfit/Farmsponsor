@@ -11960,8 +11960,60 @@ a[class*=__btn]:visited {
   font-size: 1.3rem;
 }
 
-.intro-section__image-box {
+.vestbanking-page-heading {
+  font-size: 5.3rem;
+  font-weight: 600;
+}
+
+.intro-section {
+  margin-top: 12rem;
+}
+
+.intro-section__content {
+  padding: 1rem 10rem;
+}
+
+.intro-section__heading {
+  margin-bottom: 4rem;
+}
+
+.intro-section__text {
+  margin-bottom: 10rem;
+  letter-spacing: 1px;
+}
+
+.intro-section__image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+mar .intro-section__image-box {
   max-width: 57.1rem;
+}
+
+.how-it-works-section .how-it-works__heading {
+  margin-bottom: 13rem;
+}
+
+.how-it-works-section .how-it-works__picture {
+  display: flex;
+  flex-direction: column;
+}
+
+.how-it-works-section .how-it-works__img-box {
+  max-width: 31.5rem;
+}
+
+.the-process-section .how-it-works__picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.the-process-section .how-it-works__picture .arrow1 {
+  margin: auto;
+  max-width: 15rem;
 }
 
 .dashboard__content-wrap {

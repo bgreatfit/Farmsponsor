@@ -126,7 +126,7 @@
                                     </div>
                                 </div>
 
-                                <p class="deposit-method-bank__note"><b>Please complete transfer before submitting deposit form, your account will be creditted within 2hrs after confirmation.</b></p>
+                                <p class="deposit-method-bank__note"><b>Please complete transfer before submitting deposit form, your account will be creditted as soon as possible.</b></p>
 
                             </form>
                             
