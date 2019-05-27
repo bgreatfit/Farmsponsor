@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Models\Vestbank;
-use App\Models\Registerlogs;
+use App\Models\Bank;
+use App\Models\Registerlog;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -76,15 +77,34 @@ class RegisterController extends Controller
         ]);
 
         if($user){
-            Vestbank::create([
-                'user_id' => $user->id
-            ]);
-            Registerlogs::create([
-                'user_id' => $user->id,
-                'ip_address' => request()->ip()
-            ]);
+            $this->createVestBankAccountFor($user);
+            $this->createBankAccountDetailsFor($user);
+            $this->logRegistration($user);
         };
 
         return $user;
+    }
+
+    protected function createVestbankAccountFor(User $user)
+    {
+        Vestbank::create([
+            'user_id' => $user->id
+        ]);
+    }
+
+    protected function createBankAccountDetailsFor(User $user)
+    {
+        Bank::create([
+            'user_id' => $user->id,
+            'last_update' => \Carbon\Carbon::now(),
+        ]);
+    }
+
+    protected function logRegistration(User $user)
+    {
+         Registerlog::create([
+            'user_id' => $user->id,
+            'ip_address' => request()->ip()
+        ]);
     }
 }

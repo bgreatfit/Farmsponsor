@@ -16,6 +16,7 @@ class CreateTransactionlogsTable extends Migration
         Schema::create('transactionlogs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id')->unsigned();
+            $table->integer('transaction_id')->unsigned();
             $table->integer('status_id')->default(1);
             $table->integer('transactionable_id')->unsigned();
             $table->string('transactionable_type');

@@ -151,8 +151,16 @@ class FarmController extends Controller
 
     public function logTransaction(Sponsor $sponsor)
     {
+        // generates a 8digit transaction id for each transaction
+        // then tests if a transaction already exist with the token
+        // If it does, then it generates another transaction id
+        do{
+            $transactionId = Str::random(8);
+        }while(Transactionlogs::whereTransactionId($transactionId)->first() != NULL);
+
        return  Transactionlogs::create([
             'user_id' => Auth::id(),
+            'transaction_id' => $transactionId,
             'transactionable_id' => $sponsor->id,
             'transactionable_type' => 'App\Models\Sponsor',
         ]);
