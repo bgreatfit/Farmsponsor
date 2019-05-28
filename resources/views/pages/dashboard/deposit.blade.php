@@ -76,8 +76,8 @@
                                 <div class="row">
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
-                                            <label for="depositAmount" class="deposit-method-bank__amount--label">Username: </label>
-                                            <input type="text" class="form-control deposit-method-bank__username {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" id="username" placeholder="Enter Username">
+                                            <label for="depositAmount" class="deposit-method-bank__amount--label">Email: </label>
+                                            <input type="email" class="form-control deposit-method-bank__username {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" id="username" placeholder="Enter Username">
                                             @if ($errors->has('username'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('username') }}</strong>
