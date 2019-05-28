@@ -1,5 +1,7 @@
 <div class="col-md-3 col-sm-3 col-12">
         <div class="dashboard__navi-wrap">
+            <label for="dashboard__navi--toggle" class="dashboard__navi--menu text-center"> &#9776;</label>
+            <input type="checkbox" class="dashboard__navi--toggle" id="dashboard__navi--toggle">
             <ul class="dashboard__navi">
                 <li class="dashboard__navi--item"><a href="{{url('/admin/farmingcycle')}}" class="dashboard__navi--link">Farming Cycles</a></li>
                 {{-- <li class="dashboard__navi--item"><a href="{{url('/admin/transactions')}}" class="dashboard__navi--link">Transactions</a></li> --}}
