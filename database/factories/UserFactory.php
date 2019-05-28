@@ -19,8 +19,8 @@ $factory->define(User::class, function (Faker $faker) {
     return [
         'firstname' => $faker->firstname,
         'lastname' => $faker->lastname,
-        'username' => $faker->lastname,
-        'email' => $faker->userName,
+        'username' => $faker->userName,
+        'email' => $faker->email,
         'address' => $faker->address,
         'city' => $faker->city,
         'phone' => $faker->phoneNumber,

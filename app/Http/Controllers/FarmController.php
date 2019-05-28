@@ -33,7 +33,7 @@ class FarmController extends Controller
             $this->equest->session()->flash('info', 'No farm list available');
             return back();
         };
-        return view('pages.farms.index', $data);
+        return view('farm.index', $data);
     }
 
     public function dashboardFarmlist()
@@ -43,7 +43,7 @@ class FarmController extends Controller
             $this->request->session()->flash('info', 'No farm list available');
             return back();
          }
-        return view('pages.farms.dashboardfarmlist', $data);
+        return view('pages.dashboard.farm.index', $data);
     }
 
     /**
@@ -53,7 +53,7 @@ class FarmController extends Controller
      */
     public function create()
     {
-        return view('pages.farms.add');
+        return view('farm.add');
     }
 
     /**
@@ -100,7 +100,7 @@ class FarmController extends Controller
     public function show(Farm $farm)
     {
         $data['farm'] = $farm;
-        return view('pages.farms.show', $data);
+        return view('farm.show', $data);
     }
 
 
