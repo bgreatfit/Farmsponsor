@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use Auth;
 use App\Models\Farm;
 use App\Models\Sponsor;
-use App\Models\Transactionlogs;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Models\Transactionlogs;
 
 class FarmController extends Controller
 {
@@ -155,7 +156,7 @@ class FarmController extends Controller
         // then tests if a transaction already exist with the token
         // If it does, then it generates another transaction id
         do{
-            $transactionId = Str::random(8);
+            $transactionId = rand(10000000,99999999) . Str::random(2);
         }while(Transactionlogs::whereTransactionId($transactionId)->first() != NULL);
 
        return  Transactionlogs::create([

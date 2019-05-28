@@ -29,7 +29,6 @@ Route::get('/admin/receipt', 'PagesController@receipt');
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
 Route::get('/dashboard/deposit', 'PagesController@deposit');
-Route::get('/dashboard/transaction-details', 'PagesController@transactionDetails');
 
 // Farm Routes
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
@@ -62,11 +61,7 @@ Route::get('/transactions/history', 'TransactionsController@history')->name('tra
 // Auth Routes
 Auth::routes(['verify' => true]);
 
-
 Route::get('date',function(){
-    $faker = Faker\Factory::create('de_DE');
-    return [
-        'name' => $faker->bank,
-        'account_number' => $faker->bankAccountNumber,
-    ];
+
+   return \App\Models\Transactionlogs::whereUserId(Auth::id())->get();
 });

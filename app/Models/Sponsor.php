@@ -22,8 +22,8 @@ class Sponsor extends Model
         return $this->hasMany('App\User');
     }
 
-    public function transactionlog()
+    public function transactions()
     {
-        return $this->morphMany(Transactionlogs::class, 'commentable');
+        return $this->morphMany('App\Models\Transactionlogs', 'transactionable');
     }
 }
