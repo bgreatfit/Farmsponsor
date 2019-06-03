@@ -132,7 +132,7 @@ class FarmController extends Controller
         $this->logTransaction($sponsor);
 
         $this->request->session()->flash('success', 'Farm Sponsored');
-        return redirect()->route('farms.all');
+        return redirect()->back();
     }
 
     private function deductSponsoredAmountFromUsersVestBank($units){

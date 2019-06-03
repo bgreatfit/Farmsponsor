@@ -8,10 +8,11 @@ class VestbankController extends Controller
 {
     public function index()
     {
-        return view('pages.dashboard.vestbanking');
+        return view('pages.dashboard.vestbanking.index');
     }
 
-    public function vest(){
+    public function vest()
+    {
 
     }
 }
