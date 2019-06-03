@@ -10,7 +10,7 @@
                         <h1 class="deposit-method__heading text-center ">Choose deposit method</h1>
                         <ul class="list-group">
                             <li class="list-group-item deposit-method">
-                                <a href="#" data-toggle="modal" data-target="#deposit-method-bank" 
+                                <a href="#" data-toggle="modal" data-target="#deposit-method-bank"
                                     role="button" class="deposit-method__link">
                                         Bank Transfer
                                 </a>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="modal-body px-4">
                         <div class="deposit-method-bank__content py-4">
-                            <div class="deposit-method-bank__account">
+                            {{-- <div class="deposit-method-bank__account">
                                 <h3 class="deposit-method-bank__heading mb-4">Deposit Account</h3>
                                 <p class="deposit-method-bank__bank-info">Bank Name: First Bank Plc</p>
                                 <p class="deposit-method-bank__bank-info">Account Name: GLOBETROT FARMSPONSOR NIG LTD</p>
@@ -46,15 +46,15 @@
                             </div>
                             <div class="deposit-method-bank__ruler my-4 text-center">
                                 <hr>
-                            </div>
-                            <form action="" class="deposit-method-bank__form">
+                            </div> --}}
+                            <form action="{{route('vestbanking.deposit')}}" method="POST" class="deposit-method-bank__form">
                                 @csrf
                                 <h3 class="deposit-method-bank__heading mb-4">Depositor's Information</h3>
                                 <div class="form-row mb-4">
                                     <div class="form-group col-md-6">
                                         <label for="input__first-name">First name: </label>
                                         <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" name="firstname" placeholder="First name">
-                                    
+
                                         @if ($errors->has('firstname'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('firstname') }}</strong>
@@ -64,7 +64,7 @@
                                     <div class="form-group col-md-6">
                                         <label for="input__last-name">Last name: </label>
                                         <input type="text" class="form-control" {{ $errors->has('lastname') ? ' is-invalid' : '' }}" id="input__last-name" name="lastname" placeholder="Last name">
-                                    
+
                                         @if ($errors->has('lastname'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('lastname') }}</strong>
@@ -72,15 +72,15 @@
                                         @endif
                                     </div>
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
-                                            <label for="depositAmount" class="deposit-method-bank__amount--label">Email: </label>
-                                            <input type="email" class="form-control deposit-method-bank__username {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" id="username" placeholder="Enter Username">
-                                            @if ($errors->has('username'))
+                                            <label for="email" class="deposit-method-bank__amount--label">Email: </label>
+                                            <input type="email" id="email" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" id="email" placeholder="Enter Email">
+                                            @if ($errors->has('email'))
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('username') }}</strong>
+                                                <strong>{{ $errors->first('email') }}</strong>
                                             </span>
                                             @endif
                                         </div>
@@ -90,7 +90,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
-                                            <label for="depositAddress" class="deposit-method-bank__address--label">Addresss: </label>
+                                            <label for="depositAddress" class="deposit-method-bank__address--label">Address: </label>
                                             <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address">
                                             @if ($errors->has('address'))
                                             <span class="invalid-feedback" role="alert">
@@ -104,11 +104,11 @@
                                 <div class="row">
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
-                                            <label for="depositAmount" class="deposit-method-bank__amount--label">Enter deposit amount: </label>
-                                            <input type="number" class="form-control deposit-method-bank__amount {{ $errors->has('depositAmount') ? ' is-invalid' : '' }}" name="depositAmount" id="depositAmount">
-                                            @if ($errors->has('depositAmount'))
+                                            <label for="amount" class="deposit-method-bank__amount--label">Enter deposit amount: </label>
+                                            <input type="number" class="form-control deposit-method-bank__amount {{ $errors->has('amount') ? ' is-invalid' : '' }}" name="amount" id="amount">
+                                            @if ($errors->has('amount'))
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('depositAmount') }}</strong>
+                                                <strong>{{ $errors->first('amount') }}</strong>
                                             </span>
                                             @endif
                                         </div>
@@ -129,13 +129,13 @@
                                 <p class="deposit-method-bank__note"><b>Please complete transfer before submitting deposit form, your account will be creditted as soon as possible.</b></p>
 
                             </form>
-                            
-                           
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 @endsection

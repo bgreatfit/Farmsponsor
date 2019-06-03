@@ -37,9 +37,6 @@ class PagesController extends Controller
 
     // Dashboard views
 
-    public function deposit(){
-        return view('pages.dashboard.deposit');
-    }
 
     public function payout(){
         return view('pages.dashboard.payout');

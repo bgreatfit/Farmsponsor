@@ -31,6 +31,9 @@ class Transactionlogs extends Model
             case 'App\Models\Sponsor':
                 return 'Sponsor';
                 break;
+            case 'App\Models\Bankdeposit':
+                return 'Deposit';
+                break;
         }
     }
 
@@ -40,9 +43,13 @@ class Transactionlogs extends Model
                $sponsorshipDetail = Sponsor::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
                return 'NGN ' . number_format($this->getTransactionAmount($sponsorshipDetail)) . '.00';
                 break;
+            case 'App\Models\Bankdeposit':
+               $bankDepositDetail = Bankdeposit::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
+               return 'NGN ' . number_format($bankDepositDetail->amount) . '.00';
+                break;
         }
     }
-    public function getTransactionAmount($model){
+    public function getTransactionAmount(Model $model){
         return $model->units * $this->getPricePerUnit();
     }
 

@@ -15,9 +15,13 @@ class CreateBankdepositsTable extends Migration
     {
         Schema::create('bankdeposits', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('first_name');
-            $table->string('last_name');
+            $table->integer('user_id')->unsigned();
+            $table->string('firstname');
+            $table->string('lastname');
+            $table->string('address');
+            $table->string('email');
             $table->integer('amount');
+            $table->integer('approved')->default(0);
             $table->timestamps();
         });
     }
