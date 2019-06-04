@@ -16,7 +16,9 @@ class CreateVestbanksTable extends Migration
         Schema::create('vestbanks', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->integer('balance')->default(0);
+            $table->integer('capital')->default(0);
+            $table->integer('interest')->default(0);
+            $table->integer('lock')->default(0);
             $table->timestamps();
         });
     }

@@ -4,6 +4,7 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Models\Vestbank::class, function (Faker $faker) {
     return [
-        'balance' => $faker->numberBetween(300000, 1000000)
+        'capital' => $faker->numberBetween(300000, 1000000),
+        'interest' => $faker->numberBetween(30000, 100000)
     ];
 });

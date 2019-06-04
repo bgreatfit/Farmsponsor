@@ -28,7 +28,6 @@ Route::get('/admin/receipt', 'PagesController@receipt');
 
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
-Route::get('/dashboard/deposit', 'PagesController@deposit');
 
 // Farm Routes
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
@@ -41,6 +40,10 @@ Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor')
 
 // VestBanking Routes
 Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
+Route::get('/dashboard/vestbanking/deposit', 'VestbankController@showDepositPage')->name('vestbanking.showdepositpage');
+Route::post('/dashboard/vestbanking/deposit', 'VestbankController@deposit')->name('vestbanking.deposit');
+Route::post('/dashboard/vestbanking/withdraw', 'VestbankController@withdraw')->name('vestbanking.withdraw');
+
 
 // Payout Routes
 Route::get('/dashboard/payout', 'PayoutController@index');

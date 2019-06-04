@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Vestbank extends Model
 {
     protected $fillable = [
-        'user_id', 'standing_order_id', 'amount'
+        'user_id', 'capital', 'interest', 'lock'
     ];
 
     public function user()
@@ -22,6 +22,6 @@ class Vestbank extends Model
 
     public function getbalanceForDisplayAttribute()
     {
-        return number_format($this->balance);
+        return "NGN " . number_format($this->capital + $this->interest) . ".00";
     }
 }
