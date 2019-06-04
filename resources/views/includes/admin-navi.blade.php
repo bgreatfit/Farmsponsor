@@ -1,4 +1,4 @@
-<div class="col-md-3 col-sm-3 col-12">
+<div class="col-md-3 col-sm-4 col-12">
         <div class="dashboard__navi-wrap">
             <label for="dashboard__navi--toggle" class="dashboard__navi--menu text-center"> &#9776;</label>
             <input type="checkbox" class="dashboard__navi--toggle" id="dashboard__navi--toggle">

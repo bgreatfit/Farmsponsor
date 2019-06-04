@@ -30,7 +30,7 @@
         <div class="content-wrap">
             <div class="row">
                 @include('includes.dash-navi')
-                <div class="col-md-9 col-sm-9 col-12">
+                <div class="col-md-9 col-sm-8 col-12">
                     @include('includes.alerts')
                     @yield('content')
                 </div>

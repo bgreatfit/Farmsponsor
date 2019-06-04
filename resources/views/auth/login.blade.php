@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="form-group mb-4">
-                    <div class="form-group__content">
+                    <div class="form-group__content rememberMeForm-group">
                         <input type="checkbox" class="form__input--checkbox" id="form__input--checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
                         <label for="form__input--checkbox" class="form__input--label ">
                             <!-- custom checkbox style -->

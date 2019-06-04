@@ -1,7 +1,11 @@
 
-<div class="col-md-3 col-sm-3 col-12">
+<div class="col-md-3 col-sm-4 col-12">
     <div class="dashboard__navi-wrap">
-        <label for="dashboard__navi--toggle" class="dashboard__navi--menu"></label>
+        <label for="dashboard__navi--toggle" class="dashboard__navi--menu">
+            <span class="menu-icon-container">
+                <span class="dashboard__navi--menu-icon"></span>    
+            </span>
+        </label>
         <input type="checkbox" class="dashboard__navi--toggle" id="dashboard__navi--toggle">
         <ul class="dashboard__navi">
             <li class="dashboard__navi--item"><a href="{{route('dashboard')}}" class="dashboard__navi--link">Dashboard</a></li>
