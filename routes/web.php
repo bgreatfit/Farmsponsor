@@ -42,6 +42,7 @@ Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor')
 Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
 Route::get('/dashboard/vestbanking/deposit', 'VestbankController@showDepositPage')->name('vestbanking.showdepositpage');
 Route::post('/dashboard/vestbanking/deposit', 'VestbankController@deposit')->name('vestbanking.deposit');
+Route::post('/dashboard/vestbanking/withdraw', 'VestbankController@withdraw')->name('vestbanking.withdraw');
 
 
 // Payout Routes

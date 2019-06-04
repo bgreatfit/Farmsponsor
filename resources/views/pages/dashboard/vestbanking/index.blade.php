@@ -8,7 +8,7 @@
                     <div class="vestbank__balance-wrap">
                         <div class="vestbank__balance">
                             <p class="vestbank__balance--label">Vestbank Balance</p>
-                            <h3 class="vestbank__balance--text"> {{Auth::user()->vestbank->balanceforDisplay}} NGN </h3>
+                            <h3 class="vestbank__balance--text"> {{Auth::user()->vestbank->balanceforDisplay}} </h3>
                             <div class="vestbank__logo">
                                 <div class="vestbank__logo--wrap">
                                     <img src="{{asset('img/vestbank-logo.png')}}" alt="Vestbank logo" class="vestbank__logo--image">
@@ -58,12 +58,12 @@
                             </button>
                             </div>
                             <div class="modal-body">
-                                <p class="vestbankwithdraw__form--text mb-3 text-center">How much do would you like to withdraw?</p>
-                                <form action="" class="vestbank-withdraw__form">
+                                <p class="vestbankwithdraw__form--text mb-3 text-center">How much would you like to withdraw?</p>
+                                <form action="{{route('vestbanking.withdraw')}}" class="vestbank-withdraw__form" method="POST">
                                     @csrf
                                     <div class="form-check form-check-inline">
                                         <label for="vestbank-withdraw__capital" class="radio-inline">
-                                            <input type="radio" name="option" value="capital" id="vestbank-withdraw__capital" class="vestbank-withdraw__form--input "> Capital
+                                            <input type="radio" name="option" value="capital" id="vestbank-withdraw__capital" class="vestbank-withdraw__form--input" selected> Capital
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
@@ -81,9 +81,9 @@
                                             <input type="radio" name="option" value="other" id="vestbank-withdraw__other" class="vestbank-withdraw__form--input"> Other
                                         </label>
                                     </div>
-                                    <div class="form-group mt-3">
-                                        <input type="number" name="withdrawAmount" id="vestbank-withdraw__amount"
-                                        class="form-control vestbank-withdraw__form--input {{ $errors->has('withdrawAmount') ? ' is-invalid' : '' }}">
+                                    <div class="form-group mt-3 others-hide hide-content">
+                                        <input type="number" name="amount" id="vestbank-withdraw__amount"
+                                        class="form-control {{ $errors->has('withdrawAmount') ? ' is-invalid' : '' }}">
                                         <label for="vestbank-withdraw__amount" class="vestbank-withdraw__amount--label">
                                             <small>Specify amount</small>
                                         </label>
