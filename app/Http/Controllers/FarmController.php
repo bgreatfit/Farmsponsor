@@ -20,6 +20,7 @@ class FarmController extends Controller
         $this->request = $request;
         $this->farm = $farm;
         $this->amountPerUnit = 100000;
+        $this->middleware('auth', ['except' => ['index']]);
     }
 
     /**

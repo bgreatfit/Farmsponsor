@@ -36,4 +36,13 @@ class Sponsor extends Model
     {
         return $this->morphMany('App\Models\Transactionlogs', 'transactionable');
     }
+
+    public function getAmountAttribute(){
+        return 'NGN ' . number_format($this->units * $this->getPricePerUnit()) . '.00';
+    }
+
+    public function getPricePerUnit()
+    {
+        return 100000;
+    }
 }

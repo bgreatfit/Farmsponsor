@@ -65,7 +65,3 @@ Route::get('/transactions/history', 'TransactionsController@history')->name('tra
 // Auth Routes
 Auth::routes(['verify' => true]);
 
-Route::get('date',function(){
-
-   return \App\Models\Transactionlogs::whereUserId(Auth::id())->get();
-});

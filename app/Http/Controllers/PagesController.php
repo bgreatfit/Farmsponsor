@@ -6,15 +6,23 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => ['dashboard']]);
+    }
+
     public function index() {
         return view('pages.index');
     }
+
     public function homepage() {
         return view('pages.homepage');
     }
+
     public function login() {
         return view('pages.login');
     }
+
     public function register() {
         return view('pages.register');
     }
@@ -22,6 +30,7 @@ class PagesController extends Controller
     public function gallery() {
         return view('pages.gallery');
     }
+
     public function vestbanking() {
         return view('pages.vestbanking');
     }
@@ -36,16 +45,6 @@ class PagesController extends Controller
     }
     public function admin() {
         return view('pages.admin');
-    }
-
-    // Dashboard views
-
-
-    public function payout(){
-        return view('pages.dashboard.payout');
-    }
-    public function farmcycle(){
-        return view('pages.dashboard.farmcycle');
     }
 
     // Admin views

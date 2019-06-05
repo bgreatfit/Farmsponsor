@@ -13,6 +13,11 @@ use App\Models\Vestbank;
 
 class VestbankController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         return view('pages.dashboard.vestbanking.index');
