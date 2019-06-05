@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PagesController@index');
+Route::get('/homepage', 'PagesController@homepage');
 Route::get('about', 'PagesController@about')->name('about');
 Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('gallery', 'PagesController@gallery')->name('gallery');

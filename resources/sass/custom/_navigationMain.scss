@@ -1,0 +1,24 @@
+.navigation-bar{
+    background-color: red;
+    .navi-bar{
+        &__brand{}
+        &__picture{}
+        &__toggler{}
+        &__toggler--icon{}
+    }
+
+    .navbar__navi{
+        margin-left: 21.9rem;
+        margin-right: 9.2rem;
+    }
+    .navi__item{
+        color: $color-black;
+    }
+    .navi__item:not(:last-child){
+        margin-right: 4.7rem;
+    }
+    .navi__i{
+        color: $color-black;
+    }
+    .dropdown-item__link{}
+}
