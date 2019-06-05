@@ -19,7 +19,7 @@ class CreateSponsorsTable extends Migration
             $table->integer('farm_id');
             $table->integer('units');
             $table->string('ip_address');
-            $table->string('status')->default(0);
+            $table->string('status_id')->default(1);
             $table->string('approve_user_id')->nullable();
             $table->string('approve_ip_address')->nullable();
             $table->timestamps();

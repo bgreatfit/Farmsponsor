@@ -22,6 +22,16 @@ class Sponsor extends Model
         return $this->hasMany('App\User');
     }
 
+    public function farmingcycle()
+    {
+        return $this->belongsTo('App\Models\Farm', 'farm_id');
+    }
+
+    public function status()
+    {
+        return $this->belongsTo('App\Models\Status');
+    }
+
     public function transactions()
     {
         return $this->morphMany('App\Models\Transactionlogs', 'transactionable');

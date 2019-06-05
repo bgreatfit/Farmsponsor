@@ -34,6 +34,9 @@ class Transactionlogs extends Model
             case 'App\Models\Bankdeposit':
                 return 'Deposit';
                 break;
+            case 'App\Models\WithdrawalLog':
+                return 'Withdrawal';
+                break;
         }
     }
 
@@ -46,6 +49,10 @@ class Transactionlogs extends Model
             case 'App\Models\Bankdeposit':
                $bankDepositDetail = Bankdeposit::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
                return 'NGN ' . number_format($bankDepositDetail->amount) . '.00';
+                break;
+            case 'App\Models\WithdrawalLog':
+               $withdrawal = WithdrawalLog::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
+               return 'NGN ' . number_format($withdrawal->amount) . '.00';
                 break;
         }
     }

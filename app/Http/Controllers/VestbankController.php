@@ -133,9 +133,8 @@ class VestbankController extends Controller
             $field => $currentAmount - $amount,
             'lock' => 1
         ]);
-        $vestBank = Vestbank::whereUserId(Auth::id())->first();
-        $this->logWithdrawalRequest($amount);
-        return $this->logTransaction($vestBank);
+
+        return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
     protected function logWithdrawalRequest($amount)
@@ -180,7 +179,7 @@ class VestbankController extends Controller
 
     }
 
-    protected function processVestbankWithdrawalOfCapitalAndInterest($amount = NULL)
+    protected function processVestbankWithdrawalOfCapitalAndInterest()
     {
         $amount = Auth::user()->vestbank->balance;
         Auth::user()->vestbank()->update([
@@ -189,8 +188,8 @@ class VestbankController extends Controller
             'lock' => 1
         ]);
         $vestBank = Vestbank::whereUserId(Auth::id())->first();
-        $this->logWithdrawalRequest($amount);
-        return $this->logTransaction($vestBank);
+       ;
+        return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
     protected function withdrawAmount(Request $request)
@@ -236,9 +235,7 @@ class VestbankController extends Controller
             'lock' => 1
         ]);
 
-        $vestBank = Vestbank::whereUserId(Auth::id())->first();
-        $this->logWithdrawalRequest($amount);
-        return $this->logTransaction($vestBank);
+        return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
     protected function balanceInCapitalUpto($amount)

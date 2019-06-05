@@ -7,7 +7,7 @@
                 <div class="col-12 col-md-12">
                     <div class="payout-content">
                         <h1 class="payout__heading text-center mb-4">Payouts</h1>
-                        
+
                         <div class="payout__ruler mb-4">
                             <hr>
                         </div>
@@ -25,130 +25,30 @@
                                                 <th scope="col">Farming Cycle</th>
                                                 <th scope="col">Number Of Units</th>
                                                 <th scope="col">Status</th>
-                                                
+
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach($cyclesSponsored as $key => $cycleSponsored)
                                                 <tr>
-                                                    <th scope="row">1</th>
+                                                    <th scope="row">{{$key + 1}}</th>
                                                     <td>
                                                         <div class="cycle-image-box ml-4">
-                                                        <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
+                                                        <img src="{{asset($cycleSponsored->farmingcycle->avatar)}}" alt="cycle photo" class="cycle-image">
                                                         </div>
                                                     </td>
-                                
+
                                                     <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">20th</a>
+                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">{{$cycleSponsored->farmingcycle->name}}</a>
                                                     </td>
-                                                    <td>400 </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__status">
-                                                            Pending
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>
-                                                        <div class="cycle-image-box ml-4">
-                                                        <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">19th</a>
-                                                    </td>
-                                                    <td>400 </td>
+                                                    <td>{{$cycleSponsored->units}}</td>
                                                     <td>
                                                         <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__status">
-                                                            Pending
-                                                        </a> 
+                                                            {{$cycleSponsored->farmingcycle->status->name}}
+                                                        </a>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>
-                                                        <div class="cycle-image-box ml-4">
-                                                        <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">18th</a>
-                                                    </td>
-                                                    <td>400 </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__status">
-                                                            Pending
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">4</th>
-                                                    <td>
-                                                        <div class="cycle-image-box ml-4">
-                                                        <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">17th</a>
-                                                    </td>
-                                                    <td>400 </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__status">
-                                                            Pending
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">5</th>
-                                                    <td>
-                                                        <div class="cycle-image-box ml-4">
-                                                        <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">16th</a>
-                                                    </td>
-                                                    <td>400 </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__status">
-                                                            Pending
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">6</th>
-                                                    <td>
-                                                        <div class="cycle-image-box ml-4">
-                                                        <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">15th</a>
-                                                    </td>
-                                                    <td>400 </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__status">
-                                                            Pending
-                                                        </a> 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">7</th>
-                                                    <td>
-                                                        <div class="cycle-image-box ml-4">
-                                                        <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">14th</a>
-                                                    </td>
-                                                    <td>400 </td>
-                                                    <td>
-                                                        <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__status">
-                                                            Pending
-                                                        </a> 
-                                                    </td>
-                                                </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>
@@ -202,7 +102,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                               
+
                                                 <div class="form-group">
                                                     <p class="payout__note">
                                                         <strong>Withdrawals will become available from payout date.</strong>
@@ -270,7 +170,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        
+
                                                                         <div class="form-group">
                                                                             <p class="payout__note">
                                                                                 <strong>Withdrawals will become available from payout date.</strong>
