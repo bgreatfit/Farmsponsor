@@ -11258,6 +11258,27 @@ a.text-dark:focus {
   background-color: rgba(126, 213, 111, 0.4);
 }
 
+.navigation-bar {
+  background-color: red;
+}
+
+.navigation-bar .navbar__navi {
+  margin-left: 21.9rem;
+  margin-right: 9.2rem;
+}
+
+.navigation-bar .navi__item {
+  color: #000000;
+}
+
+.navigation-bar .navi__item:not(:last-child) {
+  margin-right: 4.7rem;
+}
+
+.navigation-bar .navi__i {
+  color: #000000;
+}
+
 .how-it-works {
   color: #000000;
 }
