@@ -10195,6 +10195,11 @@ a.text-dark:focus {
     font-size: 200%;
 }
 
+.section-form .form-box .form-group__content .rememberMeForm-group {
+  width: 100%;
+  height: 2.5rem;
+}
+
 .section-form .form-box .form-group__content .form__input {
     font-size: 1.2rem;
 }
@@ -10208,6 +10213,23 @@ a.text-dark:focus {
 }
 
 .section-form .form-box .form-group__content .form__input--label span.label-span {
+<<<<<<< HEAD
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  transition: all 0.3s;
+}
+
+.section-form .form-box .form-group__content .form__input--label span.label-span .label-span__icon {
+  margin: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s 0.1s;
+=======
     display: inline-flex;
     width: 2rem;
     height: 2rem;
@@ -10224,6 +10246,7 @@ a.text-dark:focus {
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s 0.1s;
+>>>>>>> 73fb24d2e12acab626a72049335cc141136c020f
 }
 
 .section-form .form-box .form-group__content .form__input--label .label-text {
@@ -11402,6 +11425,106 @@ mar .intro-section__image-box {
     outline: none;
 }
 
+<<<<<<< HEAD
+@media screen and (max-width: 850px) {
+  .dashboard__navi--link {
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .dashboard__navi-wrap {
+    min-height: 100vh;
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 8rem;
+  }
+
+  .section-dashboard {
+    padding-left: 0;
+  }
+
+  .dashboard__navi--link {
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .dashboard__navi--item {
+    text-align: center;
+  }
+
+  .dashboard__navi {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: height 0.2s ease-in;
+  }
+
+  .dashboard__navi--menu {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    z-index: 9999;
+    font-size: 2.3rem;
+  }
+
+  .dashboard__navi--menu .menu-icon-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dashboard__navi--menu-icon {
+    display: inline-block;
+    width: 2.5rem;
+    height: 0.3rem;
+    margin: auto;
+    background-color: #4d4d4d;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+
+  .dashboard__navi--menu-icon::before,
+  .dashboard__navi--menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 3px;
+    background-color: #4d4d4d;
+  }
+
+  .dashboard__navi--menu-icon::before {
+    top: 0.7rem;
+  }
+
+  .dashboard__navi--menu-icon::after {
+    bottom: 0.7rem;
+  }
+
+  .menu-icon-container:hover .dashboard__navi--menu-icon:hover::before {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+
+  .menu-icon-container:hover .dashboard__navi--menu-icon:hover::after {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+
+  .dashboard__navi--toggle:checked ~ .dashboard__navi {
+    height: 31.5rem;
+    visibility: visible;
+    opacity: 1;
+  }
+=======
 @media screen and (min-width: 850px) {
     .dashboard__navi--link {
         margin-left: 1.5rem;
@@ -11447,6 +11570,7 @@ mar .intro-section__image-box {
         visibility: visible;
         opacity: 1;
     }
+>>>>>>> 73fb24d2e12acab626a72049335cc141136c020f
 }
 
 .dashboard__panel {
@@ -11456,9 +11580,15 @@ mar .intro-section__image-box {
 }
 
 .dashboard__panel a[class^=dashboard__] {
+<<<<<<< HEAD
+  padding: 1rem 0;
+  text-decoration: none;
+  outline: none;
+=======
     padding: 1rem 1rem 1rem 1rem;
     text-decoration: none;
     outline: none;
+>>>>>>> 73fb24d2e12acab626a72049335cc141136c020f
 }
 
 .dashboard__brand {

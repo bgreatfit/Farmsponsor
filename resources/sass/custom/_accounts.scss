@@ -37,6 +37,10 @@
             font-size: 200%;
         }
         .form-group__content{
+            .rememberMeForm-group{
+                width: 100%;
+                height: 2.5rem;
+            }
             .form__input {font-size: 1.2rem;}
             
             // CUSTOM CHECKBOX STYLING
@@ -55,15 +59,14 @@
                     font-size: 1.2rem;
                     background-color: $color-white;
                     border: 1px solid $color-grey-soft;
-                    transition: all .2s;
+                    transition: all .3s;
 
             // CHECKBOX INSIDE STYLING
                     .label-span__icon{
                         margin: auto;
-                        display: none;
                         visibility: hidden;
                         opacity: 0;
-                        transition: all .5s .1s;
+                        transition: all .2s .1s;
                     } 
             //END OF CHECKBOX INSIDE STYLING
                 }
