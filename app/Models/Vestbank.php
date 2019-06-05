@@ -20,8 +20,12 @@ class Vestbank extends Model
         return $this->morphMany(Transactionlogs::class, 'commentable');
     }
 
-    public function getbalanceForDisplayAttribute()
+    public function getBalanceForDisplayAttribute()
     {
         return "NGN " . number_format($this->capital + $this->interest) . ".00";
+    }
+    public function getBalanceAttribute()
+    {
+        return $this->capital + $this->interest;
     }
 }

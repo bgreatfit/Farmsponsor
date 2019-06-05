@@ -18,12 +18,8 @@ class VestbankController extends Controller
         return view('pages.dashboard.vestbanking.index');
     }
 
-    public function vest()
+    public function showDepositPage()
     {
-
-    }
-
-    public function showDepositPage(){
         return view('pages.dashboard.vestbanking.deposit');
     }
 
@@ -98,7 +94,12 @@ class VestbankController extends Controller
                 return $this->withdrawAll();
             break;
 
-            case 'others':
+            case 'other':
+                return $this->withdrawAmount($request);
+            break;
+
+            default:
+                return redirect()->back();
             break;
         };
     }
@@ -147,4 +148,72 @@ class VestbankController extends Controller
 
         return WithdrawalLog::create($data);
     }
+
+    protected function withdrawInterest()
+    {
+        if (! $this->hasFundsIn('interest')){
+            request()->session()->flash('error', 'You do not have any funds in your interest balance!');
+            return redirect()->back();
+        }
+        $this->processVestbankWithdrawalOf('interest');
+
+        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
+        return redirect()->route('vestbanking');
+    }
+
+    protected function withdrawAll()
+    {
+        if (! $this->hasFundsIn('capital') && ! $this->hasFundsIn('interest')){
+            request()->session()->flash('error', 'You do not have any funds in your capital or interest balance!');
+            return redirect()->back();
+        }
+
+        $this->processVestbankWithdrawalOfCapitalAndInterest();
+
+        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
+        return redirect()->route('vestbanking');
+
+    }
+
+    protected function processVestbankWithdrawalOfCapitalAndInterest()
+    {
+        $amount = Auth::user()->vestbank->balance;
+        Auth::user()->vestbank()->update([
+            'capital' => 0,
+            'interest' => 0,
+            'lock' => 1
+        ]);
+        $vestBank = Vestbank::whereUserId(Auth::id())->first();
+        $this->logWithdrawalRequest($amount);
+        return $this->logTransaction($vestBank);
+    }
+
+    protected function withdrawAmount(Request $request)
+    {
+        if(! $request->has('amount')  || $request->amount == 0){
+            request()->session()->flash('error', 'Provide withdrawal amount!');
+            return redirect()->back();
+        }
+
+        if($this->balanceInCapitalUpto($request->amount)){
+
+        }
+
+        if($this->balanceInInterestUpto($request->amount)){
+
+        }
+
+        if($this->balanceInInterestandCapitalUpto($request->amount)){
+
+        }
+
+        request()->session()->flash('error', 'You do not have enough funds');
+        return redirect()->back();
+    }
+
+    protected function balanceInCapitalUpto($amount)
+    {
+        return (Auth::user()->vestbanking->capital - $amount);
+    }
+
 }
