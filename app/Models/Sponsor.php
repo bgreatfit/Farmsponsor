@@ -22,8 +22,27 @@ class Sponsor extends Model
         return $this->hasMany('App\User');
     }
 
+    public function farmingcycle()
+    {
+        return $this->belongsTo('App\Models\Farm', 'farm_id');
+    }
+
+    public function status()
+    {
+        return $this->belongsTo('App\Models\Status');
+    }
+
     public function transactions()
     {
         return $this->morphMany('App\Models\Transactionlogs', 'transactionable');
+    }
+
+    public function getAmountAttribute(){
+        return 'NGN ' . number_format($this->units * $this->getPricePerUnit()) . '.00';
+    }
+
+    public function getPricePerUnit()
+    {
+        return 100000;
     }
 }

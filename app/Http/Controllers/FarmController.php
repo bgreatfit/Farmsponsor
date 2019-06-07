@@ -15,10 +15,12 @@ class FarmController extends Controller
     protected $farm;
     protected $amountPerUnit;
 
-    public function __construct(Request $request, Farm $farm){
+    public function __construct(Request $request, Farm $farm)
+    {
         $this->request = $request;
         $this->farm = $farm;
         $this->amountPerUnit = 100000;
+        $this->middleware('auth', ['except' => ['index']]);
     }
 
     /**
@@ -120,6 +122,8 @@ class FarmController extends Controller
             return back();
         }
 
+        $this->deductSponsoredAmountFromUsersVestBank($this->request->unit);
+
         $sponsor = new Sponsor;
         $sponsor->farm_id = $farm->id;
         $sponsor->units = $this->request->unit;
@@ -127,7 +131,6 @@ class FarmController extends Controller
         $sponsor->user_id = Auth::id();
         $sponsor->save();
 
-        $this->deductSponsoredAmountFromUsersVestBank($this->request->unit);
         $this->reduceRemainingFarmUnits($farm, $this->request);
         $this->logTransaction($sponsor);
 
@@ -135,12 +138,14 @@ class FarmController extends Controller
         return redirect()->back();
     }
 
-    private function deductSponsoredAmountFromUsersVestBank($units){
+    private function deductSponsoredAmountFromUsersVestBank($units)
+    {
         $value = $units * $this->amountPerUnit;
-        return Auth::user()->vestbank->decrement('balance', $value);
+        return Auth::user()->vestbank->decrement('capital', $value);
     }
 
-    private function reduceRemainingFarmUnits(Farm $farm, Request $request){
+    private function reduceRemainingFarmUnits(Farm $farm, Request $request)
+    {
         return $farm->decrement('units', $request->unit);
     }
 

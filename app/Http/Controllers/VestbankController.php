@@ -13,6 +13,11 @@ use App\Models\Vestbank;
 
 class VestbankController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         return view('pages.dashboard.vestbanking.index');
@@ -121,16 +126,20 @@ class VestbankController extends Controller
         return Auth::user()->vestbank->$field != 0 ? true : false ;
     }
 
-    protected function processVestbankWithdrawalOf(String $field)
+    protected function processVestbankWithdrawalOf(String $field, $amount = NULL)
     {
-        $amount = Auth::user()->vestbank->$field;
+        $currentAmount = Auth::user()->vestbank->$field;
+
+        if(is_null($amount)){
+            $amount = $currentAmount;
+        }
+
         Auth::user()->vestbank()->update([
-            $field => 0,
+            $field => $currentAmount - $amount,
             'lock' => 1
         ]);
-        $vestBank = Vestbank::whereUserId(Auth::id())->first();
-        $this->logWithdrawalRequest($amount);
-        return $this->logTransaction($vestBank);
+
+        return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
     protected function logWithdrawalRequest($amount)
@@ -184,8 +193,8 @@ class VestbankController extends Controller
             'lock' => 1
         ]);
         $vestBank = Vestbank::whereUserId(Auth::id())->first();
-        $this->logWithdrawalRequest($amount);
-        return $this->logTransaction($vestBank);
+       ;
+        return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
     protected function withdrawAmount(Request $request)
@@ -196,24 +205,57 @@ class VestbankController extends Controller
         }
 
         if($this->balanceInCapitalUpto($request->amount)){
-
+            $this->processVestbankWithdrawalOf('capital', $request->amount);
+            request()->session()->flash('success', 'Transaction Successfull');
+            return redirect()->back();
         }
 
         if($this->balanceInInterestUpto($request->amount)){
-
+            $this->processVestbankWithdrawalOf('interest', $request->amount);
+            request()->session()->flash('success', 'Transaction Successfull');
+            return redirect()->back();
         }
 
         if($this->balanceInInterestandCapitalUpto($request->amount)){
-
+            $this->processVestbankWithdrawalOfAmountFromCapitalAndInterest($request->amount);
+            request()->session()->flash('success', 'Transaction Successfull');
+            return redirect()->back();
         }
 
         request()->session()->flash('error', 'You do not have enough funds');
         return redirect()->back();
     }
 
+    protected function processVestbankWithdrawalOfAmountFromCapitalAndInterest($amount)
+    {
+        $capital = Auth::user()->vestbank->capital;
+        $interest = Auth::user()->vestbank->interest;
+
+        $remainingAmount = $amount - $capital;
+        $remainingBalance = $interest - $remainingAmount;
+
+        Auth::user()->vestbank()->update([
+            'capital' => 0,
+            'interest' => $remainingBalance,
+            'lock' => 1
+        ]);
+
+        return $this->logTransaction($this->logWithdrawalRequest($amount));
+    }
+
     protected function balanceInCapitalUpto($amount)
     {
-        return (Auth::user()->vestbanking->capital - $amount);
+        return (Auth::user()->vestbank->capital - $amount)  >= 0 ? true : false;
+    }
+
+    protected function balanceInInterestUpto($amount)
+    {
+        return (Auth::user()->vestbank->interest - $amount)  >= 0 ? true : false;
+    }
+
+    protected function balanceInInterestandCapitalUpto($amount)
+    {
+        return (Auth::user()->vestbank->balance - $amount)  >= 0 ? true : false;
     }
 
 }
