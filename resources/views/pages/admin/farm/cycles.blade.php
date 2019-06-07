@@ -5,9 +5,9 @@
     <div class="row">
         <div class="col-12 col-md-12">
             <div class="farming-cycle__content my-4 py-5">
-              
+
               <div class="farming-cycle__add text-center mb-4">
-                <a href="{{asset('/admin/create-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-success mr-2" role="button">Add New farming cycle</a>
+                <a href="{{route('farms.create')}}" class="farming-cycle__add--cta btn btn-lg btn-success mr-2" role="button">Add New farming cycle</a>
                 <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit farming cycle</a>
               </div>
 
@@ -178,6 +178,6 @@
             </div>
         </div>
     </div>
-   
+
 </div>
 @endsection

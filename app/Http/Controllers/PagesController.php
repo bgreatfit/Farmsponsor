@@ -48,9 +48,7 @@ class PagesController extends Controller
     }
 
     // Admin views
-    public function farmingcycle(){
-        return view('pages.admin.farmingcycle');
-    }
+
     public function sponsorsList(){
         return view('pages.admin.sponsors-list');
     }

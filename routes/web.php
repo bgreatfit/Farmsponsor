@@ -1,5 +1,5 @@
 <?php
-
+require_once 'admin.php';
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,23 +18,13 @@ Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('gallery', 'PagesController@gallery')->name('gallery');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
 
-// Admin Routes
-Route::get('/admin', 'PagesController@admin');
-Route::get('/admin/farmingcycle', 'PagesController@farmingcycle');
-Route::get('/admin/sponsors-list', 'PagesController@sponsorsList');
-Route::get('/admin/edit-farming-cycle', 'PagesController@editFarmingCycle');
-Route::get('/admin/deposit-requests', 'PagesController@depositRequests');
-Route::get('/admin/withdrawal-requests', 'PagesController@withdrawalRequests');
-Route::get('/admin/receipt', 'PagesController@receipt');
-
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
 
 // Farm Routes
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
 Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
-Route::get('/farmlist/create', 'FarmController@create')->name('farms.create');
-Route::post('/farmlist/create', 'FarmController@store')->name('farms.store');
+
 Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
 Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor');
 

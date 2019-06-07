@@ -22,12 +22,13 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($deposits as $key => $deposit)
                                 <tr>
-                                    <th scope="row">1</th>
+                                    <th scope="row">{{ $key + 1 }}</th>
                                     <td>
                                         <p class="depositor-info">Macjohanson</p>
                                     </td>
-                
+
                                     <td>
                                         <p class="depositor-info">Laggamann</p>
                                     </td>
@@ -43,132 +44,7 @@
                                         <button type="button" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm deposit</button>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>
-                                        <p class="depositor-info">Macjohanson</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Laggamann</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">mjlaggaboss4ever</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Lekki, Lagos Nigeria.</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">700000</p>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm deposit</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>
-                                        <p class="depositor-info">Macjohanson</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Laggamann</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">mjlaggaboss4ever</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Lekki, Lagos Nigeria.</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">700000</p>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm deposit</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>
-                                        <p class="depositor-info">Macjohanson</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Laggamann</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">mjlaggaboss4ever</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Lekki, Lagos Nigeria.</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">700000</p>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm deposit</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>
-                                        <p class="depositor-info">Macjohanson</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Laggamann</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">mjlaggaboss4ever</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Lekki, Lagos Nigeria.</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">700000</p>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm deposit</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>
-                                        <p class="depositor-info">Macjohanson</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Laggamann</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">mjlaggaboss4ever</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Lekki, Lagos Nigeria.</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">700000</p>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm deposit</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td>
-                                        <p class="depositor-info">Macjohanson</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Laggamann</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">mjlaggaboss4ever</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">Lekki, Lagos Nigeria.</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">700000</p>
-                                    </td>
-                                    <td>
-                                        <button type="button" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm deposit</button>
-                                    </td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
