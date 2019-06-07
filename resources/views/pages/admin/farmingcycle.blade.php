@@ -8,7 +8,6 @@
               
               <div class="farming-cycle__add text-center mb-4">
                 <a href="{{asset('/admin/create-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-success mr-2" role="button">Add New farming cycle</a>
-                <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit farming cycle</a>
               </div>
 
               <div class="farming-cycle__details">
@@ -23,6 +22,7 @@
                       <th scope="col">Due Date</th>
                       <th scope="col">Status</th>
                       <th scope="col">Payout Status</th>
+                      <th scope="col">Edit</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -41,13 +41,16 @@
                       <td>4 May 2019 </td>
                       <td>28 May 2019 </td>
                       <td>
-                        <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
+                        <button type="button" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</button>
                       </td>
                       <td>
                         <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
                       </td>
+                      <td>
+                        <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit farming cycle</a>
+                      </td>
                     </tr>
-                    <tr>
+                    {{-- <tr>
                       <th scope="row">2</th>
                       <td>
                         <div class="cycle-image-box ml-4">
@@ -166,7 +169,7 @@
                       <td>
                         <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
                       </td>
-                    </tr>
+                    </tr> --}}
                   </tbody>
                 </table>
               </div>
