@@ -19,7 +19,7 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::post('farmcycles/create', 'FarmController@store')->name('farms.store');
     Route::get('sponsors-list', 'PagesController@sponsorsList');
     Route::get('edit-farming-cycle', 'PagesController@editFarmingCycle');
-    Route::get('deposit-requests', 'PagesController@depositRequests');
+    Route::get('deposits', 'Admin\DepositController@index');
     Route::get('withdrawal-requests', 'PagesController@withdrawalRequests');
     Route::get('receipt', 'PagesController@receipt');
 });

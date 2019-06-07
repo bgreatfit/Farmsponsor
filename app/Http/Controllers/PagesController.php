@@ -56,9 +56,7 @@ class PagesController extends Controller
     public function editFarmingCycle(){
         return view('pages.admin.edit-farming-cycle');
     }
-    public function depositRequests(){
-        return view('pages.admin.deposit-requests');
-    }
+
     public function withdrawalRequests(){
         return view('pages.admin.withdrawal-requests');
     }
