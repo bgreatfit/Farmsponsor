@@ -15,7 +15,7 @@
                                 <th scope="col">#</th>
                                 <th scope="col">First Name</th>
                                 <th scope="col">Last Name</th>
-                                <th scope="col">Username</th>
+                                <th scope="col">Email</th>
                                 <th scope="col">Address</th>
                                 <th scope="col">Amount</th>
                                 <th scope="col">Deposit Status</th>
@@ -26,27 +26,30 @@
                                 <tr>
                                     <th scope="row">{{ $key + 1 }}</th>
                                     <td>
-                                        <p class="depositor-info">Macjohanson</p>
+                                        <p class="depositor-info">{{$deposit->firstname}}</p>
                                     </td>
 
                                     <td>
-                                        <p class="depositor-info">Laggamann</p>
+                                        <p class="depositor-info">{{$deposit->lastname}}</p>
                                     </td>
                                     <td>
-                                        <p class="depositor-info">mjlaggaboss4ever</p>
+                                        <p class="depositor-info">{{$deposit->email}}</p>
                                     </td>
                                     <td>
-                                        <p class="depositor-info">Lekki, Lagos Nigeria.</p>
+                                        <p class="depositor-info">{{$deposit->address}}</p>
                                     </td>
                                     <td>
-                                        <p class="depositor-info">700000</p>
+                                        <p class="depositor-info">{{$deposit->amount}}</p>
                                     <td>
-                                        <button type="button" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm deposit</button>
+                                        <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
                                     </td>
                                 </tr>
                                 @endforeach
                             </tbody>
                         </table>
+                        {{
+                            $deposits->links()
+                        }}
                     </div>
                 </div>
             </div>
