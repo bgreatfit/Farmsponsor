@@ -96,7 +96,7 @@
                                     </p>
                                     <p class="introduction__text">on their sponsorship.</p>
                                     <a href="{{route('farmlist')}}" class="homepage__btn">
-                                        Sponsor Now
+                                        Sponsor Now 
                                     </a>
                                 </div>
                             </div>
@@ -451,17 +451,22 @@
             <section class="testimonials-section">
                 <div class="container-fluid container-block">
                     <div class="row">
-                        <div class="testimonials-block">
-                            <h3 class="testimonials__heading">
-                                Sponsor a farmer together we can stop hunger.
-                            </h3>
+                        <div class="col-12 col-md-12">
+                            <div class="testimonials-block">
+                                <h3 class="testimonials__heading">
+                                    Sponsor a farmer together we can stop hunger.
+                                </h3>
+                            </div>
                         </div>
+                     
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-12 col-md-4">
                             <div class="testimonials-block">
                                 <div class="testimonials-content">
-                                    <img src="{{asset('img/fs-pic10.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                    <div class="testimonials__image-wrap">
+                                        <img src="{{asset('img/fs-pic10.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                    </div>
                                     <p class="testimonials__text">Robert Martins</p>
                                     <p class="testimonials__text--description">Sponsor</p>
                                     <p class="testimonials__comment">
@@ -472,10 +477,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-12 col-md-4">
                             <div class="testimonials-block">
                                 <div class="testimonials-content">
-                                    <img src="{{asset('img/fs-pic9.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                   <div class="testimonials__image-wrap">
+                                        <img src="{{asset('img/fs-pic9.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                   </div>
                                     <p class="testimonials__text">Olaitan R</p>
                                     <p class="testimonials__text--description">Sponsor</p>
                                     <p class="testimonials__comment">
@@ -487,10 +494,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-sm-12 col-md-4">
                             <div class="testimonials-block">
                                 <div class="testimonials-content">
-                                    <img src="{{asset('img/fs-pic11.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                    <div class="testimonials__image-wrap">
+                                        <img src="{{asset('img/fs-pic11.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                    </div>
                                     <p class="testimonials__text">Bala Gana</p>
                                     <p class="testimonials__text--description">Sponsor</p>
                                     <p class="testimonials__comment">
@@ -526,7 +535,7 @@
                                     </div>
                                     <div class="farmlist__card-body">
                                         <div class="farmlist__card-body--image-wrap">
-                                            <img src="" alt="Custom photo for farm cycle" class="farmlist__card-body--image">
+                                        <img src="{{asset('img/chick-2.jpg')}}" alt="Custom photo for farm cycle" class="farmlist__card-body--image">
                                         </div>
                                         <div class="farmlist__card-body--text-wrap">
                                             <div class="container-fluid">
@@ -556,7 +565,7 @@
                                         </div>
                                     </div>
                                     <div class="farmlist__sponsor">
-                                        <a href="#" class="farmlist__sponsor-btn">Sponsor</a>
+                                        <a href="#" class="farmlist__sponsor-btn">Sponsor </a>
                                     </div>
                                 </div>
                             </div>
@@ -565,7 +574,7 @@
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <div class="farmlist-content">
-                                <a href="{{asset('farmlist')}}" class="farmlist__more">More &#62;</a>
+                                <a href="{{asset('farmlist')}}" class="farmlist__more">More </a>
                             </div>
                         </div>
                     </div>

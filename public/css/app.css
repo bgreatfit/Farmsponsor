@@ -11418,11 +11418,101 @@ a.text-dark:focus {
   font-size: 25px;
 }
 
+.homepage-wrap .testimonials-section {
+  background-color: rgba(234, 236, 239, 0.7);
+  padding: 8rem 10rem 5rem 10rem;
+}
+
+.homepage-wrap .testimonials-section .testimonials-block .testimonials__heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #011633;
+  line-height: 1.64;
+  margin-bottom: 3rem;
+}
+
+.homepage-wrap .testimonials-section .testimonials-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 40.3rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 3rem 3.5rem;
+}
+
+.homepage-wrap .testimonials-section .testimonials-content .testimonials__image-wrap {
+  width: 10.2rem;
+  height: 10.2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
 .homepage-wrap .testimonials-section .testimonials-content .testimonials__image {
-  width: 102px;
-  height: 102px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.homepage-wrap .testimonials-section .testimonials-content .testimonials__text {
+  margin-bottom: 0.1rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.homepage-wrap .testimonials-section .testimonials-content .testimonials__text--description {
+  font-size: 13px;
+  color: #011633;
+}
+
+.homepage-wrap .farmlist-section .farmlist-content .farmlist__card {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__status {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  align-self: flex-end;
+  padding: 0.5rem 5rem;
+  background-image: linear-gradient(to bottom, #758c1f 90%, rgba(117, 140, 31, 0));
+}
+
+.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__status--text {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__card-body--text-wrap {
+  background-image: url(/images/clockwise-arrow.svg?326546dfb2ac4cabe2a35ff40661cdca);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__sponsor {
+  align-self: flex-end;
+}
+
+.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__sponsor-btn {
+  border-radius: 3px;
+  border: solid 1px #ffffff;
+  background-color: #154219;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem 2rem;
 }
 
 @media screen and (min-width: 768px) {

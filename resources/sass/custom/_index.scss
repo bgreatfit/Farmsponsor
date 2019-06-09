@@ -1,10 +1,10 @@
 .homepage-wrap {
-    background-color: #ffffff;
+    background-color: $color-white;
     font-family: Montserrat;
 
     .heading__sub--light {
         font-size: 21px;
-        color: #ffffff;
+        color: $color-white;
         margin-bottom: 2.7rem;
     }
 
@@ -18,7 +18,7 @@
     .text__sub--light{ 
         font-size: 14px;
         line-height: 1.64;
-        color: #ffffff;
+        color: $color-white;
     }
 
     .text__sub--dark{ 
@@ -157,7 +157,7 @@
     }
 
     .how-it-works-section{
-        color: #ffffff;
+        color: $color-white;
         margin-bottom: 0;
         .how-it-works {
             &__create-account,
@@ -188,7 +188,7 @@
     .statistics-section{
         background-color: rgba(0, 0, 0, 0.6);
         padding: 12rem 3rem 9rem 3rem;
-        color: #ffffff;
+        color: $color-white;
         line-height: 1.64;
 
 
@@ -211,13 +211,103 @@
     }
 
     .testimonials-section{
-        .testimonials-block{ }
+        background-color: rgba(234, 236, 239, 0.7);
+        padding: 8rem 10rem 5rem 10rem;
+        .testimonials-block{ 
+            .testimonials__heading{
+                font-size: 24px;
+                font-weight: 500;
+                color: #011633;
+                line-height: 1.64;
+                margin-bottom: 3rem;
+            }
+        }
         .testimonials-content { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 40.3rem;
+            border-radius: 10px;
+            background-color: $color-white;
+            padding: 3rem 3.5rem;
+
             .testimonials {
+                
+                &__image-wrap{
+                    width: 10.2rem;
+                    height: 10.2rem;
+                    display: inline-block;
+                    border-radius: 10rem;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+                }
                 &__image {
-                    width: 102px;
-                    height: 102px;
-                    object-fit: contain;
+                    width: 100%;
+                    height: auto;
+                }
+                &__text {
+                    margin-bottom: 0.1rem;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000000;
+                    &--description{
+                        font-size: 13px;
+                        color: #011633;
+                    }
+                }
+            }
+        }
+    }
+
+    .farmlist-section{
+        .farmlist__heading {
+
+        }
+        .farmlist-content {
+            .farmlist__card {
+                display: flex;
+                flex-direction: column;
+                color: $color-white;
+
+                .farmlist{
+                    &__status{
+                        border-top-left-radius: 3px;
+                        border-top-right-radius: 3px;
+                        align-self: flex-end;
+                        padding: .5rem 5rem; 
+                        background-image: linear-gradient(to bottom, #758c1f 90%, rgba(117, 140, 31, 0));
+                        &--text{
+                            margin-bottom: 0;
+                            color: $color-white;
+                         }
+                    }
+                    &__card-body { 
+                        display: flex;
+                        flex-direction: column;
+                        &--image-wrap{ }
+                        &--text-wrap {
+                            background-image: url('../../../public/img/clockwise-arrow.svg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            border-bottom-left-radius: 1rem;
+                            border-bottom-right-radius: 1rem;
+                            overflow: hidden;
+                            margin-bottom: 2rem;
+                         }
+                    }
+                    &__sponsor {
+                        align-self: flex-end;
+
+                        &-btn{
+                            border-radius: 3px;
+                            border: solid 1px #ffffff;
+                            background-color: #154219;
+                            text-decoration: none;
+                            color: $color-white;
+                            padding: 1rem 2rem;
+                        }
+                    }
                 }
             }
         }
