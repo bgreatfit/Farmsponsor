@@ -29,6 +29,10 @@ class UserSeeder extends Seeder
             factory(App\Models\Registerlog::class)->create([
                 'user_id' => $user->id,
             ]);
+
+            factory(App\Models\Bankdeposit::class, rand(8,15))->create([
+                'user_id' => $user->id,
+            ]);
         });
     }
 }

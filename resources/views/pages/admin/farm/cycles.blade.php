@@ -5,9 +5,10 @@
     <div class="row">
         <div class="col-12 col-md-12">
             <div class="farming-cycle__content my-4 py-5">
-              
+
               <div class="farming-cycle__add text-center mb-4">
-                <a href="{{asset('/admin/create-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-success mr-2" role="button">Add New farming cycle</a>
+                <a href="{{route('farms.create')}}" class="farming-cycle__add--cta btn btn-lg btn-success mr-2" role="button">Add New farming cycle</a>
+                <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit farming cycle</a>
               </div>
 
               <div class="farming-cycle__details">
@@ -15,7 +16,6 @@
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Cycle Image</th>
                       <th scope="col">Farming Cycle</th>
                       <th scope="col">Number Of Units</th>
                       <th scope="col">Start Date</th>
@@ -29,12 +29,6 @@
                     <tr>
                       <th scope="row">1</th>
                       <td>
-                        <div class="cycle-image-box ml-4">
-                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                        </div>
-                      </td>
-
-                      <td>
                         <a href="{{url('/admin/sponsors-list')}}" class="farming-cycle__info">20th</a>
                       </td>
                       <td>400 </td>
@@ -47,7 +41,7 @@
                         <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
                       </td>
                       <td>
-                        <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit farming cycle</a>
+                        <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">E</a>
                       </td>
                     </tr>
                     {{-- <tr>
@@ -181,6 +175,6 @@
             </div>
         </div>
     </div>
-   
+
 </div>
 @endsection

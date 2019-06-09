@@ -21,4 +21,8 @@ class WithdrawalLog extends Model
         return $this->belongsTo('App\User');
     }
 
+    public function getDisplayAmountAttribute()
+    {
+        return 'NGN ' . number_format($this->amount) . '.00';
+    }
 }

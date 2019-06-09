@@ -29,3 +29,4 @@ class Vestbank extends Model
         return $this->capital + $this->interest;
     }
 }
+
