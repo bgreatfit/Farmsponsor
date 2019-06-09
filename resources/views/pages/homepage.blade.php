@@ -73,18 +73,6 @@
                                 {{-- <a class="nav-link navi__i" href="{{route('gallery')}}">Login</a> --}}
                             </li>
 
-
-                            {{-- <li class="nav-item navi__item dropdown">
-                                <a id="navbarDropdown" class="nav-link navi__i dropdown-toggle"
-                                href="#" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false" v-pre>Account</a>
-        
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item dropdown-item__link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                    <a class="dropdown-item dropdown-item__link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </div>
-        
-                            </li> --}}
                     </ul>
                 </div>
             </div>
@@ -96,25 +84,29 @@
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <div class="introduction-content"> 
-                                <h1 class="introduction__heading">
-                                    Food Security Is The 
-                                    <br/> 
-                                    Responsibility Of Everyone
-                                </h1>
-                                <p class="introduction__text">
-                                    Farmsponsor is an agric-tech company, where individuals
-                                    sponsor farmers with their money for a 15% return
-                                    on their sponsorship.
-                                </p>
-                                <a href="{{route('farmlist')}}" class="introduction__text">
-                                    Sponsor Now
-                                </a>
+                                <div class="introduction__text-wrap">
+                                    <h1 class="introduction__heading">
+                                        Food Security Is The 
+                                        <br/> 
+                                        Responsibility Of Everyone
+                                    </h1>
+                                    <p class="introduction__text">
+                                        Farmsponsor is an agric-tech company, where individuals
+                                        sponsor farmers with their money for a 15% return
+                                    </p>
+                                    <p class="introduction__text">on their sponsorship.</p>
+                                    <a href="{{route('farmlist')}}" class="homepage__btn">
+                                        Sponsor Now
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="introduction-content">
                                 <div class="introduction__picture">
-                                    <img src="{{asset("img/")}}}" alt="a few chicks and some eggs" class="introduction__image"> 
+                                    <a href="#" class="introduction__video">
+                                        <img src="{{asset("img/")}}}" alt="a few chicks and some eggs" class="introduction__image"> 
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +119,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="invest-content">
-                                <p class="invest__heading">Why Invest In Farmsponsor</p>
+                                <h2 class="invest__heading--main">Why Invest In Farmsponsor ?</h2>
                             </div>
                         </div>
                     </div>
@@ -153,9 +145,9 @@
                                    <div class="text-row">
                                         <div class="row">
                                             <div class="col-12 col-md-12">
-                                                <h2 class="invest__heading">We Empower Farmers</h2>
+                                                <h3 class="invest__heading heading__sub--dark">We Empower Farmers</h3>
                                                 <div class="invest__text-wrap">
-                                                    <p class="invest__text">
+                                                    <p class="text__sub--dark">
                                                         We empower local farmers with funds from individuals and 
                                                         skills to produce at capacity or more and in return, you will 
                                                         get back your initial capital and a certain percentage of your 
@@ -169,7 +161,7 @@
                                    <div class="heading-row">
                                        <div class="row">
                                            <div class="col-12">
-                                               <h1 class="how-it-works__heading">How Does It Work?</h1>
+                                               <h1 class="how-it-works__heading">How The Farmsponsor App Works</h1>
                                            </div>
                                        </div>
                                    </div>
@@ -179,56 +171,64 @@
                         <div class="col-md-6 col-12">
                             <div class="invest-content">
                                 <div class="invest__returns">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-md-6 col-6">
-                                            <div class="invest__icon">
-                                                <img src="{{asset('img/flower-2.svg')}}" alt="a flower numbered two" class="homepage__icon">
+                                    <div class="icon-row">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-6">
+                                                <div class="invest__icon">
+                                                    <img src="{{asset('img/flower-2.svg')}}" alt="a flower numbered two" class="homepage__icon">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-6">
-                                            <div class="invest__icon">
-                                                <img src="{{asset('img/money-bag.svg')}}" alt="hand holding a bag of money" class="homepage__icon">
+                                            <div class="col-sm-6 col-md-6 col-6">
+                                                <div class="invest__icon">
+                                                    <img src="{{asset('img/money-bag.svg')}}" alt="hand holding a bag of money" class="homepage__icon">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="row">
-                                        <div class="col-12 col-md-12">
-                                            <h2 class="invest__heading">Superior Returns For Our Sponsors</h2>
-                                            <div class="invest__text-wrap">
-                                                <p class="invest__text">
-                                                    At an ROI of up to 15% on your capital investment over the farming season, 
-                                                    Farmsponsor has the highest return on investment in the industry
-                                                </p>
+                                   
+                                    <div class="text-row">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <h3 class="invest__heading heading__sub--light ">Superior Returns For Our Sponsors</h3>
+                                                <div class="invest__text-wrap">
+                                                    <p class="text__sub--light">
+                                                        At an ROI of up to 15% on your capital investment over the farming season, 
+                                                        Farmsponsor has the highest return on investment in the industry
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="invest__farming-cycle">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-6 col-6">
-                                                <div class="invest__icon">
-                                                    <img src="{{asset('img/flower-3.svg')}}" alt="a flower numbered three" class="homepage__icon">
+                                        <div class="icon-row">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-6 col-6">
+                                                    <div class="invest__icon">
+                                                        <img src="{{asset('img/flower-3-2.svg')}}" alt="a flower numbered three" class="homepage__icon">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-6">
-                                                <div class="invest__icon">
-                                                    <img src="{{asset('img/flowers-4.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
+                                                <div class="col-sm-6 col-md-6 col-6">
+                                                    <div class="invest__icon">
+                                                        <img src="{{asset('img/flowers-4.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-12 col-md-12">
-                                                <h2 class="invest__heading">
-                                                    Multiple Farming Cycles
-                                                </h2>
-                                                <div class="invest__text-wrap">
-                                                    <p class="invest__text">
-                                                        In just over a year since we began operations, 
-                                                        we've had over 14 farming cycles. This means that you 
-                                                        have the potential to keep earning as much and as often 
-                                                        as possible. This is residual income at it's finest. 
-                                                    </p>
+                                        <div class="text-row">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12">
+                                                    <h3 class="invest__heading heading__sub--light">
+                                                        Multiple Farming Cycles
+                                                    </h3>
+                                                    <div class="invest__text-wrap">
+                                                        <p class="text__sub--light">
+                                                            In just over a year since we began operations, 
+                                                            we've had over 14 farming cycles. This means that you 
+                                                            have the potential to keep earning as much and as often 
+                                                            as possible. This is residual income at it's finest. 
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,42 +241,47 @@
             </section>
 
             <section class="how-it-works-section">
-                    <div class="container-fluid container-block">
-                        <div class="row how-it-works-block">
-                            <div class="col-md-6 col-12">
-                                <div class="how-it-works-content">
-                                    <div class="how-it-works__create-account">
+                <div class="container-fluid container-block">
+                    <div class="row how-it-works-block">
+                        <div class="col-md-6 col-12">
+                            <div class="how-it-works-content">
+                                <div class="how-it-works__create-account">
+                                    <div class="icon-row">
                                         <div class="row">
                                             <div class="col-sm-6 col-md-6 col-6">
                                                 <div class="how-it-works__icon">
-                                                    <img src="{{asset('img/flower-2.svg')}}" alt="a flower numbered two" class="homepage__icon">
+                                                    <img src="{{asset('img/flower-1-1.svg')}}" alt="a flower numbered two" class="homepage__icon">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-md-6 col-6">
                                                 <div class="how-it-works__icon">
-                                                    <img src="{{asset('img/money-bag.svg')}}" alt="hand holding a bag of money" class="homepage__icon">
+                                                    <img src="{{asset('img/farmer-no-tools.svg')}}" alt="hand holding a bag of money" class="homepage__icon">
                                                 </div>
                                             </div>
                                         </div>
-    
+                                    </div>
+                                   
+                                    <div class="text-row">
                                         <div class="row">
                                             <div class="col-12 col-md-12">
-                                                <div class="how-it-works__text-wrap">
-                                                    <h2 class="how-it-works__heading-main">Create A User Account</h2>
+                                                <div class">
+                                                    <h2 class="heading__sub--light">Create A User Account</h2>
 
-                                                    <p class="how-it-works__text">
+                                                    <p class="text__sub--light">
                                                         Simply signup using your email or social media account 
                                                         (Facebook and Twitter). Creating an account takes just a few seconds.
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-    
-                                        <div class="how-it-works__sponsor">
+                                    </div>
+
+                                    <div class="how-it-works__sponsor">
+                                        <div class="icon-row">
                                             <div class="row">
                                                 <div class="col-sm-6 col-md-6 col-6">
                                                     <div class="invest__icon">
-                                                        <img src="{{asset('img/flower-3.svg')}}" alt="a flower numbered three" class="homepage__icon">
+                                                        <img src="{{asset('img/flower-2.svg')}}" alt="a flower numbered three" class="homepage__icon">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6 col-md-6 col-6">
@@ -285,13 +290,16 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        
+                                        <div class="text-row">
                                             <div class="row">
                                                 <div class="col-12 col-md-12">
-                                                    <h2 class="invest__heading">
+                                                    <h2 class="heading__sub--light">
                                                         Find A Farm To Sponsor
                                                     </h2>
                                                     <div class="invest__text-wrap">
-                                                        <p class="invest__text">
+                                                        <p class="text__sub--light">
                                                             Select a farm from our list of available farms ready for 
                                                             sponsorship on the current farm cycle, buy a specific number 
                                                             of units at N100,000.00 per unit and that's it. Just sit back 
@@ -301,42 +309,43 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-md-6 col-12">
-                                <div class="how-it-works__content"> 
-                                    <div class="how-it-works">
-                                        <div class="icon-row">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-md-6 col-6">
-                                                    <div class="how-it-works__icon">
-                                                        <img src="{{asset('img/flower-1.svg')}}" alt="a flower numbered one" class="homepage__icon">
-                                                    </div>
+                        <div class="col-md-6 col-12">
+                            <div class="how-it-works__content"> 
+                                <div class="how-it-works__row-wrap">
+                                    <div class="icon-row">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-6">
+                                                <div class="how-it-works__icon">
+                                                    <img src="{{asset('img/flower-3.svg')}}" alt="a flower numbered one" class="homepage__icon">
                                                 </div>
-                                                <div class="col-sm-6 col-md-6 col-6">
-                                                    <div class="how-it-works__icon">
-                                                        <img src="{{asset('img/farmer.svg')}}" alt="a flower numbered one" class="homepage__icon">
-                                                    </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-6">
+                                                <div class="how-it-works__icon">
+                                                    <img src="{{asset('img/farmer.svg')}}" alt="a flower numbered one" class="homepage__icon">
                                                 </div>
                                             </div>
                                         </div>
-    
-                                        <div class="text-row">
-                                            <div class="row">
-                                                <div class="col-12 col-md-12">
-                                                    <h2 class="invest__heading">Stay Updated</h2>
-                                                    <div class="invest__text-wrap">
-                                                        <p class="invest__text">
-                                                            Regularly check our updates to keep you informed on our 
-                                                            promos, farm updates, blogs and others.
-                                                        </p>
-                                                    </div>
-                                                    <a href="{{route('login')}}" class="introduction__text">
-                                                        Get Involved
-                                                    </a>
+                                    </div>
+
+                                    <div class="text-row">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <h2 class="heading__sub--dark">Stay Updated</h2>
+                                                <div class="stay-updated__text-wrap">
+                                                    <p class="text__sub--dark">
+                                                        Regularly check our updates to keep you informed on our 
+                                                        promos, farm updates, blogs and others.
+                                                    </p>
                                                 </div>
+                                                <a href="{{route('login')}}" class="how-it-works__btn homepage__btn">
+                                                    Get Involved
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -344,21 +353,22 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
 
             <section class="statistics-section">
                 <div class="container">
                     <div class="row">
-                    <div class="col-md-12 col-12">
-                        <div class="content-wrap text-center">
-                            <h3 class="statistics__heading">
-                                We've been working so hard for you
-                            </h3>
+                        <div class="col-md-12 col-12">
+                            <div class="content-wrap text-center">
+                                <h3 class="statistics__heading">
+                                    We've been working so hard for you
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                    </div>
                     <div class="row">
-                    <!--stats counter -->
+                      <!--stats counter -->
                         <div class="col-md-2 col-12 offset-md-1">
                             <div class="content-wrap">
                             <div class="row justify-content-center">
@@ -439,7 +449,7 @@
             </section>
 
             <section class="testimonials-section">
-                <div class="container container-block">
+                <div class="container-fluid container-block">
                     <div class="row">
                         <div class="testimonials-block">
                             <h3 class="testimonials__heading">
@@ -496,6 +506,125 @@
                 </div>
             </section>
 
+            <section class="farmlist-section">
+                <div class="container-fluid container-block">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div class="farmlist-content">
+                                <h3 class="farmlist__heading">
+                                    Explore our farm circles and pick a farm to sponsor 
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="farmlist-content">
+                                <div class="farmlist__card">
+                                    <div class="farmlist__status">
+                                        <p class="farmlist__status--text">Open</p>
+                                    </div>
+                                    <div class="farmlist__card-body">
+                                        <div class="farmlist__card-body--image-wrap">
+                                            <img src="" alt="Custom photo for farm cycle" class="farmlist__card-body--image">
+                                        </div>
+                                        <div class="farmlist__card-body--text-wrap">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="farmlist__text">Farm Cycle:</p>
+                                                        <p class="farmlist__sub-text">22nd Sponsoring Window</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="farmlist__text">Returns</p>
+                                                        <p class="farmlist__returns">15%</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                   <div class="col-12 col-md-12">
+                                                        <p class="farmlist__text">Start Date:</p>
+                                                        <p class="farmlist__sub-text">12/07/2019</p>
+                                                   </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-12">
+                                                        <p class="farmlist__text">Due Date: </p>
+                                                        <p class="farmlist__sub-text">17/10/2019</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="farmlist__sponsor">
+                                        <a href="#" class="farmlist__sponsor-btn">Sponsor</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div class="farmlist-content">
+                                <a href="{{asset('farmlist')}}" class="farmlist__more">More &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="insurance-section">
+                <div class="container-fluid container-block">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div class="insurance-content">
+                                <div class="insurance__shield-wrap">
+                                    <img src="" alt="Green shield photo" class="insurance__shield">
+                                </div>
+                                <div class="insurance__text-wrap">
+                                    <h2 class="insurance__heading">A Robust Insurance Policy</h2>
+                                    <p class="insurance__text">
+                                        Farmsponsor has your investment covered with a robust 
+                                        insurance policy. Our farms are comprehensively insured 
+                                        by Leadway Assurance plc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="partner-section">
+                <div class="container container-block">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div class="partners__heading-wrap">
+                                <h3 class="partners__heading">Partners</h3>
+                                <p class="partners__text">
+                                    Driving agri-tech to provide food for all Africans
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="partners-content">
+                                <img src="{{asset('img/fs-pic3.png')}}" alt="" class="insurance__image">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="partners-content">
+                                <img src="{{asset('img/fs-pic5.png')}}" alt="" class="insurance__image">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="partners-content">
+                                <img src="{{asset('img/fs-pic4.png')}}" alt="" class="insurance__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>

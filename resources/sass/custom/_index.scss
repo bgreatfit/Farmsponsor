@@ -1,0 +1,244 @@
+.homepage-wrap {
+    background-color: #ffffff;
+    font-family: Montserrat;
+
+    .heading__sub--light {
+        font-size: 21px;
+        color: #ffffff;
+        margin-bottom: 2.7rem;
+    }
+
+    .heading__sub--dark {
+        font-size: 21px;
+        color: #011633;
+        margin-bottom: 2.7rem;
+
+    }
+
+    .text__sub--light{ 
+        font-size: 14px;
+        line-height: 1.64;
+        color: #ffffff;
+    }
+
+    .text__sub--dark{ 
+        font-size: 14px;
+        line-height: 1.64;
+        color: #011633;
+    }
+
+    div.icon-row {
+        margin-bottom: 3.8rem;
+    }
+
+    .homepage__btn {
+        color: $color-white;
+        border-radius: 5rem;
+        padding: 1.5rem 3.6rem;
+        background-color: #154219;
+
+    }
+
+    .container-block{
+        padding: 0;
+     }
+
+    .homepage__icon{
+        width: 80px;
+        height: 80px;
+     }
+
+    .introduction-section{
+        padding-top: 8rem;
+        margin-bottom: 13.3rem;
+
+        .introduction__text-wrap{
+            padding: 15.6rem 15.4rem 9rem 7.6rem;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: normal;
+        }
+        .introduction-content{
+            .introduction{
+                &__heading {
+                    font-family: Montserrat;
+                    font-size: 3.5rem;
+                    font-weight: 500;
+                    line-height: 1.4;
+                    color: #011633;
+                    margin-bottom: 3.5rem;
+
+                }
+                &__text{ 
+                    font-family: Montserrat;
+                    font-size: 1.6rem;
+                    font-weight: normal;
+                    line-height: 1.88;
+                    color: #3c4049;
+                    margin-bottom: 0;
+                }
+                &__text:last-of-type {
+                    margin-bottom: 2.5rem;
+                }
+               
+                &__picture{ 
+                    width: 100%;
+                    min-height: 66rem;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .introduction__image{
+                        position: relative;
+                        z-index: 10;
+                        width: 100%;
+                        height: auto;
+                     }
+                }
+            }
+        }
+    }
+
+    .invest-section{
+      
+        .invest-content{
+            display: flex;
+            width: 100%;
+            height: 100%;
+         }
+        .invest__heading--main{
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 500;
+            color: #011633;
+            text-align: right;
+            padding: 0 11.8rem;
+            margin-left: auto;
+            margin-bottom: 8rem
+         }
+        
+        .invest {
+        
+            &__empower-farmers{ 
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+                padding: 2rem 5rem 2rem 8.7rem;
+                width: 100%;
+                min-height: 90.4rem;
+                background-color: rgba(234, 236, 239, 0.7);
+               
+                .heading-row{ 
+                    margin-top: auto;
+                    .how-it-works__heading{
+                        font-family: Montserrat;
+                        font-size: 32px;
+                        font-weight: 500;
+                        line-height: 1.64;
+                        color: #011633;
+                    }
+                }
+            }
+            &__returns{
+                padding: 10rem 5rem 0 8.7rem;
+                width: 100%;
+                min-height: 98.7rem;
+                background-image: linear-gradient(to bottom, #000000, #2f5534 93%);
+                
+                .invest__farming-cycle {
+                    margin-top: 18rem;
+                }
+
+            }
+        }
+
+    }
+
+    .how-it-works-section{
+        color: #ffffff;
+        margin-bottom: 0;
+        .how-it-works {
+            &__create-account,
+            &__row-wrap {
+                min-height: 91.2rem;
+                width: 100%;
+                padding: 8rem 5rem 8rem 8.7rem;
+             }
+            &__create-account {
+                background-image: linear-gradient(to top, #000, #2f5534 93%);
+            }
+            &__sponsor{
+                margin-top: 18rem;
+            }
+            
+            &__btn {
+                padding: 1rem 3rem;
+            }
+            &__row-wrap{
+                background-color: rgba(234, 236, 239, 0.7);
+                .stay-updated__text-wrap{
+                    margin-bottom: 5rem;
+                }
+            }
+        }
+    }
+
+    .statistics-section{
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 12rem 3rem 9rem 3rem;
+        color: #ffffff;
+        line-height: 1.64;
+
+
+
+        .statistics {
+            &__heading{
+                font-size: 3.2rem;
+                line-height: 1.64;
+                margin-bottom: 9rem;
+                
+            }
+        }
+        .stat-update__figure{
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .stat-update__figure--label{
+            font-size: 25px;
+        }
+    }
+
+    .testimonials-section{
+        .testimonials-block{ }
+        .testimonials-content { 
+            .testimonials {
+                &__image {
+                    width: 102px;
+                    height: 102px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .introduction-section {
+
+    }
+    .invest-section {
+        .invest__icon {
+            text-align: left;
+          
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .text-row{ 
+        margin-left: 9.4rem;
+    }
+
+}
