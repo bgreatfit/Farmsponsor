@@ -11186,6 +11186,69 @@ a.text-dark:focus {
   margin: 0;
 }
 
+.farmlist__card {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  margin-bottom: 10rem;
+}
+
+.farmlist__card .farmlist__status {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  align-self: flex-end;
+  padding: 0.5rem 5rem;
+  background-image: linear-gradient(to bottom, #758c1f 90%, rgba(117, 140, 31, 0));
+}
+
+.farmlist__card .farmlist__status--text {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.farmlist__card .farmlist__card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.farmlist__card .farmlist__card-body--text-wrap {
+  background-image: url(/images/farmcard-body.svg?326546dfb2ac4cabe2a35ff40661cdca);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+}
+
+.farmlist__card .farmlist__card-body--text-wrap .farmlist__returns {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.farmlist__card .farmlist__card-body--text-wrap .farmlist__text {
+  color: #e6e6e6;
+}
+
+.farmlist__card .farmlist__card-body--text-wrap .farmlist__sub-text {
+  font-size: 1.2rem;
+}
+
+.farmlist__card .farmlist__sponsor {
+  align-self: flex-end;
+}
+
+.farmlist__card .farmlist__sponsor-btn {
+  border-radius: 3px;
+  border: solid 1px #ffffff;
+  background-color: #154219;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
 .header {
   margin-bottom: 8rem;
 }
@@ -11217,6 +11280,10 @@ a.text-dark:focus {
 .homepage-wrap {
   background-color: #ffffff;
   font-family: Montserrat;
+}
+
+.homepage-wrap .sponsor-btn--icon {
+  width: 9px;
 }
 
 .homepage-wrap .heading__sub--light {
@@ -11367,6 +11434,7 @@ a.text-dark:focus {
 .homepage-wrap .how-it-works-section {
   color: #ffffff;
   margin-bottom: 0;
+  font-family: montserrat;
 }
 
 .homepage-wrap .how-it-works-section .how-it-works__create-account,
@@ -11397,7 +11465,7 @@ a.text-dark:focus {
 }
 
 .homepage-wrap .statistics-section {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(/images/stats-background.svg?fd61c87b7b303882452a28243b396c76);
   padding: 12rem 3rem 9rem 3rem;
   color: #ffffff;
   line-height: 1.64;
@@ -11468,51 +11536,92 @@ a.text-dark:focus {
   color: #011633;
 }
 
-.homepage-wrap .farmlist-section .farmlist-content .farmlist__card {
+.homepage-wrap .farmlist-section {
+  padding: 7rem;
+}
+
+.homepage-wrap .farmlist-section .farmlist__heading {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.homepage-wrap .farmlist-section .farmlist-content .farmlist__more {
+  text-align: center;
+}
+
+.homepage-wrap .insurance-section {
+  background-color: rgba(234, 236, 239, 0.7);
+  padding: 10rem 0;
+}
+
+.homepage-wrap .insurance-section .insurance-content {
+  font-family: Montserrat;
+  color: #011633;
+}
+
+.homepage-wrap .insurance-section .insurance-content .insurance__image {
   display: flex;
-  flex-direction: column;
-  color: #ffffff;
+  width: 100%;
+  justify-content: flex-end;
 }
 
-.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__status {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  align-self: flex-end;
-  padding: 0.5rem 5rem;
-  background-image: linear-gradient(to bottom, #758c1f 90%, rgba(117, 140, 31, 0));
+.homepage-wrap .insurance-section .insurance-content .insurance__text-wrap {
+  padding: 5rem 20rem 10rem 0;
 }
 
-.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__status--text {
-  margin-bottom: 0;
-  color: #ffffff;
+.homepage-wrap .insurance-section .insurance-content .insurance__heading {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.64;
+  text-align: center;
+  margin-bottom: 3.5rem;
 }
 
-.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__card-body {
+.homepage-wrap .insurance-section .insurance-content .insurance__text {
+  font-size: 24px;
+  line-height: 1.64;
+}
+
+.homepage-wrap .partner-section {
+  padding: 10rem 5rem;
+}
+
+.homepage-wrap .partner-section .partners__heading-wrap {
+  line-height: 1.64;
+}
+
+.homepage-wrap .partner-section .partners__heading-wrap .partners__heading {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+
+.homepage-wrap .partner-section .partners__heading-wrap .partners__text {
+  font-size: 18px;
+  color: #011633;
+  text-align: center;
+}
+
+.homepage-wrap .partner-section .partners-content {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 25rem;
 }
 
-.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__card-body--text-wrap {
-  background-image: url(/images/clockwise-arrow.svg?326546dfb2ac4cabe2a35ff40661cdca);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  overflow: hidden;
-  margin-bottom: 2rem;
+.page-footer {
+  background-color: #0e2503;
+  padding: 8rem 0;
 }
 
-.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__sponsor {
-  align-self: flex-end;
-}
-
-.homepage-wrap .farmlist-section .farmlist-content .farmlist__card .farmlist__sponsor-btn {
-  border-radius: 3px;
-  border: solid 1px #ffffff;
-  background-color: #154219;
-  text-decoration: none;
+.page-footer .footer__segment .footer__subscribe--text {
+  font-family: Montserrat;
+  font-size: 32px;
   color: #ffffff;
-  padding: 1rem 2rem;
 }
 
 @media screen and (min-width: 768px) {

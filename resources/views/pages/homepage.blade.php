@@ -96,7 +96,7 @@
                                     </p>
                                     <p class="introduction__text">on their sponsorship.</p>
                                     <a href="{{route('farmlist')}}" class="homepage__btn">
-                                        Sponsor Now 
+                                        Sponsor Now  <img src="{{asset('img/greater-than-white.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3">
                                     </a>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@
                                                 </div>
                                                 <div class="col-sm-6 col-md-6 col-6">
                                                     <div class="invest__icon">
-                                                        <img src="{{asset('img/flowers-4.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
+                                                        <img src="{{asset('img/flower-leaf.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
                                                     </div>
                                                 </div>
                                             </div>
@@ -327,7 +327,7 @@
                                             </div>
                                             <div class="col-sm-6 col-md-6 col-6">
                                                 <div class="how-it-works__icon">
-                                                    <img src="{{asset('img/farmer.svg')}}" alt="a flower numbered one" class="homepage__icon">
+                                                    <img src="{{asset('img/clockwise-arrow.svg')}}" alt="a flower numbered one" class="homepage__icon">
                                                 </div>
                                             </div>
                                         </div>
@@ -372,7 +372,7 @@
                         <div class="col-md-2 col-12 offset-md-1">
                             <div class="content-wrap">
                             <div class="row justify-content-center">
-                                <img src="{{asset('img/people.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                                <img src="{{asset('img/stat-sponsors.svg')}}" alt="a group of people illustration" class="homepage__icon">
                                 {{-- <i class="fas fa-user-tie sponsors"></i> --}}
                             </div>
                             <div class="row justify-content-center">
@@ -387,7 +387,7 @@
                         <div class="col-md-2 col-12">
                             <div class="content-wrap">
                             <div class="row justify-content-center">
-                                <img src="{{asset('img/people.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                                <img src="{{asset('img/stat-cycles.svg')}}" alt="a group of people illustration" class="homepage__icon">
                                 {{-- <i class="fas fa-user-circle cycles"></i> --}}
                             </div>
                             <div class="row justify-content-center">
@@ -402,7 +402,7 @@
                         <div class="col-md-2 col-12">
                             <div class="content-wrap">
                             <div class="row justify-content-center">
-                                <img src="{{asset('img/people.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                                <img src="{{asset('img/stat-farms.svg')}}" alt="a group of people illustration" class="homepage__icon">
                                 {{-- <i class="fas fa-kiwi-bird farm"></i> --}}
                             </div>
                             <div class="row justify-content-center">
@@ -417,7 +417,7 @@
                         <div class="col-md-2 col-12">
                             <div class="content-wrap">
                             <div class="row justify-content-center">
-                                <img src="{{asset('img/people.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                                <img src="{{asset('img/stat-farmers.svg')}}" alt="a group of people illustration" class="homepage__icon">
                                 {{-- <i class="fas fa-users farmer"></i> --}}
                             </div>
                             <div class="row justify-content-center">
@@ -432,7 +432,7 @@
                         <div class="col-md-2 col-12">
                             <div class="content-wrap">
                                 <div class="row justify-content-center">
-                                    <img src="{{asset('img/people.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                                    <img src="{{asset('img/stat-reviews.svg')}}" alt="a group of people illustration" class="homepage__icon">
                                 
                                 {{-- <i class="fas fa-comments review"></i> --}}
                                 </div>
@@ -529,52 +529,28 @@
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-4">
                             <div class="farmlist-content">
-                                <div class="farmlist__card">
-                                    <div class="farmlist__status">
-                                        <p class="farmlist__status--text">Open</p>
-                                    </div>
-                                    <div class="farmlist__card-body">
-                                        <div class="farmlist__card-body--image-wrap">
-                                        <img src="{{asset('img/chick-2.jpg')}}" alt="Custom photo for farm cycle" class="farmlist__card-body--image">
-                                        </div>
-                                        <div class="farmlist__card-body--text-wrap">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                                        <p class="farmlist__text">Farm Cycle:</p>
-                                                        <p class="farmlist__sub-text">22nd Sponsoring Window</p>
-                                                    </div>
-                                                    <div class="col-12 col-md-6">
-                                                        <p class="farmlist__text">Returns</p>
-                                                        <p class="farmlist__returns">15%</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                   <div class="col-12 col-md-12">
-                                                        <p class="farmlist__text">Start Date:</p>
-                                                        <p class="farmlist__sub-text">12/07/2019</p>
-                                                   </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12 col-md-12">
-                                                        <p class="farmlist__text">Due Date: </p>
-                                                        <p class="farmlist__sub-text">17/10/2019</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="farmlist__sponsor">
-                                        <a href="#" class="farmlist__sponsor-btn">Sponsor </a>
-                                    </div>
-                                </div>
+                                @include('includes.farmsCard')
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="farmlist-content">
+                                @include('includes.farmsCard')
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="farmlist-content">
+                                @include('includes.farmsCard')
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <div class="farmlist-content">
-                                <a href="{{asset('farmlist')}}" class="farmlist__more">More </a>
+                                <div class="farmlist__more">
+                                    <a href="{{asset('farmlist')}}" class="farmlist__more--btn homepage__btn">More <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -586,17 +562,27 @@
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <div class="insurance-content">
-                                <div class="insurance__shield-wrap">
-                                    <img src="" alt="Green shield photo" class="insurance__shield">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="insurance__image">
+                                            <div class="insurance__shield-wrap">
+                                                <img src="{{asset('img/shield.svg')}}" alt="Green shield photo" class="insurance__shield">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <div class="insurance__text-wrap">
+                                            <h2 class="insurance__heading">A Robust Insurance Policy</h2>
+                                            <p class="insurance__text">
+                                                Farmsponsor has your investment covered with a robust 
+                                                insurance policy. Our farms are comprehensively insured 
+                                                by Leadway Assurance plc.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="insurance__text-wrap">
-                                    <h2 class="insurance__heading">A Robust Insurance Policy</h2>
-                                    <p class="insurance__text">
-                                        Farmsponsor has your investment covered with a robust 
-                                        insurance policy. Our farms are comprehensively insured 
-                                        by Leadway Assurance plc.
-                                    </p>
-                                </div>
+                              
+                               
                             </div>
                         </div>
                     </div>
@@ -608,7 +594,7 @@
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <div class="partners__heading-wrap">
-                                <h3 class="partners__heading">Partners</h3>
+                                <h3 class="partners__heading mb-2">Partners</h3>
                                 <p class="partners__text">
                                     Driving agri-tech to provide food for all Africans
                                 </p>
@@ -618,22 +604,195 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <div class="partners-content">
-                                <img src="{{asset('img/fs-pic3.png')}}" alt="" class="insurance__image">
+                                <div class="partners__image">
+                                    <img src="{{asset('img/fs-pic3.png')}}" alt="" class="insurance__image--img">
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="partners-content">
-                                <img src="{{asset('img/fs-pic5.png')}}" alt="" class="insurance__image">
+                                <div class="partners__image">
+                                    <img src="{{asset('img/fs-pic5.png')}}" alt="" class="insurance__image--img">
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="partners-content">
-                                <img src="{{asset('img/fs-pic4.png')}}" alt="" class="insurance__image">
+                                <div class="partners__image">
+                                    <img src="{{asset('img/fs-pic4.png')}}" alt="" class="insurance__image--img">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="footer__segment">
+                            <p class="footer__subscribe--text mb-0">
+                                Ready To Get More Updates 
+                            </p>
+                            <p class="footer__subscribe--text">
+                                From Farmsponsor?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <div class="footer__segment">
+                            <form action="" class="footer__form">
+                                <div class="form-row">
+                                    <div class="col-md-8 col-8">
+                                        <input type="text" class="form-control footer__input" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="col-md-4 col-4">
+                                        <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="footer__content">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <p class="footer__text">Help</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Contact</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Terms and Conditions</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Pricy Policy</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="footer__content">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <p class="footer__text">FARMSPONSOR</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">About</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="footer__content">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <p class="footer__text">GET STARTED</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">About</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="footer__content">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <p class="footer__text">PORT HARCOURT</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">About</a></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="footer__content">
+                            <div class="row">
+                                <div class="col-md-12 col-12">
+                                    <p class="footer__text">CONNECT</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12">
+                                    <div class="footer__item footer__item--social">
+                                        <a href="#" class="footer__links mr-3"><i class="fab fa-facebook-square footer__icon footer__icon--fb"></i></a>
+                                        <a href="#" class="footer__links mr-3"><i class="fab fa-instagram footer__icon footer__icon--ig"></i></a>
+                                        <a href="#" class="footer__links"><i class="fab fa-twitter-square footer__icon footer__icon--twt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="footer__copyright">
+                            <p class="footer__copyright--text">Copyright &copy; Globetrot Farmsponsor Nig Ltd 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+              
     </body>
 </html>

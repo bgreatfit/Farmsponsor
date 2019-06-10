@@ -1,7 +1,9 @@
 .homepage-wrap {
     background-color: $color-white;
     font-family: Montserrat;
-
+    .sponsor-btn--icon{
+        width: 9px;
+    }
     .heading__sub--light {
         font-size: 21px;
         color: $color-white;
@@ -159,6 +161,7 @@
     .how-it-works-section{
         color: $color-white;
         margin-bottom: 0;
+        font-family: montserrat;
         .how-it-works {
             &__create-account,
             &__row-wrap {
@@ -186,12 +189,10 @@
     }
 
     .statistics-section{
-        background-color: rgba(0, 0, 0, 0.6);
+        background-image: url('../../../public/img/stats-background.svg');
         padding: 12rem 3rem 9rem 3rem;
         color: $color-white;
         line-height: 1.64;
-
-
 
         .statistics {
             &__heading{
@@ -261,56 +262,108 @@
     }
 
     .farmlist-section{
+        padding: 7rem;
         .farmlist__heading {
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 8rem;
 
         }
         .farmlist-content {
-            .farmlist__card {
-                display: flex;
-                flex-direction: column;
-                color: $color-white;
 
-                .farmlist{
-                    &__status{
-                        border-top-left-radius: 3px;
-                        border-top-right-radius: 3px;
-                        align-self: flex-end;
-                        padding: .5rem 5rem; 
-                        background-image: linear-gradient(to bottom, #758c1f 90%, rgba(117, 140, 31, 0));
-                        &--text{
-                            margin-bottom: 0;
-                            color: $color-white;
-                         }
-                    }
-                    &__card-body { 
-                        display: flex;
-                        flex-direction: column;
-                        &--image-wrap{ }
-                        &--text-wrap {
-                            background-image: url('../../../public/img/clockwise-arrow.svg');
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            border-bottom-left-radius: 1rem;
-                            border-bottom-right-radius: 1rem;
-                            overflow: hidden;
-                            margin-bottom: 2rem;
-                         }
-                    }
-                    &__sponsor {
-                        align-self: flex-end;
+            .farmlist__more{
+                text-align: center;
 
-                        &-btn{
-                            border-radius: 3px;
-                            border: solid 1px #ffffff;
-                            background-color: #154219;
-                            text-decoration: none;
-                            color: $color-white;
-                            padding: 1rem 2rem;
-                        }
-                    }
+            }
+        }
+    }
+
+    .insurance-section{
+        background-color: rgba(234, 236, 239, 0.7);
+        padding: 10rem 0;
+
+        .insurance-content{
+            font-family: Montserrat;
+            color: #011633;
+
+            .insurance{
+                &__image{
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-end;
+                }
+               
+                &__sheild{
+
+                }
+                &__text-wrap{
+                    padding: 5rem 20rem 10rem 0;
+                }
+                &__heading{
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 1.64;
+                    text-align: center;
+                    margin-bottom: 3.5rem;
+                }
+                &__text{
+                    font-size: 24px;
+                    line-height: 1.64;
                 }
             }
         }
+    }
+
+    .partner-section{
+        padding: 10rem 5rem;
+        .partners__heading-wrap{ 
+            line-height: 1.64;
+
+            .partners__heading{
+                font-size: 32px;
+                font-weight: 600;
+                color: $color-black;
+                text-align: center;
+            }
+            .partners__text{
+                font-size: 18px;
+                color: #011633;
+                text-align: center;
+
+            }
+        }
+        .partners-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 25rem;
+            .insurance__image{
+            }
+         }
+    }
+}
+
+.page-footer{
+    background-color: #0e2503;
+    padding: 8rem 0;
+
+    .footer__segment{
+        .footer__subscribe--text{
+            font-family: Montserrat;
+            font-size: 32px;
+            color: $color-white;
+        }
+    }
+    .footer__content{
+
+        .footer__text{ 
+        }
+        .footer__item{ }
+        .footer__links{
+
+         }
     }
 }
 
@@ -322,6 +375,18 @@
         .invest__icon {
             text-align: left;
           
+        }
+    }
+    .insurance-section{
+        .insurance-content{
+            .insurance{
+                &__image{
+             
+                }
+            }
+            &__shield-wrap{
+               
+            }
         }
     }
 }
