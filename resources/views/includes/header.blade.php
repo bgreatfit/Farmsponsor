@@ -9,7 +9,7 @@
                         with their money for a 15% return on their sponsorship at the end of a farming period.
                     </p>
                     <p>
-                        <a class="btn btn-success btn-lg jumbotron__home--btn" href="#" role="button">Sponsor &raquo;</a>
+                        <a class="btn btn-success btn-lg jumbotron__home--btn" href="{{route('farms.all')}}" role="button">Sponsor &raquo;</a>
                     </p>
                 </div>
             </div>

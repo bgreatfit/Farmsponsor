@@ -11465,8 +11465,10 @@ a.text-dark:focus {
 }
 
 .homepage-wrap .statistics-section {
-  background-image: url(/images/stats-background.svg?fd61c87b7b303882452a28243b396c76);
+  background-image: url(/images/statistics-background.svg?131be0ab3cd59e70bbda05c2e03a1055);
   padding: 12rem 3rem 9rem 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   line-height: 1.64;
 }

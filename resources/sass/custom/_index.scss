@@ -189,8 +189,10 @@
     }
 
     .statistics-section{
-        background-image: url('../../../public/img/stats-background.svg');
+        background-image: url('../../../public/img/statistics-background.svg');
         padding: 12rem 3rem 9rem 3rem;
+        background-repeat: no-repeat;
+        background-size: cover;
         color: $color-white;
         line-height: 1.64;
 

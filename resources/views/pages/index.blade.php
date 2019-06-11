@@ -54,14 +54,25 @@
                     </div>
 
                     <div class="fs-process--row">
+                      <h3 class="heading__tertiary fs-process__heading--tertiary">
+                          <Span><i class="heading__tertiary--icon icon-basic-compass"></i></Span>Vest Funds in Vestbank wallet
+                      </h3>
+                      <p class="fs-process__text">
+                         Add the funds you want to sponsor a farm with to your personal Vestbank wallet.
+                      </p>
+                      <a href="{{route('aboutVestbanking')}}" class="fs-process__btn fs-invest__cta btn">More info on Vestbanking</a>
+                    </div>
+
+                    <div class="fs-process--row">
                         <h3 class="heading__tertiary fs-process__heading--tertiary">
                             <Span><i class="heading__tertiary--icon icon-basic-magnifier"></i></Span>Find A Farm To Sponsor
                         </h3>
                         <p class="fs-process__text">
                             Select a farm from our list of available farms ready
                             for sponsorship on the current farm cycle, buy a specific
-                            number of units at N100,000 per unit and that's it. Just sit
-                            back and watch your investment grow.
+                            number of units at N100,000 per unit and that's it. Note: You must have up
+                            to the specified sponsorship amount in your Vestbank balance inorder to sponsor a farm.
+                          .
                         </p>
                     </div>
 
@@ -70,12 +81,9 @@
                             <Span><i class="heading__tertiary--icon icon-basic-clockwise"></i></Span>Stay Updated
                         </h3>
                         <p class="fs-process__text">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                          Natus quae fugit accusantium non nihil, reprehenderit sit vero
-                          amet quae quaerat quia omnis?
+                          Regularly check our updates to keep you informed on our promos, farm updates, blogs and others.
                         </p>
                     </div>
-
 
                 </div>
               </div>
@@ -91,9 +99,10 @@
                       We Empower Farmers
                   </h3>
                   <p class="fs-invest__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nemo quaerat, voluptatum voluptate quidem doloribus voluptates
-                    Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
+                    We empower local farmers with funds from individuals and skils to produce at 
+                    capacity or more and in return, you will get back your initial capital and a 
+                    certain percentage of your initial capital (usually 15%) after harvest (Usually 
+                    12 weeks) 
                   </p>
                 </div>
 
@@ -102,9 +111,8 @@
                         We Have High Returns On Investments
                     </h3>
                     <p class="fs-invest__text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Nemo quaerat, voluptatum voluptate quidem doloribus voluptates
-                      Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
+                      At an ROI of up to 15% on your capital investment over the farming season, 
+                      Farm Sponsor has the highest return on investment in the industry
                     </p>
                 </div>
 
@@ -113,15 +121,15 @@
                       Multiple Farming Cycles
                     </h3>
                     <p class="fs-invest__text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Nemo quaerat, voluptatum voluptate quidem doloribus voluptates
-                      Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
+                      In just under a year since we began operations, we've had 14 farming cycles. 
+                      This means that you have the potential to keep earning as much and as often as 
+                      possible. This is residual income at it's finest.
                     </p>
                 </div>
 
                 <div class="fs-invest__row">
-                    <a href="#" class="fs-invest__cta btn mr-5 my-3">Invest with Farm Sponsor</a>
-                    <a href="#" class="fs-invest__cta btn">Findout more</a>
+                <a href="{{route('login')}}" class="fs-invest__cta btn mr-5 my-3">Get started with Sponsor</a>
+                    <a href="{{route('faq')}}" class="fs-invest__cta btn">Findout more</a>
                 </div>
             </div>
           </div>

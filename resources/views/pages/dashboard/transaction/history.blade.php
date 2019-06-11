@@ -43,7 +43,7 @@
 
       <div class="row">
         <div class="col-5 offset-7 col-md-2 text-right offset-md-10">
-          <a href="{{url('/dashboard/transactions')}}" class="transaction-details__btn btn-secondary btn form-control my-5">Back</a>
+          <a href="{{route('transactions.all')}}" class="transaction-details__btn btn-secondary btn form-control my-5">Back</a>
         </div>
       </div>
 

@@ -8,6 +8,7 @@
                     <div class="deposit-request__heading-box">
                         <h1 class="deposit-request__heading mb-5 text-center">Deposits</h1>
                     </div>
+                    .deposit-request
                     <div class="deposit-request__table">
                         <table class="table table-bordered">
                             <thead>

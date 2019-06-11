@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-12 offset-md-1 col-md-10">
                     <div class="deposit-method__content my-5 py-5">
-                        <h1 class="deposit-method__heading text-center ">Choose deposit method</h1>
+                        <h1 class="deposit-method__heading text-center ">Preferred method of adding funds</h1>
                         <ul class="list-group">
                             <li class="list-group-item deposit-method">
                                 <a href="#" data-toggle="modal" data-target="#deposit-method-bank"
@@ -15,11 +15,13 @@
                                         Bank Transfer
                                 </a>
                             </li>
-                            <li class="list-group-item deposit-method">
+                            <!-- webpay disabled  -->
+                            
+                            {{-- <li class="list-group-item deposit-method">
                                 <a href="#" class="deposit-method__link">
                                     Web Deposit
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -38,18 +40,18 @@
                     </div>
                     <div class="modal-body px-4">
                         <div class="deposit-method-bank__content py-4">
-                            {{-- <div class="deposit-method-bank__account">
-                                <h3 class="deposit-method-bank__heading mb-4">Deposit Account</h3>
+                            <div class="deposit-method-bank__account">
+                                <h3 class="deposit-method-bank__heading mb-4">Pay into this Account</h3>
                                 <p class="deposit-method-bank__bank-info">Bank Name: First Bank Plc</p>
                                 <p class="deposit-method-bank__bank-info">Account Name: GLOBETROT FARMSPONSOR NIG LTD</p>
                                 <p class="deposit-method-bank__bank-info">Account Number: 2033547424</p>
                             </div>
                             <div class="deposit-method-bank__ruler my-4 text-center">
                                 <hr>
-                            </div> --}}
+                            </div>
                             <form action="{{route('vestbanking.deposit')}}" method="POST" class="deposit-method-bank__form">
                                 @csrf
-                                <h3 class="deposit-method-bank__heading mb-4">Depositor's Information</h3>
+                                <h3 class="deposit-method-bank__heading mb-4">Vestor's Information</h3>
                                 <div class="form-row mb-4">
                                     <div class="form-group col-md-6">
                                         <label for="input__first-name">First name: </label>
@@ -90,6 +92,20 @@
                                 <div class="row">
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
+                                            <label for="phone-number" class="deposit-method-bank__amount--label">Phone number: </label>
+                                            <input type="number" id="phone-number" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="phoneNumber" placeholder="Enter phone number">
+                                            @if ($errors->has('phoneNumber'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('phoneNumber') }}</strong>
+                                            </span>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="form-group mb-4">
                                             <label for="depositAddress" class="deposit-method-bank__address--label">Address: </label>
                                             <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address">
                                             @if ($errors->has('address'))
@@ -104,7 +120,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
-                                            <label for="amount" class="deposit-method-bank__amount--label">Enter deposit amount: </label>
+                                            <label for="amount" class="deposit-method-bank__amount--label">Enter vesting amount: </label>
                                             <input type="number" class="form-control deposit-method-bank__amount {{ $errors->has('amount') ? ' is-invalid' : '' }}" name="amount" id="amount">
                                             @if ($errors->has('amount'))
                                             <span class="invalid-feedback" role="alert">
@@ -126,7 +142,7 @@
                                     </div>
                                 </div>
 
-                                <p class="deposit-method-bank__note"><b>Please complete transfer before submitting deposit form, your account will be creditted as soon as possible.</b></p>
+                                <p class="deposit-method-bank__note"><b>Please complete transfer within 24hours, your account will be credited as soon as possible.</b></p>
 
                             </form>
 

@@ -101,7 +101,7 @@
                                     <div class="col-12 col-md-5">
                                         <div class="the-process__img mr-md-5 pr-md-5">
                                             <div class="the-process__img-box">
-                                                <img src="{{asset('img/Group 5.png')}}" alt="A wallet icon and a user icon" class="the-process__img">
+                                                <img src="{{asset('img/the-process-img-1.svg')}}" alt="A wallet icon and a user icon" class="the-process__img">
                                             </div>
                                         </div>
                                     </div>
@@ -109,6 +109,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <div class="the-process__content">
@@ -116,7 +117,7 @@
                                     <div class="col-12 col-md-5">
                                         <div class="the-process__img ml-md-4">
                                             <div class="the-process__img-box">
-                                                <img src="{{asset('img/Group 5.png')}}" alt="A wallet icon and a user icon" class="the-process__img">
+                                                <img src="{{asset('img/the-process-img-2.svg')}}" alt="A wallet icon and a user icon" class="the-process__img">
                                             </div>
                                         </div>
                                     </div>
@@ -143,6 +144,39 @@
                             </div>
                         </div>
                     </div>
+
+                    {{-- <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div class="the-process__content">
+                                <div class="row">
+                                    <div class="col-12 col-md-5">
+                                        <div class="the-process__text ml-md-5">
+                                            <div class="the-process__text-content">
+                                                <h2 class="the-process__text--heading ">Heading</h2>
+                                                <p class="the-process__text">
+                                                    Some text here..
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                                        <div class="the-process__picture">
+                                            <div class="the-process__arrow-box arrow1">
+                                                <img src="{{asset('img/Vector.png')}}" alt="an arrow pointing down" class="the-process__img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5">
+                                        <div class="the-process__img mr-md-5 pr-md-5">
+                                            <div class="the-process__img-box">
+                                                <img src="{{asset('img/the-process-img-3.svg')}}" alt="A wallet icon and a user icon" class="the-process__img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

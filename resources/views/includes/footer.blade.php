@@ -10,7 +10,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-12">
-                        <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                        <div class="footer__item"><a href="{{route('faq')}}" class="footer__links">FAQs</a></div>
                     </div>
                 </div>
                 <div class="row">
@@ -39,17 +39,17 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-12">
-                        <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
+                        <div class="footer__item"><a href="{{route('home')}}" class="footer__links">Home</a></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-12">
-                        <div class="footer__item"><a href="#" class="footer__links">About</a></div>
+                        <div class="footer__item"><a href="{{route('about')}}" class="footer__links">About</a></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-12">
-                        <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                        <div class="footer__item"><a href="{{route('aboutVestbanking')}}" class="footer__links">Vestbanking</a></div>
                     </div>
                 </div>
             </div>
@@ -64,9 +64,9 @@
                 <div class="row">
                     <div class="col-12 col-md-12">
                         <div class="footer__item footer__item--social">
-                            <a href="#" class="footer__links mr-3"><i class="fab fa-facebook-square footer__icon footer__icon--fb"></i></a>
-                            <a href="#" class="footer__links mr-3"><i class="fab fa-instagram footer__icon footer__icon--ig"></i></a>
-                            <a href="#" class="footer__links"><i class="fab fa-twitter-square footer__icon footer__icon--twt"></i></a>
+                            <a href="https://www.facebook.com/farmsponsorng" target="_blank" class="footer__links mr-3"><i class="fab fa-facebook-square footer__icon footer__icon--fb"></i></a>
+                            <a href="https://www.instagram.com/farmsponsor" target="_blank" class="footer__links mr-3"><i class="fab fa-instagram footer__icon footer__icon--ig"></i></a>
+                            <a href="https://twitter.com/Farmsponsor1" target="_blank" class="footer__links"><i class="fab fa-twitter-square footer__icon footer__icon--twt"></i></a>
                         </div>
                     </div>
                 </div>

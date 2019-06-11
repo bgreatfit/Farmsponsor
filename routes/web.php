@@ -11,7 +11,7 @@ require_once 'admin.php';
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')-> name('home');
 Route::get('/homepage', 'PagesController@homepage');
 Route::get('about', 'PagesController@about')->name('about');
 Route::get('faq', 'PagesController@faq')->name('faq');

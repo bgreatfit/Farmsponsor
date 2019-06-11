@@ -18,7 +18,7 @@
     </div>
     <div class="farmlist__card-body">
         <div class="farmlist__card-body--image-wrap">
-        <img src="{{asset('img/chick-2.jpg')}}" alt="Custom photo for farm cycle" class="farmlist__card-body--image">
+            <img src="{{asset('img/farmcard-pic1.svg')}}" alt="Custom photo for farm cycle" class="farmlist__card-body--image">
         </div>
         <div class="farmlist__card-body--text-wrap">
             <div class="container-fluid">
