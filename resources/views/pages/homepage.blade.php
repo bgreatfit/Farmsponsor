@@ -87,14 +87,14 @@
                                 <div class="introduction__text-wrap">
                                     <h1 class="introduction__heading">
                                         Food Security Is The 
-                                        <br/> 
+                                        {{-- <br/>  --}}
                                         Responsibility Of Everyone
                                     </h1>
                                     <p class="introduction__text">
                                         Farmsponsor is an agric-tech company, where individuals
                                         sponsor farmers with their money for a 15% return
+                                        on their sponsorship.
                                     </p>
-                                    <p class="introduction__text">on their sponsorship.</p>
                                     <a href="{{route('farmlist')}}" class="homepage__btn">
                                         Sponsor Now  <img src="{{asset('img/greater-than-white.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3">
                                     </a>

@@ -55,7 +55,8 @@
         margin-bottom: 13.3rem;
 
         .introduction__text-wrap{
-            padding: 15.6rem 15.4rem 9rem 7.6rem;
+            // padding: 15.6rem 15.4rem 9rem 7.6rem;
+            padding: 5rem 8rem 5rem 8rem;
             font-style: normal;
             font-stretch: normal;
             letter-spacing: normal;
@@ -402,6 +403,21 @@
 
 /*MEDIUM and BELOW SCREENS */
 @media screen and (max-width:768px){
+//general page styles
+    .invest__icon{
+        text-align: center;
+    }
+    .text-row{
+        text-align: center;
+    }
+
+//introduction-section styles
+    .homepage-wrap .introduction-section .introduction__text-wrap {
+        padding: 5rem 3rem 10rem 3rem;
+        text-align: center;
+    }
+
+//invest-section styles
     .we-empower-farmers-block .invest-content .invest__empower-farmers .heading-row {
         display: none;
     }
@@ -409,21 +425,30 @@
         display: flex;
         flex-direction: column;
     }
-    .how-it-works-block{
-        display: flex;
-        flex-direction: column;
+   
+    .homepage-wrap .invest-section .invest__heading--main {
+        text-align: center;
     }
     .invest-content{
         flex-basis: 100%;
         flex-grow: 1;
     }
-    .invest__heading--main {
-        text-align: center;
+
+//how-it-works styles
+    .how-it-works-block{
+        display: flex;
+        flex-direction: column;
     }
-    
     .how-it-works-content {
         flex-basis: 100%;
         flex-grow: 1;
+    }
+    .how-it-works-section .how-it-works__heading {
+        text-align: center;
+    }
+    .homepage-wrap div.icon-row{
+        text-align: center;
+        margin-bottom: 7rem;
     }
 }
 
@@ -431,15 +456,19 @@
     div.icon-row{
         margin-bottom: 0;
     }
-    .invest__icon{
-        text-align: center;
-    }
+    // .invest__icon{
+    //     text-align: center;
+    // }
     .invest__empower-farmers .icon-row .invest__icon, 
     .invest__returns .icon-row .invest__icon {
         margin-bottom: 8rem;
     }
-    .text-row{
-        text-align: center;
+    // .text-row{
+    //     text-align: center;
+    // }
+    .how-it-works__create-account .icon-row .how-it-works__icon {
+        margin-bottom: 7rem;
+
     }
 
 }
