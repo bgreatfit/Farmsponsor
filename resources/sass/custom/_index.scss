@@ -104,21 +104,25 @@
     }
 
     .invest-section{
+        display: flex;
+        width: 100%;
       
         .invest-content{
             display: flex;
-            width: 100%;
-            height: 100%;
-         }
+            flex-basis: 50%;
+        }
+        .we-empower-farmers-block{
+            display: flex;
+        }
         .invest__heading--main{
             font-family: Montserrat;
             font-size: 32px;
             font-weight: 500;
             color: #011633;
             text-align: right;
-            padding: 0 11.8rem;
-            margin-left: auto;
-            margin-bottom: 8rem
+            padding: 0 5rem;
+            margin-bottom: 8rem;
+            width: 100%;
          }
         
         .invest {
@@ -155,18 +159,26 @@
 
             }
         }
-
+        
     }
 
     .how-it-works-section{
         color: $color-white;
         margin-bottom: 0;
         font-family: montserrat;
+        .how-it-works-block {
+            display: flex;
+        }
+        .how-it-works-content{
+            flex-basis: 50%;
+            flex-grow: 1;
+        }
         .how-it-works {
             &__create-account,
             &__row-wrap {
                 min-height: 91.2rem;
                 width: 100%;
+                height: 100%;
                 padding: 8rem 5rem 8rem 8.7rem;
              }
             &__create-account {
@@ -368,34 +380,66 @@
          }
     }
 }
-
-@media screen and (min-width: 768px) {
-    .introduction-section {
-
+/* LARGER SCREENS*/
+@media screen and (min-width: 1024px) {
+    .text-row{ 
+        margin-left: 9.4rem;
     }
+}
+@media screen and (min-width: 768px) {
     .invest-section {
         .invest__icon {
             text-align: left;
           
         }
     }
-    .insurance-section{
-        .insurance-content{
-            .insurance{
-                &__image{
-             
-                }
-            }
-            &__shield-wrap{
-               
-            }
-        }
+    .how-it-works-block .how-it-works-content .how-it-works__create-account .heading-row {
+        display: none;
+    }
+
+}
+
+
+/*MEDIUM and BELOW SCREENS */
+@media screen and (max-width:768px){
+    .we-empower-farmers-block .invest-content .invest__empower-farmers .heading-row {
+        display: none;
+    }
+    .we-empower-farmers-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .how-it-works-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .invest-content{
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+    .invest__heading--main {
+        text-align: center;
+    }
+    
+    .how-it-works-content {
+        flex-basis: 100%;
+        flex-grow: 1;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .text-row{ 
-        margin-left: 9.4rem;
+@media screen and (max-width:395px){
+    div.icon-row{
+        margin-bottom: 0;
+    }
+    .invest__icon{
+        text-align: center;
+    }
+    .invest__empower-farmers .icon-row .invest__icon, 
+    .invest__returns .icon-row .invest__icon {
+        margin-bottom: 8rem;
+    }
+    .text-row{
+        text-align: center;
     }
 
 }

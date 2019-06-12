@@ -21,15 +21,15 @@
             <img src="{{asset('img/farmcard-pic1.svg')}}" alt="Custom photo for farm cycle" class="farmlist__card-body--image">
         </div>
         <div class="farmlist__card-body--text-wrap">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-md-7">
+            <div class="container-block">
+                <div class="flex-row">
+                    <div class="flex-col-2">
                         <p class="farmlist__text">Farm Cycle:</p>
                         <p class="farmlist__sub-text mb-5">22nd Sponsoring Window</p>
                     </div>
-                    <div class="col-12 col-md-5">
-                        <p class="farmlist__text text-right">Returns</p>
-                        <p class="farmlist__returns text-right">15%</p>
+                    <div class="flex-col-2">
+                        <p class="farmlist__text text-md-right">Returns</p>
+                        <p class="farmlist__returns text-md-right">15%</p>
                     </div>
                 </div>
                 <div class="row">

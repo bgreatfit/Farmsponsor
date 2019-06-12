@@ -11381,10 +11381,18 @@ a.text-dark:focus {
   height: auto;
 }
 
-.homepage-wrap .invest-section .invest-content {
+.homepage-wrap .invest-section {
   display: flex;
   width: 100%;
-  height: 100%;
+}
+
+.homepage-wrap .invest-section .invest-content {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.homepage-wrap .invest-section .we-empower-farmers-block {
+  display: flex;
 }
 
 .homepage-wrap .invest-section .invest__heading--main {
@@ -11393,9 +11401,9 @@ a.text-dark:focus {
   font-weight: 500;
   color: #011633;
   text-align: right;
-  padding: 0 11.8rem;
-  margin-left: auto;
+  padding: 0 5rem;
   margin-bottom: 8rem;
+  width: 100%;
 }
 
 .homepage-wrap .invest-section .invest__empower-farmers {
@@ -11437,10 +11445,20 @@ a.text-dark:focus {
   font-family: montserrat;
 }
 
+.homepage-wrap .how-it-works-section .how-it-works-block {
+  display: flex;
+}
+
+.homepage-wrap .how-it-works-section .how-it-works-content {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
 .homepage-wrap .how-it-works-section .how-it-works__create-account,
 .homepage-wrap .how-it-works-section .how-it-works__row-wrap {
   min-height: 91.2rem;
   width: 100%;
+  height: 100%;
   padding: 8rem 5rem 8rem 8.7rem;
 }
 
@@ -11626,15 +11644,72 @@ a.text-dark:focus {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .invest-section .invest__icon {
-    text-align: left;
-  }
-}
+/* LARGER SCREENS*/
 
 @media screen and (min-width: 1024px) {
   .text-row {
     margin-left: 9.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .invest-section .invest__icon {
+    text-align: left;
+  }
+
+  .how-it-works-block .how-it-works-content .how-it-works__create-account .heading-row {
+    display: none;
+  }
+}
+
+/*MEDIUM and BELOW SCREENS */
+
+@media screen and (max-width: 768px) {
+  .we-empower-farmers-block .invest-content .invest__empower-farmers .heading-row {
+    display: none;
+  }
+
+  .we-empower-farmers-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-it-works-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invest-content {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+
+  .invest__heading--main {
+    text-align: center;
+  }
+
+  .how-it-works-content {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  div.icon-row {
+    margin-bottom: 0;
+  }
+
+  .invest__icon {
+    text-align: center;
+  }
+
+  .invest__empower-farmers .icon-row .invest__icon,
+  .invest__returns .icon-row .invest__icon {
+    margin-bottom: 8rem;
+  }
+
+  .text-row {
+    text-align: center;
   }
 }
 
@@ -12120,6 +12195,41 @@ a[class*=__btn]:visited {
 
 .btn {
   font-size: 1.3rem;
+}
+
+.flex-row {
+  display: flex;
+  width: 100%;
+}
+
+.container-block {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.flex-col-2 {
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-col-2 {
+    flex-basis: 100%;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .flex-row {
+    flex-direction: column !important;
+  }
 }
 
 .vestbanking-page-heading {
