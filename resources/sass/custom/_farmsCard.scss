@@ -77,7 +77,11 @@
             &__card-body { 
                 display: flex;
                 flex-direction: column;
-                &--image-wrap{ }
+                &--image-wrap{ 
+                    border-top-right-radius: 1rem;
+                    overflow: hidden;
+                    border-top-left-radius: 1rem;
+                }
                 &--text-wrap {
                     background-image: url('../../../public/img/farmcard-body.svg');
                     background-repeat: no-repeat;

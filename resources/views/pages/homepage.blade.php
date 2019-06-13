@@ -20,74 +20,65 @@
         <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel navigation-bar">
-            <div class="container-fluid">
-                <a class="navbar-brand navi-bar__brand" href="{{ url('/') }}">
-                    <img src="{{asset('img/farmsponsor-logo.svg')}}" alt="Farmsponsor logo" class="navi-bar__picture">
-                </a>
-        
-                <button class="navbar-toggler navi__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon navi__toggler--icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-                    <ul class="navbar-nav ml-auto navbar__navi">
-                        <!-- Authentication Links -->
-        
-                            <li class="nav-item navi__item">
-                                <a class="nav-link navi__i" href="{{route('about')}}">About us</a>
-                            </li>
-                            <li class="nav-item navi__item">
-                                <a class="nav-link navi__i" href="{{route('farmlist')}}">Farm List</a>
-                            </li>
-                            <li class="nav-item navi__item">
-                                <a class="nav-link navi__i" href="{{route('aboutVestbanking')}}">VestBanking</a>
-                            </li>
-                            <li class="nav-item navi__item">
-                                <a class="nav-link navi__i" href="https://farmsponsor.com.ng/latest-updates" target="_blank">Blog</a>
-                            </li>
-                            <li class="nav-item navi__item">
-                                <a class="nav-link navi__i" href="{{route('gallery')}}">Gallery</a>
-                            </li>
-
-                            <li class="nav-item navi__item dropdown">
-                                <a id="navbarDropdown" class="nav-link navi__i dropdown-toggle"
-                                href="#" role="button" data-toggle="dropdown" aria-haspopup="true" 
-                                aria-expanded="false" v-pre> Get Help</a>
-        
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item dropdown-item__link" href="#">Contact Us</a>
-                                    <a class="dropdown-item dropdown-item__link" href="{{ route('faq') }}">FAQs</a>
-                                </div>
-        
-                            </li>
-
-                            <li class="nav-item navi__item">
-                                <a class="nav-link navi__i" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
-                                {{-- <a class="nav-link navi__i" href="{{route('gallery')}}">Sign Up</a> --}}
-                            </li>
-                            
-                            <li class="nav-item navi__item">
-                                <a class="nav-link navi__i" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                {{-- <a class="nav-link navi__i" href="{{route('gallery')}}">Login</a> --}}
-                            </li>
-
-                    </ul>
+        <div class="navigation-main">
+            <nav class="navbar navbar-expand-md navbar-light navbar-laravel navi-bar">
+                <div class="container-fluid">
+                    <a class="navbar-brand navi-bar__brand" href="{{ url('/') }}">
+                        <img src="{{asset('img/fs-logo.png')}}" alt="Farmsponsor logo" class="navi-bar__picture">
+                    </a>
+            
+                    <button class="navbar-toggler navi__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                        <span class="navbar-toggler-icon navi__toggler--icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto navbar__navi">
+                            <!-- Authentication Links -->
+            
+                                <li class="nav-item navi__item">
+                                    <a class="nav-link navi__item--link" href="{{route('about')}}">About us</a>
+                                </li>
+                                <li class="nav-item navi__item">
+                                    <a class="nav-link navi__item--link" href="{{route('farmlist')}}">Farm List</a>
+                                </li>
+                                <li class="nav-item navi__item">
+                                    <a class="nav-link navi__item--link" href="{{route('aboutVestbanking')}}">VestBanking</a>
+                                </li>
+                                <li class="nav-item navi__item">
+                                    <a class="nav-link navi__item--link" href="https://farmsponsor.com.ng/latest-updates" target="_blank">Blog</a>
+                                </li>
+                                <li class="nav-item navi__item dropdown">
+                                    <a id="navbarDropdown" class="nav-link navi__item--link dropdown-toggle"
+                                    href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" v-pre>Get help</a>
+            
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item dropdown-item__link" href="{{ route('login') }}">FAQs</a>
+                                        <a class="dropdown-item dropdown-item__link" href="{{ route('register') }}">Contact</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item navi__item">
+                                    <a a class="nav-link navi__item--link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                                <li class="nav-item navi__item">
+                                    <a a class="nav-link navi__item--link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+            
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
         <main class="homepage-wrap">
             <section class="introduction-section">
-                <div class="container-fluid container-block">
-                    <div class="row">
-                        <div class="col-md-6 col-12">
+                <div class="container-block">
+                    <div class="flex-row">
+                        <div class="flex-col-2">
                             <div class="introduction-content"> 
                                 <div class="introduction__text-wrap">
                                     <h1 class="introduction__heading">
                                         Food Security Is The 
-                                        {{-- <br/>  --}}
                                         Responsibility Of Everyone
                                     </h1>
                                     <p class="introduction__text">
@@ -101,7 +92,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12">
+                        <div class="flex-col-2">
                             <div class="introduction-content">
                                 <div class="introduction__picture">
                                     <a href="#" class="introduction__video">
@@ -234,6 +225,7 @@
                 </div>
             </section>
         
+
             <section class="how-it-works-section">
                 <div class="container-block">
                     <div class="how-it-works-block">
@@ -356,6 +348,7 @@
                 </div>
             </section>
         
+
             <section class="statistics-section">
                 <div class="container">
                     <div class="row">
@@ -564,7 +557,7 @@
             </section>
 
             <section class="insurance-section">
-                <div class="container-fluid container-block">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-md-12">
                             <div class="insurance-content">
@@ -636,143 +629,175 @@
 
         <footer class="page-footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-6">
-                        <div class="footer__segment">
-                            <p class="footer__subscribe--text mb-0">
-                                Ready To Get More Updates 
-                            </p>
-                            <p class="footer__subscribe--text">
-                                From Farmsponsor?
-                            </p>
+                <div class="footer-subscribe">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="footer__segment">
+                                <p class="footer__subscribe--text mb-0">
+                                    Ready To Get More Updates 
+                                    From Farmsponsor?
+                                </p>
+                                {{-- <p class="footer__subscribe--text">
+                                    From Farmsponsor?
+                                </p> --}}
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="footer__segment">
+                                <form action="" class="footer__form">
+                                    <div class="form-row">
+                                        <div class="col-md-8 col-8">
+                                            <input type="text" class="form-control footer__input" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        </div>
+                                        <div class="col-md-4 col-4">
+                                            <button class="btn btn-outline-secondary form-control ml-3" type="button">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-md-6">
-                        <div class="footer__segment">
-                            <form action="" class="footer__form">
-                                <div class="form-row">
-                                    <div class="col-md-8 col-8">
-                                        <input type="text" class="form-control footer__input" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                    </div>
-                                    <div class="col-md-4 col-4">
-                                        <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="footer__content">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="footer__text">HELP</p>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Contact</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Terms and Conditions</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Pricy Policy</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="footer__content">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="footer__text">FARMSPONSOR</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">About</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="footer__content">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="footer__text">GET STARTED</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">How it works</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Why invest</a></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item"><a href="#" class="footer__links">Get involved</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <div class="footer__content">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="footer__text">PORT HARCOURT</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item">
+                                            <p class="footer__links">16 Abua Close, Beside RCCG Zonal HQ,</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item">
+                                            <p class="footer__links">Rumuibekwe, Port Harcourt,</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item">
+                                            <p class="footer__links">Rivers State, Nigeria.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-12">
+                                        <div class="footer__item">
+                                            <p class="footer__links">+ 234 703 196 0724</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="footer__content">
-                            <div class="row">
-                                <div class="col-md-12 col-12">
-                                    <p class="footer__text">Help</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Contact</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Terms and Conditions</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Pricy Policy</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="footer__content">
-                            <div class="row">
-                                <div class="col-md-12 col-12">
-                                    <p class="footer__text">FARMSPONSOR</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">About</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="footer__content">
-                            <div class="row">
-                                <div class="col-md-12 col-12">
-                                    <p class="footer__text">GET STARTED</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">About</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="footer__content">
-                            <div class="row">
-                                <div class="col-md-12 col-12">
-                                    <p class="footer__text">PORT HARCOURT</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Home</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">About</a></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
                 <div class="row">
                     <div class="col-12 col-md-12">
-                        <div class="footer__content">
+                        <div class="footer__social">
                             <div class="row">
                                 <div class="col-md-12 col-12">
                                     <p class="footer__text">CONNECT</p>
@@ -781,15 +806,29 @@
                             <div class="row">
                                 <div class="col-12 col-md-12">
                                     <div class="footer__item footer__item--social">
-                                        <a href="#" class="footer__links mr-3"><i class="fab fa-facebook-square footer__icon footer__icon--fb"></i></a>
-                                        <a href="#" class="footer__links mr-3"><i class="fab fa-instagram footer__icon footer__icon--ig"></i></a>
-                                        <a href="#" class="footer__links"><i class="fab fa-twitter-square footer__icon footer__icon--twt"></i></a>
+                                        <a href="https://www.facebook.com/farmsponsorng" target="_blank" class="footer__links mr-3">
+                                            <img src="{{asset('img/facebook.svg')}}" alt="Facebook logo" class="footer__icon--fb">
+                                            {{-- <i class="fab fa-facebook-square footer__icon footer__icon--fb"></i> --}}
+                                        </a>
+                                        <a href="https://twitter.com/Farmsponsor1" target="_blank" class="footer__links mr-3">
+                                            <img src="{{asset('img/twitter.svg')}}" alt="twitter logo" class="footer__icon--twt">
+                                            {{-- <i class="fab fa-instagram footer__icon footer__icon--ig"></i> --}}
+                                        </a>
+                                        <a href="https://www.instagram.com/farmsponsor" target="_blank" class="footer__links mr-3">
+                                            <img src="{{asset('img/instagram.svg')}}" alt="instagram logo" class="footer__icon--ig">
+                                            {{-- <i class="fab fa-twitter-square footer__icon footer__icon--twt"></i> --}}
+                                        </a>
+                                        <a href="https://github.com/globetrot-farmsponsor" target="_blank" class="footer__links">
+                                            <img src="{{asset('img/github.svg')}}" alt="github logo" class="footer__icon--gh">
+                                            {{-- <i class="fab fa-twitter-square footer__icon footer__icon--twt"></i> --}}
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-12 col-md-12">
                         <div class="footer__copyright">

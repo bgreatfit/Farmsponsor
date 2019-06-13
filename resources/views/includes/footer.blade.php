@@ -70,21 +70,6 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="row">
-                    <div class="col-12 col-md-12">
-                        <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-12">
-                        <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-12">
-                        <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
-                    </div>
-                </div> --}}
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-3">

@@ -11211,6 +11211,12 @@ a.text-dark:focus {
   flex-direction: column;
 }
 
+.farmlist__card .farmlist__card-body--image-wrap {
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+}
+
 .farmlist__card .farmlist__card-body--text-wrap {
   background-image: url(/images/farmcard-body.svg?326546dfb2ac4cabe2a35ff40661cdca);
   background-repeat: no-repeat;
@@ -11775,24 +11781,24 @@ a.text-dark:focus {
   background-color: rgba(126, 213, 111, 0.4);
 }
 
-.navigation-bar {
+.navigation-main {
   background-color: red;
 }
 
-.navigation-bar .navbar__navi {
+.navigation-main .navbar__navi {
   margin-left: 21.9rem;
   margin-right: 9.2rem;
 }
 
-.navigation-bar .navi__item {
+.navigation-main .navi__item {
   color: #000000;
 }
 
-.navigation-bar .navi__item:not(:last-child) {
+.navigation-main .navi__item:not(:last-child) {
   margin-right: 4.7rem;
 }
 
-.navigation-bar .navi__i {
+.navigation-main .navi__i {
   color: #000000;
 }
 
@@ -12057,6 +12063,55 @@ a.text-dark:focus {
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
   line-height: 16px;
+}
+
+.page-footer .footer-subscribe,
+.page-footer .footer-links {
+  margin-bottom: 8rem;
+}
+
+.page-footer .footer__segment .footer__form {
+  margin-top: 2.2rem;
+}
+
+.page-footer .footer__segment .footer__form .footer__input {
+  min-height: 3.7rem;
+  font-size: 1.4rem;
+}
+
+.page-footer .footer__segment .footer__form .btn.btn-outline-secondary {
+  padding-top: 1rem;
+  padding-bottom: 2.7rem;
+  font-size: 1.4rem;
+}
+
+.page-footer .footer__item .footer__links {
+  color: #FBFBFB;
+  font-size: 1.4rem;
+}
+
+.page-footer .footer__item--social .footer__links {
+  display: inline-block;
+}
+
+@media screen and (min-width: 1120px) {
+  .footer__segment .footer__subscribe--text {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .page-footer .footer__content {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .page-footer .footer__content {
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    padding-top: 6rem;
+    margin-right: 3rem;
+  }
 }
 
 .gallery-wrap {
