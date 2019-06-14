@@ -1,49 +1,39 @@
-.navi-bar{
-    padding: .5rem 1rem;
-    background-image:  linear-gradient(to top, 
-    rgba($color-primary-dark, 1), 
-    rgba($color-primary-light, 1));
-    font-family: Questrial;
-    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+.navigation-main{
+    .navigation-bar{
+        background-color: #ffffff;
 
-    &__picture{
-        width: 21rem;
-        height: 5rem;
     }
+    //NAV LEFT HAND SIDE
+    
 
-    .navbar__navi{
-        .navi{
-            &__item{
-                padding: 0rem .25rem;
-                text-align: center;
-                font-size: 1.5rem;
-                &--link:link,
-                &--link:visited {
-                    color:$color-white;
-                    transition: all .4s;
-                }
-                &--link:hover{
-                    color: $color-grey-soft;
-                }
-                .dropdown-menu{
-                    background-image:  linear-gradient(to right bottom, 
-                    rgba($color-primary-dark, .8), 
-                    rgba($color-primary-light, .6));
-                    padding: 0rem;
+    
+    //NAV LEFT HAND SIDE
+    .navigation-menu {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        list-style: none;
+        align-items: center;
+        margin-left: auto;
+    }
+    .navigation__item {
+        &--link {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: #3C4049;
+        }
 
-
-                    .dropdown-item__link:link,
-                    .dropdown-item__link:visited{
-                        font-size: 1.2rem;
-                        color:$color-white;
-                        padding: .5rem 1.5rem;
-                    }
-                    .dropdown-item__link:hover{
-                        background-color: rgba($color-primary-light,.4);
-                    }
-                }
-            }
+        .nav-link-btn{
+            padding: 1rem 3.7rem;
+            background: #6E9E3D;
+            border-radius: 50px;
+            color: #ffffff;
+        }
+        .nav-link-signUp {
+            font-weight: 600;
+            font-size: 15px;
+            color: #6E9E3D;
         }
     }
-
 }

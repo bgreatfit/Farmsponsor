@@ -31,7 +31,7 @@
 
     </head>
     <body>
-        @include('includes.navi')
+        @include('includes.navigation')
         
         @include('includes.alerts')
 
