@@ -19,7 +19,7 @@
     
 </head>
 <body>
-    @include('includes.navi')
+    @include('includes.navigation')
 
     <section class="section-form container-fluid">
         @yield('content')
