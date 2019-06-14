@@ -11253,6 +11253,11 @@ a.text-dark:focus {
   text-decoration: none;
   color: #ffffff;
   padding: 1rem 2rem;
+  display: inline-block;
+}
+
+.farmlist__card .farmlist__sponsor .farmlist__sponsor-btn .sponsor-btn--icon {
+  width: 10px;
 }
 
 .header {
@@ -12600,7 +12605,7 @@ mar .intro-section__image-box {
     display: inline-block;
     width: 3.5rem;
     height: 3.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     position: absolute;
     left: 0;
@@ -12621,7 +12626,7 @@ mar .intro-section__image-box {
     width: 2.5rem;
     height: 0.3rem;
     margin: auto;
-    background-color: #4d4d4d;
+    background-color: rgba(0, 0, 0, 0.5);
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
@@ -12632,8 +12637,8 @@ mar .intro-section__image-box {
     content: "";
     position: absolute;
     width: 2.5rem;
-    height: 3px;
-    background-color: #4d4d4d;
+    height: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .dashboard__navi--menu-icon::before {

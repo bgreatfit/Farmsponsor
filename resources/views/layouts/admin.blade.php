@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Farm Sponsor | Administrator </title>
+    <title>Farmsponsor | Administrator </title>
+    {{-- FAV ICON --}}
+     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     {{-- fonts --}}
     <link rel="stylesheet" type="text/css" media="screen" href="/css/icon-font.css">
     <link rel="canonical" href="url()->current()" />

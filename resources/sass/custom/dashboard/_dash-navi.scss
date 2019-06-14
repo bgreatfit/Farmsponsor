@@ -62,7 +62,7 @@
         display: inline-block;
         width: 3.5rem;
         height: 3.5rem;
-        border: 1px solid rgba($color-black, .5);
+        border: 1px solid rgba($color-black, .3);
         border-radius: 2px;
         position: absolute;
         left: 0;
@@ -80,7 +80,7 @@
             width: 2.5rem;
             height: .3rem;
             margin: auto;
-            background-color: lighten($color-black, 30%);
+            background-color:  rgba($color-black, .5);
             transition: transform .3s ease-in-out;
             
             &::before,
@@ -88,8 +88,8 @@
                 content: "";
                 position: absolute;
                 width: 2.5rem;
-                height: 3px;
-                background-color: lighten($color-black, 30%);
+                height: .3rem;
+                background-color:  rgba($color-black, .5);
             }
             &::before{
                 top: .7rem;
