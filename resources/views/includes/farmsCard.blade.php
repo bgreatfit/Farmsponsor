@@ -16,7 +16,7 @@
 {{-- NEW FARM CARD (NOT DYNAMIC) --}}
         <div class="farmlist__card">
             <div class="farmlist__status">
-                <p class="farmlist__status--text">Open</p>
+                <p class="farmlist__status--text">Closed</p>
             </div>
             <div class="farmlist__card-body">
                 <div class="farmlist__card-body--image-wrap">

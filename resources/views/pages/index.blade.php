@@ -162,13 +162,13 @@
                     <div class="how-it-works-content">
                         <div class="how-it-works__create-account">
                             <!--HOW-IT-WORKS-HEADING FOR MEDIUM AND SMALL SCREENS-->
-                            <div class="heading-row">
-                                <div class="flex-row">
-                                    <div class="flex-col">
-                                        <h1 class="how-it-works__heading">How The Farmsponsor App Works</h1>
+                                <div class="heading-row">
+                                    <div class="flex-row">
+                                        <div class="flex-col">
+                                            <h1 class="how-it-works__heading">How The Farmsponsor App Works</h1>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             <!--END OF HOW-IT-WORKS-HEADING -->
 
                             <div class="icon-row">
@@ -221,16 +221,16 @@
                                     <div class="flex-row">
                                         <div class="flex-col">
                                             <h2 class="heading__sub--light">
-                                                Find A Farm To Sponsor
+                                                Vest Funds in Vestbank wallet
                                             </h2>
                                             <div class="invest__text-wrap">
                                                 <p class="text__sub--light">
-                                                    Select a farm from our list of available farms ready for 
-                                                    sponsorship on the current farm cycle, buy a specific number 
-                                                    of units at N100,000.00 per unit and that's it. Just sit back 
-                                                    and watch your investment grow. 
+                                                    Add the funds you want to sponsor a farm with to your personal Vestbank wallet. 
                                                 </p>
                                             </div>
+                                            <a href="{{route('aboutVestbanking')}}" target="_blank" class="how-it-works__btn homepage__btn vestbank-info__btn">
+                                                More info on Vestbanking
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -259,11 +259,13 @@
                             <div class="text-row">
                                 <div class="flex-row">
                                     <div class="flex-col">
-                                        <h2 class="heading__sub--dark">Stay Updated</h2>
+                                        <h2 class="heading__sub--dark">Find A Farm To Sponsor</h2>
                                         <div class="stay-updated__text-wrap">
                                             <p class="text__sub--dark">
-                                                Regularly check our updates to keep you informed on our 
-                                                promos, farm updates, blogs and others.
+                                                Select a farm from our list of available farms ready for 
+                                                sponsorship on the current farm cycle, buy a specific number 
+                                                of units at N100,000.00 per unit and that's it. Just sit back 
+                                                and watch your investment grow. 
                                             </p>
                                         </div>
                                         <a href="{{route('login')}}" class="how-it-works__btn homepage__btn">
@@ -277,7 +279,6 @@
                 </div>
             </div>
         </section>
-
 
         <section class="statistics-section">
             <div class="container">
@@ -450,29 +451,29 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="farmlist-content">
                             @include('includes.farmsCard')
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="farmlist-content">
                             @include('includes.farmsCard')
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="farmlist-content">
                             @include('includes.farmsCard')
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-3">
+                    {{-- <div class="col-12 col-sm-6 col-md-3">
                         <div class="farmlist-content">
                             @include('includes.farmsCard')
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-12">

@@ -11483,6 +11483,20 @@ a.text-dark:focus {
   margin-top: 18rem;
 }
 
+.homepage-wrap .how-it-works-section .how-it-works__sponsor .invest__text-wrap {
+  margin-bottom: 5rem;
+}
+
+.homepage-wrap .how-it-works-section .how-it-works__sponsor .vestbank-info__btn {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.2s ease-in;
+}
+
+.homepage-wrap .how-it-works-section .how-it-works__sponsor .vestbank-info__btn:hover {
+  background-color: #e6e6e6;
+}
+
 .homepage-wrap .how-it-works-section .how-it-works__btn {
   padding: 1rem 3rem;
 }
