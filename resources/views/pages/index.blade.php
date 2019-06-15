@@ -39,7 +39,7 @@
         <section class="invest-section">
             <div class="container-block">
                 <div class="invest-content">
-                    <h2 class="invest__heading--main">Why Invest In Farmsponsor ?</h2>
+                    <h2 class="invest__heading--main">Why Choose Farmsponsor?</h2>
                 </div>
                     
                 <div class="we-empower-farmers-block">
@@ -156,7 +156,6 @@
             </div>
         </section>
 
-
         <section class="how-it-works-section">
             <div class="container-block">
                 <div class="how-it-works-block">
@@ -190,7 +189,7 @@
                             <div class="text-row">
                                 <div class="flex-row">
                                     <div class="flex-col">
-                                        <div class">
+                                        <div class="create-account__text-wrap">
                                             <h2 class="heading__sub--light">Create A User Account</h2>
 
                                             <p class="text__sub--light">

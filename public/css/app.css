@@ -11343,7 +11343,6 @@ a.text-dark:focus {
 
 .homepage-wrap .introduction-section {
   padding-top: 8rem;
-  margin-bottom: 13.3rem;
 }
 
 .homepage-wrap .introduction-section .introduction__text-wrap {
@@ -11397,6 +11396,7 @@ a.text-dark:focus {
 .homepage-wrap .invest-section {
   display: flex;
   width: 100%;
+  padding-top: 10rem;
 }
 
 .homepage-wrap .invest-section .invest-content {
@@ -11415,7 +11415,7 @@ a.text-dark:focus {
   color: #011633;
   text-align: right;
   padding: 0 5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
   width: 100%;
 }
 
@@ -11646,17 +11646,6 @@ a.text-dark:focus {
   min-height: 25rem;
 }
 
-.page-footer {
-  background-color: #0e2503;
-  padding: 8rem 0;
-}
-
-.page-footer .footer__segment .footer__subscribe--text {
-  font-family: Montserrat;
-  font-size: 32px;
-  color: #ffffff;
-}
-
 /* LARGER SCREENS*/
 
 @media screen and (min-width: 1024px) {
@@ -11673,11 +11662,19 @@ a.text-dark:focus {
   .how-it-works-block .how-it-works-content .how-it-works__create-account .heading-row {
     display: none;
   }
+
+  .homepage-wrap .how-it-works-section .how-it-works__row-wrap .stay-updated__text-wrap {
+    margin-bottom: 17rem;
+  }
 }
 
 /*MEDIUM and BELOW SCREENS */
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 59%;
+  }
+
   .invest__icon {
     text-align: center;
   }
@@ -11686,9 +11683,22 @@ a.text-dark:focus {
     text-align: center;
   }
 
+  .heading__sub--dark,
+  .heading__sub--light {
+    margin-bottom: 8rem !important;
+  }
+
   .homepage-wrap .introduction-section .introduction__text-wrap {
     padding: 5rem 3rem 10rem 3rem;
     text-align: center;
+  }
+
+  .introduction__text-wrap .introduction__text {
+    margin-bottom: 6.5rem !important;
+  }
+
+  .invest-section .container-block {
+    display: inline-block !important;
   }
 
   .we-empower-farmers-block .invest-content .invest__empower-farmers .heading-row {
@@ -11698,6 +11708,22 @@ a.text-dark:focus {
   .we-empower-farmers-block {
     display: flex;
     flex-direction: column;
+  }
+
+  .invest__empower-farmers {
+    padding: 10rem 3rem !important;
+  }
+
+  .invest__empower-farmers .icon-row {
+    margin-bottom: 8rem;
+  }
+
+  .invest__returns {
+    padding: 10rem 3rem !important;
+  }
+
+  .invest__returns .invest__farming-cycle {
+    margin-top: 10rem !important;
   }
 
   .homepage-wrap .invest-section .invest__heading--main {
@@ -11719,6 +11745,22 @@ a.text-dark:focus {
     flex-grow: 1;
   }
 
+  .how-it-works__create-account {
+    padding: 5rem 3rem !important;
+  }
+
+  .how-it-works__create-account .how-it-works__sponsor {
+    margin-top: 10rem !important;
+  }
+
+  .how-it-works__row-wrap {
+    padding: 10rem 3rem !important;
+  }
+
+  .how-it-works__row-wrap .stay-updated__text-wrap {
+    margin-bottom: 8rem !important;
+  }
+
   .how-it-works-section .how-it-works__heading {
     text-align: center;
   }
@@ -11727,20 +11769,39 @@ a.text-dark:focus {
     text-align: center;
     margin-bottom: 7rem;
   }
+
+  .statistics-section .content-wrap {
+    margin-bottom: 3rem;
+  }
+
+  .testimonials-section {
+    padding: 5rem 3rem;
+  }
+
+  .testimonials-section .testimonials-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .insurance-section {
+    padding: 5rem 2rem;
+  }
+
+  .insurance-section .insurance-content .insurance__image {
+    justify-content: center !important;
+  }
+
+  .insurance-section .insurance-content .insurance__text-wrap {
+    text-align: center;
+    padding: 4rem 1.5rem !important;
+  }
 }
 
-@media screen and (max-width: 395px) {
-  div.icon-row {
-    margin-bottom: 0;
-  }
-
-  .invest__empower-farmers .icon-row .invest__icon,
-  .invest__returns .icon-row .invest__icon {
-    margin-bottom: 8rem;
-  }
-
-  .how-it-works__create-account .icon-row .how-it-works__icon {
-    margin-bottom: 7rem;
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .homepage-wrap .insurance-section .insurance-content .insurance__text-wrap {
+    padding: 5rem 5rem 10rem 0;
   }
 }
 
@@ -12137,6 +12198,17 @@ a.text-dark:focus {
   background-color: rgba(126, 213, 111, 0.4);
 }
 
+.page-footer {
+  background-color: #0e2503;
+  padding: 8rem 0;
+}
+
+.page-footer .footer__segment .footer__subscribe--text {
+  font-family: Montserrat;
+  font-size: 32px;
+  color: #ffffff;
+}
+
 .page-footer .footer-subscribe,
 .page-footer .footer-links {
   margin-bottom: 8rem;
@@ -12183,6 +12255,12 @@ a.text-dark:focus {
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     padding-top: 6rem;
     margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-footer {
+    padding: 5rem 1rem !important;
   }
 }
 
@@ -12364,6 +12442,10 @@ a[class*=__btn]:visited {
 }
 
 @media screen and (max-width: 768px) {
+  .homepage-wrap .introduction-section .container-block .flex-row {
+    flex-direction: column !important;
+  }
+
   .flex-col-2 {
     flex-basis: 100%;
     flex-grow: 1;
