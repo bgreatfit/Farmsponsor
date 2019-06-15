@@ -11748,33 +11748,68 @@ a.text-dark:focus {
   background-color: #ffffff;
 }
 
-.navigation-main .navigation-menu {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0;
-  list-style: none;
-  align-items: center;
-  margin-left: auto;
+.navigation-main .navigation-menu .navigation__item {
+  text-align: center;
 }
 
-.navigation-main .navigation__item--link {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
+.navigation-main .navigation-menu .navigation__item--link:link,
+.navigation-main .navigation-menu .navigation__item--link:visited {
   color: #3C4049;
 }
 
-.navigation-main .navigation__item .nav-link-btn {
+.navigation-main .navigation-menu .navigation__item--link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  white-space: nowrap;
+  padding: 0.5rem 2rem;
+}
+
+.navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link:link,
+.navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link:visited {
+  font-size: 1.4rem;
+  color: #3C4049;
+}
+
+.navigation-main .navigation-menu .navigation__item .nav-link-btn {
   padding: 1rem 3.7rem;
   background: #6E9E3D;
   border-radius: 50px;
   color: #ffffff;
 }
 
-.navigation-main .navigation__item .nav-link-signUp {
+.navigation-main .navigation-menu .navigation__item .nav-link-signUp {
   font-weight: 600;
   font-size: 15px;
   color: #6E9E3D;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-main .navigation-menu {
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+
+  .navigation-main .navigation-menu .navigation__item .nav-link-signUp {
+    margin-left: 1rem;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation-main .navigation-menu {
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+
+  .navigation-main .navigation-menu .navigation__item {
+    display: block;
+    width: 100%;
+  }
+
+  .navigation-main .navigation-menu .navigation__item--link {
+    padding: 1.3rem 0.5rem;
+  }
 }
 
 .how-it-works {

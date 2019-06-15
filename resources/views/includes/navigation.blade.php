@@ -5,12 +5,12 @@
                     <img src="{{asset('img/farmsponsor-logo.svg')}}" alt="Farmsponsor logo" class="navi-bar__picture">
                 </a>
         
-                <button class="navbar-toggler navi__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon navi__toggler--icon"></span>
+                <button class="navbar-toggler navigation__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon navigation__toggler--icon"></span>
                 </button>
         
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navigation-menu">
+                    <ul class="navbar-nav ml-auto navigation-menu">
                         <!-- Authentication Links -->
         
                             <li class="nav-item navigation__item">
@@ -35,7 +35,7 @@
                             <li class="nav-item navigation__item">
                                 <a class="nav-link navigation__item--link" href="https://farmsponsor.com.ng/latest-updates" target="_blank">Blog</a>
                             </li>
-                            <li class="nav-item navigation__item mr-md-5">
+                            <li class="nav-item navigation__item">
                                 <a a class="nav-link navigation__item--link nav-link-signUp" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
                             </li>
                             <li class="nav-item navigation__item">

@@ -1,39 +1,71 @@
 .navigation-main{
     .navigation-bar{
         background-color: #ffffff;
-
     }
-    //NAV LEFT HAND SIDE
     
-
-    
-    //NAV LEFT HAND SIDE
+    //NAV RIGHT HAND SIDE
     .navigation-menu {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 0;
-        list-style: none;
-        align-items: center;
-        margin-left: auto;
-    }
-    .navigation__item {
-        &--link {
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 18px;
-            color: #3C4049;
-        }
+        // align-items: center;
+        .navigation__item {
+            text-align: center;
 
-        .nav-link-btn{
-            padding: 1rem 3.7rem;
-            background: #6E9E3D;
-            border-radius: 50px;
-            color: #ffffff;
+            &--link:link,
+            &--link:visited {
+                color:#3C4049;
+            }
+            &--link {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                white-space: nowrap;
+                padding: .5rem 2rem;
+            }
+            .dropdown-menu{
+                .dropdown-item__link:link,
+                .dropdown-item__link:visited{
+                    font-size: 1.4rem;
+                    color:#3C4049;
+                }
+            }
+            .nav-link-btn{
+                padding: 1rem 3.7rem;
+                background: #6E9E3D;
+                border-radius: 50px;
+                color: #ffffff;
+            }
+            .nav-link-signUp {
+                font-weight: 600;
+                font-size: 15px;
+                color: #6E9E3D;
+            }
         }
-        .nav-link-signUp {
-            font-weight: 600;
-            font-size: 15px;
-            color: #6E9E3D;
+    }
+}
+
+//MEDIA QUERIES
+@media screen and (min-width:768px){
+    .navigation-main .navigation-menu {
+        align-items: center;
+        margin-right: 1.5rem;
+        .navigation__item {
+            .nav-link-signUp{
+                margin-left: 1rem;
+                margin-right: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navigation-main .navigation-menu {
+        align-items: center;
+        margin-right: 1.5rem;
+        .navigation__item {
+            display: block;
+            width: 100%;
+            &--link {
+                padding: 1.3rem .5rem;
+            }
         }
     }
 }
