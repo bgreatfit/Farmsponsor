@@ -7,7 +7,7 @@
                 <div class="intro-section ">
                     <div class="row">
                         <div class="col-12 col-md-12">
-                            <div class="intro-section__content text-center">
+                            <div class="intro-section__content">
                                 <h1 class="intro-section__heading vestbanking-page-heading">What is Vestbanking</h1>
                                 <p class="intro-section__text">
                                     To further our commitment to delivering superior value all year round, 
@@ -42,7 +42,7 @@
                                             <div class="how-it-works__img-box">
                                                 <img src="{{asset('img/Group 6.png')}}" alt="Two men standing in front of a white board" class="how-it-works__img">
                                             </div>
-                                            <div class="how-it-works__text text-center">
+                                            <div class="how-it-works__text">
                                                 <h2 class="how-it-works__img--heading mb-4">Express Interest</h2>
                                                 <p class="how-it-works__img--text">Indicate interest to fund your Vestbanking account.</p>
                                             </div>
@@ -54,7 +54,7 @@
                                             <div class="how-it-works__img-box">
                                                 <img src="{{asset('img/Group 7.png')}}" alt="Two men standing in front of a white board" class="how-it-works__img">
                                             </div>
-                                            <div class="how-it-works__text text-center">
+                                            <div class="how-it-works__text">
                                                 <h2 class="how-it-works__img--heading mb-4">Details</h2>
                                                 <p class="how-it-works__img--text">
                                                     Send us the details of how you want your Vestbanking 

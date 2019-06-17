@@ -6,7 +6,7 @@
 .intro-section,
 .how-it-works-section,
 .the-process-section {
-    font-family: Roboto;
+    font-family: $font-family-main;
     font-size: 1.6rem;
     color: rgba(0, 0, 0, 0.7);
 }
@@ -18,12 +18,12 @@
     }
     &__heading {
         margin-bottom: 2.75rem;
+        text-align: center;
     }
    
     &__text {
         margin-bottom: 10rem;
         line-height: 2.8rem;
-        letter-spacing: .5px;
     }
     &__image{
         display: flex;
@@ -51,6 +51,7 @@
             color: $color-primary-deep;
             font-weight: bold;
             font-size: 110%;
+            text-align: left;
         }
         &__img-box {
             margin-bottom: 5rem;
@@ -111,7 +112,10 @@
 @media screen and (max-width:768px ) {
     .intro-section{
         .intro-section__content {
-            padding: 1rem 4rem;
+            padding: 1rem 2rem !important;
+            .intro-section__text {
+                text-align: center;
+            }
         }
     }
     .the-process-section{
@@ -141,7 +145,11 @@
             }
         }
     }
-
+    .how-it-works-section {
+        .how-it-works__text{
+            text-align: center;
+        }
+    }
 }
 
 @media screen and (max-width:540px) {

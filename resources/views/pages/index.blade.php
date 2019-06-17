@@ -27,7 +27,7 @@
                         <div class="introduction-content">
                             <div class="introduction__vid-wrap">
                                 <video autoplay loop muted class="introduction__vid">
-                                <source src="{{asset('img/intro-vid.mp4')}}" type="video/mp4">
+                                    <source src="{{asset('img/intro-vid.mp4')}}" type="video/mp4">
                                     {{-- <img src="{{asset('img/play-button.svg')}}" alt="play button" class="introduction__image">  --}}
                                 </video>
                             </div>
@@ -229,9 +229,9 @@
                                                     Add the funds you want to sponsor a farm with to your personal Vestbank wallet. 
                                                 </p>
                                             </div>
-                                            <a href="{{route('aboutVestbanking')}}" target="_blank" class="how-it-works__btn homepage__btn vestbank-info__btn">
+                                            {{-- <a href="{{route('aboutVestbanking')}}" target="_blank" class="how-it-works__btn homepage__btn vestbank-info__btn">
                                                 More info on Vestbanking
-                                            </a>
+                                            </a> --}}
                                         </div>
                                     </div>
                                 </div>
