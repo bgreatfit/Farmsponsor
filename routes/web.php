@@ -55,13 +55,5 @@ Route::get('/transactions/history', 'TransactionsController@history')->name('tra
 // Auth Routes
 Auth::routes(['verify' => true]);
 
-use Illuminate\Support\Facades\Mail;
-use App\Mail\LuncheonMailable;
 
-Route::get('send', function(){
-    // $email = 'ishukpong418@gmail.com';
-    $email = 'tobilobafabanwo@gmail.com';
-    Mail::to($email)->send(new LuncheonMailable);
-    return 'done';
-});
 

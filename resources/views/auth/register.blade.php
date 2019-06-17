@@ -1,4 +1,4 @@
-@extends('layouts.accounts')
+@extends('layouts.auth')
 
 @section('content')
   <div class="sectionWrap">
@@ -18,7 +18,7 @@
                             @if ($errors->has('firstname'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('firstname') }}</strong>
-                            </span> 
+                            </span>
                             @endif
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-@extends('layouts.accounts')
+@extends('layouts.auth')
 
 @section('content')
     <div class="row">
@@ -61,5 +61,6 @@
             </div>
         </div>
     </div>
+
 
 @endsection

@@ -46,7 +46,7 @@
 @endsection --}}
 
 
-@extends('layouts.accounts')
+@extends('layouts.auth')
 
 @section('content')
     <div class="row justify-content-center">

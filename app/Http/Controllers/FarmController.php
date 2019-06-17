@@ -183,9 +183,13 @@ class FarmController extends Controller
      * @param  \App\Farms  $farms
      * @return \Illuminate\Http\Response
      */
-    public function edit(Farms $farms)
+    public function edit($farm)
     {
-        //
+        $data['farm'] = Farm::findOrFail($farm);
+
+        return view('pages.admin.farm.edit', $data);
+
+
     }
 
     /**
@@ -209,5 +213,29 @@ class FarmController extends Controller
     public function destroy(Farms $farms)
     {
         //
+    }
+
+    public function stoppayout($farm)
+    {
+        $farm = Farm::findOrFail($farm)->decrement('payout');
+        return redirect()->back();
+    }
+
+    public function payout($farm)
+    {
+        $farm = Farm::findOrFail($farm)->increment('payout');
+        return redirect()->back();
+    }
+
+    public function soldout($farm)
+    {
+        $farm = Farm::findOrFail($farm)->increment('sold_out');
+        return redirect()->back();
+    }
+
+    public function open($farm)
+    {
+        $farm = Farm::findOrFail($farm)->decrement('sold_out');
+        return redirect()->back();
     }
 }

@@ -25,6 +25,8 @@ class CreateFarmsTable extends Migration
             $table->integer('start_unit');
             $table->integer('units');
             $table->integer('returns');
+            $table->integer('sold_out')->default(0);
+            $table->integer('payout')->default(0);
             $table->string('avatar');
             $table->timestamps();
         });
