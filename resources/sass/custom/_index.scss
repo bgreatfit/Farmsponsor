@@ -97,7 +97,7 @@
                     background-position: center;
 
                     .introduction__vid {
-                        height: 100%;
+                        // height: 100%;
                         width:100%;
                     }
 
@@ -109,6 +109,9 @@
                      }
                 }
             }
+        }
+        .flex-row .flex-col-2:nth-of-type(2) .introduction-content {
+            height: 100%;
         }
     }
 
@@ -428,6 +431,12 @@
     }
     .introduction__text-wrap .introduction__text{
         margin-bottom: 6.5rem !important;
+    }
+
+    .homepage-wrap .introduction-section .introduction-content .introduction__vid-wrap {
+        width: 100%;
+        display: inline-block;
+
     }
     
 

@@ -11392,7 +11392,6 @@ a.text-dark:focus {
 }
 
 .homepage-wrap .introduction-section .introduction-content .introduction__vid-wrap .introduction__vid {
-  height: 100%;
   width: 100%;
 }
 
@@ -11401,6 +11400,10 @@ a.text-dark:focus {
   z-index: 10;
   width: 100%;
   height: auto;
+}
+
+.homepage-wrap .introduction-section .flex-row .flex-col-2:nth-of-type(2) .introduction-content {
+  height: 100%;
 }
 
 .homepage-wrap .invest-section {
@@ -11719,6 +11722,11 @@ a.text-dark:focus {
 
   .introduction__text-wrap .introduction__text {
     margin-bottom: 6.5rem !important;
+  }
+
+  .homepage-wrap .introduction-section .introduction-content .introduction__vid-wrap {
+    width: 100%;
+    display: inline-block;
   }
 
   .invest-section .container-block {
