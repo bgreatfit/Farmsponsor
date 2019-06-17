@@ -8,7 +8,6 @@
 
               <div class="farming-cycle__add text-center mb-4">
                 <a href="{{route('farms.create')}}" class="farming-cycle__add--cta btn btn-lg btn-success mr-2" role="button">Add New farming cycle</a>
-                <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit farming cycle</a>
               </div>
 
               <div class="farming-cycle__details">
@@ -17,7 +16,8 @@
                     <tr>
                       <th scope="col">#</th>
                       <th scope="col">Farming Cycle</th>
-                      <th scope="col">Number Of Units</th>
+                      <th scope="col">Start Units</th>
+                      <th scope="col">Remaining Units</th>
                       <th scope="col">Start Date</th>
                       <th scope="col">Due Date</th>
                       <th scope="col">Status</th>
@@ -26,144 +26,36 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>
-                        <a href="{{url('/admin/sponsors-list')}}" class="farming-cycle__info">20th</a>
-                      </td>
-                      <td>400 </td>
-                      <td>4 May 2019 </td>
-                      <td>28 May 2019 </td>
-                      <td>
-                        <button type="button" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</button>
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
-                      </td>
-                      <td>
-                        <a href="{{asset('/admin/edit-farming-cycle')}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">E</a>
-                      </td>
-                    </tr>
-                    {{-- <tr>
-                      <th scope="row">2</th>
-                      <td>
-                        <div class="cycle-image-box ml-4">
-                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="farming-cycle__info">19th</a>
-                      </td>
-                      <td>400 </td>
-                      <td>4 May 2019 </td>
-                      <td>28 May 2019 </td>
-                      <td>
-                        <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>
-                        <div class="cycle-image-box ml-4">
-                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="farming-cycle__info">18th</a>
-                      </td>
-                      <td>400 </td>
-                      <td>4 May 2019 </td>
-                      <td>28 May 2019 </td>
-                      <td>
-                        <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>
-                        <div class="cycle-image-box ml-4">
-                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="farming-cycle__info">17th</a>
-                      </td>
-                      <td>400 </td>
-                      <td>4 May 2019 </td>
-                      <td>28 May 2019 </td>
-                      <td>
-                        <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>
-                        <div class="cycle-image-box ml-4">
-                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="farming-cycle__info">16th</a>
-                      </td>
-                      <td>400 </td>
-                      <td>4 May 2019 </td>
-                      <td>28 May 2019 </td>
-                      <td>
-                        <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">6</th>
-                      <td>
-                        <div class="cycle-image-box ml-4">
-                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="farming-cycle__info">15th</a>
-                      </td>
-                      <td>400 </td>
-                      <td>4 May 2019 </td>
-                      <td>28 May 2019 </td>
-                      <td>
-                        <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">7</th>
-                      <td>
-                        <div class="cycle-image-box ml-4">
-                          <img src="{{asset('img/chick-1.jpg')}}" alt="cycle photo" class="cycle-image">
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="farming-cycle__info">14th</a>
-                      </td>
-                      <td>400 </td>
-                      <td>4 May 2019 </td>
-                      <td>28 May 2019 </td>
-                      <td>
-                        <a href="#" class="btn btn-lg btn-secondary farming-cycle__info">Sold Out</a>
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-lg btn-success farming-cycle__info">Approve Payout</button>
-                      </td>
-                    </tr> --}}
+                      @foreach($farms as $key => $farm)
+                        <tr>
+                            <th scope="row">{{$key + 1}}</th>
+                            <td>
+                            <a href="#" class="farming-cycle__info">{{$farm->name}}</a>
+                            </td>
+                            <td>{{$farm->start_unit}} </td>
+                            <td>{{$farm->units}} </td>
+                            <td>{{$farm->start_date->diffForHumans()}}</td>
+                            <td>{{$farm->due_date->diffForHumans()}}</td>
+                            <td>
+                                @if($farm->isSoldOut())
+                                    <a href="{{route('farms.open',$farm->id)}}" class="btn btn-success btn-lg btn-secondary farming-cycle__info">Open</a>
+                                @else
+                                    <a href="{{route('farms.soldout',$farm->id)}}" class="btn btn-lg btn-danger btn-secondary farming-cycle__info">Close</a>
+                                @endif
+                            </td>
+                            <td>
+                                @if($farm->isPaidOut())
+                                    <a href="{{route('farms.stoppayout',$farm->id)}}" class="btn btn-danger btn-lg btn-secondary farming-cycle__info">Reject</a>
+                                @else
+                                    <a href="{{route('farms.payout',$farm->id)}}" class="btn btn-lg btn-success btn-secondary farming-cycle__info">Approve</a>
+                                @endif
+
+                            </td>
+                            <td>
+                            <a href="{{route('farms.edit', $farm->id)}}" class="farming-cycle__add--cta btn btn-lg btn-info mr-2" role="button">Edit</a>
+                            </td>
+                        </tr>
+                      @endforeach
                   </tbody>
                 </table>
               </div>

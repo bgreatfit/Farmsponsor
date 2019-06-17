@@ -9,7 +9,8 @@ class Farm extends Model
 {
     protected $fillable = [
         'name','start_date','due_date','units','returns','avatar',
-        'user_id', 'ip_address', 'slug', 'start_unit'
+        'user_id', 'ip_address', 'slug', 'start_unit', 'sold_out',
+        'payout'
     ];
 
     protected $dates = [
@@ -32,5 +33,15 @@ class Farm extends Model
     public function status()
     {
         return $this->belongsTo('App\Models\Status');
+    }
+
+    public function isSoldOut()
+    {
+        return $this->sold_out ? true : false;
+    }
+
+    public function isPaidOut()
+    {
+        return $this->payout ? true : false;
     }
 }

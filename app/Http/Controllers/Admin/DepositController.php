@@ -10,7 +10,7 @@ class DepositController extends Controller
 {
     public function index()
     {
-        $data['deposits'] = Bankdeposit::whereApproved(0)->paginate(10);
+        $data['deposits'] = Bankdeposit::whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
         return view('pages.admin.deposits', $data);
     }
 
