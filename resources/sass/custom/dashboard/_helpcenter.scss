@@ -1,0 +1,55 @@
+.helpcenter-section{
+    padding: 8rem 2rem;
+    .helpcenter{
+        &__heading{
+            text-align: center;
+            font-family: $font-family-main;
+            font-weight: 500;
+            font-size: 5rem;
+            margin-bottom: 6rem;
+            &--secondary{
+                font-size: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+        &__img-wrap{
+            max-width: 30rem;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15rem;
+            margin-bottom: 5rem;
+        }
+        &__text {
+            color: $text-light;
+        }
+        &__text.text-lg {
+            margin-left: 8rem;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px){
+.helpcenter-section{
+    .helpcenter__heading{
+ 
+        &--secondary{
+            text-align: center;
+        }
+    }
+    .helpcenter__text.text-lg {
+        margin-left: 0;
+        text-align: center;
+    }
+    .helpcenter__text {
+        text-align: center;
+    }
+    .container .row:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    .container .row:nth-of-type(3) .col-12.col-md-6:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+ }
+
+}

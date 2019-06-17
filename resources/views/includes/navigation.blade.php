@@ -28,8 +28,8 @@
                                 aria-haspopup="true" aria-expanded="false" v-pre>Get help</a>
         
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item dropdown-item__link" href="{{ route('login') }}">FAQs</a>
-                                    <a class="dropdown-item dropdown-item__link" href="{{ route('register') }}">Contact</a>
+                                    <a class="dropdown-item dropdown-item__link" href="{{ route('faq') }}">FAQs</a>
+                                    <a class="dropdown-item dropdown-item__link" href="#">Contact</a>
                                 </div>
                             </li>
                             <li class="nav-item navigation__item">

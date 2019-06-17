@@ -25,10 +25,11 @@
                     </div>
                     <div class="flex-col-2">
                         <div class="introduction-content">
-                            <div class="introduction__picture">
-                                <a href="#" class="introduction__video">
-                                    <img src="{{asset('img/play-button.svg')}}" alt="play button" class="introduction__image"> 
-                                </a>
+                            <div class="introduction__vid-wrap">
+                                <video autoplay loop muted class="introduction__vid">
+                                <source src="{{asset('img/intro-vid.mp4')}}" type="video/mp4">
+                                    {{-- <img src="{{asset('img/play-button.svg')}}" alt="play button" class="introduction__image">  --}}
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -36,7 +37,7 @@
             </div>
         </section>
 
-        <section class="invest-section">
+        <section class="invest-section" id="invest-section">
             <div class="container-block">
                 <div class="invest-content">
                     <h2 class="invest__heading--main">Why Choose Farmsponsor?</h2>
@@ -156,7 +157,7 @@
             </div>
         </section>
 
-        <section class="how-it-works-section">
+        <section class="how-it-works-section" id="how-it-works">
             <div class="container-block">
                 <div class="how-it-works-block">
                     <div class="how-it-works-content">
@@ -300,7 +301,8 @@
                             {{-- <i class="fas fa-user-tie sponsors"></i> --}}
                         </div>
                         <div class="row justify-content-center">
-                            <span class="sponsor stat-update__figure"></span>
+                            <span class="stat-update__figure"><span class="sponsor" >0</span>&#43;</span>
+                            {{-- <span class="sponsor stat-update__figure"> </span> --}}
                         </div>
                         <div class="row justify-content-center">
                             <span class="stat-update__figure--label">Sponsors</span>

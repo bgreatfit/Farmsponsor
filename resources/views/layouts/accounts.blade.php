@@ -8,16 +8,18 @@
     <title>Farmsponsor</title>
     {{-- FAV ICON --}}
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    {{-- fonts --}}
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/icon-font.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Mukta|Questrial|Exo" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-    crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
+          {{-- fonts --}}
+          <link rel="stylesheet" type="text/css" media="screen" href="/css/icon-font.css">
+          <link href="{{ asset('css/sweetalert.css') }}" rel="stylesheet">
+          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  
+          <link href="https://fonts.googleapis.com/css?family=Mukta|Questrial|Exo|Lato:100i|Kalam|Montserrat|Roboto" rel="stylesheet">
+  
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+  
+          <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
     
 </head>
 <body>
@@ -26,6 +28,7 @@
     <section class="section-form container-fluid">
         @yield('content')
     </section>
+    @include('includes.footer')
     @include('includes.scripts')
 </body>
 </html>

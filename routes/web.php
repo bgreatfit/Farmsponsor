@@ -12,7 +12,6 @@ require_once 'admin.php';
 */
 
 Route::get('/', 'PagesController@index')-> name('home');
-Route::get('/homepage', 'PagesController@homepage');
 Route::get('about', 'PagesController@about')->name('about');
 Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('gallery', 'PagesController@gallery')->name('gallery');
@@ -20,6 +19,7 @@ Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking
 
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
+Route::get('/dashboard/helpcenter', 'PagesController@dashboardHelpcenter')->name('dashboardHelpcenter');
 
 // Farm Routes
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');

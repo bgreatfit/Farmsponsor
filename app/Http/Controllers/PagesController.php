@@ -37,6 +37,9 @@ class PagesController extends Controller
     public function dashboard() {
         return view('pages.dashboard.index');
     }
+    public function dashboardHelpcenter() {
+        return view('pages.dashboard.helpcenter');
+    }
     public function about() {
         return view('pages.about');
     }
