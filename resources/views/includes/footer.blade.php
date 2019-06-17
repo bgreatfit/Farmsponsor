@@ -39,7 +39,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">FAQs</a></div>
+                                <div class="footer__item"><a href="{{route('faq')}}" class="footer__links">FAQs</a></div>
                             </div>
                         </div>
                         <div class="row">
@@ -54,7 +54,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Pricy Policy</a></div>
+                                <div class="footer__item"><a href="#" class="footer__links">Privacy Policy</a></div>
                             </div>
                         </div>
                     </div>
@@ -83,12 +83,12 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                                <div class="footer__item"><a href="https:farmsponsor.com.ng/blog" target="_blank" class="footer__links">Blog</a></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Vestbanking</a></div>
+                                <div class="footer__item"><a href="#" class="footer__links">Careers</a></div>
                             </div>
                         </div>
                     </div>
@@ -103,17 +103,17 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">How it works</a></div>
+                                <div class="footer__item"><a href="#how-it-works" class="footer__links">How it works</a></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Why invest</a></div>
+                                <div class="footer__item"><a href="#invest-section" class="footer__links">Why invest</a></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Get involved</a></div>
+                                <div class="footer__item"><a href="{{route('login')}}" class="footer__links">Get involved</a></div>
                             </div>
                         </div>
                     </div>

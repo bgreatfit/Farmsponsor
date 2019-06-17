@@ -21,7 +21,7 @@
 
                 $('.cycle').easy_number_animate({
                 start_value: 0,
-                end_value: 18,
+                end_value: 21,
                 duration: 2000,
                 delimiter: ','
                   });

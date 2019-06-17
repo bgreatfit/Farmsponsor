@@ -4,6 +4,15 @@ $footer-text-light: #fbfbfb;
 
 //footer styles
 .page-footer {
+    background-color: #0e2503;
+    padding: 8rem 0;
+    .footer__segment{
+        .footer__subscribe--text{
+            font-family: Montserrat;
+            font-size: 32px;
+            color: $color-white;
+        }
+    }
     .footer-subscribe, 
     .footer-links {
         margin-bottom: 8rem;
@@ -52,5 +61,10 @@ $footer-text-light: #fbfbfb;
         border-top: 1px solid $footer-text-dark;
         padding-top: 6rem;
         margin-right: 3rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .page-footer {
+        padding: 5rem 1rem !important;
     }
 }

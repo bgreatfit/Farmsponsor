@@ -56,19 +56,21 @@
         height: 0;
         transition: height .2s ease-in;
 
+
     }
     // side navigation hamburger menu styling
     .dashboard__navi--menu {
         display: inline-block;
         width: 3.5rem;
         height: 3.5rem;
-        border: 1px solid rgba($color-black, .5);
+        border: 1px solid rgba($color-black, .3);
         border-radius: 2px;
         position: absolute;
         left: 0;
         top: 1.5rem;
         z-index: 9999;
         font-size: 2.3rem;
+
         .menu-icon-container {
             position: relative;
             display: flex;
@@ -80,7 +82,7 @@
             width: 2.5rem;
             height: .3rem;
             margin: auto;
-            background-color: lighten($color-black, 30%);
+            background-color:  rgba($color-black, .5);
             transition: transform .3s ease-in-out;
             
             &::before,
@@ -88,8 +90,8 @@
                 content: "";
                 position: absolute;
                 width: 2.5rem;
-                height: 3px;
-                background-color: lighten($color-black, 30%);
+                height: .3rem;
+                background-color:  rgba($color-black, .5);
             }
             &::before{
                 top: .7rem;
@@ -109,5 +111,6 @@
         height:  31.5rem;
         visibility: visible;
         opacity: 1;
+        // transition: visibility .25s .2s ease;
     }
 }

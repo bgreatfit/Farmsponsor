@@ -116,8 +116,10 @@
                     text-decoration: none;
                     color: $color-white;
                     padding: 1rem 2rem;
-
-                    
+                    display: inline-block;
+                }
+                .farmlist__sponsor-btn .sponsor-btn--icon {
+                    width: 10px;
                 }
             }
         }

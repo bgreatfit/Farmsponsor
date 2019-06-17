@@ -10948,9 +10948,7 @@ a.text-dark:focus {
 }
 
 .section-form {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/images/farm-3.jpg?c17efd2be0a93911867a416a4c8f0e46);
-  background-size: cover;
-  background-position: top;
+  background-color: #ffffff;
   padding: 10rem 1.5rem;
   min-height: 100vh;
   display: flex;
@@ -10959,31 +10957,20 @@ a.text-dark:focus {
 }
 
 .section-form .form-box {
-  box-shadow: 0rem 0.5rem 2rem #383d41;
-  background-image: radial-gradient(rgba(255, 185, 0, 0.8), rgba(242, 216, 106, 0.9));
-  border-radius: 5px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  max-width: 35rem;
+  max-width: 46.4rem;
   margin: auto;
 }
 
-.section-form .form-box .form-heading__icon {
-  display: inline-block;
-  font-size: 4rem;
-  color: #eee;
-  border: 2px solid #eee;
-  width: 7rem;
-  height: 7rem;
-  border-radius: 4rem;
-  text-align: center;
-  padding: 10px;
-}
-
 .section-form .form-box .form-heading {
-  color: #ffffff;
-  font-size: 200%;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #011633;
+  margin-bottom: 6rem;
 }
 
 .section-form .form-box .form-group__content .rememberMeForm-group {
@@ -10992,7 +10979,8 @@ a.text-dark:focus {
 }
 
 .section-form .form-box .form-group__content .form__input {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  height: 5rem;
 }
 
 .section-form .form-box .form-group__content #form__input--checkbox {
@@ -11001,6 +10989,10 @@ a.text-dark:focus {
 
 .section-form .form-box .form-group__content .form__input--label {
   position: relative;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .section-form .form-box .form-group__content .form__input--label span.label-span {
@@ -11010,7 +11002,7 @@ a.text-dark:focus {
   border-radius: 1rem;
   font-size: 1.2rem;
   background-color: #ffffff;
-  border: 1px solid #eee;
+  border: 1px solid rgba(0, 0, 0, 0.4);
   transition: all 0.3s;
 }
 
@@ -11026,7 +11018,7 @@ a.text-dark:focus {
   top: 1rem;
   left: 3rem;
   width: 20rem;
-  color: #ffffff;
+  color: #011633;
 }
 
 .section-form .form-box .form-group__content #form__input--checkbox:checked + .form__input--label span.label-span {
@@ -11041,14 +11033,16 @@ a.text-dark:focus {
 }
 
 .section-form .form-box .form-group .form__btn {
-  background-color: #28b485;
+  background-color: #154219;
   color: #ffffff;
   font-size: 1.4rem;
   border: none;
+  border-radius: 5px;
+  padding: 1.7rem 2.8rem;
 }
 
 .section-form .form-box .form-group .form__text {
-  color: #ffffff;
+  color: #011633;
 }
 
 .section-form .form-box .form-group .form__input--link {
@@ -11084,7 +11078,7 @@ a.text-dark:focus {
   border-radius: 1rem;
   font-size: 1.2rem;
   background-color: #ffffff;
-  border: 1px solid #eee;
+  border: 1px solid #a19292;
   transition: all 0.2s;
 }
 
@@ -11100,11 +11094,12 @@ a.text-dark:focus {
 .section-form .sectionWrap .form-box .register .form__input--labelRegister .label-textRegister {
   margin: 0.5rem 0 0 0.5rem;
   font-size: 1.4rem;
-  color: #ffffff;
+  color: #011633;
 }
 
 .section-form .sectionWrap .form-box .register #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
   background-color: #55c57a;
+  border: 1px solid #7b6e6e;
 }
 
 .section-form .sectionWrap .form-box .register #form__input--checkbox:checked + .form__input--labelRegister > span.label-spanRegister > .label-span__icon {
@@ -11115,24 +11110,35 @@ a.text-dark:focus {
 }
 
 .reset-card {
-  background-image: radial-gradient(rgba(255, 185, 0, 0.8), rgba(242, 216, 106, 0.9));
-  margin: 12.5rem 2rem;
+  font-family: Montserrat;
+  margin: auto;
+  max-width: 46.4rem;
+}
+
+.reset-card .form__input {
+  font-size: 1.7rem;
+  height: 4rem;
+}
+
+.reset-card .form__input--label {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .reset-card__btn {
-  background-color: #28b485;
+  background-color: #154219;
   color: #ffffff;
-  font-size: 1.25rem;
-  padding: 0.5rem 1.2rem;
+  font-size: 1.4rem !important;
+  height: 4rem;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .reset-card__btn:hover {
-  background-color: rgba(40, 180, 133, 0.7);
+  background-color: rgba(21, 66, 25, 0.9);
   color: #ffffff;
-}
-
-.reset-card .card-body .form-group input {
-  font-size: 1.3rem;
 }
 
 .card-box {
@@ -11253,6 +11259,11 @@ a.text-dark:focus {
   text-decoration: none;
   color: #ffffff;
   padding: 1rem 2rem;
+  display: inline-block;
+}
+
+.farmlist__card .farmlist__sponsor .farmlist__sponsor-btn .sponsor-btn--icon {
+  width: 10px;
 }
 
 .header {
@@ -11338,7 +11349,6 @@ a.text-dark:focus {
 
 .homepage-wrap .introduction-section {
   padding-top: 8rem;
-  margin-bottom: 13.3rem;
 }
 
 .homepage-wrap .introduction-section .introduction__text-wrap {
@@ -11370,10 +11380,9 @@ a.text-dark:focus {
   margin-bottom: 2.5rem;
 }
 
-.homepage-wrap .introduction-section .introduction-content .introduction__picture {
-  background-image: url(/images/gal-5.jpg?621aa47aea41d9331b0989746888654e);
+.homepage-wrap .introduction-section .introduction-content .introduction__vid-wrap {
   width: 100%;
-  min-height: 66rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11382,7 +11391,11 @@ a.text-dark:focus {
   background-position: center;
 }
 
-.homepage-wrap .introduction-section .introduction-content .introduction__picture .introduction__image {
+.homepage-wrap .introduction-section .introduction-content .introduction__vid-wrap .introduction__vid {
+  height: 100%;
+}
+
+.homepage-wrap .introduction-section .introduction-content .introduction__vid-wrap .introduction__image {
   position: relative;
   z-index: 10;
   width: 100%;
@@ -11392,6 +11405,7 @@ a.text-dark:focus {
 .homepage-wrap .invest-section {
   display: flex;
   width: 100%;
+  padding-top: 10rem;
 }
 
 .homepage-wrap .invest-section .invest-content {
@@ -11410,7 +11424,7 @@ a.text-dark:focus {
   color: #011633;
   text-align: right;
   padding: 0 5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
   width: 100%;
 }
 
@@ -11476,6 +11490,20 @@ a.text-dark:focus {
 
 .homepage-wrap .how-it-works-section .how-it-works__sponsor {
   margin-top: 18rem;
+}
+
+.homepage-wrap .how-it-works-section .how-it-works__sponsor .invest__text-wrap {
+  margin-bottom: 5rem;
+}
+
+.homepage-wrap .how-it-works-section .how-it-works__sponsor .vestbank-info__btn {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.2s ease-in;
+}
+
+.homepage-wrap .how-it-works-section .how-it-works__sponsor .vestbank-info__btn:hover {
+  background-color: #e6e6e6;
 }
 
 .homepage-wrap .how-it-works-section .how-it-works__btn {
@@ -11641,17 +11669,6 @@ a.text-dark:focus {
   min-height: 25rem;
 }
 
-.page-footer {
-  background-color: #0e2503;
-  padding: 8rem 0;
-}
-
-.page-footer .footer__segment .footer__subscribe--text {
-  font-family: Montserrat;
-  font-size: 32px;
-  color: #ffffff;
-}
-
 /* LARGER SCREENS*/
 
 @media screen and (min-width: 1024px) {
@@ -11668,11 +11685,19 @@ a.text-dark:focus {
   .how-it-works-block .how-it-works-content .how-it-works__create-account .heading-row {
     display: none;
   }
+
+  .homepage-wrap .how-it-works-section .how-it-works__row-wrap .stay-updated__text-wrap {
+    margin-bottom: 17rem;
+  }
 }
 
 /*MEDIUM and BELOW SCREENS */
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 59%;
+  }
+
   .invest__icon {
     text-align: center;
   }
@@ -11681,9 +11706,22 @@ a.text-dark:focus {
     text-align: center;
   }
 
+  .heading__sub--dark,
+  .heading__sub--light {
+    margin-bottom: 8rem !important;
+  }
+
   .homepage-wrap .introduction-section .introduction__text-wrap {
     padding: 5rem 3rem 10rem 3rem;
     text-align: center;
+  }
+
+  .introduction__text-wrap .introduction__text {
+    margin-bottom: 6.5rem !important;
+  }
+
+  .invest-section .container-block {
+    display: inline-block !important;
   }
 
   .we-empower-farmers-block .invest-content .invest__empower-farmers .heading-row {
@@ -11693,6 +11731,22 @@ a.text-dark:focus {
   .we-empower-farmers-block {
     display: flex;
     flex-direction: column;
+  }
+
+  .invest__empower-farmers {
+    padding: 10rem 3rem !important;
+  }
+
+  .invest__empower-farmers .icon-row {
+    margin-bottom: 8rem;
+  }
+
+  .invest__returns {
+    padding: 10rem 3rem !important;
+  }
+
+  .invest__returns .invest__farming-cycle {
+    margin-top: 10rem !important;
   }
 
   .homepage-wrap .invest-section .invest__heading--main {
@@ -11714,6 +11768,22 @@ a.text-dark:focus {
     flex-grow: 1;
   }
 
+  .how-it-works__create-account {
+    padding: 5rem 3rem !important;
+  }
+
+  .how-it-works__create-account .how-it-works__sponsor {
+    margin-top: 10rem !important;
+  }
+
+  .how-it-works__row-wrap {
+    padding: 10rem 3rem !important;
+  }
+
+  .how-it-works__row-wrap .stay-updated__text-wrap {
+    margin-bottom: 8rem !important;
+  }
+
   .how-it-works-section .how-it-works__heading {
     text-align: center;
   }
@@ -11722,20 +11792,39 @@ a.text-dark:focus {
     text-align: center;
     margin-bottom: 7rem;
   }
+
+  .statistics-section .content-wrap {
+    margin-bottom: 3rem;
+  }
+
+  .testimonials-section {
+    padding: 5rem 3rem;
+  }
+
+  .testimonials-section .testimonials-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .insurance-section {
+    padding: 5rem 2rem;
+  }
+
+  .insurance-section .insurance-content .insurance__image {
+    justify-content: center !important;
+  }
+
+  .insurance-section .insurance-content .insurance__text-wrap {
+    text-align: center;
+    padding: 4rem 1.5rem !important;
+  }
 }
 
-@media screen and (max-width: 395px) {
-  div.icon-row {
-    margin-bottom: 0;
-  }
-
-  .invest__empower-farmers .icon-row .invest__icon,
-  .invest__returns .icon-row .invest__icon {
-    margin-bottom: 8rem;
-  }
-
-  .how-it-works__create-account .icon-row .how-it-works__icon {
-    margin-bottom: 7rem;
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .homepage-wrap .insurance-section .insurance-content .insurance__text-wrap {
+    padding: 5rem 5rem 10rem 0;
   }
 }
 
@@ -11743,33 +11832,86 @@ a.text-dark:focus {
   background-color: #ffffff;
 }
 
-.navigation-main .navigation-menu {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0;
-  list-style: none;
-  align-items: center;
-  margin-left: auto;
+.navigation-main .navigation-menu .navigation__item {
+  text-align: center;
 }
 
-.navigation-main .navigation__item--link {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
+.navigation-main .navigation-menu .navigation__item--link:link,
+.navigation-main .navigation-menu .navigation__item--link:visited {
   color: #3C4049;
 }
 
-.navigation-main .navigation__item .nav-link-btn {
+.navigation-main .navigation-menu .navigation__item--link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  white-space: nowrap;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.5px;
+}
+
+.navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link:link,
+.navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link:visited {
+  font-size: 1.4rem;
+  color: #3C4049;
+}
+
+.navigation-main .navigation-menu .navigation__item .nav-link-btn {
   padding: 1rem 3.7rem;
   background: #6E9E3D;
   border-radius: 50px;
   color: #ffffff;
 }
 
-.navigation-main .navigation__item .nav-link-signUp {
+.navigation-main .navigation-menu .navigation__item .nav-link-signUp {
   font-weight: 600;
   font-size: 15px;
   color: #6E9E3D;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-main .navigation-menu {
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+
+  .navigation-main .navigation-menu .navigation__item .nav-link-signUp {
+    margin-left: 1rem;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 896px) {
+  .navigation-main .navigation-menu .navigation__item--link {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .navigation-main .navigation-menu .navigation__item .nav-link-signUp {
+    margin-right: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-main .navigation-menu {
+    align-items: center;
+    margin-right: 1.5rem;
+  }
+
+  .navigation-main .navigation-menu .navigation__item {
+    display: block;
+    width: 100%;
+  }
+
+  .navigation-main .navigation-menu .navigation__item--link {
+    padding: 1.3rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 897px) and (max-width: 1022px) {
+  .navigation-main .navigation-menu .navigation__item--link {
+    padding: 0.5rem 1rem 0.5rem;
+  }
 }
 
 .how-it-works {
@@ -11946,6 +12088,7 @@ a.text-dark:focus {
 
 .section-faq {
   padding-top: 10rem;
+  background-color: #ffffff;
 }
 
 .section-faq .faq-general,
@@ -12079,6 +12222,17 @@ a.text-dark:focus {
   background-color: rgba(126, 213, 111, 0.4);
 }
 
+.page-footer {
+  background-color: #0e2503;
+  padding: 8rem 0;
+}
+
+.page-footer .footer__segment .footer__subscribe--text {
+  font-family: Montserrat;
+  font-size: 32px;
+  color: #ffffff;
+}
+
 .page-footer .footer-subscribe,
 .page-footer .footer-links {
   margin-bottom: 8rem;
@@ -12125,6 +12279,12 @@ a.text-dark:focus {
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     padding-top: 6rem;
     margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-footer {
+    padding: 5rem 1rem !important;
   }
 }
 
@@ -12306,16 +12466,14 @@ a[class*=__btn]:visited {
 }
 
 @media screen and (max-width: 768px) {
+  .homepage-wrap .introduction-section .container-block .flex-row {
+    flex-direction: column !important;
+  }
+
   .flex-col-2 {
     flex-basis: 100%;
     flex-grow: 1;
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 395px) {
-  .flex-row {
-    flex-direction: column !important;
   }
 }
 
@@ -12600,7 +12758,7 @@ mar .intro-section__image-box {
     display: inline-block;
     width: 3.5rem;
     height: 3.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     position: absolute;
     left: 0;
@@ -12621,7 +12779,7 @@ mar .intro-section__image-box {
     width: 2.5rem;
     height: 0.3rem;
     margin: auto;
-    background-color: #4d4d4d;
+    background-color: rgba(0, 0, 0, 0.5);
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
@@ -12632,8 +12790,8 @@ mar .intro-section__image-box {
     content: "";
     position: absolute;
     width: 2.5rem;
-    height: 3px;
-    background-color: #4d4d4d;
+    height: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .dashboard__navi--menu-icon::before {
@@ -12758,6 +12916,62 @@ mar .intro-section__image-box {
 
 .farmcycle-wrap .farmcycle__popup .sponsor-farmcycle__btn {
   font-size: 1.3rem;
+}
+
+.helpcenter-section {
+  padding: 8rem 2rem;
+}
+
+.helpcenter-section .helpcenter__heading {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 5rem;
+  margin-bottom: 6rem;
+}
+
+.helpcenter-section .helpcenter__heading--secondary {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.helpcenter-section .helpcenter__img-wrap {
+  max-width: 30rem;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15rem;
+  margin-bottom: 5rem;
+}
+
+.helpcenter-section .helpcenter__text {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.helpcenter-section .helpcenter__text.text-lg {
+  margin-left: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .helpcenter-section .helpcenter__heading--secondary {
+    text-align: center;
+  }
+
+  .helpcenter-section .helpcenter__text.text-lg {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .helpcenter-section .helpcenter__text {
+    text-align: center;
+  }
+
+  .helpcenter-section .container .row:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .helpcenter-section .container .row:nth-of-type(3) .col-12.col-md-6:not(:last-child) {
+    margin-bottom: 5rem;
+  }
 }
 
 .profile__card {

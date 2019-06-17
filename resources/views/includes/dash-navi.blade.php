@@ -13,7 +13,7 @@
             <li class="dashboard__navi--item"><a href="{{route('transactions.all')}}" class="dashboard__navi--link">Transactions</a></li>
             <li class="dashboard__navi--item"><a href="{{route('vestbanking')}}" class="dashboard__navi--link">VestBanking</a></li>
             <li class="dashboard__navi--item"><a href="{{url('/dashboard/payout')}}" class="dashboard__navi--link">Payout</a></li>
-            <li class="dashboard__navi--item"><a href="{{url('/dashboard/help')}}" class="dashboard__navi--link">Help Center</a></li>
+            <li class="dashboard__navi--item"><a href="{{route('dashboardHelpcenter')}}" class="dashboard__navi--link">Help Center</a></li>
             <li class="dashboard__navi--item">
                 <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                 class="dashboard__navi--link">{{ __('Logout') }}</a>
