@@ -540,7 +540,7 @@
                     <div class="col-12 col-md-4">
                         <div class="partners-content">
                             <div class="partners__image">
-                                <img src="{{asset('img/fs-pic3.png')}}" alt="" class="insurance__image--img">
+                                <img src="{{asset('img/the-promise.png')}}" alt="" class="insurance__image--img">
                             </div>
                         </div>
                     </div>

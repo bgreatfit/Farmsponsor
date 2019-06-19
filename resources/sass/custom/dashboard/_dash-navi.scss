@@ -9,9 +9,17 @@
         list-style-type: none;
         &--item{
             padding: 0 2rem 0 2rem;
+            
         }
         &--item:hover{
             background-color: $color-grey-soft;
+        }
+        &--link{
+            .dashboard__icon {
+                margin-right: .7rem;
+                font-size: 1.9rem;
+                color: $color-black;
+            }    
         }
         &--link:link,
         &--link:visited {
@@ -19,8 +27,10 @@
             display: block;
             padding: 1rem 0;
             outline: none;
-            // margin-left: 1.5rem;
-
+            color:  #2d3841;
+        }
+        &--link:hover{
+            color:#134e87;
         }
 
     }
@@ -37,6 +47,9 @@
         height: 100%;
         border-right: 1px solid rgba($color-black, .3);
         padding-top: 8rem;
+        .dashboard__navi .dashboard__navi--item:nth-of-type(2) {
+            display: none;
+        }
     }
     .section-dashboard {
         padding-left: 0;
@@ -47,27 +60,31 @@
    
 }
 @media screen and (max-width:575px) {
-    .dashboard__navi--item{
-        text-align: center;
-    }
     .dashboard__navi{
         visibility: hidden;
         opacity: 0;
         height: 0;
         transition: height .2s ease-in;
-
-
     }
+    
+    .dashboard__navi--item{
+        display: flex;
+        justify-content: center;
+        .dashboard__navi--link {
+            min-width: 11rem;
+        }
+    }
+    
     // side navigation hamburger menu styling
     .dashboard__navi--menu {
         display: inline-block;
         width: 3.5rem;
-        height: 3.5rem;
-        border: 1px solid rgba($color-black, .3);
+        height: 3.4rem;
+        border: 1px solid rgba($color-white, .6);
         border-radius: 2px;
         position: absolute;
-        left: 0;
-        top: 1.5rem;
+        right: 0;
+        top: -4rem;
         z-index: 9999;
         font-size: 2.3rem;
 
@@ -82,7 +99,7 @@
             width: 2.5rem;
             height: .3rem;
             margin: auto;
-            background-color:  rgba($color-black, .5);
+            background-color:  rgba($color-white, .9);
             transition: transform .3s ease-in-out;
             
             &::before,
@@ -91,7 +108,7 @@
                 position: absolute;
                 width: 2.5rem;
                 height: .3rem;
-                background-color:  rgba($color-black, .5);
+                background-color:  rgba($color-white, .9);
             }
             &::before{
                 top: .7rem;
@@ -108,7 +125,7 @@
         }
     }
     .dashboard__navi--toggle:checked ~ .dashboard__navi {
-        height:  31.5rem;
+        height:  38.5rem;
         visibility: visible;
         opacity: 1;
         // transition: visibility .25s .2s ease;

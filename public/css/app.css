@@ -12794,12 +12794,23 @@ mar .intro-section__image-box {
   background-color: #eee;
 }
 
+.dashboard__navi-wrap .dashboard__navi--link .dashboard__icon {
+  margin-right: 0.7rem;
+  font-size: 1.9rem;
+  color: #000000;
+}
+
 .dashboard__navi-wrap .dashboard__navi--link:link,
 .dashboard__navi-wrap .dashboard__navi--link:visited {
   text-decoration: none;
   display: block;
   padding: 1rem 0;
   outline: none;
+  color: #2d3841;
+}
+
+.dashboard__navi-wrap .dashboard__navi--link:hover {
+  color: #134e87;
 }
 
 @media screen and (max-width: 850px) {
@@ -12816,6 +12827,10 @@ mar .intro-section__image-box {
     padding-top: 8rem;
   }
 
+  .dashboard__navi-wrap .dashboard__navi .dashboard__navi--item:nth-of-type(2) {
+    display: none;
+  }
+
   .section-dashboard {
     padding-left: 0;
   }
@@ -12826,10 +12841,6 @@ mar .intro-section__image-box {
 }
 
 @media screen and (max-width: 575px) {
-  .dashboard__navi--item {
-    text-align: center;
-  }
-
   .dashboard__navi {
     visibility: hidden;
     opacity: 0;
@@ -12837,15 +12848,24 @@ mar .intro-section__image-box {
     transition: height 0.2s ease-in;
   }
 
+  .dashboard__navi--item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dashboard__navi--item .dashboard__navi--link {
+    min-width: 11rem;
+  }
+
   .dashboard__navi--menu {
     display: inline-block;
     width: 3.5rem;
-    height: 3.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 3.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 2px;
     position: absolute;
-    left: 0;
-    top: 1.5rem;
+    right: 0;
+    top: -4rem;
     z-index: 9999;
     font-size: 2.3rem;
   }
@@ -12862,7 +12882,7 @@ mar .intro-section__image-box {
     width: 2.5rem;
     height: 0.3rem;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
@@ -12874,7 +12894,7 @@ mar .intro-section__image-box {
     position: absolute;
     width: 2.5rem;
     height: 0.3rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .dashboard__navi--menu-icon::before {
@@ -12896,14 +12916,14 @@ mar .intro-section__image-box {
   }
 
   .dashboard__navi--toggle:checked ~ .dashboard__navi {
-    height: 31.5rem;
+    height: 38.5rem;
     visibility: visible;
     opacity: 1;
   }
 }
 
 .dashboard__panel {
-  background-color: dodgerblue;
+  background-color: #134e87;
   padding: 0 2rem;
   display: flex;
 }
@@ -12914,13 +12934,26 @@ mar .intro-section__image-box {
   outline: none;
 }
 
-.dashboard__brand {
+.dashboard__brand,
+.dashboard__profile {
   color: white;
+  font-family: Montserrat;
+}
+
+.dashboard__brand {
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .dashboard__profile {
   margin-left: auto;
-  color: white;
+}
+
+@media screen and (max-width: 575px) {
+  nav.dashboard__panel .dashboard__profile {
+    display: none;
+    font-family: inherit;
+  }
 }
 
 .deposit-method__heading {
