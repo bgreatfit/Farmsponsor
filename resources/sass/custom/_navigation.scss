@@ -81,6 +81,11 @@
             &--link {
                 padding: 1.3rem .5rem;
             }
+            .dropdown-menu.dropdown-menu-right{
+                .dropdown-item__link{
+                    text-align: center;
+                }
+            }
         }
     }
 }
@@ -91,6 +96,7 @@
                 &--link {
                     padding: 0.5rem 1rem 0.5rem;
                 }
+                
             }
         }
     }

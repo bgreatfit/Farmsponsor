@@ -153,7 +153,7 @@
                     margin-top: auto;
                     .how-it-works__heading{
                         font-family: Montserrat;
-                        font-size: 32px;
+                        font-size: 30px;
                         font-weight: 500;
                         line-height: 1.64;
                         color: #011633;
@@ -204,12 +204,15 @@
 
                 }
                 .vestbank-info__btn{
-                    background-color: $color-white;
-                    color: $color-black;
+                    text-decoration: none;
+                    color: $color-white;
                     transition: all .2s ease-in;
+                    .read-more-icon {
+                        width: 1.87rem;
+                    }
                 }
                 .vestbank-info__btn:hover{
-                    background-color: darken($color-white, 10%);
+                    color: darken($color-white, 10%);
                 }
             }
             
@@ -310,6 +313,8 @@
 
         }
         .farmlist-content {
+            // display: flex;
+            // justify-content: center;
 
             .farmlist__more{
                 text-align: center;
@@ -541,6 +546,16 @@
 
 // end of insurance section
 
+// partners section
+    .partner-section {
+        padding: 5rem 3rem; 
+        .partners__heading-wrap{
+            .partners__heading{
+                padding: 3rem 0 1rem 0;
+            }
+        }
+    }
+// end of partners section
 
 
 }

@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="footer__segment">
-                        <p class="footer__subscribe--text mb-0">
+                        <p class="footer__subscribe--text mb-md-0">
                             Ready To Get More Updates 
                             From Farmsponsor?
                         </p>
@@ -15,11 +15,11 @@
                     <div class="footer__segment">
                         <form action="" class="footer__form">
                             <div class="form-row">
-                                <div class="col-md-8 col-8">
+                                <div class="col-md-8 col-12">
                                     <input type="text" class="form-control footer__input" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 </div>
-                                <div class="col-md-4 col-4">
-                                    <button class="btn btn-outline-secondary form-control ml-3" type="button">Subscribe</button>
+                                <div class="col-md-4 col-12">
+                                    <button class="btn btn-outline-secondary form-control ml-md-3 subscribe-btn" type="button">Subscribe</button>
                                 </div>
                             </div>
                         </form>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Contact</a></div>
+                                <div class="footer__item"><a href="#" class="footer__links">Help Center</a></div>
                             </div>
                         </div>
                         <div class="row">

@@ -1,6 +1,7 @@
 @extends('layouts.basic')
 
 @section('content')
+<section class="vestbank-section-wrap">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-12">
@@ -22,7 +23,7 @@
                                 <div class="intro-section__image">
                                     <div class="intro-section__image">
                                         <div class="the-process__image-box">
-                                            <img src="{{asset('img/group 8.png')}}" alt="Illustration of money dropping credit card" class="intro-section__img">
+                                            <img src="{{asset('img/vestbank-intro-image.svg')}}" alt="Illustration of money dropping credit card" class="intro-section__img">
                                         </div>
                                     </div>
                                 </div>
@@ -47,7 +48,7 @@
                                                 <p class="how-it-works__img--text">Indicate interest to fund your Vestbanking account.</p>
                                             </div>
                                         </div>
-                                       
+                                        
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="how-it-works__picture ml-md-5">
@@ -62,7 +63,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                       
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -181,4 +182,6 @@
             </div>
         </div>
     </div>
+</section>
+    
 @endsection

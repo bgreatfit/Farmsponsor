@@ -112,7 +112,11 @@
 @media screen and (max-width:768px ) {
     .intro-section{
         .intro-section__content {
-            padding: 1rem 2rem !important;
+            padding: 0 2rem !important;
+            .vestbanking-page-heading {
+                font-size: 4.3rem;
+       
+            }
             .intro-section__text {
                 text-align: center;
             }

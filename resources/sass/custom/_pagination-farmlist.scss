@@ -1,0 +1,28 @@
+.farmlist__pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .pagination{
+        .page-item{
+            .page-link{
+                background-color: transparent;
+                color: rgba($color-black, .7);
+                padding: 1rem 2rem;
+                &:hover{
+                    color: darken($color-black, 100%);
+                }
+
+            }
+            
+        }
+        .page-item.active{
+            background-color: #072a47;
+            border-color: #072a47;
+            .page-link {
+                color: $color-white;
+                border: none;
+            }
+        }
+
+    }
+}

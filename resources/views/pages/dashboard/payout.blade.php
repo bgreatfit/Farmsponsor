@@ -20,32 +20,42 @@
                                         <table class="table table-bordered">
                                             <thead class="payout__thead">
                                                 <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Cycle Image</th>
-                                                <th scope="col">Farming Cycle</th>
-                                                <th scope="col">Number Of Units</th>
-                                                <th scope="col">Status</th>
-
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Cycle Image</th>
+                                                    <th scope="col">Farming Cycle</th>
+                                                    <th scope="col">Number Of Units</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Return</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 @foreach($cyclesSponsored as $key => $cycleSponsored)
                                                 <tr>
-                                                    <th scope="row">{{$key + 1}}</th>
+                                                    <th scope="row">
+                                                        {{$key + 1}}
+                                                    </th>
                                                     <td>
                                                         <div class="cycle-image-box ml-4">
-                                                        <img src="{{asset($cycleSponsored->farmingcycle->avatar)}}" alt="cycle photo" class="cycle-image">
+                                                            <img src="{{asset($cycleSponsored->farmingcycle->avatar)}}" alt="cycle photo" class="cycle-image">
                                                         </div>
                                                     </td>
-
                                                     <td>
                                                         <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__info">{{$cycleSponsored->farmingcycle->name}}</a>
                                                     </td>
-                                                    <td>{{$cycleSponsored->units}}</td>
+                                                    <td>
+                                                        {{$cycleSponsored->units}}
+                                                    </td>
                                                     <td>
                                                         <a href="#" data-toggle="modal" data-target="#payout-details" role="button" class="payout__status">
                                                             {{$cycleSponsored->farmingcycle->status->name}}
                                                         </a>
+                                                    </td>
+                                                    <td>
+                                                        <form action="" class="payout__return--form">
+                                                            <button type="submit" role="button" class="btn btn-success btn-lg form-control  payout__retain-btn">
+                                                                Button                                                        
+                                                            </button>
+                                                        </form>
                                                     </td>
                                                 </tr>
 
@@ -87,7 +97,7 @@
                                                                                             <p class="payout__date mb-4">
                                                                                                 Payout date: <span class="payout__date--span">{{$cycleSponsored->farmingcycle->due_date->diffForHumans()}}</span>
                                                                                             </p>
-                                                                                            <p class="payout__interest mb-4">Payout interest: <span
+                                                                                            <p class="payout__interest mb-4">Payout returns: <span
                                                                                                     class="payout__date--span">15%</span></p>
 
                                                                                             <div class="form-group">
@@ -114,68 +124,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-                        {{-- farm cycle Payout details --}}
-
-                        {{-- <div class="row">
-                            <div class="col-md-6 col-12 text-center">
-                                <div class="payout__image-box">
-                                    <img src="" alt="photo of farm cycle" class="payout__image">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <div class="row">
-                                    <div class="col">
-                                        <h1 class="payout__heading mb-5">
-                                            Payout Information
-                                        </h1>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 col-12">
-                                        <div class="payout__info payout__btnrmation">
-                                            <h2 class="payout__cycle-title mb-4">20th Farm cycle</h2>
-                                            <p class="payout__sponsored mb-4">
-                                                Amount sponsored: <span class="payout__sponsored--span">1000000</span>
-                                            </p>
-                                            <p class="payout__date mb-4">
-                                                Payout date: <span class="payout__date--span">29th August 2019</span>
-                                            </p>
-                                            <p class="payout__interest mb-4">Payout interest: <span class="payout__date--span">15%</span></p>
-                                            <form action="" class="payout__form">
-                                                @csrf
-                                                <div class="form-group">
-                                                    <input type="number" name="payoutAmount" id="payout__amount" class="payout__amount form-control" disabled>
-                                                <label for="payout__amount" class="payout__amount--label">Specify withdrawal amount</label>
-                                                </div>
-                                                <div class="row mb-4">
-                                                    <div class="col-12 col-md-4">
-                                                        <div class="form-group d-flex">
-                                                            <button type="submit" class="btn payout__btn form-control btn-lg btn-success" disabled>Submit</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 offset-md-4 col-md-4">
-                                                        <div class="form-group d-flex">
-                                                            <a href="{{asset('dashboard')}}" class="payout__btn btn form-control btn-lg btn-info ml-auto">back</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <p class="payout__note">
-                                                        <strong>Withdrawals will become available from payout date.</strong>
-                                                    </p>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
-
-
-
 
                         <div class="payout__ruler mt-4">
                             <hr>

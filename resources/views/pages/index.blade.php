@@ -110,8 +110,8 @@
                                         <h3 class="invest__heading heading__sub--light ">Superior Returns For Our Sponsors</h3>
                                         <div class="invest__text-wrap">
                                             <p class="text__sub--light">
-                                                At an ROI of up to 15% on your capital investment over the farming season, 
-                                                Farmsponsor has the highest return on investment in the industry
+                                                At an ROI of up to 15% on your sponsorship over the farming season, 
+                                                Farmsponsor has the highest returns in the industry.
                                             </p>
                                         </div>
                                     </div>
@@ -181,7 +181,7 @@
                                     </div>
                                     <div class="flex-col-2">
                                         <div class="how-it-works__icon">
-                                            <img src="{{asset('img/farmer-no-tools.svg')}}" alt="hand holding a bag of money" class="homepage__icon">
+                                            <img src="{{asset('img/user-icon.svg')}}" alt="hand holding a bag of money" class="homepage__icon">
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@
                                         </div>
                                         <div class="flex-col-2">
                                             <div class="invest__icon">
-                                                <img src="{{asset('img/flower-leaf.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
+                                                <img src="{{asset('img/add-vestbank-icon.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
                                             </div>
                                         </div>
                                     </div>
@@ -222,15 +222,18 @@
                                     <div class="flex-row">
                                         <div class="flex-col">
                                             <h2 class="heading__sub--light">
-                                                Vest Funds in Vestbank wallet
+                                                Add Funds To Vestbank
                                             </h2>
                                             <div class="invest__text-wrap">
                                                 <p class="text__sub--light">
-                                                    Add the funds you want to sponsor a farm with to your personal Vestbank wallet. 
+                                                    Add the funds you want to sponsor a farm with to your personal Vestbank wallet and proceed to sponsor a farm. 
                                                 </p>
+                                                <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
+                                                    Read More <img src="{{asset('img/greater-than-vestbank.svg')}}" alt="" class="read-more-icon">
+                                                </a>
                                             </div>
-                                            {{-- <a href="{{route('aboutVestbanking')}}" target="_blank" class="how-it-works__btn homepage__btn vestbank-info__btn">
-                                                More info on Vestbanking
+                                            {{-- <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
+                                                Read More <img src="{{asset('img/greater-than-vestbank.svg')}}" alt="" class="read-more-icon">
                                             </a> --}}
                                         </div>
                                     </div>
@@ -251,7 +254,7 @@
                                     </div>
                                     <div class="flex-col-2">
                                         <div class="how-it-works__icon">
-                                            <img src="{{asset('img/clockwise-arrow.svg')}}" alt="a flower numbered one" class="homepage__icon">
+                                            <img src="{{asset('img/dark-leaf.svg')}}" alt="a flower numbered one" class="homepage__icon">
                                         </div>
                                     </div>
                                 </div>
@@ -380,7 +383,7 @@
                     <div class="col-12 col-md-12">
                         <div class="testimonials-block">
                             <h3 class="testimonials__heading">
-                                Sponsor a farmer together we can stop hunger.
+                                Sponsor a farmer today! together we can stop hunger.
                             </h3>
                         </div>
                     </div>

@@ -60,13 +60,15 @@
         flex-direction: column;
         color: $color-white;
         margin-bottom: 10rem;
+        // max-width: 28rem;
 
         .farmlist{
             &__status{
                 border-top-left-radius: 3px;
                 border-top-right-radius: 3px;
                 align-self: flex-end;
-                padding: .5rem 5rem; 
+                padding: .5rem 3rem;
+                max-width: 15.8rem; 
                 background-image: linear-gradient(to bottom, #758c1f 90%, rgba(117, 140, 31, 0));
                 &--text{
                     margin-bottom: 0;

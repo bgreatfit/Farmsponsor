@@ -152,7 +152,7 @@
             <div class="col-md-6 col-12">
                 <div class="mission-content">
                     <p class="mission-content--text">
-                        Our mission is to use technology to drive the participation of everyone in agriculture.”
+                        Our mission is to use technology to drive the participation of everyone in agriculture.
                     </p>
                 </div>
             </div>

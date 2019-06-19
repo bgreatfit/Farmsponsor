@@ -15,6 +15,7 @@ $footer-text-light: #fbfbfb;
     }
     .footer-subscribe, 
     .footer-links {
+        font-family: Montserrat;
         margin-bottom: 8rem;
     }
     .footer__segment .footer__form {
@@ -49,13 +50,7 @@ $footer-text-light: #fbfbfb;
         margin-right: 3rem;
     }
 }
-// @media screen and (min-width:576px) and (max-width:767px){
-//     .page-footer .footer__content {
-//         border-top: 1px solid $footer-text-dark;
-//         padding-top: 6rem;
-//         margin-right: 3rem;
-//     }
-// }
+
 @media screen and (min-width:576px){
     .page-footer .footer__content {
         border-top: 1px solid $footer-text-dark;
@@ -66,5 +61,28 @@ $footer-text-light: #fbfbfb;
 @media screen and (max-width:768px) {
     .page-footer {
         padding: 5rem 1rem !important;
+
+        .footer-subscribe{
+            .footer__segment .footer__subscribe--text {
+                font-size: 30px;
+                color: #ffffff;
+                line-height: 1.4;
+                margin-bottom: 2rem;
+            }
+            .col-12.col-sm-12.col-md-6:nth-of-type(2) {
+                .footer__segment .footer__form .form-row .col-md-8.col-12{
+                    .footer__input{
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                }
+                .footer__segment .footer__form .form-row .col-md-4.col-12 {
+                    .subscribe-btn{
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+                }
+            }
+        }
     }
 }
