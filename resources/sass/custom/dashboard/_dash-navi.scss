@@ -51,7 +51,7 @@
             display: none;
             color: rgba($color-white, .9);
         }
-        .dashboard__navi .dashboard__navi--item:nth-of-type(2) {
+        .dashboard__navi .dashboard__navi--item.navi__item--profile  {
             display: none;
         }
     }

@@ -12841,7 +12841,7 @@ mar .intro-section__image-box {
     color: rgba(255, 255, 255, 0.9);
   }
 
-  .dashboard__navi-wrap .dashboard__navi .dashboard__navi--item:nth-of-type(2) {
+  .dashboard__navi-wrap .dashboard__navi .dashboard__navi--item.navi__item--profile {
     display: none;
   }
 

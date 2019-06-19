@@ -11,7 +11,7 @@
             <li class="dashboard__navi--item"><a href="{{route('dashboard')}}" class="dashboard__navi--link">
                 <i class="fas fa-home dashboard__icon"></i>Dashboard</a>
             </li>
-            <li class="dashboard__navi--item"><a href="{{route('user.profile')}}" class="dashboard__navi--link">
+            <li class="dashboard__navi--item navi__item--profile"><a href="{{route('user.profile')}}" class="dashboard__navi--link">
                 <i class="fas fa-user dashboard__icon"></i>Profile</a>
             </li>
             <li class="dashboard__navi--item"><a href="{{route('farms.all')}}" class="dashboard__navi--link">
