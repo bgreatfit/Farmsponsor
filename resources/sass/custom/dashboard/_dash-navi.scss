@@ -47,6 +47,10 @@
         height: 100%;
         border-right: 1px solid rgba($color-black, .3);
         padding-top: 8rem;
+        .dashboard__navi--menu .hamburger__icon {
+            display: none;
+            color: rgba($color-white, .9);
+        }
         .dashboard__navi .dashboard__navi--item:nth-of-type(2) {
             display: none;
         }
@@ -64,7 +68,7 @@
         visibility: hidden;
         opacity: 0;
         height: 0;
-        transition: height .2s ease-in;
+        transition: all .2s ease-in;
     }
     
     .dashboard__navi--item{
@@ -87,6 +91,10 @@
         top: -4rem;
         z-index: 9999;
         font-size: 2.3rem;
+        .hamburger__icon {
+            display: inline-block;
+            color: rgba($color-white, .9);
+        }
 
         .menu-icon-container {
             position: relative;
@@ -128,6 +136,5 @@
         height:  38.5rem;
         visibility: visible;
         opacity: 1;
-        // transition: visibility .25s .2s ease;
     }
 }

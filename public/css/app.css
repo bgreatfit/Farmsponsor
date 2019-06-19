@@ -12750,7 +12750,7 @@ mar .intro-section__image-box {
 
 .dashboard__content-wrap .dashboard__content .dashboard__welcome--heading {
   font-size: 200%;
-  color: #e79e26;
+  color: #191d21;
   font-weight: 300;
   letter-spacing: 2px;
   font-family: sans-serif;
@@ -12764,7 +12764,7 @@ mar .intro-section__image-box {
 }
 
 .dashboard__content-wrap .dashboard__content .dashboard__sponsor-cta--btn {
-  background-color: #0d47a1;
+  background-image: radial-gradient(#17aa0d, #379e2c);
   color: #f5f5f5;
   padding: 1.5rem 5rem;
   border-radius: 3rem;
@@ -12772,6 +12772,15 @@ mar .intro-section__image-box {
   text-decoration: none;
   font-size: 2rem;
   text-transform: capitalize;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.dashboard__content-wrap .dashboard__content .dashboard__sponsor-cta--btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #ffffff;
 }
 
 .dashboard__navi-wrap {
@@ -12827,6 +12836,11 @@ mar .intro-section__image-box {
     padding-top: 8rem;
   }
 
+  .dashboard__navi-wrap .dashboard__navi--menu .hamburger__icon {
+    display: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
   .dashboard__navi-wrap .dashboard__navi .dashboard__navi--item:nth-of-type(2) {
     display: none;
   }
@@ -12845,7 +12859,7 @@ mar .intro-section__image-box {
     visibility: hidden;
     opacity: 0;
     height: 0;
-    transition: height 0.2s ease-in;
+    transition: all 0.2s ease-in;
   }
 
   .dashboard__navi--item {
@@ -12868,6 +12882,11 @@ mar .intro-section__image-box {
     top: -4rem;
     z-index: 9999;
     font-size: 2.3rem;
+  }
+
+  .dashboard__navi--menu .hamburger__icon {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .dashboard__navi--menu .menu-icon-container {
@@ -12923,7 +12942,7 @@ mar .intro-section__image-box {
 }
 
 .dashboard__panel {
-  background-color: #134e87;
+  background-color: #191d21;
   padding: 0 2rem;
   display: flex;
 }
@@ -13199,7 +13218,7 @@ mar .intro-section__image-box {
 .transaction__content .transaction__heading {
   font-size: 3rem;
   font-weight: 600;
-  color: #AC321F;
+  color: #191d21;
 }
 
 .transaction-cards-section-wrap {
@@ -13251,7 +13270,7 @@ mar .intro-section__image-box {
 }
 
 .transaction__card {
-  background-image: linear-gradient(to right bottom, #7b343a, #ac321f);
+  background-image: linear-gradient(to right bottom, #2ca524, #1a5314);
   color: #ffffff;
   padding: 1rem;
   text-align: center;

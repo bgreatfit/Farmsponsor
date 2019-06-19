@@ -15,7 +15,7 @@
             &--image{border-radius: 50%;}
             &--heading{
                 font-size: 200%;
-                color: #e79e26;
+                color: #191d21;
                 font-weight: 300;
                 letter-spacing: 2px;
                 font-family: sans-serif;
@@ -27,7 +27,7 @@
         .dashboard__sponsor-cta {
             width: 100%;
             &--btn{
-                background-color: #0d47a1;
+                background-image: radial-gradient(#17aa0d, #379e2c);
                 color: #f5f5f5;
                 padding: 1.5rem 5rem;
                 border-radius: 3rem;
@@ -35,6 +35,11 @@
                 text-decoration: none;
                 font-size: 2rem;
                 text-transform: capitalize;
+                transition: transform .3s ease-in;
+            }
+            &--btn:hover {
+                transform: scale(1.05);
+                color: $color-white;
             }
         }
     }

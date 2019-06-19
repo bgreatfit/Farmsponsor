@@ -15,7 +15,7 @@
                 <i class="fas fa-user dashboard__icon"></i>Profile</a>
             </li>
             <li class="dashboard__navi--item"><a href="{{route('farms.all')}}" class="dashboard__navi--link">
-                <i class="fas fa-kiwi-bird dashboard__icon"></i>Farm List</a>
+                <i class="fas fa-tractor dashboard__icon"></i>Farm List</a>
             </li>
             <li class="dashboard__navi--item"><a href="{{route('transactions.all')}}" class="dashboard__navi--link">
                 <i class="fas fa-calendar-check dashboard__icon"></i>Transactions</a></li>

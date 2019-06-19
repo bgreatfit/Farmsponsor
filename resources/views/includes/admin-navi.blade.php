@@ -1,6 +1,6 @@
 <div class="col-md-3 col-sm-4 col-12">
         <div class="dashboard__navi-wrap">
-            <label for="dashboard__navi--toggle" class="dashboard__navi--menu text-center"> &#9776;</label>
+            <label for="dashboard__navi--toggle" class="dashboard__navi--menu text-center"> <span class="hamburger__icon">&#9776;</span></label>
             <input type="checkbox" class="dashboard__navi--toggle" id="dashboard__navi--toggle">
             <ul class="dashboard__navi">
                 <li class="dashboard__navi--item"><a href="{{route('admin.farmcycles')}}" class="dashboard__navi--link">Farming Cycles</a></li>

@@ -8,7 +8,15 @@
                     <div class="deposit-request__heading-box">
                         <h1 class="deposit-request__heading mb-5 text-center">Deposits</h1>
                     </div>
-                    .deposit-request
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Confirmed</a>
+                        </li>
+                       
+                    </ul>
                     <div class="deposit-request__table">
                         <table class="table table-bordered">
                             <thead>
