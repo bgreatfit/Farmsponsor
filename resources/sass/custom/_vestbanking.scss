@@ -67,6 +67,16 @@
 }
 
 .the-process-section {
+    .row .vestbanking-cta{
+        text-align: center;
+        margin-top: 8rem;
+        .vestbanking-cta__btn{
+            color: #ffffff;
+            border-radius: 5rem;
+            background-color: #154219;
+            padding: 1.6rem 3rem;
+        }
+    }
     .the-process {
         &__content {
             margin-bottom: 20rem;
