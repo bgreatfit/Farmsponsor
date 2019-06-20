@@ -28,7 +28,7 @@
                   <tbody>
                       @foreach($farms as $key => $farm)
                         <tr>
-                            <th scope="row">{{$key + 1}}</th>
+                            <th scope="row">{{ (($farms->currentPage() - 1 ) * $farms->perPage() ) + $loop->iteration }}</th>
                             <td>
                             <a href="#" class="farming-cycle__info">{{$farm->name}}</a>
                             </td>
@@ -58,6 +58,12 @@
                       @endforeach
                   </tbody>
                 </table>
+                <div class="row">
+                    <div class="col-7 mx-auto">
+                        {{$farms->links()}}
+                    </div>
+                </div>
+
               </div>
 
               <div class="farming-cycle__heading-box mt-5 ">
