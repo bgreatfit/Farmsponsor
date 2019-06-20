@@ -28,7 +28,6 @@
             </div>
         </div>
 
-
         <div class="modal fade" id="deposit-method-bank" tabindex="-1" role="dialog" aria-labelledby="deposit-method-bankTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered deposit-method-bank" role="document">
                 <div class="modal-content">
