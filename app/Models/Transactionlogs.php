@@ -40,7 +40,8 @@ class Transactionlogs extends Model
         }
     }
 
-    public function getAmountAttribute(){
+    public function getAmountAttribute()
+    {
         switch($this->transactionable_type){
             case 'App\Models\Sponsor':
                $sponsorshipDetail = Sponsor::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
@@ -56,6 +57,7 @@ class Transactionlogs extends Model
                 break;
         }
     }
+
     public function getTransactionAmount(Model $model){
         return $model->units * $this->getPricePerUnit();
     }
@@ -63,4 +65,28 @@ class Transactionlogs extends Model
     public function getPricePerUnit(){
         return 100000;
     }
+
+   public function getReturnsAttribute()
+    {
+        switch($this->transactionable_type){
+            case 'App\Models\Sponsor':
+               $sponsorshipDetail = Sponsor::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
+               return 'NGN ' . number_format($this->getReturnsAmount($sponsorshipDetail)) . '.00';
+                break;
+            // case 'App\Models\Bankdeposit':
+            //    $bankDepositDetail = Bankdeposit::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
+            //    return 'NGN ' . number_format($bankDepositDetail->amount) . '.00';
+            //     break;
+            // case 'App\Models\WithdrawalLog':
+            //    $withdrawal = WithdrawalLog::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
+            //    return 'NGN ' . number_format($withdrawal->amount) . '.00';
+            //     break;
+        }
+    }
+
+    public function getReturnsAmount(Model $model){
+        $amount =  $model->units * $this->getPricePerUnit();
+        return $amount + ($amount * 0.15);
+    }
+
 }

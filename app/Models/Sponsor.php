@@ -19,7 +19,7 @@ class Sponsor extends Model
 
     public function user()
     {
-        return $this->hasMany('App\User');
+        return $this->belongsTo('App\User');
     }
 
     public function farmingcycle()
@@ -35,6 +35,11 @@ class Sponsor extends Model
     public function transactions()
     {
         return $this->morphMany('App\Models\Transactionlogs', 'transactionable');
+    }
+
+     public function transaction()
+    {
+        return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
     }
 
     public function getAmountAttribute(){

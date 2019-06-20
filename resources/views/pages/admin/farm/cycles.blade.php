@@ -30,7 +30,7 @@
                         <tr>
                             <th scope="row">{{ (($farms->currentPage() - 1 ) * $farms->perPage() ) + $loop->iteration }}</th>
                             <td>
-                            <a href="#" class="farming-cycle__info">{{$farm->name}}</a>
+                            <a href="{{route('admin.farmshow', $farm->id)}}" class="farming-cycle__info">{{$farm->name}}</a>
                             </td>
                             <td>{{$farm->start_unit}} </td>
                             <td>{{$farm->units}} </td>

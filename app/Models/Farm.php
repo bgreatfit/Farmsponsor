@@ -35,6 +35,11 @@ class Farm extends Model
         return $this->belongsTo('App\Models\Status');
     }
 
+    public function sponsors()
+    {
+        return $this->hasMany('App\Models\Sponsor');
+    }
+
     public function isSoldOut()
     {
         return $this->sold_out ? true : false;
