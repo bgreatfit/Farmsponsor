@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Farm;
 
 class PagesController extends Controller
 {
@@ -12,7 +13,8 @@ class PagesController extends Controller
     }
 
     public function index() {
-        return view('pages.index');
+        $data['farms'] = Farm::orderBy('created_at','desc')->limit(4)->get();
+        return view('pages.index', $data);
     }
 
     public function homepage() {

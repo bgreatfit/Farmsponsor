@@ -6,10 +6,10 @@
             <div class="container-block">
                 <div class="flex-row">
                     <div class="flex-col-2">
-                        <div class="introduction-content"> 
+                        <div class="introduction-content">
                             <div class="introduction__text-wrap">
                                 <h1 class="introduction__heading">
-                                    Food Security Is The 
+                                    Food Security Is The
                                     Responsibility Of Everyone
                                 </h1>
                                 <p class="introduction__text">
@@ -42,9 +42,9 @@
                 <div class="invest-content">
                     <h2 class="invest__heading--main">Why Choose Farmsponsor?</h2>
                 </div>
-                    
+
                 <div class="we-empower-farmers-block">
-                    <div class="invest-content"> 
+                    <div class="invest-content">
                         <div class="invest__empower-farmers">
                             <div class="icon-row">
                                 <div class="flex-row">
@@ -67,9 +67,9 @@
                                         <h3 class="invest__heading heading__sub--dark">We Empower Farmers</h3>
                                         <div class="invest__text-wrap">
                                             <p class="text__sub--dark">
-                                                We empower local farmers with funds from individuals and 
-                                                skills to produce at capacity or more and in return, you will 
-                                                get back your initial capital and a certain percentage of your 
+                                                We empower local farmers with funds from individuals and
+                                                skills to produce at capacity or more and in return, you will
+                                                get back your initial capital and a certain percentage of your
                                                 initial capital (usually 15%) after harvest (Usually 12 weeks)
                                             </p>
                                         </div>
@@ -103,14 +103,14 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="text-row">
                                 <div class="flex-row">
                                     <div class="flex-col">
                                         <h3 class="invest__heading heading__sub--light ">Superior Returns For Our Sponsors</h3>
                                         <div class="invest__text-wrap">
                                             <p class="text__sub--light">
-                                                At an ROI of up to 15% on your sponsorship over the farming season, 
+                                                At an ROI of up to 15% on your sponsorship over the farming season,
                                                 Farmsponsor has the highest returns in the industry.
                                             </p>
                                         </div>
@@ -141,10 +141,10 @@
                                             </h3>
                                             <div class="invest__text-wrap">
                                                 <p class="text__sub--light">
-                                                    In just over a year since we began operations, 
-                                                    we've had over 14 farming cycles. This means that you 
-                                                    have the potential to keep earning as much and as often 
-                                                    as possible. This is residual income at it's finest. 
+                                                    In just over a year since we began operations,
+                                                    we've had over 14 farming cycles. This means that you
+                                                    have the potential to keep earning as much and as often
+                                                    as possible. This is residual income at it's finest.
                                                 </p>
                                             </div>
                                         </div>
@@ -186,7 +186,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="text-row">
                                 <div class="flex-row">
                                     <div class="flex-col">
@@ -194,7 +194,7 @@
                                             <h2 class="heading__sub--light">Create A User Account</h2>
 
                                             <p class="text__sub--light">
-                                                Simply signup using your email or social media account 
+                                                Simply signup using your email or social media account
                                                 (Facebook and Twitter). Creating an account takes just a few seconds.
                                             </p>
                                         </div>
@@ -217,7 +217,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="text-row">
                                     <div class="flex-row">
                                         <div class="flex-col">
@@ -226,7 +226,7 @@
                                             </h2>
                                             <div class="invest__text-wrap">
                                                 <p class="text__sub--light">
-                                                    Add the funds you want to sponsor a farm with to your personal Vestbank wallet and proceed to sponsor a farm. 
+                                                    Add the funds you want to sponsor a farm with to your personal Vestbank wallet and proceed to sponsor a farm.
                                                 </p>
                                                 <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
                                                     Read More <img src="{{asset('img/greater-than-vestbank.svg')}}" alt="" class="read-more-icon">
@@ -238,12 +238,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
 
-                    <div class="how-it-works-content"> 
+                    <div class="how-it-works-content">
                         <div class="how-it-works__row-wrap">
                             <div class="icon-row">
                                 <div class="flex-row">
@@ -266,10 +266,10 @@
                                         <h2 class="heading__sub--dark">Find A Farm To Sponsor</h2>
                                         <div class="stay-updated__text-wrap">
                                             <p class="text__sub--dark">
-                                                Select a farm from our list of available farms ready for 
-                                                sponsorship on the current farm cycle, buy a specific number 
-                                                of units at N100,000.00 per unit and that's it. Just sit back 
-                                                and watch your investment grow. 
+                                                Select a farm from our list of available farms ready for
+                                                sponsorship on the current farm cycle, buy a specific number
+                                                of units at N100,000.00 per unit and that's it. Just sit back
+                                                and watch your investment grow.
                                             </p>
                                         </div>
                                         <a href="{{route('login')}}" class="how-it-works__btn homepage__btn">
@@ -327,7 +327,7 @@
                         </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-2 col-12">
                         <div class="content-wrap">
                         <div class="row justify-content-center">
@@ -342,7 +342,7 @@
                         </div>
                         </div>
                     </div>
-            
+
                     <div class="col-md-2 col-12">
                         <div class="content-wrap">
                         <div class="row justify-content-center">
@@ -357,12 +357,12 @@
                         </div>
                         </div>
                     </div>
-            
+
                     <div class="col-md-2 col-12">
                         <div class="content-wrap">
                             <div class="row justify-content-center">
                                 <img src="{{asset('img/stat-reviews.svg')}}" alt="a group of people illustration" class="homepage__icon">
-                            
+
                             {{-- <i class="fas fa-comments review"></i> --}}
                             </div>
                             <div class="row justify-content-center">
@@ -387,7 +387,7 @@
                             </h3>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-4">
@@ -399,8 +399,8 @@
                                 <p class="testimonials__text">Robert Martins</p>
                                 <p class="testimonials__text--description">Sponsor</p>
                                 <p class="testimonials__comment">
-                                    I just got my alert. You guys are the bomb. I got 
-                                    my alert! Great guys, I look forward for my farming 
+                                    I just got my alert. You guys are the bomb. I got
+                                    my alert! Great guys, I look forward for my farming
                                     windows. Let's do this again guys!
                                 </p>
                             </div>
@@ -415,9 +415,9 @@
                                 <p class="testimonials__text">Olaitan R</p>
                                 <p class="testimonials__text--description">Sponsor</p>
                                 <p class="testimonials__comment">
-                                    I got my alert. My bank was messing up but you guys 
-                                    even called me to get another account number. Thank you 
-                                    so much! Next cycle, I'll definitely invest. 
+                                    I got my alert. My bank was messing up but you guys
+                                    even called me to get another account number. Thank you
+                                    so much! Next cycle, I'll definitely invest.
                                     You are tested and trusted.
                                 </p>
                             </div>
@@ -432,8 +432,8 @@
                                 <p class="testimonials__text">Bala Gana</p>
                                 <p class="testimonials__text--description">Sponsor</p>
                                 <p class="testimonials__comment">
-                                    Payout Day! I have received mine. Thank you so much 
-                                    Farmsponsor. You kept your word. Next farming window please! 
+                                    Payout Day! I have received mine. Thank you so much
+                                    Farmsponsor. You kept your word. Next farming window please!
                                     #FoodSecurityForAll.
                                 </p>
                             </div>
@@ -450,35 +450,19 @@
                     <div class="col-12 col-md-12">
                         <div class="farmlist-content">
                             <h3 class="farmlist__heading">
-                                Explore our farm circles and pick a farm to sponsor 
+                                Explore our farm circles and pick a farm to sponsor
                             </h3>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4">
+                    @foreach($farms as $farm)
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="farmlist-content">
                             @include('includes.farmsCard')
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="farmlist-content">
-                            @include('includes.farmsCard')
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="farmlist-content">
-                            @include('includes.farmsCard')
-                        </div>
-                    </div>
-
-                    {{-- <div class="col-12 col-sm-6 col-md-3">
-                        <div class="farmlist-content">
-                            @include('includes.farmsCard')
-                        </div>
-                    </div> --}}
+                    @endforeach
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-12">
@@ -509,15 +493,15 @@
                                     <div class="insurance__text-wrap">
                                         <h2 class="insurance__heading">A Robust Insurance Policy</h2>
                                         <p class="insurance__text">
-                                            Farmsponsor has your investment covered with a robust 
-                                            insurance policy. Our farms are comprehensively insured 
+                                            Farmsponsor has your investment covered with a robust
+                                            insurance policy. Our farms are comprehensively insured
                                             by Leadway Assurance plc.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            
-                            
+
+
                         </div>
                     </div>
                 </div>

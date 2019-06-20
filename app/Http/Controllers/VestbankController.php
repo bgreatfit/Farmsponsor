@@ -134,6 +134,7 @@ class VestbankController extends Controller
             $amount = $currentAmount;
         }
 
+
         Auth::user()->vestbank()->update([
             $field => $currentAmount - $amount,
             'lock' => 1

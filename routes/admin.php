@@ -13,7 +13,7 @@
 
 Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], function () {
 
-    Route::get('', 'PagesController@admin');
+    Route::get('', 'PagesController@admin')->name('admin.dashboard');
     Route::get('farmcycles', 'Admin\DashboardController@farmcycle')->name('admin.farmcycles');
     Route::get('farmcycles/create', 'FarmController@create')->name('farms.create');
     Route::post('farmcycles/create', 'FarmController@store')->name('farms.store');

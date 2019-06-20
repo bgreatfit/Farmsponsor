@@ -40,6 +40,11 @@ class Farm extends Model
         return $this->sold_out ? true : false;
     }
 
+    public function hasExhaustedUnit()
+    {
+        return $this->units < 1 ? true : false;
+    }
+
     public function isPaidOut()
     {
         return $this->payout ? true : false;

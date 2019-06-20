@@ -32,7 +32,7 @@ class FarmController extends Controller
     {
         $data['farms'] = $this->farm->all();
         if($data['farms']->count() == 0){
-            $this->equest->session()->flash('info', 'No farm list available');
+            $this->request->session()->flash('info', 'No farm list available');
             return back();
         };
         return view('farm.index', $data);
@@ -90,7 +90,7 @@ class FarmController extends Controller
 
         $this->farm->create($dataToStore);
         $this->request->session()->flash('success', 'Farm Cycle Created');
-        return redirect()->route('farms.all');
+        return redirect()->route('admin.dashboard');
     }
 
     /**
