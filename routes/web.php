@@ -17,27 +17,15 @@ Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('gallery', 'PagesController@gallery')->name('gallery');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
 
-// Dashboard Routes
-Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
-Route::get('/dashboard/helpcenter', 'PagesController@dashboardHelpcenter')->name('dashboardHelpcenter');
+// Newsletter Route
+Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subcribe');
 
 // Farm Routes
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
-Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
-
 Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
-Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor');
 
 
-// VestBanking Routes
-Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
-Route::get('/dashboard/vestbanking/deposit', 'VestbankController@showDepositPage')->name('vestbanking.showdepositpage');
-Route::post('/dashboard/vestbanking/deposit', 'VestbankController@deposit')->name('vestbanking.deposit');
-Route::post('/dashboard/vestbanking/withdraw', 'VestbankController@withdraw')->name('vestbanking.withdraw');
 
-
-// Payout Routes
-Route::get('/dashboard/payout', 'PayoutController@index');
 
 // Route::get('/farmlist', 'FarmsController@index');
 
@@ -48,12 +36,48 @@ Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('new
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
 Route::post('/profile', 'UserController@update')->name('user.store');
 
+
+
+// Auth Routes
+Auth::routes(['verify' => true]);
+
+Route::group(['middleware' => ['usersonly']], function () {
+
+Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
+Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor');
+
+// Dashboard Routes
+Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
+Route::get('/dashboard/helpcenter', 'PagesController@dashboardHelpcenter')->name('dashboardHelpcenter');
+
+// Payout Routes
+Route::get('/dashboard/payout', 'PayoutController@index');
+    // VestBanking Routes
+Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
+Route::get('/dashboard/vestbanking/deposit', 'VestbankController@showDepositPage')->name('vestbanking.showdepositpage');
+Route::post('/dashboard/vestbanking/deposit', 'VestbankController@deposit')->name('vestbanking.deposit');
+Route::post('/dashboard/vestbanking/withdraw', 'VestbankController@withdraw')->name('vestbanking.withdraw');
+
 // Transactions Route
 Route::get('/transactions', 'TransactionsController@index')->name('transactions.all');
 Route::get('/transactions/history', 'TransactionsController@history')->name('transactions.history');
 
-// Auth Routes
-Auth::routes(['verify' => true]);
+// Payout Routes
+Route::get('/dashboard/payout', 'PayoutController@index');
+
+// Route::get('/farmlist', 'FarmsController@index');
+
+
+
+// Users
+Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
+Route::post('/profile', 'UserController@update')->name('user.store');
+
+// Transactions Route
+Route::get('/transactions', 'TransactionsController@index')->name('transactions.all');
+Route::get('/transactions/history', 'TransactionsController@history')->name('transactions.history');
+
+});
 
 
 
