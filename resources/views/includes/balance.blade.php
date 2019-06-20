@@ -4,8 +4,8 @@
         0.00NGN 
     </a>
     <div  class="balance__dropdown dropdown-menu dropdown-menu-right" aria-labelledby="DropdownMenu1">
-    <a href="#" data-toggle="modal" data-target="#vestbank-withdraw" role="button" class="dropdown-item balance__dropdown--link">Withdraw</a>
-        <a href="{{url('/dashboard/deposit')}}" class="dropdown-item balance__dropdown--link">Deposit</a>
+    <a href="{{route('vestbanking.withdraw')}}" data-toggle="modal" data-target="#vestbank-withdraw" role="button" class="dropdown-item balance__dropdown--link">Withdraw</a>
+        <a href="{{route('vestbanking.deposit')}}" class="dropdown-item balance__dropdown--link">Add Money</a>
     </div>
 </div>
 
