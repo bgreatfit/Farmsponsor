@@ -34,13 +34,13 @@
 
     </head>
     <body>
-        @include('includes.navigation')
-        
-        @include('includes.alerts')
+      @include('includes.navigation')
+      
+      @include('includes.alerts')
 
-        @yield('content')
+      @yield('content')
 
-        @include('includes.footer')
+      @include('includes.footer')
 
     </body>
     @include('includes.scripts')

@@ -194,8 +194,7 @@
                                             <h2 class="heading__sub--light">Create A User Account</h2>
 
                                             <p class="text__sub--light">
-                                                Simply signup using your email or social media account
-                                                (Facebook and Twitter). Creating an account takes just a few seconds.
+                                                Simply signup using your email. Creating an account takes just a few seconds.
                                             </p>
                                         </div>
                                     </div>
