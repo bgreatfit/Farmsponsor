@@ -8,57 +8,108 @@
                     <div class="deposit-request__heading-box">
                         <h1 class="deposit-request__heading mb-5 text-center">Deposits</h1>
                     </div>
-                    <ul class="nav nav-tabs">
+                  
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Pending</a>
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#pending-deposit" role="tab" aria-controls="home" aria-selected="true">Pending Requests</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Confirmed</a>
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#confirmed-deposit" role="tab" aria-controls="profile" aria-selected="false">Confirmed Deposits</a>
                         </li>
-                       
                     </ul>
-                    <div class="deposit-request__table">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Address</th>
-                                <th scope="col">Amount</th>
-                                <th scope="col">Deposit Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach($deposits as $key => $deposit)
-                                <tr>
-                                    <th scope="row">{{ $key + 1 }}</th>
-                                    <td>
-                                        <p class="depositor-info">{{$deposit->firstname}}</p>
-                                    </td>
-
-                                    <td>
-                                        <p class="depositor-info">{{$deposit->lastname}}</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">{{$deposit->email}}</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">{{$deposit->address}}</p>
-                                    </td>
-                                    <td>
-                                        <p class="depositor-info">{{$deposit->amount}}</p>
-                                    <td>
-                                        <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
-                                    </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                        {{
-                            $deposits->links()
-                        }}
+                    
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="pending-deposit" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="deposit-request__table">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Deposit Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($deposits as $key => $deposit)
+                                        <tr>
+                                            <th scope="row">{{ $key + 1 }}</th>
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->firstname}}</p>
+                                            </td>
+        
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->lastname}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->email}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->address}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->amount}}</p>
+                                            <td>
+                                                <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                                {{
+                                    $deposits->links()
+                                }}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="confirmed-deposit" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="deposit-confirmed__table">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Deposit Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($deposits as $key => $deposit)
+                                        <tr>
+                                            <th scope="row">{{ $key + 1 }}</th>
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->firstname}}</p>
+                                            </td>
+        
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->lastname}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->email}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->address}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="depositor-info">{{$deposit->amount}}</p>
+                                            <td>
+                                                <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                                {{
+                                    $deposits->links()
+                                }}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
                     </div>
                 </div>
             </div>
