@@ -105,6 +105,18 @@ class FarmController extends Controller
         return view('farm.show', $data);
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Farms  $farms
+     * @return \Illuminate\Http\Response
+     */
+    public function adminshow($farm)
+    {
+        $data['farm'] = Farm::findOrFail($farm);
+        return view('pages.admin.farm.show', $data);
+    }
+
 
     public function sponsor(Farm $farm)
     {
