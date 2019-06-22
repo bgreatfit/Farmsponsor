@@ -30,7 +30,7 @@ class FarmController extends Controller
      */
     public function index()
     {
-        $data['farms'] = $this->farm->all();
+        $data['farms'] = $this->farm->orderBy('created_at', 'desc')->get();
         if($data['farms']->count() == 0){
             $this->request->session()->flash('info', 'No farm list available');
             return back();
@@ -40,7 +40,8 @@ class FarmController extends Controller
 
     public function dashboardFarmlist()
     {
-        $data['farms'] = $this->farm->all();
+        $data['farms'] = $this->farm->orderBy('created_at', 'desc')->get();
+
         if($data['farms']->count() == 0){
             $this->request->session()->flash('info', 'No farm list available');
             return back();
@@ -114,6 +115,8 @@ class FarmController extends Controller
     public function adminshow($farm)
     {
         $data['farm'] = Farm::findOrFail($farm);
+        $data['approved_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->orderBy('created_at', 'desc')->paginate(10);
+        $data['unapproved_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
         return view('pages.admin.farm.show', $data);
     }
 
@@ -213,7 +216,7 @@ class FarmController extends Controller
      */
     public function update(Request $request, Farms $farms)
     {
-        //
+        return $request;
     }
 
     /**

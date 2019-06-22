@@ -33,13 +33,13 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach($withdrawals as $key => $withdrawal)
+                                            @foreach($unapproved_withdrawals as $key => $withdrawal)
                                                 <tr>
                                                     <th scope="row">{{$key + 1}}</th>
                                                     <td>
                                                         <p class="widthdrawal-info">{{$withdrawal->user->firstname}}</p>
                                                     </td>
-            
+
                                                     <td>
                                                         <p class="widthdrawal-info">{{$withdrawal->user->lastname}}</p>
                                                     </td>
@@ -49,13 +49,14 @@
                                                     <td>
                                                         <p class="widthdrawal-info">{{$withdrawal->displayamount}}</p>
                                                     <td>
-                                                        <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-secondary widthdrawal-status__btn">Pending</a>
+                                                        <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-secondary widthdrawal-status__btn">Confirm</a>
                                                     </td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
                                     </table>
                                 </div>
+                                {{$unapproved_withdrawals->links()}}
                             </div>
                             <div class="tab-pane fade" id="confirmed-withdrawal" role="tabpanel" aria-labelledby="profile-tab">
                                 <div class="withdrawal-confirmed__table">
@@ -71,13 +72,13 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach($withdrawals as $key => $withdrawal)
+                                            @foreach($approved_withdrawals as $key => $withdrawal)
                                                 <tr>
                                                     <th scope="row">{{$key + 1}}</th>
                                                     <td>
                                                         <p class="widthdrawal-info">{{$withdrawal->user->firstname}}</p>
                                                     </td>
-            
+
                                                     <td>
                                                         <p class="widthdrawal-info">{{$withdrawal->user->lastname}}</p>
                                                     </td>
@@ -87,7 +88,7 @@
                                                     <td>
                                                         <p class="widthdrawal-info">{{$withdrawal->displayamount}}</p>
                                                     <td>
-                                                        <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-secondary widthdrawal-status__btn">Pending</a>
+                                                        <a class="btn form-control btn-lg btn-success widthdrawal-status__btn text-white">Approved</a>
                                                     </td>
                                                 </tr>
                                             @endforeach
@@ -95,9 +96,9 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                            {{-- <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div> --}}
                         </div>
-
+                        {{$approved_withdrawals->links()}}
                 </div>
             </div>
         </div>

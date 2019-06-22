@@ -29,11 +29,11 @@
                           </tr>
                         </thead>
                         <tbody>
-                            @foreach($farm->sponsors as $sponsor)
+                            @foreach($unapproved_sponsors as $sponsor)
                             <tr>
                                 <th scope="row">1</th>
                                 <td>
-                                    <a href="#" class="sponsor-confirm btn btn-md btn-warning">Comfirm</a>
+                                    <a href="{{route('sponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                 </td>
                                 <td>{{$sponsor->user->firstname}}</td>
                                 <td>{{$sponsor->user->lastname}}</td>
@@ -47,6 +47,7 @@
                         </tbody>
                     </table>
                 </div>
+                {{$unapproved_sponsors->links()}}
             </div>
         </div>
     </div>

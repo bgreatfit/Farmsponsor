@@ -11,7 +11,8 @@ class WithdrawalController extends Controller
 {
     public function index()
     {
-        $data['withdrawals'] = WithdrawalLog::whereApprovedUserId(null)->orderBy('created_at', 'desc')->paginate(10);
+        $data['approved_withdrawals'] = WithdrawalLog::whereApprovedUserId(1)->orderBy('approved_time', 'desc')->paginate(10);
+        $data['unapproved_withdrawals'] = WithdrawalLog::whereApprovedUserId(null)->orderBy('created_at', 'desc')->paginate(10);
         return view('pages.admin.withdrawals', $data);
     }
 

@@ -22,6 +22,9 @@ class CreateBankdepositsTable extends Migration
             $table->string('email');
             $table->integer('amount');
             $table->integer('approved')->default(0);
+            $table->string('approve_user_id')->nullable();
+            $table->string('approve_ip_address')->nullable();
+            $table->dateTime('approved_time')->nullable();
             $table->timestamps();
         });
     }

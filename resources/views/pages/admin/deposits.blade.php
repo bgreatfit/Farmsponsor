@@ -8,7 +8,7 @@
                     <div class="deposit-request__heading-box">
                         <h1 class="deposit-request__heading mb-5 text-center">Deposits</h1>
                     </div>
-                  
+
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#pending-deposit" role="tab" aria-controls="home" aria-selected="true">Pending Requests</a>
@@ -17,7 +17,7 @@
                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#confirmed-deposit" role="tab" aria-controls="profile" aria-selected="false">Confirmed Deposits</a>
                         </li>
                     </ul>
-                    
+
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="pending-deposit" role="tabpanel" aria-labelledby="home-tab">
                             <div class="deposit-request__table">
@@ -33,14 +33,14 @@
                                         <th scope="col">Deposit Status</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        @foreach($deposits as $key => $deposit)
-                                        <tr>
-                                            <th scope="row">{{ $key + 1 }}</th>
+                                   <tbody>
+                                    @foreach($unapproved_deposits as $deposit)
+                                    <tr>
+                                        <th scope="row">{{ (($unapproved_deposits->currentPage() - 1 ) * $unapproved_deposits->perPage() ) + $loop->iteration }}</th>
                                             <td>
                                                 <p class="depositor-info">{{$deposit->firstname}}</p>
                                             </td>
-        
+
                                             <td>
                                                 <p class="depositor-info">{{$deposit->lastname}}</p>
                                             </td>
@@ -60,7 +60,7 @@
                                     </tbody>
                                 </table>
                                 {{
-                                    $deposits->links()
+                                    $unapproved_deposits->links()
                                 }}
                             </div>
                         </div>
@@ -79,13 +79,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($deposits as $key => $deposit)
+                                        @foreach($approved_deposits as $deposit)
                                         <tr>
-                                            <th scope="row">{{ $key + 1 }}</th>
+                                            <th scope="row">{{ (($approved_deposits->currentPage() - 1 ) * $approved_deposits->perPage() ) + $loop->iteration }}</th>
                                             <td>
                                                 <p class="depositor-info">{{$deposit->firstname}}</p>
                                             </td>
-        
+
                                             <td>
                                                 <p class="depositor-info">{{$deposit->lastname}}</p>
                                             </td>
@@ -105,7 +105,7 @@
                                     </tbody>
                                 </table>
                                 {{
-                                    $deposits->links()
+                                    $approved_deposits->links()
                                 }}
                             </div>
                         </div>
