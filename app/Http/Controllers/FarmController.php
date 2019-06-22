@@ -30,7 +30,7 @@ class FarmController extends Controller
      */
     public function index()
     {
-        $data['farms'] = $this->farm->orderBy('created_at', 'desc')->get();
+        $data['farms'] = $this->farm->orderBy('created_at', 'desc')->paginate(10);
         if($data['farms']->count() == 0){
             $this->request->session()->flash('info', 'No farm list available');
             return back();
@@ -40,7 +40,7 @@ class FarmController extends Controller
 
     public function dashboardFarmlist()
     {
-        $data['farms'] = $this->farm->orderBy('created_at', 'desc')->get();
+        $data['farms'] = $this->farm->orderBy('created_at', 'desc')->paginate(10);
 
         if($data['farms']->count() == 0){
             $this->request->session()->flash('info', 'No farm list available');
@@ -203,8 +203,6 @@ class FarmController extends Controller
         $data['farm'] = Farm::findOrFail($farm);
 
         return view('pages.admin.farm.edit', $data);
-
-
     }
 
     /**
@@ -214,7 +212,7 @@ class FarmController extends Controller
      * @param  \App\Farms  $farms
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Farms $farms)
+    public function update(Request $request, Farm $farms)
     {
         return $request;
     }

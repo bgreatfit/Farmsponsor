@@ -20,7 +20,7 @@
                       <th scope="col">Remaining Units</th>
                       <th scope="col">Start Date</th>
                       <th scope="col">Due Date</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">Action</th>
                       <th scope="col">Payout Status</th>
                       <th scope="col">Edit</th>
                     </tr>

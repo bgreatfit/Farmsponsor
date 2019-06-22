@@ -18,6 +18,7 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('farmcycles/create', 'FarmController@create')->name('farms.create');
     Route::post('farmcycles/create', 'FarmController@store')->name('farms.store');
     Route::get('farmcycles/{farm}/edit', 'FarmController@edit')->name('farms.edit');
+    Route::post('farmcycles/{farm}/edit', 'FarmController@update')->name('farms.update');
     Route::get('farmcycles/{farm}/show', 'FarmController@adminshow')->name('admin.farmshow');
     Route::get('farmcycles/{farm}/soldout', 'FarmController@soldout')->name('farms.soldout');
     Route::get('farmcycles/{farm}/open', 'FarmController@open')->name('farms.open');

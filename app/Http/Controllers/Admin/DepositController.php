@@ -18,8 +18,12 @@ class DepositController extends Controller
 
     public function confirm(Request $request, Bankdeposit $deposit)
     {
+        $data['approve_user_id'] = Auth::id();
+        $data['approve_ip_address'] = request()->ip();
+        $data['approved_time'] = now();
+        $data['approved'] = 1;
 
-        if(! $this->approveDeposit($deposit)){
+        if(! $deposit->update($data)){
             $request->session()->flash('error', 'Deposit not reflected to user!');
             return redirect()->back();
         }
@@ -30,12 +34,12 @@ class DepositController extends Controller
         return redirect()->back();
     }
 
-    public function approveDeposit($deposit)
-    {
-        return $deposit->update([
-            'approve_user_id' => Auth::id(),
-            'approve_ip_address' => request()->ip(),
-            'approved_time' => now(),
-        ]);
-    }
+    // public function approveDeposit($deposit)
+    // {
+    //     return $deposit->update([
+    //         'approved_user_id' => Auth::id(),
+    //         'approved_ip_address' => request()->ip(),
+    //         'approved_time' => now(),
+    //     ]);
+    // }
 }
