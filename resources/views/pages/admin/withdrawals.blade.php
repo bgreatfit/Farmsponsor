@@ -102,13 +102,7 @@
                                     </table>
                                 </div>
                             </div>
-<<<<<<< HEAD
                         </div>
-=======
-                            {{-- <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div> --}}
-                        </div>
-                        {{$approved_withdrawals->links()}}
->>>>>>> 89a14d22e89b86f32aa403f54dfa62d4659cb02a
                 </div>
             </div>
         </div>

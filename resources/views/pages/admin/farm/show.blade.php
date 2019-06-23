@@ -117,11 +117,7 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>
-<<<<<<< HEAD
                                     <a href="#" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
-=======
-                                    <a href="{{route('sponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
->>>>>>> 89a14d22e89b86f32aa403f54dfa62d4659cb02a
                                 </td>
                                 <td>{{$sponsor->user->firstname}}</td>
                                 <td>{{$sponsor->user->lastname}}</td>

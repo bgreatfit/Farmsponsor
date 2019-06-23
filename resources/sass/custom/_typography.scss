@@ -42,6 +42,7 @@ a[class*=__btn]:visited {
 
 .btn {
     @include buttonTextSizeDefault;
+    
 }
 
 .hide-content {

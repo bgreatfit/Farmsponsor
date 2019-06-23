@@ -38,8 +38,6 @@
                             @auth
                             <li class="nav-item navigation__item">
                                 <a class="nav-link navigation__item--link" href="{{route('dashboard')}}">Dashboard</a>
-<<<<<<< HEAD
-=======
                             </li>
 
                             <li class="nav-item navigation__item">
@@ -50,7 +48,6 @@
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
->>>>>>> 89a14d22e89b86f32aa403f54dfa62d4659cb02a
                             </li>
                             @else
                             <li class="nav-item navigation__item">
