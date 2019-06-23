@@ -51,6 +51,9 @@
                                                     <td>
                                                         <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-secondary widthdrawal-status__btn">Confirm</a>
                                                     </td>
+                                                    <td>
+                                                        <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                    </td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -63,12 +66,12 @@
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Amount</th>
-                                            <th scope="col">Withdrawal Status</th>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Withdrawal Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -90,15 +93,22 @@
                                                     <td>
                                                         <a class="btn form-control btn-lg btn-success widthdrawal-status__btn text-white">Approved</a>
                                                     </td>
+                                                    <td>
+                                                        <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                    </td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+<<<<<<< HEAD
+                        </div>
+=======
                             {{-- <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div> --}}
                         </div>
                         {{$approved_withdrawals->links()}}
+>>>>>>> 89a14d22e89b86f32aa403f54dfa62d4659cb02a
                 </div>
             </div>
         </div>

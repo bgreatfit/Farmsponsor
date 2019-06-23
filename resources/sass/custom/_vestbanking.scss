@@ -70,11 +70,15 @@
     .row .vestbanking-cta{
         text-align: center;
         margin-top: 8rem;
-        .vestbanking-cta__btn{
+        .vestbanking-cta__btn:link,
+        .vestbanking-cta__btn:visited {
             color: #ffffff;
+        }
+        .vestbanking-cta__btn{
             border-radius: 5rem;
             background-color: #154219;
             padding: 1.6rem 3rem;
+            text-decoration: none;
         }
     }
     .the-process {
