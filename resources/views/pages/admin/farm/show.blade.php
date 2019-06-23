@@ -14,7 +14,91 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="sponsors-list__content ">
-                    <table class="table table-bordered">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#pending-sponsorship" role="tab" aria-controls="home" aria-selected="true">Pending Sponsorships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#confirmed-sponsorship" role="tab" aria-controls="profile" aria-selected="false">Confirmed Sponsorship</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="pending-sponsorship" role="tabpanel" aria-labelledby="home-tab">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Confirm Sponsor</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Amount Sponsored</th>
+                                        <th scope="col">Units</th>
+                                        <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($farm->sponsors as $sponsor)
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <a href="#" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
+                                            </td>
+                                            <td>{{$sponsor->user->firstname}}</td>
+                                            <td>{{$sponsor->user->lastname}}</td>
+                                            <td>{{$sponsor->transaction->amount}}</td>
+                                            <td>{{$sponsor->units}}</td>
+                                            <td>{{$sponsor->transaction->returns}}</td>
+                                            <td>{{$sponsor->user->phone}}</td>
+                                            <td>{{$sponsor->user->email}}</td>
+                                            <td>
+                                                <a href="#" class="sponsor-confirm btn btn-md btn-danger">Remove</a>
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="confirmed-sponsorship" role="tabpanel" aria-labelledby="profile-tab">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Amount Sponsored</th>
+                                            <th scope="col">Units</th>
+                                            <th scope="col">Returns (NGN)</th>
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Remove from list</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($farm->sponsors as $sponsor)
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>{{$sponsor->user->firstname}}</td>
+                                            <td>{{$sponsor->user->lastname}}</td>
+                                            <td>{{$sponsor->transaction->amount}}</td>
+                                            <td>{{$sponsor->units}}</td>
+                                            <td>{{$sponsor->transaction->returns}}</td>
+                                            <td>{{$sponsor->user->phone}}</td>
+                                            <td>{{$sponsor->user->email}}</td>
+                                            <td>
+                                                <a href="#" class="sponsor-confirm btn btn-md btn-danger">Delete</a>
+                                            </td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    {{-- <table class="table table-bordered">
                         <thead>
                           <tr>
                             <th scope="col">#</th>
@@ -33,7 +117,7 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>
-                                    <a href="#" class="sponsor-confirm btn btn-md btn-warning">Comfirm</a>
+                                    <a href="#" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                 </td>
                                 <td>{{$sponsor->user->firstname}}</td>
                                 <td>{{$sponsor->user->lastname}}</td>
@@ -42,10 +126,13 @@
                                 <td>{{$sponsor->transaction->returns}}</td>
                                 <td>{{$sponsor->user->phone}}</td>
                                 <td>{{$sponsor->user->email}}</td>
+                                <td>
+                                    <a href="#" class="sponsor-confirm btn btn-md btn-danger">Remove</a>
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>
-                    </table>
+                    </table> --}}
                 </div>
             </div>
         </div>

@@ -36,7 +36,7 @@
                                 <a class="nav-link navigation__item--link" href="https://farmsponsor.com.ng/latest-updates" target="_blank">Blog</a>
                             </li>
                             <li class="nav-item navigation__item">
-                                <a class="nav-link navigation__item--link" href="{{route('dashboard')}}" target="_blank">Dashboard</a>
+                                <a class="nav-link navigation__item--link" href="{{route('dashboard')}}">Dashboard</a>
                             </li>
                             <li class="nav-item navigation__item">
                                 <a a class="nav-link navigation__item--link nav-link-signUp" href="{{ route('register') }}">{{ __('Sign Up') }}</a>

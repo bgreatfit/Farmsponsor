@@ -10659,6 +10659,10 @@ a.text-dark:focus {
   }
 }
 
+.font-lg {
+  font-size: 1.6rem;
+}
+
 .main-about {
   background-color: #f7f7f7;
   color: #000000;
@@ -12129,8 +12133,8 @@ a.text-dark:focus {
 }
 
 .farmlist__pagination .pagination .page-item.active {
-  background-color: #072a47;
-  border-color: #072a47;
+  background-color: #0e2503;
+  border-color: #0e2503;
 }
 
 .farmlist__pagination .pagination .page-item.active .page-link {
@@ -12628,11 +12632,16 @@ mar .intro-section__image-box {
   margin-top: 8rem;
 }
 
-.the-process-section .row .vestbanking-cta .vestbanking-cta__btn {
+.the-process-section .row .vestbanking-cta .vestbanking-cta__btn:link,
+.the-process-section .row .vestbanking-cta .vestbanking-cta__btn:visited {
   color: #ffffff;
+}
+
+.the-process-section .row .vestbanking-cta .vestbanking-cta__btn {
   border-radius: 5rem;
   background-color: #154219;
   padding: 1.6rem 3rem;
+  text-decoration: none;
 }
 
 .the-process-section .the-process__content {

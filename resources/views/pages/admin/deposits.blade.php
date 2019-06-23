@@ -55,6 +55,9 @@
                                             <td>
                                                 <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
                                             </td>
+                                            <td>
+                                                <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
@@ -100,6 +103,9 @@
                                             <td>
                                                 <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
                                             </td>
+                                            <td>
+                                                <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
@@ -109,7 +115,6 @@
                                 }}
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
                     </div>
                 </div>
             </div>
