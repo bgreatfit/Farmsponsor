@@ -18,11 +18,13 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('farmcycles/create', 'FarmController@create')->name('farms.create');
     Route::post('farmcycles/create', 'FarmController@store')->name('farms.store');
     Route::get('farmcycles/{farm}/edit', 'FarmController@edit')->name('farms.edit');
+    Route::post('farmcycles/{farm}/edit', 'FarmController@update')->name('farms.update');
     Route::get('farmcycles/{farm}/show', 'FarmController@adminshow')->name('admin.farmshow');
     Route::get('farmcycles/{farm}/soldout', 'FarmController@soldout')->name('farms.soldout');
     Route::get('farmcycles/{farm}/open', 'FarmController@open')->name('farms.open');
     Route::get('farmcycles/{farm}/payout', 'FarmController@payout')->name('farms.payout');
     Route::get('farmcycles/{farm}/stoppayout', 'FarmController@stoppayout')->name('farms.stoppayout');
+    Route::get('sponsorship/{sponsor}/confirm', 'SponsorController@confirm')->name('sponsorship.confirm');
     Route::get('deposits', 'Admin\DepositController@index')->name('admin.bankdeposits');
     Route::get('deposits/{deposit}', 'Admin\DepositController@confirm')->name('admin.confirmdeposit');
     Route::get('withdrawals', 'Admin\WithdrawalController@index')->name('admin.withdrawals');

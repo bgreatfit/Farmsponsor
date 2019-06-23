@@ -2,12 +2,34 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use App\Models\Sponsor;
 use App\Models\Farm;
 use Illuminate\Http\Request;
 
 class SponsorController extends Controller
 {
+
+    protected $request;
+
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
+
+    public function confirm(Sponsor $sponsor)
+    {
+        // return $sponsor;
+        $data['approve_user_id'] = Auth::id();
+        $data['approve_ip_address'] = request()->ip();
+        $data['approved'] = 1;
+        if($sponsor->update($data)){
+            $this->request->session()->flash('success', 'Sponsorship Approved');
+            return back();
+        };
+        $this->request->session()->flash('error', 'Something went wrong!');
+        return back();
+    }
     /**
      * Display a listing of the resource.
      *

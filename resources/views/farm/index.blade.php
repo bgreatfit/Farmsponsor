@@ -14,7 +14,8 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-12">
-                @include('includes.pagination')
+                {{-- @include('includes.pagination') --}}
+{{$farms->links()}}
             </div>
         </div>
     </div>

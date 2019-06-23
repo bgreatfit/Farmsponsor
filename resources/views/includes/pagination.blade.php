@@ -1,4 +1,4 @@
-<div class="farmlist__pagination">
+{{-- <div class="farmlist__pagination">
     <nav aria-label="farmlist navigation">
         <ul class="pagination">
             <li class="page-item">
@@ -14,4 +14,4 @@
             </li>
         </ul>
     </nav>
-</div>
+</div> --}}

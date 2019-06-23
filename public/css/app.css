@@ -12518,6 +12518,10 @@ a[class*=__btn]:visited {
   font-size: 1.3rem;
 }
 
+.hide-content {
+  display: none;
+}
+
 .flex-row {
   display: flex;
   width: 100%;
