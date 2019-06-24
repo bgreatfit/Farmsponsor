@@ -151,10 +151,7 @@
                                     </div>
     
                                     <p class="deposit-method-bank__note"><b>Please complete transfer within 24hours, your sponsorship will be confirmed as soon as possible.</b></p>
-    
                                 </form>
-    
-    
                             </div>
                         </div>
                     </div>

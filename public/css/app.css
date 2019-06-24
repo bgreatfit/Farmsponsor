@@ -13610,6 +13610,22 @@ mar .intro-section__image-box {
   font-size: 1.3rem;
 }
 
+.sponsors-list__content ul.nav.nav-tabs .sponsor-via-vestbank-tab {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sponsors-list__content ul.nav.nav-tabs .sponsor-now-tab {
+  background-color: rgba(39, 155, 55, 0.3);
+}
+
+.sponsors-list__content ul.nav.nav-tabs .sponsor-now-tab:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sponsors-list__content ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
+  background-color: rgba(39, 155, 55, 0.6);
+}
+
 .add-cycle__input {
   height: 3rem;
   font-size: 1.3rem;
