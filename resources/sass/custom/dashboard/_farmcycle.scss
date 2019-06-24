@@ -15,6 +15,26 @@
             font-weight: 600;
             text-transform: capitalize;
         }
+        &-content {
+            .farmcycle__information{
+               
+                .sponsor-now__btn {
+                    background-color: $color-primary-deep;
+                    font-size: 1.4rem;
+                    height: 4rem;
+                    line-height: 26px;
+                    color: $color-white;
+                }
+                .btn.btn-lg.sponsor-via-vestbank__btn{
+                    background-image: linear-gradient(to bottom right, 
+                    rgba(89, 8, 57, 0.9), rgb(137, 43, 100));
+                    color: #fff;
+                    font-size: 1.4rem;
+                    height: 4rem;
+                    line-height: 26px;
+                }
+            }
+        }
         &__span{
             color: $color-grey-dark;
         }

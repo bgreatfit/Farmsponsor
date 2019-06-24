@@ -41,11 +41,11 @@
 
                                             <div class="row mb-4">
                                                 <div class="col-12 col-md-6">
-                                                    <a href="#" data-toggle="modal" data-target="#sponsor-farmcycle" role="button" class="farmcycle__cta form-control btn btn-lg btn-success">Sponsor Now</a>
+                                                    <a href="{{route('sponsornow')}}" class=" btn form-control btn-lg sponsor-now__btn">Sponsor Now</a>
                                                 </div>
                                                 <div class="col-12 col-md-6">
                                                     <div class="btn-box py-3 py-md-0">
-                                                     <a href="{{route('farms.all')}}" class=" btn form-control btn-lg btn-info ml-auto">back</a>
+                                                        <a href="#" data-toggle="modal" data-target="#sponsor-farmcycle" role="button" class="form-control btn btn-lg sponsor-via-vestbank__btn ml-auto">Sponsor Via Vestbanking</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -71,7 +71,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <p class="sponsor-farmcycle__form--text mb-3 text-center">How many units would you like to sponsor?</p>
-                                        <form action="{{route('farms.sponsor', $farm->slug)}}" method="POST"                               class="sponsor-farmcycle__form">
+                                            <form action="{{route('farms.sponsor', $farm->slug)}}" method="POST"                               class="sponsor-farmcycle__form">
                                                 @csrf
                                                 <div class="form-group mt-3">
                                                     <input type="number" name="unit" id="unit"

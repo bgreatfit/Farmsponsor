@@ -194,7 +194,8 @@
                                             <h2 class="heading__sub--light">Create A User Account</h2>
 
                                             <p class="text__sub--light">
-                                                Simply signup using your email. Creating an account takes just a few seconds.
+                                                Simply signup using your email address then proceed to complete your profile. 
+                                                Creating an account takes just a few seconds
                                             </p>
                                         </div>
                                     </div>
@@ -211,7 +212,7 @@
                                         </div>
                                         <div class="flex-col-2">
                                             <div class="invest__icon">
-                                                <img src="{{asset('img/add-vestbank-icon.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
+                                                <img src="{{asset('img/dark-leaf.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
                                             </div>
                                         </div>
                                     </div>
@@ -221,19 +222,18 @@
                                     <div class="flex-row">
                                         <div class="flex-col">
                                             <h2 class="heading__sub--light">
-                                                Add Funds To Vestbank
+                                                Choose Sponsorship Method 
                                             </h2>
                                             <div class="invest__text-wrap">
                                                 <p class="text__sub--light">
-                                                    Add the funds you want to sponsor a farm with to your personal Vestbank wallet and proceed to sponsor a farm.
+                                                    Select a farm from our list of available farms ready for sponsorship on the 
+                                                    current farm cycle, buy a specific number of units at N100,000.00 per unit by 
+                                                    clicking “sponsor now” or “sponsor via vestbanking” and that’s it.
                                                 </p>
-                                                <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
+                                                {{-- <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
                                                     Read More <img src="{{asset('img/greater-than-vestbank.svg')}}" alt="" class="read-more-icon">
-                                                </a>
+                                                </a> --}}
                                             </div>
-                                            {{-- <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
-                                                Read More <img src="{{asset('img/greater-than-vestbank.svg')}}" alt="" class="read-more-icon">
-                                            </a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -253,7 +253,7 @@
                                     </div>
                                     <div class="flex-col-2">
                                         <div class="how-it-works__icon">
-                                            <img src="{{asset('img/dark-leaf.svg')}}" alt="a flower numbered one" class="homepage__icon">
+                                            <img src="{{asset('img/moneybag.svg')}}" alt="a flower numbered one" class="homepage__icon">
                                         </div>
                                     </div>
                                 </div>
@@ -262,18 +262,22 @@
                             <div class="text-row">
                                 <div class="flex-row">
                                     <div class="flex-col">
-                                        <h2 class="heading__sub--dark">Find A Farm To Sponsor</h2>
+                                        <h2 class="heading__sub--dark">Add Funds To Vestbank (Optional)</h2>
                                         <div class="stay-updated__text-wrap">
                                             <p class="text__sub--dark">
-                                                Select a farm from our list of available farms ready for
-                                                sponsorship on the current farm cycle, buy a specific number
-                                                of units at N100,000.00 per unit and that's it. Just sit back
-                                                and watch your investment grow.
+                                                Add the fund you want to sponsor a farm with to your personal 
+                                                vest bank wallet and proceed to sponsor a farm via vestbanking.
                                             </p>
+                                            <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
+                                                Read More <img src="{{asset('img/greater-than-dark.svg')}}" alt="" class="read-more-icon">
+                                            </a>
                                         </div>
-                                        <a href="{{route('login')}}" class="how-it-works__btn homepage__btn">
-                                            Get Involved
-                                        </a>
+                                        <div class="stay-updated__btn-wrap">
+                                            <a href="{{route('login')}}" class="how-it-works__btn homepage__btn">
+                                                Get Involved
+                                            </a>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>

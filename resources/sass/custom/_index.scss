@@ -1,6 +1,21 @@
 .homepage-wrap {
     background-color: $color-white;
     font-family: Montserrat;
+    .vestbank-info__btn{
+        text-decoration: none;
+        color: #011633;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 163.8%;
+        transition: all .2s ease-in;
+        .read-more-icon {
+            width: 1.87rem;
+
+        }
+    }
+    .vestbank-info__btn:hover{
+        color: darken($color-white, 80%);
+    }
     .sponsor-btn--icon{
         width: 9px;
     }
@@ -203,17 +218,7 @@
                     margin-bottom: 5rem;
 
                 }
-                .vestbank-info__btn{
-                    text-decoration: none;
-                    color: $color-white;
-                    transition: all .2s ease-in;
-                    .read-more-icon {
-                        width: 1.87rem;
-                    }
-                }
-                .vestbank-info__btn:hover{
-                    color: darken($color-white, 10%);
-                }
+               
             }
             
             &__btn {
@@ -223,6 +228,9 @@
                 background-color: rgba(234, 236, 239, 0.7);
                 .stay-updated__text-wrap{
                     margin-bottom: 5rem;
+                }
+                .stay-updated__btn-wrap {
+                    text-align: center;
                 }
             }
         }

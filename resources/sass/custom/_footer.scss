@@ -17,6 +17,8 @@ $footer-text-light: #fbfbfb;
     .footer-links {
         font-family: Montserrat;
         margin-bottom: 8rem;
+
+        
     }
     .footer__segment .footer__form {
         margin-top: 2.2rem;
@@ -28,11 +30,17 @@ $footer-text-light: #fbfbfb;
             padding-top: 1rem;
             padding-bottom: 2.7rem;
             font-size: 1.4rem;
+            color: #FFFFFF;
+            border-color: #fff;
         }
     }
     .footer__item .footer__links{
         color: #FBFBFB;
         font-size: 1.4rem;
+        
+    }
+    .footer-links .footer__content .footer__text {
+        font-size: 1.3rem;
     }
     .footer__item--social .footer__links{
         display: inline-block;

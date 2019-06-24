@@ -11263,8 +11263,9 @@ a.text-dark:focus {
   background-color: #154219;
   text-decoration: none;
   color: #ffffff;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   display: inline-block;
+  border: none;
 }
 
 .farmlist__card .farmlist__sponsor .farmlist__sponsor-btn .sponsor-btn--icon {
@@ -11302,6 +11303,23 @@ a.text-dark:focus {
 .homepage-wrap {
   background-color: #ffffff;
   font-family: Montserrat;
+}
+
+.homepage-wrap .vestbank-info__btn {
+  text-decoration: none;
+  color: #011633;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 163.8%;
+  transition: all 0.2s ease-in;
+}
+
+.homepage-wrap .vestbank-info__btn .read-more-icon {
+  width: 1.87rem;
+}
+
+.homepage-wrap .vestbank-info__btn:hover {
+  color: #333333;
 }
 
 .homepage-wrap .sponsor-btn--icon {
@@ -11505,20 +11523,6 @@ a.text-dark:focus {
   margin-bottom: 5rem;
 }
 
-.homepage-wrap .how-it-works-section .how-it-works__sponsor .vestbank-info__btn {
-  text-decoration: none;
-  color: #ffffff;
-  transition: all 0.2s ease-in;
-}
-
-.homepage-wrap .how-it-works-section .how-it-works__sponsor .vestbank-info__btn .read-more-icon {
-  width: 1.87rem;
-}
-
-.homepage-wrap .how-it-works-section .how-it-works__sponsor .vestbank-info__btn:hover {
-  color: #e6e6e6;
-}
-
 .homepage-wrap .how-it-works-section .how-it-works__btn {
   padding: 1rem 3rem;
 }
@@ -11529,6 +11533,10 @@ a.text-dark:focus {
 
 .homepage-wrap .how-it-works-section .how-it-works__row-wrap .stay-updated__text-wrap {
   margin-bottom: 5rem;
+}
+
+.homepage-wrap .how-it-works-section .how-it-works__row-wrap .stay-updated__btn-wrap {
+  text-align: center;
 }
 
 .homepage-wrap .statistics-section {
@@ -12308,11 +12316,17 @@ a.text-dark:focus {
   padding-top: 1rem;
   padding-bottom: 2.7rem;
   font-size: 1.4rem;
+  color: #FFFFFF;
+  border-color: #fff;
 }
 
 .page-footer .footer__item .footer__links {
   color: #FBFBFB;
   font-size: 1.4rem;
+}
+
+.page-footer .footer-links .footer__content .footer__text {
+  font-size: 1.3rem;
 }
 
 .page-footer .footer__item--social .footer__links {
@@ -13054,6 +13068,23 @@ mar .intro-section__image-box {
 .farmcycle-wrap .farmcycle__cycle-title {
   font-weight: 600;
   text-transform: capitalize;
+}
+
+.farmcycle-wrap .farmcycle-content .farmcycle__information .sponsor-now__btn {
+  background-color: #279B37;
+  font-size: 1.4rem;
+  height: 4rem;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.farmcycle-wrap .farmcycle-content .farmcycle__information .btn.btn-lg.sponsor-via-vestbank__btn,
+.farmcycle-wrap .farmcycle-content .farmcycle__information .btn-group-lg > .btn.sponsor-via-vestbank__btn {
+  background-image: linear-gradient(to bottom right, rgba(89, 8, 57, 0.9), #892b64);
+  color: #fff;
+  font-size: 1.4rem;
+  height: 4rem;
+  line-height: 26px;
 }
 
 .farmcycle-wrap .farmcycle__span {

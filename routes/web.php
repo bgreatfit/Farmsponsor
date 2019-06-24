@@ -48,6 +48,7 @@ Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor')
 
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
+Route::get('/dashboard/sponsor-now', 'PagesController@sponsorNow')->name('sponsornow');
 Route::get('/dashboard/helpcenter', 'PagesController@dashboardHelpcenter')->name('dashboardHelpcenter');
 
 // Payout Routes
