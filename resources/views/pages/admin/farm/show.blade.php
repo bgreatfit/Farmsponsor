@@ -67,6 +67,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                            
                             <div class="tab-pane fade" id="confirmed-sponsorship-via-vestbank" role="tabpanel" aria-labelledby="profile-tab">
                                 <table class="table table-bordered">
                                     <thead>
