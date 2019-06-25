@@ -77,6 +77,9 @@
         .dashboard__navi--link {
             min-width: 11rem;
         }
+        .dashboard__navi--link.admin {
+            min-width: 15rem;
+        }
     }
     
     // side navigation hamburger menu styling

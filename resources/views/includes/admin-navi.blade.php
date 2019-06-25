@@ -3,14 +3,14 @@
             <label for="dashboard__navi--toggle" class="dashboard__navi--menu text-center"> <span class="hamburger__icon">&#9776;</span></label>
             <input type="checkbox" class="dashboard__navi--toggle" id="dashboard__navi--toggle">
             <ul class="dashboard__navi">
-                <li class="dashboard__navi--item"><a href="{{route('admin.farmcycles')}}" class="dashboard__navi--link">Farming Cycles</a></li>
-                {{-- <li class="dashboard__navi--item"><a href="{{url('/admin/transactions')}}" class="dashboard__navi--link">Transactions</a></li> --}}
-                <li class="dashboard__navi--item"><a href="{{route('admin.bankdeposits')}}" class="dashboard__navi--link">Deposit Requests</a></li>
-                <li class="dashboard__navi--item"><a href="{{route('admin.withdrawals')}}" class="dashboard__navi--link">Withdrawal Requests</a></li>
-                {{-- <li class="dashboard__navi--item"><a href="{{url('/admin/help')}}" class="dashboard__navi--link">Help Center</a></li> --}}
+                <li class="dashboard__navi--item"><a href="{{route('admin.farmcycles')}}" class="dashboard__navi--link admin">Farming Cycles</a></li>
+                {{-- <li class="dashboard__navi--item"><a href="{{url('/admin/transactions')}}" class="dashboard__navi--link admin">Transactions</a></li> --}}
+                <li class="dashboard__navi--item"><a href="{{route('admin.bankdeposits')}}" class="dashboard__navi--link admin">Deposit Requests</a></li>
+                <li class="dashboard__navi--item"><a href="{{route('admin.withdrawals')}}" class="dashboard__navi--link admin">Withdrawal Requests</a></li>
+                {{-- <li class="dashboard__navi--item"><a href="{{url('/admin/help')}}" class="dashboard__navi--link admin">Help Center</a></li> --}}
                 <li class="dashboard__navi--item">
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                    class="dashboard__navi--link">{{ __('Logout') }}</a>
+                    class="dashboard__navi--link admin">{{ __('Logout') }}</a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

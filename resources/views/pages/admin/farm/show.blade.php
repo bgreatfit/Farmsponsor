@@ -30,182 +30,145 @@
                     </ul>
 
                     <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="pending-sponsorship-via-vestbank" role="tabpanel" aria-labelledby="home-tab">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Confirm Sponsor</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Amount Sponsored</th>
-                                            <th scope="col">Units</th>
-                                            <th scope="col">Returns (NGN)</th>
-                                            <th scope="col">Phone</th>
-                                            <th scope="col">Email</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach($farm->sponsors as $sponsor)
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>
-                                                <a href="#" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
-                                            </td>
-                                            <td>{{$sponsor->user->firstname}}</td>
-                                            <td>{{$sponsor->user->lastname}}</td>
-                                            <td>{{$sponsor->transaction->amount}}</td>
-                                            <td>{{$sponsor->units}}</td>
-                                            <td>{{$sponsor->transaction->returns}}</td>
-                                            <td>{{$sponsor->user->phone}}</td>
-                                            <td>{{$sponsor->user->email}}</td>
-                                            <td>
-                                                <a href="#" class="sponsor-confirm btn btn-md btn-danger">Remove</a>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <div class="tab-pane fade" id="confirmed-sponsorship-via-vestbank" role="tabpanel" aria-labelledby="profile-tab">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Amount Sponsored</th>
-                                            <th scope="col">Units</th>
-                                            <th scope="col">Returns (NGN)</th>
-                                            <th scope="col">Phone</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Undo</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach($farm->sponsors as $sponsor)
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>{{$sponsor->user->firstname}}</td>
-                                            <td>{{$sponsor->user->lastname}}</td>
-                                            <td>{{$sponsor->transaction->amount}}</td>
-                                            <td>{{$sponsor->units}}</td>
-                                            <td>{{$sponsor->transaction->returns}}</td>
-                                            <td>{{$sponsor->user->phone}}</td>
-                                            <td>{{$sponsor->user->email}}</td>
-                                            <td>
-                                                <a href="#" class="sponsor-confirm btn btn-md btn-danger">Reverse</a>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="tab-pane fade" id="pending-sponsor-now" role="tabpanel" aria-labelledby="profile-tab">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Amount Sponsored</th>
-                                            <th scope="col">Units</th>
-                                            <th scope="col">Returns (NGN)</th>
-                                            <th scope="col">Phone</th>
-                                            <th scope="col">Email</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach($farm->sponsors as $sponsor)
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>{{$sponsor->user->firstname}}</td>
-                                            <td>{{$sponsor->user->lastname}}</td>
-                                            <td>{{$sponsor->transaction->amount}}</td>
-                                            <td>{{$sponsor->units}}</td>
-                                            <td>{{$sponsor->transaction->returns}}</td>
-                                            <td>{{$sponsor->user->phone}}</td>
-                                            <td>{{$sponsor->user->email}}</td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="tab-pane fade" id="confirmed-sponsor-now" role="tabpanel" aria-labelledby="profile-tab">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Amount Sponsored</th>
-                                            <th scope="col">Units</th>
-                                            <th scope="col">Returns (NGN)</th>
-                                            <th scope="col">Phone</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Undo</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach($farm->sponsors as $sponsor)
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>{{$sponsor->user->firstname}}</td>
-                                            <td>{{$sponsor->user->lastname}}</td>
-                                            <td>{{$sponsor->transaction->amount}}</td>
-                                            <td>{{$sponsor->units}}</td>
-                                            <td>{{$sponsor->transaction->returns}}</td>
-                                            <td>{{$sponsor->user->phone}}</td>
-                                            <td>{{$sponsor->user->email}}</td>
-                                            <td>
-                                                <a href="#" class="sponsor-confirm btn btn-md btn-danger">Reverse</a>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="tab-pane fade show active" id="pending-sponsorship-via-vestbank" role="tabpanel" aria-labelledby="home-tab">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Confirm Sponsor</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Amount Sponsored</th>
+                                        <th scope="col">Units</th>
+                                        <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($farm->sponsors as $sponsor)
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>
+                                            <a href="#" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
+                                        </td>
+                                        <td>{{$sponsor->user->firstname}}</td>
+                                        <td>{{$sponsor->user->lastname}}</td>
+                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->units}}</td>
+                                        <td>{{$sponsor->transaction->returns}}</td>
+                                        <td>{{$sponsor->user->phone}}</td>
+                                        <td>{{$sponsor->user->email}}</td>
+                                        <td>
+                                            <a href="#" class="sponsor-confirm btn btn-md btn-danger">Remove</a>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
                         </div>
 
+                        <div class="tab-pane fade" id="confirmed-sponsorship-via-vestbank" role="tabpanel" aria-labelledby="profile-tab">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Amount Sponsored</th>
+                                        <th scope="col">Units</th>
+                                        <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Undo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($farm->sponsors as $sponsor)
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>{{$sponsor->user->firstname}}</td>
+                                        <td>{{$sponsor->user->lastname}}</td>
+                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->units}}</td>
+                                        <td>{{$sponsor->transaction->returns}}</td>
+                                        <td>{{$sponsor->user->phone}}</td>
+                                        <td>{{$sponsor->user->email}}</td>
+                                        <td>
+                                            <a href="#" class="sponsor-confirm btn btn-md btn-danger">Reverse</a>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
 
-                    {{-- <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Confirm</th>
-                            <th scope="col">First Name</th>
-                            <th scope="col">Last Name</th>
-                            <th scope="col">Amount Sponsored</th>
-                            <th scope="col">Units</th>
-                            <th scope="col">Returns (NGN)</th>
-                            <th scope="col">Phone</th>
-                            <th scope="col">Email</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($unapproved_sponsors as $sponsor)
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>
-                                    <a href="#" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
-                                </td>
-                                <td>{{$sponsor->user->firstname}}</td>
-                                <td>{{$sponsor->user->lastname}}</td>
-                                <td>{{$sponsor->transaction->amount}}</td>
-                                <td>{{$sponsor->units}}</td>
-                                <td>{{$sponsor->transaction->returns}}</td>
-                                <td>{{$sponsor->user->phone}}</td>
-                                <td>{{$sponsor->user->email}}</td>
-                                <td>
-                                    <a href="#" class="sponsor-confirm btn btn-md btn-danger">Remove</a>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table> --}}
+                        <div class="tab-pane fade" id="pending-sponsor-now" role="tabpanel" aria-labelledby="profile-tab">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Amount Sponsored</th>
+                                        <th scope="col">Units</th>
+                                        <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($farm->sponsors as $sponsor)
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>{{$sponsor->user->firstname}}</td>
+                                        <td>{{$sponsor->user->lastname}}</td>
+                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->units}}</td>
+                                        <td>{{$sponsor->transaction->returns}}</td>
+                                        <td>{{$sponsor->user->phone}}</td>
+                                        <td>{{$sponsor->user->email}}</td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="tab-pane fade" id="confirmed-sponsor-now" role="tabpanel" aria-labelledby="profile-tab">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Amount Sponsored</th>
+                                        <th scope="col">Units</th>
+                                        <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Undo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($farm->sponsors as $sponsor)
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>{{$sponsor->user->firstname}}</td>
+                                        <td>{{$sponsor->user->lastname}}</td>
+                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->units}}</td>
+                                        <td>{{$sponsor->transaction->returns}}</td>
+                                        <td>{{$sponsor->user->phone}}</td>
+                                        <td>{{$sponsor->user->email}}</td>
+                                        <td>
+                                            <a href="#" class="sponsor-confirm btn btn-md btn-danger">Reverse</a>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
                 {{$unapproved_sponsors->links()}}
             </div>

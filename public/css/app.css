@@ -12924,6 +12924,10 @@ mar .intro-section__image-box {
     min-width: 11rem;
   }
 
+  .dashboard__navi--item .dashboard__navi--link.admin {
+    min-width: 15rem;
+  }
+
   .dashboard__navi--menu {
     display: inline-block;
     width: 3.5rem;
