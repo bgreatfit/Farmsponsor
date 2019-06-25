@@ -5,12 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Farm;
 
-class PagesController extends Controller
-{
+class PagesController extends Controller {
     public function __construct()
     {
         $this->middleware('auth', ['only' => ['dashboard']]);
     }
+
+    //migration password reset 
+
+    public function passwordReset() {
+        return view('pages.user_migration.password-reset');
+    }
+    
+    //end of migration password reset
 
     public function index() {
         $data['farms'] = Farm::orderBy('created_at','desc')->limit(4)->get();

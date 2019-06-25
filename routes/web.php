@@ -46,6 +46,10 @@ Route::group(['middleware' => ['usersonly']], function () {
 Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
 Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor');
 
+//new password reset route
+Route::get('/password-reset', 'PagesController@passwordReset')->name('passwordReset');
+
+
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
 Route::get('/dashboard/sponsor-now', 'PagesController@sponsorNow')->name('sponsornow');

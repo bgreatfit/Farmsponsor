@@ -230,3 +230,14 @@ $text-light: rgba($color-black, .4);
         color: $color-white;
     }
 }
+.password-reset__card {
+    font-family: $font-family-main;
+    margin: auto;
+    &-header {
+        text-align: center;
+    }
+    .form__input {
+        font-size: 1.7rem;
+        height: 4rem;
+    }
+}

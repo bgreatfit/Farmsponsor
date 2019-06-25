@@ -11145,6 +11145,20 @@ a.text-dark:focus {
   color: #ffffff;
 }
 
+.password-reset__card {
+  font-family: Montserrat;
+  margin: auto;
+}
+
+.password-reset__card-header {
+  text-align: center;
+}
+
+.password-reset__card .form__input {
+  font-size: 1.7rem;
+  height: 4rem;
+}
+
 .card-box {
   margin-bottom: 3rem;
 }
