@@ -25,6 +25,7 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('farmcycles/{farm}/payout', 'FarmController@payout')->name('farms.payout');
     Route::get('farmcycles/{farm}/stoppayout', 'FarmController@stoppayout')->name('farms.stoppayout');
     Route::get('sponsorship/{sponsor}/confirm', 'SponsorController@confirm')->name('sponsorship.confirm');
+    Route::get('sponsorship/{sponsor}/delete', 'SponsorController@delete')->name('sponsorship.delete');
     Route::get('deposits', 'Admin\DepositController@index')->name('admin.bankdeposits');
     Route::get('deposits/{deposit}', 'Admin\DepositController@confirm')->name('admin.confirmdeposit');
     Route::get('withdrawals', 'Admin\WithdrawalController@index')->name('admin.withdrawals');

@@ -18,7 +18,7 @@ class TransactionsController extends Controller
         return view('pages.dashboard.transaction.index');
     }
     public function history(){
-        $data['transactionslog'] = Transactionlogs::whereUserId(Auth::id())->get();
+        $data['transactionslog'] = Transactionlogs::whereUserId(Auth::id())->paginate(10);
         return view('pages.dashboard.transaction.history', $data);
     }
 }

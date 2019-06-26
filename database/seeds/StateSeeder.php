@@ -22,6 +22,7 @@ class StateSeeder extends Seeder
         foreach($states as $state){
             $stateList[] = $state['name'];
         }
+
         $stateListCollection = collect($stateList);
         $stateListCollection->each(function($state){
             factory(App\Models\State::class)->create([

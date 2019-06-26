@@ -2,29 +2,23 @@
 
 namespace App\Notifications;
 
-use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class UserRegisteredSuccessfully extends Notification
+class ResetPassword extends Notification
 {
     use Queueable;
 
-    public $user;
-    public $token;
-    public $email;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct(User $user, $token, $email)
+    public function __construct()
     {
-        $this->user = $user;
-        $this->token = $token;
-        $this->email = $email;
+        //
     }
 
     /**
@@ -48,8 +42,8 @@ class UserRegisteredSuccessfully extends Notification
     {
         return (new MailMessage)
                     ->line('The introduction to the notification.')
-                    ->action('Reset Password', route('user.reset', ['token' => $this->token, 'email' => $this->email]))
-                    ->line('We look forward to a more secure future together');
+                    ->action('Notification Action', url('/'))
+                    ->line('Thank you for using our application!');
     }
 
     /**

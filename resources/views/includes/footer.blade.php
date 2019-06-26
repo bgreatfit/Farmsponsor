@@ -5,7 +5,7 @@
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="footer__segment">
                         <p class="footer__subscribe--text mb-md-0">
-                            Ready To Get More Updates 
+                            Ready To Get More Updates
                             From Farmsponsor?
                         </p>
                     </div>
@@ -13,13 +13,14 @@
 
                 <div class="col-12 col-sm-12 col-md-6">
                     <div class="footer__segment">
-                        <form action="" class="footer__form">
+                        <form action="{{route('newsletter.subscribe')}}" class="footer__form" method="POST">
+                            @csrf
                             <div class="form-row">
                                 <div class="col-md-8 col-12">
-                                    <input type="text" class="form-control footer__input" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control footer__input" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="basic-addon2" name="email">
                                 </div>
                                 <div class="col-md-4 col-12">
-                                    <button class="btn btn-outline-secondary form-control ml-md-3 subscribe-btn" type="button">Subscribe</button>
+                                    <button class="btn btn-outline-secondary form-control ml-md-3 subscribe-btn" type="submit">Subscribe</button>
                                 </div>
                             </div>
                         </form>
@@ -27,7 +28,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="footer-links">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3">
@@ -118,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="footer__content">
                         <div class="row">
@@ -126,7 +127,7 @@
                                 <p class="footer__text">PORT HARCOURT</p>
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-12 col-md-12">
                                 <div class="footer__item">
