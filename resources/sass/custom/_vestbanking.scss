@@ -1,0 +1,182 @@
+.vestbanking-page-heading {
+    font-size: 5.3rem;
+    font-weight: 600;
+    color: $color-black;
+}
+.intro-section,
+.how-it-works-section,
+.the-process-section {
+    font-family: $font-family-main;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+.intro-section{
+    margin-top: 11.7rem;
+
+    &__content {
+        padding: 1rem 10rem;
+    }
+    &__heading {
+        margin-bottom: 2.75rem;
+        text-align: center;
+    }
+   
+    &__text {
+        margin-bottom: 10rem;
+        line-height: 2.8rem;
+    }
+    &__image{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10rem;
+        mar
+        &-box{
+            max-width: 57.1rem;
+        }
+    }
+    
+}
+.how-it-works-section {
+    margin-bottom: 5rem;
+    .how-it-works {
+        &__heading {
+            margin-bottom: 13rem;
+        }
+        &__picture{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img--heading {
+            color: $color-primary-deep;
+            font-weight: bold;
+            font-size: 110%;
+            text-align: left;
+        }
+        &__img-box {
+            margin-bottom: 5rem;
+        }
+        &__img--text {
+            margin-bottom: 5rem;
+        }
+        &__img-box, 
+        &__text {
+            max-width: 31.5rem;
+        }
+    }
+}
+
+.the-process-section {
+    .row .vestbanking-cta{
+        text-align: center;
+        margin-top: 8rem;
+        .vestbanking-cta__btn:link,
+        .vestbanking-cta__btn:visited {
+            color: #ffffff;
+        }
+        .vestbanking-cta__btn{
+            border-radius: 5rem;
+            background-color: #154219;
+            padding: 1.6rem 3rem;
+            text-decoration: none;
+        }
+    }
+    .the-process {
+        &__content {
+            margin-bottom: 20rem;
+        }
+        &__heading{
+            margin-bottom: 9rem;
+        }
+        &__text {
+            display: flex;
+            justify-content: center;
+            &-content {
+                max-width: 31.5rem;
+            }
+            &--heading {
+                color: $color-primary-deep;
+                font-size: 110%;
+                font-weight: bold;
+                margin-bottom: 2rem;
+            }
+        }
+        &__picture{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .arrow1 {
+                margin: auto;
+                max-width: 15rem;
+            }
+        }
+        &__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        &__img-box {
+            max-width: 31.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:768px ) {
+    .intro-section{
+        .intro-section__content {
+            padding: 0 2rem !important;
+            .vestbanking-page-heading {
+                font-size: 4.3rem;
+       
+            }
+            .intro-section__text {
+                text-align: center;
+            }
+        }
+    }
+    .the-process-section{
+        .the-process{
+            &__content {
+                margin-bottom: 8rem;
+                &-row2{
+                    flex-direction: column-reverse;
+                }
+            }
+            &__picture {
+                .the-process__arrow-box{
+                    margin-bottom: 5rem;
+                }
+            }
+            
+            &__text {
+                &-content{
+                    max-width: 45.5rem;
+                }
+                text-align: center;
+                margin-bottom: 2rem;
+
+                &--heading{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .how-it-works-section {
+        .how-it-works__text{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    html {
+        font-size: 55%;
+    }
+    .vestbanking-page-heading {
+        font-size: 3.3rem;
+        font-weight: bold;
+        color: $color-black;
+    }
+}

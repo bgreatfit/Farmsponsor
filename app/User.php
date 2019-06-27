@@ -6,8 +6,9 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
+
     use Notifiable;
 
     /**
@@ -17,7 +18,9 @@ class User extends Authenticatable
      */
 
     protected $fillable = [
-        'first-name', 'last-name', 'username', 'email', 'password',
+        'firstname', 'lastname', 'username', 'email',
+        'password', 'address', 'city','state_id', 'zip',
+        'phone', 'bank_id', 'role'
     ];
 
     /**
@@ -37,4 +40,24 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function cyclesSponsored()
+    {
+        return $this->hasMany('App\Models\Sponsor');
+    }
+
+    public function state()
+    {
+        return $this->belongsTo('App\Models\State');
+    }
+
+    public function vestbank()
+    {
+        return $this->hasOne('App\Models\Vestbank');
+    }
+
+     public function transactionlog()
+    {
+        return $this->morphMany(Transactionlogs::class, 'transactionable');
+    }
 }

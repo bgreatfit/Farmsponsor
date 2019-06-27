@@ -6,12 +6,13 @@
         margin: 0;
         text-decoration: none;
         color:$color-grey-dark;
+        outline: none;
     }
     &__dropdown{
         &--link:link,
         &--link:visited {
             padding: 1rem 2rem;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
     }

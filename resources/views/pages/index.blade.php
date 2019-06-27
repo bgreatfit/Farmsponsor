@@ -1,250 +1,552 @@
-@extends ('layouts.basic')
+@extends('layouts.basic')
 
 @section('content')
-@include('includes.header')
-  <section class="how-it-works">
-    <div class="container">
-      <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="content-wrap">
-              <div class="fs-intro">
-                  <h2 class="fs-intro__heading heading__secondary mb-5 ">
-                      Farm Sponsor is here to help you invest your money in Agriculture
-                  </h2>
-                  <p class="fs-intro--text">
-                      Food security is the responsibility of everyone of us. 
-                      If you feel farming is dirty, sponsor a farmer. 
-                      Together we can stop hunger.
-                  </p>
-              </div>
-            </div>
-          </div>    
-
-          <div class="col-12 col-md-5">
-              <div class="content-wrap">
-                <img src="{{asset('img/asset 1.png')}}" alt="iphone" class="fs-process__photo" width="100%">
-              </div>
-          </div>
-      </div>   
-
-      <div class="row">
-            <div class="col-12 col-md-4">
-              <div class="content-wrap mt-md-5">
-                <div class="fs-process m-3 ">
-                    <img src="img/asset 2.png" alt="iphone" class="fs-process__photo" width="100%">
+    <main class="homepage-wrap">
+        <section class="introduction-section">
+            <div class="container-block">
+                <div class="flex-row">
+                    <div class="flex-col-2">
+                        <div class="introduction-content">
+                            <div class="introduction__text-wrap">
+                                <h1 class="introduction__heading">
+                                    Food Security Is The
+                                    Responsibility Of Everyone
+                                </h1>
+                                <p class="introduction__text">
+                                    Farmsponsor is an agric-tech company, where individuals
+                                    sponsor farmers with their money for a 15% return
+                                    on their sponsorship.
+                                </p>
+                                <a href="{{route('farmlist')}}" class="homepage__btn">
+                                    Sponsor Now  <img src="{{asset('img/greater-than-white.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col-2">
+                        <div class="introduction-content">
+                            <div class="introduction__vid-wrap">
+                                <video autoplay loop muted class="introduction__vid">
+                                    <source src="{{asset('img/intro-vid.mp4')}}" type="video/mp4">
+                                    {{-- <img src="{{asset('img/play-button.svg')}}" alt="play button" class="introduction__image">  --}}
+                                </video>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>    
+            </div>
+        </section>
 
-            <div class="col-12 col-md-6 offset-md-2">
-              <div class="content-wrap">
-                <div class="fs-process">
-                    <div class="fs-process--row">
-                        <h2 class="heading__secondary fs-process__heading">
-                            <Span><i class="fs-process__heading--icon icon-basic-gear"></i></Span>
-                            <span>How the farm sponsor app works:</span>
-                        </h2>
-                        <h3 class="heading__tertiary fs-process__heading--tertiary">
-                            <Span><i class="heading__tertiary--icon icon-basic-compass"></i></Span>Create A User Account
-                        </h3>
-                        <p class="fs-process__text">
-                            Simply signup using your email or social media 
-                            (Facebook and Twitter). Creating an account takes just a few seconds.
-                        </p>
+        <section class="invest-section" id="invest-section">
+            <div class="container-block">
+                <div class="invest-content">
+                    <h2 class="invest__heading--main">Why Choose Farmsponsor?</h2>
+                </div>
+
+                <div class="we-empower-farmers-block">
+                    <div class="invest-content">
+                        <div class="invest__empower-farmers">
+                            <div class="icon-row">
+                                <div class="flex-row">
+                                    <div class="flex-col-2">
+                                        <div class="invest__icon">
+                                            <img src="{{asset('img/flower-1.svg')}}" alt="a flower numbered one" class="homepage__icon">
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-2">
+                                        <div class="invest__icon">
+                                            <img src="{{asset('img/farmer.svg')}}" alt="a flower numbered one" class="homepage__icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-row">
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <h3 class="invest__heading heading__sub--dark">We Empower Farmers</h3>
+                                        <div class="invest__text-wrap">
+                                            <p class="text__sub--dark">
+                                                We empower local farmers with funds from individuals and
+                                                skills to produce at capacity or more and in return, you will
+                                                get back your initial capital and a certain percentage of your
+                                                initial capital (usually 15%) after harvest (Usually 12 weeks)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--HOW-IT-WORKS-HEADING FOR LARGE/xL SCREENS -->
+                            <div class="heading-row">
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <h1 class="how-it-works__heading">How The Farmsponsor App Works</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END OF HOW-IT-WORKS-HEADING -->
+                        </div>
+                    </div>
+                    <div class="invest-content">
+                        <div class="invest__returns">
+                            <div class="icon-row">
+                                <div class="flex-row">
+                                    <div class="flex-col-2">
+                                        <div class="invest__icon">
+                                            <img src="{{asset('img/flower-2.svg')}}" alt="a flower numbered two" class="homepage__icon">
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-2">
+                                        <div class="invest__icon">
+                                            <img src="{{asset('img/money-bag.svg')}}" alt="hand holding a bag of money" class="homepage__icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-row">
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <h3 class="invest__heading heading__sub--light ">Superior Returns For Our Sponsors</h3>
+                                        <div class="invest__text-wrap">
+                                            <p class="text__sub--light">
+                                                At an ROI of up to 15% on your sponsorship over the farming season,
+                                                Farmsponsor has the highest returns in the industry.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="invest__farming-cycle">
+                                <div class="icon-row">
+                                    <div class="flex-row">
+                                        <div class="flex-col-2">
+                                            <div class="invest__icon">
+                                                <img src="{{asset('img/flower-3-2.svg')}}" alt="a flower numbered three" class="homepage__icon">
+                                            </div>
+                                        </div>
+                                        <div class="flex-col-2">
+                                            <div class="invest__icon">
+                                                <img src="{{asset('img/flowers-4.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-row">
+                                    <div class="flex-row">
+                                        <div class="flex-col">
+                                            <h3 class="invest__heading heading__sub--light">
+                                                Multiple Farming Cycles
+                                            </h3>
+                                            <div class="invest__text-wrap">
+                                                <p class="text__sub--light">
+                                                    In just over a year since we began operations,
+                                                    we've had over 14 farming cycles. This means that you
+                                                    have the potential to keep earning as much and as often
+                                                    as possible. This is residual income at it's finest.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="container-block">
+                <div class="how-it-works-block">
+                    <div class="how-it-works-content">
+                        <div class="how-it-works__create-account">
+                            <!--HOW-IT-WORKS-HEADING FOR MEDIUM AND SMALL SCREENS-->
+                                <div class="heading-row">
+                                    <div class="flex-row">
+                                        <div class="flex-col">
+                                            <h1 class="how-it-works__heading">How The Farmsponsor App Works</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!--END OF HOW-IT-WORKS-HEADING -->
+
+                            <div class="icon-row">
+                                <div class="flex-row">
+                                    <div class="flex-col-2">
+                                        <div class="how-it-works__icon">
+                                            <img src="{{asset('img/flower-1-1.svg')}}" alt="a flower numbered two" class="homepage__icon">
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-2">
+                                        <div class="how-it-works__icon">
+                                            <img src="{{asset('img/user-icon.svg')}}" alt="hand holding a bag of money" class="homepage__icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-row">
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <div class="create-account__text-wrap">
+                                            <h2 class="heading__sub--light">Create A User Account</h2>
+
+                                            <p class="text__sub--light">
+                                                Simply signup using your email address then proceed to complete your profile.
+                                                Creating an account takes just a few seconds
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="how-it-works__sponsor">
+                                <div class="icon-row">
+                                    <div class="flex-row">
+                                        <div class="flex-col-2">
+                                            <div class="invest__icon">
+                                                <img src="{{asset('img/flower-2.svg')}}" alt="a flower numbered three" class="homepage__icon">
+                                            </div>
+                                        </div>
+                                        <div class="flex-col-2">
+                                            <div class="invest__icon">
+                                                <img src="{{asset('img/dark-leaf.svg')}}" alt="four flowers forming a circle" class="homepage__icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-row">
+                                    <div class="flex-row">
+                                        <div class="flex-col">
+                                            <h2 class="heading__sub--light">
+                                                Choose Sponsorship Method
+                                            </h2>
+                                            <div class="invest__text-wrap">
+                                                <p class="text__sub--light">
+                                                    Select a farm from our list of available farms ready for sponsorship on the
+                                                    current farm cycle, buy a specific number of units at N100,000.00 per unit by
+                                                    clicking “sponsor now” or “sponsor via vestbanking” and that’s it.
+                                                </p>
+                                                {{-- <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
+                                                    Read More <img src="{{asset('img/greater-than-vestbank.svg')}}" alt="" class="read-more-icon">
+                                                </a> --}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="fs-process--row">
-                        <h3 class="heading__tertiary fs-process__heading--tertiary">
-                            <Span><i class="heading__tertiary--icon icon-basic-magnifier"></i></Span>Find A Farm To Sponsor
-                        </h3>
-                        <p class="fs-process__text">
-                            Select a farm from our list of available farms ready 
-                            for sponsorship on the current farm cycle, buy a specific
-                            number of units at N100,000 per unit and that's it. Just sit 
-                            back and watch your investment grow.
-                        </p>
+                    <div class="how-it-works-content">
+                        <div class="how-it-works__row-wrap">
+                            <div class="icon-row">
+                                <div class="flex-row">
+                                    <div class="flex-col-2">
+                                        <div class="how-it-works__icon">
+                                            <img src="{{asset('img/flower-3.svg')}}" alt="a flower numbered one" class="homepage__icon">
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-2">
+                                        <div class="how-it-works__icon">
+                                            <img src="{{asset('img/moneybag.svg')}}" alt="a flower numbered one" class="homepage__icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-row">
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <h2 class="heading__sub--dark">Add Funds To Vestbank (Optional)</h2>
+                                        <div class="stay-updated__text-wrap">
+                                            <p class="text__sub--dark">
+                                                Add the fund you want to sponsor a farm with to your personal
+                                                vest bank wallet and proceed to sponsor a farm via vestbanking.
+                                            </p>
+                                            <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
+                                                Read More <img src="{{asset('img/greater-than-dark.svg')}}" alt="" class="read-more-icon">
+                                            </a>
+                                        </div>
+                                        <div class="stay-updated__btn-wrap">
+                                            <a href="{{route('login')}}" class="how-it-works__btn homepage__btn">
+                                                Get Involved
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistics-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-12">
+                        <div class="content-wrap text-center">
+                            <h3 class="statistics__heading">
+                                We've been working so hard for you
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--stats counter -->
+                    <div class="col-md-2 col-12 offset-md-1">
+                        <div class="content-wrap">
+                        <div class="row justify-content-center">
+                            <img src="{{asset('img/stat-sponsors.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                            {{-- <i class="fas fa-user-tie sponsors"></i> --}}
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="stat-update__figure"><span class="sponsor" >0</span>&#43;</span>
+                            {{-- <span class="sponsor stat-update__figure"> </span> --}}
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="stat-update__figure--label">Sponsors</span>
+                        </div>
+                        </div>
                     </div>
 
-                    <div class="fs-process--row">
-                        <h3 class="heading__tertiary fs-process__heading--tertiary">
-                            <Span><i class="heading__tertiary--icon icon-basic-clockwise"></i></Span>Stay Updated
-                        </h3>
-                        <p class="fs-process__text">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                          Natus quae fugit accusantium non nihil, reprehenderit sit vero 
-                          amet quae quaerat quia omnis?
-                        </p>
+                    <div class="col-md-2 col-12">
+                        <div class="content-wrap">
+                        <div class="row justify-content-center">
+                            <img src="{{asset('img/stat-cycles.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                            {{-- <i class="fas fa-user-circle cycles"></i> --}}
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="cycle stat-update__figure"></span>
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="stat-update__figure--label">cycles</span>
+                        </div>
+                        </div>
                     </div>
 
+                    <div class="col-md-2 col-12">
+                        <div class="content-wrap">
+                        <div class="row justify-content-center">
+                            <img src="{{asset('img/stat-farms.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                            {{-- <i class="fas fa-kiwi-bird farm"></i> --}}
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="stat-update__figure"><span class="farms" >0</span>&#43;</span>
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="stat-update__figure--label">Farms</span>
+                        </div>
+                        </div>
+                    </div>
 
-                </div>
-              </div>
-            </div>
-      </div>  
+                    <div class="col-md-2 col-12">
+                        <div class="content-wrap">
+                        <div class="row justify-content-center">
+                            <img src="{{asset('img/stat-farmers.svg')}}" alt="a group of people illustration" class="homepage__icon">
+                            {{-- <i class="fas fa-users farmer"></i> --}}
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="stat-update__figure"><span class="farmers">0</span>&#43;</span>
+                        </div>
+                        <div class="row justify-content-center">
+                            <span class="stat-update__figure--label">Farmers</span>
+                        </div>
+                        </div>
+                    </div>
 
-      <div class="row">
-          <div class="col-md-6 col-12">
-            <div class="content-wrap">
-                <h2 class="fs-invest__heading heading__secondary">why invest with farm sponsor</h2>
-                <div class="fs-invest__row">
-                  <h3 class="fs-invest__heading--tertiary heading__tertiary">
-                      We Empower Farmers
-                  </h3>
-                  <p class="fs-invest__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Nemo quaerat, voluptatum voluptate quidem doloribus voluptates 
-                    Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
-                  </p>
-                </div>
+                    <div class="col-md-2 col-12">
+                        <div class="content-wrap">
+                            <div class="row justify-content-center">
+                                <img src="{{asset('img/stat-reviews.svg')}}" alt="a group of people illustration" class="homepage__icon">
 
-                <div class="fs-invest__row">
-                    <h3 class="fs-invest__heading--tertiary heading__tertiary">
-                        We Have High Returns On Investments
-                    </h3>
-                    <p class="fs-invest__text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Nemo quaerat, voluptatum voluptate quidem doloribus voluptates 
-                      Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
-                    </p>
-                </div>
-
-                <div class="fs-invest__row">
-                    <h3 class="fs-invest__heading--tertiary heading__tertiary">
-                      Multiple Farming Cycles
-                    </h3>
-                    <p class="fs-invest__text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                      Nemo quaerat, voluptatum voluptate quidem doloribus voluptates 
-                      Fugit incidunt ex laborum molestiae! Dicta, dignissimos dolorem!
-                    </p>
-                </div>
-
-                <div class="fs-invest__row">
-                    <a href="#" class="fs-invest__cta btn mr-5 my-3">Invest with Farm Sponsor</a>
-                    <a href="#" class="fs-invest__cta btn">Findout more</a>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-md-5 col-12 offset-md-1">
-            <div class="content-wrap">
-                <img src="img/invest.png" alt="investment" class="fs-invest__photo" width="100%">
-            </div>
-          </div>
-      </div>
-        
-    </div> <!-- container -->
-  </section>
-
-  <section class="statistics">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-12">
-            <div class="content-wrap text-center">
-              <h3 class="stat-update__heading heading__tertiary">
-                We've been working so hard for you
-              </h3>
-              <p class="stat-update__text">Our numbers speak for themselves</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!--stats counter -->
-          <div class="col-md-2 col-12 offset-md-1">
-            <div class="content-wrap">
-              <div class="row justify-content-center">
-                  <i class="fas fa-user-tie sponsors"></i>
-              </div>
-              <div class="row justify-content-center">
-                  <span class="sponsor stat-update__figure"></span>
-              </div>
-              <div class="row justify-content-center">
-                  <span class="stat-update__figure--label">Sponsors</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 col-12">
-            <div class="content-wrap">
-              <div class="row justify-content-center">
-                  <i class="fas fa-user-circle cycles"></i>
-              </div>
-              <div class="row justify-content-center">
-                  <span class="cycle stat-update__figure"></span>
-              </div>
-              <div class="row justify-content-center">
-                <span class="stat-update__figure--label">cycles</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 col-12">
-            <div class="content-wrap">
-              <div class="row justify-content-center">
-                  <i class="fas fa-kiwi-bird farm"></i>
-              </div>
-              <div class="row justify-content-center">
-                <span class="stat-update__figure"><span class="farms" >0</span>&#43;</span>
-              </div>
-              <div class="row justify-content-center">
-                <span class="stat-update__figure--label">Farms</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-12">
-            <div class="content-wrap">
-              <div class="row justify-content-center">
-                  <i class="fas fa-users farmer"></i>
-              </div>
-              <div class="row justify-content-center">
-                <span class="stat-update__figure"><span class="farmers">0</span>&#43;</span>
-              </div>
-              <div class="row justify-content-center">
-                <span class="stat-update__figure--label">Farmers</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-2 col-12">
-            <div class="content-wrap">
-                <div class="row justify-content-center">
-                  <i class="fas fa-comments review"></i>
-                </div>
-                <div class="row justify-content-center">
-                  <span class="stat-update__figure"><span class="reviews">0</span>&#43;</span>
-                </div>
-                <div class="row justify-content-center">
-                  <span class="stat-update__figure--label">Reviews</span></p>
+                            {{-- <i class="fas fa-comments review"></i> --}}
+                            </div>
+                            <div class="row justify-content-center">
+                            <span class="stat-update__figure"><span class="reviews">0</span>&#43;</span>
+                            </div>
+                            <div class="row justify-content-center">
+                            <span class="stat-update__figure--label">Reviews</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
-        </div>
-      </div>
-  </section>
+        </section>
 
-  <section class="news-letter">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="content-wrap">
-            <h2 class="heading__secondary heading__secondary--news-letter">Say hello to farm sponsor</h2>
-            <p class="news-letter__text">
-                If you have any questions, simply say hello 
-                to us at hello@farmsponsor.com.ng and we’ll respond to you immediately
-            </p>
-            <form class="news-letter__form">
-                <div class="form-group news-letter__form-group">
-                  <label for="news-letter-email">Email address: </label>
-                  <input type="email" class="form-control" id="news-letter-email" aria-describedby="emailHelp" placeholder="Enter email">
+        <section class="testimonials-section">
+            <div class="container-fluid container-block">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="testimonials-block">
+                            <h3 class="testimonials__heading">
+                                Sponsor a farmer today! together we can stop hunger.
+                            </h3>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="form-group">
-                  <button type="submit" class="btn btn-success btn-lg btn__news-letter">Submit</button>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="testimonials-block">
+                            <div class="testimonials-content">
+                                <div class="testimonials__image-wrap">
+                                    <img src="{{asset('img/fs-pic10.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                </div>
+                                <p class="testimonials__text">Robert Martins</p>
+                                <p class="testimonials__text--description">Sponsor</p>
+                                <p class="testimonials__comment">
+                                    I just got my alert. You guys are the bomb. I got
+                                    my alert! Great guys, I look forward for my farming
+                                    windows. Let's do this again guys!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="testimonials-block">
+                            <div class="testimonials-content">
+                                <div class="testimonials__image-wrap">
+                                    <img src="{{asset('img/fs-pic9.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                </div>
+                                <p class="testimonials__text">Olaitan R</p>
+                                <p class="testimonials__text--description">Sponsor</p>
+                                <p class="testimonials__comment">
+                                    I got my alert. My bank was messing up but you guys
+                                    even called me to get another account number. Thank you
+                                    so much! Next cycle, I'll definitely invest.
+                                    You are tested and trusted.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="testimonials-block">
+                            <div class="testimonials-content">
+                                <div class="testimonials__image-wrap">
+                                    <img src="{{asset('img/fs-pic11.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
+                                </div>
+                                <p class="testimonials__text">Bala Gana</p>
+                                <p class="testimonials__text--description">Sponsor</p>
+                                <p class="testimonials__comment">
+                                    Payout Day! I have received mine. Thank you so much
+                                    Farmsponsor. You kept your word. Next farming window please!
+                                    #FoodSecurityForAll.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
-  </section>
+            </div>
+        </section>
 
+        <section class="farmlist-section">
+            <div class="container-fluid container-block">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="farmlist-content">
+                            <h3 class="farmlist__heading">
+                                Explore our farm circles and pick a farm to sponsor
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach($farms as $farm)
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="farmlist-content">
+                            @include('includes.farmsCard')
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="farmlist-content">
+                            <div class="farmlist__more">
+                                <a href="{{asset('farmlist')}}" class="farmlist__more--btn homepage__btn">More <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="insurance-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="insurance-content">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="insurance__image">
+                                        <div class="insurance__shield-wrap">
+                                            <img src="{{asset('img/shield.svg')}}" alt="Green shield photo" class="insurance__shield">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <div class="insurance__text-wrap">
+                                        <h2 class="insurance__heading">A Robust Insurance Policy</h2>
+                                        <p class="insurance__text">
+                                            Farmsponsor has your investment covered with a robust
+                                            insurance policy. Our farms are comprehensively insured
+                                            by Leadway Assurance plc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partner-section">
+            <div class="container container-block">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="partners__heading-wrap">
+                            <h3 class="partners__heading mb-2">Partners</h3>
+                            <p class="partners__text">
+                                Driving agri-tech to provide food for all Africans
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="partners-content">
+                            <div class="partners__image">
+                                <img src="{{asset('img/the-promise.png')}}" alt="" class="insurance__image--img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="partners-content">
+                            <div class="partners__image">
+                                <img src="{{asset('img/fs-pic5.png')}}" alt="" class="insurance__image--img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="partners-content">
+                            <div class="partners__image">
+                                <img src="{{asset('img/fs-pic4.png')}}" alt="" class="insurance__image--img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 @endsection
