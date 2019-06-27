@@ -43,6 +43,11 @@ class PagesController extends Controller {
     public function vestbanking() {
         return view('pages.vestbanking');
     }
+
+    public function helpcenter() {
+        return view('pages.helpcenter');
+    }
+
     public function dashboard() {
         return view('pages.dashboard.index');
     }
@@ -75,5 +80,8 @@ class PagesController extends Controller {
 
     public function receipt(){
         return view('pages.admin.receipt');
+    }
+    public function receiptVestbank(){
+        return view('pages.admin.receipt-vestbank');
     }
 }
