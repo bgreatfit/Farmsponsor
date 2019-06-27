@@ -3,6 +3,7 @@
     .helpcenter__header{
         padding: 8rem 1rem;
         background: rgba(14, 37, 3, 0.9);
+        margin-bottom: 4.8rem;
 
         .helpcenter__heading{
             font-family: Montserrat;
@@ -37,6 +38,7 @@
         }
         .helpcenter__text{
             color: #011633;
+            font-size: 1.4rem;
         }
     }
     
@@ -54,8 +56,10 @@
         }
 
         .helpcenter__content {
-            padding: 5rem 4rem;
+            margin-bottom: 5rem;
+
         }
+
     }
 
 }
