@@ -12,10 +12,19 @@ class NewsletterController extends Controller
     public function subscribe(Request $request)
     {
         $this->validate($request, $this->rules());
-        $this->checkIfAlreadySubscribedBy($request->email);
-        $this->addToNewsletterBy($request->email);
+
+       if(Newsletter::isSubscribed($request->email)){
+            Session::flash('error', 'Email Already Subscribed!');
+            return redirect()->back();
+        }
+
+        if(!Newsletter::subscribe($request->email)){
+            Session::flash('error',  Newsletter::getLastError());
+            return 5;//redirect()->back();
+        }
 
         Session::flash('success', 'Email Subscribed!');
+
         return redirect()->back();
     }
 
@@ -24,14 +33,6 @@ class NewsletterController extends Controller
         return [
             'email' => 'required'
         ];
-    }
-
-    public function checkIfAlreadySubscribedBy($email)
-    {
-        if(Newsletter::isSubscribed($email)){
-            Session::flash('error', 'Email Already Subscribed!');
-            return redirect()->back();
-        }
     }
 
     public function addToNewsletterBy($email)

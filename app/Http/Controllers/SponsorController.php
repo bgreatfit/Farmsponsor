@@ -30,6 +30,19 @@ class SponsorController extends Controller
         $this->request->session()->flash('error', 'Something went wrong!');
         return back();
     }
+
+    public function delete(Sponsor $sponsor)
+    {
+        $sponsor->farmingcycle()->increment('units', $sponsor->units);
+
+        if($sponsor->delete()){
+            $this->request->session()->flash('success', 'Sponsorship Deleted');
+            return back();
+        };
+        $this->request->session()->flash('error', 'Something went wrong!');
+        return back();
+    }
+
     /**
      * Display a listing of the resource.
      *

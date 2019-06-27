@@ -194,7 +194,7 @@
                                             <h2 class="heading__sub--light">Create A User Account</h2>
 
                                             <p class="text__sub--light">
-                                                Simply signup using your email address then proceed to complete your profile. 
+                                                Simply signup using your email address then proceed to complete your profile.
                                                 Creating an account takes just a few seconds
                                             </p>
                                         </div>
@@ -222,12 +222,12 @@
                                     <div class="flex-row">
                                         <div class="flex-col">
                                             <h2 class="heading__sub--light">
-                                                Choose Sponsorship Method 
+                                                Choose Sponsorship Method
                                             </h2>
                                             <div class="invest__text-wrap">
                                                 <p class="text__sub--light">
-                                                    Select a farm from our list of available farms ready for sponsorship on the 
-                                                    current farm cycle, buy a specific number of units at N100,000.00 per unit by 
+                                                    Select a farm from our list of available farms ready for sponsorship on the
+                                                    current farm cycle, buy a specific number of units at N100,000.00 per unit by
                                                     clicking “sponsor now” or “sponsor via vestbanking” and that’s it.
                                                 </p>
                                                 {{-- <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
@@ -265,7 +265,7 @@
                                         <h2 class="heading__sub--dark">Add Funds To Vestbank (Optional)</h2>
                                         <div class="stay-updated__text-wrap">
                                             <p class="text__sub--dark">
-                                                Add the fund you want to sponsor a farm with to your personal 
+                                                Add the fund you want to sponsor a farm with to your personal
                                                 vest bank wallet and proceed to sponsor a farm via vestbanking.
                                             </p>
                                             <a href="{{route('aboutVestbanking')}}" target="_blank" class="vestbank-info__btn">
@@ -277,7 +277,7 @@
                                                 Get Involved
                                             </a>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>

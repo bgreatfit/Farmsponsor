@@ -115,8 +115,10 @@ class FarmController extends Controller
     public function adminshow($farm)
     {
         $data['farm'] = Farm::findOrFail($farm);
-        $data['approved_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->orderBy('created_at', 'desc')->paginate(10);
-        $data['unapproved_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
+        $data['approved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->orderBy('created_at', 'desc')->paginate(10);
+        $data['unapproved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
+        $data['approved_sponsors'] = [];
+        $data['unapproved_sponsors'] = [];
         return view('pages.admin.farm.show', $data);
     }
 
@@ -230,13 +232,20 @@ class FarmController extends Controller
 
     public function stoppayout($farm)
     {
-        $farm = Farm::findOrFail($farm)->decrement('payout');
+        $farm = Farm::findOrFail($farm);
+        $farm->decrement('payout');
+        $farm->decrement('status_id');
+        $sponsors = Sponsor::whereApproved(1)->whereFarmId($farm->id)->decrement('status_id');
+
         return redirect()->back();
     }
 
     public function payout($farm)
     {
-        $farm = Farm::findOrFail($farm)->increment('payout');
+        $farm = Farm::findOrFail($farm);
+        $farm->increment('payout');
+        $farm->increment('status_id');
+        $sponsors = Sponsor::whereApproved(1)->whereFarmId($farm->id)->increment('status_id');
         return redirect()->back();
     }
 

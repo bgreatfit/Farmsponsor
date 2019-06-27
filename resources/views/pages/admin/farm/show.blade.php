@@ -46,11 +46,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($farm->sponsors as $sponsor)
+                                    @foreach($unapproved_vestbank_sponsors as $sponsor)
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>
-                                            <a href="#" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
+                                            <a href="{{route('sponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                         </td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
@@ -60,7 +60,7 @@
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
-                                            <a href="#" class="sponsor-confirm btn btn-md btn-danger">Remove</a>
+                                            <a href="{{route('sponsorship.delete', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -84,7 +84,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($farm->sponsors as $sponsor)
+                                    @foreach($approved_vestbank_sponsors as $sponsor)
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>{{$sponsor->user->firstname}}</td>
@@ -118,7 +118,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($farm->sponsors as $sponsor)
+                                    @foreach($unapproved_sponsors as $sponsor)
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>{{$sponsor->user->firstname}}</td>
@@ -150,7 +150,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($farm->sponsors as $sponsor)
+                                    @foreach($approved_sponsors as $sponsor)
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>{{$sponsor->user->firstname}}</td>
@@ -170,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                {{$unapproved_sponsors->links()}}
+                {{$unapproved_vestbank_sponsors->links()}}
             </div>
         </div>
     </div>

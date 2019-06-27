@@ -18,7 +18,7 @@ Route::get('gallery', 'PagesController@gallery')->name('gallery');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
 
 // Newsletter Route
-Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subcribe');
+Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subscribe');
 
 // Farm Routes
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
@@ -29,8 +29,6 @@ Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
 
 // Route::get('/farmlist', 'FarmsController@index');
 
-// Newsletter Route
-Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subcribe');
 
 // Users
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
@@ -74,8 +72,6 @@ Route::get('/dashboard/payout', 'PayoutController@index');
 
 // Route::get('/farmlist', 'FarmsController@index');
 
-
-
 // Users
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
 Route::post('/profile', 'UserController@update')->name('user.store');
@@ -83,7 +79,9 @@ Route::post('/profile', 'UserController@update')->name('user.store');
 // Transactions Route
 Route::get('/transactions', 'TransactionsController@index')->name('transactions.all');
 Route::get('/transactions/history', 'TransactionsController@history')->name('transactions.history');
-
+Route::get('/sendmail', 'MigrateUsersFromWordpressController@sendmails')->name('sendmails');
+Route::get('/resetPassword/{email}/{token}', 'MigrateUsersFromWordpressController@resetPassword')->name('user.reset');
+Route::post('/resetPassword/{token}', 'MigrateUsersFromWordpressController@processreset')->name('user.reset.process');
 });
 
 

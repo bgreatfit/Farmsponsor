@@ -23,6 +23,7 @@ class CreateSponsorsTable extends Migration
             $table->string('approved')->default(0);
             $table->string('approve_user_id')->nullable();
             $table->string('approve_ip_address')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

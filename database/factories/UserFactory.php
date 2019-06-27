@@ -20,7 +20,7 @@ $factory->define(User::class, function (Faker $faker) {
         'firstname' => $faker->firstname,
         'lastname' => $faker->lastname,
         'username' => $faker->userName,
-        'email' => $faker->email,
+        // 'email' => $faker->email,
         'address' => $faker->address,
         'city' => $faker->city,
         'phone' => $faker->phoneNumber,

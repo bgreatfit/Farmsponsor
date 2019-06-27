@@ -38,6 +38,12 @@
               </tbody>
             </table>
           </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                {{$transactionslog->links()}}
+            </div>
         </div>
       </div>
 

@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Models;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 
 use Illuminate\Database\Eloquent\Model;
 
 class Sponsor extends Model
 {
+    use SoftDeletes;
+
     protected $fillable = [
         'farm_id','units','ip_address', 'user_id',
         'status','approve_user_id','approve_ip_address', 'approved'

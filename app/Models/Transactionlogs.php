@@ -32,7 +32,7 @@ class Transactionlogs extends Model
                 return 'Sponsor';
                 break;
             case 'App\Models\Bankdeposit':
-                return 'Deposit';
+                return 'Money Added';
                 break;
             case 'App\Models\WithdrawalLog':
                 return 'Withdrawal';
