@@ -1,0 +1,67 @@
+.helpcenter-wrap {
+    background-color: $color-white;
+    .helpcenter__header{
+        padding: 8rem 1rem;
+        background: rgba(14, 37, 3, 0.9);
+
+        .helpcenter__heading{
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 3.2rem;
+            line-height: 39px;
+            color: $color-white;
+            text-align: center;
+        }
+    }
+    .helpcenter__content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 2rem;
+
+        .helpcenter__icon-wrap {
+            max-width: 7rem;
+            margin-bottom: 2.5rem;
+        }
+        .helpcenter__title{
+            color: #000000;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 1.7rem;
+            line-height: 21px;
+            margin-bottom: 1rem;
+        }
+        .helpcenter__text-wrap {
+            width: 100%;
+        }
+        .helpcenter__text{
+            color: #011633;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1100px) {
+    .helpcenter-wrap {
+
+        .helpcenter__header{
+            padding: 10rem 1rem;
+    
+            .helpcenter__heading{
+    
+            }
+        }
+
+        .helpcenter__content {
+            padding: 5rem 4rem;
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .helpcenter__content {
+        text-align: center;
+    }
+}

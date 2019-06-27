@@ -31,4 +31,5 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('withdrawals', 'Admin\WithdrawalController@index')->name('admin.withdrawals');
     Route::get('withdrawals/{withdrawal}', 'Admin\WithdrawalController@confirm')->name('admin.confirmwithdrawal');
     Route::get('receipt', 'PagesController@receipt');
+    Route::get('receipt-vestbank', 'PagesController@receiptVestbank');
 });
