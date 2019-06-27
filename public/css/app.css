@@ -11360,6 +11360,7 @@ a.text-dark:focus {
 }
 
 .helpcenter-wrap .helpcenter__content .helpcenter__text {
+  font-family: Montserrat;
   color: #011633;
   font-size: 1.4rem;
 }
@@ -11388,6 +11389,7 @@ a.text-dark:focus {
 
 .helpline-wrap .helpline-text {
   font-family: Montserrat;
+  color: #ffffff;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.7rem;
