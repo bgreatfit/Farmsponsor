@@ -3,7 +3,7 @@ section.terms-and-conditions {
     padding: 10rem 1rem;
     .terms__heading-wrap{
         .terms__heading{
-            font-family: Montserrat;
+            font-family: Montserrat, sans-serif;
             font-size: 4.8rem;
             font-weight: 600;
             color: #011633;
@@ -11,7 +11,7 @@ section.terms-and-conditions {
     }
     .terms__text,
     .terms__title--sub {
-        font-family: Montserrat;
+        font-family: Montserrat, sans-serif;
         font-size: 1.6rem;
         line-height: 1.88;
         color: #011633;
@@ -31,7 +31,14 @@ section.terms-and-conditions {
     .terms-farmsponsor{
         margin-bottom: 8rem;
     }
-    .terms-vestbanking{
 
+}
+
+@media screen and (min-width:769px) {
+    .terms__heading-span{
+        display: block;
+    }
+    .terms__content {
+        padding: 0px 8rem;
     }
 }
