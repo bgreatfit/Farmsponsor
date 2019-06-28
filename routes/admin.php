@@ -27,7 +27,8 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('sponsorship/{sponsor}/confirm', 'SponsorController@confirm')->name('sponsorship.confirm');
     Route::get('sponsorship/{sponsor}/delete', 'SponsorController@delete')->name('sponsorship.delete');
     Route::get('deposits', 'Admin\DepositController@index')->name('admin.bankdeposits');
-    Route::get('deposits/{deposit}', 'Admin\DepositController@confirm')->name('admin.confirmdeposit');
+    Route::get('deposits/{deposit}/confirm', 'Admin\DepositController@confirm')->name('admin.confirmdeposit');
+    Route::get('deposits/{deposit}/reverse', 'Admin\DepositController@reverse')->name('admin.reversedeposit');
     Route::get('withdrawals', 'Admin\WithdrawalController@index')->name('admin.withdrawals');
     Route::get('withdrawals/{withdrawal}', 'Admin\WithdrawalController@confirm')->name('admin.confirmwithdrawal');
     Route::get('receipt', 'PagesController@receipt');
