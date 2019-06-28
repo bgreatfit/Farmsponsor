@@ -15,7 +15,7 @@ class PayoutController extends Controller
 
     public function index()
     {
-        $data['cyclesSponsored'] = Sponsor::whereUserId(Auth::id())->whereStatusId(2)->with('farmingcycle')->get();
+        $data['cyclesSponsored'] = Sponsor::whereUserId(Auth::id())->whereStatusId(1)->with('farmingcycle')->get();
         return view('pages.dashboard.payout', $data);
     }
 }

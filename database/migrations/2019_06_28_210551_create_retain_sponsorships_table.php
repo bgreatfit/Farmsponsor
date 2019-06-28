@@ -17,6 +17,7 @@ class CreateRetainSponsorshipsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->integer('farm_id');
+            $table->integer('sponsor_id');
             $table->integer('units');
             $table->softDeletes();
             $table->timestamps();

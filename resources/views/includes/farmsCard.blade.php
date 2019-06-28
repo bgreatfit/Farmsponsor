@@ -17,10 +17,14 @@
         <div class="farmlist__card">
             <div class="farmlist__status">
                 <p class="farmlist__status--text">
-                    @if($farm->isSoldOut() || $farm->hasExhaustedUnit())
+                    @if($farm->due_date->lt(now()))
                     Closed
-                    @else
+                    @elseif($farm->hasExhaustedUnit())
+                    SoldOut
+                    @elseif($farm->start_date->lt(now()))
                     Open
+                    @else
+                        Soon
                     @endif
                 </p>
             </div>
@@ -56,10 +60,19 @@
                 </div>
             </div>
             <div class="farmlist__sponsor">
-                @if($farm->isSoldOut() || $farm->hasExhaustedUnit())
-                <a href="#" class="farmlist__sponsor-btn"> Closed  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+
+                @if($farm->due_date->lt(now()))
+                    <a href="#" class="farmlist__sponsor-btn"> Closed  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+
+                @elseif($farm->hasExhaustedUnit())
+                    <a href="#" class="farmlist__sponsor-btn"> Sold Out  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+
+                @elseif($farm->start_date->lt(now()))
+                    <a href="{{route('farms.show', $farm->slug)}}" class="farmlist__sponsor-btn">Sponsor  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
                 @else
-                <a href="{{route('farms.show', $farm->slug)}}" class="farmlist__sponsor-btn">Sponsor  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+                    <a href="#" class="farmlist__sponsor-btn"> Soon <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+
                 @endif
+
             </div>
         </div>

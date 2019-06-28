@@ -235,7 +235,8 @@ class FarmController extends Controller
         $farm = Farm::findOrFail($farm);
         $farm->decrement('payout');
         $farm->decrement('status_id');
-        $sponsors = Sponsor::whereApproved(1)->whereFarmId($farm->id)->decrement('status_id');
+
+        Sponsor::whereApproved(1)->whereFarmId($farm->id)->decrement('status_id');
 
         return redirect()->back();
     }

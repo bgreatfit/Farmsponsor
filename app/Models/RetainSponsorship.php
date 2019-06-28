@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use App\Models\Farm;
 use Illuminate\Database\Eloquent\Model;
@@ -15,7 +15,7 @@ class RetainSponsorship extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 'farm_id', 'units'
+        'user_id', 'farm_id', 'units', 'sponsor_id'
     ];
 
     /**
@@ -34,4 +34,8 @@ class RetainSponsorship extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function sponsor()
+    {
+        return $this->belongsTo(Sponsor::class);
+    }
 }

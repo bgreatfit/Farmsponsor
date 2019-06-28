@@ -45,6 +45,12 @@ class Sponsor extends Model
         return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
     }
 
+    public function retain()
+    {
+        return $this->hasOne(RetainSponsorship::class);
+
+    }
+
     public function getAmountAttribute(){
         return 'NGN ' . number_format($this->units * $this->getPricePerUnit()) . '.00';
     }
@@ -52,5 +58,11 @@ class Sponsor extends Model
     public function getPricePerUnit()
     {
         return 100000;
+    }
+
+    public function hasRetained()
+    {
+        return $this->retain()->count() == 1 ? true : false;
+
     }
 }

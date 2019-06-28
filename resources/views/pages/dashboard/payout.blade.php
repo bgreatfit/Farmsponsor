@@ -51,11 +51,11 @@
                                                         </a>
                                                     </td>
                                                     <td>
-                                                        <form action="" class="payout__return--form">
-                                                            <button type="submit" role="button" class="btn btn-success btn-lg form-control  payout__retain-btn">
-                                                                Button                                                        
-                                                            </button>
-                                                        </form>
+                                                        @if($cycleSponsored->hasRetained())
+                                                            <a class="btn btn-success btn-lg px-5 disabled">Retained</a>
+                                                        @else
+                                                            <a href="{{route('retain.sponsorship', $cycleSponsored->id)}}" class="btn btn-success btn-lg px-5">Retain</a>
+                                                        @endif
                                                     </td>
                                                 </tr>
 
