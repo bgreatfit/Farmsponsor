@@ -12585,6 +12585,43 @@ a.text-dark:focus {
   display: block;
 }
 
+section.terms-and-conditions {
+  background-color: #ffffff;
+  padding: 10rem 1rem;
+}
+
+section.terms-and-conditions .terms__heading-wrap .terms__heading {
+  font-family: Montserrat;
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #011633;
+}
+
+section.terms-and-conditions .terms__text,
+section.terms-and-conditions .terms__title--sub {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #011633;
+  margin-bottom: 3rem;
+}
+
+section.terms-and-conditions .terms__title {
+  font-family: Montserrat;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+section.terms-and-conditions .terms__title--sub {
+  margin-bottom: 1rem;
+}
+
+section.terms-and-conditions .terms-farmsponsor {
+  margin-bottom: 8rem;
+}
+
 *,
 *::before,
 *::after {

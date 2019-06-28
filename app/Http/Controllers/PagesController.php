@@ -48,6 +48,10 @@ class PagesController extends Controller {
         return view('pages.helpcenter');
     }
 
+    public function termsAndConditions() {
+        return view('pages.terms-and-conditions');
+    }
+
     public function dashboard() {
         return view('pages.dashboard.index');
     }
