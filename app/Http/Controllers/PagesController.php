@@ -54,9 +54,7 @@ class PagesController extends Controller {
     public function dashboardHelpcenter() {
         return view('pages.dashboard.helpcenter');
     }
-    public function sponsorNow() {
-        return view('pages.dashboard.sponsor-now');
-    }
+
     public function about() {
         return view('pages.about');
     }

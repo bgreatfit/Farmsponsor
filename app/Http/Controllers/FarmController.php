@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BankSponsorship;
 use Auth;
 use App\Models\Farm;
 use App\Models\Sponsor;
@@ -117,8 +118,8 @@ class FarmController extends Controller
         $data['farm'] = Farm::findOrFail($farm);
         $data['approved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->orderBy('created_at', 'desc')->paginate(10);
         $data['unapproved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
-        $data['approved_sponsors'] = [];
-        $data['unapproved_sponsors'] = [];
+        $data['approved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(1)->orderBy('created_at', 'desc')->paginate(10);
+        $data['unapproved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
         return view('pages.admin.farm.show', $data);
     }
 

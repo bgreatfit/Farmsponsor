@@ -12,10 +12,14 @@
                     <div class="farmlist__card">
                         <div class="farmlist__status">
                             <p class="farmlist__status--text">
-                                @if($farm->isSoldOut() || $farm->hasExhaustedUnit())
-                                Closed
+                                @if($farm->due_date->lt(now()))
+                                    Closed
+                                @elseif($farm->hasExhaustedUnit())
+                                    SoldOut
+                                @elseif($farm->start_date->lt(now()))
+                                    Open
                                 @else
-                                Open
+                                    Soon
                                 @endif
                             </p>
                         </div>
@@ -38,33 +42,35 @@
                                     <div class="row">
                                         <div class="col-12 col-md-12">
                                             <p class="farmlist__text">Start Date:</p>
-                                            <p class="farmlist__sub-text mb-4">
-                                                {{$farm->start_date->diffForHumans()}}
-                                            </p>
+                                            <p class="farmlist__sub-text mb-4">{{$farm->start_date->diffForHumans()}}</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-12 col-md-12">
                                             <p class="farmlist__text">Due Date: </p>
-                                            <p class="farmlist__sub-text">
-                                                {{$farm->due_date->diffForHumans()}}
-                                            </p>
+                                            <p class="farmlist__sub-text mb-4">{{$farm->due_date->diffForHumans()}}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="farmlist__sponsor">
-                            @if($farm->isSoldOut() || $farm->hasExhaustedUnit())
-                            <a href="#" class="farmlist__sponsor-btn"> Closed <img src="{{asset('img/greater-than.svg')}}"
-                                    alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+
+                            @if($farm->due_date->lt(now()))
+                                <a href="#" class="farmlist__sponsor-btn"> Closed  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+
+                            @elseif($farm->hasExhaustedUnit())
+                                <a href="#" class="farmlist__sponsor-btn"> Sold Out  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+
+                            @elseif($farm->start_date->lt(now()))
+                                <a href="{{route('farms.show', $farm->slug)}}" class="farmlist__sponsor-btn">Sponsor  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
                             @else
-                            <a href="{{route('farms.show', $farm->slug)}}" class="farmlist__sponsor-btn">Sponsor <img
-                                    src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+                                <a href="#" class="farmlist__sponsor-btn"> Soon <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
+
                             @endif
+
                         </div>
                     </div>
-                </div>
             </div>
 
             @endforeach

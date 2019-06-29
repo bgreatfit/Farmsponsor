@@ -48,13 +48,13 @@
                                 <div class="deposit-method-bank__ruler my-4 text-center">
                                     <hr>
                                 </div>
-                                <form action="{{route('vestbanking.deposit')}}" method="POST" class="deposit-method-bank__form">
+                                <form action="{{route('banksponsorship.sponsor')}}" method="POST" class="deposit-method-bank__form">
                                     @csrf
                                     <h3 class="deposit-method-bank__heading mb-4">Sponsor's Information</h3>
                                     <div class="form-row mb-4">
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-md-6" >
                                             <label for="input__first-name">First name: </label>
-                                            <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" name="firstname" placeholder="First name">
+                                            <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" value="{{Auth::user()->firstname}}" disabled>
     
                                             @if ($errors->has('firstname'))
                                             <span class="invalid-feedback" role="alert">
@@ -64,7 +64,7 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="input__last-name">Last name: </label>
-                                            <input type="text" class="form-control" {{ $errors->has('lastname') ? ' is-invalid' : '' }}" id="input__last-name" name="lastname" placeholder="Last name">
+                                            <input type="text" class="form-control {{ $errors->has('lastname') ? ' is-invalid' : '' }}" id="input__last-name" value="{{Auth::user()->lastname}}" disabled>
     
                                             @if ($errors->has('lastname'))
                                             <span class="invalid-feedback" role="alert">
@@ -78,7 +78,7 @@
                                         <div class="col-12 col-md-12">
                                             <div class="form-group mb-4">
                                                 <label for="email" class="deposit-method-bank__amount--label">Email: </label>
-                                                <input type="email" id="email" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" id="email" placeholder="Enter Email">
+                                                <input type="email" id="email" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" value="{{Auth::user()->email}}" disabled>
                                                 @if ($errors->has('email'))
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $errors->first('email') }}</strong>
@@ -92,7 +92,7 @@
                                         <div class="col-12 col-md-12">
                                             <div class="form-group mb-4">
                                                 <label for="phone-number" class="deposit-method-bank__amount--label">Phone number: </label>
-                                                <input type="number" id="phone-number" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="phoneNumber" placeholder="Enter phone number">
+                                                <input type="number" id="phone-number" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{Auth::user()->phone}}" disabled>
                                                 @if ($errors->has('phoneNumber'))
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $errors->first('phoneNumber') }}</strong>
@@ -106,7 +106,7 @@
                                         <div class="col-12 col-md-12">
                                             <div class="form-group mb-4">
                                                 <label for="depositAddress" class="deposit-method-bank__address--label">Address: </label>
-                                                <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address">
+                                                <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" id="address" value="{{Auth::user()->address}}" disabled>
                                                 @if ($errors->has('address'))
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $errors->first('address') }}</strong>
@@ -115,6 +115,8 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <input type="hidden" name="farm_id" value="{{$farm->id}}">
     
 
                                     <div class="row">

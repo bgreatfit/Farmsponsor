@@ -155,7 +155,7 @@
                                         <th scope="row">1</th>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->transaction}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns}}</td>
                                         <td>{{$sponsor->user->phone}}</td>

@@ -62,6 +62,7 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'admin' => \App\Http\Middleware\CheckIfAdminMiddleware::class,
         'usersonly' => \App\Http\Middleware\UserOnlyMiddleware::class,
+        'activefarms' => \App\Http\Middleware\CanViewFarmMiddleware::class,
     ];
 
     /**
