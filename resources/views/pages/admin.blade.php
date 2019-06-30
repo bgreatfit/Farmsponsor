@@ -16,7 +16,7 @@
                                 <div class="col-12 col-md-12 text-center">
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-12">
-                                            <a href="{{asset('/admin/create-farming-cycle')}}" class="dashboard__sponsor-cta--btn mb-3">Add New Farming Cycle</a>
+                                            <a href="{{route('farms.create')}}" class="dashboard__sponsor-cta--btn mb-3">Add New Farming Cycle</a>
                                         </div>
                                     </div>
                                 </div>

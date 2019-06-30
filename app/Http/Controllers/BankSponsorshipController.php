@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\BankSponsorship;
 use App\Models\Farm;
+use App\Models\Sponsor;
 use App\Models\Transactionlogs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -54,5 +55,31 @@ class BankSponsorshipController extends Controller
             'transactionable_id' => $sponsor->id,
             'transactionable_type' => get_class($sponsor),
         ]);
+    }
+
+    public function confirm(Request $request, BankSponsorship $sponsor)
+    {
+        $data['approve_user_id'] = \Auth::id();
+        $data['approve_ip_address'] = request()->ip();
+        $data['approved'] = 1;
+        if($sponsor->update($data)){
+            $request->session()->flash('success', 'Sponsorship Approved');
+            return back();
+        };
+        $request->session()->flash('error', 'Something went wrong!');
+        return back();
+    }
+
+    public function reverse(Request $request, BankSponsorship $sponsor)
+    {
+        $data['approve_user_id'] = null;
+        $data['approve_ip_address'] = null;
+        $data['approved'] = 0;
+        if($sponsor->update($data)){
+            $request->session()->flash('success', 'Sponsorship Reversed');
+            return back();
+        };
+        $request->session()->flash('error', 'Something went wrong!');
+        return back();
     }
 }
