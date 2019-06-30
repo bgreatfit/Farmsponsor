@@ -53,3 +53,79 @@
             // }
         }
     }
+
+    
+    .farmlist__card {
+        display: flex;
+        flex-direction: column;
+        color: $color-white;
+        margin-bottom: 10rem;
+        // max-width: 28rem;
+
+        .farmlist{
+            &__status{
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                align-self: flex-end;
+                padding: .5rem 3rem;
+                max-width: 15.8rem; 
+                background-image: linear-gradient(to bottom, #758c1f 90%, rgba(117, 140, 31, 0));
+                &--text{
+                    margin-bottom: 0;
+                    color: $color-white;
+                    }
+                    
+            }
+            &__card-body { 
+                display: flex;
+                flex-direction: column;
+                &--image-wrap{ 
+                    border-top-right-radius: 1rem;
+                    overflow: hidden;
+                    border-top-left-radius: 1rem;
+                }
+                &--text-wrap {
+                    background-image: url('../../../public/img/farmcard-body.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-bottom-left-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+                    padding: 1rem 2rem;
+                    
+                    .farmlist__returns{
+                        font-weight: bolder;
+                        font-size: 2rem;
+                        color: $color-black;
+                    }
+                    .farmlist__text{
+                        color: darken($color-white, 10%);
+                    }
+                    .farmlist__sub-text{
+                        font-size: 1.2rem;
+                    }
+
+                }
+            }
+            &__sponsor {
+                align-self: flex-end;
+
+                &-btn{
+                    border-radius: 3px;
+                    border: solid 1px #ffffff;
+                    background-color: #154219;
+                    text-decoration: none;
+                    color: $color-white;
+                    padding: .8rem 2rem;
+                    display: inline-block;
+                    border: none;
+                }
+                .farmlist__sponsor-btn .sponsor-btn--icon {
+                    width: 10px;
+                }
+            }
+        }
+    }
+   
+       

@@ -1,0 +1,60 @@
+.farmcycle-wrap {
+    .farmcycle {
+        &__image-box {
+            overflow: hidden;
+            border-radius: 2px;
+        }
+        &__heading {
+            text-transform: uppercase;
+            font-weight: 300;
+            border-bottom: 2px solid;
+            display: inline-block;
+            padding: .2rem .5rem;
+        }
+        &__cycle-title{
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        &-content {
+            .farmcycle__information{
+               
+                .sponsor-now__btn {
+                    background-color: $color-primary-deep;
+                    font-size: 1.4rem;
+                    height: 4rem;
+                    line-height: 26px;
+                    color: $color-white;
+                }
+                .btn.btn-lg.sponsor-via-vestbank__btn{
+                    background-image: linear-gradient(to bottom right, 
+                    rgba(89, 8, 57, 0.9), rgb(137, 43, 100));
+                    color: #fff;
+                    font-size: 1.4rem;
+                    height: 4rem;
+                    line-height: 26px;
+                }
+            }
+        }
+        &__span{
+            color: $color-grey-dark;
+        }
+        &__popup {
+            .heading__secondary {
+                @include modalHeadingStyle;
+            }
+            .sponsor-farmcycle{
+                &__form{
+                    &--input{
+                        @include inputSizeIncrease;
+                    }
+                    &--label{
+                        color: $color-grey-dark;
+                    }
+                }
+                &__btn {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Models\Vestbank;
+use App\Models\Bank;
+use App\Models\Registerlog;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -28,7 +31,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/profile';
 
     /**
      * Create a new controller instance.
@@ -49,8 +52,8 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'first-name' => ['required', 'string', 'max:255'],
-            'last-name' => ['required', 'string', 'max:255'],
+            'firstname' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
@@ -65,13 +68,43 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'first-name' => $data['first-name'],
-            'last-name' => $data['last-name'],
+        $user = User::create([
+            'firstname' => $data['firstname'],
+            'lastname' => $data['lastname'],
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+        ]);
 
+        if($user){
+            $this->createVestBankAccountFor($user);
+            $this->createBankAccountDetailsFor($user);
+            $this->logRegistration($user);
+        };
+
+        return $user;
+    }
+
+    protected function createVestbankAccountFor(User $user)
+    {
+        Vestbank::create([
+            'user_id' => $user->id
+        ]);
+    }
+
+    protected function createBankAccountDetailsFor(User $user)
+    {
+        Bank::create([
+            'user_id' => $user->id,
+            'last_update' => \Carbon\Carbon::now(),
+        ]);
+    }
+
+    protected function logRegistration(User $user)
+    {
+         Registerlog::create([
+            'user_id' => $user->id,
+            'ip_address' => request()->ip()
         ]);
     }
 }

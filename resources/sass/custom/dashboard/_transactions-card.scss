@@ -1,5 +1,5 @@
 .transaction__card{
-    background-image: linear-gradient(to right bottom, rgb(123, 52, 58), rgb(172, 50, 31));
+    background-image: linear-gradient(to right bottom, #2ca524, #1a5314);
     color: $color-white;
     padding: 1rem;
     text-align: center;
@@ -8,6 +8,16 @@
     .card__heading {
         margin: 0;
         font-weight: 300;
+    }
+    
+    .transaction-history:link,
+    .transaction-history:visited {
+        display: block;
+        color: $color-white;
+        text-decoration: none;
+    }
+    .transaction-history:hover {
+        color: darken( $color-white, 20%);
     }
     .card__text{
         font-size: 4rem;

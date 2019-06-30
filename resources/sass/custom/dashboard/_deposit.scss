@@ -1,0 +1,40 @@
+.deposit-method {
+    &__heading {
+        margin: 3rem 0 8rem 0;
+        text-transform: capitalize;
+        font-size: 2.6rem;
+        color: $color-grey-dark-3;
+    }
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        display: block;
+    }
+
+    // Bank Deposit popup styles
+    &-bank {
+        .heading__secondary {
+            @include modalHeadingStyle;
+        }
+        
+        &__heading{
+            color: $color-red-chick;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+        &__content{
+            input.form-control {
+                @include inputSizeIncrease;
+            }
+        }
+        &__bank-info {
+            color: $color-grey-dark;
+        }
+        &__note {
+            font-size: 85%;
+            color: rgba($color-red-chick, 1);
+        }
+    }
+
+}
+

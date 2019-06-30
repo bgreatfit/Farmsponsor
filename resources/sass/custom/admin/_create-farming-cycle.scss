@@ -1,0 +1,9 @@
+.add-cycle {
+    &__input{
+        @include inputSizeIncrease;
+    }
+    &__btn{
+        @include buttonTextSizeDefault;
+    }
+    
+}

@@ -1,5 +1,6 @@
 .section-faq {
     padding-top: 10rem;
+    background-color: $color-white;
     .faq{
         &-general,
         &-returns,
@@ -13,9 +14,6 @@
             }
         }
 
-        &-general{}
-        &-returns{}
-        &-farmers{}
     }
 
     .card {

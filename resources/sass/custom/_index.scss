@@ -1,0 +1,576 @@
+.homepage-wrap {
+    background-color: $color-white;
+    font-family: Montserrat;
+    .vestbank-info__btn{
+        text-decoration: none;
+        color: #011633;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 163.8%;
+        transition: all .2s ease-in;
+        .read-more-icon {
+            width: 1.87rem;
+
+        }
+    }
+    .vestbank-info__btn:hover{
+        color: darken($color-white, 80%);
+    }
+    .sponsor-btn--icon{
+        width: 9px;
+    }
+    .heading__sub--light {
+        font-size: 21px;
+        color: $color-white;
+        margin-bottom: 2.7rem;
+    }
+
+    .heading__sub--dark {
+        font-size: 21px;
+        color: #011633;
+        margin-bottom: 2.7rem;
+
+    }
+
+    .text__sub--light{ 
+        font-size: 14px;
+        line-height: 1.64;
+        color: $color-white;
+    }
+
+    .text__sub--dark{ 
+        font-size: 14px;
+        line-height: 1.64;
+        color: #011633;
+    }
+
+    div.icon-row {
+        margin-bottom: 3.8rem;
+    }
+
+    .homepage__btn {
+        color: $color-white;
+        border-radius: 5rem;
+        padding: 1.5rem 3.6rem;
+        background-color: #154219;
+
+    }
+
+    .container-block{
+        padding: 0;
+     }
+
+    .homepage__icon{
+        width: 80px;
+        height: 80px;
+     }
+
+    .introduction-section{
+        padding-top: 8rem;
+        // margin-bottom: 13.3rem;
+
+        .introduction__text-wrap{
+            // padding: 15.6rem 15.4rem 9rem 7.6rem;
+            padding: 5rem 8rem 5rem 8rem;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: normal;
+        }
+        .introduction-content{
+            .introduction{
+                &__heading {
+                    font-family: Montserrat;
+                    font-size: 3.5rem;
+                    font-weight: 500;
+                    line-height: 1.4;
+                    color: #011633;
+                    margin-bottom: 3.5rem;
+
+                }
+                &__text{ 
+                    font-family: Montserrat;
+                    font-size: 1.6rem;
+                    font-weight: normal;
+                    line-height: 1.88;
+                    color: #3c4049;
+                    margin-bottom: 0;
+                }
+                &__text:last-of-type {
+                    margin-bottom: 2.5rem;
+                }
+               
+                &__vid-wrap{ 
+                    // background-image: url('../../../public/img/gal-5.jpg');
+                    width: 100%;
+                    height: 100%;
+                    // min-height: 66rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-size: cover;
+                    background-position: center;
+
+                    .introduction__vid {
+                        // height: 100%;
+                        width:100%;
+                    }
+
+                    .introduction__image{
+                        position: relative;
+                        z-index: 10;
+                        width: 100%;
+                        height: auto;
+                     }
+                }
+            }
+        }
+        .flex-row .flex-col-2:nth-of-type(2) .introduction-content {
+            height: 100%;
+        }
+    }
+
+    .invest-section{
+        display: flex;
+        width: 100%;
+        padding-top: 10rem;
+      
+        .invest-content{
+            display: flex;
+            flex-basis: 50%;
+        }
+        .we-empower-farmers-block{
+            display: flex;
+        }
+        .invest__heading--main{
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 500;
+            color: #011633;
+            text-align: right;
+            padding: 0 5rem;
+            margin-bottom: 10rem;
+            width: 100%;
+         }
+        
+        .invest {
+        
+            &__empower-farmers{ 
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+                padding: 2rem 5rem 2rem 8.7rem;
+                width: 100%;
+                min-height: 90.4rem;
+                background-color: rgba(234, 236, 239, 0.7);
+               
+                .heading-row{ 
+                    margin-top: auto;
+                    .how-it-works__heading{
+                        font-family: Montserrat;
+                        font-size: 30px;
+                        font-weight: 500;
+                        line-height: 1.64;
+                        color: #011633;
+                    }
+                }
+            }
+            &__returns{
+                padding: 10rem 5rem 0 8.7rem;
+                width: 100%;
+                min-height: 98.7rem;
+                background-image: linear-gradient(to bottom, #000000, #2f5534 93%);
+                
+                .invest__farming-cycle {
+                    margin-top: 18rem;
+                }
+
+            }
+        }
+        
+    }
+
+    .how-it-works-section{
+        color: $color-white;
+        margin-bottom: 0;
+        font-family: montserrat;
+        .how-it-works-block {
+            display: flex;
+        }
+        .how-it-works-content{
+            flex-basis: 50%;
+            flex-grow: 1;
+        }
+        .how-it-works {
+            &__create-account,
+            &__row-wrap {
+                min-height: 91.2rem;
+                width: 100%;
+                height: 100%;
+                padding: 8rem 5rem 8rem 8.7rem;
+             }
+            &__create-account {
+                background-image: linear-gradient(to top, #000, #2f5534 93%);
+            }
+            &__sponsor{
+                margin-top: 18rem;
+                .invest__text-wrap{
+                    margin-bottom: 5rem;
+
+                }
+               
+            }
+            
+            &__btn {
+                padding: 1rem 3rem;
+            }
+            &__row-wrap{
+                background-color: rgba(234, 236, 239, 0.7);
+                .stay-updated__text-wrap{
+                    margin-bottom: 5rem;
+                }
+                .stay-updated__btn-wrap {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .statistics-section{
+        background-image: url('../../../public/img/statistics-background.svg');
+        padding: 12rem 3rem 9rem 3rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $color-white;
+        line-height: 1.64;
+
+        .statistics {
+            &__heading{
+                font-size: 3.2rem;
+                line-height: 1.64;
+                margin-bottom: 9rem;
+                
+            }
+        }
+        .stat-update__figure{
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .stat-update__figure--label{
+            font-size: 25px;
+        }
+    }
+
+    .testimonials-section{
+        background-color: rgba(234, 236, 239, 0.7);
+        padding: 8rem 10rem 5rem 10rem;
+        .testimonials-block{ 
+            .testimonials__heading{
+                font-size: 24px;
+                font-weight: 500;
+                color: #011633;
+                line-height: 1.64;
+                margin-bottom: 3rem;
+            }
+        }
+        .testimonials-content { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 40.3rem;
+            border-radius: 10px;
+            background-color: $color-white;
+            padding: 3rem 3.5rem;
+
+            .testimonials {
+                
+                &__image-wrap{
+                    width: 10.2rem;
+                    height: 10.2rem;
+                    display: inline-block;
+                    border-radius: 10rem;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+                }
+                &__image {
+                    width: 100%;
+                    height: auto;
+                }
+                &__text {
+                    margin-bottom: 0.1rem;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000000;
+                    &--description{
+                        font-size: 13px;
+                        color: #011633;
+                    }
+                }
+            }
+        }
+    }
+
+    .farmlist-section{
+        padding: 7rem;
+        .farmlist__heading {
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 8rem;
+
+        }
+        .farmlist-content {
+            // display: flex;
+            // justify-content: center;
+
+            .farmlist__more{
+                text-align: center;
+
+            }
+        }
+    }
+
+    .insurance-section{
+        background-color: rgba(234, 236, 239, 0.7);
+        padding: 10rem 0;
+
+        .insurance-content{
+            font-family: Montserrat;
+            color: #011633;
+
+            .insurance{
+                &__image{
+                    display: flex;
+                    width: 100%;
+                    justify-content: flex-end;
+                }
+               
+                &__sheild{
+
+                }
+                &__text-wrap{
+                    padding: 5rem 20rem 10rem 0;
+                }
+                &__heading{
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 1.64;
+                    text-align: center;
+                    margin-bottom: 3.5rem;
+                }
+                &__text{
+                    font-size: 24px;
+                    line-height: 1.64;
+                }
+            }
+        }
+    }
+
+    .partner-section{
+        padding: 10rem 5rem;
+        .partners__heading-wrap{ 
+            line-height: 1.64;
+
+            .partners__heading{
+                font-size: 32px;
+                font-weight: 600;
+                color: $color-black;
+                text-align: center;
+            }
+            .partners__text{
+                font-size: 18px;
+                color: #011633;
+                text-align: center;
+
+            }
+        }
+        .partners-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 25rem;
+            .insurance__image{
+            }
+         }
+    }
+}
+
+/* LARGER SCREENS*/
+@media screen and (min-width: 1024px) {
+    .text-row{ 
+        margin-left: 9.4rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .invest-section {
+        .invest__icon {
+            text-align: left;
+        }
+    }
+    .how-it-works-block .how-it-works-content .how-it-works__create-account .heading-row {
+        display: none;
+    }
+    .homepage-wrap .how-it-works-section .how-it-works__row-wrap .stay-updated__text-wrap {
+        margin-bottom: 17rem;
+    }
+}
+
+
+/*MEDIUM and BELOW SCREENS */
+@media screen and (max-width:768px){
+    html{
+        font-size: 59%;
+    }
+//general page styles
+    .invest__icon{
+        text-align: center;
+    }
+    .text-row{
+        text-align: center;
+    }
+    .heading__sub--dark,
+    .heading__sub--light {
+        margin-bottom: 8rem !important;
+    }
+// end of general page styles
+
+//introduction-section styles
+    .homepage-wrap .introduction-section .introduction__text-wrap {
+        padding: 5rem 3rem 10rem 3rem;
+        text-align: center;
+        
+    }
+    .introduction__text-wrap .introduction__text{
+        margin-bottom: 6.5rem !important;
+    }
+
+    .homepage-wrap .introduction-section .introduction-content .introduction__vid-wrap {
+        width: 100%;
+        display: inline-block;
+
+    }
+    
+
+// end of introduction-section styles
+
+//invest-section styles
+    .invest-section .container-block {
+        display: inline-block !important;
+    }
+    .we-empower-farmers-block .invest-content .invest__empower-farmers .heading-row {
+        display: none;
+    }
+    .we-empower-farmers-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .invest__empower-farmers{
+        padding: 10rem 3rem !important;
+        .icon-row{
+            margin-bottom: 8rem;
+        }
+    }
+    .invest__returns{
+        padding: 10rem 3rem !important;
+        .invest__farming-cycle {
+            margin-top: 10rem !important;
+        }
+    }
+   
+    .homepage-wrap .invest-section .invest__heading--main {
+        text-align: center;
+    }
+    .invest-content{
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+// end of invest section styles
+
+//how-it-works styles
+    .how-it-works-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .how-it-works-content {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+    .how-it-works__create-account{
+        padding: 5rem 3rem !important;
+        .how-it-works__sponsor{
+            margin-top: 10rem !important;
+        }
+    }
+    .how-it-works__row-wrap {
+        padding: 10rem 3rem !important;
+        .stay-updated__text-wrap {
+            margin-bottom: 8rem !important;
+        }
+    }
+    .how-it-works-section .how-it-works__heading {
+        text-align: center;
+    }
+    .homepage-wrap div.icon-row{
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+// end of how it works section
+   
+// statistics section
+    .statistics-section {
+        .content-wrap{
+            margin-bottom: 3rem;
+        }
+    }
+// end of statistics section
+
+// testimonials section
+    .testimonials-section {
+        padding: 5rem 3rem;
+        .testimonials-block{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5rem;
+            text-align: center;
+        }
+    }
+// end of testimonials section
+
+// insurance section
+    .insurance-section {
+        padding: 5rem 2rem;
+        .insurance-content{
+            .insurance__image{
+                justify-content: center !important;
+            }
+            .insurance__text-wrap{
+                text-align: center;
+                padding: 4rem 1.5rem !important;
+            }
+        }
+    }
+
+// end of insurance section
+
+// partners section
+    .partner-section {
+        padding: 5rem 3rem; 
+        .partners__heading-wrap{
+            .partners__heading{
+                padding: 3rem 0 1rem 0;
+            }
+        }
+    }
+// end of partners section
+
+
+}
+
+//OTHER QUERIES
+@media screen and (min-width:769px) and (max-width:1100px){
+    .homepage-wrap .insurance-section .insurance-content .insurance__text-wrap {
+        padding: 5rem 5rem 10rem 0 ;
+    }
+}
