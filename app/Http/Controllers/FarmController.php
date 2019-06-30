@@ -92,7 +92,7 @@ class FarmController extends Controller
 
         $this->farm->create($dataToStore);
         $this->request->session()->flash('success', 'Farm Cycle Created');
-        return redirect()->route('admin.dashboard');
+        return redirect()->route('admin.farmcycles');
     }
 
     /**

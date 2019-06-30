@@ -31,11 +31,26 @@ class SponsorController extends Controller
         return back();
     }
 
+    public function reverse(Request $request, Sponsor $sponsor)
+    {
+        $data['approve_user_id'] = null;
+        $data['approve_ip_address'] = null;
+        $data['approved'] = 0;
+        if($sponsor->update($data)){
+            $request->session()->flash('success', 'Sponsorship Reversed');
+            return back();
+        };
+        $request->session()->flash('error', 'Something went wrong!');
+        return back();
+    }
+
     public function delete(Sponsor $sponsor)
     {
         $sponsor->farmingcycle()->increment('units', $sponsor->units);
 
-        if($sponsor->delete()){
+        $sponsor->user->vestbank()->increment('capital', $sponsor->units * 100000);
+
+        if($sponsor->delete() && $sponsor->transaction()->delete()){
             $this->request->session()->flash('success', 'Sponsorship Deleted');
             return back();
         };
@@ -58,50 +73,7 @@ class SponsorController extends Controller
         return $this->request;
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Sponsor  $sponsor
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Sponsor $sponsor)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Sponsor  $sponsor
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Sponsor $sponsor)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Sponsor  $sponsor
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Sponsor $sponsor)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.
