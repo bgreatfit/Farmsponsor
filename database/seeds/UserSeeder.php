@@ -1,5 +1,6 @@
 [<?php
 
+use App\Models\Bank;
 use Illuminate\Database\Seeder;
 use App\User;
 use App\Models\Vestbank;
@@ -538,6 +539,11 @@ $users = collect(
 
         Vestbank::create([
             'user_id' => $user->id
+        ]);
+
+        Bank::create([
+            'user_id' => $user->id,
+            'last_update' => now()
         ]);
     });
     }

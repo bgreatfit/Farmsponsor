@@ -2,6 +2,7 @@
 
 namespace App\Notifications;
 
+use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -11,14 +12,19 @@ class ResetPassword extends Notification
 {
     use Queueable;
 
+    public $user;
+    public $token;
+    public $email;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(User $user, $token, $email)
     {
-        //
+        $this->user = $user;
+        $this->token = $token;
+        $this->email = $email;
     }
 
     /**
@@ -41,9 +47,12 @@ class ResetPassword extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->line('Trust your day is going on well, in the bid to serve you better we had a major upgrade on our website 
+                                    which also betters our security, kindly click on the link below to reset your password.')
+                    ->action('Reset Password', route('user.reset', ['token' => $this->token, 'email' => $this->email]))
+                    ->line('We apologize for any inconvenience this may sprout')
+                    ->line('All previous transactions and data supplied to us with respect to sponsorships and vestbanking are safe.')
+                    ->line('We look forward to a more secure future together!');
     }
 
     /**
@@ -59,3 +68,6 @@ class ResetPassword extends Notification
         ];
     }
 }
+
+
+

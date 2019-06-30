@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\State;
 use Auth;
+use Session;
 
 class UserController extends Controller
 {
@@ -34,11 +35,13 @@ class UserController extends Controller
 
         $user = Auth::user();
 
-       $user->update($request->except(['_token', 'bank_name', 'bank_account_number', 'firstname', 'lastname']));
+       $user->update($request->except(['_token', 'bank_name', 'bank_account_number']));
 
        $bankDetails = [
            'name' => $request->bank_name,
-           'account_number' => $request->bank_account_number
+           'account_name' => $request->bank_account_name,
+           'account_number' => $request->bank_account_number,
+           'last_update' => now()
        ];
 
        $this->updateBankAccountDetails(
