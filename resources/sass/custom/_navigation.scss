@@ -27,6 +27,15 @@
                     font-size: 1.4rem;
                     color:#3C4049;
                 }
+                .dropdown-item__link{
+                    display: flex;
+                    font-family: $font-family-main;
+
+                    .dropdown-link-icon{
+                        width: 1.5rem;
+                        margin-right: 2rem;
+                    }
+                }
             }
             .nav-link-btn{
                 padding: 1rem 3.7rem;
@@ -84,6 +93,7 @@
             .dropdown-menu.dropdown-menu-right{
                 .dropdown-item__link{
                     text-align: center;
+                    justify-content: center;
                 }
             }
         }

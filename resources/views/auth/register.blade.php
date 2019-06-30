@@ -35,7 +35,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <div class="form-group__content">
                             <label for="form__input--username" class="form__input--label">Username</label>
                             <input required type="text" class="form__input form-control {{ $errors->has('username') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--username" name="username" value="{{ old('username') }}">
@@ -44,7 +44,7 @@
                                 <strong>{{ $errors->first('username') }}</strong>
                             </span> @endif
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="form-group">
                         <div class="form-group__content">
