@@ -108,6 +108,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
+                                        <th scope="col">Confirm Sponsor</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Amount Sponsored</th>
@@ -121,6 +122,9 @@
                                     @foreach($unapproved_sponsors as $sponsor)
                                     <tr>
                                         <th scope="row">1</th>
+                                        <td>
+                                            <a href="{{route('sponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
+                                        </td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount}}</td>

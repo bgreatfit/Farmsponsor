@@ -11987,6 +11987,16 @@ a.text-dark:focus {
   color: #3C4049;
 }
 
+.navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link {
+  display: flex;
+  font-family: Montserrat;
+}
+
+.navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link .dropdown-link-icon {
+  width: 1.5rem;
+  margin-right: 2rem;
+}
+
 .navigation-main .navigation-menu .navigation__item .nav-link-btn {
   padding: 1rem 3.7rem;
   background: #6E9E3D;
@@ -12040,6 +12050,7 @@ a.text-dark:focus {
 
   .navigation-main .navigation-menu .navigation__item .dropdown-menu.dropdown-menu-right .dropdown-item__link {
     text-align: center;
+    justify-content: center;
   }
 }
 
