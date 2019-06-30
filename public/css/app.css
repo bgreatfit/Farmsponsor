@@ -13157,6 +13157,11 @@ mar .intro-section__image-box {
   font-family: Montserrat;
 }
 
+.dashboard__brand:hover,
+.dashboard__profile:hover {
+  color: #e6e6e6;
+}
+
 .dashboard__brand {
   font-weight: bold;
   font-size: 14px;
