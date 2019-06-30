@@ -43,6 +43,7 @@
       @yield('content')
 
       @include('includes.footer')
+      {!! TidioChat::js() !!}
 
     </body>
     @include('includes.scripts')
