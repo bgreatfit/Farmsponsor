@@ -11243,7 +11243,7 @@ a.text-dark:focus {
 }
 
 .farmlist__card .farmlist__card-body--text-wrap {
-  background-image: url(/images/farmcard-body.svg?326546dfb2ac4cabe2a35ff40661cdca);
+  background-image: url(/images/farmcard-body.svg?39c79e495c458cb126dbdb25f86b41b3);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 1rem;
@@ -11321,6 +11321,7 @@ a.text-dark:focus {
 .helpcenter-wrap .helpcenter__header {
   padding: 8rem 1rem;
   background: rgba(14, 37, 3, 0.9);
+  margin-bottom: 4.8rem;
 }
 
 .helpcenter-wrap .helpcenter__header .helpcenter__heading {
@@ -11359,7 +11360,9 @@ a.text-dark:focus {
 }
 
 .helpcenter-wrap .helpcenter__content .helpcenter__text {
+  font-family: Montserrat;
   color: #011633;
+  font-size: 1.4rem;
 }
 
 @media screen and (min-width: 1100px) {
@@ -11368,7 +11371,7 @@ a.text-dark:focus {
   }
 
   .helpcenter-wrap .helpcenter__content {
-    padding: 5rem 4rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -11376,6 +11379,22 @@ a.text-dark:focus {
   .helpcenter__content {
     text-align: center;
   }
+}
+
+.helpline-wrap {
+  padding: 1.5rem 4rem;
+  background: rgba(110, 158, 61, 0.7);
+  margin: 0;
+}
+
+.helpline-wrap .helpline-text {
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: right;
+  margin: 0;
 }
 
 .homepage-wrap {
@@ -11618,7 +11637,7 @@ a.text-dark:focus {
 }
 
 .homepage-wrap .statistics-section {
-  background-image: url(/images/statistics-background.svg?131be0ab3cd59e70bbda05c2e03a1055);
+  background-image: url(/images/statistics-background.svg?d2e808609e40bcd9a6efcf64c90fbaae);
   padding: 12rem 3rem 9rem 3rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11968,6 +11987,16 @@ a.text-dark:focus {
   color: #3C4049;
 }
 
+.navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link {
+  display: flex;
+  font-family: Montserrat;
+}
+
+.navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link .dropdown-link-icon {
+  width: 1.5rem;
+  margin-right: 2rem;
+}
+
 .navigation-main .navigation-menu .navigation__item .nav-link-btn {
   padding: 1rem 3.7rem;
   background: #6E9E3D;
@@ -12021,6 +12050,7 @@ a.text-dark:focus {
 
   .navigation-main .navigation-menu .navigation__item .dropdown-menu.dropdown-menu-right .dropdown-item__link {
     text-align: center;
+    justify-content: center;
   }
 }
 
@@ -12564,6 +12594,53 @@ a.text-dark:focus {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+section.terms-and-conditions {
+  background-color: #ffffff;
+  padding: 10rem 1rem;
+}
+
+section.terms-and-conditions .terms__heading-wrap .terms__heading {
+  font-family: Montserrat, sans-serif;
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #011633;
+}
+
+section.terms-and-conditions .terms__text,
+section.terms-and-conditions .terms__title--sub {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #011633;
+  margin-bottom: 3rem;
+}
+
+section.terms-and-conditions .terms__title {
+  font-family: Montserrat;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+section.terms-and-conditions .terms__title--sub {
+  margin-bottom: 1rem;
+}
+
+section.terms-and-conditions .terms-farmsponsor {
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: 769px) {
+  .terms__heading-span {
+    display: block;
+  }
+
+  .terms__content {
+    padding: 0px 8rem;
+  }
 }
 
 *,

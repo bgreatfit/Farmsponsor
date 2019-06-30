@@ -42,6 +42,7 @@ Auth::routes(['verify' => true]);
 Route::group(['middleware' => ['usersonly']], function () {
     
 Route::get('/helpcenter', 'PagesController@helpcenter')->name('helpcenter');
+Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('termsAndConditions');
 
 Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
 Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor');

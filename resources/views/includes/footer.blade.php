@@ -45,7 +45,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Help Center</a></div>
+                                <div class="footer__item"><a href="{{route('helpcenter')}}" class="footer__links">Help Center</a></div>
                             </div>
                         </div>
                         <div class="row">
@@ -104,12 +104,12 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#how-it-works" class="footer__links">How it works</a></div>
+                                <div class="footer__item"><a href="{{url('/#how-it-works')}}" class="footer__links">How it works</a></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#invest-section" class="footer__links">Why invest</a></div>
+                                <div class="footer__item"><a href="{{url('/#invest-section')}} " class="footer__links">Why invest</a></div>
                             </div>
                         </div>
                         <div class="row">
