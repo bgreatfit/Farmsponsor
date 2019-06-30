@@ -1,5 +1,5 @@
 .main-about {
-    background-color: $color-grey-light-1;
+    background-color: $color-white;
     color: $color-black;
 
     .section-about{
@@ -21,17 +21,16 @@
                     font-size: 6rem;
                 }
                 &--text {
-                    font-family: kalam;
-                    color: #747;
+                    font-family: montserrat;
+                    color: $color-black;
                 }
     
             }
 
             .introWrap {
                 .intro-text {
-                    font-family: kalam;
-                    color: #747;
-    
+                    font-family: montserrat;
+                    color: $color-black;
                 }
             }
         }

@@ -196,7 +196,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="partners__content partners__content--image-box"><img src="img/fs-pic3.png" alt="The promise" class="partners__content--image"></div>
+                    <div class="partners__content partners__content--image-box"><img src="{{asset('img/the-promise.png')}}" alt="The promise" class="partners__content--image"></div>
                 </div>
                 <div class="col">
                     <div class="partners__content partners__content--image-box"><img src="img/fs-pic4.png" alt="Kalase farm" class="partners__content--image"></div>
