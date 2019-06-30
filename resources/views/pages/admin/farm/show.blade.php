@@ -46,9 +46,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($unapproved_vestbank_sponsors as $sponsor)
+                                    @foreach($unapproved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
-                                        <th scope="row">1</th>
+                                        <th scope="row">{{$key}}</th>
                                         <td>
                                             <a href="{{route('sponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                         </td>
@@ -84,9 +84,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($approved_vestbank_sponsors as $sponsor)
+                                    @foreach($approved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
-                                        <th scope="row">1</th>
+                   ayout                 <th scope="row">{{$key}}</th>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount}}</td>
