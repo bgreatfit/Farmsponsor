@@ -14,7 +14,7 @@
                   <th scope="col">Transaction type</th>
                   <th scope="col">Date</th>
                   <th scope="col">Amount(NGN)</th>
-                  <th scope="col">Action</th>
+                  <th scope="col">Returns</th>
                 </tr>
               </thead>
               <tbody>
@@ -22,16 +22,16 @@
                     <tr>
                         <td><p class="transaction__table--id">{{$transaction->transaction_id}}</p></td>
                         <td>
-                        <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="transaction-details__item">
-                            {{$transaction->transactiontype}}
-                        </a>
+                        <p class="transaction__table--id">
+                          {{$transaction->transactiontype}}
+                        </p>
                         </td>
                         <td> {{$transaction->created_at->diffForHumans()}}</td>
                         <td>{{$transaction->amount}}</td>
                         <td>
-                        <a href="#" data-toggle="modal" data-target="#transaction-info" role="button" class="btn btn-primary form-control transaction-details__item">
-                            View
-                        </a>
+                          <p class="transaction__table--id">
+                              
+                          </p>
                         </td>
                     </tr>
                   @endforeach
@@ -47,8 +47,8 @@
         </div>
       </div>
 
-
-      <div class="row">
+                {{-- transaction modal --}}
+      {{-- <div class="row">
         <div class="transaction-info__content">
             <div class="modal fade" id="transaction-info" tabindex="-1" role="dialog" aria-labelledby="transactionInfoTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-      </div>
+      </div> --}}
   </div>
 
 
