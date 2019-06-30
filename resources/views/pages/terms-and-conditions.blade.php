@@ -253,6 +253,9 @@
                                     2.2. A VAT (Value Added Tax) of 5% is attracted on client’s interest. Income Tax shall be charged on interest gained by Client above Five Million Naira (NGN5, 000,000).
                                 </p>
                                 <p class="terms__text">
+                                    2.2.1 Approved bank charge rates for transfer and SMS shall be implemented in addition to vestbanking service charges.
+                                </p>
+                                <p class="terms__text">
                                     2.3. End-of-day balance cannot be less than zero, no overdraws.
                                 </p>
                                 <p class="terms__text">
