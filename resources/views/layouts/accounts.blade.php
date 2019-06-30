@@ -30,7 +30,7 @@
     @include('includes.footer')
     @include('includes.scripts')
 
-    {!! TidioChat::js() !!}
+{{--    {!! TidioChat::js() !!}--}}
 
 </body>
 </html>
