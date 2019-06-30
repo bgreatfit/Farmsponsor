@@ -54,7 +54,7 @@
                                 <div class="form-row mb-4">
                                     <div class="form-group col-md-6">
                                         <label for="input__first-name">First name: </label>
-                                        <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" name="firstname" placeholder="First name">
+                                        <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" name="firstname" placeholder="First name" value="{{Auth::user()->firstname}}" disabled>
 
                                         @if ($errors->has('firstname'))
                                         <span class="invalid-feedback" role="alert">
@@ -64,7 +64,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="input__last-name">Last name: </label>
-                                        <input type="text" class="form-control" {{ $errors->has('lastname') ? ' is-invalid' : '' }}" id="input__last-name" name="lastname" placeholder="Last name">
+                                        <input type="text" class="form-control {{ $errors->has('lastname') ? ' is-invalid' : '' }}" id="input__last-name" name="lastname" placeholder="Last name" value="{{Auth::user()->lastname}}" disabled>
 
                                         @if ($errors->has('lastname'))
                                         <span class="invalid-feedback" role="alert">
@@ -78,7 +78,7 @@
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
                                             <label for="email" class="deposit-method-bank__amount--label">Email: </label>
-                                            <input type="email" id="email" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" id="email" placeholder="Enter Email">
+                                            <input type="email" id="email" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" id="email" placeholder="Enter Email" value="{{Auth::user()->email}}" disabled>
                                             @if ($errors->has('email'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('email') }}</strong>
@@ -92,7 +92,7 @@
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
                                             <label for="phone-number" class="deposit-method-bank__amount--label">Phone number: </label>
-                                            <input type="number" id="phone-number" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="phoneNumber" placeholder="Enter phone number">
+                                            <input type="number" id="phone-number" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="phoneNumber" placeholder="Enter phone number" value="{{Auth::user()->phone}} disabled>
                                             @if ($errors->has('phoneNumber'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('phoneNumber') }}</strong>
@@ -106,7 +106,7 @@
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
                                             <label for="depositAddress" class="deposit-method-bank__address--label">Address: </label>
-                                            <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address">
+                                            <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address" value="{{Auth::user()->address}} disabled>
                                             @if ($errors->has('address'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('address') }}</strong>
