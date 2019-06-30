@@ -11,7 +11,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="input__first-name">First name</label>
-                    <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" name="firstname" placeholder="first-name" value={{Auth::user()->firstname}}>
+                    <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" name="firstname" placeholder="first-name" value={{old('firstname') ?? Auth::user()->firstname}}>
 
                     @if ($errors->has('firstname'))
                     <span class="invalid-feedback" role="alert">
@@ -21,12 +21,17 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="input__last-name">Last name</label>
-                    <input type="text" class="form-control" id="input__last-name" name="lastname" placeholder="Last name" value={{Auth::user()->lastname}}>
+                    <input type="text" class="form-control" id="input__last-name" name="lastname" placeholder="Last name" value={{ old('lastname') ?? Auth::user()->lastname}}>
+                    @if ($errors->has('lastname'))
+                        <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('lastname') }}</strong>
+                    </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputAddress">Address</label>
-                <input type="text" class="form-control {{ $errors->has('address') ? ' is-invalid' : '' }}" id="inputAddress" name="address" placeholder="1234 Nnewi St" value="{{Auth::user()->address}}">
+                <input type="text" class="form-control {{ $errors->has('address') ? ' is-invalid' : '' }}" id="inputAddress" name="address" placeholder="1234 Nnewi St" value="{{ old('address') ?? Auth::user()->address}}">
                 @if ($errors->has('address'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('address') }}</strong>
@@ -37,7 +42,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
-                    <input type="text" class="form-control {{ $errors->has('city') ? ' is-invalid' : '' }}" id="inputCity" name="city" value="{{Auth::user()->city}}">
+                    <input type="text" class="form-control {{ $errors->has('city') ? ' is-invalid' : '' }}" id="inputCity" name="city" value="{{ old('city') ?? Auth::user()->city}}">
                     @if ($errors->has('city'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('city') }}</strong>
@@ -65,7 +70,7 @@
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control {{ $errors->has('zip') ? ' is-invalid' : '' }}" id="inputZip" name="zip" value="{{Auth::user()->zip}}" >
+                    <input type="text" class="form-control {{ $errors->has('zip') ? ' is-invalid' : '' }}" id="inputZip" name="zip" value="{{ old('zip') ?? Auth::user()->zip}}" >
                     @if ($errors->has('zip'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('zip') }}</strong>
@@ -75,7 +80,7 @@
             </div>
             <div class="form-group mb-5">
                     <label for="input__phone-number">Phone number</label>
-                    <input type="text" class="form-control {{ $errors->has('phone') ? ' is-invalid' : '' }}" id="input__phone-number" placeholder="080xxx" name="phone" value="{{Auth::user()->phone}}">
+                    <input type="text" class="form-control {{ $errors->has('phone') ? ' is-invalid' : '' }}" id="input__phone-number" placeholder="080xxx" name="phone" value="{{old('phone') ?? Auth::user()->phone}}">
                     @if ($errors->has('phone'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('phone') }}</strong>
@@ -89,7 +94,7 @@
                 <div class="col-md-12 col-12">
                     <div class="form-group">
                         <label for="input__bank-name">Bank name</label>
-                        <input type="text" class="form-control {{ $errors->has('bank_name') ? ' is-invalid' : '' }}" id="input__bank-name" placeholder="Bank name" name="bank_name" value="">
+                        <input type="text" class="form-control {{ $errors->has('bank_name') ? ' is-invalid' : '' }}" id="input__bank-name" placeholder="Bank name" name="bank_name" value="{{ old('bank_name') ?? Auth::user()->bank->name}}">
                         @if ($errors->has('bank_name'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('bank_name') }}</strong>
@@ -102,7 +107,7 @@
             <div class="row">
                 <div class="form-group col-md-6">
                     <label for="input__bank-account-name">Bank account name</label>
-                    <input type="text" class="form-control {{ $errors->has('bank_account_name') ? ' is-invalid' : '' }}" id="input__bank-account-name" placeholder="Bank account name" name="bank_account_name" value="">
+                    <input type="text" class="form-control {{ $errors->has('bank_account_name') ? ' is-invalid' : '' }}" id="input__bank-account-name" placeholder="Bank account name" name="bank_account_name" value="{{old('bank_account_name') ?? Auth::user()->bank->account_name}}">
                     @if ($errors->has('bank_account_name'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('bank_account_name') }}</strong>
@@ -112,7 +117,7 @@
 
                 <div class="form-group col-md-6">
                     <label for="input__last-name">Account number</label>
-                    <input type="number" class="form-control {{ $errors->has('bank_account_number') ? ' is-invalid' : '' }}" id="input__acc-no" placeholder="Account number" name="bank_account_number" value="">
+                    <input type="number" class="form-control {{ $errors->has('bank_account_number') ? ' is-invalid' : '' }}" id="input__acc-no" placeholder="Account number" name="bank_account_number" value="{{old('bank_account_number') ?? Auth::user()->bank->account_number}}">
 
                     @if ($errors->has('bank_account_number'))
                         <span class="invalid-feedback" role="alert">

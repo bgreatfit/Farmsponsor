@@ -8,26 +8,18 @@ use App\User;
 use App\Models\UserTokens;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use App\Notifications\UserRegisteredSuccessfully;
+use App\Notifications\ResetPassword;
 
 
 class MigrateUsersFromWordpressController extends Controller
 {
     public function sendmails()
     {
-        $emails = collect(['keamc0090@gmail.com',
-    'ifadajessica@gmail.com',
-    'abbygbadegesin@gmail.com',
-    'davisuyanne2002@yahoo.co.uk',
-    'agholorangelai@gmail.com',
-    'adedejiiretomiwa@gmail.com',
-    'bbanigbe@gmail.com',
-    'fumbie40@gmail.com',
-    'seyejoseph@gmail.com',
-    'fbidowu@student.lautech.edu.ng',
-    'demola.adelekan@gmail.com',
-    'otsedanesi@gmail.com',
-    'bob.ononuju@gmail.com',]);
+        $emails = collect([
+            'ishukpong418@gmail.com',
+            'dannithomx@gmail.com',
+            'chykedee@gmail.com'
+        ]);
 
         $emails->each(function($email){
             $user = User::create([
@@ -46,7 +38,7 @@ class MigrateUsersFromWordpressController extends Controller
                 'status' => 'pending',
             ]);
 
-            $user->notify(new UserRegisteredSuccessfully($user, $token, $email));
+            $user->notify(new ResetPassword($user, $token, $email));
         });
 
     }
@@ -91,7 +83,7 @@ class MigrateUsersFromWordpressController extends Controller
             'email' => $email,
             'password' => $password
         ])) {
-            return redirect()->intended(route('dashboard'));
+            return redirect()->intended(url('/profile'));
         }
         return back()->withInput(request()->only('email', 'remember'));
     }
