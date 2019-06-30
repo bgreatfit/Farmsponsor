@@ -17,7 +17,7 @@ class CreateVestbanksTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->integer('capital')->default(0);
-            $table->integer('interest')->default(0);
+            $table->float('interest')->default(0);
             $table->integer('lock')->default(0);
             $table->timestamps();
         });
