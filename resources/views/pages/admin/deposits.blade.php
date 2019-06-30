@@ -106,7 +106,7 @@
                                                 <p class="depositor-info">{{$deposit->amount}}</p>
                                             </td>
                                             <td>
-                                                <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Reverse</a>
+                                                <a href="{{route('admin.reversedeposit', $deposit->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Reverse</a>
                                             </td>
                                         </tr>
                                         @endforeach

@@ -11,6 +11,6 @@ class FarmSeeder extends Seeder
      */
     public function run()
     {
-        // factory(App\Models\Farm::class, 20)->create()->each(function($farm){});
+         factory(App\Models\Farm::class, 20)->create()->each(function($farm){});
     }
 }

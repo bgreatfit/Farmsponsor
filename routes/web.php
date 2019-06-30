@@ -53,7 +53,7 @@ Route::get('/password-reset', 'PagesController@passwordReset')->name('passwordRe
 
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
-Route::get('/dashboard/sponsor-now', 'PagesController@sponsorNow')->name('sponsornow');
+Route::get('/dashboard/sponsornow/{farm}', 'BankSponsorshipController@sponsorNow')->name('sponsornow');
 Route::get('/dashboard/helpcenter', 'PagesController@dashboardHelpcenter')->name('dashboardHelpcenter');
 
 // Payout Routes
@@ -63,6 +63,7 @@ Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbank
 Route::get('/dashboard/vestbanking/deposit', 'VestbankController@showDepositPage')->name('vestbanking.showdepositpage');
 Route::post('/dashboard/vestbanking/deposit', 'VestbankController@deposit')->name('vestbanking.deposit');
 Route::post('/dashboard/vestbanking/withdraw', 'VestbankController@withdraw')->name('vestbanking.withdraw');
+Route::post('/dashboard/sponsor/deposit', 'BankSponsorshipController@sponsor')->name('banksponsorship.sponsor');
 
 // Transactions Route
 Route::get('/transactions', 'TransactionsController@index')->name('transactions.all');
@@ -83,7 +84,7 @@ Route::get('/transactions/history', 'TransactionsController@history')->name('tra
 Route::get('/sendmail', 'MigrateUsersFromWordpressController@sendmails')->name('sendmails');
 Route::get('/resetPassword/{email}/{token}', 'MigrateUsersFromWordpressController@resetPassword')->name('user.reset');
 Route::post('/resetPassword/{token}', 'MigrateUsersFromWordpressController@processreset')->name('user.reset.process');
+
+
+Route::get('retain/{cycleid}', 'RetainSponsorshipController@retain')->name('retain.sponsorship');
 });
-
-
-

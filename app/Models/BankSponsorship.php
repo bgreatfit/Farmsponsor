@@ -1,15 +1,14 @@
 <?php
 
 namespace App\Models;
+
 use Illuminate\Database\Eloquent\SoftDeletes;
-
-
 use Illuminate\Database\Eloquent\Model;
 
-class Sponsor extends Model
+class BankSponsorship extends Model
 {
     use SoftDeletes;
-
+    
     protected $fillable = [
         'farm_id','units','ip_address', 'user_id',
         'status','approve_user_id','approve_ip_address', 'approved'
@@ -40,15 +39,9 @@ class Sponsor extends Model
         return $this->morphMany('App\Models\Transactionlogs', 'transactionable');
     }
 
-     public function transaction()
+    public function transaction()
     {
         return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
-    }
-
-    public function retain()
-    {
-        return $this->hasOne(RetainSponsorship::class);
-
     }
 
     public function getAmountAttribute(){
@@ -58,11 +51,5 @@ class Sponsor extends Model
     public function getPricePerUnit()
     {
         return 100000;
-    }
-
-    public function hasRetained()
-    {
-        return $this->retain()->count() == 1 ? true : false;
-
     }
 }
