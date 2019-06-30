@@ -400,11 +400,10 @@
                                     <img src="{{asset('img/fs-pic10.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
                                 </div>
                                 <p class="testimonials__text">Robert Martins</p>
-                                <p class="testimonials__text--description">Sponsor</p>
+                                <p class="testimonials__text--description">Port Harcourt, Nigeria</p>
                                 <p class="testimonials__comment">
-                                    I just got my alert. You guys are the bomb. I got
-                                    my alert! Great guys, I look forward for my farming
-                                    windows. Let's do this again guys!
+                                    Farmsponsor is amazing I increased my sponsorship the first 
+                                    cycle and I don't have any regrets. well done guys.
                                 </p>
                             </div>
                         </div>
@@ -416,12 +415,10 @@
                                     <img src="{{asset('img/fs-pic9.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
                                 </div>
                                 <p class="testimonials__text">Olaitan R</p>
-                                <p class="testimonials__text--description">Sponsor</p>
+                                <p class="testimonials__text--description">Lagos, Nigeria</p>
                                 <p class="testimonials__comment">
-                                    I got my alert. My bank was messing up but you guys
-                                    even called me to get another account number. Thank you
-                                    so much! Next cycle, I'll definitely invest.
-                                    You are tested and trusted.
+                                    When I heard about farmsponsor, I gave it a try skeptically, but I'm 
+                                    amazed by the brain behind this initiative.
                                 </p>
                             </div>
                         </div>
@@ -433,11 +430,10 @@
                                     <img src="{{asset('img/fs-pic11.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
                                 </div>
                                 <p class="testimonials__text">Bala Gana</p>
-                                <p class="testimonials__text--description">Sponsor</p>
+                                <p class="testimonials__text--description">Port Harcourt, Nigeria</p>
                                 <p class="testimonials__comment">
-                                    Payout Day! I have received mine. Thank you so much
-                                    Farmsponsor. You kept your word. Next farming window please!
-                                    #FoodSecurityForAll.
+                                    Farmsponsor is changing the narrative, both for sponsors, farmers, 
+                                    customers and the agricultural tech space. I am a proud sponsor.
                                 </p>
                             </div>
                         </div>

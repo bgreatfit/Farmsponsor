@@ -23,7 +23,7 @@
                 <i class="fas fa-university dashboard__icon"></i>VestBanking</a></li>
             <li class="dashboard__navi--item"><a href="{{url('/dashboard/payout')}}" class="dashboard__navi--link">
                 <i class="far fa-credit-card dashboard__icon"></i>Payout</a></li>
-            <li class="dashboard__navi--item"><a href="{{route('dashboardHelpcenter')}}" class="dashboard__navi--link">
+            <li class="dashboard__navi--item"><a href="{{route('helpcenter')}}" class="dashboard__navi--link">
                 <i class="fas fa-question-circle dashboard__icon"></i>Help Center</a></li>
             <li class="dashboard__navi--item">
                 <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
