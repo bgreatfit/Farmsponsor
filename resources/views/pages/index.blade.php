@@ -449,7 +449,7 @@
                     <div class="col-12 col-md-12">
                         <div class="farmlist-content">
                             <h3 class="farmlist__heading">
-                                Explore our farm circles and pick a farm to sponsor
+                                Explore our farm cycles and pick a farm to sponsor
                             </h3>
                         </div>
                     </div>

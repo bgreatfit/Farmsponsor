@@ -50,7 +50,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Terms and Conditions</a></div>
+                            <div class="footer__item"><a href="{{route('termsAndConditions')}}" class="footer__links">Terms and Conditions</a></div>
                             </div>
                         </div>
                         <div class="row">
@@ -84,7 +84,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="https:farmsponsor.com.ng/blog" target="_blank" class="footer__links">Blog</a></div>
+                                <div class="footer__item"><a href="#" target="_blank" class="footer__links">Blog</a></div>
                             </div>
                         </div>
                         <div class="row">

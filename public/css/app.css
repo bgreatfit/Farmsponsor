@@ -10664,7 +10664,7 @@ a.text-dark:focus {
 }
 
 .main-about {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -10691,13 +10691,13 @@ a.text-dark:focus {
 }
 
 .main-about .section-about .aboutWrap .content__about--text {
-  font-family: kalam;
-  color: #747;
+  font-family: montserrat;
+  color: #000000;
 }
 
 .main-about .section-about .aboutWrap .introWrap .intro-text {
-  font-family: kalam;
-  color: #747;
+  font-family: montserrat;
+  color: #000000;
 }
 
 .main-about .section-about .our-valuesWrap .values__heading {
