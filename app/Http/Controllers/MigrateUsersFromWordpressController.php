@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\PasswordResetSuccessful;
 use Auth;
 use Str;
 use App\User;
@@ -17,8 +18,8 @@ class MigrateUsersFromWordpressController extends Controller
     {
         $emails = collect([
             'ishukpong418@gmail.com',
-            'dannithomx@gmail.com',
-            'chykedee@gmail.com'
+//            'dannithomx@gmail.com',
+//            'chykedee@gmail.com'
         ]);
 
         $emails->each(function($email){
@@ -65,6 +66,9 @@ class MigrateUsersFromWordpressController extends Controller
         if($user->update([
             'password' => Hash::make($request->password)
         ])){
+            $user->notify(new PasswordResetSuccessful);
+            $userToken->delete();
+            $request->session()->flash('success', 'Password Updated!');
             return redirect()->route('login');
         };
 
