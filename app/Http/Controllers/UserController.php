@@ -14,7 +14,8 @@ class UserController extends Controller
         $this->middleware('auth');
     }
 
-    public function seeProfile(){
+    public function seeProfile()
+    {
         $data['states'] = State::all();
         return view('pages.dashboard.profile', $data);
     }
@@ -24,11 +25,10 @@ class UserController extends Controller
         $rules = [
             'address' => 'string',
             'city' => 'string',
-            'state_id' => 'numeric',
-            'zip' => 'numeric',
             'phone' => 'numeric',
             'bank_name' => 'required|string',
             'bank_account_number' => 'required|numeric',
+            'bank_account_name' => 'required|string',
         ];
 
         $this->validate($request, $rules);
@@ -52,7 +52,8 @@ class UserController extends Controller
        return redirect()->back();
     }
 
-    public function updateBankAccountDetails($user, array $data){
+    public function updateBankAccountDetails($user, array $data)
+    {
         if(! $user->bank()->update($data)){
             Session::flash('error', 'Can not update bank account details!');
             return redirect()->back();
