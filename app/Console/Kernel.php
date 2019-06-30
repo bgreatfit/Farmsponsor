@@ -26,9 +26,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('vestbank:update')
-            ->daily();
-        // $schedule->command('inspire')
-        //          ->hourly();
+            ->everyMinute();
     }
 
     /**

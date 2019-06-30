@@ -31,10 +31,6 @@ class VestbankController extends Controller
     public function deposit(Request $request)
     {
         $rules = [
-            'firstname' => 'required | string',
-            'lastname' => 'required | string',
-            'email' => 'required | email',
-            'address' => 'required | string',
             'amount' => 'required | integer',
         ];
 
