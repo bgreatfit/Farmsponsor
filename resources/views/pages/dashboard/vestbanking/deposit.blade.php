@@ -111,7 +111,7 @@
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
                                             <label for="phone-number" class="deposit-method-bank__amount--label">Phone number: </label>
-                                            <input type="number" id="phone-number" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="phoneNumber" placeholder="Enter phone number" value="{{Auth::user()->phone}} disabled>
+                                            <input type="number" id="phone-number" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" name="phoneNumber" placeholder="Enter phone number" value="{{Auth::user()->phone}}" disabled>
                                             @if ($errors->has('phoneNumber'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('phoneNumber') }}</strong>
@@ -125,7 +125,7 @@
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
                                             <label for="depositAddress" class="deposit-method-bank__address--label">Address: </label>
-                                            <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address" value="{{Auth::user()->address}} disabled>
+                                            <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address" value="{{Auth::user()->address}}" disabled>
                                             @if ($errors->has('address'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('address') }}</strong>
