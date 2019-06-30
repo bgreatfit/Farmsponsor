@@ -46,8 +46,8 @@
                                 aria-haspopup="true" aria-expanded="false" v-pre>Get help</a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item dropdown-item__link" href="{{ route('faq') }}">FAQs</a>
-                                    <a class="dropdown-item dropdown-item__link" href="#">Help Center</a>
+                                    <a class="dropdown-item dropdown-item__link" href="mailto:farmsponsorng@gmail.com">Contact</a>
+                                    <a class="dropdown-item dropdown-item__link" href="{{route('helpcenter')}}">Help Center</a>
                                 </div>
                             </li>
                             
