@@ -49,7 +49,9 @@ class UserController extends Controller
                 $bankDetails
         );
 
-       return redirect()->back();
+        Session::flash('success', 'Profile Updated!');
+
+        return redirect()->back();
     }
 
     public function updateBankAccountDetails($user, array $data)

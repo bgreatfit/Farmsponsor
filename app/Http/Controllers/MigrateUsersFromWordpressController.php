@@ -16,31 +16,26 @@ class MigrateUsersFromWordpressController extends Controller
 {
     public function sendmails()
     {
-        $emails = collect([
-            'ishukpong418@gmail.com',
-//            'dannithomx@gmail.com',
-//            'chykedee@gmail.com'
-        ]);
 
-        $emails->each(function($email){
-            $user = User::create([
-                'firstname' => 'Elisha',
-                'lastname' => 'Ukpong',
-                'email' => $email
-            ]);
+        User::chunk('50', function ($users){
 
-            do{
-                $token = str_shuffle('abqwertyuioplkjhgfdsa13425678u1234567890');
-            }while(UserTokens::whereToken($token)->first() != NULL);
+            foreach($users as $user){
+                do{
+                    $token = str_shuffle('abqwertyuioplkjhgfdsa13425678u1234567890');
+                }while(UserTokens::whereToken($token)->first() != NULL);
 
-            UserTokens::create([
-                'email' =>$email,
-                'token' => $token,
-                'status' => 'pending',
-            ]);
+                UserTokens::create([
+                    'email' =>$user->email,
+                    'token' => $token,
+                    'status' => 'pending',
+                ]);
 
-            $user->notify(new ResetPassword($user, $token, $email));
+                $user->notify(new ResetPassword($user, $token, $user->email));
+
+            }
+
         });
+
 
     }
 
