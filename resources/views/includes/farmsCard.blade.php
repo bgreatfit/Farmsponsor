@@ -36,12 +36,12 @@
                     <div class="container-block">
                         <div class="flex-row">
                             <div class="flex-col-2">
-                                <p class="farmlist__text">Farm Cycle:</p>
+                                <p class="farmlist__text">Farm Title:</p>
                                 <p class="farmlist__sub-text mb-5">{{$farm->name}}</p>
                             </div>
                             <div class="flex-col-2">
-                                <p class="farmlist__text text-md-right">Returns</p>
-                                <p class="farmlist__returns text-md-right">{{$farm->returns}}%</p>
+                                <p class="farmlist__text text-right">Returns</p>
+                                <p class="farmlist__returns text-right">{{$farm->returns}}%</p>
                             </div>
                         </div>
                         <div class="row">
