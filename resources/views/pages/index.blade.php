@@ -402,7 +402,7 @@
                                 <p class="testimonials__text">Robert Martins</p>
                                 <p class="testimonials__text--description">Port Harcourt, Nigeria</p>
                                 <p class="testimonials__comment">
-                                    Farmsponsor is amazing I increased my sponsorship the first 
+                                    Farmsponsor is amazing I increased my sponsorship after the first 
                                     cycle and I don't have any regrets. well done guys.
                                 </p>
                             </div>
@@ -430,7 +430,7 @@
                                     <img src="{{asset('img/fs-pic11.jpeg')}}" alt="photo of a Farmsponsor client" class="testimonials__image">
                                 </div>
                                 <p class="testimonials__text">Bala Gana</p>
-                                <p class="testimonials__text--description">Port Harcourt, Nigeria</p>
+                                <p class="testimonials__text--description">Abuja, Nigeria</p>
                                 <p class="testimonials__comment">
                                     Farmsponsor is changing the narrative, both for sponsors, farmers, 
                                     customers and the agricultural tech space. I am a proud sponsor.
