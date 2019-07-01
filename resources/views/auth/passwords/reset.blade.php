@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card reset-card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <div class="card-header">
+                    <h2 class="heading__secondary form-heading">Reset Password</h2>
+                    {{-- {{ __('Reset Password') }} --}}
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
