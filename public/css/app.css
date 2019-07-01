@@ -13665,6 +13665,10 @@ mar .intro-section__image-box {
   font-size: 1.3rem;
 }
 
+.deposit-request__content {
+  overflow-x: auto;
+}
+
 .farming-cycle__add--cta {
   font-size: 1.3rem;
 }

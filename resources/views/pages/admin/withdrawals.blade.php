@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="withdrawal-request__content py-5 my-5">
+    <div class="withdrawal-request__content py-5 my-5 deposit-request__content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-md-12">
