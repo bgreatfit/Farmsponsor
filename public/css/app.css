@@ -11981,20 +11981,28 @@ a.text-dark:focus {
   letter-spacing: 0.5px;
 }
 
+.navigation-main .navigation-menu .navigation__item .dropdown-menu {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
 .navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link:link,
 .navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link:visited {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #3C4049;
 }
 
 .navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link {
   display: flex;
   font-family: Montserrat;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
 }
 
 .navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link .dropdown-link-icon {
   width: 1.5rem;
-  margin-right: 2rem;
+  margin-right: 2.7rem;
 }
 
 .navigation-main .navigation-menu .navigation__item .nav-link-btn {
