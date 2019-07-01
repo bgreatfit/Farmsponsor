@@ -50,7 +50,7 @@ class ResetPassword extends Notification
                     ->line('Trust your day is going on well, in the bid to serve you better we had a major upgrade on our website 
                                     which also betters our security, kindly click on the link below to reset your password.')
                     ->action('Reset Password', route('user.reset', ['token' => $this->token, 'email' => $this->email]))
-                    ->line('We apologize for any inconvenience this may sprout')
+                    ->line('if you have successfully gone through this process, please repeat the process again, We apologize for any inconvenience this may sprout')
                     ->line('All previous transactions and data supplied to us with respect to sponsorships and vestbanking are safe.')
                     ->line('We look forward to a more secure future together!');
     }
