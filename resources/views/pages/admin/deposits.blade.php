@@ -25,12 +25,12 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Date</th>
                                             <th scope="col">First Name</th>
                                             <th scope="col">Last Name</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Address</th>
                                             <th scope="col">Amount</th>
+                                            <th scope="col">Date</th>
                                             <th scope="col">Deposit Status</th>
                                         </tr>
                                     </thead>
@@ -38,9 +38,6 @@
                                         @foreach($unapproved_deposits as $deposit)
                                             <tr>
                                                 <th scope="row">{{ (($unapproved_deposits->currentPage() - 1 ) * $unapproved_deposits->perPage() ) + $loop->iteration }}</th>
-                                                <td>
-                                                    <p class="depositor-info"> </p>
-                                                </td>
                                                 
                                                 <td>
                                                     <p class="depositor-info">{{$deposit->firstname}}</p>
@@ -57,6 +54,11 @@
                                                 </td>
                                                 <td>
                                                     <p class="depositor-info">{{$deposit->amount}}</p>
+                                                </td>
+                                                <td>
+                                                    <p class="depositor-info">{{$deposit->created_at}} </p>
+                                                </td>
+
                                                 <td>
                                                     <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
                                                 </td>
@@ -76,12 +78,12 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Date</th>
                                             <th scope="col">First Name</th>
                                             <th scope="col">Last Name</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Address</th>
                                             <th scope="col">Amount</th>
+                                            <th scope="col">Date</th>
                                             <th scope="col">Undo</th>
                                         </tr>
                                     </thead>
@@ -90,12 +92,8 @@
                                         <tr>
                                             <th scope="row">{{ (($approved_deposits->currentPage() - 1 ) * $approved_deposits->perPage() ) + $loop->iteration }}</th>
                                             <td>
-                                                <p class="depositor-info"> </p>
-                                            </td>
-                                            <td>
                                                 <p class="depositor-info">{{$deposit->firstname}}</p>
                                             </td>
-
                                             <td>
                                                 <p class="depositor-info">{{$deposit->lastname}}</p>
                                             </td>
@@ -107,6 +105,9 @@
                                             </td>
                                             <td>
                                                 <p class="depositor-info">{{$deposit->amount}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="depositor-info"> {{$deposit->created_at}} </p>
                                             </td>
                                             <td>
                                                 <a href="{{route('admin.reversedeposit', $deposit->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Reverse</a>
