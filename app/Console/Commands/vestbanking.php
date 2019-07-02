@@ -41,7 +41,7 @@ class vestbanking extends Command
         $vestors = Vestbank::all();
 
        foreach($vestors as $vestor){
-           $rate = 0.0004164;
+           $rate = 0.0004167;
 
 
            $dailyInterest = $vestor->capital * $rate;

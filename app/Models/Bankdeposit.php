@@ -15,4 +15,9 @@ class Bankdeposit extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    public function approved()
+    {
+        return $this->approved ? true : false;
+    }
 }

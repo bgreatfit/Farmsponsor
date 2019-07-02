@@ -1,5 +1,7 @@
 <?php
 require_once 'admin.php';
+
+//use Cookie;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -88,3 +90,18 @@ Route::post('/resetPassword/{token}', 'MigrateUsersFromWordpressController@proce
 
 Route::get('retain/{cycleid}', 'RetainSponsorshipController@retain')->name('retain.sponsorship');
 });
+
+
+//Route::get('cookies', function(){
+//
+//    $minutes = 60;
+//
+//    return Cookie::queue(Cookie::make('name', 'MyVajuyhlue', $minutes));
+//
+//});
+//
+//Route::get('getcookies', function(){
+//
+//    return request()->cookie('name');
+//
+//});

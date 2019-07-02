@@ -63,6 +63,7 @@ class Kernel extends HttpKernel
         'admin' => \App\Http\Middleware\CheckIfAdminMiddleware::class,
         'usersonly' => \App\Http\Middleware\UserOnlyMiddleware::class,
         'activefarms' => \App\Http\Middleware\CanViewFarmMiddleware::class,
+        'confirmed' => \App\Http\Middleware\CheckAlreadyConfirmedMiddleware::class
     ];
 
     /**
