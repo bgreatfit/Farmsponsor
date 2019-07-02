@@ -25,6 +25,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
+                                            <th scope="col">Date</th>
                                             <th scope="col">First Name</th>
                                             <th scope="col">Last Name</th>
                                             <th scope="col">Email</th>
@@ -37,6 +38,10 @@
                                         @foreach($unapproved_deposits as $deposit)
                                             <tr>
                                                 <th scope="row">{{ (($unapproved_deposits->currentPage() - 1 ) * $unapproved_deposits->perPage() ) + $loop->iteration }}</th>
+                                                <td>
+                                                    <p class="depositor-info"> </p>
+                                                </td>
+                                                
                                                 <td>
                                                     <p class="depositor-info">{{$deposit->firstname}}</p>
                                                 </td>
@@ -71,6 +76,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
+                                            <th scope="col">Date</th>
                                             <th scope="col">First Name</th>
                                             <th scope="col">Last Name</th>
                                             <th scope="col">Email</th>
@@ -83,6 +89,9 @@
                                         @foreach($approved_deposits as $deposit)
                                         <tr>
                                             <th scope="row">{{ (($approved_deposits->currentPage() - 1 ) * $approved_deposits->perPage() ) + $loop->iteration }}</th>
+                                            <td>
+                                                <p class="depositor-info"> </p>
+                                            </td>
                                             <td>
                                                 <p class="depositor-info">{{$deposit->firstname}}</p>
                                             </td>
