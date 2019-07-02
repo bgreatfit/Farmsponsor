@@ -36,7 +36,7 @@
                     <div class="container-block">
                         <div class="flex-row">
                             <div class="flex-col-2">
-                                <p class="farmlist__text">Farm Title:</p>
+                                <p class="farmlist__text">Window Title:</p>
                                 <p class="farmlist__sub-text mb-5">{{$farm->name}}</p>
                             </div>
                             <div class="flex-col-2">
