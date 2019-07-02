@@ -83,11 +83,9 @@
                                                 <h2 class="the-process__text--heading ">Balance</h2>
                                                 <p class="the-process__text">
                                                     Once part of your Vestbanking balance is used in a 
-                                                    sponsoring window, your remaining balance is frozen from 
-                                                    sponsorship until the payout date of the window you 
-                                                    participated in. However, the remaining balance keeps 
-                                                    growing according to the Vestbanking interest rate within 
-                                                    the period of the cycle you participated in.
+                                                    sponsoring window, your remaining balance if sufficient can be used 
+                                                    for further sponsorships. However, the remaining balance keeps 
+                                                    growing according to the Vestbanking interest rate if you continue vesting funds.
                                                 </p>
                                             </div>
                                         </div>

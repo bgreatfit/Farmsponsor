@@ -32,8 +32,6 @@
                                 </div>
                             </li>
                             
-                            
-                            
                             <li class="nav-item navigation__item">
                                 <a class="nav-link navigation__item--link" href="{{route('farmlist')}}">Farm List</a>
                             </li>
