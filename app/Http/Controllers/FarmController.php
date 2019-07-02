@@ -215,9 +215,13 @@ class FarmController extends Controller
      * @param  \App\Farms  $farms
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Farm $farms)
+    public function update(Request $request, $farms)
     {
-        return $request;
+        $farm = Farm::find($farms);
+
+        $farm->update($request->except(['_token']));
+
+        return redirect()->route('admin.farmcycles');
     }
 
     /**
