@@ -37,7 +37,7 @@ function confirmation (e) {
       }
     }
   )}
-  // end of function
+// end of function
     
 $('#vest-funds__form').on('submit', confirmation);      
 $('#sponsor-now__form').on('submit', confirmation);      
