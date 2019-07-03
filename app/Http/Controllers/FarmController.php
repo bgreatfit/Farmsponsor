@@ -80,7 +80,7 @@ class FarmController extends Controller
         $this->validate($this->request, $rules);
         // Image Upload
         $image = $this->request->file('avatar');
-        $imageName = str_slug($this->request->name) . '.' . time() . '.' . $image->getClientOriginalExtension();
+        $imageName = Str::slug($this->request->name) . '.' . time() . '.' . $image->getClientOriginalExtension();
         $this->request->avatar->storeAs('public/farms', $imageName);
 
         $dataToStore = $this->request->except('_token');
@@ -179,7 +179,7 @@ class FarmController extends Controller
         // then tests if a transaction already exist with the token
         // If it does, then it generates another transaction id
         do{
-            $transactionId = rand(10000000,99999999) . Str::random(2);
+            $transactionId = rand(10000000,99999999) . StrAlias::random(2);
         }while(Transactionlogs::whereTransactionId($transactionId)->first() != NULL);
 
        return  Transactionlogs::create([
@@ -219,7 +219,18 @@ class FarmController extends Controller
     {
         $farm = Farm::find($farms);
 
-        $farm->update($request->except(['_token']));
+        $attributes = $request->except('_token');
+
+        if(array_key_exists('avatar', $attributes)){
+            // Image Upload
+            $image = $this->request->file('avatar');
+            $imageName = Str::slug($this->request->name) . '.' . time() . '.' . $image->getClientOriginalExtension();
+            $this->request->avatar->storeAs('public/farms', $imageName);
+
+            $attributes['avatar'] = $imageName;
+        }
+
+        $farm->update($attributes);
 
         return redirect()->route('admin.farmcycles');
     }
