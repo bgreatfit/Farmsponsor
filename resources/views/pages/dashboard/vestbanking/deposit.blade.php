@@ -67,7 +67,7 @@
                                 <hr>
                             </div>
 
-                            <form action="{{route('vestbanking.deposit')}}" method="POST" class="deposit-method-bank__form">
+                            <form action="{{route('vestbanking.deposit')}}" method="POST" class="deposit-method-bank__form" id="vest-funds__form">
                                 @csrf
                                 <h3 class="deposit-method-bank__heading mb-4">Vestor's Information</h3>
                                 <div class="form-row mb-4">
@@ -139,7 +139,7 @@
 
                                 <div class="row mb-4">
                                     <div class="col-12 col-md-6">
-                                        <button type="submit" class="deposit-method-bank__btn btn btn-primary form-control">Submit</button>
+                                        <button type="submit" id="submit-btn" class="deposit-method-bank__btn btn btn-primary form-control">Submit</button>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="btn-box py-3 py-md-0">
@@ -158,5 +158,5 @@
             </div>
         </div>
     </div>
-
+ 
 @endsection

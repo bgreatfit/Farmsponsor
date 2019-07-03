@@ -206,6 +206,19 @@ $text-light: rgba($color-black, .4);
     font-family: $font-family-main;
     margin: auto;
     max-width: 46.4rem;
+    border: none;
+    .card-header {
+        background-color: transparent;
+        border-bottom: none;
+        margin-bottom: 2rem;
+        .form-heading{
+            font-weight: 500;
+            font-size: 28px;
+            font-family: montserrat;
+            line-height: 34px;
+            text-transform: uppercase;
+        }
+    }
     .form__input {
         font-size: 1.7rem;
         height: 4rem;
@@ -224,6 +237,7 @@ $text-light: rgba($color-black, .4);
         height: 4rem;
         display: inline-block;
         border-radius: 5px;
+        padding: .5rem 1.3rem;
     }
     &__btn:hover{
         background-color: rgba($button-green, .9);
