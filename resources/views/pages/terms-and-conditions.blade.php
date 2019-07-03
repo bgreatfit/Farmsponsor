@@ -213,7 +213,7 @@
                             </div>
                             <div class="vestbanking__section vestbanking-account">
                                 <p class="terms__text">
-                                    1.1. Vestbanking account does not incorporate the use an ATM (Automated Teller Machine) or magnetic strip card. It may however use codes, secret numbers and IDs as issued by Farmsponsor
+                                    1.1. Vestbanking account does not incorporate the use of an ATM (Automated Teller Machine) or magnetic strip card. It may however use codes, secret numbers and IDs as issued by Farmsponsor
                                 </p>
                                 <p class="terms__text">
                                     1.2. Vestbanking account holder may choose to transfer from “Parent” bank to Vestbanking account or Normal Sponsorship account via a standing order sent on the site or to designated email or from Vestbanking account to Normal account and vice versa via the same process
@@ -258,10 +258,6 @@
                                 <p class="terms__text">
                                     2.3. End-of-day balance cannot be less than zero, no overdraws.
                                 </p>
-                                <p class="terms__text">
-                                    Terms text goes here...
-                                </p>
-
                             </div>
 
 
@@ -353,6 +349,10 @@
                                 <p class="terms__text">
                                     7.3. Farmsponsor processing any information incorrectly 
                                 </p>
+                                <p class="terms__text">
+                                    7.4. Farmsponsor undertakes to not disclose account information and data to any unauthorised third party. 
+                                    Farmsponsor undertakes to not fabricate or assume details about clients Vestbanking account, in whole or part but work with what is given by client. 
+                                </p>
                                     
                             </div>
 
@@ -361,7 +361,7 @@
                                 <p class="terms__text">
                                     8. The agreement may be terminated unilaterally by either party by giving notice in writing. 
                                     The client shall be entitled to cancel the agreement without prior notice to Farmsponsor, 
-                                    but the bank shall give reasonable prior notice of its intention to close the Vestbanking or 
+                                    but Farmsponsor shall give reasonable prior notice of its intention to close the Vestbanking or 
                                     Normal account except if the account is overdrawn or fraud or suspected fraud is occurring or 
                                     has occurred on the account, in which event the Farmsponsor shall be entitled to close the 
                                     account without prior notice.
@@ -399,7 +399,7 @@
                                     9.4. When disclosure is made at the client’s request or with his written consent
                                 </p>
                                 <p class="terms__text">
-                                    9.5. If the client has fallen behind with the repayment of his debt and has not, following formal demand, made alternative satisfactory arrangements with Farmsponsor. If the amount owed or in arrear is in dispute, this fact will also be disclosed but not the amount itself; or
+                                    9.5. If the client has fallen behind with the repayment of his debt and has not, following formal demand, made alternative satisfactory arrangements with Farmsponsor. If the amount owed or in arrears is in dispute, this fact will also be disclosed but not the amount itself; or
                                 </p>
                                 <p class="terms__text">
                                     9.6. If the client has given his written consent.

@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card reset-card">
                 <div class="card-header text-center">
-                    <h2 class="heading__secondary form-heading">Reset Password</h2>
+                    <h2 class="form-heading">Reset Password</h2>
                     {{-- {{ __('Reset Password') }} --}}
                 </div>
 
@@ -17,7 +17,7 @@
                         <input type="hidden" name="token" value="{{ $token }}">
 
                         <div class="form-group row">
-                            <label for="email" class="form__input--label col-12 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="form__input--label col-12 col-form-label">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-12 col-md-12">
                                 <input id="email" type="email" class="form__input form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ $email ?? old('email') }}" required autofocus>
@@ -54,7 +54,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-12 col-12">
-                                <button type="submit" class="btn form-control reset-card__btn">
+                                <button type="submit" class="btn reset-card__btn">
                                     {{ __('Reset Password') }}
                                 </button>
                             </div>

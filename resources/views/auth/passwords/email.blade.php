@@ -5,8 +5,7 @@
         <div class="col-md-8">
             <div class="card reset-card">
                 <div class="card-header text-center">
-                    <h2 class="heading__secondary form-heading">Reset Password</h2>
-                    {{-- {{ __('Reset Password') }} --}}
+                    <h2 class="form-heading">Reset Password</h2>
                 </div>
 
                 <div class="card-body">
@@ -35,7 +34,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-12">
-                                <button type="submit" class="btn form-control reset-card__btn">
+                                <button type="submit" class="btn reset-card__btn">
                                     {{ __('Send Password Reset Link') }}
                                 </button>
                             </div>

@@ -48,7 +48,7 @@
                                 <div class="deposit-method-bank__ruler my-4 text-center">
                                     <hr>
                                 </div>
-                                <form action="{{route('banksponsorship.sponsor')}}" method="POST" class="deposit-method-bank__form">
+                                <form action="{{route('banksponsorship.sponsor')}}" method="POST" class="deposit-method-bank__form" id="sponsor-now__form">
                                     @csrf
                                     <h3 class="deposit-method-bank__heading mb-4">Sponsor's Information</h3>
                                     <div class="form-row mb-4">

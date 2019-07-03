@@ -11117,6 +11117,21 @@ a.text-dark:focus {
   font-family: Montserrat;
   margin: auto;
   max-width: 46.4rem;
+  border: none;
+}
+
+.reset-card .card-header {
+  background-color: transparent;
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+.reset-card .card-header .form-heading {
+  font-weight: 500;
+  font-size: 28px;
+  font-family: montserrat;
+  line-height: 34px;
+  text-transform: uppercase;
 }
 
 .reset-card .form__input {
@@ -11138,6 +11153,7 @@ a.text-dark:focus {
   height: 4rem;
   display: inline-block;
   border-radius: 5px;
+  padding: 0.5rem 1.3rem;
 }
 
 .reset-card__btn:hover {
