@@ -77,11 +77,7 @@
                                 <div class="footer__item"><a href="{{route('about')}}" class="footer__links">About</a></div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="{{route('aboutVestbanking')}}" class="footer__links">Vestbanking</a></div>
-                            </div>
-                        </div>
+                       
                         <div class="row">
                             <div class="col-12 col-md-12">
                                 <div class="footer__item"><a href="#" target="_blank" class="footer__links">Blog</a></div>
@@ -115,6 +111,11 @@
                         <div class="row">
                             <div class="col-12 col-md-12">
                                 <div class="footer__item"><a href="{{route('vestbanking')}}" class="footer__links">Get involved</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <div class="footer__item"><a href="{{route('aboutVestbanking')}}" class="footer__links">Vestbanking</a></div>
                             </div>
                         </div>
                     </div>

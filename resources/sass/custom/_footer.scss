@@ -37,7 +37,9 @@ $footer-text-light: #fbfbfb;
     .footer__item .footer__links{
         color: #FBFBFB;
         font-size: 1.2rem;
-        
+    }
+    .footer-links .row .col-12.col-sm-6.col-md-3:not(:last-of-type) .footer__item .footer__links:hover{
+        color: darken($color-white, 10%);
     }
     .footer-links .footer__content .footer__text {
         font-size: 1.3rem;
@@ -68,7 +70,7 @@ $footer-text-light: #fbfbfb;
 }
 @media screen and (max-width:768px) {
     .page-footer {
-        padding: 5rem 1rem !important;
+        padding: 5rem 3rem !important;
 
         .footer-subscribe{
             .footer__segment .footer__subscribe--text {
