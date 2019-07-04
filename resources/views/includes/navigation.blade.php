@@ -22,10 +22,10 @@
                                     <a class="dropdown-item dropdown-item__link" href="{{route('about')}}">
                                         <img src="{{asset('img/nav-icon-about.svg')}}" alt="a square with exclamation mark within" class="dropdown-link-icon">  About
                                     </a>
-                                    <a class="dropdown-item dropdown-item__link" href="#">
+                                    <a class="dropdown-item dropdown-item__link" href="{{route('team')}}">
                                         <img src="{{asset('img/nav-icon-team.svg')}}" alt="Team icon font" class="dropdown-link-icon">Team
                                     </a>
-                                    <a class="dropdown-item dropdown-item__link" href="#" target="_blank">
+                                    <a class="dropdown-item dropdown-item__link" href="https://medium.com/@farmsponsorng" target="_blank">
                                         <img src="{{asset('img/nav-icon-blog.svg')}}" alt="a vector illustration" class="dropdown-link-icon">Blog
                                     </a>
                                     

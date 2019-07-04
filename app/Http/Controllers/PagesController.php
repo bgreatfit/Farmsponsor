@@ -52,6 +52,10 @@ class PagesController extends Controller {
         return view('pages.terms-and-conditions');
     }
 
+    public function team() {
+        return view('pages.team');
+    }
+
     public function dashboard() {
         return view('pages.dashboard.index');
     }

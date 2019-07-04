@@ -14,7 +14,7 @@ require_once 'admin.php';
 Route::get('/', 'PagesController@index')-> name('home');
 Route::get('about', 'PagesController@about')->name('about');
 Route::get('faq', 'PagesController@faq')->name('faq');
-Route::get('gallery', 'PagesController@gallery')->name('gallery');
+Route::get('team', 'PagesController@team')->name('team');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
 
 // Newsletter Route
