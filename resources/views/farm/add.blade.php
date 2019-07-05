@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-8">
                 <div class="add-cycle__content my-4 py-5">
                     <h1 class="add-cycle__heading text-center mb-5">Create A New Farming Cycle</h1>
                     <form action="{{route('farms.store')}}" method="POST" class="add-cycle__form" enctype="multipart/form-data">
@@ -31,7 +31,32 @@
                         <div class="row mb-4">
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="cycle-title" class="add-cycle__input--label">Cycle start date:</label>
+                                    <label for="window-open" class="add-cycle__input--label">Sponsoring Window Open:</label>
+                                    <input type="date" id="window-open" name="window_open" class="add-cycle__input form-control {{ $errors->has('window_open') ? ' is-invalid' : '' }}" placeholder="Enter window opening date">
+                                    @if ($errors->has('window_open'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('window_open') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="cycle-title" class="add-cycle__input--label">Sponsoring Window Close:</label>
+                                    <input type="date" id="window-close" name="window_close" class="add-cycle__input form-control {{ $errors->has('window_close') ? ' is-invalid' : '' }}" placeholder="Enter window opening date">
+                                    @if ($errors->has('window_close'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('window_close') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="cycle-title" class="add-cycle__input--label">Farming Cycle Start Date:</label>
                                     <input type="date" id="start-date" name="start_date" class="add-cycle__input form-control {{ $errors->has('start_date') ? ' is-invalid' : '' }}" placeholder="Enter cycle start date">
                                     @if ($errors->has('start_date'))
                                         <span class="invalid-feedback" role="alert">
@@ -42,11 +67,25 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="cycle-title" class="add-cycle__input--label">Cycle due date:</label>
+                                    <label for="cycle-title" class="add-cycle__input--label">Farming Cycle Due Date:</label>
                                     <input type="date" id="due-date" name="due_date" class="add-cycle__input form-control {{ $errors->has('due_date') ? ' is-invalid' : '' }}" placeholder="Enter cycle due date">
                                     @if ($errors->has('due_date'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('due_date') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="payout-date" class="add-cycle__input--label">Payout Date:</label>
+                                    <input type="date" id="payout-date" name="payout_date" class="add-cycle__input form-control {{ $errors->has('payout_date') ? ' is-invalid' : '' }}" >
+                                    @if ($errors->has('payout_date'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('payout_date') }}</strong>
                                         </span>
                                     @endif
                                 </div>
