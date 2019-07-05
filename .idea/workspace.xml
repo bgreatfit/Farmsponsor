@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cbcaab-26d8-4fea-90ae-f8b1234fda2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FundingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Farmsponsor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Farmsponsor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DepositController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DepositController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepositController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VestbankController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VestbankController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckAlreadyConfirmedMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAlreadyConfirmedMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Bankdeposit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bankfunding.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Transactionlogs.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Transactionlogs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/MakeDepositNOtification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/MakeDepositNotification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BankdepositFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BankdepositFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/deposit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" afterDir="false" />
@@ -152,14 +136,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VestbankController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="187" column="44" selection-start-line="187" selection-start-column="44" selection-end-line="187" selection-end-column="44" />
+            <state relative-caret-position="340">
+              <caret line="183" column="5" selection-start-line="183" selection-start-column="5" selection-end-line="183" selection-end-column="5" />
               <folding>
-                <element signature="e#2075#2763#0#PHP" />
-                <element signature="e#3228#3685#0#PHP" />
-                <element signature="e#3691#4198#0#PHP" />
                 <element signature="e#4771#5226#0#PHP" />
-                <element signature="e#5234#5660#0#PHP" />
                 <element signature="e#6868#7405#0#PHP" />
               </folding>
             </state>
@@ -440,12 +420,12 @@
       <workItem from="1561829383520" duration="63000" />
       <workItem from="1562147461229" duration="34701000" />
       <workItem from="1562228592688" duration="7177000" />
-      <workItem from="1562314728115" duration="4342000" />
+      <workItem from="1562314728115" duration="5428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75802000" />
+    <option name="totallyTimeSpent" value="76888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
@@ -878,14 +858,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VestbankController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="187" column="44" selection-start-line="187" selection-start-column="44" selection-end-line="187" selection-end-column="44" />
+        <state relative-caret-position="340">
+          <caret line="183" column="5" selection-start-line="183" selection-start-column="5" selection-end-line="183" selection-end-column="5" />
           <folding>
-            <element signature="e#2075#2763#0#PHP" />
-            <element signature="e#3228#3685#0#PHP" />
-            <element signature="e#3691#4198#0#PHP" />
             <element signature="e#4771#5226#0#PHP" />
-            <element signature="e#5234#5660#0#PHP" />
             <element signature="e#6868#7405#0#PHP" />
           </folding>
         </state>

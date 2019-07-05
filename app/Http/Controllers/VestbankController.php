@@ -54,15 +54,15 @@ class VestbankController extends Controller
 
         switch($request->option){
             case 'capital':
-                return $this->withdrawCapital();
+                return $this->withdrawFrom('capital');
             break;
 
             case 'interest':
-                return $this->withdrawInterest();
+                return $this->withdrawFrom('interest');
             break;
 
             case 'all':
-                return $this->withdrawAll();
+                return $this->withdrawFrom('balance');
             break;
 
             case 'other':
@@ -75,42 +75,16 @@ class VestbankController extends Controller
         };
     }
 
-    protected function withdrawCapital()
+    protected function withdrawFrom($field)
     {
-        if (! $this->hasFundsIn('capital')){
-            request()->session()->flash('error', 'You do not have any funds in your capital balance!');
+        if (! $this->hasFundsIn($field)){
+            request()->session()->flash('error', 'You do not have any funds in your '. $field . '\'s balance!');
             return redirect()->back();
         }
-        $this->processVestbankWithdrawalOf('capital');
+        $this->processVestbankWithdrawalOf($field);
 
         request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
         return redirect()->route('vestbanking');
-    }
-
-    protected function withdrawInterest()
-    {
-        if (! $this->hasFundsIn('interest')){
-            request()->session()->flash('error', 'You do not have any funds in your interest balance!');
-            return redirect()->back();
-        }
-        $this->processVestbankWithdrawalOf('interest');
-
-        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
-        return redirect()->route('vestbanking');
-    }
-
-    protected function withdrawAll()
-    {
-        if (! $this->hasFundsIn('capital') && ! $this->hasFundsIn('interest')){
-            request()->session()->flash('error', 'You do not have any funds in your capital or interest balance!');
-            return redirect()->back();
-        }
-
-        $this->processVestbankWithdrawalOfCapitalAndInterest();
-
-        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
-        return redirect()->route('vestbanking');
-
     }
 
     protected function hasFundsIn(String $field)
@@ -126,11 +100,18 @@ class VestbankController extends Controller
             $amount = $currentAmount;
         }
 
-
-        Auth::user()->vestbank()->update([
-            $field => $currentAmount - $amount,
-            'lock' => 1
-        ]);
+        if($field == 'balance'){
+            Auth::user()->vestbank()->update([
+                'capital' => 0,
+                'interest' => 0,
+                'lock' => 1
+            ]);
+        }else{
+            Auth::user()->vestbank()->update([
+                $field => $currentAmount - $amount,
+                'lock' => 1
+            ]);
+        }
 
         return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
@@ -149,21 +130,6 @@ class VestbankController extends Controller
         ];
 
         return WithdrawalLog::create($data);
-    }
-
-
-
-    protected function processVestbankWithdrawalOfCapitalAndInterest()
-    {
-        $amount = Auth::user()->vestbank->balance;
-//        $charges = $this->getWithdrawalCharges(Auth::user()->vestbank->interest);
-        Auth::user()->vestbank()->update([
-            'capital' => 0,
-            'interest' => 0,
-            'lock' => 1
-        ]);
-
-        return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
     protected function withdrawAmount(Request $request)
@@ -216,7 +182,6 @@ class VestbankController extends Controller
     {
         return (Auth::user()->vestbank->$field - $amount)  >= 0 ? true : false;
     }
-
 
 //    private function getWithdrawalCharges($interest)
 //    {
