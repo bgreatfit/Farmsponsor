@@ -26,11 +26,7 @@ Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('new
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
 Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
 
-
-
-
 // Route::get('/farmlist', 'FarmsController@index');
-
 
 // Users
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
@@ -62,8 +58,8 @@ Route::get('/dashboard/helpcenter', 'PagesController@dashboardHelpcenter')->name
 Route::get('/dashboard/payout', 'PayoutController@index');
     // VestBanking Routes
 Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
-Route::get('/dashboard/vestbanking/deposit', 'VestbankController@showDepositPage')->name('vestbanking.showdepositpage');
-Route::post('/dashboard/vestbanking/deposit', 'VestbankController@deposit')->name('vestbanking.deposit');
+Route::get('/dashboard/vestbanking/fund', 'FundingController@create')->name('funding.create');
+Route::post('/dashboard/vestbanking/fund', 'FundingController@fund')->name('funding.add');
 Route::post('/dashboard/vestbanking/withdraw', 'VestbankController@withdraw')->name('vestbanking.withdraw');
 Route::post('/dashboard/sponsor/deposit', 'BankSponsorshipController@sponsor')->name('banksponsorship.sponsor');
 
@@ -90,18 +86,3 @@ Route::post('/resetPassword/{token}', 'MigrateUsersFromWordpressController@proce
 
 Route::get('retain/{cycleid}', 'RetainSponsorshipController@retain')->name('retain.sponsorship');
 });
-
-
-//Route::get('cookies', function(){
-//
-//    $minutes = 60;
-//
-//    return Cookie::queue(Cookie::make('name', 'MyVajuyhlue', $minutes));
-//
-//});
-//
-//Route::get('getcookies', function(){
-//
-//    return request()->cookie('name');
-//
-//});

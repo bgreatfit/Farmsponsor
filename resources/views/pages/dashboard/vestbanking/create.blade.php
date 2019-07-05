@@ -39,15 +39,6 @@
                     </div>
                     <div class="modal-body px-4">
                         <div class="deposit-method-bank__content py-4">
-                            {{-- <div class="deposit-method-bank__account">
-                                <h3 class="deposit-method-bank__heading mb-4">Please fill the form below and proceed to make payment into the account details below</h3>
-                                <p class="deposit-method-bank__bank-info">Bank Name: First Bank Plc</p>
-                                <p class="deposit-method-bank__bank-info">Account Name: GLOBETROT FARMSPONSOR NIG LTD</p>
-                                <p class="deposit-method-bank__bank-info">Account Number: 2033547424</p>
-                            </div>
-                            <div class="deposit-method-bank__ruler my-4 text-center">
-                                <hr>
-                            </div> --}}
 
                             <div class="deposit-method-bank__account">
                                 <h3 class="deposit-method-bank__heading mb-4">Please fill the form below and proceed to make payment into the account details below</h3>
@@ -67,7 +58,7 @@
                                 <hr>
                             </div>
 
-                            <form action="{{route('vestbanking.deposit')}}" method="POST" class="deposit-method-bank__form" id="vest-funds__form">
+                            <form action="{{route('funding.add')}}" method="POST" class="deposit-method-bank__form" id="vest-funds__form">
                                 @csrf
                                 <h3 class="deposit-method-bank__heading mb-4">Vestor's Information</h3>
                                 <div class="form-row mb-4">

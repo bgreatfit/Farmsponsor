@@ -7,18 +7,19 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class MakeDepositNOtification extends Notification
+class MakeDepositNotification extends Notification
 {
     use Queueable;
+    public $depositAmount;
 
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($depositAmount)
     {
-        //
+        $this->depositAmount = $depositAmount;
     }
 
     /**
@@ -41,8 +42,9 @@ class MakeDepositNOtification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
+                    ->line('Hello!')
+                    ->subject('Deposit Notification!')
+                    ->line('You have made a funding transaction of ' . $this->depositAmount . ', we will send you an email as soon as your funding is confirmed!')
                     ->line('Thank you for using our application!');
     }
 

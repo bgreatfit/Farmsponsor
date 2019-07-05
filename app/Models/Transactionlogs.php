@@ -31,7 +31,7 @@ class Transactionlogs extends Model
             case 'App\Models\Sponsor':
                 return 'VestBank Sponsor';
                 break;
-            case 'App\Models\Bankdeposit':
+            case 'App\Models\Bankfunding':
                 return 'Money Added';
                 break;
             case 'App\Models\WithdrawalLog':
@@ -51,8 +51,8 @@ class Transactionlogs extends Model
                $sponsorshipDetail = Sponsor::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
                return 'NGN ' . number_format($this->getTransactionAmount($sponsorshipDetail)) . '.00';
                 break;
-            case 'App\Models\Bankdeposit':
-               $bankDepositDetail = Bankdeposit::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
+            case 'App\Models\Bankfunding':
+               $bankDepositDetail = Bankfunding::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
                return 'NGN ' . number_format($bankDepositDetail->amount) . '.00';
                 break;
             case 'App\Models\WithdrawalLog':
@@ -86,8 +86,8 @@ class Transactionlogs extends Model
                $sponsorshipDetail = BankSponsorship::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
                return 'NGN ' . number_format($this->getReturnsAmount($sponsorshipDetail)) . '.00';
                 break;
-            // case 'App\Models\Bankdeposit':
-            //    $bankDepositDetail = Bankdeposit::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
+            // case 'App\Models\Bankfunding':
+            //    $bankDepositDetail = Bankfunding::whereUserId($this->user_id)->whereId($this->transactionable_id)->first();
             //    return 'NGN ' . number_format($bankDepositDetail->amount) . '.00';
             //     break;
             // case 'App\Models\WithdrawalLog':

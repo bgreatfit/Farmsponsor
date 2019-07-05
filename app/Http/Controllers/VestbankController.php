@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Auth;
-use App\Models\Bankdeposit;
+use App\Models\Bankfunding;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Models\Transactionlogs;
@@ -22,36 +22,6 @@ class VestbankController extends Controller
     {
         return view('pages.dashboard.vestbanking.index');
     }
-
-    public function showDepositPage()
-    {
-        return view('pages.dashboard.vestbanking.deposit');
-    }
-
-    public function deposit(Request $request)
-    {
-        $rules = [
-            'amount' => 'required | integer',
-        ];
-
-        $this->validate($request, $rules);
-        if(! $this->createBankDeposit($request->except('_token'))){
-            $request->session()->flash('error', 'Error Processing!');
-            return redirect()->back();
-        }
-
-        $request->session()->flash('success', 'Deposit registered, proceed to make payment!');
-        return redirect()->route('dashboard');
-    }
-
-    public function createBankDeposit(array $data)
-    {
-        $data['user_id'] = Auth::id();
-        $bankdeposit = Bankdeposit::create($data);
-        $this->logTransaction($bankdeposit);
-        return $bankdeposit;
-    }
-
 
     public function logTransaction($model)
     {
@@ -117,6 +87,32 @@ class VestbankController extends Controller
         return redirect()->route('vestbanking');
     }
 
+    protected function withdrawInterest()
+    {
+        if (! $this->hasFundsIn('interest')){
+            request()->session()->flash('error', 'You do not have any funds in your interest balance!');
+            return redirect()->back();
+        }
+        $this->processVestbankWithdrawalOf('interest');
+
+        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
+        return redirect()->route('vestbanking');
+    }
+
+    protected function withdrawAll()
+    {
+        if (! $this->hasFundsIn('capital') && ! $this->hasFundsIn('interest')){
+            request()->session()->flash('error', 'You do not have any funds in your capital or interest balance!');
+            return redirect()->back();
+        }
+
+        $this->processVestbankWithdrawalOfCapitalAndInterest();
+
+        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
+        return redirect()->route('vestbanking');
+
+    }
+
     protected function hasFundsIn(String $field)
     {
         return Auth::user()->vestbank->$field != 0 ? true : false ;
@@ -155,42 +151,18 @@ class VestbankController extends Controller
         return WithdrawalLog::create($data);
     }
 
-    protected function withdrawInterest()
-    {
-        if (! $this->hasFundsIn('interest')){
-            request()->session()->flash('error', 'You do not have any funds in your interest balance!');
-            return redirect()->back();
-        }
-        $this->processVestbankWithdrawalOf('interest');
 
-        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
-        return redirect()->route('vestbanking');
-    }
-
-    protected function withdrawAll()
-    {
-        if (! $this->hasFundsIn('capital') && ! $this->hasFundsIn('interest')){
-            request()->session()->flash('error', 'You do not have any funds in your capital or interest balance!');
-            return redirect()->back();
-        }
-
-        $this->processVestbankWithdrawalOfCapitalAndInterest();
-
-        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
-        return redirect()->route('vestbanking');
-
-    }
 
     protected function processVestbankWithdrawalOfCapitalAndInterest()
     {
         $amount = Auth::user()->vestbank->balance;
+//        $charges = $this->getWithdrawalCharges(Auth::user()->vestbank->interest);
         Auth::user()->vestbank()->update([
             'capital' => 0,
             'interest' => 0,
             'lock' => 1
         ]);
-        $vestBank = Vestbank::whereUserId(Auth::id())->first();
-       ;
+
         return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
@@ -201,19 +173,19 @@ class VestbankController extends Controller
             return redirect()->back();
         }
 
-        if($this->balanceInCapitalUpto($request->amount)){
+        if($this->canWithdrawFrom('capital', $request->amount)){
             $this->processVestbankWithdrawalOf('capital', $request->amount);
             request()->session()->flash('success', 'Transaction Successfull');
             return redirect()->back();
         }
 
-        if($this->balanceInInterestUpto($request->amount)){
+        if($this->canWithdrawFrom('interest',$request->amount)){
             $this->processVestbankWithdrawalOf('interest', $request->amount);
             request()->session()->flash('success', 'Transaction Successfull');
             return redirect()->back();
         }
 
-        if($this->balanceInInterestandCapitalUpto($request->amount)){
+        if($this->canWithdrawFrom('balance',$request->amount)){
             $this->processVestbankWithdrawalOfAmountFromCapitalAndInterest($request->amount);
             request()->session()->flash('success', 'Transaction Successfull');
             return redirect()->back();
@@ -240,19 +212,15 @@ class VestbankController extends Controller
         return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
-    protected function balanceInCapitalUpto($amount)
+    protected function canWithdrawFrom($field, $amount)
     {
-        return (Auth::user()->vestbank->capital - $amount)  >= 0 ? true : false;
+        return (Auth::user()->vestbank->$field - $amount)  >= 0 ? true : false;
     }
 
-    protected function balanceInInterestUpto($amount)
-    {
-        return (Auth::user()->vestbank->interest - $amount)  >= 0 ? true : false;
-    }
 
-    protected function balanceInInterestandCapitalUpto($amount)
-    {
-        return (Auth::user()->vestbank->balance - $amount)  >= 0 ? true : false;
-    }
+//    private function getWithdrawalCharges($interest)
+//    {
+//        return 256.5 + ($interest * (12/100));
+//    }
 
 }

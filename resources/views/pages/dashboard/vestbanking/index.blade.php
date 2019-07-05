@@ -23,12 +23,12 @@
             <div class="row">
                 <div class="col-md-6 col-12">
                     <div class="vestbank-bank-card-section">
-                        <a href="{{route('vestbanking.showdepositpage')}}" class="vestbank__btn-wrap">
+                        <a href="{{route('funding.create')}}" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__deposit">
                                 <div class="vestbank__card--image-box">
                                 <img src="{{asset('img/vestbank-03.svg')}}" alt="Credit card" class="vestbank__card--image">
                                 </div>
-                                <p class="vestbank__card--text">Add Money</p>
+                                <p class="vestbank__card--text">Fund Account</p>
                             </div>
                         </a>
                     </div>

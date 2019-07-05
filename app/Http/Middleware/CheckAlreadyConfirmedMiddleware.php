@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use App\Models\Bankdeposit;
+use App\Models\Bankfunding;
 use Closure;
 
 class CheckAlreadyConfirmedMiddleware
@@ -17,7 +17,7 @@ class CheckAlreadyConfirmedMiddleware
     public function handle($request, Closure $next)
     {
 //        return die($request->route('deposit'));
-//        $deposit = Bankdeposit::find($request->route('deposit'));
+//        $deposit = Bankfunding::find($request->route('deposit'));
         if(! $request->route('deposit')){
             return abort(404);
         }
