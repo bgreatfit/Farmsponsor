@@ -30,8 +30,6 @@ class MigrateUsersFromWordpressController extends Controller
                     'status' => 'pending',
                 ]);
 
-                $user->notify(new ResetPassword($user, $token, $user->email));
-
             }
 
         });

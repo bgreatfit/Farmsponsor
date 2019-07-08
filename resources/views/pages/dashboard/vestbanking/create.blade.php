@@ -9,6 +9,12 @@
                     <div class="deposit-method__content my-5 py-5">
                         <h1 class="deposit-method__heading text-center ">Preferred method of adding funds</h1>
                         <ul class="list-group">
+                            @if($errors->any())
+                            <li class="alert-danger list-group-item">
+                                You did not supply all the needed information needed to process your vest bank funding. <br>
+                                Please try again and ensure all fields are supplied
+                            </li>
+                            @endif
                             <li class="list-group-item deposit-method">
                                 <a href="#" data-toggle="modal" data-target="#deposit-method-bank"
                                     role="button" class="deposit-method__link">

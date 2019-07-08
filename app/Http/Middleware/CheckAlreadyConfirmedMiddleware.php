@@ -18,7 +18,7 @@ class CheckAlreadyConfirmedMiddleware
     {
 //        return die($request->route('deposit'));
 //        $deposit = Bankfunding::find($request->route('deposit'));
-        if(! $request->route('deposit')){
+        if(! $request->route('deposit')){ //no deposit request
             return abort(404);
         }
 

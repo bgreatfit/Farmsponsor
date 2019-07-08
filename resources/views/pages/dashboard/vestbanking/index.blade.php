@@ -59,7 +59,7 @@
                             </div>
                             <div class="modal-body">
                                 <p class="vestbankwithdraw__form--text mb-3 text-center">How much would you like to withdraw?</p>
-                                <form action="{{route('vestbanking.withdraw')}}" class="vestbank-withdraw__form" method="POST">
+                                <form action="{{route('funding.withdraw')}}" class="vestbank-withdraw__form" method="POST">
                                     @csrf
                                     <div class="form-check form-check-inline">
                                         <label for="vestbank-withdraw__capital" class="radio-inline">
