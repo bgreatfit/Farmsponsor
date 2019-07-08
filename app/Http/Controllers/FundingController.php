@@ -33,6 +33,7 @@ class FundingController extends Controller
         ];
 
         $this->validate($request, $rules);
+
         if(! $this->createBankFunding($request->except('_token'))){
             $request->session()->flash('error', 'Error Processing!');
             return redirect()->back();
@@ -80,6 +81,7 @@ class FundingController extends Controller
         $rules = [
             'option' => 'required | string',
         ];
+
         $this->validate($request, $rules);
 
         switch($request->option){
@@ -126,24 +128,57 @@ class FundingController extends Controller
     {
         $currentAmount = Auth::user()->vestbank->$field;
 
+
         if(is_null($amount)){
             $amount = $currentAmount;
         }
 
-        if($field == 'balance'){
-            Auth::user()->vestbank()->update([
-                'capital' => 0,
-                'interest' => 0,
-                'lock' => 1
-            ]);
-        }else{
-            Auth::user()->vestbank()->update([
-                $field => $currentAmount - $amount,
-                'lock' => 1
-            ]);
+
+        switch ($field){
+
+            case 'balance':
+                Auth::user()->vestbank()->update([
+                    'capital' => 0,
+                    'interest' => 0,
+                    'lock' => 1
+                ]);
+
+                return $this->logTransaction($this->logWithdrawalRequest($amount - $this->getWithdrawalCharges()));
+                break;
+
+            case 'interest':
+                $currentAmount = Auth::user()->vestbank->$field;
+
+                if($currentAmount - ($amount + $this->getWithdrawalCharges() >= 0)){
+                    Auth::user()->vestbank()->update([
+                        $field => $currentAmount - ($amount + $this->getWithdrawalCharges()),
+                        'lock' => 1
+                    ]);
+
+                    return $this->logTransaction($this->logWithdrawalRequest($amount + $this->getWithdrawalCharges()));
+                    return redirect()->back();
+                }
+//            return redirect()->back();
+
+//                Auth::user()->vestbank()->update([
+//                    $field => $currentAmount - $amount,
+//                    'lock' => 1
+//                ]);
+//
+//                return $this->logTransaction($this->logWithdrawalRequest($amount));
+                break;
         }
 
-        return $this->logTransaction($this->logWithdrawalRequest($amount));
+//        if(Auth::user()->vestbank->balance - ($amount + $this->getWithdrawalCharges() < 0)){
+//            return redirect()->back();
+//        }
+//
+//        Auth::user()->vestbank()->update([
+//            $field => $currentAmount - $amount,
+//            'lock' => 1
+//        ]);
+//
+//        return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
     protected function logWithdrawalRequest($amount)
@@ -216,5 +251,15 @@ class FundingController extends Controller
     public function sponsorshipEmails(User $user)
     {
 
+    }
+
+    protected function getWithdrawalCharges()
+    {
+        return 256.5 + $this->getIncomeandVATTax();
+    }
+
+    protected function getIncomeandVATTax()
+    {
+        return Auth::user()->vestbank->interest * 0.12;
     }
 }
