@@ -24,11 +24,7 @@ Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('new
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
 Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
 
-
-
-
 // Route::get('/farmlist', 'FarmsController@index');
-
 
 // Users
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
