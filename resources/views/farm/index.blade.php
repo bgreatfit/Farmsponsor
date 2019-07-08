@@ -1,7 +1,7 @@
 @extends('layouts.basic')
 
 @section('content')
-<section class="farmlist my-5 py-5">
+<section class="farmlist-page-wrap">
     <div class="container">
         <div class="row">
             @foreach($farms as $farm)

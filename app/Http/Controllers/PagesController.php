@@ -36,10 +36,6 @@ class PagesController extends Controller {
         return view('pages.register');
     }
 
-    public function gallery() {
-        return view('pages.gallery');
-    }
-
     public function vestbanking() {
         return view('pages.vestbanking');
     }
@@ -50,6 +46,10 @@ class PagesController extends Controller {
 
     public function termsAndConditions() {
         return view('pages.terms-and-conditions');
+    }
+
+    public function team() {
+        return view('pages.team');
     }
 
     public function dashboard() {
