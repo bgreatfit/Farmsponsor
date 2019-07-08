@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\PasswordResetSuccessful;
 use Auth;
 use Str;
 use App\User;
@@ -15,31 +16,24 @@ class MigrateUsersFromWordpressController extends Controller
 {
     public function sendmails()
     {
-        $emails = collect([
-            'ishukpong418@gmail.com',
-            'dannithomx@gmail.com',
-            'chykedee@gmail.com'
-        ]);
 
-        $emails->each(function($email){
-            $user = User::create([
-                'firstname' => 'Elisha',
-                'lastname' => 'Ukpong',
-                'email' => $email
-            ]);
+        User::chunk('50', function ($users){
 
-            do{
-                $token = str_shuffle('abqwertyuioplkjhgfdsa13425678u1234567890');
-            }while(UserTokens::whereToken($token)->first() != NULL);
+            foreach($users as $user){
+                do{
+                    $token = str_shuffle('abqwertyuioplkjhgfdsa13425678u1234567890');
+                }while(UserTokens::whereToken($token)->first() != NULL);
 
-            UserTokens::create([
-                'email' =>$email,
-                'token' => $token,
-                'status' => 'pending',
-            ]);
+                UserTokens::create([
+                    'email' =>$user->email,
+                    'token' => $token,
+                    'status' => 'pending',
+                ]);
 
-            $user->notify(new ResetPassword($user, $token, $email));
+            }
+
         });
+
 
     }
 
@@ -65,6 +59,9 @@ class MigrateUsersFromWordpressController extends Controller
         if($user->update([
             'password' => Hash::make($request->password)
         ])){
+            $user->notify(new PasswordResetSuccessful);
+            $userToken->delete();
+            $request->session()->flash('success', 'Password Updated!');
             return redirect()->route('login');
         };
 

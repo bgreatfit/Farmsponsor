@@ -456,11 +456,11 @@
                 </div>
                 <div class="row">
                     @foreach($farms as $farm)
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="farmlist-content">
-                            @include('includes.farmsCard')
+                        <div class="col-md-3 col-12 col-sm-8 mx-sm-auto mx-auto">
+                            <div class="content-wrap card-box">
+                                @include('includes.farmsCard')
+                            </div>
                         </div>
-                    </div>
                     @endforeach
                 </div>
                 <div class="row">

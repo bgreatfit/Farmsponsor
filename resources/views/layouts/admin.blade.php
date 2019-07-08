@@ -42,5 +42,8 @@
     </section>
     </div>
     @include('includes.scripts')
+
+{{--    {!! TidioChat::js() !!}--}}
+
 </body>
 </html>

@@ -55,13 +55,14 @@ class Farm extends Model
         return $this->payout ? true : false;
     }
 
-    // public function getStartDateAttribute($value)
-    // {
-    //     return Carbon::parse($value)->format('Y-m-d\TH:i');
-    // }
+    public function getEditStartDateAttribute()
+    {
+         return Carbon::parse($this->start_date)->format('Y-m-d');
+    }
 
-    // public function getDueDateAttribute($value)
-    // {
-    //     return Carbon::parse($value)->format('Y-m-d\TH:i');
-    // }
+    public function getEditDueDateAttribute()
+    {
+        return Carbon::parse($this->due_date)->format('Y-m-d');
+    }
+
 }

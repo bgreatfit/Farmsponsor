@@ -23,12 +23,12 @@
             <div class="row">
                 <div class="col-md-6 col-12">
                     <div class="vestbank-bank-card-section">
-                        <a href="{{route('vestbanking.showdepositpage')}}" class="vestbank__btn-wrap">
+                        <a href="{{route('funding.create')}}" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__deposit">
                                 <div class="vestbank__card--image-box">
                                 <img src="{{asset('img/vestbank-03.svg')}}" alt="Credit card" class="vestbank__card--image">
                                 </div>
-                                <p class="vestbank__card--text">Add Money</p>
+                                <p class="vestbank__card--text">Fund Account</p>
                             </div>
                         </a>
                     </div>
@@ -59,7 +59,7 @@
                             </div>
                             <div class="modal-body">
                                 <p class="vestbankwithdraw__form--text mb-3 text-center">How much would you like to withdraw?</p>
-                                <form action="{{route('vestbanking.withdraw')}}" class="vestbank-withdraw__form" method="POST">
+                                <form action="{{route('funding.withdraw')}}" class="vestbank-withdraw__form" method="POST">
                                     @csrf
                                     <div class="form-check form-check-inline">
                                         <label for="vestbank-withdraw__capital" class="radio-inline">

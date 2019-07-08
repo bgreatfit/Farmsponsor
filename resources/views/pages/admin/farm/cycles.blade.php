@@ -34,8 +34,8 @@
                             </td>
                             <td>{{$farm->start_unit}} </td>
                             <td>{{$farm->units}} </td>
-                            <td>{{$farm->start_date->diffForHumans()}}</td>
-                            <td>{{$farm->due_date->diffForHumans()}}</td>
+                            <td>{{ \Carbon\Carbon::parse($farm->start_date)->format('d-M-Y')}}</td>
+                            <td>{{ \Carbon\Carbon::parse($farm->due_date)->format('d-M-Y')}}</td>
                             <td>
                                 @if($farm->isSoldOut())
                                     <a href="{{route('farms.open',$farm->id)}}" class="btn btn-success btn-lg btn-secondary farming-cycle__info">Open</a>

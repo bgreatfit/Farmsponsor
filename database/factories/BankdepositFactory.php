@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\Models\Bankdeposit::class, function (Faker $faker) {
+$factory->define(App\Models\Bankfunding::class, function (Faker $faker) {
     return [
         'firstname' => $faker->firstname,
         'lastname' => $faker->lastname,
