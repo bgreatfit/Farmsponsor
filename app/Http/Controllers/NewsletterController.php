@@ -20,7 +20,7 @@ class NewsletterController extends Controller
 
         if(!Newsletter::subscribe($request->email)){
             Session::flash('error',  Newsletter::getLastError());
-            return 5;//redirect()->back();
+            return redirect()->back();
         }
 
         Session::flash('success', 'Email Subscribed!');

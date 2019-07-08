@@ -10,11 +10,11 @@
                         @csrf
                         <div class="form-group mb-4">
                             <label for="cycle-title" class="add-cycle__input--label mr-auto">Select farm cycle photo:</label>
-                            <input type="file" id="cycle-photo" name="cyclePhoto" class="add-cycle__input {{ $errors->has('cyclePhoto') ? ' is-invalid' : '' }}" >
+                            <input type="file" id="cycle-photo" name="avatar" class="add-cycle__input {{ $errors->has('cyclePhoto') ? ' is-invalid' : '' }}" >
 
-                            @if ($errors->has('cyclePhoto'))
+                            @if ($errors->has('avatar'))
                                 <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $errors->first('cyclePhoto') }}</strong>
+                                    <strong>{{ $errors->first('avatar') }}</strong>
                                 </span>
                             @endif
                         </div>
@@ -33,7 +33,7 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="cycle-title" class="add-cycle__input--label">Cycle start date:</label>
-                                    <input type="datetime-local" id="start-date" name="startDate" class="add-cycle__input form-control {{ $errors->has('startDate') ? ' is-invalid' : '' }}" placeholder="Enter cycle start date" value="{{$farm->start_date}}">
+                                    <input type="date" id="start-date" name="start_date" class="add-cycle__input form-control {{ $errors->has('startDate') ? ' is-invalid' : '' }}" placeholder="Enter cycle start date" value="{{$farm->edit_start_date}}">
                                     @if ($errors->has('startDate'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('startDate') }}</strong>
@@ -44,7 +44,7 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="cycle-title" class="add-cycle__input--label">Cycle due date:</label>
-                                    <input type="datetime-local" id="due-date" name="dueDate" class="add-cycle__input form-control {{ $errors->has('dueDate') ? ' is-invalid' : '' }}" placeholder="Enter cycle due date" value="{{$farm->due_date}}">
+                                    <input type="date" id="due-date" name="due_date" class="add-cycle__input form-control {{ $errors->has('dueDate') ? ' is-invalid' : '' }}" placeholder="Enter cycle due date" value="{{$farm->editdue_date}}">
                                     @if ($errors->has('dueDate'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('dueDate') }}</strong>

@@ -1,5 +1,7 @@
 <?php
 require_once 'admin.php';
+
+//use Cookie;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,11 +26,7 @@ Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('new
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
 Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
 
-
-
-
 // Route::get('/farmlist', 'FarmsController@index');
-
 
 // Users
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
@@ -58,12 +56,12 @@ Route::get('/dashboard/helpcenter', 'PagesController@dashboardHelpcenter')->name
 
 // Payout Routes
 Route::get('/dashboard/payout', 'PayoutController@index');
-    // VestBanking Routes
+// VestBanking Routes
 Route::get('/dashboard/vestbanking', 'VestbankController@index')->name('vestbanking');
-Route::get('/dashboard/vestbanking/deposit', 'VestbankController@showDepositPage')->name('vestbanking.showdepositpage');
-Route::post('/dashboard/vestbanking/deposit', 'VestbankController@deposit')->name('vestbanking.deposit');
-Route::post('/dashboard/vestbanking/withdraw', 'VestbankController@withdraw')->name('vestbanking.withdraw');
-Route::post('/dashboard/sponsor/deposit', 'BankSponsorshipController@sponsor')->name('banksponsorship.sponsor');
+Route::get('/dashboard/vestbanking/fund', 'FundingController@create')->name('funding.create');
+Route::post('/dashboard/vestbanking/fund', 'FundingController@fund')->name('funding.add');
+Route::post('/dashboard/vestbanking/withdraw', 'FundingController@withdraw')->name('funding.withdraw');
+Route::post('/dashboard/sponsor/fund', 'BankSponsorshipController@sponsor')->name('banksponsorship.sponsor');
 
 // Transactions Route
 Route::get('/transactions', 'TransactionsController@index')->name('transactions.all');

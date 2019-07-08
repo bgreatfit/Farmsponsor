@@ -27,8 +27,6 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('vestbank:update')
             ->daily();
-        // $schedule->command('inspire')
-        //          ->hourly();
     }
 
     /**

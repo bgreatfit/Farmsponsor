@@ -30,5 +30,8 @@
     </section>
     @include('includes.footer')
     @include('includes.scripts')
+
+{{--    {!! TidioChat::js() !!}--}}
+
 </body>
 </html>

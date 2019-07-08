@@ -29,9 +29,7 @@
                         <td> {{$transaction->created_at->diffForHumans()}}</td>
                         <td>{{$transaction->amount}}</td>
                         <td>
-                          <p class="transaction__table--id">
-                              
-                          </p>
+                            {{$transaction->returns}}
                         </td>
                     </tr>
                   @endforeach
