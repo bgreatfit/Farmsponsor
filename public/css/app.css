@@ -10663,6 +10663,139 @@ a.text-dark:focus {
   font-size: 1.6rem;
 }
 
+.about-wrap {
+  background-color: #ffffff;
+}
+
+.about-wrap .about-jumbotron {
+  background-image: url(/images/about-header.png?6bfb582c0d62481042b6c1cd7e88db38);
+  height: 44.4rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 4.8rem;
+}
+
+.about-wrap .main-content-area .about-heading {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 39px;
+  color: #36A93F;
+  margin-bottom: 3.1rem;
+}
+
+.about-wrap .main-content-area .about-text {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  line-height: 163.8%;
+  color: #3C4049;
+}
+
+.about-wrap .main-content-area .about-intro__content {
+  margin-bottom: 5rem;
+}
+
+.about-wrap .main-content-area .about-icon-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-wrap .main-content-area .about-values {
+  margin-bottom: 4.8rem;
+}
+
+.about-wrap .main-content-area .about-values__heading {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-wrap .main-content-area .about-values__heading .heading-span {
+  margin-right: 3.7rem;
+}
+
+.about-wrap .main-content-area .about-values .about-values__content {
+  margin-bottom: 4.2rem;
+}
+
+.about-wrap .main-content-area .about-mission {
+  margin-bottom: 9rem;
+}
+
+.about-wrap .main-content-area .about-counting {
+  background-color: #0E2503;
+  padding: 7.6rem 0;
+}
+
+.about-wrap .main-content-area .about-counting__heading {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 44px;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.about-wrap .main-content-area .about-counting__icon {
+  width: 19.8rem;
+  margin-bottom: 3rem;
+}
+
+.about-wrap .main-content-area .about-partners {
+  background-color: #EAECEF;
+  padding: 8.3rem 0;
+}
+
+.about-wrap .main-content-area .about-partners__heading {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 163.8%;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.about-wrap .main-content-area .about-partners__image {
+  width: 21.7rem;
+  margin-bottom: 5rem;
+}
+
+/*
+    STYLING FOR LARGER SCREENS
+*/
+
+@media screen and (min-width: 768px) {
+  .about-wrap .main-content-area .about-icon-wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-wrap .main-content-area .about-counting__heading-wrap .about-counting__heading,
+  .about-wrap .main-content-area .about-partners__heading-wrap .about-partners__heading {
+    text-align: left;
+  }
+
+  .about-wrap .main-content-area .about-counting__icon,
+  .about-wrap .main-content-area .about-partners__image {
+    margin-bottom: 0;
+  }
+
+  .about-wrap .main-content-area .about-counting__icon:not(:last-child) {
+    margin-right: 1.77rem;
+  }
+
+  .about-wrap .main-content-area .about-partners__image:not(:last-child) {
+    margin-right: 8.9rem;
+  }
+}
+
 .main-about {
   background-color: #ffffff;
   color: #000000;

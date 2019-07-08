@@ -42,34 +42,14 @@
                 <img src="{{asset('img/b-kenneth.svg')}}" alt="Bill Kenneth, CEO" class="member__photo">
                 <h3 class="member__name">Bill Kenneths</h3>
                 <p class="member__job">Chairman, MD/CEO</p>
-                <div class="member__socials">
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                  </a>
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                  </a>
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                  </a>
-                </div>
+                
               </div>
 
               <div class="team-member__card">
-                <img src="{{asset('img/tm.svg')}}" alt="Secretary, Director" class="member__photo">
+                <img src="{{asset('img/tm-director.svg')}}" alt="Secretary, Director" class="member__photo">
                 <h3 class="member__name">Akpa Chike</h3>
                 <p class="member__job">Secretary, Director</p>
-                <div class="member__socials">
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                  </a>
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                  </a>
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -87,51 +67,21 @@
                   <img src="{{asset('img/tm-ux-ui.svg')}}" alt="User Experience Designer" class="member__photo">
                   <h3 class="member__name">Emmanuel Jacobson</h3>
                   <p class="member__job"> User Experience Design</p>
-                  <div class="member__socials">
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                    </a>
-                  </div>
+                 
                 </div>
 
                 <div class="team-member__card">
                   <img src="{{asset('img/tm-frontend-dev.svg')}}" alt="Frontend Developer" class="member__photo">
                   <h3 class="member__name">Daboye Romeo</h3>
                   <p class="member__job">Frontend Developer</p>
-                  <div class="member__socials">
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                    </a>
-                  </div>
+                 
                 </div>
 
                 <div class="team-member__card">
                   <img src="{{asset('img/tm-lsd.svg')}}" alt="Lead Software Developer" class="member__photo">
                   <h3 class="member__name">Elisha Ukpong</h3>
                   <p class="member__job">Lead Software Developer</p>
-                  <div class="member__socials">
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                    </a>
-                  </div>
+                 
                 </div>
               </div>
           </div>
@@ -144,51 +94,21 @@
                     <img src="{{asset('img/tm-cro-1.svg')}}" alt="Client Relationship Officer" class="member__photo">
                     <h3 class="member__name">Catherine Umerah</h3>
                     <p class="member__job"> Client Relationship Officer </p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
         
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-marketing-exec.svg')}}" alt="Marketing Executive" class="member__photo">
                     <h3 class="member__name">Peterson Okereke</h3>
                     <p class="member__job">Marketing Executive</p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
         
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-farm-admin.svg')}}" alt="Farm Admin" class="member__photo">
                     <h3 class="member__name"> Precious Madu</h3>
                     <p class="member__job">Farm Admin</p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
             </div>
@@ -201,51 +121,21 @@
                     <img src="{{asset('img/tm-cro-2.svg')}}" alt="Client Relationship Officer " class="member__photo">
                     <h3 class="member__name">Emmanuella Anthony</h3>
                     <p class="member__job">Client Relationship Officer </p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
         
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-a-sales-manager.svg')}}" alt="Assistant Sales Manager" class="member__photo">
                     <h3 class="member__name">Omonefe Enato</h3>
                     <p class="member__job">Assistant Sales Manager</p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
         
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-sales-manager.svg')}}" alt="Assistant Sales Manager" class="member__photo">
                     <h3 class="member__name">Gerald Akpa</h3>
                     <p class="member__job">Assistant Sales Manager</p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
             </div>
@@ -258,51 +148,21 @@
                     <img src="{{asset('img/tm-cro-3.svg')}}" alt="Client Relationship Officer " class="member__photo">
                     <h3 class="member__name">Opuere Amakoroma</h3>
                     <p class="member__job">Client Relationship Officer </p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
         
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-accounts-exec.svg')}}" alt="Accounts Executive" class="member__photo">
                     <h3 class="member__name">Ogungboye Abidemi</h3>
                     <p class="member__job"> Accounts Executive </p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
         
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-cro-4.svg')}}" alt="Clients Relationship Officer" class="member__photo">
                     <h3 class="member__name">Oluwatobiloba Fabanwo </h3>
                     <p class="member__job">Clients Relationship Officer</p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
             </div>
@@ -315,51 +175,21 @@
                     <img src="{{asset('img/tm-farm-manager.svg')}}" alt="Farm Manager" class="member__photo">
                     <h3 class="member__name">Udochukwu Ginikanwa</h3>
                     <p class="member__job">Farm Manager</p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
         
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-logistics.svg')}}" alt="Logistics" class="member__photo">
                     <h3 class="member__name">Goodluck Obinwanne</h3>
                     <p class="member__job">Logistics</p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
         
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-brooding-specialist.svg')}}" alt="Brooding Specialist" class="member__photo">
                     <h3 class="member__name">Justin Njoku</h3>
                     <p class="member__job">Brooding Specialist</p>
-                    <div class="member__socials">
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                      </a>
-                      <a href="#" class="member__socials--link">
-                        <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
             </div>
@@ -372,34 +202,14 @@
                   <img src="{{asset('img/tm-logistics-2.svg')}}" alt="Logistics" class="member__photo">
                   <h3 class="member__name">Adewale Oluwaseyi </h3>
                   <p class="member__job">Logistics</p>
-                  <div class="member__socials">
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                    </a>
-                  </div>
+                 
                 </div>
         
                 <div class="team-member__card">
                   <img src="{{asset('img/tm-a-dir-livestock.svg')}}" alt="Assist. Director, Livestock" class="member__photo">
                   <h3 class="member__name">Wisdom Ndubuisi</h3>
                   <p class="member__job">Assist. Director, Livestock</p>
-                  <div class="member__socials">
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                    </a>
-                    <a href="#" class="member__socials--link">
-                      <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                    </a>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -412,17 +222,7 @@
                 <img src="{{asset('img/tm-advisor.svg')}}" alt="Advisor" class="member__photo">
                 <h3 class="member__name">Ademula Olobunmi</h3>
                 <p class="member__job">Advisor</p>
-                <div class="member__socials">
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-linked-in.svg')}}" alt="LinkedIn" class="member__socials--icon">
-                  </a>
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-email.svg')}}" alt="email" class="member__socials--icon">
-                  </a>
-                  <a href="#" class="member__socials--link">
-                    <img src="{{asset('img/team-twitter.svg')}}" alt="twitter" class="member__socials--icon">
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
