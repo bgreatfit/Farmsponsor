@@ -10663,6 +10663,21 @@ a.text-dark:focus {
   font-size: 1.6rem;
 }
 
+.toast-info {
+  background-color: #2f96b4;
+  font-size: 15px;
+}
+
+.toast-error {
+  background-color: #e00000;
+  font-size: 15px;
+}
+
+.toast-success {
+  background-color: #279B37;
+  font-size: 15px;
+}
+
 .about-wrap {
   background-color: #ffffff;
 }
@@ -12128,7 +12143,7 @@ a.text-dark:focus {
 
 .navigation-main .navigation-menu .navigation__item--link {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1.55rem;
   line-height: 18px;
   white-space: nowrap;
   padding: 0.5rem 2rem;
@@ -12168,7 +12183,7 @@ a.text-dark:focus {
 
 .navigation-main .navigation-menu .navigation__item .nav-link-signUp {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #6E9E3D;
 }
 
@@ -12186,12 +12201,16 @@ a.text-dark:focus {
 
 @media screen and (min-width: 768px) and (max-width: 896px) {
   .navigation-main .navigation-menu .navigation__item--link {
-    font-size: 13px;
+    font-size: 1.3rem;
     padding: 5px;
   }
 
   .navigation-main .navigation-menu .navigation__item .nav-link-signUp {
     margin-right: 0.8rem;
+  }
+
+  .navigation-main .navigation-menu .navigation__item .dropdown-menu .dropdown-item__link {
+    font-size: 1.3rem !important;
   }
 }
 
