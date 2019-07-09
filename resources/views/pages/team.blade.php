@@ -93,7 +93,7 @@
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-cro-1.svg')}}" alt="Client Relationship Officer" class="member__photo">
                     <h3 class="member__name">Catherine Umerah</h3>
-                    <p class="member__job"> Client Relationship Officer </p>
+                    <p class="member__job"> Clients Relationship Officer </p>
                     
                   </div>
         
@@ -120,7 +120,7 @@
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-cro-2.svg')}}" alt="Client Relationship Officer " class="member__photo">
                     <h3 class="member__name">Emmanuella Anthony</h3>
-                    <p class="member__job">Client Relationship Officer </p>
+                    <p class="member__job">Clients Relationship Officer </p>
                     
                   </div>
         
@@ -147,7 +147,7 @@
                   <div class="team-member__card">
                     <img src="{{asset('img/tm-cro-3.svg')}}" alt="Client Relationship Officer " class="member__photo">
                     <h3 class="member__name">Opuere Amakoroma</h3>
-                    <p class="member__job">Client Relationship Officer </p>
+                    <p class="member__job">Clients Relationship Officer </p>
                     
                   </div>
         
@@ -220,7 +220,7 @@
             <div class="team-member__content">
               <div class="team-member__card">
                 <img src="{{asset('img/tm-advisor.svg')}}" alt="Advisor" class="member__photo">
-                <h3 class="member__name">Ademula Olobunmi</h3>
+                <h3 class="member__name">Ademola Olubunmi</h3>
                 <p class="member__job">Advisor</p>
                 
               </div>
