@@ -13,8 +13,7 @@ $(document).ready(function() {
 
 
 
-// function for Forms' Sweet Alert Confirmation
-function confirmation (e) { 
+function confirmTransaction (e) { 
  var checker = e.preventDefault();
  $(this).bind(checker);
     swal({
@@ -37,10 +36,10 @@ function confirmation (e) {
       }
     }
   )}
-// end of function
     
-$('#vest-funds__form').on('submit', confirmation);      
-$('#sponsor-now__form').on('submit', confirmation);      
+$('#vest-funds__form').on('submit', confirmTransaction);      
+$('#sponsor-now__form').on('submit', confirmTransaction);      
+$('.vestbank-withdraw__form').on('submit', confirmTransaction);
 
 
 

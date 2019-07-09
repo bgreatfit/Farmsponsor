@@ -19,9 +19,6 @@
                                         <div class="col-md-12 col-sm-12 col-12">
                                             <a href="{{route('farms.all')}}" class="dashboard__sponsor-cta--btn mb-3">Sponsor a farm</a>
                                         </div>
-                                        {{-- <div class="col-md-7 col-sm-12 col-12">
-                                             <a href="#" class="dashboard__sponsor-cta--btn">Request for sponsorship</a>
-                                        </div> --}}
                                     </div>
                                 </div>
                             </div>

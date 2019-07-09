@@ -80,7 +80,7 @@
                        
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" target="_blank" class="footer__links">Blog</a></div>
+                                <div class="footer__item"><a href="https://medium.com/@farmsponsorng" target="_blank" class="footer__links">Blog</a></div>
                             </div>
                         </div>
                         <div class="row">
