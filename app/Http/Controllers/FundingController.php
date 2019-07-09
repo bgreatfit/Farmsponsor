@@ -52,7 +52,6 @@ class FundingController extends Controller
         return $bankfunding;
     }
 
-
     public function logTransaction($model)
     {
         // generates a 8digit transaction id for each transaction
@@ -74,7 +73,6 @@ class FundingController extends Controller
     {
         return rand(10000000,99999999) . Str::random(2);
     }
-
 
     public function withdraw(Request $request)
     {
@@ -147,25 +145,21 @@ class FundingController extends Controller
                 break;
 
             case 'interest':
-                $currentAmount = Auth::user()->vestbank->$field;
+                Auth::user()->vestbank()->update([
+                    'interest' => 0,
+                    'lock' => 1
+                ]);
 
-                if($currentAmount - ($amount + $this->getWithdrawalCharges() >= 0)){
-                    Auth::user()->vestbank()->update([
-                        $field => $currentAmount - ($amount + $this->getWithdrawalCharges()),
-                        'lock' => 1
-                    ]);
+                return $this->logTransaction($this->logWithdrawalRequest($amount - $this->getWithdrawalCharges()));
+                break;
 
-                    return $this->logTransaction($this->logWithdrawalRequest($amount + $this->getWithdrawalCharges()));
-                    return redirect()->back();
-                }
-//            return redirect()->back();
+            case 'capital':
+                Auth::user()->vestbank()->update([
+                    'capital' => 0,
+                    'lock' => 1
+                ]);
 
-//                Auth::user()->vestbank()->update([
-//                    $field => $currentAmount - $amount,
-//                    'lock' => 1
-//                ]);
-//
-//                return $this->logTransaction($this->logWithdrawalRequest($amount));
+                return $this->logTransaction($this->logWithdrawalRequest($amount - $this->getWithdrawalCharges()));
                 break;
         }
 

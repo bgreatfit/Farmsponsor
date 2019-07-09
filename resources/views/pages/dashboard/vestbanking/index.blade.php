@@ -35,12 +35,12 @@
                 </div>
                 <div class="col-md-6 col-12">
                     <div class="vestbank-bank-card-section">
-                        <a href="#" data-toggle="modal" data-target="#vestbank-withdraw" role="button" class="vestbank__btn-wrap">
+                        <a href="#" data-toggle="modal" data-target="#vesktbank-withdraw" role="button" class="vestbank__btn-wrap">
                             <div class="vestbank__card vestbank__withdraw">
                                 <div class="vestbank__card--image-box">
                                     <img src="{{asset('img/vestbank-01.svg')}}" alt="Safe illustration" class="vestbank__card--image">
                                 </div>
-                                <p class="vestbank__card--text">Withdraw Money</p>
+                                <p class="vestbank__card--text disabled">Withdraw Money</p>
                             </div>
                         </a>
                     </div>
