@@ -59,7 +59,7 @@ class WithdrawalController extends Controller
 
     public function delete(WithdrawalLog $withdrawal)
     {
-        if($withdrawal->delete()){
+        if($withdrawal->delete() && $withdrawal->transaction->delete()){
             $this->request->session()->flash('success', 'Sponsorship Deleted');
             return back();
         };

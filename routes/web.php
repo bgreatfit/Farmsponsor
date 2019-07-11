@@ -37,6 +37,7 @@ Route::post('/profile', 'UserController@update')->name('user.store');
 
 Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
 Route::post('/farmlist/{farm}', 'SponsorController@sponsor')->name('farms.sponsor');
+Route::post('/farmlist/{farm}', 'SponsorController@sponsor')->name('farms.sponsor');
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
 Route::get('/dashboard/sponsornow/{farm}', 'BankSponsorshipController@sponsorNow')->name('sponsornow');

@@ -28,7 +28,9 @@
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Type</th>
                                         <th scope="col">Amount</th>
+                                        <th scope="col">Charges</th>
                                         <th scope="col">Date</th>
                                         <th scope="col">Withdrawal Status</th>
                                         </tr>
@@ -48,7 +50,13 @@
                                                     <p class="widthdrawal-info">{{$withdrawal->user->email}}</p>
                                                 </td>
                                                 <td>
+                                                    <p class="widthdrawal-info">{{$withdrawal->field}}</p>
+                                                </td>
+                                                <td>
                                                     <p class="widthdrawal-info">{{$withdrawal->displayamount}}</p>
+                                                </td>
+                                                <td>
+                                                    <p class="widthdrawal-info">{{$withdrawal->charges}}</p>
                                                 </td>
                                                 <td>
                                                     <p class="widthdrawal-info">{{$withdrawal->created_at}}</p>

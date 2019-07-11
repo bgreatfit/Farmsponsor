@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddSoftDeleteColumnToWithdrawalTable extends Migration
+class AddFieldColumnToWithdrawalLogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddSoftDeleteColumnToWithdrawalTable extends Migration
     public function up()
     {
         Schema::table('withdrawal_logs', function (Blueprint $table) {
-            $table->softDeletes();
+            $table->string('field');
         });
     }
 
@@ -26,7 +26,7 @@ class AddSoftDeleteColumnToWithdrawalTable extends Migration
     public function down()
     {
         Schema::table('withdrawal_logs', function (Blueprint $table) {
-            $table->dropSoftDeletes();
+            $table->dropColumn('field');
         });
     }
 }

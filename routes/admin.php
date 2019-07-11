@@ -30,9 +30,10 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('banksponsorship/{bankSponsor}/confirm', 'Admin\BankSponsorshipController@confirm')->name('banksponsorship.confirm');
     Route::get('banksponsorship/{sponsor}/reverse', 'Admin\BankSponsorshipController@reverse')->name('banksponsorship.reverse');
     Route::get('banksponsorship/{sponsor}/delete', 'Admin\BankSponsorshipController@delete')->name('banksponsorship.delete');
-    Route::get('deposits', 'Admin\DepositController@index')->name('admin.bankdeposits');
-    Route::get('deposits/{deposit}/confirm', 'Admin\DepositController@confirm')->name('admin.confirmdeposit')->middleware('confirmed');
-    Route::get('deposits/{deposit}/reverse', 'Admin\DepositController@reverse')->name('admin.reversedeposit');
+    Route::get('deposits', 'Admin\FundingController@index')->name('admin.bankdeposits');
+    Route::get('deposits/{deposit}/confirm', 'Admin\FundingController@confirm')->name('admin.confirmfunding')->middleware('confirmed');
+    Route::get('deposits/{deposit}/reverse', 'Admin\FundingController@reverse')->name('admin.reversefunding');
+    Route::get('deposits/{funding}/delete', 'Admin\FundingController@delete')->name('admin.deletefunding');
     Route::get('withdrawals', 'Admin\WithdrawalController@index')->name('admin.withdrawals');
     Route::get('withdrawals/{withdrawal}/confirm', 'Admin\WithdrawalController@confirm')->name('admin.confirmwithdrawal');
     Route::get('withdrawals/{withdrawal}/reverse', 'Admin\WithdrawalController@reverse')->name('admin.reversewithdrawal');

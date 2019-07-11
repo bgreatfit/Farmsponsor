@@ -61,11 +61,11 @@
                                                 </td>
 
                                                 <td>
-                                                    <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
+                                                    <a href="{{route('admin.confirmfunding', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
                                                 </td>
 
                                                 <td>
-                                                    <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                    <a href="{{route('admin.deletefunding', $deposit->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -116,10 +116,10 @@
                                                 <p class="depositor-info"> {{$deposit->created_at}} </p>
                                             </td>
                                             <td>
-                                                <a href="{{route('admin.reversedeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Reverse</a>
+                                                <a href="{{route('admin.reversefunding', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Reverse</a>
                                             </td>
                                             <td>
-                                                <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                <a href="{{route('admin.deletefunding', $deposit->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
                                             </td>
                                         </tr>
                                         @endforeach

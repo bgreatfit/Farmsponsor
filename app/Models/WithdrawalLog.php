@@ -9,11 +9,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class WithdrawalLog extends Model
 {
     use SoftDeletes;
-    protected $fillable = [
-        'user_id','status_id','amount','approved_user_id',
-        'ip_address','transaction_id','approved_ip_address',
-        'approved_time'
-    ];
+
+    protected $guarded = [];
 
     protected $dates = [
         'approved_time'
@@ -23,6 +20,12 @@ class WithdrawalLog extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    public function transaction()
+    {
+        return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
+    }
+
 
     public function getDisplayAmountAttribute()
     {
