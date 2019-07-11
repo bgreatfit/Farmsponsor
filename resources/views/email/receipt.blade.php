@@ -283,19 +283,19 @@
       
         @media only screen and (max-width:480px){
             /* RESET STYLES */
-            td[class="introductionContainer"],
+            /* td[class="introductionContainer"],
             td[class="callToActionContainer"],
             td[class="footerContainer"] {
                 padding-right: 10px !important;
                 padding-left: 10px !important;
-            }
+            } */
 
-            table[class="introductionBlock"],
+            /* table[class="introductionBlock"],
             table[class="callToActionBlock"],
             table[class="footerBlock"] {
                 max-width: 480px !important;
                 width: 100% !important;
-            }
+            } */
 
             /* CLIENT-SPECIFIC STYLES */
             body{
@@ -308,44 +308,44 @@
             h2 {font-size: 14px !important;}
             /* h3 {font-size: 24px !important;} */
 
-            img[class="luncheonImage"] {
+            /* img[class="luncheonImage"] {
                 height: auto !important;
                 max-width: 520px !important;
                 width: 100% !important;
-            }
+            } */
 
-            td[class="introductionHeading"],
+            /* td[class="introductionHeading"],
             td[class="introductionLogo"] {
                 display: block !important;
                 text-align: center !important;
-            }
+            } */
 
             td[class="introductionHeading"]{
-                padding: 40px 0 0 0 !important;
+                /* padding: 40px 0 0 0 !important; */
 
             }
             h1[class="introductionHeadingMain"] {
                 text-align: center !important;
             }
-            td[class="introductionContent"] {
+            /* td[class="introductionContent"] {
                 padding-top: 20px !important;
-            }
+            } */
 
-            h2[class="contentHeading"] {
+            /* h2[class="contentHeading"] {
                 text-align: center !important;
-            }
+            } */
 
-            td[class="callToActionButton"] {
+            /* td[class="callToActionButton"] {
                 width: 100% !important;
-            }
+            } */
 
             td[class="footerText"] {
                 font-size: 15px !important;
             }
 
-            td[class="footerText"] a{
+            /* td[class="footerText"] a{
                 display: block !important;
-            }
+            } */
         }
     
     </style>
@@ -394,7 +394,7 @@
                                                 Date
                                             </h2>
                                             <p class="contentText transactionDateText">
-                                                CONTENT
+                                                7/06/2019
                                             </p>
                                         </td>
                                         <td align="center" valign="top" class="transactionDateContent">
