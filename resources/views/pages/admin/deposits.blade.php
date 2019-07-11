@@ -32,6 +32,7 @@
                                             <th scope="col">Amount</th>
                                             <th scope="col">Date</th>
                                             <th scope="col">Deposit Status</th>
+                                            <th scope="col">Remove</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -62,6 +63,10 @@
                                                 <td>
                                                     <a href="{{route('admin.confirmdeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Confirm</a>
                                                 </td>
+
+                                                <td>
+                                                    <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                </td>
                                             </tr>
                                         @endforeach
                                     </tbody>
@@ -85,6 +90,7 @@
                                             <th scope="col">Amount</th>
                                             <th scope="col">Date</th>
                                             <th scope="col">Undo</th>
+                                            <th scope="col">Remove</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -110,7 +116,10 @@
                                                 <p class="depositor-info"> {{$deposit->created_at}} </p>
                                             </td>
                                             <td>
-                                                <a href="{{route('admin.reversedeposit', $deposit->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Reverse</a>
+                                                <a href="{{route('admin.reversedeposit', $deposit->id)}}" class="btn form-control btn-lg btn-secondary depositor-status__btn">Reverse</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
                                             </td>
                                         </tr>
                                         @endforeach

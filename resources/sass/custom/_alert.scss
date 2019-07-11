@@ -1,3 +1,17 @@
 .font-lg {
     font-size: 1.6rem;
 }
+
+.toast-info {
+    background-color: #2f96b4;
+    font-size: 15px;
+  }
+
+  .toast-error {
+    background-color: #e00000;
+    font-size: 15px;
+  }
+  .toast-success {
+    background-color: $color-primary-deep;
+    font-size: 15px;
+  }

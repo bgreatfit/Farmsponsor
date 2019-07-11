@@ -29,6 +29,7 @@
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Amount</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">Withdrawal Status</th>
                                         </tr>
                                     </thead>
@@ -48,9 +49,15 @@
                                                 </td>
                                                 <td>
                                                     <p class="widthdrawal-info">{{$withdrawal->displayamount}}</p>
+                                                </td>
+                                                <td>
+                                                    <p class="widthdrawal-info">{{$withdrawal->created_at}}</p>
+                                                </td>
+
                                                 <td>
                                                     <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-secondary widthdrawal-status__btn">Confirm</a>
                                                 </td>
+
                                                 <td>
                                                     <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
                                                 </td>
@@ -71,6 +78,7 @@
                                             <th scope="col">Last Name</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Amount</th>
+                                            <th scope="col">Date</th>
                                             <th scope="col">Withdrawal Status</th>
                                         </tr>
                                     </thead>
@@ -90,8 +98,14 @@
                                                 </td>
                                                 <td>
                                                     <p class="widthdrawal-info">{{$withdrawal->displayamount}}</p>
+                                                </td>
+
                                                 <td>
-                                                    <a class="btn form-control btn-lg btn-success widthdrawal-status__btn text-white">Approved</a>
+                                                    <p class="widthdrawal-info">{{$withdrawal->created_at}}</p>
+                                                </td>
+
+                                                <td>
+                                                    <a href="#" class="btn form-control btn-lg btn-success widthdrawal-status__btn text-white">Approved</a>
                                                 </td>
                                                 <td>
                                                     <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
