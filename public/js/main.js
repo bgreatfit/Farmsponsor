@@ -36,10 +36,15 @@ function confirmTransaction (e) {
       }
     }
   )}
+
+
+
+
     
 $('#vest-funds__form').on('submit', confirmTransaction);      
 $('#sponsor-now__form').on('submit', confirmTransaction);      
 $('.vestbank-withdraw__form').on('submit', confirmTransaction);
+$('.sponsor-farmcycle__form').on('submit', confirmTransaction);
 
 
 

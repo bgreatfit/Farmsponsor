@@ -18,6 +18,7 @@ Route::get('about', 'PagesController@about')->name('about');
 Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('team', 'PagesController@team')->name('team');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
+Route::get('receipt', 'PagesController@email')->name('email');
 
 // Newsletter Route
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subscribe');

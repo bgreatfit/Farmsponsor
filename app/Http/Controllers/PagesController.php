@@ -27,7 +27,11 @@ class PagesController extends Controller {
     public function homepage() {
         return view('pages.homepage');
     }
-
+// EMAIL VIEW
+    public function email() {
+        return view('email.receipt');
+    }
+// END
     public function login() {
         return view('pages.login');
     }
