@@ -26,6 +26,7 @@
                                                     <th scope="col">Number Of Units</th>
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Return</th>
+                                                    <th scope="col">Retain</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -51,10 +52,15 @@
                                                         </a>
                                                     </td>
                                                     <td>
-                                                        @if($cycleSponsored->hasRetained())
+                                                            {{$cycleSponsored->transaction->returns}}
+                                                    </td>
+                                                    <td>
+                                                        @if(!$cycleSponsored->hasRetained() && $cycleSponsored->farmingcycle->isPaidOut())
+                                                            <a href="{{route('retain.sponsorship', $cycleSponsored->id)}}" class="btn btn-success btn-lg px-5">Retain</a>
+                                                        @elseif($cycleSponsored->hasRetained())
                                                             <a class="btn btn-success btn-lg px-5 disabled">Retained</a>
                                                         @else
-                                                            <a href="{{route('retain.sponsorship', $cycleSponsored->id)}}" class="btn btn-success btn-lg px-5">Retain</a>
+                                                            <a class="btn btn-secondary btn-lg px-5 disabled">Not Available</a>
                                                         @endif
                                                     </td>
                                                 </tr>

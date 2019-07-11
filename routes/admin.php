@@ -21,9 +21,9 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::put('farmcycles/{farm}/edit', 'Admin\FarmController@update')->name('farms.update');
     Route::get('farmcycles/{farm}/show', 'Admin\FarmController@show')->name('admin.farmshow');
     Route::get('farmcycles/{farm}/soldout', 'Admin\FarmController@soldout')->name('farms.soldout');
-    Route::get('farmcycles/{farm}/open', 'FarmController@open')->name('farms.open');
-    Route::get('farmcycles/{farm}/payout', 'FarmController@payout')->name('farms.payout');
-    Route::get('farmcycles/{farm}/stoppayout', 'FarmController@stoppayout')->name('farms.stoppayout');
+    Route::get('farmcycles/{farm}/open', 'Admin\FarmController@open')->name('farms.open');
+    Route::get('farmcycles/{farm}/payout', 'Admin\FarmController@payout')->name('farms.payout');
+    Route::get('farmcycles/{farm}/stoppayout', 'Admin\FarmController@stoppayout')->name('farms.stoppayout');
     Route::get('sponsorship/{sponsor}/confirm', 'SponsorController@confirm')->name('sponsorship.confirm');
     Route::get('sponsorship/{sponsor}/reverse', 'SponsorController@reverse')->name('sponsorship.reverse');
     Route::get('banksponsorship/{sponsor}/confirm', 'BankSponsorshipController@confirm')->name('banksponsorship.confirm');

@@ -133,40 +133,4 @@ class FarmController extends Controller
         return $unitsNeeded <= $farmUnitsRemaining ? true : false;
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Farms  $farms
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Farms $farms)
-    {
-        //
-    }
-
-    public function stoppayout($farm)
-    {
-        $farm = Farm::findOrFail($farm);
-        $farm->decrement('payout');
-        $farm->decrement('status_id');
-
-        Sponsor::whereApproved(1)->whereFarmId($farm->id)->decrement('status_id');
-
-        return redirect()->back();
-    }
-
-    public function payout($farm)
-    {
-        $farm = Farm::findOrFail($farm);
-        $farm->increment('payout');
-        $farm->increment('status_id');
-        $sponsors = Sponsor::whereApproved(1)->whereFarmId($farm->id)->increment('status_id');
-        return redirect()->back();
-    }
-
-    public function open($farm)
-    {
-        $farm = Farm::findOrFail($farm)->decrement('sold_out');
-        return redirect()->back();
-    }
 }

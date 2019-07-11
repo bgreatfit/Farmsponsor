@@ -29,6 +29,7 @@ class FarmController extends Controller
         $data['farms'] = Farm::orderBy('created_at', 'desc')->paginate(10);
         return view('pages.admin.farm.cycles', $data);
     }
+
     public function create()
     {
         return view('pages.admin.farm.add');
@@ -66,12 +67,6 @@ class FarmController extends Controller
         return redirect()->route('admin.farmcycles');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Farms  $farms
-     * @return \Illuminate\Http\Response
-     */
     public function edit($farm)
     {
         $data['farm'] = Farm::findOrFail($farm);
@@ -79,13 +74,6 @@ class FarmController extends Controller
         return view('pages.admin.farm.edit', $data);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Farms  $farms
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $farms)
     {
         $farm = Farm::find($farms);
@@ -106,12 +94,6 @@ class FarmController extends Controller
         return redirect()->route('admin.farmcycles');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Farms  $farms
-     * @return \Illuminate\Http\Response
-     */
     public function show($farm)
     {
         $data['farm'] = Farm::findOrFail($farm);
@@ -125,6 +107,32 @@ class FarmController extends Controller
     public function soldout($farm)
     {
         Farm::findOrFail($farm)->increment('sold_out');
+        return redirect()->back();
+    }
+
+    public function open($farm)
+    {
+        $farm = Farm::findOrFail($farm)->decrement('sold_out');
+        return redirect()->back();
+    }
+
+    public function payout($farm)
+    {
+        $farm = Farm::findOrFail($farm);
+        $farm->increment('payout');
+        $farm->increment('status_id');
+        Sponsor::whereApproved(1)->whereFarmId($farm->id)->increment('status_id');
+        return redirect()->back();
+    }
+
+    public function stoppayout($farm)
+    {
+        $farm = Farm::findOrFail($farm);
+        $farm->decrement('payout');
+        $farm->decrement('status_id');
+
+        Sponsor::whereApproved(1)->whereFarmId($farm->id)->decrement('status_id');
+
         return redirect()->back();
     }
 }

@@ -63,6 +63,10 @@ class Sponsor extends Model
     public function hasRetained()
     {
         return $this->retain()->count() == 1 ? true : false;
+    }
 
+    public function returns()
+    {
+        return $this->units * $this->getPricePerUnit();
     }
 }

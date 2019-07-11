@@ -84,7 +84,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($approved_vestbank_sponsors as $sponsor)
+                                    @foreach($approved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
                                          <th scope="row">{{$key}}</th>
                                         <td>{{$sponsor->user->firstname}}</td>
