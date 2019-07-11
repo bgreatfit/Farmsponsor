@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 
 class WithdrawalLog extends Model
 {
+    use SoftDeletes;
     protected $fillable = [
         'user_id','status_id','amount','approved_user_id',
         'ip_address','transaction_id','approved_ip_address',

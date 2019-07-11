@@ -18,42 +18,29 @@ Route::get('about', 'PagesController@about')->name('about');
 Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('team', 'PagesController@team')->name('team');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
-
+Route::get('/helpcenter', 'PagesController@helpcenter')->name('helpcenter');
+Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('termsAndConditions');
 // Newsletter Route
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subscribe');
-
 // Farm Routes
 Route::get('/farmlist', 'FarmController@index')->name('farmlist');
 Route::get('/farmlist/{farm}', 'FarmController@show')->name('farms.show');
-
-// Route::get('/farmlist', 'FarmsController@index');
-
-// Users
-Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
-Route::post('/profile', 'UserController@update')->name('user.store');
-
-
-
-// Auth Routes
-Auth::routes(['verify' => true]);
-
-Route::group(['middleware' => ['usersonly']], function () {
-    
-Route::get('/helpcenter', 'PagesController@helpcenter')->name('helpcenter');
-Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('termsAndConditions');
-
-Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
-Route::post('/farmlist/{farm}', 'FarmController@sponsor')->name('farms.sponsor');
-
 //new password reset route
 Route::get('/password-reset', 'PagesController@passwordReset')->name('passwordReset');
 
 
+
+Route::group(['middleware' => ['usersonly']], function () {
+// Users
+Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
+Route::post('/profile', 'UserController@update')->name('user.store');
+
+Route::get('/dashboard/farmlist', 'FarmController@dashboardFarmlist')->name('farms.all');
+Route::post('/farmlist/{farm}', 'SponsorController@sponsor')->name('farms.sponsor');
 // Dashboard Routes
 Route::get('/dashboard', 'PagesController@dashboard')->name('dashboard');
 Route::get('/dashboard/sponsornow/{farm}', 'BankSponsorshipController@sponsorNow')->name('sponsornow');
 Route::get('/dashboard/helpcenter', 'PagesController@dashboardHelpcenter')->name('dashboardHelpcenter');
-
 // Payout Routes
 Route::get('/dashboard/payout', 'PayoutController@index');
 // VestBanking Routes
@@ -62,27 +49,25 @@ Route::get('/dashboard/vestbanking/fund', 'FundingController@create')->name('fun
 Route::post('/dashboard/vestbanking/fund', 'FundingController@fund')->name('funding.add');
 Route::post('/dashboard/vestbanking/withdraw', 'FundingController@withdraw')->name('funding.withdraw');
 Route::post('/dashboard/sponsor/fund', 'BankSponsorshipController@sponsor')->name('banksponsorship.sponsor');
-
 // Transactions Route
 Route::get('/transactions', 'TransactionsController@index')->name('transactions.all');
 Route::get('/transactions/history', 'TransactionsController@history')->name('transactions.history');
-
 // Payout Routes
 Route::get('/dashboard/payout', 'PayoutController@index');
-
-// Route::get('/farmlist', 'FarmsController@index');
-
 // Users
 Route::get('/profile', 'UserController@seeProfile')->name('user.profile');
 Route::post('/profile', 'UserController@update')->name('user.store');
-
 // Transactions Route
 Route::get('/transactions', 'TransactionsController@index')->name('transactions.all');
 Route::get('/transactions/history', 'TransactionsController@history')->name('transactions.history');
 Route::get('/sendmail', 'MigrateUsersFromWordpressController@sendmails')->name('sendmails');
 Route::get('/resetPassword/{email}/{token}', 'MigrateUsersFromWordpressController@resetPassword')->name('user.reset');
 Route::post('/resetPassword/{token}', 'MigrateUsersFromWordpressController@processreset')->name('user.reset.process');
-
-
 Route::get('retain/{cycleid}', 'RetainSponsorshipController@retain')->name('retain.sponsorship');
 });
+
+// Auth Routes
+Auth::routes(['verify' => true]);
+// Route::get('/farmlist', 'FarmsController@index');
+// Route::get('/farmlist', 'FarmsController@index');
+

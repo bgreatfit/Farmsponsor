@@ -55,11 +55,11 @@
                                                 </td>
 
                                                 <td>
-                                                    <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-secondary widthdrawal-status__btn">Confirm</a>
+                                                    <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-success widthdrawal-status__btn">Confirm</a>
                                                 </td>
 
                                                 <td>
-                                                    <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                    <a href="{{route('admin.deletewithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -105,10 +105,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <a href="#" class="btn form-control btn-lg btn-success widthdrawal-status__btn text-white">Approved</a>
+                                                    <a href="{{route('admin.reversewithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-danger widthdrawal-status__btn text-white">Reverse</a>
                                                 </td>
                                                 <td>
-                                                    <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                    <a href="{{route('admin.deletewithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach

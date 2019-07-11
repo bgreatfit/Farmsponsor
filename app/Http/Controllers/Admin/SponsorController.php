@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Auth;
 use App\Models\Sponsor;
-use App\Models\Farm;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -59,14 +58,4 @@ class SponsorController extends Controller
         return back();
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Sponsor  $sponsor
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Sponsor $sponsor)
-    {
-        //
-    }
 }

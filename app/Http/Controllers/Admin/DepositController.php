@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-Use Auth;
+use Auth;
 use App\Models\Bankfunding;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
