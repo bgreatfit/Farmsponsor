@@ -131,7 +131,7 @@ class FarmController extends Controller
         ]);
 
         if(! $this->hasFundsToSponsorRequestedUnits($this->request->unit)){
-            $this->request->session()->flash('error', 'You do not have enough funds to sponsor farm cycle, please deposit some funds into your ves bank and try again.');
+            $this->request->session()->flash('error', 'You do not have enough funds to sponsor farm cycle, please add some funds to vest bank and try again.');
             return back();
         }
 
