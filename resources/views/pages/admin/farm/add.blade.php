@@ -10,7 +10,7 @@
                         @csrf
                         <div class="form-group mb-4">
                             <label for="cycle-title" class="add-cycle__input--label mr-auto">Select farm cycle photo:</label>
-                            <input type="file" id="cycle-photo" name="avatar" class="add-cycle__input {{ $errors->has('avatar') ? ' is-invalid' : '' }}">
+                            <input type="file" id="cycle-photo" name="avatar" class="add-cycle__input {{ $errors->has('avatar') ? ' is-invalid' : '' }}" >
                             @if ($errors->has('avatar'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('avatar') }}</strong>
@@ -20,7 +20,7 @@
 
                         <div class="form-group mb-4">
                             <label for="cycle-title" class="add-cycle__input--label">Farm cycle title:</label>
-                            <input type="text" id="cycle-title" name="name" class="add-cycle__input form-control {{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="Enter farm cycle title">
+                            <input type="text" id="cycle-title" name="name" class="add-cycle__input form-control {{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="Enter farm cycle title" value="{{old('name')}}">
                             @if ($errors->has('name'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('name') }}</strong>
@@ -32,32 +32,7 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="window-open" class="add-cycle__input--label">Sponsoring Window Open:</label>
-                                    <input type="date" id="window-open" name="window_open" class="add-cycle__input form-control {{ $errors->has('window_open') ? ' is-invalid' : '' }}" placeholder="Enter window opening date">
-                                    @if ($errors->has('window_open'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('window_open') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <label for="cycle-title" class="add-cycle__input--label">Sponsoring Window Close:</label>
-                                    <input type="date" id="window-close" name="window_close" class="add-cycle__input form-control {{ $errors->has('window_close') ? ' is-invalid' : '' }}" placeholder="Enter window opening date">
-                                    @if ($errors->has('window_close'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('window_close') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-4">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <label for="cycle-title" class="add-cycle__input--label">Farming Cycle Start Date:</label>
-                                    <input type="date" id="start-date" name="start_date" class="add-cycle__input form-control {{ $errors->has('start_date') ? ' is-invalid' : '' }}" placeholder="Enter cycle start date">
+                                    <input type="date" id="window-open" name="start_date" class="add-cycle__input form-control {{ $errors->has('start_date') ? ' is-invalid' : '' }}" value="{{old('start_date')}}">
                                     @if ($errors->has('start_date'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('start_date') }}</strong>
@@ -67,8 +42,8 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="cycle-title" class="add-cycle__input--label">Farming Cycle Due Date:</label>
-                                    <input type="date" id="due-date" name="due_date" class="add-cycle__input form-control {{ $errors->has('due_date') ? ' is-invalid' : '' }}" placeholder="Enter cycle due date">
+                                    <label for="cycle-title" class="add-cycle__input--label">Sponsoring Window Close:</label>
+                                    <input type="date" id="window-close" name="due_date" class="add-cycle__input form-control {{ $errors->has('due_date') ? ' is-invalid' : '' }}" value="{{old('due_date')}}">
                                     @if ($errors->has('due_date'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('due_date') }}</strong>
@@ -79,10 +54,35 @@
                         </div>
 
                         <div class="row mb-4">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="cycle-title" class="add-cycle__input--label">Farming Cycle Start Date:</label>
+                                    <input type="date" id="start-date" name="cycle_start_date" class="add-cycle__input form-control {{ $errors->has('cycle_start_date') ? ' is-invalid' : '' }}" value="{{old('cycle_start_date')}}">
+                                    @if ($errors->has('cycle_start_date'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('cycle_start_date') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="cycle-title" class="add-cycle__input--label">Farming Cycle End Date:</label>
+                                    <input type="date" id="due-date" name="cycle_end_date" class="add-cycle__input form-control {{ $errors->has('cycle_end_date') ? ' is-invalid' : '' }}" value="{{old('cycle_end_date')}}">
+                                    @if ($errors->has('cycle_end_date'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('cycle_end_date') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
                             <div class="col-12 col-md-12">
                                 <div class="form-group">
                                     <label for="payout-date" class="add-cycle__input--label">Payout Date:</label>
-                                    <input type="date" id="payout-date" name="payout_date" class="add-cycle__input form-control {{ $errors->has('payout_date') ? ' is-invalid' : '' }}" >
+                                    <input type="date" id="payout-date" name="payout_date" class="add-cycle__input form-control {{ $errors->has('payout_date') ? ' is-invalid' : '' }}" value="{{old('payout_date')}}">
                                     @if ($errors->has('payout_date'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('payout_date') }}</strong>
@@ -94,7 +94,7 @@
 
                         <div class="form-group mb-4">
                             <label for="cycle-units" class="add-cycle__input--label">Number of units:</label>
-                            <input type="number" id="cycle-units" name="units" class="add-cycle__input form-control {{ $errors->has('units') ? ' is-invalid' : '' }}" placeholder="Enter farm cycle units">
+                            <input type="number" id="cycle-units" name="units" class="add-cycle__input form-control {{ $errors->has('units') ? ' is-invalid' : '' }}" value="{{old('units')}}">
                             @if ($errors->has('units'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('units') }}</strong>
@@ -104,7 +104,7 @@
 
                         <div class="form-group mb-4">
                             <label for="cycle-returns" class="add-cycle__input--label">Returns:</label>
-                            <input type="number" id="cycle-returns" name="returns" class="add-cycle__input form-control {{ $errors->has('returns') ? ' is-invalid' : '' }}" placeholder="Enter farm cycle returns">
+                            <input type="number" id="cycle-returns" name="returns" class="add-cycle__input form-control {{ $errors->has('returns') ? ' is-invalid' : '' }}" placeholder="Enter farm cycle returns" value="{{old('returns')}}">
                             @if ($errors->has('returns'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('returns') }}</strong>

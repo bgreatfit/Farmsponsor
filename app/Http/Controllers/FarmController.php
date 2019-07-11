@@ -51,51 +51,6 @@ class FarmController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('farm.add');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store()
-    {
-        $rules = [
-            'name' => 'string | required',
-            'start_date' => 'date | required',
-            'due_date' => 'date | required',
-            'units' => 'integer | required',
-            'returns' => 'integer | required',
-            'avatar' => 'image | required'
-        ];
-
-        $this->validate($this->request, $rules);
-        // Image Upload
-        $image = $this->request->file('avatar');
-        $imageName = Str::slug($this->request->name) . '.' . time() . '.' . $image->getClientOriginalExtension();
-        $this->request->avatar->storeAs('public/farms', $imageName);
-
-        $dataToStore = $this->request->except('_token');
-        $dataToStore['user_id'] = Auth::id();
-        $dataToStore['start_unit'] = $this->request->units;
-        $dataToStore['ip_address'] = request()->ip();
-        $dataToStore['avatar'] = $imageName;
-        $dataToStore['slug'] = str_slug($this->request->name);
-
-        $this->farm->create($dataToStore);
-        $this->request->session()->flash('success', 'Farm Cycle Created');
-        return redirect()->route('admin.farmcycles');
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  \App\Farms  $farms
@@ -106,23 +61,6 @@ class FarmController extends Controller
         $data['farm'] = $farm;
         return view('farm.show', $data);
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Farms  $farms
-     * @return \Illuminate\Http\Response
-     */
-    public function adminshow($farm)
-    {
-        $data['farm'] = Farm::findOrFail($farm);
-        $data['approved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->orderBy('created_at', 'desc')->paginate(10);
-        $data['unapproved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
-        $data['approved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(1)->orderBy('created_at', 'desc')->paginate(10);
-        $data['unapproved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
-        return view('pages.admin.farm.show', $data);
-    }
-
 
     public function sponsor(Farm $farm)
     {
@@ -196,46 +134,6 @@ class FarmController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Farms  $farms
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($farm)
-    {
-        $data['farm'] = Farm::findOrFail($farm);
-
-        return view('pages.admin.farm.edit', $data);
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Farms  $farms
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $farms)
-    {
-        $farm = Farm::find($farms);
-
-        $attributes = $request->except('_token');
-
-        if(array_key_exists('avatar', $attributes)){
-            // Image Upload
-            $image = $this->request->file('avatar');
-            $imageName = Str::slug($this->request->name) . '.' . time() . '.' . $image->getClientOriginalExtension();
-            $this->request->avatar->storeAs('public/farms', $imageName);
-
-            $attributes['avatar'] = $imageName;
-        }
-
-        $farm->update($attributes);
-
-        return redirect()->route('admin.farmcycles');
-    }
-
-    /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Farms  $farms
@@ -263,12 +161,6 @@ class FarmController extends Controller
         $farm->increment('payout');
         $farm->increment('status_id');
         $sponsors = Sponsor::whereApproved(1)->whereFarmId($farm->id)->increment('status_id');
-        return redirect()->back();
-    }
-
-    public function soldout($farm)
-    {
-        $farm = Farm::findOrFail($farm)->increment('sold_out');
         return redirect()->back();
     }
 

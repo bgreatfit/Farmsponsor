@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cbcaab-26d8-4fea-90ae-f8b1234fda2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FarmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FarmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SponsorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SponsorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Bank.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bank.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Farm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Farm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_10_160613_create_banks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_10_160613_create_banks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/farm/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/farm/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/farm/cycles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/farm/cycles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/farm/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/farm/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" afterDir="false" />
@@ -11,14 +23,7 @@
       <change beforePath="$PROJECT_DIR$/../birdboard/tests/Feature/ExampleTest.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/tests/Feature/ProjectTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/tests/Feature/ProjectTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/tests/Unit/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twig/app/Http/Controllers/Admins/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/app/Http/Controllers/Admins/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twig/app/Http/Controllers/Auth/Admins/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/app/Http/Controllers/Auth/Admins/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twig/database/seeds/PagesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/database/seeds/PagesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twig/resources/views/admins/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/resources/views/admins/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twig/resources/views/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/resources/views/includes/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twig/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twig/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twig/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twig/app/Repositories/Objects/ObjectsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/app/Repositories/Objects/ObjectsRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,87 +58,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FarmController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/FarmController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="133" column="131" selection-start-line="133" selection-start-column="131" selection-end-line="133" selection-end-column="131" />
+            <state relative-caret-position="2737">
+              <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
               <folding>
-                <element signature="e#40#71#0#PHP" expanded="true" />
+                <element signature="e#46#77#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/cycles.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#1118#3190#0#HTML" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VestbankController.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_11_110929_add_new_columns_to_farms_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            <state relative-caret-position="179">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SponsorController.php">
+        <entry file="file://$PROJECT_DIR$/app/Models/Farm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="137">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/routes/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+            <state relative-caret-position="299">
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../twig/app/Http/Controllers/Auth/Admins/LoginController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/includes/farmsCard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+            <state relative-caret-position="207">
+              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../twig/.env">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FarmController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../twig/resources/views/layouts/auth.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../twig/resources/views/includes/scripts.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../twig/resources/views/admins/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2438">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../twig/resources/views/includes/header.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1357">
-              <caret line="59" column="123" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="123" />
+            <state relative-caret-position="3013">
+              <caret line="164" column="5" selection-start-line="164" selection-start-column="5" selection-end-line="164" selection-end-column="5" />
+              <folding>
+                <element signature="e#339#571#0#PHP" />
+                <element signature="e#577#678#0#PHP" />
+                <element signature="e#683#1003#0#PHP" />
+                <element signature="e#804#954#0#PHP" />
+                <element signature="e#1009#1358#0#PHP" />
+                <element signature="e#1143#1294#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,7 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sponsor</find>
       <find>sponsornow</find>
       <find>farms.sponsor</find>
       <find>adminsho</find>
@@ -171,7 +167,14 @@
       <find>terms</find>
       <find>abou</find>
       <find>&lt;&lt;&lt;</find>
+      <find>sponsor</find>
       <find>transa</find>
+      <find>ip</find>
+      <find>units</find>
+      <find>unit</find>
+      <find>SponsorController</find>
+      <find>date</find>
+      <find>ddates</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,24 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../twig/resources/views/users/users/creditslip.blade.php" />
-        <option value="$PROJECT_DIR$/../twig/resources/views/users/users/orders.blade.php" />
-        <option value="$PROJECT_DIR$/../twig/resources/views/users/users/edit.blade.php" />
-        <option value="$PROJECT_DIR$/../twig/vendor/shamaseen/repository-generator/src/Utility/Controller.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Notifications/AdminRegisteredSuccessfully.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Products/ProductController.php" />
-        <option value="$PROJECT_DIR$/../twig/resources/views/products/index.blade.php" />
-        <option value="$PROJECT_DIR$/../twig/resources/views/products/create.blade.php" />
-        <option value="$PROJECT_DIR$/../twig/resources/views/services/index.blade.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Repositories/Services/ServiceRepository.php" />
-        <option value="$PROJECT_DIR$/../twig/resources/views/services/create.blade.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Services/ServiceController.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Settings/SettingController.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Pages/PageController.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Users/UserController.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Bookings/BookingController.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Subscriptions/SubscriptionController.php" />
-        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Objects/ObjectsController.php" />
         <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Files/FileController.php" />
         <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Categories/CategoryController.php" />
         <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Contacts/ContactController.php" />
@@ -228,14 +213,32 @@
         <option value="$PROJECT_DIR$/../twig/routes/web.php" />
         <option value="$PROJECT_DIR$/../twig/resources/views/attributes/index.blade.php" />
         <option value="$PROJECT_DIR$/../twig/routes/admin.php" />
-        <option value="$PROJECT_DIR$/../twig/database/seeds/PagesSeeder.php" />
         <option value="$PROJECT_DIR$/../twig/.env" />
         <option value="$PROJECT_DIR$/../twig/resources/views/admins/index.blade.php" />
         <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Auth/Admins/LoginController.php" />
         <option value="$PROJECT_DIR$/../twig/resources/views/includes/header.blade.php" />
         <option value="$PROJECT_DIR$/../twig/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Admins/AdminController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SponsorController.php" />
+        <option value="$PROJECT_DIR$/../twig/database/seeds/PagesSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_10_160613_create_banks_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_11_095633_change_account_number_column_on_banks_table.php" />
+        <option value="$PROJECT_DIR$/../twig/app/Repositories/Objects/ObjectsRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/dashboard/profile.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Bank.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_05_20_082454_create_farms_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_11_110929_add_new_columns_to_farms_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/farm/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SponsorController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/admin/farm/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" />
+        <option value="$PROJECT_DIR$/routes/admin.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FarmController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/FarmController.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
+        <option value="$PROJECT_DIR$/app/Models/Farm.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/admin/farm/cycles.blade.php" />
       </list>
     </option>
   </component>
@@ -366,8 +369,49 @@
               <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -380,25 +424,25 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../twig/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../twig/resources/views" />
-      <recent name="$PROJECT_DIR$/../twig/storage/app/public" />
-      <recent name="$PROJECT_DIR$/../twig/resources/views/users/users" />
-      <recent name="$PROJECT_DIR$/../twig/resources/views/layouts/plants" />
-      <recent name="$PROJECT_DIR$/../twig/resources/views/products/users" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/pages/admin/farm" />
       <recent name="$PROJECT_DIR$/../twig/storage/app/public/pages" />
       <recent name="$PROJECT_DIR$/../twig/resources/views/users/users" />
       <recent name="$PROJECT_DIR$/../twig/resources/views/carts/users" />
       <recent name="$PROJECT_DIR$/../twig/resources/views/carts" />
-      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+      <recent name="$PROJECT_DIR$/../twig/resources/views" />
+      <recent name="$PROJECT_DIR$/../twig/storage/app/public" />
+      <recent name="$PROJECT_DIR$/../twig/resources/views/users/users" />
+      <recent name="$PROJECT_DIR$/../twig/resources/views/layouts/plants" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -446,12 +490,13 @@
       <workItem from="1562638930163" duration="15642000" />
       <workItem from="1562678367756" duration="16814000" />
       <workItem from="1562745864498" duration="26727000" />
-      <workItem from="1562835785965" duration="1079000" />
+      <workItem from="1562835785965" duration="17369000" />
+      <workItem from="1562855668799" duration="662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204431000" />
+    <option name="totallyTimeSpent" value="221383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
@@ -477,6 +522,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32954547" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19106881" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32751092" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" weight="0.329806" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49926794" weight="0.31694916" />
+      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="10" type="SLIDING" weight="0.36535662" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50073206" side_tool="true" weight="0.31694916" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32954547" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -536,170 +602,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../twig/app/Entities/Admins/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Entities/Attributes/Attribute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Entities/Files/File.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" selection-start-line="43" selection-end-line="44" />
-          <folding>
-            <element signature="e#38#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/resources/views/pages/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="33" selection-end-column="18" />
-          <folding>
-            <element signature="e#307#1501#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/resources/views/pages/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/resources/views/pages/users/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Http/Controllers/Pages/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1707">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/database/migrations/2019_06_23_135326_create_pages_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="18" selection-start-line="18" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/database/migrations/2019_07_10_095359_add_name_column_to_pages_table.php" />
-    <entry file="file://$PROJECT_DIR$/../twig/database/seeds/AdminTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Entities/Pages/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#38#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Repositories/Pages/PageRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Repositories/Files/FileRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/resources/views/layouts/plants/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="84" column="91" selection-start-line="84" selection-start-column="91" selection-end-line="84" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/resources/views/pages/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/resources/views/layouts/plants/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="87" column="88" selection-start-line="87" selection-start-column="88" selection-end-line="87" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/resources/views/layouts/plants/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="439" column="37" selection-start-line="439" selection-start-column="37" selection-end-line="439" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Http/Controllers/Carts/CartController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/database/migrations/2019_06_11_094117_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../twig/resources/views/attributes/users/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-483" />
@@ -733,31 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Repositories/Objects/ObjectsRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="127" column="46" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/app/Entities/Categories/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../twig/database/migrations/2019_06_11_094300_create_attributes_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/database/seeds/PagesSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -862,24 +743,224 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SponsorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="340">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#200#292#0#PHP" />
+            <element signature="e#298#767#0#PHP" />
+            <element signature="e#515#661#0#PHP" />
+            <element signature="e#773#1203#0#PHP" />
+            <element signature="e#963#1103#0#PHP" />
+            <element signature="e#1209#1704#0#PHP" />
+            <element signature="e#1421#1598#0#PHP" />
+            <element signature="e#1944#2092#0#PHP" />
+            <element signature="e#2097#2161#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/database/seeds/PagesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-837">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/app/Repositories/Objects/ObjectsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="63" selection-start-line="63" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/resources/views/categories/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/app/Entities/Categories/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#43#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_11_095633_change_account_number_column_on_banks_table.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="303" column="20" selection-start-line="303" selection-start-column="20" selection-end-line="303" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Bank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_20_082454_create_farms_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="23" column="41" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_10_160613_create_banks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="269" column="24" selection-start-line="269" selection-start-column="22" selection-end-line="269" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SponsorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#40#49#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="29" lean-forward="true" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="118" column="129" selection-start-line="118" selection-start-column="129" selection-end-line="118" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="111" selection-start-line="8" selection-start-column="111" selection-end-line="8" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        <state relative-caret-position="2001">
+          <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/FarmController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
+          <folding>
+            <element signature="e#46#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FarmController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="133" column="131" selection-start-line="133" selection-start-column="131" selection-end-line="133" selection-end-column="131" />
+        <state relative-caret-position="3013">
+          <caret line="164" column="5" selection-start-line="164" selection-start-column="5" selection-end-line="164" selection-end-column="5" />
           <folding>
-            <element signature="e#40#71#0#PHP" expanded="true" />
+            <element signature="e#339#571#0#PHP" />
+            <element signature="e#577#678#0#PHP" />
+            <element signature="e#683#1003#0#PHP" />
+            <element signature="e#804#954#0#PHP" />
+            <element signature="e#1009#1358#0#PHP" />
+            <element signature="e#1143#1294#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_11_110929_add_new_columns_to_farms_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4826">
+          <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1016">
+          <caret line="869" column="53" selection-start-line="869" selection-start-column="53" selection-end-line="869" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/dashboard/profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/farmsCard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Farm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/cycles.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#1118#3190#0#HTML" />
           </folding>
         </state>
       </provider>

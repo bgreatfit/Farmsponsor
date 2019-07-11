@@ -14,13 +14,13 @@
 Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], function () {
 
     Route::get('', 'PagesController@admin')->name('admin.dashboard');
-    Route::get('farmcycles', 'Admin\DashboardController@farmcycle')->name('admin.farmcycles');
-    Route::get('farmcycles/create', 'FarmController@create')->name('farms.create');
-    Route::post('farmcycles/create', 'FarmController@store')->name('farms.store');
-    Route::get('farmcycles/{farm}/edit', 'FarmController@edit')->name('farms.edit');
-    Route::post('farmcycles/{farm}/edit', 'FarmController@update')->name('farms.update');
-    Route::get('farmcycles/{farm}/show', 'FarmController@adminshow')->name('admin.farmshow');
-    Route::get('farmcycles/{farm}/soldout', 'FarmController@soldout')->name('farms.soldout');
+    Route::get('farmcycles', 'Admin\FarmController@index')->name('admin.farmcycles');
+    Route::get('farmcycles/create', 'Admin\FarmController@create')->name('farms.create');
+    Route::post('farmcycles/create', 'Admin\FarmController@store')->name('farms.store');
+    Route::get('farmcycles/{farm}/edit', 'Admin\FarmController@edit')->name('farms.edit');
+    Route::put('farmcycles/{farm}/edit', 'Admin\FarmController@update')->name('farms.update');
+    Route::get('farmcycles/{farm}/show', 'Admin\FarmController@show')->name('admin.farmshow');
+    Route::get('farmcycles/{farm}/soldout', 'Admin\FarmController@soldout')->name('farms.soldout');
     Route::get('farmcycles/{farm}/open', 'FarmController@open')->name('farms.open');
     Route::get('farmcycles/{farm}/payout', 'FarmController@payout')->name('farms.payout');
     Route::get('farmcycles/{farm}/stoppayout', 'FarmController@stoppayout')->name('farms.stoppayout');

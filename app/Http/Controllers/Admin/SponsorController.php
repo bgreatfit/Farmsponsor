@@ -6,6 +6,8 @@ use Auth;
 use App\Models\Sponsor;
 use App\Models\Farm;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class SponsorController extends Controller
 {
@@ -56,13 +58,6 @@ class SponsorController extends Controller
         $this->request->session()->flash('error', 'Something went wrong!');
         return back();
     }
-
-    public function sponsor(Farm $farm)
-    {
-        return $this->request;
-    }
-
-
 
     /**
      * Remove the specified resource from storage.
