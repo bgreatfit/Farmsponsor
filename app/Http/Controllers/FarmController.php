@@ -179,7 +179,7 @@ class FarmController extends Controller
         // then tests if a transaction already exist with the token
         // If it does, then it generates another transaction id
         do{
-            $transactionId = rand(10000000,99999999) . StrAlias::random(2);
+            $transactionId = rand(10000000,99999999) . Str::random(2);
         }while(Transactionlogs::whereTransactionId($transactionId)->first() != NULL);
 
        return  Transactionlogs::create([
