@@ -37,4 +37,5 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('receipt', 'PagesController@receipt');
     Route::get('receipt-vestbank', 'PagesController@receiptVestbank');
     Route::get('users-list', 'PagesController@usersList')->name('usersList');
+    Route::get('retain-sponsorship', 'PagesController@retainSponsorship')->name('retainSponsorship');
 });

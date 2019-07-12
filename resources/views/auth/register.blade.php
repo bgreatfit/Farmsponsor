@@ -6,7 +6,7 @@
         <div class="col-10 col-md-6 mx-auto">
             <div class="form-box">
                 <div class="formHeadingContainer text-center">
-                    <h2 class="heading__secondary form-heading">Sign up</h2>
+                    <h2 class="form-heading">Sign up</h2>
                 </div>
 
                 <form action="{{ route('register')}}" method="POST" class="form__content">

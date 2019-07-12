@@ -81,6 +81,7 @@
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Undo</th>
+                                        <th scope="col">Remove</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -95,7 +96,10 @@
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
-                                            <a href="{{route('sponsorship.reverse', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-danger">Reverse</a>
+                                            <a href="{{route('sponsorship.reverse', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-secondary">Reverse</a>
+                                        </td>
+                                        <td>
+                                            <a href="{{route('sponsorship.delete', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach

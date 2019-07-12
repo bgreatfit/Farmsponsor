@@ -11125,6 +11125,19 @@ a.text-dark:focus {
   margin-bottom: 6rem;
 }
 
+.section-form .form-box .form-group__content .password-request--label {
+  display: block;
+  text-align: right;
+}
+
+.section-form .form-box .form-group__content .password-request--label .form__input--link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.section-form .form-box .form-group__content .password-request--label .form__input--link:hover {
+  color: black;
+}
+
 .section-form .form-box .form-group__content .rememberMeForm-group {
   width: 100%;
   height: 2.5rem;
@@ -11133,6 +11146,7 @@ a.text-dark:focus {
 .section-form .form-box .form-group__content .form__input {
   font-size: 1.7rem;
   height: 5rem;
+  font-family: Montserrat;
 }
 
 .section-form .form-box .form-group__content #form__input--checkbox {
@@ -11185,9 +11199,11 @@ a.text-dark:focus {
 }
 
 .section-form .form-box .form-group .form__btn {
+  font-family: Montserrat;
+  font-weight: bold;
   background-color: #154219;
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border: none;
   border-radius: 5px;
   padding: 1.7rem 2.8rem;
@@ -11195,11 +11211,19 @@ a.text-dark:focus {
 
 .section-form .form-box .form-group .form__text {
   color: #011633;
+  font-size: 13px;
+  font-family: Montserrat;
 }
 
 .section-form .form-box .form-group .form__input--link {
   text-decoration: none;
-  color: #777;
+  color: #2F43F5;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+
+.section-form .form-box .form-group #form__input--username {
+  margin-bottom: 4.9rem;
 }
 
 .section-form .form-box .form-group .form__input--link:link,
@@ -11210,7 +11234,7 @@ a.text-dark:focus {
 .section-form .form-box .form-group .form__input--link:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-  color: #80a580;
+  color: #061385;
 }
 
 .section-form .sectionWrap {
@@ -11321,6 +11345,23 @@ a.text-dark:focus {
 .password-reset__card .form__input {
   font-size: 1.7rem;
   height: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .form-group-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  .form-group-content .form__text {
+    margin-bottom: 0;
+  }
+
+  .form-group-content .form__text .form__input--link {
+    margin-left: 1rem;
+  }
 }
 
 .card-box {

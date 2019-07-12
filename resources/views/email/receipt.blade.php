@@ -269,7 +269,7 @@
         }
         .introductionContent {
             color: #fff;
-            background-color: #000;
+            background-color: #0E2503;
         }
        
         .introductionHeadingMain{
