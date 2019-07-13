@@ -28,8 +28,14 @@ class PagesController extends Controller {
         return view('pages.homepage');
     }
 // EMAIL VIEW
-    public function email() {
-        return view('email.receipt');
+    public function sponsorsReceipt() {
+        return view('email.sponsors-receipt');
+    }
+    public function vestbankPayReceipt() {
+        return view('email.vestbank-pay-receipt');
+    }
+    public function vestbankFundReceipt() {
+        return view('email.vestbank-fund-receipt');
     }
 // END
     public function login() {

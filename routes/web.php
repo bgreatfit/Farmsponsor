@@ -18,7 +18,9 @@ Route::get('about', 'PagesController@about')->name('about');
 Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('team', 'PagesController@team')->name('team');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
-Route::get('receipt', 'PagesController@email')->name('email');
+Route::get('sponsors-receipt', 'PagesController@sponsorsReceipt')->name('sponsorsReceipt');
+Route::get('vestbank-pay-receipt', 'PagesController@vestbankPayReceipt')->name('vestbankPayReceipt');
+Route::get('vestbank-fund-receipt', 'PagesController@vestbankFundReceipt')->name('vestbankFundReceipt');
 
 // Newsletter Route
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subscribe');

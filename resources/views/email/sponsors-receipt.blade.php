@@ -3,8 +3,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> 
-    <title> HTML email | Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat&display=swap" rel="stylesheet"> 
+    <title> Sponsors Receipt</title>
     <style type="text/css">
 
         /* CSS RESET STYLES */
@@ -81,21 +81,6 @@
             font-size: 24px;
             font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
         }
-
-        h1, 
-        h1 a {
-            
-        }
-
-        h2, 
-        h2 a {
-        
-        }
-
-        h3, 
-        h3 a {
-            
-        }
     
         body, 
         .bodyTable {
@@ -104,18 +89,34 @@
 
         .emailContainer {
             box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.25);
+            max-width: 520px;
+        }
+
+        .introductionContent {
+            color: #fff;
+            background-color: #0E2503;
+        }
+        .introductionContentCell {
+            padding: 15px 0;
+        }
+
+        .introductionHeadingMain{
+            font-family: Barlow;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
         }
 
         .introductionLogo,
         .introductionHeading {
-            width: 50%;
+
         }
 
         .introductionLogo {
-            padding: 20px 0 46px 44px;
+            margin-bottom: 10px;
         }
         .introductionHeading {
-            padding: 20px 44px 46px 0;
+
         }
 
         .introductionBlock {
@@ -123,6 +124,7 @@
         }
         
         .contentHeading {
+            font-family: barlow;
             font-size: 14px;
             font-weight: 600;
             line-height: 17px;
@@ -151,89 +153,80 @@
             padding-right: 45px;
         }
 
-        .transactionDateContent{
-            width: 33.33%;
-        }
-
         .customerInfoBlock {
             margin-bottom: 30px;
         }
-        .customerInfoContent {
-            padding: 0 44px;
+        .customerInfoContent,
+        .transactionDateContent,
+        .transactionInfoDetailsContent,
+        .contactUsContent {
+            padding: 0 10px;
         }
 
         .customerInfoHeading {
             text-align: left;
             margin-bottom: 10px;
+            font-size: 18px;
+            font-family: barlow;
+            line-height: 22px;
+            font-weight: 500;
+
         }
 
         .customerInfoText {
             text-align: left;
-            margin: 0;
+            margin: 0 0 5px 0;
+            font-family: barlow;
         }
 
-        .transactionInfoDetailsContainer {
-            background: #6E9E3D;
-            padding: 10px 0;
+        .customerInfoText span.transactionDateText,
+        .contentHeading span.transactionDateText {
+            margin-left: 10px;
         }
 
         .transactionInfoBlock {
             margin-bottom: 28px;
         }
       
-        .transactionInfoDetailsContainer .transactionInfoDetailsContent .contentHeading {
-            margin-bottom: 0;
-            color: #fff;
-        }
-        .transactionInfoFiguresContainer{
-            background: rgba(229, 229, 229, 0.5);
-            padding: 13px 0;
-        }
         .transactionInfoText {
             color: #000;
         }
 
-        .transactionInfoDetailsContent{
-            /* width: 25%; */
+        .transactionInfoDetailsText{
+            padding: 10px;
+            margin: 0 -10px 0;
+            font-family: barlow;
+        }
+        .transactionInfoDetailsText span.contentText {
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 10px;
         }
 
-        .transactionInfoFiguresContent:nth-of-type(1){
-            width: 200px;
-
+        .transactionInfoDetailsText:nth-child(odd) {
+            background-color: rgba(14, 37, 3, 0.2);
+        }
+        .transactionInfoDetailsText:nth-child(even) {
+            background-color: rgba(153, 153, 153, 0.2);
         }
 
-        .transactionInfoFiguresContent:nth-of-type(2){
-            width: 125px;
-        }
-
-        .transactionInfoFiguresContent:nth-of-type(3){
-
-        }
-
-        .transactionInfoFiguresContent:nth-of-type(4){
-            /* padding-right: 25px; */
+        .transactionInfoDetailsFarmCycleInfo{
+            margin-top: 15px;
+            text-align: center;
+            font-family: Barlow;
+            font-size: 12px;
+            line-height: 14px;
         }
 
         .contactUsBlock {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
-        .contactUsContent {
-            padding: 0 44px;
-        }
-
-        .contactUsContent .contentHeading {
-            text-align: left;
-            font-size: 18px;
-            margin-bottom: 12px;
-            font-weight: normal;
-        }
-
+       
         .contactUsText {
             text-align: left;
-        }
-
-        .contactUsText:nth-of-type(3) {
-            margin-bottom: 30px;
+            font-size: 12px;
+            color: #999999;
+            font-family: barlow;
         }
 
         .footerText.footerSocials {
@@ -252,30 +245,11 @@
         }
 
 
-
-
-
-
-        .introductionContainer,
-        .callToActionContainer { 
-            /* padding: 40px; */
-        }
-
         .introductionContent, 
         .introductionHeading, 
         .contentText, 
         .footerContent {
             font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-        }
-        .introductionContent {
-            color: #fff;
-            background-color: #0E2503;
-        }
-       
-        .introductionHeadingMain{
-            color: #fff;
-            font-size: 24px;
-            text-align: right;
         }
 
         
@@ -366,15 +340,15 @@
                                         <td align="center" valign="top">
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="introductionContent">
                                                 <tr>
-                                                    <td align="left" valign="top" class="introductionLogo">
-                                                        <div class="logoContainer">
+                                                    <td align="center" valign="top" class="introductionContentCell">
+                                                        <div class="introductionLogo">
                                                             <a href="https://farmsponsor.com.ng" target="_blank" class="logoLink">
                                                                 <img src="{{asset('img/fs-email-logo.svg')}}" width="89" height="60" alt="Farmsponsor Logo"  class="logo">
                                                             </a>
                                                         </div>
-                                                    </td>
-                                                    <td align="left" valign="middle" class="introductionHeading">
-                                                        <h1 class="introductionHeadingMain">Official Receipt</h1>
+                                                        <div class="introductionHeading">
+                                                            <h1 class="introductionHeadingMain">Sponsor’s Receipt</h1>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -389,42 +363,18 @@
                                 <!-- EMAIL TRANSACTION DATE CONTENT  -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionDateBlock">
                                     <tr>
-                                        <td align="center" valign="top" class="transactionDateContent">
+                                        <td align="left" valign="top" class="transactionDateContent">
                                             <h2 class="contentHeading">
-                                                Date
+                                                Date: <span class="contentText transactionDateText">7/06/2019</span>
                                             </h2>
-                                            <p class="contentText transactionDateText">
-                                                7/06/2019
-                                            </p>
-                                        </td>
-                                        <td align="center" valign="top" class="transactionDateContent">
                                             <h2 class="contentHeading">
-                                                Total Amount
+                                                Total Amount: <span class="contentText transactionDateText">N200,000.00</span>
                                             </h2>
-                                            <p class="contentText transactionDateText">
-                                                N200,000.00
-                                            </p>
-                                        </td>
-                                        <td align="center" valign="top" class="transactionDateContent">
                                             <h2 class="contentHeading">
-                                                Transaction ID 
+                                                Transaction ID: <span class="contentText transactionDateText"> 00757 </span>
                                             </h2>
-                                            <p class="contentText transactionDateText">
-                                                00757
-                                            </p>
                                         </td>
                                     </tr>
-                                    {{-- <tr>
-                                        <td align="center" valign="top">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="callToActionContent">
-                                                <tr>
-                                                    <td align="center" valign="top">
-                                                        <a href="http://bit.ly/sponsorluncheon" target="_blank" class="callToActionButton">Register Now</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr> --}}
                                 </table>
                                 <!-- EMAIL TRANSACTION DATE CONTENT END -->
                             </td>
@@ -434,21 +384,21 @@
                                 <!-- EMAIL CUSTOMER INFO CONTENT  -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="520" class="customerInfoBlock">
                                     <tr>
-                                        <td align="center" valign="top" class="customerInfoContent">
+                                        <td align="left" valign="top" class="customerInfoContent">
                                             <h2 class="contentHeading customerInfoHeading">
                                                 Customer Info: 
                                             </h2>
-                                            <p class="contentText customerInfoText">
-                                                Emmanuel Jacobson 
+                                            <p class="customerInfoText">
+                                                Name: <span class=" transactionDateText">Emmanuel Jacobson </span>
                                             </p>
-                                            <p class="contentText customerInfoText">
-                                                2 Orosi Street, Rumuola, Port Harcourt, Rivers State.
+                                            <p class="customerInfoText">
+                                                Address: <span class=" transactionDateText">2 Orosi Street, Rumuola, Port Harcourt, Rivers State.</span>
                                             </p>
-                                            <p class="contentText customerInfoText">
-                                                Tel: 08062268255 
+                                            <p class="customerInfoText">
+                                                Phone: <span class=" transactionDateText"> 08062268255 </span>
                                             </p>
-                                            <p class="contentText customerInfoText">
-                                                Email: writeprovidence@gmail.com
+                                            <p class="customerInfoText">
+                                                Email: <span class=" transactionDateText"> writeprovidence@gmail.com </span>
                                             </p>
                                         </td>
                                     </tr>
@@ -465,92 +415,43 @@
                                         <td align="center" valign="top" class="transactionInfoDetailsContainer">
                                             <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionInfoDetailsBlock">
                                                 <tr>
-                                                    <td align="center" valign="top" class="transactionInfoDetailsContent">
-                                                        <h2 class="contentHeading">
-                                                            Amt Sponsored
+                                                    <td align="left" valign="top" class="transactionInfoDetailsContent">
+                                                        <h2 class="contentHeading customerInfoHeading">
+                                                            Transaction Info: 
                                                         </h2>
-                                                    </td>
-                                                    <td align="center" valign="top" class="transactionInfoDetailsContent">
-                                                        <h2 class="contentHeading">
-                                                            No Of Units
-                                                        </h2>
-                                                    </td>
-                                                    <td align="center" valign="top" class="transactionInfoDetailsContent">
-                                                        <h2 class="contentHeading">
-                                                            Returns
-                                                        </h2>
-                                                    
-                                                    </td>
-                                                    <td align="center" valign="top" class="transactionInfoDetailsContent">
-                                                        <h2 class="contentHeading">
-                                                            Payable
-                                                        </h2>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" valign="top" class="transactionInfoFiguresContainer">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionInfoDetailsBlock">
-                                                <tr>
-                                                    <td align="center" valign="top" class="transactionInfoFiguresContent">
-                                                        <p class="contentText transactionInfoText">
-                                                            200,000.00 
+                                                        <p class="transactionInfoDetailsText">
+                                                            Amt Sponsored:
+                                                            <span class="contentText transactionInfoText">
+                                                                200,000.00 
+                                                            </span>
                                                         </p>
-                                                    </td>
-                                                    <td align="center" valign="top" class="transactionInfoFiguresContent">
-                                                        <p class="contentText transactionInfoText">
-                                                            2
+                                                        <p class="transactionInfoDetailsText">
+                                                            No Of Units:
+                                                            <span class="contentText transactionInfoText">
+                                                                2
+                                                            </span>
                                                         </p>
-                                                    </td>
-                                                    <td align="center" valign="top" class="transactionInfoFiguresContent">
-                                                        <p class="contentText transactionInfoText">
-                                                            00757
+                                                        <p class="transactionInfoDetailsText">
+                                                            Returns:
+                                                                <span class="contentText transactionInfoText">
+                                                                    30000
+                                                                </span>
                                                         </p>
-                                                    
-                                                    </td>
-                                                    <td align="center" valign="top" class="transactionInfoFiguresContent">
-                                                        <p class="contentText transactionInfoText">
-                                                            00757
+                                                        <p class="transactionInfoDetailsText">
+                                                            Payable:
+                                                            <span class="contentText transactionInfoText">
+                                                                230000
+                                                            </span>
+                                                        </p>
+     
+                                                        <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
+                                                            21st Farming cycle starting from June 28, 2019 to Sept 20, 2019 
                                                         </p>
                                                     </td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
-    
-
-
-
-
-
-
-
-                                    {{-- <tr>
-                                        <td align="center" valign="top" class="transactionInfoContent">
-                                            <p class="contentText transactionInfoText">
-                                                CONTENT
-                                            </p>
-                                        </td>
-                                        <td align="center" valign="top" class="transactionInfoContent">
-                                            
-                                            <p class="contentText transactionInfoText">
-                                                N200,000.00
-                                            </p>
-                                        </td>
-                                        <td align="center" valign="top" class="transactionInfoContent">
-                                           
-                                            <p class="contentText transactionDateText">
-                                                00757
-                                            </p>
-                                        </td>
-                                        <td align="center" valign="top" class="transactionInfoContent">
-                                            <p class="contentText transactionDateText">
-                                                00757
-                                            </p>
-                                        </td>
-                                    </tr> --}}
                                 </table>
                                 <!-- EMAIL TRANSACTION INFO CONTENT END -->
                             </td>
@@ -562,28 +463,15 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="520" class="contactUsBlock">
                                     <tr>
                                         <td align="center" valign="top" class="contactUsContent">
-                                            <h2 class="contentHeading">
-                                                Contact Us:
-                                            </h2>
-                                            <p class="contentText contactUsText">
-                                                16 Abua Close Off Port Harcourt 
-                                            </p>
-                                            <p class="contentText contactUsText">
-                                                Aba Expressway, Rumuibekwe, 
-                                            </p>
-                                            <p class="contentText contactUsText">
-                                               Port Harcourt Rivers State. 
-                                            </p>
-
-                                            <p class="contentText contactUsText">
-                                                Phone : 07031960724, 08080990560 
-                                            </p>
-                                            <p class="contentText contactUsText">
-                                                website: farmsponsor.com.ng
-                                            </p>
-                                            <p class="contentText contactUsText">
-                                                Email: farmsponsorng@gmail.com 
-                                            </p>
+                                            <span class="contactUsText">
+                                                P: 07031960724, 08080990560 
+                                            </span>
+                                            <span class="contactUsText">
+                                                W: farmsponsor.com.ng
+                                            </span>
+                                            <span class="contactUsText">
+                                                E: farmsponsorng@gmail.com 
+                                            </span>
                                         </td>
                                     </tr>
                                 </table>
@@ -596,13 +484,6 @@
                             <td align="center" valign="top" class="footerContainer">
                                 <!-- EMAIL FOOTER CONTENT -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="520" class="footerBlock">
-                                    <tr>
-                                        <td align="center" valign="top" class="footerContent">
-                                            <p class="footerText footerTextFarmCycleInfo">
-                                                21st Farming cycle starting from June 28, 2019 to Sept 20, 2019 
-                                            </p>
-                                        </td>
-                                    </tr>
                                     <tr>
                                         <td align="center" valign="center" class="footerContent">
                                             <div class="footerText footerSocials">
