@@ -27,7 +27,17 @@ class PagesController extends Controller {
     public function homepage() {
         return view('pages.homepage');
     }
-
+// EMAIL VIEW
+    public function sponsorsReceipt() {
+        return view('email.sponsors-receipt');
+    }
+    public function vestbankPayReceipt() {
+        return view('email.vestbank-pay-receipt');
+    }
+    public function vestbankFundReceipt() {
+        return view('email.vestbank-fund-receipt');
+    }
+// END
     public function login() {
         return view('pages.login');
     }
@@ -86,6 +96,9 @@ class PagesController extends Controller {
 
     public function receipt(){
         return view('pages.admin.receipt');
+    }
+    public function retainSponsorship(){
+        return view('pages.admin.retain-sponsorship');
     }
     public function receiptVestbank(){
         return view('pages.admin.receipt-vestbank');

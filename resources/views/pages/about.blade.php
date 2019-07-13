@@ -92,7 +92,7 @@
                             <div class="about-mission">
                                 <h1 class="about-heading">Mission</h1>
                                 <p class="about-text">
-                                    Our vision is to ensure food is available for everyone by getting everyone involved in agriculture.
+                                    Our mission is to use technology to drive the participation of everyone in agriculture.
                                 </p>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                             <div class="about-mission">
                                 <h1 class="about-heading">Vision</h1>
                                 <p class="about-text">
-                                    Our mission is to use technology to drive the participation of everyone in agriculture.
+                                    Our vision is to ensure food is available for everyone by getting everyone involved in agriculture.
                                 </p>
                             </div>
                         </div>

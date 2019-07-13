@@ -7,7 +7,7 @@
             <div class="col-12 col-md-12">
                 <div class="sponsors-list__content ">
                     <h1 class="sponsors-list__heading text-center mb-5">{{$farm->name}} Farming Cycle</h1>
-                </div>Car bnbnb
+                </div>
             </div>
         </div>
 
@@ -43,6 +43,8 @@
                                         <th scope="col">Returns (NGN)</th>
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Remove</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -81,6 +83,7 @@
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Undo</th>
+                                        <th scope="col">Remove</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -95,7 +98,10 @@
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
-                                            <a href="{{route('sponsorship.reverse', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-danger">Reverse</a>
+                                            <a href="{{route('sponsorship.reverse', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-secondary">Reverse</a>
+                                        </td>
+                                        <td>
+                                            <a href="{{route('sponsorship.delete', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -116,6 +122,7 @@
                                         <th scope="col">Returns (NGN)</th>
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Remove</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -125,7 +132,6 @@
                                         <td>
                                             <a href="{{route('banksponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                         </td>
-
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount}}</td>
@@ -133,6 +139,9 @@
                                         <td>{{$sponsor->transaction->returns}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
+                                        <td>
+                                            <a href="#"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
@@ -152,6 +161,7 @@
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Undo</th>
+                                        <th scope="col">Remove</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -166,7 +176,10 @@
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
-                                            <a href="{{route('banksponsorship.reverse', $sponsor->id)}}"  class="sponsor-confirm btn btn-md btn-danger">Reverse</a>
+                                            <a href="{{route('banksponsorship.reverse', $sponsor->id)}}"  class="sponsor-confirm btn btn-md btn-secondary">Reverse</a>
+                                        </td>
+                                        <td>
+                                            <a href="#"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach

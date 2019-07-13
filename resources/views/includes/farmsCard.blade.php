@@ -52,7 +52,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <p class="farmlist__text">Due Date: </p>
+                                <p class="farmlist__text">Close Date: </p>
                                 <p class="farmlist__sub-text mb-4">{{$farm->due_date->diffForHumans()}}</p>
                             </div>
                         </div>
