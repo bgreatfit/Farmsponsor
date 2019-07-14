@@ -417,7 +417,7 @@
                                                 <tr>
                                                     <td align="left" valign="top" class="transactionInfoDetailsContent">
                                                         <h2 class="contentHeading customerInfoHeading">
-                                                            Transaction Info: 
+                                                            Transaction Details: 
                                                         </h2>
                                                         <p class="transactionInfoDetailsText">
                                                             Amt Sponsored:
