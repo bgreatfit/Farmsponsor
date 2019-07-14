@@ -185,7 +185,7 @@
         }
 
         .transactionInfoBlock {
-            margin-bottom: 28px;
+            margin-bottom: 8px;
         }
       
         .transactionInfoText {
@@ -217,6 +217,9 @@
         .transactionInfoDetailsText:nth-child(even) {
             background-color: rgba(153, 153, 153, 0.2);
         }
+        .transactionInfoDetailsText:last-of-type{
+            margin-top: 14px;
+        }
 
         .transactionInfoDetailsFarmCycleInfo{
             margin-top: 15px;
@@ -225,9 +228,12 @@
             font-size: 12px;
             line-height: 14px;
         }
+        .transactionInfoDetailsSummary .transactionInfoDetailsTextMain {
+            font-weight: bold;
+        }
 
         .contactUsBlock {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
        
         .contactUsText {
