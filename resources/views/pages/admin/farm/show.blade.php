@@ -56,7 +56,7 @@
                                         </td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount ?? 0}}</td>
+                                        <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns ?? 0}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
@@ -92,7 +92,7 @@
                                          <th scope="row">{{$key}}</th>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount ?? 0}}</td>
+                                        <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns ?? 0}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
@@ -134,7 +134,7 @@
                                         </td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount ?? 0}}</td>
+                                        <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns ?? 0}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
@@ -170,7 +170,7 @@
                                         <th scope="row">{{$key}}</th>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount ?? 0}}</td>
+                                        <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns ?? 0}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
