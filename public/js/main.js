@@ -45,13 +45,3 @@ $('#vest-funds__form').on('submit', confirmTransaction);
 $('#sponsor-now__form').on('submit', confirmTransaction);      
 $('.vestbank-withdraw__form').on('submit', confirmTransaction);
 $('.sponsor-farmcycle__form').on('submit', confirmTransaction);
-
-var bankTransfer = document.querySelector(".deposit-method");
-function suspendDeposit () {
-  swal({
-    title: "Transfers Suspended!",
-    text: "All funds transfers have been temprarily suspended due to the ongoing sponsoring windows, vestbank funding will be resumed shortly."
-  })
-}
-
-
