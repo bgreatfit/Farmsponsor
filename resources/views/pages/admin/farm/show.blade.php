@@ -140,7 +140,7 @@
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
-                                            <a href="#"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
+                                            <a href="{{route('banksponsorship.delete', $sponsor->id)}}"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -179,7 +179,7 @@
                                             <a href="{{route('banksponsorship.reverse', $sponsor->id)}}"  class="sponsor-confirm btn btn-md btn-secondary">Reverse</a>
                                         </td>
                                         <td>
-                                            <a href="#"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
+                                            <a href="{{route('banksponsorship.delete', $sponsor->id)}}"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach

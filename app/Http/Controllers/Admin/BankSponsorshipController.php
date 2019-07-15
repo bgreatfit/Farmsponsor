@@ -36,6 +36,19 @@ class BankSponsorshipController extends Controller
         $request->session()->flash('error', 'Something went wrong!');
         return back();
     }
+
+    public function delete(BankSponsorship $sponsor)
+    {
+        $sponsor->farmingcycle()->increment('units', $sponsor->units);
+
+        if($sponsor->delete() && $sponsor->transaction()->delete()){
+            $this->request->session()->flash('success', 'Sponsorship Deleted');
+            return back();
+        };
+        $this->request->session()->flash('error', 'Something went wrong!');
+        return back();
+    }
+
 }
 
 //            $sponsor = new Sponsor;
