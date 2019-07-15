@@ -40,7 +40,7 @@ class Sponsor extends Model
         return $this->morphMany('App\Models\Transactionlogs', 'transactionable');
     }
 
-     public function transaction()
+    public function transaction()
     {
         return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
     }
@@ -51,8 +51,15 @@ class Sponsor extends Model
 
     }
 
-    public function getAmountAttribute(){
+    public function getAmountAttribute()
+    {
         return 'NGN ' . number_format($this->units * $this->getPricePerUnit()) . '.00';
+    }
+
+    public function getReturnAttribute()
+    {
+        $amount = $this->units * $this->getPricePerUnit();
+        return 'NGN ' . number_format($amount + ($amount * 0.15)) . '.00';
     }
 
     public function getPricePerUnit()
@@ -63,6 +70,10 @@ class Sponsor extends Model
     public function hasRetained()
     {
         return $this->retain()->count() == 1 ? true : false;
+    }
 
+    public function returns()
+    {
+        return $this->units * $this->getPricePerUnit();
     }
 }

@@ -21,4 +21,9 @@ class Bankfunding extends Model
     {
         return $this->approved ? true : false;
     }
+
+    public function transaction()
+    {
+        return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
+    }
 }

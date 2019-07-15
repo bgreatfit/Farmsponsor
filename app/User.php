@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\BankSponsorship;
 use App\Models\Transactionlogs;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -45,6 +46,11 @@ class User extends Authenticatable implements MustVerifyEmail
     public function cyclesSponsored()
     {
         return $this->hasMany('App\Models\Sponsor');
+    }
+
+    public function bankSponsorship()
+    {
+        return $this->hasMany(BankSponsorship::class);
     }
 
     public function state()

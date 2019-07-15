@@ -52,7 +52,6 @@ class FundingController extends Controller
         return $bankfunding;
     }
 
-
     public function logTransaction($model)
     {
         // generates a 8digit transaction id for each transaction
@@ -74,7 +73,6 @@ class FundingController extends Controller
     {
         return rand(10000000,99999999) . Str::random(2);
     }
-
 
     public function withdraw(Request $request)
     {
@@ -127,45 +125,44 @@ class FundingController extends Controller
     protected function processVestbankWithdrawalOf(String $field, $amount = NULL)
     {
         $currentAmount = Auth::user()->vestbank->$field;
+        $charges = $this->getWithdrawalCharges();
 
 
         if(is_null($amount)){
             $amount = $currentAmount;
         }
 
-
         switch ($field){
 
             case 'balance':
+
                 Auth::user()->vestbank()->update([
                     'capital' => 0,
                     'interest' => 0,
                     'lock' => 1
                 ]);
 
-                return $this->logTransaction($this->logWithdrawalRequest($amount - $this->getWithdrawalCharges()));
+                return $this->logTransaction($this->logWithdrawalRequest($amount - $charges, $field, $charges));
                 break;
 
             case 'interest':
-                $currentAmount = Auth::user()->vestbank->$field;
 
-                if($currentAmount - ($amount + $this->getWithdrawalCharges() >= 0)){
-                    Auth::user()->vestbank()->update([
-                        $field => $currentAmount - ($amount + $this->getWithdrawalCharges()),
-                        'lock' => 1
-                    ]);
+                Auth::user()->vestbank()->update([
+                    'interest' => 0,
+                    'lock' => 1
+                ]);
 
-                    return $this->logTransaction($this->logWithdrawalRequest($amount + $this->getWithdrawalCharges()));
-                    return redirect()->back();
-                }
-//            return redirect()->back();
+                return $this->logTransaction($this->logWithdrawalRequest($amount - $charges, $field, $charges));
+                break;
 
-//                Auth::user()->vestbank()->update([
-//                    $field => $currentAmount - $amount,
-//                    'lock' => 1
-//                ]);
-//
-//                return $this->logTransaction($this->logWithdrawalRequest($amount));
+            case 'capital':
+
+                Auth::user()->vestbank()->update([
+                    'capital' => 0,
+                    'lock' => 1
+                ]);
+
+                return $this->logTransaction($this->logWithdrawalRequest($amount - $charges, $field, $charges));
                 break;
         }
 
@@ -181,7 +178,7 @@ class FundingController extends Controller
 //        return $this->logTransaction($this->logWithdrawalRequest($amount));
     }
 
-    protected function logWithdrawalRequest($amount)
+    protected function logWithdrawalRequest($amount, $field, $charges)
     {
         do{
             $transactionId = $this->generateTransactionId();
@@ -192,6 +189,8 @@ class FundingController extends Controller
             'amount' =>$amount,
             'ip_address' => request()->ip(),
             'transaction_id' => $transactionId,
+            'field' => $field,
+            'charges' => $charges
         ];
 
         return WithdrawalLog::create($data);

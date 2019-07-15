@@ -6,8 +6,12 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="sponsors-list__content ">
+<<<<<<< HEAD
                     <h1 class="sponsors-list__heading text-center mb-5">{{$farm->name}} Farming Cycle</h1>
                     @include('includes.searchbar')
+=======
+                    <h1 class="sponsors-list__heading text-center mb-5">{{$farm->name}}'s Farming Cycle Details</h1>
+>>>>>>> master
                 </div>
             </div>
         </div>
@@ -57,9 +61,9 @@
                                         </td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
-                                        <td>{{$sponsor->transaction->returns}}</td>
+                                        <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
@@ -88,14 +92,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($approved_vestbank_sponsors as $sponsor)
+                                    @foreach($approved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
                                          <th scope="row">{{$key}}</th>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
-                                        <td>{{$sponsor->transaction->returns}}</td>
+                                        <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
@@ -135,13 +139,13 @@
                                         </td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
-                                        <td>{{$sponsor->transaction->returns}}</td>
+                                        <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
-                                            <a href="#"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
+                                            <a href="{{route('banksponsorship.delete', $sponsor->id)}}"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -171,16 +175,16 @@
                                         <th scope="row">{{$key}}</th>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
-                                        <td>{{$sponsor->transaction->amount}}</td>
+                                        <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
-                                        <td>{{$sponsor->transaction->returns}}</td>
+                                        <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
                                             <a href="{{route('banksponsorship.reverse', $sponsor->id)}}"  class="sponsor-confirm btn btn-md btn-secondary">Reverse</a>
                                         </td>
                                         <td>
-                                            <a href="#"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
+                                            <a href="{{route('banksponsorship.delete', $sponsor->id)}}"  class="sponsor-confirm btn btn-md btn-danger">Delete</a>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -190,6 +194,7 @@
                     </div>
                 </div>
                 {{$unapproved_vestbank_sponsors->links()}}
+                {{$unapproved_sponsors->links()}}
             </div>
         </div>
     </div>

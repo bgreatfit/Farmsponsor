@@ -16,15 +16,14 @@ class CheckAlreadyConfirmedMiddleware
      */
     public function handle($request, Closure $next)
     {
-//        return die($request->route('deposit'));
-//        $deposit = Bankfunding::find($request->route('deposit'));
+
         if(! $request->route('deposit')){ //no deposit request
             return abort(404);
         }
 
         if($request->route('deposit')->approved()){
 
-            request()->session()->flash('error', 'Deposit already approved!');
+            request()->session()->flash('error', 'Funding already approved!');
             return redirect()->back();
         }
         return $next($request);

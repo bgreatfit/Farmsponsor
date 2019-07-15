@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Transactionlogs extends Model
 {
+    use SoftDeletes;
+
     protected  $fillable = [
         'user_id', 'status_id', 'transactionable_id', 'transactionable_type', 'transaction_id'
     ];
@@ -39,8 +42,8 @@ class Transactionlogs extends Model
                 break;
 
             case 'App\Models\BankSponsorship':
-            return 'Bank Sponsorship';
-            break;
+                return 'Bank Sponsorship';
+                break;
         }
     }
 
