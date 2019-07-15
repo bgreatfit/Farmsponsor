@@ -58,7 +58,7 @@
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
-                                        <td>{{$sponsor->transaction->returns ?? 0}}</td>
+                                        <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
@@ -94,7 +94,7 @@
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
-                                        <td>{{$sponsor->transaction->returns ?? 0}}</td>
+                                        <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
@@ -136,7 +136,7 @@
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
-                                        <td>{{$sponsor->transaction->returns ?? 0}}</td>
+                                        <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
@@ -172,7 +172,7 @@
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
-                                        <td>{{$sponsor->transaction->returns ?? 0}}</td>
+                                        <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>

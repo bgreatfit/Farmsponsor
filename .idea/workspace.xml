@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cbcaab-26d8-4fea-90ae-f8b1234fda2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Models/Sponsor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sponsor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/User.php" afterDir="false" />
@@ -57,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1334">
-              <caret line="58" column="95" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
+            <state relative-caret-position="-23">
+              <caret line="174" column="96" selection-start-line="174" selection-start-column="96" selection-end-line="174" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -66,8 +67,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Sponsor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-235">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="225">
+              <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Transactionlogs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="105" column="5" lean-forward="true" selection-start-line="102" selection-start-column="3" selection-end-line="105" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -144,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SponsorController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BankSponsorshipController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BankSponsorshipController.php" />
@@ -194,6 +203,7 @@
         <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Carts/CartController.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Models/Sponsor.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" />
       </list>
     </option>
@@ -437,12 +447,12 @@
       <workItem from="1562855668799" duration="25402000" />
       <workItem from="1563015105481" duration="19642000" />
       <workItem from="1563139851260" duration="2862000" />
-      <workItem from="1563184569579" duration="2172000" />
+      <workItem from="1563184569579" duration="4159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270799000" />
+    <option name="totallyTimeSpent" value="272786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
@@ -548,12 +558,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../twig/resources/lang/en/pagination.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../twig/resources/lang/en/passwords.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../twig/resources/lang/en/repository-generator.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -870,17 +874,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/fdc0c2e2b06e31abe4557fe23918d5bc48cce19f.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="105" column="53" selection-start-line="105" selection-start-column="53" selection-end-line="105" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Transactionlogs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="105" column="5" lean-forward="true" selection-start-line="102" selection-start-column="3" selection-end-line="105" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Sponsor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="225">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="58" column="95" selection-start-line="58" selection-start-column="95" selection-end-line="58" selection-end-column="95" />
+        <state relative-caret-position="-23">
+          <caret line="174" column="96" selection-start-line="174" selection-start-column="96" selection-end-line="174" selection-end-column="96" />
         </state>
       </provider>
     </entry>
