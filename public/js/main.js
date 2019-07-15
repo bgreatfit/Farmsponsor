@@ -46,15 +46,12 @@ $('#sponsor-now__form').on('submit', confirmTransaction);
 $('.vestbank-withdraw__form').on('submit', confirmTransaction);
 $('.sponsor-farmcycle__form').on('submit', confirmTransaction);
 
-function suspendDeposit (e) {
-  var stopDefaultAction = e.preventDefault();
-  $(this).bind(stopDefaultAction);
+var bankTransfer = document.querySelector(".deposit-method");
+function suspendDeposit () {
   swal({
-    title: "Payment Suspended",
-    text: "Payment has been temporarily suspended due to closure of sponsoring window!",
+    title: "Transfers Suspended!",
+    text: "All funds transfers have been temprarily suspended due to the ongoing sponsoring windows, vestbank funding will be resumed shortly."
   })
 }
-
-// $('deposit-method__link').on('click', suspendDeposit);
 
 

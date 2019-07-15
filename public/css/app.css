@@ -14108,6 +14108,25 @@ mar .intro-section__image-box {
   margin-bottom: 0.5px;
 }
 
+.searchbar__form {
+  margin-bottom: 5rem;
+}
+
+.searchbar__form .searchbar__input {
+  font-size: 1.6rem;
+  padding: 1rem 0.8rem;
+  flex-grow: 7;
+}
+
+.searchbar__form .searchbar__button-box {
+  flex-grow: 1;
+}
+
+.searchbar__form .searchbar__button {
+  padding: 3.75px 50px;
+  font-size: 1.6rem;
+}
+
 ul.nav.nav-tabs .sponsor-via-vestbank-tab {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }

@@ -7,6 +7,7 @@
             <div class="col-12 col-md-12">
                 <div class="sponsors-list__content ">
                     <h1 class="sponsors-list__heading text-center mb-5">{{$farm->name}} Farming Cycle</h1>
+                    @include('includes.searchbar')
                 </div>
             </div>
         </div>
