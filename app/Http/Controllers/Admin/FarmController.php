@@ -158,6 +158,8 @@ class FarmController extends Controller
             $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
         })->orderBy('created_at', 'desc')->paginate(10);
 
+        $data['searchValue'] = $this->request->value;
+
         return view('pages.admin.farm.show', $data);
     }
 }
