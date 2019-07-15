@@ -24,6 +24,7 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('farmcycles/{farm}/open', 'Admin\FarmController@open')->name('farms.open');
     Route::get('farmcycles/{farm}/payout', 'Admin\FarmController@payout')->name('farms.payout');
     Route::get('farmcycles/{farm}/stoppayout', 'Admin\FarmController@stoppayout')->name('farms.stoppayout');
+    Route::get('farmcycles/search', 'Admin\FarmController@search')->name('farms.search');
     Route::get('sponsorship/{sponsor}/confirm', 'Admin\SponsorController@confirm')->name('sponsorship.confirm');
     Route::get('sponsorship/{sponsor}/reverse', 'Admin\SponsorController@reverse')->name('sponsorship.reverse');
     Route::get('sponsorship/{sponsor}/delete', 'Admin\SponsorController@delete')->name('sponsorship.delete');

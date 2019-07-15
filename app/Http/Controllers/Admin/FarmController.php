@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\BankSponsorship;
 use App\Models\Farm;
 use App\Models\Sponsor;
+use App\User;
 use Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -134,5 +135,18 @@ class FarmController extends Controller
         Sponsor::whereApproved(1)->whereFarmId($farm->id)->decrement('status_id');
 
         return redirect()->back();
+    }
+
+    public function search()
+    {
+        $data['farm'] = Farm::findOrFail($this->request->farm_id);
+        $user_id = User::where('firstname', 'LIKE', $this->request->value)->orWhere('lastname', 'LIKE',$this->request->value)->pluck('id');
+
+        $data['approved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(10);
+        $data['unapproved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(10);
+        $data['approved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(1)->where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(10);
+        $data['unapproved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(0)->where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(10);
+        return $data;
+        return view('pages.admin.farm.show', $data);
     }
 }
