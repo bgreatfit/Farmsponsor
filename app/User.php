@@ -58,15 +58,18 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->belongsTo('App\Models\State');
     }
 
-
     public function bank()
     {
         return $this->hasOne('App\Models\Bank');
     }
 
-
     public function vestbank()
     {
         return $this->hasOne('App\Models\Vestbank');
+    }
+
+    public function transactions()
+    {
+        return $this->hasMany(Transactionlogs::class);
     }
 }
