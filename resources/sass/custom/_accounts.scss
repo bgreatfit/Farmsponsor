@@ -21,26 +21,12 @@ $text-light: rgba($color-black, .4);
     justify-content: center;
 
     .form-box{
-        // box-shadow: 0rem 0.5rem 2rem #383d41;
-        // background-image: radial-gradient(rgba(255, 185, 0, 0.8), rgba(242, 216, 106, 0.9));
-        // border-radius: 5px;
         padding: 2rem;
         display: flex;
         flex-direction: column;
         max-width: 46.4rem;
-        // max-width: 35rem;
         margin: auto;
-        // .form-heading__icon{
-        //     display: inline-block;
-        //     font-size: 4rem;
-        //     color: $color-grey-soft;
-        //     border: 2px solid $color-grey-soft;
-        //     width: 7rem;
-        //     height: 7rem;
-        //     border-radius: 4rem;
-        //     text-align: center;
-        //     padding: 10px;
-        // }
+        
         .form-heading{
             font-family: $font-family-main;
             font-weight: 500;
@@ -50,6 +36,17 @@ $text-light: rgba($color-black, .4);
             margin-bottom: 6rem;
         }
         .form-group__content{
+            .password-request--label{
+                display: block;
+                text-align: right;
+
+                .form__input--link {
+                    color: rgba(0, 0, 0 , .6);
+                }
+                .form__input--link:hover {
+                    color: darken(#000, 20% );
+                }
+            }
             .rememberMeForm-group{
                 width: 100%;
                 height: 2.5rem;
@@ -57,6 +54,7 @@ $text-light: rgba($color-black, .4);
             .form__input {
                 font-size: 1.7rem;
                 height: 5rem;
+                font-family: $font-family-main;
             }
             
             // CUSTOM CHECKBOX STYLING
@@ -115,19 +113,29 @@ $text-light: rgba($color-black, .4);
         }
         .form-group {
             .form__btn {
+                font-family: $font-family-main;
+                font-weight: bold;
                 background-color: $button-green;
                 color: $color-white;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 border: none;
                 border-radius: 5px;
                 padding: 1.7rem 2.8rem;
             }
             .form__text{
                 color: $text-dark;
+                font-size: 13px;
+                font-family: $font-family-main;
             }
             .form__input--link {
                 text-decoration: none;
-                color:  $color-grey-dark;
+                color:  #2F43F5;
+                font-size: 13px;
+                font-family: $font-family-main;
+            }
+
+            #form__input--username{
+                margin-bottom: 4.9rem;
             }
 
             .form__input--link:link,
@@ -137,7 +145,7 @@ $text-light: rgba($color-black, .4);
 
             .form__input--link:hover {
                 transform: scale(1.15);
-                color:  rgb(128, 165, 128);
+                color: darken(#2F43F5, 30%);
             }
 
 
@@ -253,5 +261,23 @@ $text-light: rgba($color-black, .4);
     .form__input {
         font-size: 1.7rem;
         height: 4rem;
+    }
+}
+
+
+@media screen and (min-width:768px){
+    .form-group-content{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 100%;
+
+        .form__text{
+            margin-bottom: 0;
+
+            .form__input--link{
+                margin-left: 1rem;
+            }
+        }
     }
 }
