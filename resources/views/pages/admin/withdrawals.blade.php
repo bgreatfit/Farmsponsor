@@ -28,7 +28,9 @@
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Type</th>
                                         <th scope="col">Amount</th>
+                                        <th scope="col">Charges</th>
                                         <th scope="col">Date</th>
                                         <th scope="col">Withdrawal Status</th>
                                         </tr>
@@ -48,18 +50,24 @@
                                                     <p class="widthdrawal-info">{{$withdrawal->user->email}}</p>
                                                 </td>
                                                 <td>
+                                                    <p class="widthdrawal-info">{{$withdrawal->field}}</p>
+                                                </td>
+                                                <td>
                                                     <p class="widthdrawal-info">{{$withdrawal->displayamount}}</p>
+                                                </td>
+                                                <td>
+                                                    <p class="widthdrawal-info">{{$withdrawal->charges}}</p>
                                                 </td>
                                                 <td>
                                                     <p class="widthdrawal-info">{{$withdrawal->created_at}}</p>
                                                 </td>
 
                                                 <td>
-                                                    <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-secondary widthdrawal-status__btn">Confirm</a>
+                                                    <a href="{{route('admin.confirmwithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-success widthdrawal-status__btn">Confirm</a>
                                                 </td>
 
                                                 <td>
-                                                    <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                    <a href="{{route('admin.deletewithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -105,10 +113,10 @@
                                                 </td>
 
                                                 <td>
-                                                    <a href="#" class="btn form-control btn-lg btn-success widthdrawal-status__btn text-white">Approved</a>
+                                                    <a href="{{route('admin.reversewithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-danger widthdrawal-status__btn text-white">Reverse</a>
                                                 </td>
                                                 <td>
-                                                    <a href="#" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
+                                                    <a href="{{route('admin.deletewithdrawal', $withdrawal->id)}}" class="btn form-control btn-lg btn-danger depositor-status__btn">Delete</a>
                                                 </td>
                                             </tr>
                                         @endforeach

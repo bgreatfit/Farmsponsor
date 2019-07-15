@@ -18,9 +18,11 @@ class CreateBanksTable extends Migration
             $table->integer('user_id');
             $table->string('name')->nullable();
             $table->string('account_name')->nullable();
-            $table->string('account_number')->nullable();
+            $table->integer('account_number')->nullable();
             $table->dateTime('last_update');
             $table->timestamps();
+
+
         });
     }
 

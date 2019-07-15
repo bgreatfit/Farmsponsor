@@ -14,4 +14,9 @@ class Bank extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+//    public function getAccountNumberAttribute($value)
+//    {
+//        return str_pad($this->account_number, 3, '0', STR_PAD_LEFT);
+//    }
 }

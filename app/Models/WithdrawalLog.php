@@ -3,14 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 
 class WithdrawalLog extends Model
 {
-    protected $fillable = [
-        'user_id','status_id','amount','approved_user_id',
-        'ip_address','transaction_id','approved_ip_address',
-        'approved_time'
-    ];
+    use SoftDeletes;
+
+    protected $guarded = [];
 
     protected $dates = [
         'approved_time'
@@ -20,6 +20,12 @@ class WithdrawalLog extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    public function transaction()
+    {
+        return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
+    }
+
 
     public function getDisplayAmountAttribute()
     {

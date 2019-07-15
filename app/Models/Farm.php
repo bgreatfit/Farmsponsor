@@ -7,14 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Farm extends Model
 {
-    protected $fillable = [
-        'name','start_date','due_date','units','returns','avatar',
-        'user_id', 'ip_address', 'slug', 'start_unit', 'sold_out',
-        'payout'
-    ];
+    protected $guarded = [];
 
     protected $dates = [
-        'start_date','due_date'
+        'start_date','due_date', 'payout_date'
     ];
 
     public function isOpen(){
@@ -25,6 +21,7 @@ class Farm extends Model
     {
         return 'slug';
     }
+
     public function getAvatarAttribute($value)
     {
         return 'storage/farms/' . $value;
@@ -63,6 +60,21 @@ class Farm extends Model
     public function getEditDueDateAttribute()
     {
         return Carbon::parse($this->due_date)->format('Y-m-d');
+    }
+
+    public function getEditCycleStartDateAttribute()
+    {
+        return Carbon::parse($this->cycle_start_date)->format('Y-m-d');
+    }
+
+    public function getEditCycleEndDateAttribute()
+    {
+        return Carbon::parse($this->cycle_end_date)->format('Y-m-d');
+    }
+
+    public function getEditPayoutDateAttribute()
+    {
+        return Carbon::parse($this->payout_date)->format('Y-m-d');
     }
 
 }

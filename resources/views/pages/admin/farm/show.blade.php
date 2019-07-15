@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-12 col-md-12">
                 <div class="sponsors-list__content ">
-                    <h1 class="sponsors-list__heading text-center mb-5">{{$farm->name}} Farming Cycle</h1>
+                    <h1 class="sponsors-list__heading text-center mb-5">{{$farm->name}}'s Farming Cycle Details</h1>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($approved_vestbank_sponsors as $sponsor)
+                                    @foreach($approved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
                                          <th scope="row">{{$key}}</th>
                                         <td>{{$sponsor->user->firstname}}</td>

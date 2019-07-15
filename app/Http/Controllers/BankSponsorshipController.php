@@ -12,7 +12,8 @@ use Illuminate\Support\Str;
 
 class BankSponsorshipController extends Controller
 {
-    public function sponsorNow(Farm $farm) {
+    public function sponsorNow(Farm $farm)
+    {
         $data['farm'] = $farm;
         return view('pages.dashboard.sponsor-now', $data);
     }
@@ -57,29 +58,4 @@ class BankSponsorshipController extends Controller
         ]);
     }
 
-    public function confirm(Request $request, BankSponsorship $sponsor)
-    {
-        $data['approve_user_id'] = \Auth::id();
-        $data['approve_ip_address'] = request()->ip();
-        $data['approved'] = 1;
-        if($sponsor->update($data)){
-            $request->session()->flash('success', 'Sponsorship Approved');
-            return back();
-        };
-        $request->session()->flash('error', 'Something went wrong!');
-        return back();
-    }
-
-    public function reverse(Request $request, BankSponsorship $sponsor)
-    {
-        $data['approve_user_id'] = null;
-        $data['approve_ip_address'] = null;
-        $data['approved'] = 0;
-        if($sponsor->update($data)){
-            $request->session()->flash('success', 'Sponsorship Reversed');
-            return back();
-        };
-        $request->session()->flash('error', 'Something went wrong!');
-        return back();
-    }
 }
