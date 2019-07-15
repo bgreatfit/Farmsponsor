@@ -156,7 +156,7 @@
                         <div class="row">
                             <div class="col-12 col-md-12">
                                 <div class="footer__item">
-                                    <p class="footer__links">+ 234 703 196 0724</p>
+                                    <p class="footer__links">+ 234 905 913 3051, + 234 703 196 0724</p>
                                 </div>
                             </div>
                         </div>
