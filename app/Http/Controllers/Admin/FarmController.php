@@ -18,10 +18,11 @@ class FarmController extends Controller
     protected $farm;
     protected $amountPerUnit;
 
-    public function __construct(Request $request, Farm $farm)
+    public function __construct(Request $request, Farm $farm, Sponsor $sponsor)
     {
         $this->request = $request;
         $this->farm = $farm;
+        $this->sponsor = $sponsor;
         $this->amountPerUnit = 100000;
         $this->middleware('auth', ['except' => ['index']]);
     }
@@ -140,13 +141,23 @@ class FarmController extends Controller
     public function search()
     {
         $data['farm'] = Farm::findOrFail($this->request->farm_id);
-        $user_id = User::where('firstname', 'LIKE', $this->request->value)->orWhere('lastname', 'LIKE',$this->request->value)->pluck('id');
 
-        $data['approved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(10);
-        $data['unapproved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(10);
-        $data['approved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(1)->where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(10);
-        $data['unapproved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(0)->where('user_id', $user_id)->orderBy('created_at', 'desc')->paginate(10);
-        return $data;
+        $data['approved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->whereHas('user', function($query){
+            $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['unapproved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->whereHas('user', function($query){
+            $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['approved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(1)->whereHas('user', function($query){
+            $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['unapproved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(0)->whereHas('user', function($query){
+            $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
+        })->orderBy('created_at', 'desc')->paginate(10);
+
         return view('pages.admin.farm.show', $data);
     }
 }
