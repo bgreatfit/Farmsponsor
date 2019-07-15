@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cbcaab-26d8-4fea-90ae-f8b1234fda2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Models/Sponsor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sponsor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/BankSponsorship.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BankSponsorship.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" afterDir="false" />
@@ -55,11 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="174" column="96" selection-start-line="174" selection-start-column="96" selection-end-line="174" selection-end-column="96" />
+            <state relative-caret-position="-483">
+              <caret line="105" column="41" lean-forward="true" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Models/BankSponsorship.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -67,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Sponsor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+            <state relative-caret-position="271">
+              <caret line="62" column="5" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="62" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -154,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BankSponsorshipController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BankSponsorshipController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/dashboard/transaction/index.blade.php" />
@@ -205,6 +212,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Models/Sponsor.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/BankSponsorship.php" />
       </list>
     </option>
   </component>
@@ -447,12 +455,12 @@
       <workItem from="1562855668799" duration="25402000" />
       <workItem from="1563015105481" duration="19642000" />
       <workItem from="1563139851260" duration="2862000" />
-      <workItem from="1563184569579" duration="4159000" />
+      <workItem from="1563184569579" duration="4374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272786000" />
+    <option name="totallyTimeSpent" value="273001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
@@ -558,9 +566,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../twig/resources/lang/en/repository-generator.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../twig/resources/lang/en/service.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -888,17 +893,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Sponsor.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        <state relative-caret-position="-483">
+          <caret line="105" column="41" lean-forward="true" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/admin/farm/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Sponsor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="174" column="96" selection-start-line="174" selection-start-column="96" selection-end-line="174" selection-end-column="96" />
+        <state relative-caret-position="271">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="62" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/BankSponsorship.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
         </state>
       </provider>
     </entry>
