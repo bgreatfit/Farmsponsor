@@ -189,6 +189,7 @@
                     </div>
                 </div>
                 {{$unapproved_vestbank_sponsors->links()}}
+                {{$unapproved_sponsors->links()}}
             </div>
         </div>
     </div>

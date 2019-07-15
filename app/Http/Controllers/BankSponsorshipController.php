@@ -20,7 +20,6 @@ class BankSponsorshipController extends Controller
 
     public function sponsor(Request $request)
     {
-
         $sponsor = new BankSponsorship();
         $sponsor->farm_id = $request->farm_id;
         $sponsor->units = $request->units;
