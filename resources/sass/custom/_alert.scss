@@ -15,3 +15,13 @@
     background-color: $color-primary-deep;
     font-size: 15px;
   }
+
+  .form-input-error {
+    font-weight: bold !important;
+    color: #e00000 !important;
+  }
+  
+  // .form-input-success {
+  //   font-weight: normal !important;
+  //   color: $color-black!important;
+  // }

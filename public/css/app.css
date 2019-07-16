@@ -10678,6 +10678,11 @@ a.text-dark:focus {
   font-size: 15px;
 }
 
+.form-input-error {
+  font-weight: bold !important;
+  color: #e00000 !important;
+}
+
 .about-wrap {
   background-color: #ffffff;
 }
