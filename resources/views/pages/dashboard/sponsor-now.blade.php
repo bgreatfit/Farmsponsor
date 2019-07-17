@@ -53,7 +53,7 @@
                                     <h3 class="deposit-method-bank__heading mb-4">Sponsor's Information</h3>
                                     <div class="form-row mb-4">
                                         <div class="form-group col-md-6" >
-                                            <label for="sn-input__first-name">First name: </label>
+                                            <label id="sn-first-name__label" for="sn-input__first-name">First name: </label>
                                             <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="sn-input__first-name" value="{{Auth::user()->firstname}}" disabled>
     
                                             @if ($errors->has('firstname'))
@@ -63,7 +63,7 @@
                                             @endif
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="sn-input__last-name">Last name: </label>
+                                            <label id="sn-last-name__label" for="sn-input__last-name">Last name: </label>
                                             <input type="text" class="form-control {{ $errors->has('lastname') ? ' is-invalid' : '' }}" id="sn-input__last-name" value="{{Auth::user()->lastname}}" disabled>
     
                                             @if ($errors->has('lastname'))
@@ -77,7 +77,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-12">
                                             <div class="form-group mb-4">
-                                                <label for="sn-email" class="deposit-method-bank__amount--label">Email: </label>
+                                                <label id="sn-email__label" for="sn-email" class="deposit-method-bank__amount--label">Email: </label>
                                                 <input type="email" id="sn-email" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" id="email" value="{{Auth::user()->email}}" disabled>
                                                 @if ($errors->has('email'))
                                                 <span class="invalid-feedback" role="alert">
@@ -91,7 +91,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-12">
                                             <div class="form-group mb-4">
-                                                <label for="sn-phone-number" class="deposit-method-bank__amount--label">Phone number: </label>
+                                                <label id="sn-phone-number__label" for="sn-phone-number" class="deposit-method-bank__amount--label">Phone number: </label>
                                                 <input type="number" id="sn-phone-number" class="form-control deposit-method-bank__username {{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{Auth::user()->phone}}" disabled>
                                                 @if ($errors->has('phoneNumber'))
                                                 <span class="invalid-feedback" role="alert">
@@ -105,7 +105,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-12">
                                             <div class="form-group mb-4">
-                                                <label for="sn-depositAddress" class="deposit-method-bank__address--label">Address: </label>
+                                                <label id="sn-address__label" for="sn-depositAddress" class="deposit-method-bank__address--label">Address: </label>
                                                 <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" id="sn-address" value="{{Auth::user()->address}}" disabled>
                                                 @if ($errors->has('address'))
                                                 <span class="invalid-feedback" role="alert">
@@ -122,7 +122,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-12">
                                             <div class="form-group mb-4">
-                                                <label for="sn-units" class="deposit-method-bank__units--label">Numbers of units: </label>
+                                                <label id="sn-units__label" for="sn-units" class="deposit-method-bank__units--label">Numbers of units: </label>
                                                 <input type="number" class="form-control deposit-method-bank__address {{ $errors->has('units') ? ' is-invalid' : '' }}" name="units" id="sn-units" placeholder="Enter number of units">
                                                 @if ($errors->has('units'))
                                                 <span class="invalid-feedback" role="alert">
@@ -138,7 +138,7 @@
                                     <div class="row">
                                         <div class="col-12 col-md-12">
                                             <div class="form-group mb-4">
-                                                <label for="sn-amount" class="deposit-method-bank__amount--label">Enter sponsorship amount: </label>
+                                                <label id="sn-amount__label" for="sn-amount" class="deposit-method-bank__amount--label">Enter sponsorship amount: </label>
                                                 <input type="number" class="form-control deposit-method-bank__amount {{ $errors->has('amount') ? ' is-invalid' : '' }}" name="amount" id="sn-amount">
                                                 @if ($errors->has('amount'))
                                                 <span class="invalid-feedback" role="alert">
