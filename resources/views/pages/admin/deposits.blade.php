@@ -7,6 +7,14 @@
                 <div class="col-12 col-md-12">
                     <div class="deposit-request__heading-box">
                         <h1 class="deposit-request__heading mb-5 text-center">Deposits</h1>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                @include('includes.searchbar-farm-transc-id')
+                            </div>
+                            <div class="col-12 col-md-6">
+                                @include('includes.searchbar-farm-name')
+                            </div>
+                        </div>
                     </div>
 
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -25,6 +33,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
+                                            <th scope="col">Transaction ID</th>
                                             <th scope="col">First Name</th>
                                             <th scope="col">Last Name</th>
                                             <th scope="col">Email</th>
@@ -39,6 +48,9 @@
                                         @foreach($unapproved_deposits as $deposit)
                                             <tr>
                                                 <th scope="row">{{ (($unapproved_deposits->currentPage() - 1 ) * $unapproved_deposits->perPage() ) + $loop->iteration }}</th>
+                                                <td> 
+                                                    <p class="depositor-info"> </p>
+                                                </td>
                                                 
                                                 <td>
                                                     <p class="depositor-info">{{$deposit->firstname}}</p>
@@ -83,6 +95,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
+                                            <th scope="col">Transaction ID</th>
                                             <th scope="col">First Name</th>
                                             <th scope="col">Last Name</th>
                                             <th scope="col">Email</th>
@@ -97,6 +110,9 @@
                                         @foreach($approved_deposits as $deposit)
                                         <tr>
                                             <th scope="row">{{ (($approved_deposits->currentPage() - 1 ) * $approved_deposits->perPage() ) + $loop->iteration }}</th>
+                                            <td>
+                                                <p class="depositor-info"> </p>
+                                            </td>
                                             <td>
                                                 <p class="depositor-info">{{$deposit->firstname}}</p>
                                             </td>

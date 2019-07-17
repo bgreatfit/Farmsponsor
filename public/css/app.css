@@ -14123,10 +14123,6 @@ mar .intro-section__image-box {
   flex-grow: 7;
 }
 
-.searchbar__form .searchbar__button-box {
-  flex-grow: 1;
-}
-
 .searchbar__form .searchbar__button {
   padding: 3.75px 50px;
   font-size: 1.6rem;
