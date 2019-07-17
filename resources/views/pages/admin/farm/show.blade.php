@@ -50,6 +50,7 @@
                                         <th scope="col">Amount Sponsored</th>
                                         <th scope="col">Units</th>
                                         <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Remove</th>
@@ -69,6 +70,7 @@
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
+                                        <td>{{$sponsor->created_at}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
@@ -91,6 +93,7 @@
                                         <th scope="col">Amount Sponsored</th>
                                         <th scope="col">Units</th>
                                         <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Undo</th>
@@ -107,6 +110,7 @@
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
+                                        <td>{{$sponsor->created_at}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
@@ -133,6 +137,7 @@
                                         <th scope="col">Amount Sponsored</th>
                                         <th scope="col">Units</th>
                                         <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Remove</th>
@@ -151,6 +156,7 @@
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
+                                        <td>{{$sponsor->created_at}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>
@@ -173,6 +179,7 @@
                                         <th scope="col">Amount Sponsored</th>
                                         <th scope="col">Units</th>
                                         <th scope="col">Returns (NGN)</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">Phone</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Undo</th>
@@ -189,6 +196,7 @@
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
                                         <td>{{$sponsor->units}}</td>
                                         <td>{{$sponsor->transaction->returns ?? $sponsor->return}}</td>
+                                        <td>{{$sponsor->created_at}}</td>
                                         <td>{{$sponsor->user->phone}}</td>
                                         <td>{{$sponsor->user->email}}</td>
                                         <td>

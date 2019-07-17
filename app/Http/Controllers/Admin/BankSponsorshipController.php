@@ -10,6 +10,12 @@ use App\Http\Controllers\Controller;
 
 class BankSponsorshipController extends Controller
 {
+    protected $request;
+
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
 
     public function confirm(Request $request, BankSponsorship $bankSponsor)
     {
@@ -51,12 +57,3 @@ class BankSponsorshipController extends Controller
 
 }
 
-//            $sponsor = new Sponsor;
-//            $sponsor->user_id = $bankSponsor->user_id;
-//            $sponsor->farm_id = $bankSponsor->farm_id;
-//            $sponsor->units = $bankSponsor->units;
-//            $sponsor->ip_address = $bankSponsor->ip_address;
-//            $sponsor->approved = 1;
-//            $sponsor->approve_user_id = Auth::id();
-//            $sponsor->approve_ip_address = request()->ip();
-//            $sponsor->save();

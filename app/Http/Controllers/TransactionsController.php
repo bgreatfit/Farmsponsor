@@ -15,10 +15,9 @@ class TransactionsController extends Controller
 
     public function index()
     {
-        $historyCount = $data['transactionslog'] = Transactionlogs::whereUserId(Auth::id())->count();
-
-        return view('pages.dashboard.transaction.index', compact('historyCount'));
+        return view('pages.dashboard.transaction.index');
     }
+
     public function history(){
         $data['transactionslog'] = Transactionlogs::whereUserId(Auth::id())->orderBy('created_at', 'desc')->paginate(10);
         return view('pages.dashboard.transaction.history', $data);

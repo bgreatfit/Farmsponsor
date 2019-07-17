@@ -30,7 +30,7 @@
 
                             <h3 class="card__heading mt-2">Transaction History</h3>
 
-                            <p class="card__text">{{$historyCount}}</p>
+                            <p class="card__text">{{Auth::user()->transactions()->count()}}</p>
                         </div>
                         </a>
                     </div>
