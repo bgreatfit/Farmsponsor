@@ -16,7 +16,7 @@
                             </li>
                             @endif
                             <li class="list-group-item deposit-method" onclick="suspendDeposit">
-                                <a href="#" data-toggle="modal" datatarget="#deposit-method-bank"
+                                <a href="#" data-toggle="modal" data-target="#deposit-method-bank"
                                     role="button" class="deposit-method__link" >
                                         Bank Transfer
                                 </a>
