@@ -15,17 +15,34 @@ $(document).ready(function() {
 
 
 
-// VESTBANK DEPOSIT FORM VALIDATION
-// variables
+// variables - vestbank sponsorship
 var bankDepositForm = $('#vest-funds__form');
 var firstNameInput = $("#input__first-name");
 var lastNameInput = $('#input__last-name');
 var addressInput = $('#address');
 var amountInput = $('#amount');
+
 var firstNameLabel = $('#first-name__label');
 var lastNameLabel = $('#last-name__label');
 var amountLabel = $('#amount__label');
 var addressLabel = $('#address__label');
+
+// variables - sponsor now
+var sponsorNowForm = $('#sponsor-now__form');
+
+var snFirstNameInput = $('#sn-input__first-name');
+var snLastNameInput = $('#sn-input__last-name');
+var snPhoneNumberInput = $('#sn-phone-number');
+var snAddressInput = $('#sn-address');
+var snUnitsInput = $('#sn-units');
+var snAmountInput = $('#sn-amount');
+
+var snFirstNameLabel = $('#sn-first-name__label');
+var snLastNameLabel = $('#sn-last-name__label');
+var snPhoneNumberLabel = $('#sn-phone-number__label');
+var snAddressLabel = $('#sn-address__label');
+var snUnitsLabel = $('#sn-units__label');
+var snAmountLabel = $('#sn-amount__label');
 
 // errors
 var errorFirstName = false;
@@ -44,6 +61,7 @@ var errorMessageUnits = "Invalid unit!"
 var errorMessageAddress = "Address cannot be empty!"
 
 
+// VESTBANK DEPOSIT FORM VALIDATION
 bankDepositForm.submit(function(e) {
   e.preventDefault();
 
@@ -183,25 +201,7 @@ if(errorFirstName === false && errorLastName === false && errorAddress === false
 
 
 
-
-
 // SPONSOR NOW FORM VALIDATION
-var sponsorNowForm = $('#sponsor-now__form');
-
-var snFirstNameInput = $('#sn-input__first-name');
-var snLastNameInput = $('#sn-input__last-name');
-var snPhoneNumberInput = $('#sn-phone-number');
-var snAddressInput = $('#sn-address');
-var snUnitsInput = $('#sn-units');
-var snAmountInput = $('#sn-amount');
-
-var snFirstNameLabel = $('#sn-first-name__label');
-var snLastNameLabel = $('#sn-last-name__label');
-var snPhoneNumberLabel = $('#sn-phone-number__label');
-var snAddressLabel = $('#sn-address__label');
-var snUnitsLabel = $('#sn-units__label');
-var snAmountLabel = $('#sn-amount__label');
-
 sponsorNowForm.submit(function(e) {
   e.preventDefault();
 
@@ -253,7 +253,6 @@ sponsorNowForm.submit(function(e) {
     }
   }
 
-
   function unitsErrorCheck () {
     if(snUnitsInput.val() === "" || $.isNumeric(snUnitsInput.val()) === false || snUnitsInput.val() < 1) {
       snUnitsLabel.addClass('form-input-error');
@@ -265,7 +264,6 @@ sponsorNowForm.submit(function(e) {
       errorAmount = false;
     }
   }
-
 
   function amountErrorCheck () {
     if(snAmountInput.val() === "" || $.isNumeric(snAmountInput.val()) === false || snAmountInput.val() < 1) {
@@ -350,7 +348,6 @@ sponsorNowForm.submit(function(e) {
     unitsEditChecker();
   }
 
-
   function amountChecker () {
     amountErrorCheck();
     amountEditChecker();
@@ -394,11 +391,6 @@ if(errorFirstName === false && errorLastName === false && errorPhoneNumber === f
     })
   }
 }) ;
-
-
-
-
-
 
 
 

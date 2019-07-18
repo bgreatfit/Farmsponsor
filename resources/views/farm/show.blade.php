@@ -41,8 +41,8 @@
 
                                             <div class="row mb-4">
                                                 <div class="col-12 col-md-6">
-                                                   {{-- <a href="{{route('sponsornow', $farm->slug)}}" class=" btn form-control btn-lg sponsor-now__btn">Sponsor Now</a> --}}
-                                                    <a href="#" class="btn form-control btn-lg sponsor-now__btn disabled">Sponsor Now</a>
+                                                   <a href="{{route('sponsornow', $farm->slug)}}" class=" btn form-control btn-lg sponsor-now__btn">Sponsor Now</a>
+                                                    {{-- <a href="#" class="btn form-control btn-lg sponsor-now__btn disabled">Sponsor Now</a> --}}
                                                 </div>
                                                 <div class="col-12 col-md-6">
                                                     <div class="btn-box py-3 py-md-0">

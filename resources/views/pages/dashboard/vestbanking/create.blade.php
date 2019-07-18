@@ -147,7 +147,6 @@
                                 </div>
 
                                 <p class="deposit-method-bank__note"><b>Please complete transfer within 24hours, your account will be credited as soon as possible.</b></p>
-
                             </form>
 
                         </div>
