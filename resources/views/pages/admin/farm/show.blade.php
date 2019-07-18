@@ -65,6 +65,7 @@
                                         <td>
                                             <a href="{{route('sponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                         </td>
+                                        <td>{{$sponsor->transaction->transaction_id}}</td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
@@ -104,7 +105,7 @@
                                     @foreach($approved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
                                         <th scope="row">{{$key}}</th>
-                                        <td>  </td>
+                                        <td>{{$sponsor->transaction->transaction_id}}</td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
@@ -147,10 +148,10 @@
                                     @foreach($unapproved_sponsors as $key => $sponsor)
                                     <tr>
                                         <th scope="row">{{$key}}</th>
-                                        <td>  </td>
                                         <td>
                                             <a href="{{route('banksponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                         </td>
+                                        <td>{{$sponsor->transaction->transaction_id}}</td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
@@ -190,7 +191,7 @@
                                     @foreach($approved_sponsors as $key => $sponsor)
                                     <tr>
                                         <th scope="row">{{$key}}</th>
-                                        <td>  </td>
+                                        <td>{{$sponsor->transaction->transaction_id}}</td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
