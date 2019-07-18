@@ -9,9 +9,12 @@
                         <h1 class="deposit-request__heading mb-5 text-center">Deposits</h1>
                         <div class="row">
                             <div class="col-12 col-md-6">
+                                <p>Search by Transaction ID</p>
                                 @include('includes.searchbar-deposit-transc-id')
                             </div>
                             <div class="col-12 col-md-6">
+                                <p>Search by Name</p>
+
                                 @include('includes.searchbar-deposit-name')
                             </div>
                         </div>
@@ -49,7 +52,7 @@
                                             <tr>
                                                 <th scope="row">{{ (($unapproved_deposits->currentPage() - 1 ) * $unapproved_deposits->perPage() ) + $loop->iteration }}</th>
                                                 <td> 
-                                                    <p class="depositor-info"> </p>
+                                                    <p class="depositor-info"> {{$deposit->transaction->transaction_id}}</p>
                                                 </td>
                                                 
                                                 <td>
@@ -111,7 +114,8 @@
                                         <tr>
                                             <th scope="row">{{ (($approved_deposits->currentPage() - 1 ) * $approved_deposits->perPage() ) + $loop->iteration }}</th>
                                             <td>
-                                                <p class="depositor-info"> </p>
+                                                <p class="depositor-info"> {{$deposit->transaction->transaction_id}}</p>
+
                                             </td>
                                             <td>
                                                 <p class="depositor-info">{{$deposit->firstname}}</p>

@@ -9,9 +9,13 @@
                     <h1 class="sponsors-list__heading text-center mb-5">{{$farm->name}} Farming Cycle</h1>
                         <div class="row">
                             <div class="col-12 col-md-6">
+                                <p>Search by Transaction ID</p>
+
                                 @include('includes.searchbar-farm-transc-id')
                             </div>
                             <div class="col-12 col-md-6">
+                                <p>Search by Name</p>
+
                                 @include('includes.searchbar-farm-name')
                             </div>
                         </div>

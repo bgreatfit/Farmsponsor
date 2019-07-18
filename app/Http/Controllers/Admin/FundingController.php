@@ -81,7 +81,6 @@ class FundingController extends Controller
 
     public function searchByName()
     {
-
         $data['unapproved_deposits'] = Bankfunding::whereApproved(0)->whereHas('user', function($query){
             $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
         })->orderBy('created_at', 'desc')->paginate(10);
@@ -97,27 +96,17 @@ class FundingController extends Controller
 
     public function searchByTransactionId()
     {
-        $data['farm'] = Farm::findOrFail($this->request->farm_id);
-
-        $data['approved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->whereHas('transactions', function($query){
+        $data['unapproved_deposits'] = Bankfunding::whereApproved(0)->whereHas('transactions', function($query){
             $query->where('transaction_id', '=', $this->request->value);
         })->orderBy('created_at', 'desc')->paginate(10);
 
-        $data['unapproved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->whereHas('transactions', function($query){
-            $query->where('transaction_id', '=', $this->request->value);
-        })->orderBy('created_at', 'desc')->paginate(10);
-
-        $data['approved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(1)->whereHas('transactions', function($query){
-            $query->where('transaction_id', '=', $this->request->value);
-        })->orderBy('created_at', 'desc')->paginate(10);
-
-        $data['unapproved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(0)->whereHas('transactions', function($query){
+        $data['approved_deposits'] = Bankfunding::whereApproved(0)->whereHas('transactions', function($query){
             $query->where('transaction_id', '=', $this->request->value);
         })->orderBy('created_at', 'desc')->paginate(10);
 
         $data['transactionSearchValue'] = $this->request->value;
 
-        return view('pages.admin.farm.show', $data);
+        return view('pages.admin.deposits', $data);
     }
     // public function approveDeposit($deposit)
     // {
