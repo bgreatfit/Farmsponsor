@@ -147,7 +147,7 @@
         }
 
         .transactionDateContent span.contentHeading:last-of-type {
-            margin-left: 167px;
+            margin-left: 120px;
         }
 
         .customerInfoBlock {
@@ -246,6 +246,8 @@
         .footerText.footerSocials {
             background: #6e9e3d;
             padding: 6px 0;
+            margin-bottom: 0;
+
         }
 
         .footerText {
@@ -442,9 +444,9 @@
                                                                 100,000.00 
                                                             </span>
                                                         </p>
-                                                        <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
+                                                        {{-- <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
                                                            <span class="transactionInfoStar">*</span> Vest Banking Balance Report will be sent to you on 1st of every Subsequent month.
-                                                        </p>
+                                                        </p> --}}
                                                     </td>
                                                 </tr>
                                             </table>

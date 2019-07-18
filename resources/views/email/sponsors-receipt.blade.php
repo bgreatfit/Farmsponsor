@@ -232,6 +232,7 @@
         .footerText.footerSocials {
             background: #6e9e3d;
             padding: 6px 0;
+            margin-bottom: 0;
         }
 
         .footerText {
@@ -491,9 +492,9 @@
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.svg')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.svg')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
-                                            <p class="footerText">
+                                            {{-- <p class="footerText">
                                                 <a href="#" target="_blank" class="footerLink">Unsubscribe from our mailing list</a>
-                                            </p>
+                                            </p> --}}
                                         </td>
                                     </tr>
                                 </table>

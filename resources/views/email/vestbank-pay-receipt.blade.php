@@ -158,8 +158,7 @@
         }
         .customerInfoContent,
         .transactionDateContent,
-        .transactionInfoDetailsContent,
-        .contactUsContent {
+        .transactionInfoDetailsContent {
             padding: 0 40px;
         }
 
@@ -217,9 +216,6 @@
         .transactionInfoDetailsText:nth-child(even) {
             background-color: rgba(153, 153, 153, 0.2);
         }
-        .transactionInfoDetailsText:last-of-type{
-            margin-top: 14px;
-        }
 
         .transactionInfoDetailsFarmCycleInfo{
             margin-top: 15px;
@@ -230,6 +226,12 @@
         }
         .transactionInfoDetailsSummary .transactionInfoDetailsTextMain {
             font-weight: bold;
+        }
+
+        .fsThanksText {
+            margin: 40px 0 20px;
+            text-align: center;
+            font-family: barlow;
         }
 
         .contactUsBlock {
@@ -246,6 +248,8 @@
         .footerText.footerSocials {
             background: #6e9e3d;
             padding: 6px 0;
+            margin-bottom: 0;
+
         }
 
         .footerText {
@@ -432,13 +436,13 @@
                                                     <td align="left" valign="top" class="transactionInfoDetailsContent">
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
-                                                                Total Amt Vested
+                                                                Withdrawal Amt
                                                             </p>
                                                             <span class="contentText transactionInfoText">
                                                                 300,000.00
                                                             </span>
                                                         </div>
-
+{{-- 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
                                                                 Actual Interest 
@@ -446,17 +450,17 @@
                                                             <span class="contentText transactionInfoText">
                                                                 3,535.71
                                                             </span>
-                                                        </div>
-
+                                                        </div> --}}
+{{-- 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
-                                                                Total Balance
+                                                                VAT
                                                             </p>
                                                             <span class="contentText transactionInfoText">
-                                                                303,535.71
+                                                                55.7
                                                             </span>
-                                                        </div>
-
+                                                        </div> --}}
+{{-- 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
                                                                 sponsoring Amt
@@ -464,25 +468,25 @@
                                                             <span class="contentText transactionInfoText">
                                                                 300,000.00
                                                             </span>
-                                                        </div>
+                                                        </div> --}}
 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
-                                                                Transfer Charges 
+                                                                Bank Transfer Charges 
                                                             </p>
                                                             <span class="contentText transactionInfoText">
-                                                                52.50
+                                                                56.50
                                                             </span>
                                                         </div>
 
-                                                        <div class="transactionInfoDetailsText">
+                                                        {{-- <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
-                                                                Sms Alert
+                                                                Sms Charge
                                                             </p>
                                                             <span class="contentText transactionInfoText">
                                                                 4.00
                                                             </span>
-                                                        </div>
+                                                        </div> --}}
 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
@@ -495,38 +499,17 @@
 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
-                                                                Deductible Funds
+                                                                Amount Paid
                                                             </p>
                                                             <span class="contentText transactionInfoText">
-                                                                300,256.50
+                                                                299,754
                                                             </span>
                                                         </div>
 
-                                                        <div class="transactionInfoDetailsText">
-                                                            <div class="transactionInfoDetailsSummary">
-                                                                <p class="transactionInfoDetailsTextMain">
-                                                                    Amt Withdrawable
-                                                                </p>
-                                                                <span class="contentText transactionInfoText">
-                                                                    3,279.21
-                                                                </span>
-                                                            </div>
-                                                            <div class="transactionInfoDetailsSummary">
-                                                                <p class="transactionInfoDetailsTextMain">
-                                                                    Amt Requested 
-                                                                </p>
-                                                                <span class="contentText transactionInfoText">
-                                                                    3,279.21
-                                                                </span>
-                                                            </div>
-                                                            <div class="transactionInfoDetailsSummary">
-                                                                <p class="transactionInfoDetailsTextMain">
-                                                                    Current Balance
-                                                                </p>
-                                                                <span class="contentText transactionInfoText">
-                                                                    0.00 
-                                                                </span>
-                                                            </div>
+                                                        <div class="fsThanksContainer">
+                                                            <p class="fsThanksText">
+                                                                Thank you for choosing Farmsponsor
+                                                            </p>
                                                         </div>
 
                                                     </td>
@@ -573,9 +556,9 @@
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.svg')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.svg')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
-                                            <p class="footerText">
+                                            {{-- <p class="footerText">
                                                 <a href="#" target="_blank" class="footerLink">Unsubscribe from our mailing list</a>
-                                            </p>
+                                            </p> --}}
                                         </td>
                                     </tr>
                                 </table>
