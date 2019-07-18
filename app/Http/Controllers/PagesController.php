@@ -78,6 +78,12 @@ class PagesController extends Controller {
     public function admin() {
         return view('pages.admin');
     }
+    public function careers() {
+        return view('pages.careers');
+    }
+    public function contactUs() {
+        return view('pages.contact-us');
+    }
 
     // Admin views
 
@@ -87,6 +93,10 @@ class PagesController extends Controller {
 
     public function usersList(){
         return view('pages.admin.users-list');
+    }
+
+    public function vestbankUsersList(){
+        return view('pages.admin.vestbank-users-list');
     }
 
     public function editFarmingCycle(){
