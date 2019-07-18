@@ -93,14 +93,8 @@ class PagesController extends Controller {
         return view('pages.admin.edit-farming-cycle');
     }
 
-
-    public function receipt(){
-        return view('pages.admin.receipt');
-    }
     public function retainSponsorship(){
         return view('pages.admin.retain-sponsorship');
     }
-    public function receiptVestbank(){
-        return view('pages.admin.receipt-vestbank');
-    }
+ 
 }

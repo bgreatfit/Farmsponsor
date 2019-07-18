@@ -15,7 +15,8 @@
                                 Please try again and ensure all fields are supplied
                             </li>
                             @endif
-                            <li class="list-group-item deposit-method" onclick="suspendDeposit">
+
+                            <li class="list-group-item deposit-method">
                                 <a href="#" data-toggle="modal" data-target="#deposit-method-bank"
                                     role="button" class="deposit-method__link" >
                                         Bank Transfer
@@ -69,7 +70,7 @@
                                 <h3 class="deposit-method-bank__heading mb-4">Vestor's Information</h3>
                                 <div class="form-row mb-4">
                                     <div class="form-group col-md-6">
-                                        <label for="input__first-name">First name: </label>
+                                        <label id="first-name__label" for="input__first-name">First name: </label>
                                         <input type="text" class="form-control {{ $errors->has('firstname') ? ' is-invalid' : '' }}" id="input__first-name" name="firstname" placeholder="First name" value="{{Auth::user()->firstname}}">
 
                                         @if ($errors->has('firstname'))
@@ -79,7 +80,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="input__last-name">Last name: </label>
+                                        <label id="last-name__label"   for="input__last-name">Last name: </label>
                                         <input type="text" class="form-control {{ $errors->has('lastname') ? ' is-invalid' : '' }}" id="input__last-name" name="lastname" placeholder="Last name" value="{{Auth::user()->lastname}}">
 
                                         @if ($errors->has('lastname'))
@@ -109,7 +110,7 @@
                                 <div class="row">
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
-                                            <label for="depositAddress" class="deposit-method-bank__address--label">Address: </label>
+                                            <label id="address__label" for="depositAddress" class="deposit-method-bank__address--label">Address: </label>
                                             <input type="text" class="form-control deposit-method-bank__address {{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" id="address" placeholder="Enter address" value="{{Auth::user()->address}}">
                                             @if ($errors->has('address'))
                                             <span class="invalid-feedback" role="alert">
@@ -123,8 +124,8 @@
                                 <div class="row">
                                     <div class="col-12 col-md-12">
                                         <div class="form-group mb-4">
-                                            <label for="amount" class="deposit-method-bank__amount--label">Enter vesting amount: </label>
-                                            <input type="number" class="form-control deposit-method-bank__amount {{ $errors->has('amount') ? ' is-invalid' : '' }}" name="amount" id="amount">
+                                            <label id="amount__label" for="amount" class="deposit-method-bank__amount--label">Enter amount: </label>
+                                            <input type="text" class="form-control deposit-method-bank__amount {{ $errors->has('amount') ? ' is-invalid' : '' }}" name="amount" id="amount" placeholder="000">
                                             @if ($errors->has('amount'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('amount') }}</strong>

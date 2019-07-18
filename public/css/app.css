@@ -10678,6 +10678,11 @@ a.text-dark:focus {
   font-size: 15px;
 }
 
+.form-input-error {
+  font-weight: bold !important;
+  color: #e00000 !important;
+}
+
 .about-wrap {
   background-color: #ffffff;
 }
@@ -14116,10 +14121,6 @@ mar .intro-section__image-box {
   font-size: 1.6rem;
   padding: 1rem 0.8rem;
   flex-grow: 7;
-}
-
-.searchbar__form .searchbar__button-box {
-  flex-grow: 1;
 }
 
 .searchbar__form .searchbar__button {

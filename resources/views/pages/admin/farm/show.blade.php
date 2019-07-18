@@ -7,7 +7,14 @@
             <div class="col-12 col-md-12">
                 <div class="sponsors-list__content ">
                     <h1 class="sponsors-list__heading text-center mb-5">{{$farm->name}} Farming Cycle</h1>
-                    @include('includes.searchbar')
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                @include('includes.searchbar-farm-transc-id')
+                            </div>
+                            <div class="col-12 col-md-6">
+                                @include('includes.searchbar-farm-name')
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -36,6 +43,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
+                                        <th scope="col">Transaction ID</th>
                                         <th scope="col">Confirm Sponsor</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
@@ -53,6 +61,7 @@
                                     @foreach($unapproved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
                                         <th scope="row">{{$key}}</th>
+                                        <td>  </td>
                                         <td>
                                             <a href="{{route('sponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                         </td>
@@ -78,6 +87,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
+                                        <th scope="col">Transaction ID</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Amount Sponsored</th>
@@ -93,7 +103,8 @@
                                 <tbody>
                                     @foreach($approved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
-                                         <th scope="row">{{$key}}</th>
+                                        <th scope="row">{{$key}}</th>
+                                        <td>  </td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
@@ -119,6 +130,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
+                                        <th scope="col">Transaction ID</th>
                                         <th scope="col">Confirm Sponsorship</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
@@ -135,6 +147,7 @@
                                     @foreach($unapproved_sponsors as $key => $sponsor)
                                     <tr>
                                         <th scope="row">{{$key}}</th>
+                                        <td>  </td>
                                         <td>
                                             <a href="{{route('banksponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                         </td>
@@ -160,6 +173,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
+                                        <th scope="col">Transaction ID</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Amount Sponsored</th>
@@ -176,6 +190,7 @@
                                     @foreach($approved_sponsors as $key => $sponsor)
                                     <tr>
                                         <th scope="row">{{$key}}</th>
+                                        <td>  </td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
                                         <td>{{$sponsor->transaction->amount ?? $sponsor->amount}}</td>
