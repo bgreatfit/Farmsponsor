@@ -36,6 +36,8 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('deposits/{deposit}/confirm', 'Admin\FundingController@confirm')->name('admin.confirmfunding')->middleware('confirmed');
     Route::get('deposits/{deposit}/reverse', 'Admin\FundingController@reverse')->name('admin.reversefunding');
     Route::get('deposits/{funding}/delete', 'Admin\FundingController@delete')->name('admin.deletefunding');
+    Route::get('deposits/searchname', 'Admin\FundingController@searchByName')->name('funding.searchname');
+    Route::get('deposits/searchtransactionid', 'Admin\FundingController@searchByTransactionId')->name('funding.searchtransactionid');
     Route::get('withdrawals', 'Admin\WithdrawalController@index')->name('admin.withdrawals');
     Route::get('withdrawals/{withdrawal}/confirm', 'Admin\WithdrawalController@confirm')->name('admin.confirmwithdrawal');
     Route::get('withdrawals/{withdrawal}/reverse', 'Admin\WithdrawalController@reverse')->name('admin.reversewithdrawal');
