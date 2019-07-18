@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat&display=swap" rel="stylesheet"> 
-    <title> Vestban Withdraw | Receipt</title>
+    <title> Sponsors Receipt</title>
     <style type="text/css">
 
         /* CSS RESET STYLES */
@@ -158,8 +158,9 @@
         }
         .customerInfoContent,
         .transactionDateContent,
-        .transactionInfoDetailsContent {
-            padding: 0 40px;
+        .transactionInfoDetailsContent,
+        .contactUsContent {
+            padding: 0 10px;
         }
 
         .customerInfoHeading {
@@ -184,7 +185,7 @@
         }
 
         .transactionInfoBlock {
-            margin-bottom: 8px;
+            margin-bottom: 28px;
         }
       
         .transactionInfoText {
@@ -192,17 +193,9 @@
         }
 
         .transactionInfoDetailsText{
-            padding: 10px 40px;
-            margin: 0 -40px 0;
+            padding: 10px;
+            margin: 0 -10px 0;
             font-family: barlow;
-            
-        }
-        .transactionInfoDetailsTextMain{
-            display: inline-block;
-            width: 130px;
-            margin: 0;
-            font-family: barlow;
-            font-size: 13px;
         }
         .transactionInfoDetailsText span.contentText {
             font-size: 13px;
@@ -224,18 +217,9 @@
             font-size: 12px;
             line-height: 14px;
         }
-        .transactionInfoDetailsSummary .transactionInfoDetailsTextMain {
-            font-weight: bold;
-        }
-
-        .fsThanksText {
-            margin: 40px 0 20px;
-            text-align: center;
-            font-family: barlow;
-        }
 
         .contactUsBlock {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
        
         .contactUsText {
@@ -249,7 +233,6 @@
             background: #6e9e3d;
             padding: 6px 0;
             margin-bottom: 0;
-
         }
 
         .footerText {
@@ -262,7 +245,6 @@
             margin-right: 25px;
         }
 
-
         .introductionContent, 
         .introductionHeading, 
         .contentText, 
@@ -270,9 +252,6 @@
             font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
         }
 
-        
-        
-      
         @media only screen and (max-width:480px){
             /* RESET STYLES */
             /* td[class="introductionContainer"],
@@ -365,7 +344,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="introductionHeading">
-                                                            <h1 class="introductionHeadingMain">Vestbanking Payment Receipt</h1>
+                                                            <h1 class="introductionHeadingMain">Sponsor’s Receipt</h1>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -383,13 +362,13 @@
                                     <tr>
                                         <td align="left" valign="top" class="transactionDateContent">
                                             <h2 class="contentHeading">
-                                                Date: <span class="contentText transactionDateText">7/06/2019</span>
+                                                Date: <span class="contentText transactionDateText">{{date('m-d-Y')}}</span>
                                             </h2>
                                             <h2 class="contentHeading">
-                                                Account Name: <span class="contentText transactionDateText">Asogwa Ngozi</span>
+                                                Total Amount: <span class="contentText transactionDateText">{{$sponsor->transaction->amount}}</span>
                                             </h2>
                                             <h2 class="contentHeading">
-                                                Transaction ID: <span class="contentText transactionDateText"> 00758 </span>
+                                                Transaction ID: <span class="contentText transactionDateText"> {{$sponsor->transaction->transaction_id}} </span>
                                             </h2>
                                         </td>
                                     </tr>
@@ -397,7 +376,7 @@
                                 <!-- EMAIL TRANSACTION DATE CONTENT END -->
                             </td>
                         </tr>
-                        {{-- <tr>
+                        <tr>
                             <td align="center" valign="top" class="customerInfoContainer">
                                 <!-- EMAIL CUSTOMER INFO CONTENT  -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="520" class="customerInfoBlock">
@@ -407,23 +386,23 @@
                                                 Customer Info: 
                                             </h2>
                                             <p class="customerInfoText">
-                                                Name: <span class=" transactionDateText">Emmanuel Jacobson </span>
+                                                Name: <span class=" transactionDateText"> {{$sponsor->user->fullname}} </span>
                                             </p>
                                             <p class="customerInfoText">
-                                                Address: <span class=" transactionDateText">2 Orosi Street, Rumuola, Port Harcourt, Rivers State.</span>
+                                                Address: <span class=" transactionDateText">{{$sponsor->user->address}}</span>
                                             </p>
                                             <p class="customerInfoText">
-                                                Phone: <span class=" transactionDateText"> 08062268255 </span>
+                                                Phone: <span class=" transactionDateText"> {{$sponsor->user->phone}} </span>
                                             </p>
                                             <p class="customerInfoText">
-                                                Email: <span class=" transactionDateText"> writeprovidence@gmail.com </span>
+                                                Email: <span class=" transactionDateText"> {{$sponsor->user->email}} </span>
                                             </p>
                                         </td>
                                     </tr>
                                 </table>
                                 <!-- EMAIL TRANSACTION DATE CONTENT END -->
                             </td>
-                        </tr> --}}
+                        </tr>
 
                         <tr>
                             <td align="center" valign="top" class="transactionInfoContainer">
@@ -434,84 +413,37 @@
                                             <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionInfoDetailsBlock">
                                                 <tr>
                                                     <td align="left" valign="top" class="transactionInfoDetailsContent">
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Withdrawal Amt
-                                                            </p>
+                                                        <h2 class="contentHeading customerInfoHeading">
+                                                            Transaction Details: 
+                                                        </h2>
+                                                        <p class="transactionInfoDetailsText">
+                                                            Amt Sponsored:
                                                             <span class="contentText transactionInfoText">
-                                                                300,000.00
+                                                                {{$sponsor->transaction->amount}}
                                                             </span>
-                                                        </div>
-{{-- 
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Actual Interest 
-                                                            </p>
+                                                        </p>
+                                                        <p class="transactionInfoDetailsText">
+                                                            No Of Units:
                                                             <span class="contentText transactionInfoText">
-                                                                3,535.71
+                                                                {{$sponsor->units}}
                                                             </span>
-                                                        </div> --}}
-{{-- 
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                VAT
-                                                            </p>
+                                                        </p>
+                                                        <p class="transactionInfoDetailsText">
+                                                            Returns:
+                                                                <span class="contentText transactionInfoText">
+                                                                    {{$sponsor->farmingcycle->returns}}%
+                                                                </span>
+                                                        </p>
+                                                        <p class="transactionInfoDetailsText">
+                                                            Payable:
                                                             <span class="contentText transactionInfoText">
-                                                                55.7
+                                                                {{$sponsor->transaction->returns}}
                                                             </span>
-                                                        </div> --}}
-{{-- 
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                sponsoring Amt
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                300,000.00
-                                                            </span>
-                                                        </div> --}}
-
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Bank Transfer Charges 
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                56.50
-                                                            </span>
-                                                        </div>
-
-                                                        {{-- <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Sms Charge
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                4.00
-                                                            </span>
-                                                        </div> --}}
-
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Vestbanking Charges
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                200,00
-                                                            </span>
-                                                        </div>
-
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Amount Paid
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                299,754
-                                                            </span>
-                                                        </div>
-
-                                                        <div class="fsThanksContainer">
-                                                            <p class="fsThanksText">
-                                                                Thank you for choosing Farmsponsor
-                                                            </p>
-                                                        </div>
-
+                                                        </p>
+     
+                                                        <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
+                                                            {{$sponsor->farmingcycle->name}} starting from {{$sponsor->farmingcycle->start_date->format("F j, Y")}} to {{$sponsor->farmingcycle->due_date->format("F j, Y")}}
+                                                        </p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -556,9 +488,6 @@
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.svg')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.svg')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
-                                            {{-- <p class="footerText">
-                                                <a href="#" target="_blank" class="footerLink">Unsubscribe from our mailing list</a>
-                                            </p> --}}
                                         </td>
                                     </tr>
                                 </table>

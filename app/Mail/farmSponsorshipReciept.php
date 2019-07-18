@@ -30,6 +30,6 @@ class farmSponsorshipReciept extends Mailable
      */
     public function build()
     {
-        return $this->view('email.farm.sponsorship');
+        return $this->view('email.farm.sponsorshipReceipt');
     }
 }

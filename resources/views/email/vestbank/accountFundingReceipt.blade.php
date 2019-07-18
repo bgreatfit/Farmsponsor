@@ -388,7 +388,7 @@
                                     <tr>
                                         <td align="left" valign="top" class="transactionDateContent">
                                             <span class="contentHeading">
-                                                Date: <span class="contentText transactionDateText">{{$bankfunding->created_at->format('m-d-Y')}}</span>
+                                                Date: <span class="contentText transactionDateText">{{date('d-m-Y')}}</span>
                                             </span>
                                             <span class="contentHeading">
                                                 Transaction ID: <span class="contentText transactionDateText"> {{$bankfunding->transaction->transaction_id}} </span>
