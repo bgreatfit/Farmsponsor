@@ -9,10 +9,10 @@
                         <h1 class="deposit-request__heading mb-5 text-center">Deposits</h1>
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                @include('includes.searchbar-farm-transc-id')
+                                @include('includes.searchbar-deposit-transc-id')
                             </div>
                             <div class="col-12 col-md-6">
-                                @include('includes.searchbar-farm-name')
+                                @include('includes.searchbar-deposit-name')
                             </div>
                         </div>
                     </div>
