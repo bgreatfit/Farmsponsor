@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cbcaab-26d8-4fea-90ae-f8b1234fda2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/email/lunch.blade.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/careers.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/contact-us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/farm/sponsorship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/farm/sponsorship.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/vestbank-pay-receipt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/vestbank-pay-receipt.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/vestbank/accountFundingReceipt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/vestbank/accountFundingReceipt.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" afterDir="false" />
@@ -49,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/email/vestbank/accountFundingReceipt.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="389" column="100" lean-forward="true" selection-start-line="389" selection-start-column="100" selection-end-line="389" selection-end-column="145" />
+            <state relative-caret-position="179">
+              <caret line="390" column="100" lean-forward="true" selection-start-line="390" selection-start-column="100" selection-end-line="390" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -67,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/email/farm/sponsorship.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="432" column="103" selection-start-line="432" selection-start-column="103" selection-end-line="432" selection-end-column="103" />
+            <state relative-caret-position="211">
+              <caret line="490" selection-start-line="490" selection-end-line="490" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
               </folding>
@@ -516,15 +520,16 @@
       <workItem from="1563263617892" duration="37074000" />
       <workItem from="1563351573044" duration="6819000" />
       <workItem from="1563368856608" duration="29960000" />
-      <workItem from="1563437410874" duration="13384000" />
+      <workItem from="1563437410874" duration="13621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384924000" />
+    <option name="totallyTimeSpent" value="385161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -852,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/email/vestbank/accountFundingReceipt.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="389" column="100" lean-forward="true" selection-start-line="389" selection-start-column="100" selection-end-line="389" selection-end-column="145" />
+        <state relative-caret-position="179">
+          <caret line="390" column="100" lean-forward="true" selection-start-line="390" selection-start-column="100" selection-end-line="390" selection-end-column="100" />
         </state>
       </provider>
     </entry>
@@ -901,8 +906,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/email/farm/sponsorship.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="432" column="103" selection-start-line="432" selection-start-column="103" selection-end-line="432" selection-end-column="103" />
+        <state relative-caret-position="211">
+          <caret line="490" selection-start-line="490" selection-end-line="490" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
           </folding>
