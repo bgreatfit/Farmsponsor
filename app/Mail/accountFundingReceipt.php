@@ -12,7 +12,7 @@ class accountFundingReceipt extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $bankfunding;
+    public $bankfunding;
 
     /**
      * Create a new message instance.

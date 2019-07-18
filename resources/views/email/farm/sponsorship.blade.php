@@ -244,7 +244,6 @@
             margin-right: 25px;
         }
 
-
         .introductionContent, 
         .introductionHeading, 
         .contentText, 
@@ -252,9 +251,6 @@
             font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
         }
 
-        
-        
-      
         @media only screen and (max-width:480px){
             /* RESET STYLES */
             /* td[class="introductionContainer"],
@@ -365,13 +361,13 @@
                                     <tr>
                                         <td align="left" valign="top" class="transactionDateContent">
                                             <h2 class="contentHeading">
-                                                Date: <span class="contentText transactionDateText">7/06/2019</span>
+                                                Date: <span class="contentText transactionDateText">{{$sponsor->created_at->format('m-d-Y')}}</span>
                                             </h2>
                                             <h2 class="contentHeading">
-                                                Total Amount: <span class="contentText transactionDateText">N200,000.00</span>
+                                                Total Amount: <span class="contentText transactionDateText">{{$sponsor->transaction->amount}}</span>
                                             </h2>
                                             <h2 class="contentHeading">
-                                                Transaction ID: <span class="contentText transactionDateText"> 00757 </span>
+                                                Transaction ID: <span class="contentText transactionDateText"> {{$sponsor->transaction->transaction_id}} </span>
                                             </h2>
                                         </td>
                                     </tr>
@@ -389,16 +385,16 @@
                                                 Customer Info: 
                                             </h2>
                                             <p class="customerInfoText">
-                                                Name: <span class=" transactionDateText">Emmanuel Jacobson </span>
+                                                Name: <span class=" transactionDateText"> {{$sponsor->user->fullname}} </span>
                                             </p>
                                             <p class="customerInfoText">
-                                                Address: <span class=" transactionDateText">2 Orosi Street, Rumuola, Port Harcourt, Rivers State.</span>
+                                                Address: <span class=" transactionDateText">{{$sponsor->user->address}}</span>
                                             </p>
                                             <p class="customerInfoText">
-                                                Phone: <span class=" transactionDateText"> 08062268255 </span>
+                                                Phone: <span class=" transactionDateText"> {{$sponsor->user->phone}} </span>
                                             </p>
                                             <p class="customerInfoText">
-                                                Email: <span class=" transactionDateText"> writeprovidence@gmail.com </span>
+                                                Email: <span class=" transactionDateText"> {{$sponsor->user->email}} </span>
                                             </p>
                                         </td>
                                     </tr>
@@ -422,30 +418,30 @@
                                                         <p class="transactionInfoDetailsText">
                                                             Amt Sponsored:
                                                             <span class="contentText transactionInfoText">
-                                                                200,000.00 
+                                                                {{$sponsor->transaction->amount}}
                                                             </span>
                                                         </p>
                                                         <p class="transactionInfoDetailsText">
                                                             No Of Units:
                                                             <span class="contentText transactionInfoText">
-                                                                2
+                                                                {{$sponsor->units}}
                                                             </span>
                                                         </p>
                                                         <p class="transactionInfoDetailsText">
                                                             Returns:
                                                                 <span class="contentText transactionInfoText">
-                                                                    30000
+                                                                    {{$sponsor->farmingcycle->returns}}%
                                                                 </span>
                                                         </p>
                                                         <p class="transactionInfoDetailsText">
                                                             Payable:
                                                             <span class="contentText transactionInfoText">
-                                                                230000
+                                                                {{$sponsor->transaction->returns}}
                                                             </span>
                                                         </p>
      
                                                         <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
-                                                            21st Farming cycle starting from June 28, 2019 to Sept 20, 2019 
+                                                            {{$sponsor->farmingcycle->name}} starting from {{$sponsor->farmingcycle->start_date->format("F j, Y")}} to {{$sponsor->farmingcycle->due_date->format("F j, Y")}}
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -491,9 +487,7 @@
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.svg')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.svg')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
-                                            <p class="footerText">
-                                                <a href="#" target="_blank" class="footerLink">Unsubscribe from our mailing list</a>
-                                            </p>
+
                                         </td>
                                     </tr>
                                 </table>
