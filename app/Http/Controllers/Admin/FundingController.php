@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Mail\accountFundingReceipt;
 use Auth;
 use App\Models\Bankfunding;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Mail;
 
 class FundingController extends Controller
 {
@@ -31,6 +33,7 @@ class FundingController extends Controller
 
         $deposit->user->vestbank()->increment('capital', $deposit->amount);
 
+        Mail::to($deposit->user->email)->send(new accountFundingReceipt($deposit));
         $request->session()->flash('success', 'Funds Confirmed!');
         return redirect()->back();
     }
