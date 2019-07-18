@@ -365,7 +365,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="introductionHeading">
-                                                            <h1 class="introductionHeadingMain">Vestbanking Payment schedule</h1>
+                                                            <h1 class="introductionHeadingMain">Vestbanking Payment Receipt</h1>
                                                         </div>
                                                     </td>
                                                 </tr>

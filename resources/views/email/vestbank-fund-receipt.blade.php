@@ -133,7 +133,6 @@
 
         .contentText {
             margin: 0;
-
             font-size: 14px;
             line-height: 20px;
             color: #2B6DAD;
