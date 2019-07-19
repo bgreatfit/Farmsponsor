@@ -52,7 +52,7 @@
                                             <tr>
                                                 <th scope="row">{{ (($unapproved_deposits->currentPage() - 1 ) * $unapproved_deposits->perPage() ) + $loop->iteration }}</th>
                                                 <td> 
-                                                    <p class="depositor-info"> {{$deposit->transaction->transaction_id}}</p>
+                                                    <p class="depositor-info"> {{$deposit->transaction->transaction_id ?? ''}}</p>
                                                 </td>
                                                 
                                                 <td>
@@ -114,7 +114,7 @@
                                         <tr>
                                             <th scope="row">{{ (($approved_deposits->currentPage() - 1 ) * $approved_deposits->perPage() ) + $loop->iteration }}</th>
                                             <td>
-                                                <p class="depositor-info"> {{$deposit->transaction->transaction_id}}</p>
+                                                <p class="depositor-info"> {{$deposit->transaction->transaction_id ?? ''}}</p>
 
                                             </td>
                                             <td>
