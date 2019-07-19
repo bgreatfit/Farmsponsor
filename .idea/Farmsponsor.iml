@@ -92,5 +92,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="twig" />
+    <orderEntry type="module" module-name="e-learning" />
   </component>
 </module>
