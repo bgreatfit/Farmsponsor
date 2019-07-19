@@ -54,7 +54,8 @@ class SponsorController extends Controller
 
         $sponsor->user->vestbank()->increment('capital', $sponsor->units * 100000);
 
-        if($sponsor->delete() && $sponsor->transaction()->delete()){
+        if($sponsor->transaction()->delete()){
+            $sponsor->delete();
             $this->request->session()->flash('success', 'Sponsorship Deleted');
             return back();
         };
