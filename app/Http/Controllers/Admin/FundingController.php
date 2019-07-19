@@ -70,7 +70,8 @@ class FundingController extends Controller
 
     public function delete(Request $request, Bankfunding $funding)
     {
-        if($funding->delete() && $funding->transaction->delete()){
+        if($funding->transaction->delete()){
+            $funding->delete();
             $request->session()->flash('success', 'Sponsorship Deleted');
             return back();
         };
