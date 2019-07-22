@@ -82,11 +82,6 @@
             font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
         }
     
-        body, 
-        .bodyTable {
-
-        }
-
         .emailContainer {
             box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.25);
             max-width: 520px;
@@ -96,6 +91,7 @@
             color: #fff;
             background-color: #0E2503;
         }
+
         .introductionContentCell {
             padding: 15px 0;
         }
@@ -107,18 +103,10 @@
             line-height: 24px;
         }
 
-        .introductionLogo,
-        .introductionHeading {
-
-        }
-
         .introductionLogo {
             margin-bottom: 10px;
         }
-        .introductionHeading {
-
-        }
-
+       
         .introductionBlock {
             margin-bottom: 15px;
         }
@@ -133,7 +121,6 @@
 
         .contentText {
             margin: 0;
-
             font-size: 14px;
             line-height: 20px;
             color: #2B6DAD;
@@ -142,6 +129,7 @@
         .transactionDateBlock {
             margin-bottom: 25px;
         }
+
         .transactionDateText {
             color: #999999;
         }
@@ -149,6 +137,7 @@
         .transactionDateContent:nth-of-type(2){
             padding-right: 30px;
         }
+
         .transactionDateContent:nth-of-type(3) {
             padding-right: 45px;
         }
@@ -156,9 +145,11 @@
         .customerInfoBlock {
             margin-bottom: 30px;
         }
+
         .customerInfoContent,
         .transactionDateContent,
-        .transactionInfoDetailsContent {
+        .transactionInfoDetailsContent,
+        .contactUsContent {
             padding: 0 40px;
         }
 
@@ -169,7 +160,6 @@
             font-family: barlow;
             line-height: 22px;
             font-weight: 500;
-
         }
 
         .customerInfoText {
@@ -195,8 +185,8 @@
             padding: 10px 40px;
             margin: 0 -40px 0;
             font-family: barlow;
-            
         }
+
         .transactionInfoDetailsTextMain{
             display: inline-block;
             width: 130px;
@@ -204,6 +194,7 @@
             font-family: barlow;
             font-size: 13px;
         }
+
         .transactionInfoDetailsText span.contentText {
             font-size: 13px;
             font-weight: 600;
@@ -213,6 +204,7 @@
         .transactionInfoDetailsText:nth-child(odd) {
             background-color: rgba(14, 37, 3, 0.2);
         }
+
         .transactionInfoDetailsText:nth-child(even) {
             background-color: rgba(153, 153, 153, 0.2);
         }
@@ -224,6 +216,7 @@
             font-size: 12px;
             line-height: 14px;
         }
+
         .transactionInfoDetailsSummary .transactionInfoDetailsTextMain {
             font-weight: bold;
         }
@@ -249,7 +242,6 @@
             background: #6e9e3d;
             padding: 6px 0;
             margin-bottom: 0;
-
         }
 
         .footerText {
@@ -258,6 +250,7 @@
            font-size: 12px;
            color: #999999;
         }
+
         .fotterSocialsLink:not(:last-child) {
             margin-right: 25px;
         }
@@ -273,21 +266,9 @@
         
         
       
-        @media only screen and (max-width:480px){
+        @media only screen and (max-width:380px){
             /* RESET STYLES */
-            /* td[class="introductionContainer"],
-            td[class="callToActionContainer"],
-            td[class="footerContainer"] {
-                padding-right: 10px !important;
-                padding-left: 10px !important;
-            } */
-
-            /* table[class="introductionBlock"],
-            table[class="callToActionBlock"],
-            table[class="footerBlock"] {
-                max-width: 480px !important;
-                width: 100% !important;
-            } */
+           
 
             /* CLIENT-SPECIFIC STYLES */
             body{
@@ -296,50 +277,24 @@
             } /* force ios mail to render emails at full width*/
 
             /* GENERAL STYLES */
-            h1 {font-size: 24px !important;}
+            h1 {font-size: 20px !important;}
             h2 {font-size: 14px !important;}
-            /* h3 {font-size: 24px !important;} */
 
-            /* img[class="luncheonImage"] {
-                height: auto !important;
-                max-width: 520px !important;
-                width: 100% !important;
-            } */
-
-            /* td[class="introductionHeading"],
-            td[class="introductionLogo"] {
-                display: block !important;
-                text-align: center !important;
-            } */
-
-            td[class="introductionHeading"]{
-                /* padding: 40px 0 0 0 !important; */
-
-            }
             h1[class="introductionHeadingMain"] {
                 text-align: center !important;
             }
-            /* td[class="introductionContent"] {
-                padding-top: 20px !important;
-            } */
-
-            /* h2[class="contentHeading"] {
-                text-align: center !important;
-            } */
-
-            /* td[class="callToActionButton"] {
-                width: 100% !important;
-            } */
 
             td[class="footerText"] {
                 font-size: 15px !important;
             }
 
-            /* td[class="footerText"] a{
-                display: block !important;
-            } */
+            .customerInfoContent,
+            .transactionDateContent,
+            .transactionInfoDetailsContent,
+            .contactUsContent {
+                padding: 0 20px;
+            }
         }
-    
     </style>
 </head>
 <body>
@@ -347,13 +302,13 @@
         <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="bodyTable">
             <tr>
                 <td align="center" valign="top" class="bodyCell">
-                    <table border="0" cellpadding="0" cellspacing="0" width="520" class="emailContainer">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="emailContainer">
                     <!-- EMAIL CONTENT BEGIN -->
 
                         <tr>
                             <td align="center" valign="top" class="introductionContainer">
                                 <!-- EMAIL INTRO CONTENT -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="introductionBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="introductionBlock">
                                     <tr>
                                         <td align="center" valign="top">
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="introductionContent">
@@ -361,11 +316,11 @@
                                                     <td align="center" valign="top" class="introductionContentCell">
                                                         <div class="introductionLogo">
                                                             <a href="https://farmsponsor.com.ng" target="_blank" class="logoLink">
-                                                                <img src="{{asset('img/fs-email-logo.svg')}}" width="89" height="60" alt="Farmsponsor Logo"  class="logo">
+                                                                <img src="{{asset('img/fs-email-logo.png')}}" width="89" height="60" alt="Farmsponsor Logo"  class="logo">
                                                             </a>
                                                         </div>
                                                         <div class="introductionHeading">
-                                                            <h1 class="introductionHeadingMain">Vestbanking Payment Receipt</h1>
+                                                            <h1 class="introductionHeadingMain">Vestbank Payment Receipt</h1>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -376,10 +331,11 @@
                                 <!-- EMAIL INTRO CONTENT END -->
                             </td>
                         </tr>
+
                         <tr>
                             <td align="center" valign="top" class="transactionDateContainer">
                                 <!-- EMAIL TRANSACTION DATE CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionDateBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transactionDateBlock">
                                     <tr>
                                         <td align="left" valign="top" class="transactionDateContent">
                                             <h2 class="contentHeading">
@@ -397,41 +353,15 @@
                                 <!-- EMAIL TRANSACTION DATE CONTENT END -->
                             </td>
                         </tr>
-                        {{-- <tr>
-                            <td align="center" valign="top" class="customerInfoContainer">
-                                <!-- EMAIL CUSTOMER INFO CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="customerInfoBlock">
-                                    <tr>
-                                        <td align="left" valign="top" class="customerInfoContent">
-                                            <h2 class="contentHeading customerInfoHeading">
-                                                Customer Info: 
-                                            </h2>
-                                            <p class="customerInfoText">
-                                                Name: <span class=" transactionDateText">Emmanuel Jacobson </span>
-                                            </p>
-                                            <p class="customerInfoText">
-                                                Address: <span class=" transactionDateText">2 Orosi Street, Rumuola, Port Harcourt, Rivers State.</span>
-                                            </p>
-                                            <p class="customerInfoText">
-                                                Phone: <span class=" transactionDateText"> 08062268255 </span>
-                                            </p>
-                                            <p class="customerInfoText">
-                                                Email: <span class=" transactionDateText"> writeprovidence@gmail.com </span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- EMAIL TRANSACTION DATE CONTENT END -->
-                            </td>
-                        </tr> --}}
+                    
 
                         <tr>
                             <td align="center" valign="top" class="transactionInfoContainer">
                                 <!-- EMAIL TRANSACTION  INFO CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionInfoBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transactionInfoBlock">
                                     <tr>
                                         <td align="center" valign="top" class="transactionInfoDetailsContainer">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionInfoDetailsBlock">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transactionInfoDetailsBlock">
                                                 <tr>
                                                     <td align="left" valign="top" class="transactionInfoDetailsContent">
                                                         <div class="transactionInfoDetailsText">
@@ -442,51 +372,6 @@
                                                                 300,000.00
                                                             </span>
                                                         </div>
-{{-- 
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Actual Interest 
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                3,535.71
-                                                            </span>
-                                                        </div> --}}
-{{-- 
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                VAT
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                55.7
-                                                            </span>
-                                                        </div> --}}
-{{-- 
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                sponsoring Amt
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                300,000.00
-                                                            </span>
-                                                        </div> --}}
-
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Bank Transfer Charges 
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                56.50
-                                                            </span>
-                                                        </div>
-
-                                                        {{-- <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Sms Charge
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                4.00
-                                                            </span>
-                                                        </div> --}}
 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
@@ -511,7 +396,6 @@
                                                                 Thank you for choosing Farmsponsor
                                                             </p>
                                                         </div>
-
                                                     </td>
                                                 </tr>
                                             </table>
@@ -525,7 +409,7 @@
                         <tr>
                             <td align="center" valign="top" class="contactUsContainer">
                                 <!-- EMAIL CUSTOMER INFO CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="contactUsBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="contactUsBlock">
                                     <tr>
                                         <td align="center" valign="top" class="contactUsContent">
                                             <span class="contactUsText">
@@ -544,21 +428,17 @@
                             </td>
                         </tr>
 
-
                         <tr>
                             <td align="center" valign="top" class="footerContainer">
                                 <!-- EMAIL FOOTER CONTENT -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="footerBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="footerBlock">
                                     <tr>
                                         <td align="center" valign="center" class="footerContent">
                                             <div class="footerText footerSocials">
-                                                <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.svg')}}" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-                                                <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.svg')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-                                                <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.svg')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.png')}}" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
-                                            {{-- <p class="footerText">
-                                                <a href="#" target="_blank" class="footerLink">Unsubscribe from our mailing list</a>
-                                            </p> --}}
                                         </td>
                                     </tr>
                                 </table>

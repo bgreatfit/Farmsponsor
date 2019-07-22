@@ -178,19 +178,15 @@
                             <div class="footer__item footer__item--social">
                                 <a href="https://www.facebook.com/farmsponsorng" target="_blank" class="footer__links mr-3">
                                     <img src="{{asset('img/facebook.svg')}}" alt="Facebook logo" class="footer__icon--fb">
-                                    {{-- <i class="fab fa-facebook-square footer__icon footer__icon--fb"></i> --}}
                                 </a>
                                 <a href="https://twitter.com/Farmsponsor1" target="_blank" class="footer__links mr-3">
                                     <img src="{{asset('img/twitter.svg')}}" alt="twitter logo" class="footer__icon--twt">
-                                    {{-- <i class="fab fa-instagram footer__icon footer__icon--ig"></i> --}}
                                 </a>
                                 <a href="https://www.instagram.com/farmsponsor" target="_blank" class="footer__links mr-3">
                                     <img src="{{asset('img/instagram.svg')}}" alt="instagram logo" class="footer__icon--ig">
-                                    {{-- <i class="fab fa-twitter-square footer__icon footer__icon--twt"></i> --}}
                                 </a>
                                 <a href="https://github.com/globetrot-farmsponsor" target="_blank" class="footer__links">
                                     <img src="{{asset('img/github.svg')}}" alt="github logo" class="footer__icon--gh">
-                                    {{-- <i class="fab fa-twitter-square footer__icon footer__icon--twt"></i> --}}
                                 </a>
                             </div>
                         </div>

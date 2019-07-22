@@ -299,7 +299,7 @@
                                                     <td align="center" valign="top" class="introductionContentCell">
                                                         <div class="introductionLogo">
                                                             <a href="https://farmsponsor.com.ng" target="_blank" class="logoLink">
-                                                                <img src="{{asset('img/fs-email-logo.svg')}}" width="89" height="60" alt="Farmsponsor Logo"  class="logo">
+                                                                <img src="{{asset('img/fs-email-logo.png')}}" width="89" height="60" alt="Farmsponsor Logo"  class="logo">
                                                             </a>
                                                         </div>
                                                         <div class="introductionHeading">
@@ -443,9 +443,9 @@
                                     <tr>
                                         <td align="center" valign="center" class="footerContent">
                                             <div class="footerText footerSocials">
-                                                <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.svg')}}" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-                                                <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.svg')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-                                                <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.svg')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.png')}}" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
                                         </td>
                                     </tr>

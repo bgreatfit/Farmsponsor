@@ -81,6 +81,9 @@ class PagesController extends Controller {
     public function careers() {
         return view('pages.careers');
     }
+    public function careerDetails() {
+        return view('pages.career-details');
+    }
     public function contactUs() {
         return view('pages.contact-us');
     }
