@@ -28,6 +28,7 @@ class SponsorController extends Controller
         if($sponsor->update($data)){
 
             Mail::to($sponsor->user->email)->send(new farmSponsorshipReciept($sponsor));
+            Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($sponsor));
             $this->request->session()->flash('success', 'Sponsorship Approved');
             return back();
         };

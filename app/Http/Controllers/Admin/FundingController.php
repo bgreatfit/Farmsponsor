@@ -46,6 +46,7 @@ class FundingController extends Controller
         $deposit->user->vestbank()->increment('capital', $deposit->amount);
 
         Mail::to($deposit->user->email)->send(new accountFundingReceipt($deposit));
+        Mail::to(env('ADMIN_MAIL'))->send(new accountFundingReceipt($deposit));
         $request->session()->flash('success', 'Funds Confirmed!');
         return redirect()->back();
     }
