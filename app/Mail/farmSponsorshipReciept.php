@@ -4,6 +4,7 @@ namespace App\Mail;
 
 use App\Models\Sponsor;
 use Illuminate\Bus\Queueable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -18,7 +19,7 @@ class farmSponsorshipReciept extends Mailable
      *
      * @return void
      */
-    public function __construct(Sponsor $sponsor)
+    public function __construct(Model $sponsor)
     {
         $this->sponsor = $sponsor;
     }

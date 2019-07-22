@@ -85,10 +85,6 @@ class PagesController extends Controller {
         return view('pages.admin.sponsors-list');
     }
 
-    public function usersList(){
-        return view('pages.admin.users-list');
-    }
-
     public function editFarmingCycle(){
         return view('pages.admin.edit-farming-cycle');
     }
