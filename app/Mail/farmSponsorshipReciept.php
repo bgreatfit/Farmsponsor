@@ -2,23 +2,26 @@
 
 namespace App\Mail;
 
+use App\Models\Sponsor;
 use Illuminate\Bus\Queueable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class LuncheonMailable extends Mailable
+class farmSponsorshipReciept extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $sponsor;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Model $sponsor)
     {
-        //
+        $this->sponsor = $sponsor;
     }
 
     /**
@@ -28,6 +31,6 @@ class LuncheonMailable extends Mailable
      */
     public function build()
     {
-        return $this->view('email.lunch');
+        return $this->view('email.farm.sponsorshipReceipt');
     }
 }

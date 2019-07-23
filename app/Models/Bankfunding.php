@@ -26,4 +26,9 @@ class Bankfunding extends Model
     {
         return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
     }
+
+    public function transactions()
+    {
+        return $this->morphMany('App\Models\Transactionlogs', 'transactionable');
+    }
 }

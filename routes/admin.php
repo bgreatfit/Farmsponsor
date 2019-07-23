@@ -24,7 +24,8 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('farmcycles/{farm}/open', 'Admin\FarmController@open')->name('farms.open');
     Route::get('farmcycles/{farm}/payout', 'Admin\FarmController@payout')->name('farms.payout');
     Route::get('farmcycles/{farm}/stoppayout', 'Admin\FarmController@stoppayout')->name('farms.stoppayout');
-    Route::get('farmcycles/search', 'Admin\FarmController@search')->name('farms.search');
+    Route::get('farmcycles/searchname', 'Admin\FarmController@searchByName')->name('farms.searchname');
+    Route::get('farmcycles/searchtransactionid', 'Admin\FarmController@searchByTransactionId')->name('farms.searchtransactionid');
     Route::get('sponsorship/{sponsor}/confirm', 'Admin\SponsorController@confirm')->name('sponsorship.confirm');
     Route::get('sponsorship/{sponsor}/reverse', 'Admin\SponsorController@reverse')->name('sponsorship.reverse');
     Route::get('sponsorship/{sponsor}/delete', 'Admin\SponsorController@delete')->name('sponsorship.delete');
@@ -35,6 +36,8 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('deposits/{deposit}/confirm', 'Admin\FundingController@confirm')->name('admin.confirmfunding')->middleware('confirmed');
     Route::get('deposits/{deposit}/reverse', 'Admin\FundingController@reverse')->name('admin.reversefunding');
     Route::get('deposits/{funding}/delete', 'Admin\FundingController@delete')->name('admin.deletefunding');
+    Route::get('deposits/searchname', 'Admin\FundingController@searchByName')->name('funding.searchname');
+    Route::get('deposits/searchtransactionid', 'Admin\FundingController@searchByTransactionId')->name('funding.searchtransactionid');
     Route::get('withdrawals', 'Admin\WithdrawalController@index')->name('admin.withdrawals');
     Route::get('withdrawals/{withdrawal}/confirm', 'Admin\WithdrawalController@confirm')->name('admin.confirmwithdrawal');
     Route::get('withdrawals/{withdrawal}/reverse', 'Admin\WithdrawalController@reverse')->name('admin.reversewithdrawal');
@@ -42,4 +45,6 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('users-list', 'PagesController@usersList')->name('usersList');
     Route::get('vestbank-users-list', 'PagesController@vestbankUsersList')->name('vestbankUsersList');
     Route::get('retain-sponsorship', 'PagesController@retainSponsorship')->name('retainSponsorship');
+    Route::get('users', 'Admin\UsersController@index')->name('admin.users');
+
 });

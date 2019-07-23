@@ -2,13 +2,27 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Mail\accountFundingReceipt;
+use App\Models\BankSponsorship;
+use App\Models\Farm;
+use App\Models\Sponsor;
 use Auth;
 use App\Models\Bankfunding;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Mail;
 
 class FundingController extends Controller
 {
+
+    protected $request;
+
+    public function __construct(Request $request)
+    {
+        $this->request = $request;
+    }
+
+
     public function index()
     {
         $data['unapproved_deposits'] = Bankfunding::whereApproved(0)->orderBy('created_at', 'desc')->paginate(10);
@@ -31,6 +45,8 @@ class FundingController extends Controller
 
         $deposit->user->vestbank()->increment('capital', $deposit->amount);
 
+        Mail::to($deposit->user->email)->send(new accountFundingReceipt($deposit));
+        Mail::to(env('ADMIN_MAIL'))->send(new accountFundingReceipt($deposit));
         $request->session()->flash('success', 'Funds Confirmed!');
         return redirect()->back();
     }
@@ -55,13 +71,44 @@ class FundingController extends Controller
 
     public function delete(Request $request, Bankfunding $funding)
     {
-        if($funding->delete() && $funding->transaction->delete()){
+        if($funding->transaction->delete()){
+            $funding->delete();
             $request->session()->flash('success', 'Sponsorship Deleted');
             return back();
         };
 
         $request->session()->flash('error', 'Something went wrong!');
         return back();
+    }
+
+    public function searchByName()
+    {
+        $data['unapproved_deposits'] = Bankfunding::whereApproved(0)->whereHas('user', function($query){
+            $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['approved_deposits'] = Bankfunding::whereApproved(0)->whereHas('user', function($query){
+            $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['searchNameValue'] = $this->request->value;
+
+        return view('pages.admin.deposits', $data);
+    }
+
+    public function searchByTransactionId()
+    {
+        $data['unapproved_deposits'] = Bankfunding::whereApproved(0)->whereHas('transactions', function($query){
+            $query->where('transaction_id', '=', $this->request->value);
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['approved_deposits'] = Bankfunding::whereApproved(0)->whereHas('transactions', function($query){
+            $query->where('transaction_id', '=', $this->request->value);
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['transactionSearchValue'] = $this->request->value;
+
+        return view('pages.admin.deposits', $data);
     }
     // public function approveDeposit($deposit)
     // {

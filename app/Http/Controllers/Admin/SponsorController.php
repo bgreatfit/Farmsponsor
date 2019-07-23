@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Mail\farmSponsorshipReciept;
 use Auth;
 use App\Models\Sponsor;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Mail;
 
 
 class SponsorController extends Controller
@@ -24,6 +26,9 @@ class SponsorController extends Controller
         $data['approve_ip_address'] = request()->ip();
         $data['approved'] = 1;
         if($sponsor->update($data)){
+
+            Mail::to($sponsor->user->email)->send(new farmSponsorshipReciept($sponsor));
+            Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($sponsor));
             $this->request->session()->flash('success', 'Sponsorship Approved');
             return back();
         };
@@ -50,7 +55,8 @@ class SponsorController extends Controller
 
         $sponsor->user->vestbank()->increment('capital', $sponsor->units * 100000);
 
-        if($sponsor->delete() && $sponsor->transaction()->delete()){
+        if($sponsor->transaction()->delete()){
+            $sponsor->delete();
             $this->request->session()->flash('success', 'Sponsorship Deleted');
             return back();
         };

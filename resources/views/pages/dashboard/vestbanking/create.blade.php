@@ -15,6 +15,7 @@
                                 Please try again and ensure all fields are supplied
                             </li>
                             @endif
+
                             <li class="list-group-item deposit-method">
                                 <a href="#" data-toggle="modal" data-target="#deposit-method-bank"
                                     role="button" class="deposit-method__link" >

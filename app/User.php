@@ -72,4 +72,9 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasMany(Transactionlogs::class);
     }
+
+    public function getFullnameAttribute()
+    {
+        return $this->firstname . ' ' . $this->lastname;
+    }
 }

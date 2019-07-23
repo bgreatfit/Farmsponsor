@@ -1,4 +1,4 @@
-<form action="{{route('farms.search')}}" method="GET" class="active-cyan-4 searchbar__form">
+<form action="{{route('farms.searchname')}}" method="GET" class="active-cyan-4 searchbar__form">
     <div class="input-group mb-3">
         <input type="hidden" name="farm_id" value="{{$farm->id}}">
         <input type="text" class="form-control searchbar__input" placeholder="Enter name" name="value" value="{{$searchValue ?? ' '}}">

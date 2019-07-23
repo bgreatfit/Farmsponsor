@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat&display=swap" rel="stylesheet"> 
-    <title> Sponsors Receipt</title>
+    <title> Vestbanking Withdraw | Receipt</title>
     <style type="text/css">
 
         /* CSS RESET STYLES */
@@ -82,11 +82,6 @@
             font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif;
         }
     
-        body, 
-        .bodyTable {
-
-        }
-
         .emailContainer {
             box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.25);
             max-width: 520px;
@@ -96,6 +91,7 @@
             color: #fff;
             background-color: #0E2503;
         }
+
         .introductionContentCell {
             padding: 15px 0;
         }
@@ -107,18 +103,10 @@
             line-height: 24px;
         }
 
-        .introductionLogo,
-        .introductionHeading {
-
-        }
-
         .introductionLogo {
             margin-bottom: 10px;
         }
-        .introductionHeading {
-
-        }
-
+       
         .introductionBlock {
             margin-bottom: 15px;
         }
@@ -133,7 +121,6 @@
 
         .contentText {
             margin: 0;
-
             font-size: 14px;
             line-height: 20px;
             color: #2B6DAD;
@@ -142,6 +129,7 @@
         .transactionDateBlock {
             margin-bottom: 25px;
         }
+
         .transactionDateText {
             color: #999999;
         }
@@ -149,6 +137,7 @@
         .transactionDateContent:nth-of-type(2){
             padding-right: 30px;
         }
+
         .transactionDateContent:nth-of-type(3) {
             padding-right: 45px;
         }
@@ -156,11 +145,12 @@
         .customerInfoBlock {
             margin-bottom: 30px;
         }
+
         .customerInfoContent,
         .transactionDateContent,
         .transactionInfoDetailsContent,
         .contactUsContent {
-            padding: 0 10px;
+            padding: 0 40px;
         }
 
         .customerInfoHeading {
@@ -170,7 +160,6 @@
             font-family: barlow;
             line-height: 22px;
             font-weight: 500;
-
         }
 
         .customerInfoText {
@@ -185,7 +174,7 @@
         }
 
         .transactionInfoBlock {
-            margin-bottom: 28px;
+            margin-bottom: 8px;
         }
       
         .transactionInfoText {
@@ -193,10 +182,19 @@
         }
 
         .transactionInfoDetailsText{
-            padding: 10px;
-            margin: 0 -10px 0;
+            padding: 10px 40px;
+            margin: 0 -40px 0;
             font-family: barlow;
         }
+
+        .transactionInfoDetailsTextMain{
+            display: inline-block;
+            width: 130px;
+            margin: 0;
+            font-family: barlow;
+            font-size: 13px;
+        }
+
         .transactionInfoDetailsText span.contentText {
             font-size: 13px;
             font-weight: 600;
@@ -206,6 +204,7 @@
         .transactionInfoDetailsText:nth-child(odd) {
             background-color: rgba(14, 37, 3, 0.2);
         }
+
         .transactionInfoDetailsText:nth-child(even) {
             background-color: rgba(153, 153, 153, 0.2);
         }
@@ -218,8 +217,18 @@
             line-height: 14px;
         }
 
+        .transactionInfoDetailsSummary .transactionInfoDetailsTextMain {
+            font-weight: bold;
+        }
+
+        .fsThanksText {
+            margin: 40px 0 20px;
+            text-align: center;
+            font-family: barlow;
+        }
+
         .contactUsBlock {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
        
         .contactUsText {
@@ -241,6 +250,7 @@
            font-size: 12px;
            color: #999999;
         }
+
         .fotterSocialsLink:not(:last-child) {
             margin-right: 25px;
         }
@@ -256,8 +266,10 @@
         
         
       
-        @media only screen and (max-width:480px){
-         
+        @media only screen and (max-width:380px){
+            /* RESET STYLES */
+           
+
             /* CLIENT-SPECIFIC STYLES */
             body{
                 width: 100% !important;
@@ -265,7 +277,7 @@
             } /* force ios mail to render emails at full width*/
 
             /* GENERAL STYLES */
-            h1 {font-size: 24px !important;}
+            h1 {font-size: 20px !important;}
             h2 {font-size: 14px !important;}
 
             h1[class="introductionHeadingMain"] {
@@ -276,8 +288,13 @@
                 font-size: 15px !important;
             }
 
+            .customerInfoContent,
+            .transactionDateContent,
+            .transactionInfoDetailsContent,
+            .contactUsContent {
+                padding: 0 20px;
+            }
         }
-    
     </style>
 </head>
 <body>
@@ -285,7 +302,7 @@
         <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="bodyTable">
             <tr>
                 <td align="center" valign="top" class="bodyCell">
-                    <table border="0" cellpadding="0" cellspacing="0" class="emailContainer">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="emailContainer">
                     <!-- EMAIL CONTENT BEGIN -->
 
                         <tr>
@@ -303,7 +320,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="introductionHeading">
-                                                            <h1 class="introductionHeadingMain">Sponsor’s Receipt</h1>
+                                                            <h1 class="introductionHeadingMain">Vestbank Payment Receipt</h1>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -314,6 +331,7 @@
                                 <!-- EMAIL INTRO CONTENT END -->
                             </td>
                         </tr>
+
                         <tr>
                             <td align="center" valign="top" class="transactionDateContainer">
                                 <!-- EMAIL TRANSACTION DATE CONTENT  -->
@@ -321,13 +339,13 @@
                                     <tr>
                                         <td align="left" valign="top" class="transactionDateContent">
                                             <h2 class="contentHeading">
-                                                Date: <span class="contentText transactionDateText">7/06/2019</span>
+                                                Date: <span class="contentText transactionDateText">{{date('d-m-Y')}}</span>
                                             </h2>
                                             <h2 class="contentHeading">
-                                                Total Amount: <span class="contentText transactionDateText">N200,000.00</span>
+                                                Account Name: <span class="contentText transactionDateText">{{$withdrawal->user->fullname}}</span>
                                             </h2>
                                             <h2 class="contentHeading">
-                                                Transaction ID: <span class="contentText transactionDateText"> 00757 </span>
+                                                Transaction ID: <span class="contentText transactionDateText"> {{$withdrawal->transaction->transaction_id}} </span>
                                             </h2>
                                         </td>
                                     </tr>
@@ -335,34 +353,11 @@
                                 <!-- EMAIL TRANSACTION DATE CONTENT END -->
                             </td>
                         </tr>
-                        <tr>
-                            <td align="center" valign="top" class="customerInfoContainer">
-                                <!-- EMAIL CUSTOMER INFO CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="customerInfoBlock">
-                                    <tr>
-                                        <td align="left" valign="top" class="customerInfoContent">
-                                            <h2 class="contentHeading customerInfoHeading">
-                                                Customer Info: 
-                                            </h2>
-                                            <p class="customerInfoText">
-                                                Name: <span class=" transactionDateText">Emmanuel Jacobson </span>
-                                            </p>
-                                            <p class="customerInfoText">
-                                                Address: <span class=" transactionDateText">2 Orosi Street, Rumuola, Port Harcourt, Rivers State.</span>
-                                            </p>
-                                            <p class="customerInfoText">
-                                                Phone: <span class=" transactionDateText"> 08062268255 </span>
-                                            </p>
-                                            <p class="customerInfoText">
-                                                Email: <span class=" transactionDateText"> writeprovidence@gmail.com </span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- EMAIL TRANSACTION DATE CONTENT END -->
-                            </td>
-                        </tr>
+<<<<<<< HEAD:resources/views/email/vestbank-pay-receipt.blade.php
+                    
 
+=======
+>>>>>>> master:resources/views/email/vestbank/accountWithdrawalReceipt.blade.php
                         <tr>
                             <td align="center" valign="top" class="transactionInfoContainer">
                                 <!-- EMAIL TRANSACTION  INFO CONTENT  -->
@@ -372,37 +367,50 @@
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transactionInfoDetailsBlock">
                                                 <tr>
                                                     <td align="left" valign="top" class="transactionInfoDetailsContent">
-                                                        <h2 class="contentHeading customerInfoHeading">
-                                                            Transaction Details: 
-                                                        </h2>
-                                                        <p class="transactionInfoDetailsText">
-                                                            Amt Sponsored:
+                                                        <div class="transactionInfoDetailsText">
+                                                            <p class="transactionInfoDetailsTextMain">
+                                                                Withdrawal Amt
+                                                            </p>
                                                             <span class="contentText transactionInfoText">
-                                                                200,000.00 
+                                                                {{$withdrawal->transaction->amount}}
                                                             </span>
-                                                        </p>
-                                                        <p class="transactionInfoDetailsText">
-                                                            No Of Units:
+                                                        </div>
+
+<<<<<<< HEAD:resources/views/email/vestbank-pay-receipt.blade.php
+=======
+                                                        <div class="transactionInfoDetailsText">
+                                                            <p class="transactionInfoDetailsTextMain">
+                                                                Bank Transfer Charges 
+                                                            </p>
                                                             <span class="contentText transactionInfoText">
-                                                                2
+                                                                56.50
                                                             </span>
-                                                        </p>
-                                                        <p class="transactionInfoDetailsText">
-                                                            Returns:
-                                                                <span class="contentText transactionInfoText">
-                                                                    30000
-                                                                </span>
-                                                        </p>
-                                                        <p class="transactionInfoDetailsText">
-                                                            Payable:
+                                                        </div>
+
+>>>>>>> master:resources/views/email/vestbank/accountWithdrawalReceipt.blade.php
+                                                        <div class="transactionInfoDetailsText">
+                                                            <p class="transactionInfoDetailsTextMain">
+                                                                Vestbanking Charges
+                                                            </p>
                                                             <span class="contentText transactionInfoText">
-                                                                230000
+                                                                200.00
                                                             </span>
-                                                        </p>
-     
-                                                        <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
-                                                            21st Farming cycle starting from June 28, 2019 to Sept 20, 2019 
-                                                        </p>
+                                                        </div>
+
+                                                        <div class="transactionInfoDetailsText">
+                                                            <p class="transactionInfoDetailsTextMain">
+                                                                Amount Paid
+                                                            </p>
+                                                            <span class="contentText transactionInfoText">
+                                                                {{$withdrawal->transaction->amount}}
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="fsThanksContainer">
+                                                            <p class="fsThanksText">
+                                                                Thank you for choosing Farmsponsor
+                                                            </p>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -435,7 +443,6 @@
                             </td>
                         </tr>
 
-
                         <tr>
                             <td align="center" valign="top" class="footerContainer">
                                 <!-- EMAIL FOOTER CONTENT -->
@@ -447,6 +454,10 @@
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
+<<<<<<< HEAD:resources/views/email/vestbank-pay-receipt.blade.php
+=======
+
+>>>>>>> master:resources/views/email/vestbank/accountWithdrawalReceipt.blade.php
                                         </td>
                                     </tr>
                                 </table>

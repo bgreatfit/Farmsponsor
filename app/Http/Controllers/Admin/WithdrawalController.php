@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Mail\accountFundingReceipt;
+use App\Mail\fundsWithdrawalReceipt;
 use App\Models\Sponsor;
 use Auth;
 use Illuminate\Http\Request;
 use App\Models\WithdrawalLog;
 use App\Http\Controllers\Controller;
+use Mail;
 
 class WithdrawalController extends Controller
 {
@@ -30,6 +33,8 @@ class WithdrawalController extends Controller
             request()->session()->flash('error', 'Withdrawal not reflected to user!');
             return redirect()->back();
         }
+
+        Mail::to($withdrawal->user->email)->send(new fundsWithdrawalReceipt($withdrawal));
 
         request()->session()->flash('success', 'Withdrawal Confirmed!');
         return redirect()->back();
@@ -59,7 +64,8 @@ class WithdrawalController extends Controller
 
     public function delete(WithdrawalLog $withdrawal)
     {
-        if($withdrawal->delete() && $withdrawal->transaction->delete()){
+        if($withdrawal->transaction->delete()){
+            $withdrawal->delete();
             $this->request->session()->flash('success', 'Sponsorship Deleted');
             return back();
         };

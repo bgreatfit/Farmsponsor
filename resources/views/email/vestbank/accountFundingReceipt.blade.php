@@ -349,10 +349,10 @@
                                     <tr>
                                         <td align="left" valign="top" class="transactionDateContent">
                                             <span class="contentHeading">
-                                                Date: <span class="contentText transactionDateText">7/06/2019</span>
+                                                Date: <span class="contentText transactionDateText">{{date('d-m-Y')}}</span>
                                             </span>
                                             <span class="contentHeading">
-                                                Transaction ID: <span class="contentText transactionDateText"> 00758 </span>
+                                                Transaction ID: <span class="contentText transactionDateText"> {{$bankfunding->transaction->transaction_id}} </span>
                                             </span>
                                         </td>
                                     </tr>
@@ -371,13 +371,13 @@
                                                 Customer Info: 
                                             </h2>
                                             <p class="customerInfoText">
-                                                Name: <span class=" transactionDateText">Emmanuel Jacobson </span>
+                                                Name: <span class=" transactionDateText">{{$bankfunding->user->fullname}} </span>
                                             </p>
                                             <p class="customerInfoText">
-                                                Address: <span class=" transactionDateText">2 Orosi Street, Rumuola, Port Harcourt, Rivers State.</span>
+                                                Address: <span class=" transactionDateText">{{$bankfunding->user->address ?? ''}}</span>
                                             </p>
                                             <p class="customerInfoText">
-                                                Phone: <span class=" transactionDateText"> 08062268255 </span>
+                                                Phone: <span class=" transactionDateText"> {{$bankfunding->user->phone ?? ''}} </span>
                                             </p>
                                         </td>
                                     </tr>
@@ -401,7 +401,7 @@
                                                         <p class="transactionInfoDetailsText">
                                                             Amount Vested:
                                                             <span class="contentText transactionInfoText">
-                                                                100,000.00 
+                                                                {{$bankfunding->transaction->amount}}
                                                             </span>
                                                         </p>
 
@@ -453,6 +453,12 @@
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
+<<<<<<< HEAD:resources/views/email/vestbank-fund-receipt.blade.php
+=======
+{{--                                            <p class="footerText">--}}
+{{--                                                <a href="#" target="_blank" class="footerLink">Unsubscribe from our mailing list</a>--}}
+{{--                                            </p>--}}
+>>>>>>> master:resources/views/email/vestbank/accountFundingReceipt.blade.php
                                         </td>
                                     </tr>
                                 </table>

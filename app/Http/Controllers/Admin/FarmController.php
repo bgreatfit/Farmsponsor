@@ -138,7 +138,7 @@ class FarmController extends Controller
         return redirect()->back();
     }
 
-    public function search()
+    public function searchByName()
     {
         $data['farm'] = Farm::findOrFail($this->request->farm_id);
 
@@ -159,6 +159,31 @@ class FarmController extends Controller
         })->orderBy('created_at', 'desc')->paginate(10);
 
         $data['searchValue'] = $this->request->value;
+
+        return view('pages.admin.farm.show', $data);
+    }
+
+    public function searchByTransactionId()
+    {
+        $data['farm'] = Farm::findOrFail($this->request->farm_id);
+
+        $data['approved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(1)->whereHas('transactions', function($query){
+            $query->where('transaction_id', '=', $this->request->value);
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['unapproved_vestbank_sponsors'] = Sponsor::whereFarmId($data['farm']->id)->whereApproved(0)->whereHas('transactions', function($query){
+            $query->where('transaction_id', '=', $this->request->value);
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['approved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(1)->whereHas('transactions', function($query){
+            $query->where('transaction_id', '=', $this->request->value);
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['unapproved_sponsors'] = BankSponsorship::whereFarmId($data['farm']->id)->whereApproved(0)->whereHas('transactions', function($query){
+            $query->where('transaction_id', '=', $this->request->value);
+        })->orderBy('created_at', 'desc')->paginate(10);
+
+        $data['transactionSearchValue'] = $this->request->value;
 
         return view('pages.admin.farm.show', $data);
     }
