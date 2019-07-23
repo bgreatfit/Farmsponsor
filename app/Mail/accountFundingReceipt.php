@@ -13,15 +13,17 @@ class accountFundingReceipt extends Mailable
     use Queueable, SerializesModels;
 
     public $bankfunding;
+    public $fileName;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(Bankfunding $bankfunding)
+    public function __construct(Bankfunding $bankfunding, $fileName)
     {
         $this->bankfunding = $bankfunding;
+        $this->fileName = $fileName;
     }
 
     /**
@@ -31,6 +33,10 @@ class accountFundingReceipt extends Mailable
      */
     public function build()
     {
-        return $this->view('email.vestbank.accountFundingReceipt');
+        return $this->view('email.vestbank.accountFundingReceipt')
+            ->attach($this->fileName, [
+                'as' => 'Account Funding Receipt.pdf',
+                'mime' => 'application/pdf',
+            ]);
     }
 }
