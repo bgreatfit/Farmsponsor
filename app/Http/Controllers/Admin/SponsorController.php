@@ -30,8 +30,8 @@ class SponsorController extends Controller
         if($sponsor->update($data)){
 
             $pdf = App::make('dompdf.wrapper');
-            $fileName = public_path() . '/pdf/' . $sponsor->user->firstname . '_' . $sponsor->user->lastname . '_' . $sponsor->id . '_' . now() . '.pdf';
-            $pdf->loadView('email.farm.sponsorshipReceipt', compact('sponsor'))->save($fileName);
+            $fileName = public_path() . '/pdf/farm/vesting/' . $sponsor->user->firstname . '_' . $sponsor->user->lastname . '_' . $sponsor->id . '_' . now() . '.pdf';
+            $pdf->loadView('email.farm.pdf.sponsorshipReceipt', compact('sponsor'))->save($fileName);
 
             Mail::to($sponsor->user->email)->send(new farmSponsorshipReciept($sponsor, $fileName));
             Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($sponsor, $fileName));

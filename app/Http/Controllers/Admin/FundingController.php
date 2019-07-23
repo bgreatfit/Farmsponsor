@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App;
 use App\Mail\accountFundingReceipt;
 use App\Models\BankSponsorship;
 use App\Models\Farm;
@@ -33,6 +34,7 @@ class FundingController extends Controller
 
     public function confirm(Request $request, Bankfunding $deposit)
     {
+        $bankfunding = $deposit;
         $data['approve_user_id'] = Auth::id();
         $data['approve_ip_address'] = request()->ip();
         $data['approved_time'] = now();
@@ -44,6 +46,10 @@ class FundingController extends Controller
         }
 
         $deposit->user->vestbank()->increment('capital', $deposit->amount);
+
+        $pdf = App::make('dompdf.wrapper');
+        $fileName = public_path() . '/pdf/funding/' . $bankfunding->user->firstname . '_' . $bankfunding->user->lastname . '_' . $bankfunding->id . '_' . now() . '.pdf';
+        $pdf->loadView('email.vestbank.pdf.accountFundingReceipt', compact('bankfunding'))->save($fileName);
 
         Mail::to($deposit->user->email)->send(new accountFundingReceipt($deposit));
         Mail::to(env('ADMIN_MAIL'))->send(new accountFundingReceipt($deposit));

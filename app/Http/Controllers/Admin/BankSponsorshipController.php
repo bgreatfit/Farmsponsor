@@ -29,8 +29,8 @@ class BankSponsorshipController extends Controller
         if($bankSponsor->update($data)){
 
             $pdf = App::make('dompdf.wrapper');
-            $fileName = public_path() . '/pdf/' . $sponsor->user->firstname . '_' . $sponsor->user->lastname . '_' . $sponsor->id . '_' . now() . '.pdf';
-            $pdf->loadView('email.farm.sponsorshipReceipt', compact('sponsor'))->save($fileName);
+            $fileName = public_path() . '/pdf/farm/bank/' . $sponsor->user->firstname . '_' . $sponsor->user->lastname . '_' . $sponsor->id . '_' . now() . '.pdf';
+            $pdf->loadView('email.farm.pdf.sponsorshipReceipt', compact('sponsor'))->save($fileName);
 
             Mail::to($bankSponsor->user->email)->send(new farmSponsorshipReciept($bankSponsor, $fileName));
             Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($bankSponsor, $fileName));

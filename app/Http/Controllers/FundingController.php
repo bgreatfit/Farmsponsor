@@ -130,10 +130,7 @@ class FundingController extends Controller
     protected function processVestbankWithdrawalOf(String $field, $amount = NULL)
     {
         $charges = $this->getWithdrawalCharges();
-//        return [
-//            $this->processChargesWithdrawal($charges),
-//            Auth::user()->vestbank->$field
-//        ];
+;
         if($this->processChargesWithdrawal($charges)){
 
             $currentAmount = Auth::user()->fresh()->vestbank->$field;

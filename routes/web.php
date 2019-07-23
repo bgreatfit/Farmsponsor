@@ -1,7 +1,6 @@
 <?php
 require_once 'admin.php';
 
-//use Cookie;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -75,6 +74,4 @@ Route::get('retain/{cycleid}', 'RetainSponsorshipController@retain')->name('reta
 
 // Auth Routes
 Auth::routes(['verify' => true]);
-// Route::get('/farmlist', 'FarmsController@index');
-// Route::get('/farmlist', 'FarmsController@index');
 
