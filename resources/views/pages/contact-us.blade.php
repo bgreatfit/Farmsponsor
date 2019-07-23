@@ -2,12 +2,12 @@
 @section('content')
     <div class="contact-us-wrap">
         <section class="map-container">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <img src="{{asset('img/map.svg')}}" alt="maps" class="map">
+            {{-- <div class="container-fluid"> --}}
+                <div class="flex-row">
+                    <div class="flex-col-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.5679062484205!2d7.051126414316145!3d4.844000296482587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd1fb8059409%3A0x18096b315cf8b6fc!2sFarmSponsor!5e0!3m2!1sen!2sng!4v1563871975803!5m2!1sen!2sng" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-6 col-12">
+                    <div class="flex-col-2">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12">
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            {{-- </div> --}}
         </section>
         <section class="main-content-area">
             <div class="container">

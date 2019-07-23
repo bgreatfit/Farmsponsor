@@ -376,18 +376,6 @@
                                                             </span>
                                                         </div>
 
-<<<<<<< HEAD:resources/views/email/vestbank-pay-receipt.blade.php
-=======
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
-                                                                Bank Transfer Charges 
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                56.50
-                                                            </span>
-                                                        </div>
-
->>>>>>> master:resources/views/email/vestbank/accountWithdrawalReceipt.blade.php
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
                                                                 Vestbanking Charges

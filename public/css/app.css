@@ -11630,7 +11630,7 @@ a.text-dark:focus {
   color: #3C4049;
 }
 
-.contact-us-wrap .main-content-area .container .row:nth-of-type(2) {
+.contact-us-wrap .main-content-area .container .col-12.col-md-4 {
   margin-bottom: 8.4rem;
 }
 
@@ -11687,11 +11687,45 @@ a.text-dark:focus {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 1273px) {
+  .contact-us-wrap .contact-background {
+    overflow: unset;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contact-us-wrap .contact-form-container {
+    padding: 5rem 2rem;
+  }
+
+  .contact-us-wrap .main-content-area .container .row:nth-of-type(2) .col-12.col-md-4:not(:first-of-type) .contact-medium {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1272px) {
+  .contact-us-wrap .contact-background .background {
+    top: -98px;
+  }
+
+  .contact-us-wrap .contact-background .background .background-text {
+    font-size: 20rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .contact-us-wrap .map-container .flex-row {
+    flex-direction: column !important;
+  }
+
   .contact-us-wrap .contact-medium,
   .contact-us-wrap .connect,
   .contact-us-wrap .social-media-handles {
     text-align: center;
+  }
+
+  .contact-us-wrap .main-content-area .background .background-text {
+    font-size: 10rem;
   }
 
   .contact-us-wrap .main-content-area .connect {

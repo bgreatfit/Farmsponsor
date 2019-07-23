@@ -453,12 +453,6 @@
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
-<<<<<<< HEAD:resources/views/email/vestbank-fund-receipt.blade.php
-=======
-{{--                                            <p class="footerText">--}}
-{{--                                                <a href="#" target="_blank" class="footerLink">Unsubscribe from our mailing list</a>--}}
-{{--                                            </p>--}}
->>>>>>> master:resources/views/email/vestbank/accountFundingReceipt.blade.php
                                         </td>
                                     </tr>
                                 </table>
