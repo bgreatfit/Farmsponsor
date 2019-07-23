@@ -494,7 +494,7 @@
                                         <p class="insurance__text">
                                             Farmsponsor has your investment covered with a robust
                                             insurance policy. Our farms are comprehensively insured
-                                            by Leadway Assurance plc.
+                                            by Leadway Assurance Company ltd.
                                         </p>
                                     </div>
                                 </div>

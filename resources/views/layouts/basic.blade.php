@@ -24,17 +24,6 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
         <link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/app.css')}}">
-        <style>
-          .header > .jumbotron{
-            background-image: linear-gradient(to right bottom,
-            rgba(0,0,0, .5),
-            rgba(39, 64, 46, .2)),
-            url('img/header-backgr.jpg');
-            background-size: cover;
-            background-position: top;
-          }
-        </style>
-
     </head>
     <body>
       @include('includes.navigation')

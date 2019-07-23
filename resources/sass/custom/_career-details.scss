@@ -1,0 +1,54 @@
+.career-details-wrap{
+    font-family: $font-family-main;
+    background-color: $color-white;
+
+    .career-details__heading{
+        font-family: $font-family-main;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 29px;
+        color: $color-black;
+        margin-bottom: 3rem;
+
+        &--sub {
+            font-family: $font-family-main;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 29px;
+            color: $color-black;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .career-details-jumbotron{
+        padding: 5rem 0 2rem;
+        background-color: #0E2503;
+        margin-bottom: 10rem;
+        .career-details__back-link {
+            text-decoration: none;
+            color: $color-white;
+            margin-bottom: 2rem;
+            display: inline-block;
+            .left-arrow{
+                width: 2.1rem;
+            }
+        }
+        .career-details__heading--main{
+            font-family: $font-family-main;
+            font-weight: 600;
+            font-size: 3.2rem;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+        }
+        .career-details__heading--text{
+            font-size: 1.4rem;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+
+    .career-details__description{
+
+    }
+}

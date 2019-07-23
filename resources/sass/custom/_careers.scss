@@ -1,0 +1,119 @@
+.career-wrap {
+    background-color: $color-white;
+    font-family: $font-family-main;
+    .career-jumbotron {
+        height: 51.3rem;
+        background-image: url('../../../public/img/careers-bg-img.png');
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 11.3rem;
+        .career-search-container{
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            padding: 1rem 5rem;
+
+            .form__group {
+                margin-bottom: 0;
+
+                .careers-search__input{
+                    height: 3.9rem;
+                    border-radius: 1rem;
+                    font-size: 1.4rem;
+                    border: none;
+                }
+
+                .career-search__btn {
+                    padding: .91rem 1rem;
+                    border-radius: 10px;
+                    background-color: #6E9E3D;
+                    border: none;
+                }
+            }
+        }
+    }
+    .career-main-content {
+        padding-bottom: 13.45rem;
+        .career-heading-container{
+            margin-bottom: 7.2rem;
+            .career-main-heading {
+                font-family: $font-family-main;
+                margin-bottom: 3.9rem;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+                margin-left: 15rem;
+            }
+        }
+
+        .career-position{
+            .career-heading {
+                font-size: 22px;
+                line-height: 27px;
+                color: #939BA1;
+                margin-bottom: 1.3rem;
+            }
+            &__content{
+                max-width: 79.9rem;
+                border-radius: 5px;
+                border: 1px solid #E8EBEC;
+                padding: 2rem 3.2rem;
+                position: relative;
+            }
+            &__link:link,
+            &__link:visited {
+                text-decoration: none;
+                color: #4360DF;
+            }
+            &__link:hover {
+                color: darken(#4360DF, 20%);
+            }
+            &__title{
+                margin-bottom: 1rem;
+                font-size: 2.2rem;
+            }
+            &__btn {
+                display: inline-block;
+                width: 2.1rem;
+                position: absolute;
+                right: 6.56%;
+                top: 40.27%;
+            }
+            &__location {
+                font-size: 16px;
+                line-height: 20px;
+                color: #939BA1;
+                margin-bottom: 0;
+            }
+        }
+        .career-position:first-of-type {
+            margin-bottom: 5.85rem;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+
+
+   .career-wrap {
+       .career-jumbotron{
+           .career-search-container .career-search__form{
+               .row .col-12.col-md-6:first-of-type .form__group{
+                   margin-bottom: 2rem;
+               }
+           }
+       }
+       .career-main-content {
+        .career-heading-container{
+            h1.career-main-heading {
+                margin-bottom: 3.9rem;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+    }}
+}

@@ -43,6 +43,10 @@ a[class*=__btn]:visited {
     
 }
 
+input[class*="__input"]{
+    @include inputSizeIncrease;
+}
+
 .hide-content {
     display: none;
 }
