@@ -253,21 +253,7 @@
         }
 
         @media only screen and (max-width:480px){
-            /* RESET STYLES */
-            /* td[class="introductionContainer"],
-            td[class="callToActionContainer"],
-            td[class="footerContainer"] {
-                padding-right: 10px !important;
-                padding-left: 10px !important;
-            } */
-
-            /* table[class="introductionBlock"],
-            table[class="callToActionBlock"],
-            table[class="footerBlock"] {
-                max-width: 480px !important;
-                width: 100% !important;
-            } */
-
+         
             /* CLIENT-SPECIFIC STYLES */
             body{
                 width: 100% !important;
@@ -277,46 +263,15 @@
             /* GENERAL STYLES */
             h1 {font-size: 24px !important;}
             h2 {font-size: 14px !important;}
-            /* h3 {font-size: 24px !important;} */
 
-            /* img[class="luncheonImage"] {
-                height: auto !important;
-                max-width: 520px !important;
-                width: 100% !important;
-            } */
-
-            /* td[class="introductionHeading"],
-            td[class="introductionLogo"] {
-                display: block !important;
-                text-align: center !important;
-            } */
-
-            td[class="introductionHeading"]{
-                /* padding: 40px 0 0 0 !important; */
-
-            }
             h1[class="introductionHeadingMain"] {
                 text-align: center !important;
             }
-            /* td[class="introductionContent"] {
-                padding-top: 20px !important;
-            } */
-
-            /* h2[class="contentHeading"] {
-                text-align: center !important;
-            } */
-
-            /* td[class="callToActionButton"] {
-                width: 100% !important;
-            } */
 
             td[class="footerText"] {
                 font-size: 15px !important;
             }
 
-            /* td[class="footerText"] a{
-                display: block !important;
-            } */
         }
     
     </style>
@@ -326,13 +281,13 @@
         <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="bodyTable">
             <tr>
                 <td align="center" valign="top" class="bodyCell">
-                    <table border="0" cellpadding="0" cellspacing="0" width="520" class="emailContainer">
+                    <table border="0" cellpadding="0" cellspacing="0" class="emailContainer">
                     <!-- EMAIL CONTENT BEGIN -->
 
                         <tr>
                             <td align="center" valign="top" class="introductionContainer">
                                 <!-- EMAIL INTRO CONTENT -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="introductionBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="introductionBlock">
                                     <tr>
                                         <td align="center" valign="top">
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" class="introductionContent">
@@ -358,7 +313,7 @@
                         <tr>
                             <td align="center" valign="top" class="transactionDateContainer">
                                 <!-- EMAIL TRANSACTION DATE CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionDateBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transactionDateBlock">
                                     <tr>
                                         <td align="left" valign="top" class="transactionDateContent">
                                             <h2 class="contentHeading">
@@ -379,7 +334,7 @@
                         <tr>
                             <td align="center" valign="top" class="customerInfoContainer">
                                 <!-- EMAIL CUSTOMER INFO CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="customerInfoBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="customerInfoBlock">
                                     <tr>
                                         <td align="left" valign="top" class="customerInfoContent">
                                             <h2 class="contentHeading customerInfoHeading">
@@ -407,10 +362,10 @@
                         <tr>
                             <td align="center" valign="top" class="transactionInfoContainer">
                                 <!-- EMAIL TRANSACTION  INFO CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionInfoBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transactionInfoBlock">
                                     <tr>
                                         <td align="center" valign="top" class="transactionInfoDetailsContainer">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="520" class="transactionInfoDetailsBlock">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="transactionInfoDetailsBlock">
                                                 <tr>
                                                     <td align="left" valign="top" class="transactionInfoDetailsContent">
                                                         <h2 class="contentHeading customerInfoHeading">
@@ -457,7 +412,7 @@
                         <tr>
                             <td align="center" valign="top" class="contactUsContainer">
                                 <!-- EMAIL CUSTOMER INFO CONTENT  -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="contactUsBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="contactUsBlock">
                                     <tr>
                                         <td align="center" valign="top" class="contactUsContent">
                                             <span class="contactUsText">
@@ -480,13 +435,15 @@
                         <tr>
                             <td align="center" valign="top" class="footerContainer">
                                 <!-- EMAIL FOOTER CONTENT -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="520" class="footerBlock">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="footerBlock">
                                     <tr>
                                         <td align="center" valign="center" class="footerContent">
                                             <div class="footerText footerSocials">
+
                                                 <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="img/email-icon-fb.svg" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="img/email-icon-ig.svg" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="img/email-icon-twt.svg" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+
                                             </div>
                                         </td>
                                     </tr>

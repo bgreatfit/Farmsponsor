@@ -2,11 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92cbcaab-26d8-4fea-90ae-f8b1234fda2c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BankSponsorshipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BankSponsorshipController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SponsorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SponsorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FundingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FundingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/careers-bg-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/career-pos-btn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/careers-bg-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/contact-fb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/contact-gh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/contact-ig.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/contact-location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/contact-mail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/contact-phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/contact-twt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/email-icon-fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/email-icon-ig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/email-icon-twt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/fs-email-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/left-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/custom/_career-details.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/custom/_careers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/custom/_contact-us.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/email/lunch.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/admin/vestbank-users-list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/career-details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/custom/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/custom/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/custom/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/custom/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/vestbank/accountFundingReceipt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/vestbank/accountFundingReceipt.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/email/vestbank/accountWithdrawalReceipt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/email/vestbank/accountWithdrawalReceipt.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/admin-navi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/admin-navi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/basic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/basic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/careers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/careers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact-us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact-us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" afterDir="false" />
@@ -67,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FundingController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
@@ -94,6 +127,15 @@
                 <element signature="e#2834#2908#0#PHP" />
                 <element signature="e#2985#3180#0#PHP" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -198,7 +240,6 @@
         <option value="$PROJECT_DIR$/../twig/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/../twig/resources/lang/en/user.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php" />
         <option value="$PROJECT_DIR$/app/Mail/farmSponsorshipReciept.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BankSponsorshipController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SponsorController.php" />
@@ -215,6 +256,7 @@
         <option value="$PROJECT_DIR$/app/Console/Commands/autosponsor.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FundingController.php" />
+        <option value="$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php" />
       </list>
     </option>
   </component>
@@ -329,7 +371,50 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+              <item name="farm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,12 +506,12 @@
       <workItem from="1563793937037" duration="4927000" />
       <workItem from="1563800098426" duration="17758000" />
       <workItem from="1563870446272" duration="297000" />
-      <workItem from="1563871157556" duration="2784000" />
+      <workItem from="1563871157556" duration="3121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495338000" />
+    <option name="totallyTimeSpent" value="495675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
@@ -511,13 +596,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-506">
@@ -842,13 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="350" column="52" selection-start-line="350" selection-start-column="52" selection-end-line="350" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/BankSponsorship.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1048,6 +1119,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/career-details.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FundingController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -1074,6 +1152,13 @@
             <element signature="e#2834#2908#0#PHP" />
             <element signature="e#2985#3180#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>

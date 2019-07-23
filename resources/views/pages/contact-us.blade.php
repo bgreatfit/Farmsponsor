@@ -1,0 +1,117 @@
+@extends('layouts.basic')
+@section('content')
+    <div class="contact-us-wrap">
+        <section class="map-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <img src="{{asset('img/map.svg')}}" alt="maps" class="map">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="contact-form-container">
+                                        <h1 class="contact-heading">Contact.</h1>
+                                        <h1 class="contact-heading">Get in touch</h1>
+                                        <p class="contact-text">leave us a message</p>
+                                        <form action="" class="contact-form">
+                                            <div class="row">
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="contact-first-name__input" class="contact-first-name__label">
+                                                            Name <span class="required-star">*</span>
+                                                        </label>
+                                                        <input type="text" id="contact-first-name__input"   class="contact-form__input form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="form-group">
+                                                        <label for="contact-email__input" class="contact-email__label">
+                                                            email <span class="required-star">*</span>
+                                                        </label>
+                                                        <input type="email" id="contact-email__input" class="contact-form__input form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="contact-message" class="contact-message__label">Message</label>
+                                                <textarea class="form-control contact-form__message" name="message" id="contact-message" rows="10"></textarea>
+                                            </div>
+                                            <div class="form-group contact-submit__btn-container">
+                                                <button class="contact-submit__btn btn">Send message</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-content-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-background">
+                            <div class="background">
+                                <h1 class="background-text">contact</h1> 
+                            </div>
+                            <div class="contact-background__heading-content">
+                                <h1 class="contact-heading">quick.</h1>
+                                <h1 class="contact-heading">support</h1>
+                                <p class="contact-text contact-text-lg">YOU CAN GET ALL THE CONTACT INFORMATION.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="contact-medium">
+                        <img src="{{asset('img/contact-location.svg')}}" alt="location" class="contact-medium__icon contact-medium__location">
+                            <h2 class="contact-medium__title">visit us</h2>
+                            <p class="contact-medium__info">16 Abua Close, Beside RCCG Zonal HQ, </p>
+                            <p class="contact-medium__info">Rumuibekwe, Port Harcourt,</p>
+                            <p class="contact-medium__info">Rivers State, Nigeria.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="contact-medium">
+                            <img src="{{asset('img/contact-phone.svg')}}" alt="location" class="contact-medium__icon ">
+                            <h2 class="contact-medium__title">call us</h2>
+                            <p class="contact-medium__info">+ 234 905 913 3051 </p>
+                            <p class="contact-medium__info">+ 234 703 196 0724 </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="contact-medium">
+                            <img src="{{asset('img/contact-mail.svg')}}" alt="location" class="contact-medium__icon">
+                            <h2 class="contact-medium__title">email us</h2>
+                            <p class="contact-medium__info">farmsponsorng@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="connect">connect with us</h3>
+                        <div class="social-media-handles">
+                            <a href="https://www.facebook.com/farmsponsorng" target="_blank" class="social-media">
+                                <img src="{{asset('img/contact-fb.svg')}}" alt="facebook" class="social-media__handle">
+                            </a>
+                            <a href="https://twitter.com/Farmsponsor1" target="_blank" class="social-media">
+                                <img src="{{asset('img/contact-twt.svg')}}" alt="twitter" class="social-media__handle">
+                            </a>
+                            <a href="https://www.instagram.com/farmsponsor" target="_blank" class="social-media">
+                                <img src="{{asset('img/contact-ig.svg')}}" alt="instagram" class="social-media__handle">
+                            </a>
+                            <a href="https://github.com/globetrot-farmsponsor" target="_blank" class="social-media">
+                                <img src="{{asset('img/contact-gh.svg')}}" alt="github" class="social-media__handle">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+@endsection
