@@ -12,6 +12,8 @@ use Illuminate\Support\Str;
 
 class FundingController extends Controller
 {
+    const Charges = 256.5;
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -111,10 +113,13 @@ class FundingController extends Controller
             request()->session()->flash('error', 'You do not have any funds in your '. $field . '\'s balance!');
             return redirect()->back();
         }
-        $this->processVestbankWithdrawalOf($field);
+        if($this->processVestbankWithdrawalOf($field)){
+            request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
+            return redirect()->route('vestbanking');
+        }
 
-        request()->session()->flash('success', 'Withdrawal successful! You will be contacted soon!');
-        return redirect()->route('vestbanking');
+        request()->session()->flash('error', 'Cannot process your request at this time!');
+        return redirect()->back();
     }
 
     protected function hasFundsIn(String $field)
@@ -124,58 +129,56 @@ class FundingController extends Controller
 
     protected function processVestbankWithdrawalOf(String $field, $amount = NULL)
     {
-        $currentAmount = Auth::user()->vestbank->$field;
         $charges = $this->getWithdrawalCharges();
+//        return [
+//            $this->processChargesWithdrawal($charges),
+//            Auth::user()->vestbank->$field
+//        ];
+        if($this->processChargesWithdrawal($charges)){
 
+            $currentAmount = Auth::user()->fresh()->vestbank->$field;
 
-        if(is_null($amount)){
-            $amount = $currentAmount;
+            if(is_null($amount)){
+                $amount = $currentAmount;
+            }
+
+            switch ($field){
+
+                case 'balance':
+
+                    Auth::user()->vestbank()->update([
+                        'capital' => 0,
+                        'interest' => 0,
+                        'lock' => 1
+                    ]);
+
+                    return $this->logTransaction($this->logWithdrawalRequest($amount, $field, $charges));
+                    break;
+
+                case 'interest':
+
+                    Auth::user()->vestbank()->update([
+                        'interest' => 0,
+                        'lock' => 1
+                    ]);
+
+                    return $this->logTransaction($this->logWithdrawalRequest($amount, $field, $charges));
+                    break;
+
+                case 'capital':
+
+                    Auth::user()->vestbank()->update([
+                        'capital' => 0,
+                        'lock' => 1
+                    ]);
+
+                    return $this->logTransaction($this->logWithdrawalRequest($amount, $field, $charges));
+                    break;
+            }
+
         }
 
-        switch ($field){
-
-            case 'balance':
-
-                Auth::user()->vestbank()->update([
-                    'capital' => 0,
-                    'interest' => 0,
-                    'lock' => 1
-                ]);
-
-                return $this->logTransaction($this->logWithdrawalRequest($amount - $charges, $field, $charges));
-                break;
-
-            case 'interest':
-
-                Auth::user()->vestbank()->update([
-                    'interest' => 0,
-                    'lock' => 1
-                ]);
-
-                return $this->logTransaction($this->logWithdrawalRequest($amount - $charges, $field, $charges));
-                break;
-
-            case 'capital':
-
-                Auth::user()->vestbank()->update([
-                    'capital' => 0,
-                    'lock' => 1
-                ]);
-
-                return $this->logTransaction($this->logWithdrawalRequest($amount - $charges, $field, $charges));
-                break;
-        }
-
-//        if(Auth::user()->vestbank->balance - ($amount + $this->getWithdrawalCharges() < 0)){
-//            return redirect()->back();
-//        }
-//
-//        Auth::user()->vestbank()->update([
-//            $field => $currentAmount - $amount,
-//            'lock' => 1
-//        ]);
-//
-//        return $this->logTransaction($this->logWithdrawalRequest($amount));
+        return false;
     }
 
     protected function logWithdrawalRequest($amount, $field, $charges)
@@ -254,11 +257,25 @@ class FundingController extends Controller
 
     protected function getWithdrawalCharges()
     {
-        return 256.5 + $this->getIncomeandVATTax();
+        return self::Charges + $this->getIncomeandVATTax();
     }
 
     protected function getIncomeandVATTax()
     {
         return Auth::user()->vestbank->interest * 0.12;
     }
+
+    public function processChargesWithdrawal($charges)
+    {
+        if($this->hasFundsIn('interest') && $this->canWithdrawFrom('interest', $charges)){
+            return Auth::user()->fresh()->vestbank()->decrement('interest', $charges);
+        }
+
+        if($this->hasFundsIn('capital') && $this->canWithdrawFrom('capital', $charges)){
+            return Auth::user()->fresh()->vestbank()->decrement('capital', $charges);
+        }
+
+        return false;
+    }
+
 }

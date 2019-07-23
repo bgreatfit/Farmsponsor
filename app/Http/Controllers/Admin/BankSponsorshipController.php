@@ -35,7 +35,6 @@ class BankSponsorshipController extends Controller
             Mail::to($bankSponsor->user->email)->send(new farmSponsorshipReciept($bankSponsor, $fileName));
             Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($bankSponsor, $fileName));
 
-//            return $pdf->stream(public_path('pdf'). $sponsor->id . '.pdf');
             $request->session()->flash('success', 'Sponsorship Approved');
             return back();
         };
