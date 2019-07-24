@@ -4,8 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Mail\farmSponsorshipReciept;
 use App\Models\BankSponsorship;
-use App\Models\Sponsor;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Mail;
@@ -21,13 +22,18 @@ class BankSponsorshipController extends Controller
 
     public function confirm(Request $request, BankSponsorship $bankSponsor)
     {
+        $sponsor = $bankSponsor;
         $data['approve_user_id'] = Auth::id();
         $data['approve_ip_address'] = request()->ip();
         $data['approved'] = 1;
         if($bankSponsor->update($data)){
-            Mail::to($bankSponsor->user->email)->send(new farmSponsorshipReciept($bankSponsor));
-            Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($bankSponsor));
 
+            $pdf = App::make('dompdf.wrapper');
+            $fileName = public_path() . '/pdf/farm/bank/' . $sponsor->user->firstname . '_' . $sponsor->user->lastname . '_' . $sponsor->id . '_' . now() . '.pdf';
+            $pdf->loadView('email.farm.pdf.sponsorshipReceipt', compact('sponsor'))->save($fileName);
+
+            Mail::to($bankSponsor->user->email)->send(new farmSponsorshipReciept($bankSponsor, $fileName));
+            Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($bankSponsor, $fileName));
 
             $request->session()->flash('success', 'Sponsorship Approved');
             return back();

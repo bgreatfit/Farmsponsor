@@ -14,14 +14,16 @@ class farmSponsorshipReciept extends Mailable
     use Queueable, SerializesModels;
 
     public $sponsor;
+    public $fileName;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(Model $sponsor)
+    public function __construct(Model $sponsor, $fileName)
     {
         $this->sponsor = $sponsor;
+        $this->fileName = $fileName;
     }
 
     /**
@@ -31,6 +33,10 @@ class farmSponsorshipReciept extends Mailable
      */
     public function build()
     {
-        return $this->view('email.farm.sponsorshipReceipt');
+        return $this->view('email.farm.sponsorshipReceipt')
+            ->attach($this->fileName, [
+                'as' => 'Sponsorship Receipt.pdf',
+                'mime' => 'application/pdf',
+            ]);
     }
 }

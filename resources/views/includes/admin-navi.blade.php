@@ -6,6 +6,7 @@
                 <li class="dashboard__navi--item"><a href="{{route('admin.farmcycles')}}" class="dashboard__navi--link admin">Farming Cycles</a></li>
                 <li class="dashboard__navi--item"><a href="{{route('admin.bankdeposits')}}" class="dashboard__navi--link admin">Deposit Requests</a></li>
                 <li class="dashboard__navi--item"><a href="{{route('admin.withdrawals')}}" class="dashboard__navi--link admin">Withdrawal Requests</a></li>
+                <li class="dashboard__navi--item"><a href="{{route('vestbankUsersList')}}" class="dashboard__navi--link admin">Vestbank Users List</a></li>
                 <li class="dashboard__navi--item"><a href="{{route('admin.users')}}" class="dashboard__navi--link admin">Users List</a></li>
                 <li class="dashboard__navi--item"><a href="{{route('retainSponsorship')}}" class="dashboard__navi--link admin">Retained Sponsorships</a></li>
                 <li class="dashboard__navi--item">

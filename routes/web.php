@@ -1,7 +1,6 @@
 <?php
 require_once 'admin.php';
 
-//use Cookie;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +22,9 @@ Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name(
 Route::get('sponsors-receipt', 'PagesController@sponsorsReceipt')->name('sponsorsReceipt');
 Route::get('vestbank-pay-receipt', 'PagesController@vestbankPayReceipt')->name('vestbankPayReceipt');
 Route::get('vestbank-fund-receipt', 'PagesController@vestbankFundReceipt')->name('vestbankFundReceipt');
+Route::get('careers', 'PagesController@careers')->name('careers');
+Route::get('career-details', 'PagesController@careerDetails')->name('careerDetails');
+Route::get('contact-us', 'PagesController@contactUs')->name('contactUs');
 // Newsletter Route
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subscribe');
 // Farm Routes
@@ -72,6 +74,4 @@ Route::get('retain/{cycleid}', 'RetainSponsorshipController@retain')->name('reta
 
 // Auth Routes
 Auth::routes(['verify' => true]);
-// Route::get('/farmlist', 'FarmsController@index');
-// Route::get('/farmlist', 'FarmsController@index');
 

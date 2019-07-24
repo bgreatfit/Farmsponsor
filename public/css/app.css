@@ -11369,6 +11369,336 @@ a.text-dark:focus {
   }
 }
 
+.career-wrap {
+  background-color: #ffffff;
+  font-family: Montserrat;
+}
+
+.career-wrap .career-jumbotron {
+  height: 51.3rem;
+  background-image: url(/images/careers-bg-img.png?e37e00528de16700761b95127c4e6b2d);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 11.3rem;
+}
+
+.career-wrap .career-jumbotron .career-search-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 1rem 5rem;
+}
+
+.career-wrap .career-jumbotron .career-search-container .form__group {
+  margin-bottom: 0;
+}
+
+.career-wrap .career-jumbotron .career-search-container .form__group .careers-search__input {
+  height: 3.9rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  border: none;
+}
+
+.career-wrap .career-jumbotron .career-search-container .form__group .career-search__btn {
+  padding: 0.91rem 1rem;
+  border-radius: 10px;
+  background-color: #6E9E3D;
+  border: none;
+}
+
+.career-wrap .career-main-content {
+  padding-bottom: 13.45rem;
+}
+
+.career-wrap .career-main-content .career-heading-container {
+  margin-bottom: 7.2rem;
+}
+
+.career-wrap .career-main-content .career-heading-container .career-main-heading {
+  font-family: Montserrat;
+  margin-bottom: 3.9rem;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  margin-left: 15rem;
+}
+
+.career-wrap .career-main-content .career-position .career-heading {
+  font-size: 22px;
+  line-height: 27px;
+  color: #939BA1;
+  margin-bottom: 1.3rem;
+}
+
+.career-wrap .career-main-content .career-position__content {
+  max-width: 79.9rem;
+  border-radius: 5px;
+  border: 1px solid #E8EBEC;
+  padding: 2rem 3.2rem;
+  position: relative;
+}
+
+.career-wrap .career-main-content .career-position__link:link,
+.career-wrap .career-main-content .career-position__link:visited {
+  text-decoration: none;
+  color: #4360DF;
+}
+
+.career-wrap .career-main-content .career-position__link:hover {
+  color: #1b34a1;
+}
+
+.career-wrap .career-main-content .career-position__title {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.career-wrap .career-main-content .career-position__btn {
+  display: inline-block;
+  width: 2.1rem;
+  position: absolute;
+  right: 6.56%;
+  top: 40.27%;
+}
+
+.career-wrap .career-main-content .career-position__location {
+  font-size: 16px;
+  line-height: 20px;
+  color: #939BA1;
+  margin-bottom: 0;
+}
+
+.career-wrap .career-main-content .career-position:first-of-type {
+  margin-bottom: 5.85rem;
+}
+
+@media screen and (max-width: 768px) {
+  .career-wrap .career-jumbotron .career-search-container .career-search__form .row .col-12.col-md-6:first-of-type .form__group {
+    margin-bottom: 2rem;
+  }
+
+  .career-wrap .career-main-content .career-heading-container h1.career-main-heading {
+    margin-bottom: 3.9rem;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.career-details-wrap {
+  font-family: Montserrat;
+  background-color: #ffffff;
+}
+
+.career-details-wrap .career-details__heading {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
+.career-details-wrap .career-details__heading--sub {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.career-details-wrap .career-details-jumbotron {
+  padding: 5rem 0 2rem;
+  background-color: #0E2503;
+  margin-bottom: 10rem;
+}
+
+.career-details-wrap .career-details-jumbotron .career-details__back-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.career-details-wrap .career-details-jumbotron .career-details__back-link .left-arrow {
+  width: 2.1rem;
+}
+
+.career-details-wrap .career-details-jumbotron .career-details__heading--main {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.career-details-wrap .career-details-jumbotron .career-details__heading--text {
+  font-size: 1.4rem;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.contact-us-wrap {
+  background-color: #ffffff;
+  font-family: Montserrat;
+}
+
+.contact-us-wrap .contact-heading {
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 3.6rem;
+  line-height: 44px;
+  margin-bottom: 2rem;
+}
+
+.contact-us-wrap .contact-text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 17px;
+  margin-bottom: 7rem;
+  text-transform: uppercase;
+}
+
+.contact-us-wrap .contact-text-lg {
+  font-size: 1.8rem;
+}
+
+.contact-us-wrap .contact-form-container {
+  padding: 5rem 0;
+}
+
+.contact-us-wrap .contact-form-container .contact-heading:first-of-type {
+  margin-bottom: 0;
+}
+
+.contact-us-wrap .contact-form .row {
+  margin-bottom: 4.6rem;
+}
+
+.contact-us-wrap .contact-form__message {
+  border-radius: 5px;
+  margin-bottom: 2.8rem;
+}
+
+.contact-us-wrap .contact-submit__btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us-wrap .contact-submit__btn {
+  padding: 1rem 2.2rem;
+  border-radius: 2.5rem;
+  color: #ffffff;
+  background-color: #154219;
+  text-transform: capitalize;
+}
+
+.contact-us-wrap .main-content-area {
+  background: #E5E5E5;
+  padding: 10rem 0;
+}
+
+.contact-us-wrap .main-content-area .contact-medium {
+  margin-bottom: 3rem;
+}
+
+.contact-us-wrap .main-content-area .contact-medium__icon {
+  width: 2.8rem;
+  margin-bottom: 5.1rem;
+}
+
+.contact-us-wrap .main-content-area .contact-medium__title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 27px;
+  color: #6E9E3D;
+  margin-bottom: 3.5rem;
+}
+
+.contact-us-wrap .main-content-area .contact-medium__info {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 180.6%;
+  color: #3C4049;
+}
+
+.contact-us-wrap .main-content-area .container .row:nth-of-type(2) {
+  margin-bottom: 8.4rem;
+}
+
+.contact-us-wrap .contact-background {
+  position: relative;
+  margin-bottom: 8rem;
+  overflow: hidden;
+}
+
+.contact-us-wrap .contact-background .background {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.4;
+  top: -137px;
+  right: -81px;
+}
+
+.contact-us-wrap .contact-background .background-text {
+  font-weight: bold;
+  font-size: 26rem;
+  line-height: 317px;
+  color: #FFFFFF;
+}
+
+.contact-us-wrap .contact-background__heading-content {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-us-wrap .contact-background__heading-content .contact-heading {
+  margin-bottom: 3.4rem;
+}
+
+.contact-us-wrap .contact-background__heading-content .contact-heading:first-of-type {
+  margin-bottom: 0;
+}
+
+.contact-us-wrap .connect {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 27px;
+  margin-bottom: 3.2rem;
+  text-transform: capitalize;
+}
+
+.contact-us-wrap .social-media {
+  display: inline-block;
+  width: 42px;
+}
+
+.contact-us-wrap .social-media:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us-wrap .contact-medium,
+  .contact-us-wrap .connect,
+  .contact-us-wrap .social-media-handles {
+    text-align: center;
+  }
+
+  .contact-us-wrap .main-content-area .connect {
+    font-size: 1.8rem;
+  }
+}
+
 .card-box {
   margin-bottom: 3rem;
 }
@@ -13025,6 +13355,11 @@ a[class*=__btn]:visited {
   font-size: 1.3rem;
 }
 
+input[class*=__input] {
+  height: 4rem;
+  font-size: 1.3rem;
+}
+
 .hide-content {
   display: none;
 }
@@ -13541,7 +13876,7 @@ mar .intro-section__image-box {
 }
 
 .deposit-method-bank__content input.form-control {
-  height: 3rem;
+  height: 4rem;
   font-size: 1.3rem;
 }
 
@@ -13599,7 +13934,7 @@ mar .intro-section__image-box {
 }
 
 .farmcycle-wrap .farmcycle__popup .sponsor-farmcycle__form--input {
-  height: 3rem;
+  height: 4rem;
   font-size: 1.3rem;
 }
 
@@ -13690,7 +14025,7 @@ mar .intro-section__image-box {
 
 .profile__form .form-group input.form-control,
 .profile__form .form-group select.form-control {
-  height: 3rem;
+  height: 4rem;
   font-size: 1.3rem;
 }
 
@@ -13999,7 +14334,7 @@ mar .intro-section__image-box {
 .vestbank-wrap .vestbank-deposit__content select.form-control,
 .vestbank-wrap .vestbank-withdraw__content input.form-control,
 .vestbank-wrap .vestbank-withdraw__content select.form-control {
-  height: 3rem;
+  height: 4rem;
   font-size: 1.3rem;
 }
 
@@ -14158,7 +14493,7 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
 }
 
 .add-cycle__input {
-  height: 3rem;
+  height: 4rem;
   font-size: 1.3rem;
 }
 
