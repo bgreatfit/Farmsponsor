@@ -7,6 +7,7 @@ use Auth;
 use App\Models\Sponsor;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\App;
 use Mail;
 
 
@@ -25,10 +26,16 @@ class SponsorController extends Controller
         $data['approve_user_id'] = Auth::id();
         $data['approve_ip_address'] = request()->ip();
         $data['approved'] = 1;
+
         if($sponsor->update($data)){
 
-            Mail::to($sponsor->user->email)->send(new farmSponsorshipReciept($sponsor));
-            Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($sponsor));
+            $pdf = App::make('dompdf.wrapper');
+            $fileName = public_path() . '/pdf/farm/vesting/' . $sponsor->user->firstname . '_' . $sponsor->user->lastname . '_' . $sponsor->id . '_' . now() . '.pdf';
+            $pdf->loadView('email.farm.pdf.sponsorshipReceipt', compact('sponsor'))->save($fileName);
+
+            Mail::to($sponsor->user->email)->send(new farmSponsorshipReciept($sponsor, $fileName));
+            Mail::to(env('ADMIN_MAIL'))->send(new farmSponsorshipReciept($sponsor, $fileName));
+
             $this->request->session()->flash('success', 'Sponsorship Approved');
             return back();
         };

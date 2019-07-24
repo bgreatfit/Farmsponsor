@@ -316,7 +316,7 @@
                                                     <td align="center" valign="top" class="introductionContentCell">
                                                         <div class="introductionLogo">
                                                             <a href="https://farmsponsor.com.ng" target="_blank" class="logoLink">
-                                                                <img src="{{asset('img/fs-email-logo.png')}}" width="89" height="60" alt="Farmsponsor Logo"  class="logo">
+                                                                <img src="img/fs-email-logo.png" width="89" height="60" alt="Farmsponsor Logo"  class="logo">
                                                             </a>
                                                         </div>
                                                         <div class="introductionHeading">
@@ -353,11 +353,6 @@
                                 <!-- EMAIL TRANSACTION DATE CONTENT END -->
                             </td>
                         </tr>
-<<<<<<< HEAD:resources/views/email/vestbank-pay-receipt.blade.php
-                    
-
-=======
->>>>>>> master:resources/views/email/vestbank/accountWithdrawalReceipt.blade.php
                         <tr>
                             <td align="center" valign="top" class="transactionInfoContainer">
                                 <!-- EMAIL TRANSACTION  INFO CONTENT  -->
@@ -378,8 +373,6 @@
 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
-<<<<<<< HEAD
-=======
                                                                 Bank Transfer Charges 
                                                             </p>
                                                             <span class="contentText transactionInfoText">
@@ -388,7 +381,6 @@
                                                         </div>
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
->>>>>>> master
                                                                 Vestbanking Charges
                                                             </p>
                                                             <span class="contentText transactionInfoText">
@@ -449,17 +441,10 @@
                                     <tr>
                                         <td align="center" valign="center" class="footerContent">
                                             <div class="footerText footerSocials">
-                                                <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.png')}}" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-                                                <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-                                                <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="img/email-icon-fb.png" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="img/email-icon-ig.png" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="img/email-icon-twt.png" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
-<<<<<<< HEAD
-<<<<<<< HEAD:resources/views/email/vestbank-pay-receipt.blade.php
-=======
-
->>>>>>> master:resources/views/email/vestbank/accountWithdrawalReceipt.blade.php
-=======
->>>>>>> master
                                         </td>
                                     </tr>
                                 </table>

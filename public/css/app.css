@@ -11494,6 +11494,7 @@ a.text-dark:focus {
   background-color: #ffffff;
 }
 
+<<<<<<< HEAD
 .career-details-wrap .career-details__asteric {
   color: #ff2d55;
   margin-right: 5px;
@@ -11504,6 +11505,8 @@ a.text-dark:focus {
   margin-left: 5px;
 }
 
+=======
+>>>>>>> master
 .career-details-wrap .career-details__heading {
   font-family: Montserrat;
   font-weight: 600;
@@ -11519,7 +11522,11 @@ a.text-dark:focus {
   font-size: 1.4rem;
   line-height: 29px;
   color: #000000;
+<<<<<<< HEAD
   margin: 5rem 0 2rem;
+=======
+  margin-bottom: 2rem;
+>>>>>>> master
 }
 
 .career-details-wrap .career-details-jumbotron {
@@ -11554,6 +11561,7 @@ a.text-dark:focus {
   color: #FFFFFF;
 }
 
+<<<<<<< HEAD
 .career-details-wrap .career-details__description {
   margin-bottom: 6.5rem;
 }
@@ -11606,6 +11614,8 @@ a.text-dark:focus {
   }
 }
 
+=======
+>>>>>>> master
 .contact-us-wrap {
   background-color: #ffffff;
   font-family: Montserrat;
@@ -11692,7 +11702,11 @@ a.text-dark:focus {
   color: #3C4049;
 }
 
+<<<<<<< HEAD
 .contact-us-wrap .main-content-area .container .col-12.col-md-4 {
+=======
+.contact-us-wrap .main-content-area .container .row:nth-of-type(2) {
+>>>>>>> master
   margin-bottom: 8.4rem;
 }
 
@@ -11749,6 +11763,7 @@ a.text-dark:focus {
   margin-right: 1rem;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1273px) {
   .contact-us-wrap .contact-background {
     overflow: unset;
@@ -11780,16 +11795,22 @@ a.text-dark:focus {
     flex-direction: column !important;
   }
 
+=======
+@media screen and (max-width: 768px) {
+>>>>>>> master
   .contact-us-wrap .contact-medium,
   .contact-us-wrap .connect,
   .contact-us-wrap .social-media-handles {
     text-align: center;
   }
 
+<<<<<<< HEAD
   .contact-us-wrap .main-content-area .background .background-text {
     font-size: 10rem;
   }
 
+=======
+>>>>>>> master
   .contact-us-wrap .main-content-area .connect {
     font-size: 1.8rem;
   }

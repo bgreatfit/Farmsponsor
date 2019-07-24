@@ -53,11 +53,7 @@
         <section class="main-content-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
                         <div class="contact-background">
-                            <div class="background">
-                                <h1 class="background-text">contact</h1> 
-                            </div>
                             <div class="contact-background__heading-content">
                                 <h1 class="contact-heading">quick.</h1>
                                 <h1 class="contact-heading">support</h1>

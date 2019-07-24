@@ -439,9 +439,17 @@
                                     <tr>
                                         <td align="center" valign="center" class="footerContent">
                                             <div class="footerText footerSocials">
+<<<<<<< HEAD
                                                 <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.png')}}" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+=======
+
+                                                <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.svg')}}'" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.svg')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+                                                <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.svg')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
+
+>>>>>>> master
                                             </div>
                                         </td>
                                     </tr>

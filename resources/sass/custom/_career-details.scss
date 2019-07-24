@@ -2,6 +2,7 @@
     font-family: $font-family-main;
     background-color: $color-white;
 
+<<<<<<< HEAD
     .career-details__asteric{
         color: #ff2d55;
         margin-right: 5px;
@@ -11,6 +12,8 @@
     .form-group .career-details__asteric{
         margin-left: 5px;
     }
+=======
+>>>>>>> master
     .career-details__heading{
         font-family: $font-family-main;
         font-weight: 600;
@@ -25,7 +28,11 @@
             font-size: 1.4rem;
             line-height: 29px;
             color: $color-black;
+<<<<<<< HEAD
             margin: 5rem 0 2rem;
+=======
+            margin-bottom: 2rem;
+>>>>>>> master
         }
     }
 
@@ -58,6 +65,7 @@
     }
 
     .career-details__description{
+<<<<<<< HEAD
         margin-bottom: 6.5rem;
     }
     .career-details__application{
@@ -109,4 +117,8 @@
         }
     }
     
+=======
+
+    }
+>>>>>>> master
 }
