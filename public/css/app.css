@@ -11494,6 +11494,16 @@ a.text-dark:focus {
   background-color: #ffffff;
 }
 
+.career-details-wrap .career-details__asteric {
+  color: #ff2d55;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.career-details-wrap .form-group .career-details__asteric {
+  margin-left: 5px;
+}
+
 .career-details-wrap .career-details__heading {
   font-family: Montserrat;
   font-weight: 600;
@@ -11509,7 +11519,7 @@ a.text-dark:focus {
   font-size: 1.4rem;
   line-height: 29px;
   color: #000000;
-  margin-bottom: 2rem;
+  margin: 5rem 0 2rem;
 }
 
 .career-details-wrap .career-details-jumbotron {
@@ -11542,6 +11552,58 @@ a.text-dark:focus {
   font-size: 1.4rem;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.career-details-wrap .career-details__description {
+  margin-bottom: 6.5rem;
+}
+
+.career-details-wrap .career-details__application {
+  max-width: 800px;
+  background-color: #EEF2F5;
+  padding: 3.6rem 11.2rem;
+  margin-bottom: 5.3rem;
+  border-radius: 10px;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 154.5%;
+  color: #000000;
+  margin-bottom: 1.1rem;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.6rem;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading-block {
+  display: inline-block;
+  width: 14.9rem;
+  height: 2.1rem;
+  background-color: #0077B5;
+  border-radius: 5px;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading-block-description {
+  margin-left: 5px;
+  color: #939BA1;
+  vertical-align: top;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading-wrap + .horizontal-rule {
+  margin-bottom: 2.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .career-details-wrap div.career-details__application {
+    padding: 3.6rem 3rem;
+  }
 }
 
 .contact-us-wrap {

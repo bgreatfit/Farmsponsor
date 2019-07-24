@@ -44,7 +44,7 @@
                     <div class="career-position">
                         <h2 class="career-heading">Design</h2>
                         <div class="career-position__content">
-                            <a href="#" class="career-position__link">
+                            <a href="{{route('career.show')}}" class="career-position__link">
                                 <p class="career-position__title">Frontend Engineer <span class="career-position__btn"><img src="{{asset('img/career-pos-btn.svg')}}" alt="greater than icon" class="career-position__icon"></span></p> 
                             </a>
                             <p class="career-position__location">Port harcourt , <span class="career-position__type">Full time</span></p>
@@ -53,7 +53,7 @@
                     <div class="career-position">
                         <h2 class="career-heading">Engineering</h2>
                         <div class="career-position__content">
-                            <a href="#" class="career-position__link">
+                            <a href="{{route('career.show')}}" class="career-position__link">
                                 <p class="career-position__title">Frontend Engineer <span class="career-position__btn"><img src="{{asset('img/career-pos-btn.svg')}}" alt="greater than icon" class="career-position__icon"></span></p> 
                             </a>
                             <p class="career-position__location">Port harcourt , <span class="career-position__type">Full time</span></p>

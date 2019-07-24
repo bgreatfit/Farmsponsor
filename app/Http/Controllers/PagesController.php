@@ -29,13 +29,13 @@ class PagesController extends Controller {
     }
 // EMAIL VIEW
     public function sponsorsReceipt() {
-        return view('email.sponsors-receipt');
+        return view('email.vestbank.accountWithdrawalReceipt');
     }
     public function vestbankPayReceipt() {
-        return view('email.vestbank-pay-receipt');
+        return view('email.farm.sponsorshipReceipt');
     }
     public function vestbankFundReceipt() {
-        return view('email.vestbank-fund-receipt');
+        return view('email.vestbank.accountFundingReceipt');
     }
 // END
     public function login() {
@@ -79,10 +79,10 @@ class PagesController extends Controller {
         return view('pages.admin');
     }
     public function careers() {
-        return view('pages.careers');
+        return view('pages.careers.index');
     }
-    public function careerDetails() {
-        return view('pages.career-details');
+    public function careerShow() {
+        return view('pages.careers.show');
     }
     public function contactUs() {
         return view('pages.contact-us');

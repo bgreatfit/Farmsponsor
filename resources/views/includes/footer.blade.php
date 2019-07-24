@@ -40,7 +40,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="mailto:farmsponsorng@gmail.com" class="footer__links">Contact</a></div>
+                                <div class="footer__item"><a href="{{route('contactUs')}}" class="footer__links">Contact</a></div>
                             </div>
                         </div>
                         <div class="row">
@@ -85,7 +85,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Careers</a></div>
+                                <div class="footer__item"><a href="{{route('careers')}}" class="footer__links">Careers</a></div>
                             </div>
                         </div>
                     </div>

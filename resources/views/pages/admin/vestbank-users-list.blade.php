@@ -18,7 +18,9 @@
                                     <th scope="col">First Name</th>
                                     <th scope="col">Last Name</th>
                                     <th scope="col">Email</th>
-                                    <th scope="col">Amount vested</th>
+                                    <th scope="col">Capital</th>
+                                    <th scope="col">Interest</th>
+                                    <th scope="col">Balance</th>
                                     <th scope="col">Date</th>
                                     <th scope="col">Interest</th>
                                 </tr>
@@ -27,6 +29,12 @@
                                 {{-- @foreach($unapproved_deposits as $deposit) --}}
                                     <tr>
                                         <th scope="row"> </th>
+                                        <td>
+                                            <p class="depositor-info"> </p>
+                                        </td>
+                                        <td>
+                                            <p class="depositor-info"> </p>
+                                        </td>
                                         <td>
                                             <p class="depositor-info"> </p>
                                         </td>
