@@ -14557,6 +14557,7 @@ mar .intro-section__image-box {
 .searchbar__form .searchbar__button {
   padding: 3.75px 50px;
   font-size: 1.6rem;
+  line-height: 28px;
 }
 
 ul.nav.nav-tabs .sponsor-via-vestbank-tab {

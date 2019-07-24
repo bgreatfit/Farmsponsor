@@ -393,8 +393,6 @@ if(errorFirstName === false && errorLastName === false && errorPhoneNumber === f
 }) ;
 
 
-
-
 function confirmTransaction (e) { 
  var checker = e.preventDefault();
  $(this).bind(checker);
