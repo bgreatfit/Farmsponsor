@@ -97,7 +97,7 @@
                                     <div class="form-group">
                                         <div class="form-row">
                                             <div class="col-12 col-md-3">
-                                                <label for="first-name__input" class="first-name__label">
+                                                <label for="first-name__input" class="first-name__label input__label">
                                                     First name<span class="career-details__asteric">*</span>
                                                 </label>
                                             </div>
@@ -111,7 +111,7 @@
                                     <div class="form-group">
                                         <div class="form-row">
                                             <div class="col-12 col-md-3">
-                                                <label for="last-name__input" class="last-name__label">
+                                                <label for="last-name__input" class="last-name__label input__label">
                                                     Last name<span class="career-details__asteric">*</span>
                                                 </label>
                                             </div>
@@ -125,7 +125,7 @@
                                     <div class="form-group">
                                             <div class="form-row">
                                                 <div class="col-12 col-md-3">
-                                                    <label for="email__input" class="email__label">
+                                                    <label for="email__input" class="email__label input__label">
                                                         Email<span class="career-details__asteric">*</span>
                                                     </label>
                                                 </div>
@@ -139,7 +139,7 @@
                                     <div class="form-group">
                                         <div class="form-row">
                                             <div class="col-12 col-md-3">
-                                                <label for="phone__input" class="phone__label">
+                                                <label for="phone__input" class="phone__label input__label">
                                                     Phone
                                                 </label>
                                             </div>
@@ -153,13 +153,15 @@
                                     <div class="form-group">
                                         <div class="form-row">
                                             <div class="col-12 col-md-3">
-                                                <label for="resume__input" class="resume__label">
+                                                <label for="resume__input" class="resume__label input__label">
                                                     Resume/CV<span class="career-details__asteric">*</span>
                                                 </label>
                                             </div>
                                             <div class="col-12 col-md-9">
                                                 <div class="input-wrap">
                                                     <input type="file" class="career-details__file-input" id="resume__input">
+                                                    <button type="button" class="custom-file__btn" id="resume-input__btn">Attach</button>
+                                                    <span class="custom-file-info" id="resume-file-info"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -167,13 +169,15 @@
                                     <div class="form-group">
                                         <div class="form-row">
                                             <div class="col-12 col-md-3">
-                                                <label for="cover-letter__input" class="cover-letter__label">
+                                                <label for="cover-letter__input" class="cover-letter__label input__label">
                                                     Cover Letter
                                                 </label>
                                             </div>
                                             <div class="col-12 col-md-9">
                                                 <div class="input-wrap">
                                                     <input type="file" class="career-details__file-input" id="cover-letter__input">
+                                                    <button type="button" class="custom-file__btn" id="cover-letter-input__btn">Attach</button>
+                                                    <span class="custom-file-info" id="cover-letter-file-info"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -182,18 +186,16 @@
                                         <hr>
                                     </div>
                                     <div class="form-group">
-                                        {{-- <div class="form-row"> --}}
-                                            <label for="linkedin__input" class="linkedin__label">
-                                                LinkedIn profile
-                                            </label>
-                                            <div class="input-wrap">
-                                                <input type="text" class="career-details__application-input form-control" id="linkedin__input">
-                                            </div>
-                                        {{-- </div> --}}
+                                        <label for="linkedin__input" class="linkedin__label input__label">
+                                            LinkedIn profile
+                                        </label>
+                                        <div class="input-wrap">
+                                            <input type="text" class="career-details__application-input form-control" id="linkedin__input">
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         {{-- <div class="form-row"> --}}
-                                            <label for="website__input" class="website__label">
+                                            <label for="website__input" class="website__label input__label">
                                                 Website
                                             </label>
                                             <div class="input-wrap">
@@ -202,7 +204,7 @@
                                         {{-- </div> --}}
                                     </div>
                                     <div class="form-group">
-                                        <label for="job-source__input" class="job-source__label">
+                                        <label for="job-source__input" class="job-source__label input__label">
                                             How did you hear about this job?
                                         </label>
                                         <div class="input-wrap">
@@ -213,7 +215,9 @@
                                         <hr>
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-primary" type="submit">Submit Application</button>
+                                        <div class="btn-container">
+                                            <button class="career-details__submit-btn" type="submit">Submit Application</button>
+                                        </div>
                                     </div>
                                 </form>
                             </div>

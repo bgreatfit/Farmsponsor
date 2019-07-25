@@ -407,11 +407,7 @@
 
 
                                                         <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
-<<<<<<< HEAD
                                                             <span class="transactionInfoStar">*</span> Vest Banking Balance Report will be sent to you on the date of transaction in each Subsequent month.
-=======
-                                                            <span class="transactionInfoStar">*</span>    Vest Banking Balance Report will be sent to you on 1st of every Subsequent month.
->>>>>>> master
                                                         </p>
                                                     </td>
                                                 </tr>

@@ -378,17 +378,6 @@
 
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
-<<<<<<< HEAD
-=======
-                                                                Bank Transfer Charges 
-                                                            </p>
-                                                            <span class="contentText transactionInfoText">
-                                                                56.50
-                                                            </span>
-                                                        </div>
-                                                        <div class="transactionInfoDetailsText">
-                                                            <p class="transactionInfoDetailsTextMain">
->>>>>>> master
                                                                 Vestbanking Charges
                                                             </p>
                                                             <span class="contentText transactionInfoText">

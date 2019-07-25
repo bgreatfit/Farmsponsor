@@ -2,7 +2,6 @@
     font-family: $font-family-main;
     background-color: $color-white;
 
-<<<<<<< HEAD
     .career-details__asteric{
         color: #ff2d55;
         margin-right: 5px;
@@ -12,8 +11,6 @@
     .form-group .career-details__asteric{
         margin-left: 5px;
     }
-=======
->>>>>>> master
     .career-details__heading{
         font-family: $font-family-main;
         font-weight: 600;
@@ -28,11 +25,7 @@
             font-size: 1.4rem;
             line-height: 29px;
             color: $color-black;
-<<<<<<< HEAD
             margin: 5rem 0 2rem;
-=======
-            margin-bottom: 2rem;
->>>>>>> master
         }
     }
 
@@ -65,7 +58,6 @@
     }
 
     .career-details__description{
-<<<<<<< HEAD
         margin-bottom: 6.5rem;
     }
     .career-details__application{
@@ -74,6 +66,10 @@
         padding: 3.6rem 11.2rem;
         margin-bottom: 5.3rem;
         border-radius: 10px;
+
+        .input__label{
+            font-size: 14px;
+        }
 
         .career-details__form-heading {
             font-family: $font-family-main;
@@ -103,9 +99,25 @@
             }
         }
 
-        .career-details__form-heading-wrap + .horizontal-rule {
-            margin-bottom: 2.3rem;
+        .horizontal-rule {
+            margin: 3rem 0;
         }
+
+        .btn-container{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+            .career-details__submit-btn{
+                border: none;
+                border-radius: 10px;
+                padding: .8rem 2rem;
+                color: $color-white;
+                background-color: #4360DF;
+                font-family: $font-family-alt;
+            }
+        }
+
     }
 }
 
@@ -117,8 +129,18 @@
         }
     }
     
-=======
+}
 
+@media screen and (min-width:768px) {
+    .career-details-wrap {
+        .email__label,
+        .phone__label {
+            display: inline-block;
+            min-width: 8.95rem;
+            text-align: right;
+        }
+        .phone__label {
+            padding-right: 1.5rem;
+        }
     }
->>>>>>> master
 }

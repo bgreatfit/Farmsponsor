@@ -420,3 +420,50 @@ function confirmTransaction (e) {
 $('.vestbank-withdraw__form').on('submit', confirmTransaction);
 $('.sponsor-farmcycle__form').on('submit', confirmTransaction);
 
+
+
+// CUSTOM FILE UPLOAD
+var resumeInput = document.getElementById('resume__input');
+var coverLetterInput = document.getElementById('cover-letter__input');
+var resumeFileInfo = document.getElementById('resume-file-info')
+var coverLetterFileInfo = document.getElementById('cover-letter-file-info')
+var realInputs = [resumeInput,coverLetterInput];
+var customResumeUploadButton = document.getElementById('resume-input__btn')
+var customCoverLetterUploadButton = document.getElementById('cover-letter-input__btn')
+
+function hideFileInputElements (item, index, arr) {
+  arr[index] = item.style.display = "none";
+}
+
+realInputs.forEach(hideFileInputElements);
+
+function simulateRealResumeInputClick () {
+  resumeInput.click();
+}
+
+function simulateRealCoverLetterInputClick () {
+  coverLetterInput.click();
+}
+
+function displayResumeFileInfo () {
+  resumeInput.addEventListener('change', function () {
+    if(this.value) {
+      resumeFileInfo.innerHTML = (this.value.split(/\\|\//).pop());
+    }
+  })
+}
+displayResumeFileInfo();
+
+function displayCoverLetterFileInfo () {
+  coverLetterInput.addEventListener('change', function () {
+    if(this.value) {
+      coverLetterFileInfo.innerHTML = (this.value.split(/\\|\//).pop());
+    }
+  })
+}
+displayCoverLetterFileInfo();
+
+
+customResumeUploadButton.addEventListener('click', simulateRealResumeInputClick);
+customCoverLetterUploadButton.addEventListener('click', simulateRealCoverLetterInputClick);
+
