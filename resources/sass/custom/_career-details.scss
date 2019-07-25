@@ -67,6 +67,16 @@
         margin-bottom: 5.3rem;
         border-radius: 10px;
 
+        &--form {
+            div.form-group:nth-child(n+2):nth-child(-n+5){
+                margin-bottom: 1.9rem;
+            }
+        }
+
+        &-input {
+            font-size: 1.3rem;
+            height: 2.7rem;
+        }
         .input__label{
             font-size: 14px;
         }

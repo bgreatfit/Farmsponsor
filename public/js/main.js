@@ -47,6 +47,8 @@ var snAmountLabel = $('#sn-amount__label');
 // errors
 var errorFirstName = false;
 var errorLastName = false;
+var errorEmail = false;
+var errorResume = false;
 var errorAddress = false;
 var errorUnits = false;
 var errorPhoneNumber = false;
@@ -56,6 +58,7 @@ var errorAmount = false;
 var errorMessageFirstName = "First name cannot be empty!"
 var errorMessageLastName = "Last name cannot be empty!"
 var errorMessagePhoneNumber = "Phone number cannot be empty!"
+var errorMessageEmail = "Email cannot be empty!"
 var errorMessageAmount = "Invalid amount!"
 var errorMessageUnits = "Invalid unit!"
 var errorMessageAddress = "Address cannot be empty!"
@@ -467,3 +470,113 @@ displayCoverLetterFileInfo();
 customResumeUploadButton.addEventListener('click', simulateRealResumeInputClick);
 customCoverLetterUploadButton.addEventListener('click', simulateRealCoverLetterInputClick);
 
+
+
+// CAREERS APPLICATION FORM VALIDATION
+// variables
+var careerApplicationForm = $('#careers-application__form');
+var applicantFirstName = $('#first-name__input');
+var applicantLastName = $('#last-name__input');
+var applicantEmail = $('#email__input');
+var applicantResume = $('#resume__input');
+
+var applicantEmailLabel = $('#email__label');
+var resumeLabel = $('#resume__label');
+
+
+careerApplicationForm.submit(function(e) {
+  e.preventDefault();
+
+  
+ 
+ 
+
+  function applicantFirstNameChecker () {
+    function applicantFirstNameErrorCheck () {
+      if(applicantFirstName.val() === "") {
+        firstNameLabel.addClass('form-input-error');
+        errorFirstName = true;
+      }else {
+        firstNameLabel.removeClass('form-input-error');
+        errorFirstName = false;
+      }
+    }
+    applicantFirstNameErrorCheck();
+  }
+
+  function applicantLastNameChecker () {
+    function applicantLastNameErrorCheck () {
+      if(applicantLastName.val() === "") {
+        lastNameLabel.addClass('form-input-error');
+        errorLastName = true;
+      }else {
+        lastNameLabel.removeClass('form-input-error');
+        errorLastName = false;
+      }
+    }
+    applicantLastNameErrorCheck ();
+  }
+
+  function emailChecker () {
+    function applicantEmailErrorCheck () {
+      if(applicantEmail.val() === "" ) {
+        applicantEmailLabel.addClass('form-input-error');
+        errorEmail = true;
+      }else {
+        applicantEmailLabel.removeClass('form-input-error');
+        errorEmail = false;
+      }
+    }
+    applicantEmailErrorCheck ();
+  }
+
+  function resumeChecker () {
+    function resumeErrorCheck () {
+      if(!applicantResume.val()) {
+        resumeLabel.addClass('form-input-error');
+        errorResume = true;
+      }else {
+        resumeLabel.removeClass('form-input-error');
+        errorResume = false;
+      }
+    }
+    resumeErrorCheck ();
+  }
+
+applicantFirstNameChecker ();
+applicantLastNameChecker ();
+emailChecker ();
+resumeChecker (); 
+
+
+if(errorFirstName === false && errorLastName === false && errorEmail === false && errorResume === false ) {
+  function confirmTransaction (e) { 
+    swal({
+      title:"Confirmation!",
+      text: "Are you sure you want to submit this application",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((value) => {
+      if(value === true) {
+        swal({
+          title: "Success!",
+          text: "Your application has been successfully submitted",
+          icon: "success",
+        })
+        $('#careers-application__form').submit(); 
+      } else {
+        swal("Aborted!!", "Your application was not submitted");
+      }
+    }
+  )}
+
+  confirmTransaction(); 
+  } 
+  else { 
+    swal({
+      title: "Missing fields!",
+      text: "Please fill all required fields and try again.",
+    })
+  }
+}) ;

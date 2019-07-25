@@ -11566,6 +11566,15 @@ a.text-dark:focus {
   border-radius: 10px;
 }
 
+.career-details-wrap .career-details__application--form div.form-group:nth-child(n+2):nth-child(-n+5) {
+  margin-bottom: 1.9rem;
+}
+
+.career-details-wrap .career-details__application-input {
+  font-size: 1.3rem;
+  height: 2.7rem;
+}
+
 .career-details-wrap .career-details__application .input__label {
   font-size: 14px;
 }

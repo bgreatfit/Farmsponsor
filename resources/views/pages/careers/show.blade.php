@@ -78,7 +78,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="career-details__application">
-                                <form action="" class="career-details__application--form">
+                                <form action="" class="career-details__application--form" id="careers-application__form">
                                     <div class="career-details__form-heading-wrap">
                                         <div class="form-heading__content">
                                             <h2 class="career-details__form-heading">Apply for this job</h2>
@@ -97,7 +97,7 @@
                                     <div class="form-group">
                                         <div class="form-row">
                                             <div class="col-12 col-md-3">
-                                                <label for="first-name__input" class="first-name__label input__label">
+                                                <label for="first-name__input" id="first-name__label" class="input__label">
                                                     First name<span class="career-details__asteric">*</span>
                                                 </label>
                                             </div>
@@ -111,7 +111,7 @@
                                     <div class="form-group">
                                         <div class="form-row">
                                             <div class="col-12 col-md-3">
-                                                <label for="last-name__input" class="last-name__label input__label">
+                                                <label for="last-name__input" id="last-name__label" class="input__label">
                                                     Last name<span class="career-details__asteric">*</span>
                                                 </label>
                                             </div>
@@ -125,7 +125,7 @@
                                     <div class="form-group">
                                             <div class="form-row">
                                                 <div class="col-12 col-md-3">
-                                                    <label for="email__input" class="email__label input__label">
+                                                    <label for="email__input" id="email__label" class="input__label">
                                                         Email<span class="career-details__asteric">*</span>
                                                     </label>
                                                 </div>
@@ -153,7 +153,7 @@
                                     <div class="form-group">
                                         <div class="form-row">
                                             <div class="col-12 col-md-3">
-                                                <label for="resume__input" class="resume__label input__label">
+                                                <label for="resume__input" id="resume__label" class="input__label">
                                                     Resume/CV<span class="career-details__asteric">*</span>
                                                 </label>
                                             </div>
