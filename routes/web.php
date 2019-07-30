@@ -1,6 +1,7 @@
 <?php
 require_once 'admin.php';
-Auth::loginUsingId(591);
+//Auth::loginUsingId(591);
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
