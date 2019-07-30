@@ -7,17 +7,24 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="form-group form__group">
-                            <input type="text" placeholder="Search" class="form-control careers-search__input">
+                            <div class="career-search__input--container">
+                                <input type="text" placeholder="Search" class="form-control careers-search__input">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="row">
-                            <div class="col-10 col-md-4">
+                            <div class="col-12 col-md-4">
                                 <div class="form-group form__group">
-                                    <input type="text"  placeholder="Location" class="form-control careers-search__input">
+                                    <select name="career-location" id="career-location__select" class="custom-select career-location__dropdown">
+                                        <option value="" class="dropdown-item">Location</option>
+                                        <option>Benue</option>
+                                        <option>Rivers</option>
+                                        <option>Zamfara</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-2 col-md-8">
+                            <div class="col-12 col-md-8">
                                 <div class="form-group form__group">
                                     <button type="submit" class="career-search__btn btn btn-success">Go</button>
                                 </div>

@@ -18,6 +18,7 @@ Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('team', 'PagesController@team')->name('team');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
 Route::get('/helpcenter', 'PagesController@helpcenter')->name('helpcenter');
+Route::get('/privacy-policy', 'PagesController@privacyPolicy')->name('privacyPolicy');
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('termsAndConditions');
 Route::get('sponsors-receipt', 'PagesController@sponsorsReceipt')->name('sponsorsReceipt');
 Route::get('vestbank-pay-receipt', 'PagesController@vestbankPayReceipt')->name('vestbankPayReceipt');
