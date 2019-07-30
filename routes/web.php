@@ -1,6 +1,8 @@
 <?php
 require_once 'admin.php';
 
+//Auth::loginUsingId(591);
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -70,7 +72,7 @@ Route::get('/transactions/history', 'TransactionsController@history')->name('tra
 Route::get('/sendmail', 'MigrateUsersFromWordpressController@sendmails')->name('sendmails');
 Route::get('/resetPassword/{email}/{token}', 'MigrateUsersFromWordpressController@resetPassword')->name('user.reset');
 Route::post('/resetPassword/{token}', 'MigrateUsersFromWordpressController@processreset')->name('user.reset.process');
-Route::get('retain/{cycleid}', 'RetainSponsorshipController@retain')->name('retain.sponsorship');
+Route::get('retain/{cycleid}/{type}', 'RetainSponsorshipController@retain')->name('retain.sponsorship');
 });
 
 // Auth Routes

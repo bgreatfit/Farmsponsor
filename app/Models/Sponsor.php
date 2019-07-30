@@ -45,11 +45,6 @@ class Sponsor extends Model
         return $this->morphOne('App\Models\Transactionlogs', 'transactionable');
     }
 
-    public function retain()
-    {
-        return $this->hasOne(RetainSponsorship::class);
-
-    }
 
     public function getAmountAttribute()
     {
@@ -67,6 +62,11 @@ class Sponsor extends Model
         return 100000;
     }
 
+    public function retain()
+    {
+        return $this->morphMany(RetainSponsorship::class, 'farmable');
+
+    }
     public function hasRetained()
     {
         return $this->retain()->count() == 1 ? true : false;

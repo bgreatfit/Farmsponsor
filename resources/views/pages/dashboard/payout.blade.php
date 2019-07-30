@@ -56,7 +56,7 @@
                                                     </td>
                                                     <td>
                                                         @if(!$cycleSponsored->hasRetained() && $cycleSponsored->farmingcycle->isPaidOut())
-                                                            <a href="{{route('retain.sponsorship', $cycleSponsored->id)}}" class="btn btn-success btn-lg px-5">Retain</a>
+                                                            <a href="{{route('retain.sponsorship', [$cycleSponsored->id, get_class($cycleSponsored)])}}" class="btn btn-success btn-lg px-5">Retain</a>
                                                         @elseif($cycleSponsored->hasRetained())
                                                             <a class="btn btn-success btn-lg px-5 disabled">Retained</a>
                                                         @else

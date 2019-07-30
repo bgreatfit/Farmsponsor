@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Vestbank;
 use Illuminate\Console\Command;
 
 class autosponsor extends Command
@@ -18,7 +19,8 @@ class autosponsor extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+
+    protected $description = 'Auto Farm Sponsorship';
 
     /**
      * Create a new command instance.
@@ -37,6 +39,19 @@ class autosponsor extends Command
      */
     public function handle()
     {
-        //
+
+        $vestors = Vestbank::where('standing_order', '=', 1)->get();
+
+        foreach($vestors as $vestor){
+            $rate = 0.0004167;
+
+
+            $dailyInterest = $vestor->capital * $rate;
+
+            $vestor->increment('interest', $dailyInterest);
+
+        }
+
+        $this->info('Vestbanking Updated');
     }
 }
