@@ -13034,6 +13034,53 @@ a.text-dark:focus {
   border: none;
 }
 
+section.privacy-policy {
+  background-color: #ffffff;
+  padding: 10rem 1rem;
+}
+
+section.privacy-policy .privacy-policy__heading-wrap .privacy-policy__heading {
+  font-family: Montserrat, sans-serif;
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #011633;
+}
+
+section.privacy-policy .privacy-policy__text,
+section.privacy-policy .privacy-policy__title--sub {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #011633;
+  margin-bottom: 3rem;
+}
+
+section.privacy-policy .privacy-policy__title {
+  font-family: Montserrat;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+section.privacy-policy .privacy-policy__title--sub {
+  margin-bottom: 1rem;
+}
+
+section.privacy-policy .privacy-policy-farmsponsor {
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: 769px) {
+  .privacy-policy__heading-span {
+    display: block;
+  }
+
+  .privacy-policy__content {
+    padding: 0px 8rem;
+  }
+}
+
 .section-faq {
   padding-top: 10rem;
   background-color: #ffffff;
