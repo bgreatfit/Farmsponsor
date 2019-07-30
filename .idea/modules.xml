@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Farmsponsor.iml" filepath="$PROJECT_DIR$/.idea/Farmsponsor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../e-learning/.idea/e-learning.iml" filepath="$PROJECT_DIR$/../e-learning/.idea/e-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../laravel-repository-pattern/.idea/laravel-repository-pattern.iml" filepath="$PROJECT_DIR$/../laravel-repository-pattern/.idea/laravel-repository-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/../twig/.idea/twig.iml" filepath="$PROJECT_DIR$/../twig/.idea/twig.iml" />
     </modules>
   </component>

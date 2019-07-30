@@ -15,15 +15,16 @@ class RetainSponsorship extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 'farm_id', 'units', 'sponsor_id'
+        'user_id', 'farm_id', 'units',
+        'farmable_id', 'farmable_type'
     ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function farm()
+    public function farmable()
     {
-    return $this->belongsTo(Farm::class);
+        return $this->morphTo();
     }
 
     /**
