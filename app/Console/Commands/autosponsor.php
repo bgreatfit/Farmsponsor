@@ -40,7 +40,9 @@ class autosponsor extends Command
     public function handle()
     {
 
-        $vestors = Vestbank::where('standing_order', '=', 1)->get();
+        $vestors = Users::whereHas('vestbank', function($query){
+
+        });
 
         foreach($vestors as $vestor){
             $rate = 0.0004167;
