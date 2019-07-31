@@ -7,6 +7,10 @@
                 <div class="col-12 col-md-12">
                     <div class="deposit-request__heading-box">
                         <h1 class="deposit-request__heading mb-5 text-center">List Of Users</h1>
+                        <div class="row">
+                            <div class="col-12">
+                                @include('includes.usersSearch')
+                            </div>
                     </div>
 
                     <div class="deposit-request__table">

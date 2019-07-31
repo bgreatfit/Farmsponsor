@@ -1,0 +1,64 @@
+section.privacy-policy {
+    background-color: $color-white;
+    padding: 10rem 1rem 15rem;
+    .privacy-policy__heading-wrap{
+        .privacy-policy__heading{
+            font-family: Montserrat, sans-serif;
+            font-size: 4.8rem;
+            font-weight: 600;
+            color: #011633;
+        }
+    }
+    .privacy-policy__heading--sub{
+        text-transform: capitalize;
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 2.8rem;
+    }
+    .privacy-policy__text {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.88;
+        color: #011633;
+        margin-bottom: 2.7rem;
+    }
+    .privacy-policy__title{
+        margin-bottom: 3.5rem;
+    }
+    span.privacy-policy__title {
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 2rem;
+    }
+    ul.unordered-list {
+        display: inline-block;
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-right: 5px;
+        color: #000000;
+    }
+    .information-share .unordered-list,
+    .protection-right .unordered-list {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.6rem;
+        color: #011633;
+        font-weight: normal;
+    }
+    .privacy-policy-farmsponsor{
+        margin-bottom: 8rem;
+    }
+
+}
+
+@media screen and (min-width:769px) {
+    .privacy-policy__heading-span{
+        display: block;
+    }
+    .privacy-policy__content {
+        padding: 0px 8rem;
+    }
+}

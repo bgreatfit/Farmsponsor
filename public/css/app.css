@@ -11394,7 +11394,17 @@ a.text-dark:focus {
   margin-bottom: 0;
 }
 
-.career-wrap .career-jumbotron .career-search-container .form__group .careers-search__input {
+.career-wrap .career-jumbotron .career-search-container .form__group .career-location__dropdown {
+  background-color: #ffffff;
+  border: none;
+}
+
+.career-wrap .career-jumbotron .career-search-container .form__group #career-location__select {
+  font-size: 1.4rem;
+}
+
+.career-wrap .career-jumbotron .career-search-container .form__group .careers-search__input,
+.career-wrap .career-jumbotron .career-search-container .form__group .career-location__dropdown {
   height: 3.9rem;
   border-radius: 1rem;
   font-size: 1.4rem;
@@ -11475,7 +11485,7 @@ a.text-dark:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .career-wrap .career-jumbotron .career-search-container .career-search__form .row .col-12.col-md-6:first-of-type .form__group {
+  .career-wrap .career-jumbotron .career-search-container .career-search__form .row .col-12.col-md-6 .form__group {
     margin-bottom: 2rem;
   }
 
@@ -11489,9 +11499,31 @@ a.text-dark:focus {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .career-wrap .career-search__form .row .col-12.col-md-6:first-child .form-group.form__group {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .career-wrap .career-search__form .row .col-12.col-md-6:first-child .form-group.form__group .career-search__input--container {
+    flex-basis: 55%;
+  }
+}
+
 .career-details-wrap {
   font-family: Montserrat;
   background-color: #ffffff;
+}
+
+.career-details-wrap .career-details__asteric {
+  color: #ff2d55;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.career-details-wrap .form-group .career-details__asteric {
+  margin-left: 5px;
 }
 
 .career-details-wrap .career-details__heading {
@@ -11509,7 +11541,7 @@ a.text-dark:focus {
   font-size: 1.4rem;
   line-height: 29px;
   color: #000000;
-  margin-bottom: 2rem;
+  margin: 5rem 0 2rem;
 }
 
 .career-details-wrap .career-details-jumbotron {
@@ -11542,6 +11574,99 @@ a.text-dark:focus {
   font-size: 1.4rem;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.career-details-wrap .career-details__description {
+  margin-bottom: 6.5rem;
+}
+
+.career-details-wrap .career-details__application {
+  max-width: 800px;
+  background-color: #EEF2F5;
+  padding: 3.6rem 11.2rem;
+  margin-bottom: 5.3rem;
+  border-radius: 10px;
+}
+
+.career-details-wrap .career-details__application--form div.form-group:nth-child(n+2):nth-child(-n+5) {
+  margin-bottom: 1.9rem;
+}
+
+.career-details-wrap .career-details__application-input {
+  font-size: 1.3rem;
+  height: 2.7rem;
+}
+
+.career-details-wrap .career-details__application .input__label {
+  font-size: 14px;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 154.5%;
+  color: #000000;
+  margin-bottom: 1.1rem;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.6rem;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading-block {
+  display: inline-block;
+  width: 14.9rem;
+  height: 2.1rem;
+  background-color: #0077B5;
+  border-radius: 5px;
+}
+
+.career-details-wrap .career-details__application .career-details__form-heading-block-description {
+  margin-left: 5px;
+  color: #939BA1;
+  vertical-align: top;
+}
+
+.career-details-wrap .career-details__application .horizontal-rule {
+  margin: 3rem 0;
+}
+
+.career-details-wrap .career-details__application .btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.career-details-wrap .career-details__application .btn-container .career-details__submit-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 2rem;
+  color: #ffffff;
+  background-color: #4360DF;
+  font-family: Work Sans;
+}
+
+@media screen and (max-width: 768px) {
+  .career-details-wrap div.career-details__application {
+    padding: 3.6rem 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .career-details-wrap .email__label,
+  .career-details-wrap .phone__label {
+    display: inline-block;
+    min-width: 8.95rem;
+    text-align: right;
+  }
+
+  .career-details-wrap .phone__label {
+    padding-right: 1.5rem;
+  }
 }
 
 .contact-us-wrap {
@@ -11630,7 +11755,7 @@ a.text-dark:focus {
   color: #3C4049;
 }
 
-.contact-us-wrap .main-content-area .container .row:nth-of-type(2) {
+.contact-us-wrap .main-content-area .container .col-12.col-md-4 {
   margin-bottom: 8.4rem;
 }
 
@@ -11687,16 +11812,114 @@ a.text-dark:focus {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 1273px) {
+  .contact-us-wrap .contact-background {
+    overflow: unset;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contact-us-wrap .contact-form-container {
+    padding: 5rem 2rem;
+  }
+
+  .contact-us-wrap .main-content-area .container .row:nth-of-type(2) .col-12.col-md-4:not(:first-of-type) .contact-medium {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1272px) {
+  .contact-us-wrap .contact-background .background {
+    top: -98px;
+  }
+
+  .contact-us-wrap .contact-background .background .background-text {
+    font-size: 20rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .contact-us-wrap .map-container .flex-row {
+    flex-direction: column !important;
+  }
+
   .contact-us-wrap .contact-medium,
   .contact-us-wrap .connect,
   .contact-us-wrap .social-media-handles {
     text-align: center;
   }
 
+  .contact-us-wrap .main-content-area .background {
+    top: -109px;
+  }
+
+  .contact-us-wrap .main-content-area .background .background-text {
+    font-size: 10rem;
+  }
+
   .contact-us-wrap .main-content-area .connect {
     font-size: 1.8rem;
   }
+}
+
+.input-wrap .custom-file__btn {
+  border: none;
+  background-color: transparent;
+  color: #1D86BD;
+  font-family: Work Sans;
+  font-size: 1.4rem;
+}
+
+.input-wrap .custom-file-info {
+  font-family: Work Sans;
+  font-size: 1.4rem;
+}
+
+.custom-select {
+  display: block;
+  font-size: 16px;
+  font-family: Montserrat;
+  line-height: 1.3;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjI5Mi4zNjJweCIgaGVpZ2h0PSIyOTIuMzYycHgiIHZpZXdCb3g9IjAgMCAyOTIuMzYyIDI5Mi4zNjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5Mi4zNjIgMjkyLjM2MjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTI4Ni45MzUsNjkuMzc3Yy0zLjYxNC0zLjYxNy03Ljg5OC01LjQyNC0xMi44NDgtNS40MjRIMTguMjc0Yy00Ljk1MiwwLTkuMjMzLDEuODA3LTEyLjg1LDUuNDI0DQoJCUMxLjgwNyw3Mi45OTgsMCw3Ny4yNzksMCw4Mi4yMjhjMCw0Ljk0OCwxLjgwNyw5LjIyOSw1LjQyNCwxMi44NDdsMTI3LjkwNywxMjcuOTA3YzMuNjIxLDMuNjE3LDcuOTAyLDUuNDI4LDEyLjg1LDUuNDI4DQoJCXM5LjIzMy0xLjgxMSwxMi44NDctNS40MjhMMjg2LjkzNSw5NS4wNzRjMy42MTMtMy42MTcsNS40MjctNy44OTgsNS40MjctMTIuODQ3QzI5Mi4zNjIsNzcuMjc5LDI5MC41NDgsNzIuOTk4LDI4Ni45MzUsNjkuMzc3eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+.custom-select::-ms-expand {
+  display: none;
+}
+
+.custom-select:hover {
+  border-color: #888;
+}
+
+.custom-select:focus {
+  border: none;
+  box-shadow: 0 0 0 0px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+.custom-select option {
+  font-weight: normal;
+}
+
+.error-jumbotron {
+  height: 26.7rem;
+  background-image: url(/images/error-background-img.svg?cbb1ff9ef2e02399204e80f9716edb32);
 }
 
 .card-box {
@@ -12813,6 +13036,77 @@ a.text-dark:focus {
 .farmlist__pagination .pagination .page-item.active .page-link {
   color: #ffffff;
   border: none;
+}
+
+section.privacy-policy {
+  background-color: #ffffff;
+  padding: 10rem 1rem 15rem;
+}
+
+section.privacy-policy .privacy-policy__heading-wrap .privacy-policy__heading {
+  font-family: Montserrat, sans-serif;
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #011633;
+}
+
+section.privacy-policy .privacy-policy__heading--sub {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 2.8rem;
+}
+
+section.privacy-policy .privacy-policy__text {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #011633;
+  margin-bottom: 2.7rem;
+}
+
+section.privacy-policy .privacy-policy__title {
+  margin-bottom: 3.5rem;
+}
+
+section.privacy-policy span.privacy-policy__title {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+section.privacy-policy ul.unordered-list {
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-right: 5px;
+  color: #000000;
+}
+
+section.privacy-policy .information-share .unordered-list,
+section.privacy-policy .protection-right .unordered-list {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  color: #011633;
+  font-weight: normal;
+}
+
+section.privacy-policy .privacy-policy-farmsponsor {
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: 769px) {
+  .privacy-policy__heading-span {
+    display: block;
+  }
+
+  .privacy-policy__content {
+    padding: 0px 8rem;
+  }
 }
 
 .section-faq {
@@ -14461,6 +14755,7 @@ mar .intro-section__image-box {
 .searchbar__form .searchbar__button {
   padding: 3.75px 50px;
   font-size: 1.6rem;
+  line-height: 28px;
 }
 
 ul.nav.nav-tabs .sponsor-via-vestbank-tab {

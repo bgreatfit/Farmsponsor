@@ -11,13 +11,13 @@ class PagesController extends Controller {
         $this->middleware('auth', ['only' => ['dashboard']]);
     }
 
-    //migration password reset 
+//migration password reset 
 
     public function passwordReset() {
         return view('pages.user_migration.password-reset');
     }
     
-    //end of migration password reset
+//end of migration password reset
 
     public function index() {
         $data['farms'] = Farm::orderBy('created_at','desc')->limit(4)->get();
@@ -27,17 +27,19 @@ class PagesController extends Controller {
     public function homepage() {
         return view('pages.homepage');
     }
+    
 // EMAIL VIEW
     public function sponsorsReceipt() {
-        return view('email.sponsors-receipt');
+        return view('email.vestbank.accountWithdrawalReceipt');
     }
     public function vestbankPayReceipt() {
-        return view('email.vestbank-pay-receipt');
+        return view('email.farm.sponsorshipReceipt');
     }
     public function vestbankFundReceipt() {
-        return view('email.vestbank-fund-receipt');
+        return view('email.vestbank.accountFundingReceipt');
     }
 // END
+
     public function login() {
         return view('pages.login');
     }
@@ -56,6 +58,10 @@ class PagesController extends Controller {
 
     public function termsAndConditions() {
         return view('pages.terms-and-conditions');
+    }
+
+    public function privacyPolicy() {
+        return view('pages.privacy-policy');
     }
 
     public function team() {
@@ -79,10 +85,10 @@ class PagesController extends Controller {
         return view('pages.admin');
     }
     public function careers() {
-        return view('pages.careers');
+        return view('pages.careers.index');
     }
-    public function careerDetails() {
-        return view('pages.career-details');
+    public function careerShow() {
+        return view('pages.careers.show');
     }
     public function contactUs() {
         return view('pages.contact-us');

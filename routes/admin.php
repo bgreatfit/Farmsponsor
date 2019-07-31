@@ -42,9 +42,10 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('withdrawals/{withdrawal}/confirm', 'Admin\WithdrawalController@confirm')->name('admin.confirmwithdrawal');
     Route::get('withdrawals/{withdrawal}/reverse', 'Admin\WithdrawalController@reverse')->name('admin.reversewithdrawal');
     Route::get('withdrawals/{withdrawal}/delete', 'Admin\WithdrawalController@delete')->name('admin.deletewithdrawal');
-    Route::get('users-list', 'PagesController@usersList')->name('usersList');
     Route::get('vestbank-users-list', 'PagesController@vestbankUsersList')->name('vestbankUsersList');
     Route::get('retain-sponsorship', 'PagesController@retainSponsorship')->name('retainSponsorship');
     Route::get('users', 'Admin\UsersController@index')->name('admin.users');
+    Route::get('users/searchname', 'Admin\UsersController@searchByName')->name('users.searchname');
+
 
 });

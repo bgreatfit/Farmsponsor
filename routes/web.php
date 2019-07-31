@@ -19,12 +19,13 @@ Route::get('faq', 'PagesController@faq')->name('faq');
 Route::get('team', 'PagesController@team')->name('team');
 Route::get('vestbanking', 'PagesController@vestbanking')->name('aboutVestbanking');
 Route::get('/helpcenter', 'PagesController@helpcenter')->name('helpcenter');
+Route::get('/privacy-policy', 'PagesController@privacyPolicy')->name('privacyPolicy');
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('termsAndConditions');
 Route::get('sponsors-receipt', 'PagesController@sponsorsReceipt')->name('sponsorsReceipt');
 Route::get('vestbank-pay-receipt', 'PagesController@vestbankPayReceipt')->name('vestbankPayReceipt');
 Route::get('vestbank-fund-receipt', 'PagesController@vestbankFundReceipt')->name('vestbankFundReceipt');
-Route::get('careers', 'PagesController@careers')->name('careers');
-Route::get('career-details', 'PagesController@careerDetails')->name('careerDetails');
+Route::get('/careers/index', 'PagesController@careers')->name('careers');
+Route::get('careers/show', 'PagesController@careerShow')->name('career.show');
 Route::get('contact-us', 'PagesController@contactUs')->name('contactUs');
 // Newsletter Route
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subscribe');

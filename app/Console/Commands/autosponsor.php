@@ -19,6 +19,7 @@ class autosponsor extends Command
      *
      * @var string
      */
+
     protected $description = 'Auto Farm Sponsorship';
 
     /**
@@ -38,6 +39,7 @@ class autosponsor extends Command
      */
     public function handle()
     {
+
         $vestors = Vestbank::where('standing_order', '=', 1)->get();
 
         foreach($vestors as $vestor){

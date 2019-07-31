@@ -2,6 +2,15 @@
     font-family: $font-family-main;
     background-color: $color-white;
 
+    .career-details__asteric{
+        color: #ff2d55;
+        margin-right: 5px;
+        font-weight: bold;
+    }
+
+    .form-group .career-details__asteric{
+        margin-left: 5px;
+    }
     .career-details__heading{
         font-family: $font-family-main;
         font-weight: 600;
@@ -16,7 +25,7 @@
             font-size: 1.4rem;
             line-height: 29px;
             color: $color-black;
-            margin-bottom: 2rem;
+            margin: 5rem 0 2rem;
         }
     }
 
@@ -49,6 +58,99 @@
     }
 
     .career-details__description{
+        margin-bottom: 6.5rem;
+    }
+    .career-details__application{
+        max-width: 800px;
+        background-color: #EEF2F5;
+        padding: 3.6rem 11.2rem;
+        margin-bottom: 5.3rem;
+        border-radius: 10px;
 
+        &--form {
+            div.form-group:nth-child(n+2):nth-child(-n+5){
+                margin-bottom: 1.9rem;
+            }
+        }
+
+        &-input {
+            font-size: 1.3rem;
+            height: 2.7rem;
+        }
+        .input__label{
+            font-size: 14px;
+        }
+
+        .career-details__form-heading {
+            font-family: $font-family-main;
+            font-weight: 800;
+            font-size: 1.8rem;
+            line-height: 154.5%;
+            color: $color-black;
+            margin-bottom: 1.1rem;
+
+            &-wrap{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 2.6rem;
+            }
+            &-block{
+                display: inline-block;
+                width: 14.9rem;
+                height: 2.1rem;
+                background-color:  #0077B5;
+                border-radius: 5px;
+            }
+            &-block-description {
+                margin-left: 5px;
+               color: #939BA1;
+               vertical-align: top;
+            }
+        }
+
+        .horizontal-rule {
+            margin: 3rem 0;
+        }
+
+        .btn-container{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+            .career-details__submit-btn{
+                border: none;
+                border-radius: 10px;
+                padding: .8rem 2rem;
+                color: $color-white;
+                background-color: #4360DF;
+                font-family: $font-family-alt;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .career-details-wrap {
+        div.career-details__application{
+            padding: 3.6rem 3rem;
+        }
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    .career-details-wrap {
+        .email__label,
+        .phone__label {
+            display: inline-block;
+            min-width: 8.95rem;
+            text-align: right;
+        }
+        .phone__label {
+            padding-right: 1.5rem;
+        }
     }
 }

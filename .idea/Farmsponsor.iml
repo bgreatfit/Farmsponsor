@@ -96,8 +96,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="twig" />
-    <orderEntry type="module" module-name="e-learning" />
-    <orderEntry type="module" module-name="laravel-repository-pattern" />
   </component>
 </module>
