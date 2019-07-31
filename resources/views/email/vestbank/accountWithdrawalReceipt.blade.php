@@ -353,11 +353,6 @@
                                 <!-- EMAIL TRANSACTION DATE CONTENT END -->
                             </td>
                         </tr>
-<<<<<<< HEAD:resources/views/email/vestbank-pay-receipt.blade.php
-                    
-
-=======
->>>>>>> master:resources/views/email/vestbank/accountWithdrawalReceipt.blade.php
                         <tr>
                             <td align="center" valign="top" class="transactionInfoContainer">
                                 <!-- EMAIL TRANSACTION  INFO CONTENT  -->
@@ -376,6 +371,14 @@
                                                             </span>
                                                         </div>
 
+                                                        <div class="transactionInfoDetailsText">
+                                                            <p class="transactionInfoDetailsTextMain">
+                                                                Bank Transfer Charges 
+                                                            </p>
+                                                            <span class="contentText transactionInfoText">
+                                                                56.50
+                                                            </span>
+                                                        </div>
                                                         <div class="transactionInfoDetailsText">
                                                             <p class="transactionInfoDetailsTextMain">
                                                                 Vestbanking Charges
@@ -442,13 +445,6 @@
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
-<<<<<<< HEAD
-<<<<<<< HEAD:resources/views/email/vestbank-pay-receipt.blade.php
-=======
-
->>>>>>> master:resources/views/email/vestbank/accountWithdrawalReceipt.blade.php
-=======
->>>>>>> master
                                         </td>
                                     </tr>
                                 </table>

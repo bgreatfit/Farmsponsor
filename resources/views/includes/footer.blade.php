@@ -55,7 +55,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="#" class="footer__links">Privacy Policy</a></div>
+                                <div class="footer__item"><a href="{{route('privacyPolicy')}}" class="footer__links">Privacy Policy</a></div>
                             </div>
                         </div>
                     </div>

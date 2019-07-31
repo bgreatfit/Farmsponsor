@@ -53,14 +53,19 @@
         <section class="main-content-area">
             <div class="container">
                 <div class="row">
+                    <div class="col-12 col-md-12">
                         <div class="contact-background">
                             <div class="contact-background__heading-content">
                                 <h1 class="contact-heading">quick.</h1>
                                 <h1 class="contact-heading">support</h1>
                                 <p class="contact-text contact-text-lg">YOU CAN GET ALL THE CONTACT INFORMATION.</p>
                             </div>
+                            <div class="background">
+                                <p class="background-text">Contact</p>
+                            </div>
                         </div>
                     </div>
+                   
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-4">

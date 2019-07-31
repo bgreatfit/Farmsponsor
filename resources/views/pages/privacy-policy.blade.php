@@ -36,8 +36,8 @@
                             </p>
                         </div>
 
-                        <div class="privacy-policy__section privacy-policy-category">
-                            <h2 class="privacy-policy__title"> Website Privacy Policy</h2>
+                        <div class="privacy-policy__section personal-information">
+                            <h2 class="privacy-policy__heading--sub"> Website Privacy Policy</h2>
                             <p class="privacy-policy__text">
                                 PERSONAL INFORMATION WE COLLECT  
                             </p>
@@ -93,123 +93,278 @@
                             </p>
                         </div>
 
-                        <div class="privacy-policy__section privacy-policy-services">
-                            <p class="privacy-policy__text">
-                                <span class="privacy-policy__title">3. Services for Poultry Farming</span>
-                                Sponsor: To use client’s funds to sponsor poultry farmers 
-                                (Broilers) who shall raise these birds until maturity at One Thousand Naira 
-                                (NGN 1000) per unit (bird), after which Farmsponsor shall sell the units and pay 
-                                client back his/her seed input plus a yield of 15% of seed input, after agreed 
-                                period as established in these privacy-policy and Conditions between Farmsponsor and Sponsor, 
-                                according to Farmsponsor’s duly published and authorized Farming Calendar.
-                            </p>
-
-                            <h3 class="privacy-policy__title--sub">Farmer:</h3>
-                            <p class="privacy-policy__text">
-                                To use Farmer’s farm to raise poultry (Broilers) until maturity (6 Weeks) at One 
-                                Thousand Naira (NGN1000) per unit (bird), after which Farmsponsor and Farmer shall 
-                                sell the units at the best market price obtainable, and pay Farmer his/her yield of 
-                                Agreed remuneration as established in the Memorandum of Understanding/Agreement 
-                                between Farmsponsor and Farmer, according to Farmsponsor’s Farming Calendar and Farming Model.
-                            </p>
-
-                            <h3 class="privacy-policy__title--sub">By Client:</h3>
-                            <p class="privacy-policy__text">
-                                Sponsor: To voluntarily make funds available to farmers to increase their output.
-                            </p>
+                        <div class="privacy-policy__section information-use">
+                            <h2 class="privacy-policy__title">HOW FARMSPONSOR USES YOUR PERSONAL INFORMATION</h2>
 
                             <p class="privacy-policy__text">
-                                Farmer: To monitor the birds, provide security and tools (includes but not limited 
-                                to electricity, water, feeding troughs, storage compartment, brooding pens, buckets, 
-                                shovels, sacks, stoves, lanterns, charcoal pots, cleaning materials, demarcations, wood 
-                                shavings, charcoal, staffing and every other tool apart from feeds and medicine). 
+                                We may use the information that we collect about you and from you, including 
+                                Personal Information, for the following purposes:
                             </p>
-                            <p class="privacy-policy__text">
-                                To indemnify Farmsponsor from damages to the pen, 
-                                theft and careless death of birds due to direct, action or omission of duties by client’s 
-                                farm workers.
-                            </p>
+
+                            <div class="privacy-policy__text">
+                                <ul class="unordered-list"><li>To customize our website:</li></ul>
+                                We seek to improve your experience with our website.  As a result, 
+                                we will analyze data we collect about your use of the website.
+                            </div>
+
+                            <div class="privacy-policy__text">
+                                <ul class="unordered-list"><li>To communicate with you:</li></ul>
+                                If you request more information about our products, we will contact you using 
+                                the information you provide us. We may also send you information about 
+                                products and services that may be of interest to you, with your prior opt-in 
+                                consent where required by applicable law.
+                            </div>
+
+                            <div class="privacy-policy__text">
+                                <ul class="unordered-list"><li>To aggregate data:</li></ul>
+                                We may anonymize and aggregate data collected through our website and to 
+                                create statistics that may be used for any purpose, provided that such 
+                                statistics do not identify any customers or individuals or contain any 
+                                Personal Information. 
+                            </div>
 
                         </div>
 
-                        <div class="privacy-policy__section privacy-policy-duties">
-                            <h2 class="privacy-policy__title">4. Duties for the Parties in Poultry Farming</h2>
+                        <div class="privacy-policy__section information-share">
+                            <h2 class="privacy-policy__title">HOW FARMSPONSOR MAY DISCLOSE OR SHARE YOUR INFORMATION</h2>
+
+                            <div class="privacy-policy__text">
+                                <ul class="unordered-list">
+                                    <li>
+                                        We do not sell or otherwise disclose Personal Information we collect about you, 
+                                        except as described in this Website Privacy Policy or as we disclose to you at 
+                                        the time this information is collected. As described in more detail below, we 
+                                        may share your Personal Information:
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="privacy-policy__text">
+                                <ul class="unordered-list">
+                                    <li>
+                                        with our partners and third-party service providers. We authorize these service 
+                                        providers to use or disclose the information only as necessary to perform 
+                                        services on behalf of Farmsponsor (for example, to support the delivery of, 
+                                        provide functionality on, or help to enhance the security of our Website). We 
+                                        require these service providers by contract to safeguard the privacy and 
+                                        security of Personal Information that they process on our behalf;
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="privacy-policy__text">
+                                <ul class="unordered-list">
+                                    <li>
+                                        to any competent law enforcement body, regulatory, government agency, court or other 
+                                        third party where we believe disclosure is necessary (i) as a matter of applicable 
+                                        law or regulation, (ii) to exercise, establish or defend our legal rights, or 
+                                        (iii) to protect your vital interests or those of any other person;
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="privacy-policy__text">
+                                <ul class="unordered-list">
+                                    <li>
+                                        to an acquirer, successor, or assignee as part of any merger, acquisition, debt 
+                                        financing, sale of assets, or similar transaction, or in the event of an 
+                                        insolvency, bankruptcy, or receivership in which information is transferred to 
+                                        one or more third parties as one of our business assets, provided that 
+                                        we inform such third parties that they must use your Personal Information 
+                                        only for the purposes disclosed in this Website Privacy Policy ; and
+                                        to any other person with your consent to the disclosure.
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="privacy-policy__text">
+                                Our website may contain links to third party websites or third party applications 
+                                (“apps”).  When you click on a link to any other website, app or location, you 
+                                will leave our website and go to another site and another entity may 
+                                collect Personal Information or anonymized data from you.  We have no control 
+                                over, do not review, and cannot be responsible for, these outside websites or 
+                                their content. Please be aware that the terms of this Website Privacy Policy 
+                                do not apply to these outside websites, apps or content, or to any 
+                                collection of your Personal Information after you click on links to such outside 
+                                websites or apps.  We encourage you to read the privacy policies of every 
+                                website you visit or app you use. The links to third party websites, apps or 
+                                locations are for your convenience and do not signify our endorsement of such 
+                                third parties or their products, apps, content or websites.
+                            </p>
+                        </div>
+
+                        <div class="privacy-policy__section information-security">
+                            <h2 class="privacy-policy__title">HOW FARMSPONSOR HOLDS AND SECURES YOUR INFORMATION</h2>
+
+                            <p class="privacy-policy__text">
+                                We care about the security of your Personal Information, and take appropriate 
+                                steps including technical and organizational measures to ensure that your 
+                                Personal Information is treated securely and in accordance with this Website 
+                                Privacy Policy. The measures we use are designed to provide a level of 
+                                security appropriate to the risk of processing your Personal Information.
+                            </p>
+                        </div>
+
+                        <div class="privacy-policy__section data-transfers">
+                            <h2 class="privacy-policy__title">INTERNATIONAL DATA TRANSFERS</h2>
+
+                            <p class="privacy-policy__text">
+                                Your personal information may be transferred to, and processed in, 
+                                countries other than the country in which you are resident.  These 
+                                countries may have data protection laws that are different to the laws 
+                                of your country (and, in some cases, may not be as protective).
+                            </p>
+
+                            <p class="privacy-policy__text">
+                                However, we have taken appropriate safeguards to require that your 
+                                personal information will remain protected in accordance with this 
+                                Website Privacy Policy. 
+                            </p>
+                            <p class="privacy-policy__text">
+                                However, we will normally collect Personal Information from you only 
+                                where we have your consent to do so, where we need the Personal Information 
+                                to perform a contract with you, or where the processing is in our 
+                                legitimate interests and not overridden by your data protection interests 
+                                or fundamental rights and freedoms.  In some cases, we may also have a 
+                                legal obligation to collect Personal Information from you or may otherwise 
+                                need the Personal Information to protect your vital interests or those 
+                                of another person.
+                            </p>
+                            <p class="privacy-policy__text">
+                                If we ask you to provide Personal Information to comply with a legal 
+                                requirement or to perform a contact with you, we will make this clear at 
+                                the relevant time and advise you whether the provision of your Personal 
+                                Information is mandatory or not (as well as of the possible consequences 
+                                if you do not provide your personal information).
+                            </p>
+                            <p class="privacy-policy__text">
+                                Similarly, if we collect and use your Personal Information in reliance 
+                                on our legitimate interests (or those of any third party), we will make 
+                                clear to you at the relevant time what those legitimate interests are.
+                            </p>
+                            <p class="privacy-policy__text">
+                                If you have questions about or need further information concerning 
+                                the legal basis on which we collect and use your personal information, 
+                                please contact us at farmsponsorng@gmail.com.
+                            </p>
+                        </div>
+
+                        <div class="privacy-policy__section protection-right">
+                                <h2 class="privacy-policy__title">YOUR DATA PROTECTION RIGHTS</h2>
+                                
+                                <p class="privacy-policy__text">
+                                    You have the following data protection rights:
+                                </p>
+
+                                <div class="privacy-policy__text">
+                                    <ul class="unordered-list">
+                                        <li>
+                                            If you wish to access, correct, update or request deletion of your 
+                                            Personal Information, you can do so at any time by contacting 
+                                            us at farmsponsorng@gmail.com.
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="privacy-policy__text">
+                                    <ul class="unordered-list">
+                                        <li>
+                                            You have the right to opt-out of marketing communications we 
+                                            send you at any time.  You can exercise this right by clicking on the 
+                                            “unsubscribe” or “opt-out” link in the marketing e-mails we send you.  
+                                            To opt-out of other forms of marketing (such as postal marketing or 
+                                            telemarketing), then please contact us at farmsponsorng@gmail.com
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="privacy-policy__text">
+                                    <ul class="unordered-list">
+                                        <li>
+                                            Similarly, if we have collected and process your Personal Information 
+                                            with your consent, then you can withdraw your consent at any time. 
+                                            Withdrawing your consent will not affect the lawfulness of any 
+                                            processing we conducted prior to your withdrawal, nor will it affect 
+                                            processing of your Personal Information conducted in reliance on lawful 
+                                            processing grounds other than consent.
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="privacy-policy__text">
+                                    <ul class="unordered-list">
+                                        <li>
+                                            You have the right to complain to a data protection authority about 
+                                            our collection and use of your Personal Information.  For more information, 
+                                            please contact your local data protection authority.
+                                            We respond to all requests we receive from individuals wishing to 
+                                            exercise their data protection rights in accordance with applicable 
+                                            data protection laws.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="privacy-policy__text">
+                                    Please note that you should direct any requests related to the data protection 
+                                    rights described above to the Farmsponsor customer who holds the relevant 
+                                    Farmsponsor account. As a data processor of any Personal Information stored 
+                                    and processed on the Services, Farmsponsor will not be able to respond 
+                                    directly to such requests and will refer any such requests to the relevant 
+                                    Customer.
+                                </p>
+                        </div>
+
+                        <div class="privacy-policy__section children-privacy">
+                            <h2 class="privacy-policy__title">CHILDREN’S PRIVACY</h2>
+
+                            <p class="privacy-policy__text">
+                                We do not knowingly collect, maintain, or use Personal Information 
+                                from children under 18 years of age, and no part of our website 
+                                is directed to children under the age of 18. We will take steps to 
+                                delete it if we learn we have inadvertently collected it.
+                            </p>
+                            <p class="privacy-policy__text">
+                                If you learn that your child has provided us with Personal Information 
+                                without your consent, you may alert us at farmsponsorng@gmail.com. If 
+                                we learn that we have collected any Personal Information from children 
+                                under 18, we will promptly take steps to delete such information and 
+                                terminate the child’s account.
+                            </p>
+
+                            <p class="privacy-policy__text">
+
+                            </p>
+                        </div>
+
+                        <div class="privacy-policy__section policy-updates">
+                            <h2 class="privacy-policy__title">UPDATES TO THIS PRIVACY POLICY</h2>
+
+                            <p class="privacy-policy__text">
+                                We may update this Privacy Policy from time to time in response to changing 
+                                legal, technical or business developments. When we update our Privacy Policy, we will take appropriate measures to inform you, consistent with the significance of the changes we make.  We will obtain your consent to any material Privacy Policy changes if and where this is required by applicable data protection laws.
+                            </p>
                             
-                            <h3 class="privacy-policy__title--sub">By Farmsponsor to Client:</h3>
                             <p class="privacy-policy__text">
-                                Sponsor: To promptly collect sponsorship funds and begin farm cycle as published/advertised. 
+                                You can see when this Privacy Policy was last updated by checking the “last 
+                                updated” date displayed at the top of this Privacy Policy.
                             </p>
-                            <p class="privacy-policy__text">
-                                To introduce units to the pen on the advertised date. 
-                            </p>
-                            <p class="privacy-policy__text">
-                                To make available; feeds, medicine and vaccines following a chart as agreed between Farmsponsor and Farmer. 
-                            </p>
-                            <p class="privacy-policy__text">
-                                To provide information about farm cycle client participated in on demand and periodically. 
-                            </p>
-                            <p class="privacy-policy__text">
-                                To commence sales six (6) weeks after units were introduced to the pen. 
-                            </p>
-                            <p class="privacy-policy__text">
-                                To pay complete returns to client on the agreed date. 
-                            </p>
-                            <p class="privacy-policy__text">
-                                Farmer: To use sponsorship funds to procure the units, feeds, medicine and 
-                                vaccines following a chart as agreed between Farmsponsor and Farmer.
-                            </p>
-                            <p class="privacy-policy__text">
-                                To administer the feeds, medicine and vaccine according to the agreed regiment. 
-                            </p>
-                            <p class="privacy-policy__text">
-                                To pay complete returns to client on the agreed date.
-                            </p>
-
-                            <h3 class="privacy-policy__title--sub">By Client to Farmsponsor:</h3>
-
-                            <p class="privacy-policy__text">
-                                Sponsor: To make declared funds available promptly and in whole, not in part/installments as the different parts shall be considered as separate sponsorships. 
-                            </p>
-                            <p class="privacy-policy__text">To request for information and updates about farm cycle client participated in.</p>
-                            <p class="privacy-policy__text">Farmer: To permit unrestricted access to Farmsponsor and her assign(s).</p>
-                            <p class="privacy-policy__text">To allow Farmsponsor audit the Facility (pen(s), security, farm workers, tools, electricity and water) and make available consent for Farmsponsor to initiate farm transaction. </p>
-                            <p class="privacy-policy__text">To notify Farmsponsor of any farm activities to be carried out within the facility during the term of the agreement. </p>
-                            <p class="privacy-policy__text">To record appropriately, all farm activities including but not limited to mortality, incidents and stock taking</p>
-
                         </div>
 
-                        <div class="privacy-policy__section privacy-policy-indemnity">
-                            <h2 class="privacy-policy__title">5. Indemnity in Poultry Farming</h2>
+                        <div class="privacy-policy__section contact-information">
+                            <h2 class="privacy-policy__title">CONTACT INFORMATION</h2>
+
                             <p class="privacy-policy__text">
-                                Farmsponsor’s client(s) will not hold Farmsponsor liable for any or all of the following claims:
+                                If you want to provide comments or questions about our Privacy Policy, 
+                                or to exercise your rights, feel free to contact us at farmsponsorng@gmail.com, 
+                                or at the mailing address below.
                             </p>
-                            <p class="privacy-policy__text privacy-policy__text--dark">
-                                Alien Sponsorship: <span class="privacy-policy__text--light">Making payment outside the provided window or without the acknowledgement of proper authority</span>
+                            <p class="privacy-policy__text">
+                                16 Abua Close, Beside RCCG Zonal HQ, 
                             </p>
-                            <p class="privacy-policy__text privacy-policy__text--dark">
-                                Alien Sales:  <span class="privacy-policy__text--light">Exchanging units for money outside the provided window, without the acknowledgement of proper authority
-                                    </span>
+                            <p class="privacy-policy__text">
+                                Rumuibekwe, Port Harcourt,
                             </p>
-                            <p class="privacy-policy__text privacy-policy__text--dark">
-                                Damage:  <span class="privacy-policy__text--light">Physical/psychological damage to the Facility by any means whatsoever</span>
+                            <p class="privacy-policy__text">
+                                Rivers State, Nigeria.
                             </p>
-                            <p class="privacy-policy__text privacy-policy__text--dark">
-                                Theft:  <span class="privacy-policy__text--light">In the event tools or the entire Facility ceases to exist partially or totally</span>
-                            </p>
-                            <p class="privacy-policy__text privacy-policy__text--dark">
-                                Careless Death:  <span class="terms__text--light">In the handling of the units, Farmsponsor acknowledges that loss from death may occur; however, these events must not be from negligence of Facility by farmer and must be accounted for in detail</span>
-                            </p>
-                            <p class="terms__text terms__text--dark">
-                                Direct Action:  <span class="terms__text--light">In any case, Farmer and his/her assign, impostor or invader are not permitted to cause harm in all its ramifications to the units and hereby indemnify Farmsponsor from any loss incurred through this means</span>
-                            </p>
-                            <p class="terms__text terms__text--dark">
-                                Omission:  <span class="terms__text--light">Is not a condition for waiver of the “Direct Action” indemnity statement as it does not constitute grounds to lay claims for financial loss</span>
-                            </p>
-                            <p class="terms__text terms__text--dark">
-                                Security:  <span class="terms__text--light">The security of the Facility is the sole responsibility of the Farmer and he/she indemnifies Farmsponsor from any financial loss incurred due to the absence or presence of security apparatus.</span>
-                            </p>
-
-
                         </div>
                     </div>
                 </div>

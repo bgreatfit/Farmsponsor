@@ -59,4 +59,15 @@ class BankSponsorship extends Model
     {
         return 100000;
     }
+
+    public function retain()
+    {
+        return $this->morphMany(RetainSponsorship::class, 'farmable');
+
+    }
+
+    public function hasRetained()
+    {
+        return $this->retain()->count() == 1 ? true : false;
+    }
 }

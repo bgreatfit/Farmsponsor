@@ -11849,6 +11849,10 @@ a.text-dark:focus {
     text-align: center;
   }
 
+  .contact-us-wrap .main-content-area .background {
+    top: -109px;
+  }
+
   .contact-us-wrap .main-content-area .background .background-text {
     font-size: 10rem;
   }
@@ -13036,7 +13040,7 @@ a.text-dark:focus {
 
 section.privacy-policy {
   background-color: #ffffff;
-  padding: 10rem 1rem;
+  padding: 10rem 1rem 15rem;
 }
 
 section.privacy-policy .privacy-policy__heading-wrap .privacy-policy__heading {
@@ -13046,25 +13050,49 @@ section.privacy-policy .privacy-policy__heading-wrap .privacy-policy__heading {
   color: #011633;
 }
 
-section.privacy-policy .privacy-policy__text,
-section.privacy-policy .privacy-policy__title--sub {
+section.privacy-policy .privacy-policy__heading--sub {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 2.8rem;
+}
+
+section.privacy-policy .privacy-policy__text {
   font-family: Montserrat, sans-serif;
   font-size: 1.6rem;
   line-height: 1.88;
   color: #011633;
-  margin-bottom: 3rem;
+  margin-bottom: 2.7rem;
 }
 
 section.privacy-policy .privacy-policy__title {
+  margin-bottom: 3.5rem;
+}
+
+section.privacy-policy span.privacy-policy__title {
   font-family: Montserrat;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #000000;
   margin-bottom: 2rem;
 }
 
-section.privacy-policy .privacy-policy__title--sub {
-  margin-bottom: 1rem;
+section.privacy-policy ul.unordered-list {
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-right: 5px;
+  color: #000000;
+}
+
+section.privacy-policy .information-share .unordered-list,
+section.privacy-policy .protection-right .unordered-list {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  color: #011633;
+  font-weight: normal;
 }
 
 section.privacy-policy .privacy-policy-farmsponsor {
