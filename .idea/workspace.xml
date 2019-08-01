@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="885726e1-8e29-4b03-bca2-18881a44ea15" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+
+    <list default="true" id="92cbcaab-26d8-4fea-90ae-f8b1234fda2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/Http/Controllers/ProjectsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/database/factories/ProjectFactory.php" afterDir="false" />
@@ -12,7 +14,9 @@
       <change beforePath="$PROJECT_DIR$/../birdboard/tests/Feature/ProjectTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../birdboard/tests/Feature/ProjectTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../birdboard/tests/Unit/ExampleTest.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../e-learning/resources/views/messages/admins/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../e-learning/resources/views/messages/admins/create.blade.php" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/../twig/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/resources/views/index.blade.php" afterDir="false" />
+
     </list>
     <ignored path="$PROJECT_DIR$/../e-learning/public/assets/node_modules/" />
     <ignored path="$PROJECT_DIR$/../twig/public/assets/node_modules/" />
@@ -244,24 +248,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+
+        <entry file="file://$PROJECT_DIR$/../twig/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../twig/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="169" selection-start-line="169" selection-end-line="169" />
+            <state relative-caret-position="112">
+              <caret line="150" column="12" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
+              <folding>
+                <element signature="e#12052#12082#0#HTML" expanded="true" />
+                <element signature="e#11981#13304#0#HTML" />
+                <element signature="e#12704#12739#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitattributes">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/../twig/public/css/theme-01e06013.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state relative-caret-position="174">
+              <caret line="7" column="80102" selection-start-line="7" selection-start-column="80098" selection-end-line="7" selection-end-column="80102" />
+
             </state>
           </provider>
         </entry>
@@ -269,7 +280,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../twig/resources/views/products/users/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4692">
+
+            <state>
+
               <caret line="204" column="62" selection-start-line="204" selection-start-column="62" selection-end-line="222" />
             </state>
           </provider>
@@ -278,7 +291,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../twig/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+
+            <state relative-caret-position="346">
+
               <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
               <folding>
                 <element signature="e#40#74#0#PHP" expanded="true" />
@@ -317,8 +332,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99383">
-              <caret line="4321" column="9" selection-start-line="4321" selection-start-column="9" selection-end-line="4321" selection-end-column="9" />
+
+            <state relative-caret-position="99084">
+              <caret line="4308" column="9" selection-start-line="4308" selection-start-column="9" selection-end-line="4308" selection-end-column="9" />
+
             </state>
           </provider>
         </entry>
@@ -337,13 +354,113 @@
       </file>
     </leaf>
   </component>
+
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>asset</find>
+      <find>product-detail-a</find>
+      <find>att</find>
+      <find>add to cart</find>
+      <find>des</find>
+      <find>total</find>
+      <find>tax</find>
+      <find>floating</find>
+      <find>category</find>
+      <find>breadcr</find>
+      <find>iview-pre</find>
+      <find>home</find>
+      <find>pres</find>
+      <find>vw</find>
+      <find>icon</find>
+      <find>Elite</find>
+      <find>messages</find>
+      <find>payments</find>
+      <find>withdr</find>
+      <find>titl</find>
+      <find>payout</find>
+      <find>retain</find>
+      <find>user</find>
+      <find>users</find>
+      <find>retainsponsor</find>
+      <find>ser</find>
+      <find>emai</find>
+      <find>create</find>
+      <find>store</find>
+      <find>mt-3</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+
         <option value="$PROJECT_DIR$/.gitignore" />
+
+        <option value="$PROJECT_DIR$/app/Console/Commands/autosponsor.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/products/users/index.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Products/ProductController.php" />
+        <option value="$PROJECT_DIR$/../twig/public/js/custom.js" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/layouts/plants/page.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/public/css/custom.css" />
+        <option value="$PROJECT_DIR$/../e-learning/app/Repositories/Coupons/CouponRepository.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/lang/en/common.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/coupons/index.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/app/Http/Controllers/Coupons/CouponController.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/layouts/head.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/auth/teacher_register.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/layouts/notification.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/app/Http/Controllers/Courses/CourseController.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/admins/index.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/app/Http/Requests/Messages/MessageRequests.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/messages/admins/index.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/app/Repositories/Messages/MessageRepo.php" />
+        <option value="$PROJECT_DIR$/../e-learning/app/Interfaces/Messages/MessageInterface.php" />
+        <option value="$PROJECT_DIR$/../e-learning/app/Http/Controllers/Messages/MessageController.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/Attributes/AttributeController.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/payments/index.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/includes/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PayoutController.php" />
+        <option value="$PROJECT_DIR$/app/Models/BankSponsorship.php" />
+        <option value="$PROJECT_DIR$/app/Models/Sponsor.php" />
+        <option value="$PROJECT_DIR$/app/Models/RetainSponsorship.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/dashboard/payout.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RetainSponsorshipController.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/courses/create.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/includes/admin/header.blade.php" />
+        <option value="$PROJECT_DIR$/../e-learning/routes/web.php" />
+        <option value="$PROJECT_DIR$/../e-learning/resources/views/messages/admins/create.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/layouts/plants/header.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/services/users/show.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/app/Http/Requests/Bookings/BookingRequest.php" />
+        <option value="$PROJECT_DIR$/../twig/app/Repositories/Bookings/BookingRepository.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/bookings/users/index.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/lang/en/common.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/includes/notification.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/app/Repositories/Contacts/ContactRepository.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/contacts/users/index.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/layouts/plants/index.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/layouts/plants/head.blade.php" />
+        <option value="$PROJECT_DIR$/../twig/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/../twig/resources/views/index.blade.php" />
+
       </list>
     </option>
   </component>
@@ -452,6 +569,65 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twig" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+
       <pane id="Scope" />
       <pane id="ProjectPane" />
     </panes>
@@ -482,19 +658,77 @@
       <created>1564573433785</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+
       <updated>1564573433785</updated>
-      <workItem from="1564573442071" duration="57000" />
+      <workItem from="1564573442071" duration="669000" />
+      <updated>1561737640897</updated>
+      <workItem from="1561737648388" duration="1733000" />
+      <workItem from="1561752805920" duration="14122000" />
+      <workItem from="1561798265497" duration="9485000" />
+      <workItem from="1561818706591" duration="1059000" />
+      <workItem from="1561829383520" duration="63000" />
+      <workItem from="1562147461229" duration="34701000" />
+      <workItem from="1562228592688" duration="7177000" />
+      <workItem from="1562314728115" duration="8135000" />
+      <workItem from="1562408500163" duration="22503000" />
+      <workItem from="1562520417377" duration="1050000" />
+      <workItem from="1562577077724" duration="7012000" />
+      <workItem from="1562589393386" duration="3004000" />
+      <workItem from="1562595153153" duration="2313000" />
+      <workItem from="1562610725217" duration="24932000" />
+      <workItem from="1562638930163" duration="15642000" />
+      <workItem from="1562678367756" duration="16814000" />
+      <workItem from="1562745864498" duration="26727000" />
+      <workItem from="1562835785965" duration="17369000" />
+      <workItem from="1562855668799" duration="25402000" />
+      <workItem from="1563015105481" duration="19642000" />
+      <workItem from="1563139851260" duration="2862000" />
+      <workItem from="1563184569579" duration="29060000" />
+      <workItem from="1563263617892" duration="37074000" />
+      <workItem from="1563351573044" duration="6819000" />
+      <workItem from="1563368856608" duration="29960000" />
+      <workItem from="1563437410874" duration="24774000" />
+      <workItem from="1563481791377" duration="593000" />
+      <workItem from="1563525756447" duration="22805000" />
+      <workItem from="1563555687439" duration="10225000" />
+      <workItem from="1563630178966" duration="29513000" />
+      <workItem from="1563703669898" duration="10122000" />
+      <workItem from="1563793937037" duration="4927000" />
+      <workItem from="1563800098426" duration="17758000" />
+      <workItem from="1563870446272" duration="297000" />
+      <workItem from="1563871157556" duration="7007000" />
+      <workItem from="1563880251829" duration="10850000" />
+      <workItem from="1563894392495" duration="1876000" />
+      <workItem from="1563898921696" duration="32344000" />
+      <workItem from="1564012535142" duration="7007000" />
+      <workItem from="1564128696759" duration="2608000" />
+      <workItem from="1564224920191" duration="20783000" />
+      <workItem from="1564308252267" duration="6817000" />
+      <workItem from="1564317007169" duration="5899000" />
+      <workItem from="1564348309066" duration="482000" />
+      <workItem from="1564413098993" duration="5797000" />
+      <workItem from="1564474026434" duration="16646000" />
+      <workItem from="1564561733750" duration="7533000" />
+
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178000" />
+
+    <option name="totallyTimeSpent" value="790000" />
+
+    <option name="totallyTimeSpent" value="621146000" />
+
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="703" extended-state="6" />
     <editor active="true" />
     <layout>
+
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2152568" />
+
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21223564" />
+
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -535,6 +769,7 @@
     </option>
   </component>
   <component name="editorHistoryManager">
+
     <entry file="file://$PROJECT_DIR$/../twig/routes/web.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -546,6 +781,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../twig/resources/views/products/users/index.blade.php">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4692">
           <caret line="204" column="62" selection-start-line="204" selection-start-column="62" selection-end-line="222" />
@@ -569,6 +805,7 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/../twig/resources/views/layouts/plants/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -577,6 +814,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php">
+
+    <entry file="file://$PROJECT_DIR$/../twig/resources/views/layouts/auth.blade.php">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10005">
           <caret line="435" column="84" selection-start-line="435" selection-start-column="84" selection-end-line="435" selection-end-column="84" />
@@ -600,7 +840,32 @@
         </state>
       </provider>
     </entry>
+
     <entry file="file://$PROJECT_DIR$/../twig/resources/views/index.blade.php">
+
+    <entry file="file://$PROJECT_DIR$/../twig/app/Repositories/Categories/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/app/Entities/Categories/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../e-learning/resources/views/messages/admins/create.blade.php">
+
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="169" selection-start-line="169" selection-end-line="169" />
@@ -612,10 +877,166 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
+
+    <entry file="file://$PROJECT_DIR$/../twig/app/Repositories/Contacts/ContactRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/resources/views/bookings/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/resources/views/contacts/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="118" column="95" selection-start-line="118" selection-start-column="95" selection-end-line="118" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/email/vestbank/accountWithdrawalReceipt.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4554">
+          <caret line="198" column="28" selection-start-line="198" selection-start-column="28" selection-end-line="198" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/email/vestbank/accountFundingReceipt.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5382">
+          <caret line="234" column="9" selection-start-line="234" selection-start-column="9" selection-end-line="234" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/email/farm/sponsorshipReceipt.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10005">
+          <caret line="435" column="84" selection-start-line="435" selection-start-column="84" selection-end-line="435" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99084">
+          <caret line="4308" column="9" selection-start-line="4308" selection-start-column="9" selection-end-line="4308" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/autosponsor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/resources/views/layouts/plants/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/public/img/home9-banner4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/public/img/home9-banner3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/public/img/home9-banner2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/public/img/home9-banner5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/resources/views/layouts/plants/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+          <folding>
+            <element signature="e#40#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/resources/views/products/users/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="204" column="62" selection-start-line="204" selection-start-column="62" selection-end-line="222" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/public/css/theme-01e06013.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="7" column="80102" selection-start-line="7" selection-start-column="80098" selection-end-line="7" selection-end-column="80102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../twig/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="150" column="12" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
+          <folding>
+            <element signature="e#12052#12082#0#HTML" expanded="true" />
+            <element signature="e#11981#13304#0#HTML" />
+            <element signature="e#12704#12739#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
