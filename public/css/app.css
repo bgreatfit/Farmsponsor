@@ -11709,6 +11709,7 @@ a.text-dark:focus {
 .contact-us-wrap .contact-form__message {
   border-radius: 5px;
   margin-bottom: 2.8rem;
+  font-size: 1.3rem;
 }
 
 .contact-us-wrap .contact-submit__btn-container {
@@ -11919,7 +11920,54 @@ a.text-dark:focus {
 
 .error-jumbotron {
   height: 26.7rem;
-  background-image: url(/images/error-background-img.svg?cbb1ff9ef2e02399204e80f9716edb32);
+  background-image: url(/images/error-background-img.svg?75603fd8ffcbdc7f4ced4e3b60fc7443);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.error-wrap {
+  background: #EAD6FE;
+  padding: 5rem 2rem;
+}
+
+.error-wrap .error-content {
+  text-align: center;
+  color: #279B37;
+}
+
+.error-wrap .error-content .error-heading {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14.4rem;
+  line-height: 176px;
+  margin-bottom: 4rem;
+}
+
+.error-wrap .error-content .error-text {
+  font-family: Montserrat;
+  font-size: 3.6rem;
+  line-height: 44px;
+}
+
+.error-wrap .error-content .text-bold {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.error-wrap .error-content .text-small {
+  font-size: 1.8rem;
+  margin: 3.3rem 0 8.7rem;
+}
+
+.error-wrap .error-content .error-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.1rem 6.5rem;
+  color: #ffffff;
+  background-color: #009AFF;
+  margin-bottom: 5rem;
+  border-radius: 3px;
 }
 
 .card-box {
