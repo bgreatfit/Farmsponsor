@@ -85,7 +85,8 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-12">
-                                <div class="footer__item"><a href="{{route('careers')}}" class="footer__links">Careers</a></div>
+                                <div class="footer__item"><a href="#" class="footer__links">Careers</a></div>
+{{--                                <div class="footer__item"><a href="{{route('careers')}}" class="footer__links">Careers</a></div>--}}
                             </div>
                         </div>
                     </div>

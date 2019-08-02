@@ -14,16 +14,27 @@ class FundingController extends Controller
 {
     const Charges = 256.5;
 
+    /**
+     * FundingController constructor.
+     */
     public function __construct()
     {
         $this->middleware('auth');
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function create()
     {
         return view('pages.dashboard.vestbanking.create');
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Validation\ValidationException
+     */
     public function fund(Request $request)
     {
         $rules = [
@@ -46,6 +57,10 @@ class FundingController extends Controller
         return redirect()->route('dashboard');
     }
 
+    /**
+     * @param array $data
+     * @return mixed
+     */
     public function createBankFunding(array $data)
     {
         $data['user_id'] = Auth::id();
@@ -54,6 +69,10 @@ class FundingController extends Controller
         return $bankfunding;
     }
 
+    /**
+     * @param $model
+     * @return mixed
+     */
     public function logTransaction($model)
     {
         // generates a 8digit transaction id for each transaction
@@ -71,11 +90,19 @@ class FundingController extends Controller
         ]);
     }
 
+    /**
+     * @return string
+     */
     public function generateTransactionId()
     {
         return rand(10000000,99999999) . Str::random(2);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Validation\ValidationException
+     */
     public function withdraw(Request $request)
     {
         $rules = [
@@ -107,6 +134,10 @@ class FundingController extends Controller
         };
     }
 
+    /**
+     * @param $field
+     * @return \Illuminate\Http\RedirectResponse
+     */
     protected function withdrawFrom($field)
     {
         if (! $this->hasFundsIn($field)){
@@ -122,15 +153,24 @@ class FundingController extends Controller
         return redirect()->back();
     }
 
+    /**
+     * @param String $field
+     * @return bool
+     */
     protected function hasFundsIn(String $field)
     {
         return Auth::user()->vestbank->$field != 0 ? true : false ;
     }
 
+    /**
+     * @param String $field
+     * @param null $amount
+     * @return bool|mixed
+     */
     protected function processVestbankWithdrawalOf(String $field, $amount = NULL)
     {
         $charges = $this->getWithdrawalCharges();
-;
+
         if($this->processChargesWithdrawal($charges)){
 
             $currentAmount = Auth::user()->fresh()->vestbank->$field;
@@ -178,6 +218,12 @@ class FundingController extends Controller
         return false;
     }
 
+    /**
+     * @param $amount
+     * @param $field
+     * @param $charges
+     * @return mixed
+     */
     protected function logWithdrawalRequest($amount, $field, $charges)
     {
         do{
@@ -196,6 +242,10 @@ class FundingController extends Controller
         return WithdrawalLog::create($data);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     protected function withdrawAmount(Request $request)
     {
         if(! $request->has('amount')  || $request->amount == 0){
@@ -217,7 +267,7 @@ class FundingController extends Controller
 
         if($this->canWithdrawFrom('balance',$request->amount)){
             $this->processVestbankWithdrawalOfAmountFromCapitalAndInterest($request->amount);
-            request()->session()->flash('success', 'Transaction Successfull');
+            request()->session()->flash('success', 'Transaction Successful');
             return redirect()->back();
         }
 
@@ -225,8 +275,14 @@ class FundingController extends Controller
         return redirect()->back();
     }
 
+    /**
+     * @param $amount
+     * @return mixed
+     */
     protected function processVestbankWithdrawalOfAmountFromCapitalAndInterest($amount)
     {
+        $charges = $this->getWithdrawalCharges();
+
         $capital = Auth::user()->vestbank->capital;
         $interest = Auth::user()->vestbank->interest;
 
@@ -239,29 +295,48 @@ class FundingController extends Controller
             'lock' => 1
         ]);
 
-        return $this->logTransaction($this->logWithdrawalRequest($amount));
+        return $this->logTransaction($this->logWithdrawalRequest($amount, 'mixed', $charges));
     }
 
+    /**
+     * @param $field
+     * @param $amount
+     * @return bool
+     */
     protected function canWithdrawFrom($field, $amount)
     {
-        return (Auth::user()->vestbank->$field - $amount)  >= 0 ? true : false;
+        $currentBalance = Auth::user()->vestbank->$field;
+        return ($currentBalance - $amount)  >= 0 ? true : false;
     }
 
+    /**
+     * @param User $user
+     */
     public function sponsorshipEmails(User $user)
     {
 
     }
 
+    /**
+     * @return float
+     */
     protected function getWithdrawalCharges()
     {
         return self::Charges + $this->getIncomeandVATTax();
     }
 
+    /**
+     * @return float
+     */
     protected function getIncomeandVATTax()
     {
-        return Auth::user()->vestbank->interest * 0.12;
+        return Auth::user()->fresh()->vestbank->interest * 0.12;
     }
 
+    /**
+     * @param $charges
+     * @return bool
+     */
     public function processChargesWithdrawal($charges)
     {
         if($this->hasFundsIn('interest') && $this->canWithdrawFrom('interest', $charges)){

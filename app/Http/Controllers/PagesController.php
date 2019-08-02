@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Farm;
 
-class PagesController extends Controller {
+class PagesController extends Controller
+{
+
     public function __construct()
     {
         $this->middleware('auth', ['only' => ['dashboard']]);
@@ -40,13 +42,6 @@ class PagesController extends Controller {
     }
 // END
 
-    public function login() {
-        return view('pages.login');
-    }
-
-    public function register() {
-        return view('pages.register');
-    }
 
     public function vestbanking() {
         return view('pages.vestbanking');

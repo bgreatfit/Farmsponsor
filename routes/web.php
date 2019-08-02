@@ -25,7 +25,7 @@ Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name(
 Route::get('sponsors-receipt', 'PagesController@sponsorsReceipt')->name('sponsorsReceipt');
 Route::get('vestbank-pay-receipt', 'PagesController@vestbankPayReceipt')->name('vestbankPayReceipt');
 Route::get('vestbank-fund-receipt', 'PagesController@vestbankFundReceipt')->name('vestbankFundReceipt');
-Route::get('/careers', 'PagesController@careers')->name('careers');
+Route::get('/careers', 'CareerController@index')->name('careers');
 Route::get('careers/show', 'PagesController@careerShow')->name('career.show');
 Route::get('contact-us', 'PagesController@contactUs')->name('contactUs');
 // Newsletter Route
