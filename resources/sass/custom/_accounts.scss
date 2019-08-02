@@ -24,7 +24,7 @@ $text-light: rgba($color-black, .4);
         padding: 2rem;
         display: flex;
         flex-direction: column;
-        max-width: 46.4rem;
+        max-width: 50.4rem;
         margin: auto;
         
         .form-heading{
@@ -57,20 +57,21 @@ $text-light: rgba($color-black, .4);
                 font-family: $font-family-main;
             }
             
-            // CUSTOM CHECKBOX STYLING
             #form__input--checkbox {
                 display: none;
             }
-            // CHECKBOX APPEARANCE
+
             .form__input--label {
                 position: relative;
                 font-family: $font-family-main;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 20px;
+                text-transform: capitalize;
+
 
                 span.label-span {
-                    display: inline-flex;
+                    display: inline-block;
                     width: 2rem;
                     height: 2rem;
                     border-radius: 1rem;
@@ -96,7 +97,7 @@ $text-light: rgba($color-black, .4);
                     width: 20rem;
                     color: $text-dark;
                 }
-            } //END OF CHECKBOX APPEARANCE
+            }
 
             // CHECKBOX TOGGLE FUNCTIONALITY (COLOR)
             #form__input--checkbox:checked + .form__input--label span.label-span {
@@ -147,8 +148,6 @@ $text-light: rgba($color-black, .4);
                 transform: scale(1.15);
                 color: darken(#2F43F5, 30%);
             }
-
-
         }
     }
 }
@@ -156,22 +155,27 @@ $text-light: rgba($color-black, .4);
 // REGISTER PAGE SPECIFIC STYLES
 .section-form{
  .sectionWrap{padding: 0 .5rem;
+    .form__input--label span.required {
+        color: $red;
+        margin-left: .3rem;
+    }
     .form-box{
         .register {
             .form__input--labelRegister {
-                width: 100%;
-                height: 3rem;
-                display: flex;
+                width: 95%;
+                display: inline-block;
+                position: relative;
+                margin-left: 5%;
 
                 span.label-spanRegister {
                     display: inline-flex;
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    border-radius: 1rem;
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    border-radius: .4rem;
                     font-size: 1.2rem;
-                    background-color: $color-white;
-                    border: 1px solid #a19292;
+                    background-color: #C4C4C4;
                     transition: all .2s;
+                    vertical-align: middle;
 
             // CHECKBOX INSIDE STYLING
                     .label-span__icon{
@@ -186,24 +190,29 @@ $text-light: rgba($color-black, .4);
                 }
 
                 .label-textRegister{
-                    margin: .5rem 0 0 .5rem;
-                    font-size: 1.4rem;
+                    margin: 0 0 0 .5rem;
+                    font-size: 1.2rem;
                     color: $text-dark;
+                    font-family: $font-family-main;
                 }
             }
             // CHECKBOX TOGGLE FUNCTIONALITY (COLOR)
-                    #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
+                #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
                     background-color: $color-primary;
-                    border: 1px solid #7b6e6e;
-
-                    }
+                }
             // CHECKBOX TOGGLE FUNCTIONALITY (ICON)
                 #form__input--checkbox:checked + .form__input--labelRegister > span.label-spanRegister > .label-span__icon {
                     color: $color-black;
                     display: inline-block;
                     visibility: visible;
                     opacity: 1;
-                } //END OF TOGGLE FUNCTIONALITY
+                } 
+            //END OF TOGGLE FUNCTIONALITY
+            .loginText {
+                display: inline-block;
+                width: 95%;
+                margin-left: 5%;
+            }
         }
     }
  }
@@ -236,6 +245,8 @@ $text-light: rgba($color-black, .4);
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
+
+       
     }
 
     &__btn {
@@ -277,6 +288,15 @@ $text-light: rgba($color-black, .4);
 
             .form__input--link{
                 margin-left: 1rem;
+            }
+        }
+    }
+}
+@media screen and (min-width:575px) {
+    .section-form .sectionWrap {
+        .register{
+            .loginText {
+                padding-left: 23px;
             }
         }
     }
