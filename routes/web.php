@@ -23,6 +23,11 @@ Route::get('/500', 'PagesController@error500')-> name('error.500');
 
 // END
 
+// dashboard
+Route::get('/template', 'PagesController@dashboardTemplate')-> name('dashboard.template');
+
+// END
+
 Route::get('/', 'PagesController@index')-> name('home');
 Route::get('about', 'PagesController@about')->name('about');
 Route::get('faq', 'PagesController@faq')->name('faq');

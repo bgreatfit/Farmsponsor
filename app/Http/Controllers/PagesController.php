@@ -133,5 +133,9 @@ class PagesController extends Controller {
         return view('error.500');
     }
 
+    // dashboard views
+    public function dashboardTemplate() {
+        return view('dashboard.template');
+    }
  
 }
