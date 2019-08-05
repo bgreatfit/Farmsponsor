@@ -1,7 +1,6 @@
 <?php
 require_once 'admin.php';
 
-//Auth::loginUsingId(591);
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +12,15 @@ require_once 'admin.php';
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// error routes
+Route::get('/400', 'PagesController@error400')-> name('error.400');
+Route::get('/401', 'PagesController@error401')-> name('error.401');
+Route::get('/404', 'PagesController@error403')-> name('error.404');
+Route::get('/403', 'PagesController@error404')-> name('error.403');
+Route::get('/500', 'PagesController@error500')-> name('error.500');
+
+// END
 
 Route::get('/', 'PagesController@index')-> name('home');
 Route::get('about', 'PagesController@about')->name('about');

@@ -110,5 +110,23 @@ class PagesController extends Controller
     public function retainSponsorship(){
         return view('pages.admin.retain-sponsorship');
     }
+
+    // error views
+    public function error400() {
+        return view('error.400');
+    }
+    public function error401() {
+        return view('error.401');
+    }
+    public function error403() {
+        return view('error.403');
+    }
+    public function error404() {
+        return view('error.404');
+    }
+    public function error500() {
+        return view('error.500');
+    }
+
  
 }
