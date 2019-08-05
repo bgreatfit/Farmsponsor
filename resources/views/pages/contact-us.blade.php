@@ -15,28 +15,61 @@
                                         <h1 class="contact-heading">Contact.</h1>
                                         <h1 class="contact-heading">Get in touch</h1>
                                         <p class="contact-text">leave us a message</p>
-                                        <form action="" class="contact-form">
+                                        <form action="{{route('contact.store')}}" method="POST" class="contact-form">
+                                            @csrf
                                             <div class="row">
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
                                                         <label for="contact-first-name__input" class="contact-first-name__label">
-                                                            Name <span class="required-star">*</span>
+                                                            Name <span class="required-star text-danger">*</span>
                                                         </label>
-                                                        <input type="text" id="contact-first-name__input"   class="contact-form__input form-control">
+                                                        <input type="text" id="contact-first-name__input"  name="name"  value="{{old('name')}}" class="contact-form__input form-control {{ $errors->has('name') ? ' is-invalid' : '' }} ">
+
+                                                        @if ($errors->has('name'))
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $errors->first('name') }}</strong>
+                                                            </span>
+                                                        @endif
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
                                                         <label for="contact-email__input" class="contact-email__label">
-                                                            email <span class="required-star">*</span>
+                                                            Email <span class="required-star text-danger">*</span>
                                                         </label>
-                                                        <input type="email" id="contact-email__input" class="contact-form__input form-control">
+                                                        <input type="email" id="contact-email__input" name="email"  value="{{old('email')}}" class="contact-form__input form-control {{ $errors->has('email') ? ' is-invalid' : '' }} ">
+                                                        @if ($errors->has('email'))
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $errors->first('email') }}</strong>
+                                                            </span>
+                                                        @endif
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt-2">
+                                                    <div class="form-group">
+                                                        <label for="contact-email__input" class="contact-email__label">
+                                                            Subject <span class="required-star text-danger">*</span>
+                                                        </label>
+                                                        <input type="text" id="contact-email__input" name="subject"  value="{{old('subject')}}" class="contact-form__input form-control {{ $errors->has('subject') ? ' is-invalid' : '' }} ">
+                                                        @if ($errors->has('subject'))
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $errors->first('subject') }}</strong>
+                                                            </span>
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="form-group">
                                                 <label for="contact-message" class="contact-message__label">Message</label>
-                                                <textarea class="form-control contact-form__message" name="message" id="contact-message" rows="10"></textarea>
+                                                <textarea class="form-control contact-form__message {{ $errors->has('message') ? ' is-invalid' : '' }} " name="message" id="contact-message" rows="10"> {{old('message')}}</textarea>
+
+                                                @if ($errors->has('message'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('message') }}</strong>
+                                                    </span>
+                                                @endif
                                             </div>
                                             <div class="form-group contact-submit__btn-container">
                                                 <button class="contact-submit__btn btn">Send message</button>

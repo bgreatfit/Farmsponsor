@@ -85,9 +85,6 @@ class PagesController extends Controller
     public function careerShow() {
         return view('pages.careers.show');
     }
-    public function contactUs() {
-        return view('pages.contact-us');
-    }
 
     // Admin views
 

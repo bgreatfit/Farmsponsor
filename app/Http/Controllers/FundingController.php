@@ -325,7 +325,7 @@ class FundingController extends Controller
                     }
                     //if it cannot charge the amount after processing the charges, the charges is returned to the interest
                     Auth::user()->fresh()->vestbank()->increment('interest', $charges);
-                    
+
                     return false;
                     break;
 

@@ -35,7 +35,6 @@ Route::get('vestbank-pay-receipt', 'PagesController@vestbankPayReceipt')->name('
 Route::get('vestbank-fund-receipt', 'PagesController@vestbankFundReceipt')->name('vestbankFundReceipt');
 Route::get('/careers', 'CareerController@index')->name('careers');
 Route::get('careers/show', 'PagesController@careerShow')->name('career.show');
-Route::get('contact-us', 'PagesController@contactUs')->name('contactUs');
 // Newsletter Route
 Route::post('subscribe/newsletter', 'NewsletterController@subscribe')->name('newsletter.subscribe');
 // Farm Routes
@@ -82,6 +81,9 @@ Route::get('/resetPassword/{email}/{token}', 'MigrateUsersFromWordpressControlle
 Route::post('/resetPassword/{token}', 'MigrateUsersFromWordpressController@processreset')->name('user.reset.process');
 Route::get('retain/{cycleid}/{type}', 'RetainSponsorshipController@retain')->name('retain.sponsorship');
 });
+
+Route::get('contact', 'ContactController@index')->name('contactUs');
+Route::post('contact', 'ContactController@store')->name('contact.store');
 
 // Auth Routes
 Auth::routes(['verify' => true]);

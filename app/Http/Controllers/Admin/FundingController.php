@@ -93,7 +93,7 @@ class FundingController extends Controller
             $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
         })->orderBy('created_at', 'desc')->paginate(10);
 
-        $data['approved_deposits'] = Bankfunding::whereApproved(0)->whereHas('user', function($query){
+        $data['approved_deposits'] = Bankfunding::whereApproved(1)->whereHas('user', function($query){
             $query->where('firstname', 'LIKE', "%{$this->request->value}%")->orwhere('lastname', 'LIKE', "%{$this->request->value}%");
         })->orderBy('created_at', 'desc')->paginate(10);
 
@@ -108,7 +108,7 @@ class FundingController extends Controller
             $query->where('transaction_id', '=', $this->request->value);
         })->orderBy('created_at', 'desc')->paginate(10);
 
-        $data['approved_deposits'] = Bankfunding::whereApproved(0)->whereHas('transactions', function($query){
+        $data['approved_deposits'] = Bankfunding::whereApproved(1)->whereHas('transactions', function($query){
             $query->where('transaction_id', '=', $this->request->value);
         })->orderBy('created_at', 'desc')->paginate(10);
 
