@@ -1,0 +1,36 @@
+.dashboard-header{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 5rem;
+   background-color: #E5E5E5;
+   position: absolute;
+   z-index: 60;
+   opacity: 1;
+
+   a {
+       text-decoration: none;
+       color: $color-black;
+   }
+
+   &__account{
+       display: flex;
+       align-items: center;
+    &--avatar {
+        width: 3.6rem;
+        margin-left: 1rem;
+    }
+    .dropdown {
+        .dashboard-header__user {
+            font-size: 1.4rem;
+        }
+        .dropdown-menu  .dropdown-item {
+            font-size: 14px;
+        }  
+       }
+       
+    }
+  
+}
+

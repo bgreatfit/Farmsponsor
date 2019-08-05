@@ -14863,3 +14863,114 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
   font-size: 1.3rem;
 }
 
+.dashboard-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: #E5E5E5;
+  position: absolute;
+  z-index: 60;
+  opacity: 1;
+}
+
+.dashboard-header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.dashboard-header__account {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-header__account--avatar {
+  width: 3.6rem;
+  margin-left: 1rem;
+}
+
+.dashboard-header__account .dropdown .dashboard-header__user {
+  font-size: 1.4rem;
+}
+
+.dashboard-header__account .dropdown .dropdown-menu .dropdown-item {
+  font-size: 14px;
+}
+
+.dashboard-side-bar {
+  height: 100%;
+  width: 100%;
+  background-color: #184303;
+  position: absolute;
+  padding-top: 8rem;
+  z-index: 50;
+}
+
+.dashboard-side-bar__nav {
+  list-style-type: none;
+}
+
+.dashboard-side-bar__nav li {
+  padding: 1.2rem 0;
+}
+
+.dashboard-side-bar__nav li.active {
+  background-color: #0E2503;
+  border-left: 5px solid #2F9637;
+}
+
+.dashboard-side-bar__nav li:hover {
+  background-color: #205407;
+  border-left: 5px solid #2F9637;
+}
+
+.dashboard-side-bar__nav .nav-link {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding: 0 5rem;
+}
+
+.dashboard-side-bar__nav .nav-link__dashboard-icon {
+  width: 2.1rem;
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard-side-bar {
+    max-width: 250px;
+  }
+
+  .dashboard-side-bar__nav .nav-link {
+    padding: 0 2rem;
+  }
+
+  .dashboard-main-content {
+    margin-left: 25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-side-bar {
+    max-width: 50px;
+  }
+
+  .dashboard-side-bar__nav .nav-link {
+    padding: 0 2rem;
+  }
+
+  .dashboard-side-bar__nav .nav-link__text {
+    display: none;
+  }
+}
+
+.dashboard-wrapper {
+  background: linear-gradient(270.1deg, #279B37 64.61%, rgba(0, 227, 31, 0.7) 99.94%);
+  height: 100vh;
+}
+
+.dashboard-main-content {
+  padding-top: 57px;
+}
+
