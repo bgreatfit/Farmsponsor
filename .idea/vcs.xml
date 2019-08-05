@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../birdboard" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../e-learning" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../laravel-repository-pattern" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../twig" vcs="Git" />
   </component>
 </project>

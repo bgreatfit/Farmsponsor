@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Farmsponsor.iml" filepath="$PROJECT_DIR$/.idea/Farmsponsor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../twig/.idea/twig.iml" filepath="$PROJECT_DIR$/../twig/.idea/twig.iml" />
     </modules>
   </component>
 </project>
