@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0e279b75-bd5f-4954-bd68-9eebb5c96a6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Farmsponsor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Farmsponsor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FundingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FundingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-learning/resources/views/messages/admins/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../e-learning/resources/views/messages/admins/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twig/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../twig/resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,67 +24,15 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FundingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="871">
+              <caret line="355" lean-forward="true" selection-start-line="355" selection-end-line="355" />
               <folding>
-                <element signature="e#289#338#0#PHP" />
-                <element signature="e#343#419#0#PHP" />
-                <element signature="e#425#508#0#PHP" />
-                <element signature="e#513#608#0#PHP" />
-                <element signature="e#614#763#0#PHP" />
-                <element signature="e#768#1512#0#PHP" />
-                <element signature="e#830#1072#0#PHP" />
-                <element signature="e#1127#1305#0#PHP" />
-                <element signature="e#1518#1576#0#PHP" />
-                <element signature="e#1581#1803#0#PHP" />
-                <element signature="e#1809#1862#0#PHP" />
-                <element signature="e#1867#2519#0#PHP" />
-                <element signature="e#2118#2268#0#PHP" />
-                <element signature="e#2286#2512#0#PHP" />
-                <element signature="e#2310#2511#1#PHP" />
-                <element signature="e#2525#2558#0#PHP" />
-                <element signature="e#2563#2671#0#PHP" />
-                <element signature="e#2677#2826#0#PHP" />
-                <element signature="e#2897#2953#0#PHP" />
-                <element signature="e#3046#3139#0#PHP" />
-                <element signature="e#3153#3248#0#PHP" />
-                <element signature="e#3365#3457#0#PHP" />
-                <element signature="e#3471#3545#0#PHP" />
-                <element signature="e#3568#3649#0#PHP" />
-                <element signature="e#4267#4326#0#PHP" />
-                <element signature="e#4331#4455#0#PHP" />
-                <element signature="e#4461#4553#0#PHP" />
-                <element signature="e#5321#5628#0#PHP" />
-                <element signature="e#5359#5493#0#PHP" />
-                <element signature="e#5392#5492#1#PHP" />
-                <element signature="e#5646#5951#0#PHP" />
-                <element signature="e#5683#5816#0#PHP" />
-                <element signature="e#5716#5815#1#PHP" />
-                <element signature="e#6011#6109#0#PHP" />
-                <element signature="e#6114#6652#0#PHP" />
-                <element signature="e#6195#6343#0#PHP" />
-                <element signature="e#6361#6599#0#PHP" />
-                <element signature="e#6658#6749#0#PHP" />
-                <element signature="e#6754#7954#0#PHP" />
-                <element signature="e#6820#7005#0#PHP" />
-                <element signature="e#7015#7276#0#PHP" />
-                <element signature="e#7286#7548#0#PHP" />
-                <element signature="e#7558#7834#0#PHP" />
-                <element signature="e#7960#8014#0#PHP" />
-                <element signature="e#8019#8626#0#PHP" />
-                <element signature="e#8381#8523#0#PHP" />
-                <element signature="e#8414#8522#1#PHP" />
-                <element signature="e#8632#8706#0#PHP" />
-                <element signature="e#8711#8897#0#PHP" />
-                <element signature="e#8903#8939#0#PHP" />
-                <element signature="e#8944#9002#0#PHP" />
-                <element signature="e#9008#9040#0#PHP" />
-                <element signature="e#9164#9196#0#PHP" />
-                <element signature="e#9314#9368#0#PHP" />
+                <element signature="e#7960#8139#0#PHP" />
+                <element signature="e#8149#8325#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -96,26 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/vestbanking.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Vestbank.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-160">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="276">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -144,8 +71,8 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CareerController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/dashboard/vestbanking/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FundingController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FundingController.php" />
       </list>
     </option>
   </component>
@@ -260,17 +187,6 @@
               <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Farmsponsor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Farmsponsor" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="pdf" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -325,13 +241,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12844000" />
+    <option name="totallyTimeSpent" value="13051000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="703" extended-state="6" />
+    <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25377643" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -485,71 +401,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FundingController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="871">
+          <caret line="355" lean-forward="true" selection-start-line="355" selection-end-line="355" />
           <folding>
-            <element signature="e#289#338#0#PHP" />
-            <element signature="e#343#419#0#PHP" />
-            <element signature="e#425#508#0#PHP" />
-            <element signature="e#513#608#0#PHP" />
-            <element signature="e#614#763#0#PHP" />
-            <element signature="e#768#1512#0#PHP" />
-            <element signature="e#830#1072#0#PHP" />
-            <element signature="e#1127#1305#0#PHP" />
-            <element signature="e#1518#1576#0#PHP" />
-            <element signature="e#1581#1803#0#PHP" />
-            <element signature="e#1809#1862#0#PHP" />
-            <element signature="e#1867#2519#0#PHP" />
-            <element signature="e#2118#2268#0#PHP" />
-            <element signature="e#2286#2512#0#PHP" />
-            <element signature="e#2310#2511#1#PHP" />
-            <element signature="e#2525#2558#0#PHP" />
-            <element signature="e#2563#2671#0#PHP" />
-            <element signature="e#2677#2826#0#PHP" />
-            <element signature="e#2897#2953#0#PHP" />
-            <element signature="e#3046#3139#0#PHP" />
-            <element signature="e#3153#3248#0#PHP" />
-            <element signature="e#3365#3457#0#PHP" />
-            <element signature="e#3471#3545#0#PHP" />
-            <element signature="e#3568#3649#0#PHP" />
-            <element signature="e#4267#4326#0#PHP" />
-            <element signature="e#4331#4455#0#PHP" />
-            <element signature="e#4461#4553#0#PHP" />
-            <element signature="e#5321#5628#0#PHP" />
-            <element signature="e#5359#5493#0#PHP" />
-            <element signature="e#5392#5492#1#PHP" />
-            <element signature="e#5646#5951#0#PHP" />
-            <element signature="e#5683#5816#0#PHP" />
-            <element signature="e#5716#5815#1#PHP" />
-            <element signature="e#6011#6109#0#PHP" />
-            <element signature="e#6114#6652#0#PHP" />
-            <element signature="e#6195#6343#0#PHP" />
-            <element signature="e#6361#6599#0#PHP" />
-            <element signature="e#6658#6749#0#PHP" />
-            <element signature="e#6754#7954#0#PHP" />
-            <element signature="e#6820#7005#0#PHP" />
-            <element signature="e#7015#7276#0#PHP" />
-            <element signature="e#7286#7548#0#PHP" />
-            <element signature="e#7558#7834#0#PHP" />
-            <element signature="e#7960#8014#0#PHP" />
-            <element signature="e#8019#8626#0#PHP" />
-            <element signature="e#8381#8523#0#PHP" />
-            <element signature="e#8414#8522#1#PHP" />
-            <element signature="e#8632#8706#0#PHP" />
-            <element signature="e#8711#8897#0#PHP" />
-            <element signature="e#8903#8939#0#PHP" />
-            <element signature="e#8944#9002#0#PHP" />
-            <element signature="e#9008#9040#0#PHP" />
-            <element signature="e#9164#9196#0#PHP" />
-            <element signature="e#9314#9368#0#PHP" />
+            <element signature="e#7960#8139#0#PHP" />
+            <element signature="e#8149#8325#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="276">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>

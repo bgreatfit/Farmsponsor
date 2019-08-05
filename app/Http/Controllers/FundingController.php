@@ -254,20 +254,32 @@ class FundingController extends Controller
         }
 
         if($this->canWithdrawFrom('capital', $request->amount)){
-            $this->processVestbankWithdrawalOf('capital', $request->amount);
-            request()->session()->flash('success', 'Transaction Successfull');
+            if($this->processVestbankWithdrawalOf('capital', $request->amount)) {
+                request()->session()->flash('success', 'Transaction Successful');
+                return redirect()->back();
+            }
+            request()->session()->flash('error', 'Transaction Not Successful!');
             return redirect()->back();
         }
 
         if($this->canWithdrawFrom('interest',$request->amount)){
-            $this->processVestbankWithdrawalOf('interest', $request->amount);
-            request()->session()->flash('success', 'Transaction Successfull');
+            if($this->processVestbankWithdrawalOf('interest', $request->amount)) {
+                request()->session()->flash('success', 'Transaction Successful');
+                return redirect()->back();
+            }
+
+            request()->session()->flash('error', 'Transaction Not Successful!');
             return redirect()->back();
         }
 
         if($this->canWithdrawFrom('balance',$request->amount)){
-            $this->processVestbankWithdrawalOfAmountFromCapitalAndInterest($request->amount);
-            request()->session()->flash('success', 'Transaction Successful');
+
+            if($this->processVestbankWithdrawalOfAmountFromCapitalAndInterest($request->amount)){
+                request()->session()->flash('success', 'Transaction Successful');
+                return redirect()->back();
+            };
+
+            request()->session()->flash('error', 'Transaction Not Successful!, Reduce Withdrawal Amount!');
             return redirect()->back();
         }
 
@@ -282,20 +294,29 @@ class FundingController extends Controller
     protected function processVestbankWithdrawalOfAmountFromCapitalAndInterest($amount)
     {
         $charges = $this->getWithdrawalCharges();
+        $initialBalance = Auth::user()->vestbank->balance;
+        $balanceAfterChargesAndAmountDeduction = $initialBalance - ($charges + $amount);
 
-        $capital = Auth::user()->vestbank->capital;
-        $interest = Auth::user()->vestbank->interest;
+        if($balanceAfterChargesAndAmountDeduction >= 0){
+            if($this->processChargesWithdrawal($charges)){
 
-        $remainingAmount = $amount - $capital;
-        $remainingBalance = $interest - $remainingAmount;
+                $capital = Auth::user()->fresh()->vestbank->capital;
+                $interest = Auth::user()->fresh()->vestbank->interest;
 
-        Auth::user()->vestbank()->update([
-            'capital' => 0,
-            'interest' => $remainingBalance,
-            'lock' => 1
-        ]);
+                $remainingAmount = $amount - $capital;
+                $remainingBalance = $interest - $remainingAmount;
 
-        return $this->logTransaction($this->logWithdrawalRequest($amount, 'mixed', $charges));
+                Auth::user()->vestbank()->update([
+                    'capital' => 0,
+                    'interest' => $remainingBalance,
+                    'lock' => 1
+                ]);
+
+                return $this->logTransaction($this->logWithdrawalRequest($amount, 'mixed', $charges));
+            }
+        }
+
+        return false;
     }
 
     /**
