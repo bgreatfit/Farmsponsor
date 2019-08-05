@@ -11117,7 +11117,7 @@ a.text-dark:focus {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  max-width: 46.4rem;
+  max-width: 50.4rem;
   margin: auto;
 }
 
@@ -11164,10 +11164,11 @@ a.text-dark:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  text-transform: capitalize;
 }
 
 .section-form .form-box .form-group__content .form__input--label span.label-span {
-  display: inline-flex;
+  display: inline-block;
   width: 2rem;
   height: 2rem;
   border-radius: 1rem;
@@ -11246,21 +11247,27 @@ a.text-dark:focus {
   padding: 0 0.5rem;
 }
 
+.section-form .sectionWrap .form__input--label span.required {
+  color: #e3342f;
+  margin-left: 0.3rem;
+}
+
 .section-form .sectionWrap .form-box .register .form__input--labelRegister {
-  width: 100%;
-  height: 3rem;
-  display: flex;
+  width: 95%;
+  display: inline-block;
+  position: relative;
+  margin-left: 5%;
 }
 
 .section-form .sectionWrap .form-box .register .form__input--labelRegister span.label-spanRegister {
   display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 0.4rem;
   font-size: 1.2rem;
-  background-color: #ffffff;
-  border: 1px solid #a19292;
+  background-color: #C4C4C4;
   transition: all 0.2s;
+  vertical-align: middle;
 }
 
 .section-form .sectionWrap .form-box .register .form__input--labelRegister span.label-spanRegister .label-span__icon {
@@ -11273,14 +11280,14 @@ a.text-dark:focus {
 }
 
 .section-form .sectionWrap .form-box .register .form__input--labelRegister .label-textRegister {
-  margin: 0.5rem 0 0 0.5rem;
-  font-size: 1.4rem;
+  margin: 0 0 0 0.5rem;
+  font-size: 1.2rem;
   color: #011633;
+  font-family: Montserrat;
 }
 
 .section-form .sectionWrap .form-box .register #form__input--checkbox:checked + .form__input--labelRegister span.label-spanRegister {
   background-color: #55c57a;
-  border: 1px solid #7b6e6e;
 }
 
 .section-form .sectionWrap .form-box .register #form__input--checkbox:checked + .form__input--labelRegister > span.label-spanRegister > .label-span__icon {
@@ -11288,6 +11295,12 @@ a.text-dark:focus {
   display: inline-block;
   visibility: visible;
   opacity: 1;
+}
+
+.section-form .sectionWrap .form-box .register .loginText {
+  display: inline-block;
+  width: 95%;
+  margin-left: 5%;
 }
 
 .reset-card {
@@ -11366,6 +11379,12 @@ a.text-dark:focus {
 
   .form-group-content .form__text .form__input--link {
     margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .section-form .sectionWrap .register .loginText {
+    padding-left: 23px;
   }
 }
 

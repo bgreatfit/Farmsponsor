@@ -27,7 +27,6 @@
 
                 <div class="form-group">
                     <div class="form-group__content">
-                        {{-- <label for="form__input--password" class="form__input--label">Password</label> --}}
                         <input required type="password" class="form__input form-control {{ $errors->has('password') ? ' is-invalid' : '' }} mx-auto px-3" id="form__input--password" name="password" placeholder="Password">
                         @if ($errors->has('password'))
                             <span class="invalid-feedback" role="alert">
@@ -36,19 +35,6 @@
                         @endif
                     </div>
                 </div>
-
-                {{-- <div class="form-group mb-4">
-                    <div class="form-group__content rememberMeForm-group">
-                        <input type="checkbox" class="form__input--checkbox" id="form__input--checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
-                        <label for="form__input--checkbox" class="form__input--label ">
-                            <!-- custom checkbox style -->
-                            <span class="label-span">
-                                <i class="label-span__icon fas fa-check"></i>
-                            </span>
-                            <p class="label-text">Remember me</p>
-                        </label>
-                    </div>
-                </div> --}}
 
                 @if (Route::has('password.request'))
                 <div class="form-row form-btnbox">
@@ -59,14 +45,11 @@
                         <div class="form-group-content">
                             <p class="form__text">No account? <a href="{{ route('register') }}" class="form__input--link">Create account</a> </p>
                         </div>
-                        {{-- <a href="{{ route('password.request') }}" class="form__input--link">Forgot your password?</a> --}}
                     </div>
                     </div>
                 </div>
                 @endif
-
                 </form>
-
             </div>
         </div>
     </div>
