@@ -254,16 +254,17 @@ class FundingController extends Controller
         }
 
         if($this->canWithdrawFrom('capital', $request->amount)){
-            if($this->processVestbankWithdrawalOf('capital', $request->amount)) {
+            if($this->processVestbankWithdrawalOfAmount('capital', $request->amount)) {
                 request()->session()->flash('success', 'Transaction Successful');
                 return redirect()->back();
             }
+
             request()->session()->flash('error', 'Transaction Not Successful!');
             return redirect()->back();
         }
 
         if($this->canWithdrawFrom('interest',$request->amount)){
-            if($this->processVestbankWithdrawalOf('interest', $request->amount)) {
+            if($this->processVestbankWithdrawalOfAmount('interest', $request->amount)) {
                 request()->session()->flash('success', 'Transaction Successful');
                 return redirect()->back();
             }
@@ -285,6 +286,54 @@ class FundingController extends Controller
 
         request()->session()->flash('error', 'You do not have enough funds');
         return redirect()->back();
+    }
+
+    /**
+     * @param String $field
+     * @param null $amount
+     * @return bool|mixed
+     */
+    protected function processVestbankWithdrawalOfAmount(String $field, $amount)
+    {
+        $charges = $this->getWithdrawalCharges();
+        $initialBalance = Auth::user()->fresh()->vestbank->$field;
+
+        if($this->processChargesWithdrawal($charges)){
+
+            switch ($field){
+
+                case 'interest':
+                    if($this->canWithdrawFrom('interest', $amount)){
+                        Auth::user()->fresh()->vestbank()->decrement('interest', $amount);
+
+                        return $this->logTransaction($this->logWithdrawalRequest($amount, $field, $charges));
+                        break;
+                    }
+                  //if it cannot charge the amount after processing the charges, the charges is returned to the interest
+                    Auth::user()->fresh()->vestbank()->increment('interest', $charges);
+
+                    return false;
+                    break;
+
+                case 'capital':
+
+                    if($this->canWithdrawFrom('capital', $amount)){
+                        Auth::user()->fresh()->vestbank()->decrement('capital', $amount);
+
+                        return $this->logTransaction($this->logWithdrawalRequest($amount, $field, $charges));
+                        break;
+                    }
+                    //if it cannot charge the amount after processing the charges, the charges is returned to the interest
+                    Auth::user()->fresh()->vestbank()->increment('interest', $charges);
+                    
+                    return false;
+                    break;
+
+            }
+
+        }
+
+        return false;
     }
 
     /**

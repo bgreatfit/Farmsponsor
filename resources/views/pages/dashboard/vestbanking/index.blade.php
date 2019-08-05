@@ -76,11 +76,11 @@
                                             <input type="radio" name="option" value="all" id="vestbank-withdraw__all" class="vestbank-withdraw__form--input"> All
                                         </label>
                                     </div>
-{{--                                    <div class="form-check form-check-inline">--}}
-{{--                                        <label for="vestbank-withdraw__other" class="radio-inline">--}}
-{{--                                            <input type="radio" name="option" value="other" id="vestbank-withdraw__other" class="vestbank-withdraw__form--input"> Other--}}
-{{--                                        </label>--}}
-{{--                                    </div>--}}
+                                    <div class="form-check form-check-inline">
+                                        <label for="vestbank-withdraw__other" class="radio-inline">
+                                            <input type="radio" name="option" value="other" id="vestbank-withdraw__other" class="vestbank-withdraw__form--input"> Other
+                                        </label>
+                                    </div>
                                     <div class="form-group mt-3 others-hide hide-content">
                                         <input type="number" name="amount" id="vestbank-withdraw__amount"
                                         class="form-control {{ $errors->has('withdrawAmount') ? ' is-invalid' : '' }}">
