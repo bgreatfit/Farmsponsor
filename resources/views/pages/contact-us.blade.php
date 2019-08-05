@@ -18,6 +18,11 @@
                                         <form action="{{route('contact.store')}}" method="POST" class="contact-form">
                                             @csrf
                                             <div class="row">
+                                                @if(session('success'))
+                                                <div class="col-12 alert-success py-2 pt-4 mb-3 text-center">
+                                                    <h3>{{session('success')}}</h3>
+                                                </div>
+                                                @endif
                                                 <div class="col-md-6 col-12">
                                                     <div class="form-group">
                                                         <label for="contact-first-name__input" class="contact-first-name__label">
