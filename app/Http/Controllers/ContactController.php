@@ -4,9 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Str;
 
 class ContactController extends Controller
 {
+
+    protected $contact;
+
+    public function __construct(Contact $contact)
+    {
+        $this->contact = $contact;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -23,17 +32,19 @@ class ContactController extends Controller
             'name' => 'required | string',
             'email' => 'required | email',
             'subject' => 'required',
-            'message' => 'required | min:10'
+            'message' => 'required'
         ];
 
         $this->validate($request, $rules);
 
-        Contact::create([
+        $supportId = $this->generateSupportId();
+
+        $this->contact->create([
             'name' => $request->name,
             'email' => $request->email,
             'subject' => $request->subject,
             'message' => $request->message,
-            'support_id' => $this->generateSupportId()
+            'support_id' => $supportId
         ]);
 
         session()->flash('success', 'Message submitted successfully, you will be contacted soon');
@@ -41,6 +52,14 @@ class ContactController extends Controller
         return redirect()->back();
     }
 
+    public function generateSupportId()
+    {
+        do{
+            $supportId = rand(10000000,99999999) . Str::random(2);
+        }while(Contact::whereSupportId($supportId)->first() != NULL);
+
+        return $supportId;
+    }
     /**
      * Display the specified resource.
      *
@@ -83,17 +102,9 @@ class ContactController extends Controller
      */
     public function destroy(Contact $contact)
     {
-        //
+       //
     }
 
-    public function generateSupportId()
-    {
-        do{
-            $supportId = rand(10000000,99999999) . Str::random(2);
-        }while(Contact::whereSupportId($supportId) != NULL);
-
-        return $supportId;
-    }
 
 
 }
