@@ -29,4 +29,14 @@ class Contact extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function isResolved()
+    {
+        return $this->resolved === 1? true : false;
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'support_id';
+    }
 }

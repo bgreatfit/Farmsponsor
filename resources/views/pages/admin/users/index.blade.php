@@ -11,6 +11,7 @@
                             <div class="col-12">
                                 @include('includes.usersSearch')
                             </div>
+                        </div>
                     </div>
 
                     <div class="deposit-request__table">

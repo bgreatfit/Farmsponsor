@@ -46,6 +46,9 @@ Route::group(['prefix'  =>  'admin', 'middleware' => ['auth', 'admin']], functio
     Route::get('retain-sponsorship', 'PagesController@retainSponsorship')->name('retainSponsorship');
     Route::get('users', 'Admin\UsersController@index')->name('admin.users');
     Route::get('users/searchname', 'Admin\UsersController@searchByName')->name('users.searchname');
-
+    Route::get('contacts', 'Admin\ContactController@index')->name('admin.contact');
+    Route::get('contacts/{contact}', 'Admin\ContactController@show')->name('admin.contact.show');
+    Route::get('contacts/{contact}/resolve', 'Admin\ContactController@resolve')->name('admin.contact.resolve');
+    Route::get('contacts/{contact}/unresolve', 'Admin\ContactController@unresolve')->name('admin.contact.unresolve');
 
 });

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SupportMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Mail;
 use Str;
 
 class ContactController extends Controller
@@ -37,15 +39,17 @@ class ContactController extends Controller
 
         $this->validate($request, $rules);
 
-        $supportId = $this->generateSupportId();
-
-        $this->contact->create([
+        $contact = $this->contact->create([
             'name' => $request->name,
             'email' => $request->email,
             'subject' => $request->subject,
             'message' => $request->message,
-            'support_id' => $supportId
+            'support_id' => $this->generateSupportId()
         ]);
+
+
+        Mail::to($contact->email)->send(new SupportMail($contact->name));
+        Mail::to(env('ADMIN_MAIL'))->send(new SupportMail($contact->name));
 
         session()->flash('success', 'Message submitted successfully, you will be contacted soon');
 
