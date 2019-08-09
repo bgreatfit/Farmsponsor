@@ -1,0 +1,35 @@
+.transaction-card-wrap{
+    display: inline-block;
+    width: 300px;
+    padding: 2rem;
+    background: rgba(30, 100, 30, 0.6);
+    border-radius: 10px;
+    .transaction-card__content{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        .transaction-card__img{
+            width: 6.4rem;
+        }
+        .transaction-card__stat{
+            margin-left: auto;
+            font-family: $font-family-main;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            color: #FFFFFF;
+        }
+        
+    }
+    .transaction-card__content p.transaction-card__text{
+        width: 100%;
+        font-family: $font-family-main;
+        text-align: right;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-white;
+        margin-top: 1.6rem;
+        text-transform: capitalize;
+    }
+}

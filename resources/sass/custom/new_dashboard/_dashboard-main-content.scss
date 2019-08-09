@@ -1,8 +1,23 @@
 .dashboard-wrapper{
     background: linear-gradient(270.1deg, #279B37 64.61%, rgba(0, 227, 31, 0.7) 99.94%);
     height: 100vh;
+    overflow: auto;
 }
 
 .dashboard-main-content{
-    padding-top: 57px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+@media screen and (min-width:800px) {
+    .dashboard-wrapper .dashboard-main-content{
+        margin-left: 280px;
+    }
+}
+
+@media screen and(max-width:800px){
+    .dashboard-wrapper .dashboard-main-content{
+        margin-left: 80px;
+    }
 }

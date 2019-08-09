@@ -3,7 +3,7 @@
    width: 100%;
    justify-content: space-between;
    align-items: center;
-   padding: 1rem 5rem;
+   padding: 1rem 2rem 1rem 5rem;
    background-color: #E5E5E5;
    position: absolute;
    z-index: 60;
@@ -13,15 +13,22 @@
        text-decoration: none;
        color: $color-black;
    }
+   &__brand {
+       &--logo{
+        font-family: $font-family-main;
+        font-weight: bold;
+       }
+   }
 
    &__account{
        display: flex;
        align-items: center;
     &--avatar {
+        display: none;
         width: 3.6rem;
-        margin-left: 1rem;
     }
     .dropdown {
+        margin-right: 1rem;
         .dashboard-header__user {
             font-size: 1.4rem;
         }
@@ -34,3 +41,22 @@
   
 }
 
+@media screen and (min-width:800px) {
+.dashboard-wrapper{
+    .dashboard-header {
+        padding: 1rem 5rem;
+        
+        .dashboard-header__brand .dashboard-header--logo{
+            font-size: 18px;
+        }
+
+        #nav-menu-button {
+            display: none;
+        }
+        .dashboard-header__account .dashboard-header__account--avatar{
+            display: inline-block;
+        }
+    }
+  }
+
+}

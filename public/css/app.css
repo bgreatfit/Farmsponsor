@@ -14863,12 +14863,104 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
   font-size: 1.3rem;
 }
 
+.dashboard-home-wrap {
+  padding: 2rem 2rem 2rem 0;
+}
+
+main.dashboard-home__details {
+  margin-bottom: 5rem;
+}
+
+main.dashboard-home__details .dashboard-home__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+aside.dashboard-home__utilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside.dashboard-home__utilities .payday-counter {
+  margin-bottom: 3rem;
+}
+
+.transaction-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.transaction-card:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .dashboard-home-wrap .dashboard-home__details .dashboard-home__content {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
+
+  .dashboard-home-wrap .dashboard-home__details .dashboard-home__content .transaction-card {
+    flex-basis: 300px;
+  }
+
+  .dashboard-home-wrap .dashboard-home__details .dashboard-home__content .transaction-card:nth-of-type(odd) {
+    margin-right: 4rem;
+  }
+
+  .dashboard-home-wrap aside.dashboard-home__utilities {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 3rem;
+  }
+
+  .dashboard-home-wrap aside.dashboard-home__utilities .payday-counter {
+    margin-bottom: 0;
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .dashboard-home-wrap {
+    display: flex;
+  }
+
+  .dashboard-home-wrap .dashboard-home__details .dashboard-home__content {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  .dashboard-home-wrap .dashboard-home__details .dashboard-home__content .transaction-card {
+    flex-basis: 300px;
+  }
+
+  .dashboard-home-wrap .dashboard-home__details .dashboard-home__content .transaction-card:nth-of-type(odd) {
+    margin-right: 4rem;
+  }
+
+  .dashboard-home-wrap aside.dashboard-home__utilities {
+    flex-direction: column;
+    margin-right: 2rem;
+    padding-left: 0;
+  }
+
+  .dashboard-home-wrap aside.dashboard-home__utilities .payday-counter {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+
 .dashboard-header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem 1rem 5rem;
   background-color: #E5E5E5;
   position: absolute;
   z-index: 60;
@@ -14880,14 +14972,23 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
   color: #000000;
 }
 
+.dashboard-header__brand--logo {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
 .dashboard-header__account {
   display: flex;
   align-items: center;
 }
 
 .dashboard-header__account--avatar {
+  display: none;
   width: 3.6rem;
-  margin-left: 1rem;
+}
+
+.dashboard-header__account .dropdown {
+  margin-right: 1rem;
 }
 
 .dashboard-header__account .dropdown .dashboard-header__user {
@@ -14898,12 +14999,30 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
   font-size: 14px;
 }
 
+@media screen and (min-width: 800px) {
+  .dashboard-wrapper .dashboard-header {
+    padding: 1rem 5rem;
+  }
+
+  .dashboard-wrapper .dashboard-header .dashboard-header__brand .dashboard-header--logo {
+    font-size: 18px;
+  }
+
+  .dashboard-wrapper .dashboard-header #nav-menu-button {
+    display: none;
+  }
+
+  .dashboard-wrapper .dashboard-header .dashboard-header__account .dashboard-header__account--avatar {
+    display: inline-block;
+  }
+}
+
 .dashboard-side-bar {
   height: 100%;
   width: 100%;
   background-color: #184303;
-  position: absolute;
-  padding-top: 8rem;
+  position: fixed;
+  padding-top: 11rem;
   z-index: 50;
 }
 
@@ -14912,7 +15031,8 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
 }
 
 .dashboard-side-bar__nav li {
-  padding: 1.2rem 0;
+  padding: 1.5rem 0;
+  border-left: 5px solid transparent;
 }
 
 .dashboard-side-bar__nav li.active {
@@ -14937,7 +15057,7 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
   margin-right: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .dashboard-side-bar {
     max-width: 250px;
   }
@@ -14945,19 +15065,15 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
   .dashboard-side-bar__nav .nav-link {
     padding: 0 2rem;
   }
-
-  .dashboard-main-content {
-    margin-left: 25rem;
-  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .dashboard-side-bar {
     max-width: 50px;
   }
 
   .dashboard-side-bar__nav .nav-link {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .dashboard-side-bar__nav .nav-link__text {
@@ -14965,12 +15081,300 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .dashboard-side-bar {
+    max-width: 100%;
+  }
+
+  .dashboard-side-bar__nav .nav-link {
+    padding: 0 5rem;
+  }
+
+  .dashboard-side-bar__nav .nav-link__text {
+    display: inline-block;
+  }
+}
+
 .dashboard-wrapper {
   background: linear-gradient(270.1deg, #279B37 64.61%, rgba(0, 227, 31, 0.7) 99.94%);
   height: 100vh;
+  overflow: auto;
 }
 
 .dashboard-main-content {
-  padding-top: 57px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .dashboard-wrapper .dashboard-main-content {
+    margin-left: 280px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard-wrapper .dashboard-main-content {
+    margin-left: 80px;
+  }
+}
+
+.nav-menu-toggle {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #000000;
+  text-align: center;
+  position: relative;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.nav-menu-toggle__icon {
+  width: 19px;
+  height: 3px;
+  background-color: #000000;
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  right: 3.3px;
+}
+
+.nav-menu-toggle__icon::before,
+.nav-menu-toggle__icon::after {
+  content: " ";
+  display: inline-block;
+  height: 3px;
+  background-color: #000000;
+  width: 19px;
+}
+
+.nav-menu-toggle__icon::before {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+}
+
+.nav-menu-toggle__icon::after {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+}
+
+.dashboard-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #0E2503;
+  z-index: 70;
+  padding: 0.5rem 5rem;
+}
+
+.dashboard-footer__content {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.dashboard-footer__content a.footer__links {
+  width: 3rem;
+  display: inline-block;
+}
+
+.transaction-card-wrap {
+  display: inline-block;
+  width: 300px;
+  padding: 2rem;
+  background: rgba(30, 100, 30, 0.6);
+  border-radius: 10px;
+}
+
+.transaction-card-wrap .transaction-card__content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.transaction-card-wrap .transaction-card__content .transaction-card__img {
+  width: 6.4rem;
+}
+
+.transaction-card-wrap .transaction-card__content .transaction-card__stat {
+  margin-left: auto;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+
+.transaction-card-wrap .transaction-card__content p.transaction-card__text {
+  width: 100%;
+  font-family: Montserrat;
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-top: 1.6rem;
+  text-transform: capitalize;
+}
+
+.payday-counter-wrap {
+  width: 310px;
+  background-color: rgba(30, 100, 30, 0.7);
+  border-radius: 10px;
+  padding: 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 34rem;
+  justify-content: center;
+}
+
+.payday-counter-wrap .payday-counter__title {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.payday-counter-wrap .payday-counter__day-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.payday-counter-wrap .payday-counter__day-wrap + p.payday-counter__title {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  text-align: right;
+  font-family: Montserrat;
+}
+
+.payday-counter-wrap .payday-counter__day-wrap span {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #ffffff;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.payday-counter-wrap .payday-counter__loader {
+  width: 13rem;
+  height: 13rem;
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #279B37;
+  position: relative;
+}
+
+.payday-counter-wrap .payday-counter__loader--text {
+  display: inline-block;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin: auto;
+}
+
+.nice-date-picker-warpper {
+  width: 310px;
+  background: rgba(30, 100, 30, 0.7);
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nice-date-picker-header {
+  width: 100%;
+  height: 40px;
+  font-size: 0;
+  position: relative;
+}
+
+.nice-date-picker-header span,
+.nice-date-picker-header a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+}
+
+.nice-date-picker-header .prev-date-btn,
+.next-date-btn {
+  font-size: 18px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nice-date-picker-header .prev-date-btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.nice-date-picker-header .next-date-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.nice-date-title {
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.nice-date-picker-body {
+  width: 100%;
+}
+
+.nice-date-picker-body tr {
+  width: 100%;
+  height: 40px;
+}
+
+.nice-date-picker-body tr th {
+  width: 46px;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.nice-date-picker-body tr td {
+  width: 46px;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+
+.nice-date-picker-body tr .nice-gray {
+  opacity: 0.3;
+}
+
+.nice-date-picker-body tr .nice-normal {
+  cursor: pointer;
+}
+
+.nice-date-picker-body tr .nice-current {
+  background: rgba(14, 37, 3, 0.5);
+  border-radius: 55px;
+}
+
+.nice-date-picker-body tr .nice-active {
+  background: rgba(14, 37, 3, 0.1);
+  border-radius: 55px;
 }
 

@@ -1,0 +1,98 @@
+.dashboard-home-wrap {
+    padding: 2rem 2rem 2rem 0;
+}
+main.dashboard-home__details{
+    margin-bottom: 5rem;
+    .dashboard-home__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+aside.dashboard-home__utilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .payday-counter{
+        margin-bottom: 3rem;
+    }
+}
+
+.transaction-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.transaction-card:last-of-type {
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1300px) {
+.dashboard-home-wrap{
+    .dashboard-home__details{ 
+        .dashboard-home__content{
+            justify-content: flex-start;
+            padding-left: 3rem;
+
+            .transaction-card {
+                flex-basis: 300px;
+            }
+            .transaction-card:nth-of-type(odd){
+                margin-right: 4rem;
+            }
+            // .transaction-card:last-of-type{
+            //     margin-right: 0;
+            //     flex-basis: 100%;
+            //     justify-content: flex-start;
+            // }
+        }
+    }
+
+    aside.dashboard-home__utilities {
+       flex-direction: row;
+       justify-content: flex-start;
+       align-items: flex-start;
+       padding-left: 3rem;
+    
+        .payday-counter{
+            margin-bottom: 0;
+            margin-right: 4rem;
+        }
+    }
+}
+}
+
+@media screen and (min-width:1300px) {
+    .dashboard-home-wrap{
+        display: flex;
+        .dashboard-home__details{
+            .dashboard-home__content{
+                justify-content: flex-start;
+                padding-left: 0;
+
+                .transaction-card {
+                    flex-basis: 300px;
+                }
+                
+                .transaction-card:nth-of-type(odd){
+                    margin-right: 4rem;
+                }
+            }
+        }
+        aside.dashboard-home__utilities {
+            flex-direction: column;
+            margin-right: 2rem;
+            padding-left: 0;
+
+            .payday-counter{
+                margin-right: 0;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

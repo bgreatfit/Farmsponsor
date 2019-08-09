@@ -92,7 +92,7 @@
                             <div class="about-mission">
                                 <h1 class="about-heading">Mission</h1>
                                 <p class="about-text">
-                                    Our mission is to use technology to drive the participation of everyone in agriculture.
+                                    Our mission is to drive the participation of everyone in agriculture using technology.
                                 </p>
                             </div>
                         </div>

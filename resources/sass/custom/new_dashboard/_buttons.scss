@@ -1,0 +1,38 @@
+.nav-menu-toggle {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: 1px solid $color-black;
+    text-align: center;
+    position: relative;
+    border-radius: 1px;
+    cursor: pointer;
+
+    &__icon {
+        width: 19px;
+        height: 3px;
+        background-color: $color-black;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        right: 3.3px;
+    }
+    &__icon::before,
+    &__icon::after {
+        content: " ";
+        display: inline-block;
+        height: 3px;
+        background-color: $color-black;
+        width: 19px;
+    }
+    &__icon::before{
+        position: absolute;
+        top: 6px;
+        right: 0px;
+    }
+    &__icon::after {
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+    }
+}

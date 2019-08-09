@@ -1,0 +1,71 @@
+// variables
+$borderGray: rgba(255, 255, 255, 0.5);
+$loaderGreen:  #279B37;
+$counterBgGreen:  rgba(30, 100, 30, 0.7);
+
+.payday-counter-wrap {
+    width: 310px;
+    background-color:  $counterBgGreen;
+    border-radius: 10px;
+    padding: 2rem 2.2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 34rem;
+    justify-content: center;
+
+
+    .payday-counter{
+        &__title {
+            text-transform: uppercase;
+            color: $color-white;
+            font-size: 1.6rem;
+            font-weight: 600;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &__day-wrap{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        &__day-wrap + p.payday-counter__title {
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            text-align: right;
+            font-family: $font-family-main;
+
+        }
+            
+        &__day-wrap span{
+            border-radius: 10px;
+            display: inline-block;
+            padding: .5rem 2rem;
+            font-size: 3.6rem;
+            font-weight: 500;
+            color: $color-white;
+            border: .5px solid $borderGray;
+        }
+
+        &__loader {
+            width: 13rem;
+            height: 13rem;
+            display: flex;
+            margin: auto;
+            border-radius: 50%;
+            background-color: $loaderGreen;
+            position: relative;
+
+            &--text {
+                display: inline-block;
+                font-family: $font-family-main;
+                color: $color-white;
+                font-weight: 600;
+                font-size: 2.4rem;
+                margin: auto
+            }
+        }
+    }
+}
