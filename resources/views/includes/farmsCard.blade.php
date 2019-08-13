@@ -24,7 +24,7 @@
                     @elseif($farm->start_date->lt(now()))
                     Open
                     @else
-                        Soon
+                    Soon
                     @endif
                 </p>
             </div>
@@ -64,7 +64,7 @@
                 @if($farm->due_date->lt(now()))
                     <a href="#" class="farmlist__sponsor-btn"> Closed  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
 
-                @elseif($farm->hasExhaustedUnit())
+                @elseif($farm->isSoldOut())
                     <a href="#" class="farmlist__sponsor-btn"> Sold Out  <img src="{{asset('img/greater-than.svg')}}" alt="greater than sign" class="sponsor-btn--icon ml-3"> </a>
 
                 @elseif($farm->start_date->lt(now()))
