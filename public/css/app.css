@@ -14864,7 +14864,7 @@ ul.nav.nav-tabs .nav-link.active.sponsor-now-tab {
 }
 
 .dashboard-home-wrap {
-  padding: 2rem 2rem 2rem 0;
+  padding: 2rem;
 }
 
 main.dashboard-home__details {
@@ -14928,6 +14928,11 @@ aside.dashboard-home__utilities .payday-counter {
 @media screen and (min-width: 1300px) {
   .dashboard-home-wrap {
     display: flex;
+    justify-content: space-around;
+  }
+
+  .dashboard-home-wrap .dashboard-home__details {
+    flex-basis: 696px;
   }
 
   .dashboard-home-wrap .dashboard-home__details .dashboard-home__content {
@@ -14945,13 +14950,63 @@ aside.dashboard-home__utilities .payday-counter {
 
   .dashboard-home-wrap aside.dashboard-home__utilities {
     flex-direction: column;
-    margin-right: 2rem;
     padding-left: 0;
   }
 
   .dashboard-home-wrap aside.dashboard-home__utilities .payday-counter {
     margin-right: 0;
     margin-bottom: 3rem;
+  }
+}
+
+.dashboard-vestbanking-wrap {
+  padding-top: 100px;
+}
+
+.dashboard-vestbanking-wrap .dashboard-vestbank__panel {
+  padding: 2rem 2rem;
+  position: absolute;
+  right: 0;
+  top: 57px;
+  width: 100%;
+  background: #279B37;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 40;
+}
+
+.dashboard-vestbanking-wrap .dashboard-vestbank__panel p,
+.dashboard-vestbanking-wrap .dashboard-vestbank__panel h3 {
+  margin: 0;
+}
+
+.dashboard-vestbanking-wrap .dashboard-vestbank__panel .vestbank-panel__content span {
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #EFEFEF;
+  margin-right: 5px;
+}
+
+.dashboard-vestbanking-wrap .dashboard-vestbank__panel .test .test-content.welcome .vestbank-panel__content {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-vestbanking-wrap .dashboard-vestbank__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard-vestbanking-wrap .dashboard-vestbank__content .vestbank-card-wrap {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard-vestbanking-wrap .dashboard-vestbank__panel {
+    top: 46.2px;
   }
 }
 
@@ -15104,17 +15159,18 @@ aside.dashboard-home__utilities .payday-counter {
 .dashboard-main-content {
   padding-top: 80px;
   padding-bottom: 50px;
+  position: relative;
 }
 
 @media screen and (min-width: 800px) {
   .dashboard-wrapper .dashboard-main-content {
-    margin-left: 280px;
+    margin-left: 250px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .dashboard-wrapper .dashboard-main-content {
-    margin-left: 80px;
+    margin-left: 50px;
   }
 }
 
@@ -15163,6 +15219,7 @@ aside.dashboard-home__utilities .payday-counter {
 .dashboard-footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   background: #0E2503;
   z-index: 70;
@@ -15217,6 +15274,73 @@ aside.dashboard-home__utilities .payday-counter {
   color: #ffffff;
   margin-top: 1.6rem;
   text-transform: capitalize;
+}
+
+.vestbank-card-wrap {
+  padding: 3.7rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 273px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: Montserrat;
+}
+
+.vestbank-card-wrap .vestbank-card__text.text-row-one {
+  margin-bottom: 0;
+}
+
+.vestbank-card-wrap .vestbank-card__image-box {
+  width: 85px;
+  margin-bottom: 2.5rem;
+}
+
+.vestbank-card-wrap .vestbank-card__text {
+  text-align: center;
+  margin-bottom: 6.5rem;
+  color: #279B37;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.vestbank-card-wrap .vestbank-card__btn {
+  display: flex;
+  text-decoration: none;
+  font-family: Montserrat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  border-top: 0.5px solid #E5E5E5;
+}
+
+.vestbank-card-wrap .vestbank-card__btn--text {
+  padding: 1rem 2rem;
+  color: #279B37;
+  background: #ffffff;
+  border-top-left-radius: 43px;
+  border-bottom-left-radius: 43px;
+  font-family: Montserrat;
+  white-space: nowrap;
+}
+
+.vestbank-card-wrap .vestbank-card__btn--icon {
+  background-color: #25E899;
+  padding: 1rem 1.5rem;
+  border-top-right-radius: 43px;
+  border-bottom-right-radius: 43px;
+}
+
+.vestbank-card-wrap .vestbank-card__btn--icon .btn-icon {
+  width: 13px;
+}
+
+.vestbank-card-wrap .vestbank-card__btn:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 .payday-counter-wrap {

@@ -7,17 +7,18 @@
 .dashboard-main-content{
     padding-top: 80px;
     padding-bottom: 50px;
+    position: relative;
 
 }
 
 @media screen and (min-width:800px) {
     .dashboard-wrapper .dashboard-main-content{
-        margin-left: 280px;
+        margin-left: 250px;
     }
 }
 
 @media screen and(max-width:800px){
     .dashboard-wrapper .dashboard-main-content{
-        margin-left: 80px;
+        margin-left: 50px;
     }
 }

@@ -1,5 +1,5 @@
 .dashboard-home-wrap {
-    padding: 2rem 2rem 2rem 0;
+    padding: 2rem;
 }
 main.dashboard-home__details{
     margin-bottom: 5rem;
@@ -45,11 +45,6 @@ aside.dashboard-home__utilities {
             .transaction-card:nth-of-type(odd){
                 margin-right: 4rem;
             }
-            // .transaction-card:last-of-type{
-            //     margin-right: 0;
-            //     flex-basis: 100%;
-            //     justify-content: flex-start;
-            // }
         }
     }
 
@@ -70,7 +65,9 @@ aside.dashboard-home__utilities {
 @media screen and (min-width:1300px) {
     .dashboard-home-wrap{
         display: flex;
+        justify-content: space-around;
         .dashboard-home__details{
+            flex-basis: 696px;
             .dashboard-home__content{
                 justify-content: flex-start;
                 padding-left: 0;
@@ -78,7 +75,7 @@ aside.dashboard-home__utilities {
                 .transaction-card {
                     flex-basis: 300px;
                 }
-                
+
                 .transaction-card:nth-of-type(odd){
                     margin-right: 4rem;
                 }
@@ -86,7 +83,6 @@ aside.dashboard-home__utilities {
         }
         aside.dashboard-home__utilities {
             flex-direction: column;
-            margin-right: 2rem;
             padding-left: 0;
 
             .payday-counter{

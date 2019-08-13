@@ -134,8 +134,11 @@ class PagesController extends Controller {
     }
 
     // dashboard views
-    public function dashboardTemplate() {
-        return view('dashboard.template');
+    public function dashboardIndex() {
+        return view('dashboard.index');
+    }
+    public function dashboardVestbanking() {
+        return view('dashboard.dashboard-vestbanking');
     }
  
 }

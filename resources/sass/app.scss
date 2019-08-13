@@ -67,12 +67,14 @@
 
 //  dashboard new
 @import 'custom/new_dashboard/index';
+@import 'custom/new_dashboard/dashboard-vestbanking';
 @import 'custom/new_dashboard/header';
 @import 'custom/new_dashboard/side-bar';
 @import 'custom/new_dashboard/dashboard-main-content';
 @import 'custom/new_dashboard/buttons';
 @import 'custom/new_dashboard/footer';
 @import 'custom/new_dashboard/cards/transaction';
+@import 'custom/new_dashboard/cards/vestbank-card';
 @import 'custom/new_dashboard/utilities/payday-counter';
 @import 'custom/new_dashboard/utilities/calendar';
 

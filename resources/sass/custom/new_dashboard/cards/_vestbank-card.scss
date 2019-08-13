@@ -1,0 +1,67 @@
+// Variables
+$lightGreen:  #25E899;
+
+.vestbank-card-wrap{
+    padding: 3.7rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 273px;
+    background-color: $color-white;
+    border-radius: 10px;
+    font-family: $font-family-main;
+    
+    .vestbank-card__text.text-row-one {
+        margin-bottom: 0;
+    }
+    .vestbank-card{
+        &__image-box{
+            width: 85px;
+            margin-bottom: 2.5rem;
+        }
+        &__text {
+            text-align: center;
+            margin-bottom: 6.5rem;
+            color: #279B37;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+        }
+        
+        &__btn {
+            display: flex;
+            text-decoration: none;
+            font-family: $font-family-main;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 50px;
+            transition: all .3s ease-in-out;
+            border-top: 0.5px solid #E5E5E5;
+
+            &--text {
+                padding: 1rem 2rem;
+                color: #279B37;
+                background: $color-white;
+                border-top-left-radius: 43px;
+                border-bottom-left-radius: 43px;
+                font-family: $font-family-main;
+                white-space: nowrap;
+            }
+            &--icon {
+                background-color: $lightGreen;
+                padding: 1rem 1.5rem;
+                border-top-right-radius: 43px;
+                border-bottom-right-radius: 43px;
+                .btn-icon{
+                    width: 13px;
+                }
+            }
+        }
+
+        &__btn:hover {
+            transform: scale(1.06);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+
+        }
+    }
+}

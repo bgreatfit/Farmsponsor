@@ -49,7 +49,7 @@
                     <div class="transaction-card-wrap">
                         <div class="transaction-card__content">
                             <span>
-                                <img src="{{asset('img/dashboard-amount.svg')}}" alt="" class="transaction-card__img">
+                                <img src="{{asset('img/dashboard-farms-sponsored.svg')}}" alt="" class="transaction-card__img">
                             </span>
                             <span class="transaction-card__stat">10</span>
                         </div>

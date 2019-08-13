@@ -24,7 +24,8 @@ Route::get('/500', 'PagesController@error500')-> name('error.500');
 // END
 
 // dashboard
-Route::get('/template', 'PagesController@dashboardTemplate')-> name('dashboard.template');
+Route::get('/index', 'PagesController@dashboardIndex')-> name('dashboard.index');
+Route::get('/dashboard-vestbanking', 'PagesController@dashboardVestbanking')-> name('dashboard.vestbanking');
 
 // END
 
