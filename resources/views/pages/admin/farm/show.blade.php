@@ -46,7 +46,7 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
+                                        <th scope="col">S/N</th>
                                         <th scope="col">Transaction ID</th>
                                         <th scope="col">Confirm Sponsor</th>
                                         <th scope="col">First Name</th>
@@ -64,7 +64,7 @@
                                 <tbody>
                                     @foreach($unapproved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
-                                        <th scope="row">{{$key}}</th>
+                                        <th scope="row">{{ (($unapproved_vestbank_sponsors->currentPage() - 1 ) * $unapproved_vestbank_sponsors->perPage() ) + $loop->iteration }}</th>
                                         <td>  </td>
                                         <td>
                                             <a href="{{route('sponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
@@ -83,15 +83,17 @@
                                         </td>
                                     </tr>
                                     @endforeach
+
                                 </tbody>
                             </table>
+                            {{$unapproved_vestbank_sponsors->links()}}
                         </div>
 
                         <div class="tab-pane fade" id="confirmed-sponsorship-via-vestbank" role="tabpanel" aria-labelledby="profile-tab">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
+                                        <th scope="col">S/N</th>
                                         <th scope="col">Transaction ID</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
@@ -108,7 +110,7 @@
                                 <tbody>
                                     @foreach($approved_vestbank_sponsors as $key => $sponsor)
                                     <tr>
-                                        <th scope="row">{{$key}}</th>
+                                        <th scope="row">{{ (($approved_vestbank_sponsors->currentPage() - 1 ) * $approved_vestbank_sponsors->perPage() ) + $loop->iteration }}</th>
                                         <td>{{$sponsor->transaction->transaction_id}}</td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
@@ -128,13 +130,14 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                            {{$approved_vestbank_sponsors->links()}}
                         </div>
 
                         <div class="tab-pane fade" id="pending-sponsor-now" role="tabpanel" aria-labelledby="profile-tab">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
+                                        <th scope="col">S/N</th>
                                         <th scope="col">Transaction ID</th>
                                         <th scope="col">Confirm Sponsorship</th>
                                         <th scope="col">First Name</th>
@@ -151,7 +154,7 @@
                                 <tbody>
                                     @foreach($unapproved_sponsors as $key => $sponsor)
                                     <tr>
-                                        <th scope="row">{{$key}}</th>
+                                        <th scope="row">{{ (($unapproved_sponsors->currentPage() - 1 ) * $unapproved_sponsors->perPage() ) + $loop->iteration }}</th>
                                         <td>
                                             <a href="{{route('banksponsorship.confirm', $sponsor->id)}}" class="sponsor-confirm btn btn-md btn-warning">Confirm</a>
                                         </td>
@@ -171,13 +174,14 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                            {{$unapproved_sponsors->links()}}
                         </div>
 
                         <div class="tab-pane fade" id="confirmed-sponsor-now" role="tabpanel" aria-labelledby="profile-tab">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
+                                        <th scope="col">S/N</th>
                                         <th scope="col">Transaction ID</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
@@ -194,7 +198,7 @@
                                 <tbody>
                                     @foreach($approved_sponsors as $key => $sponsor)
                                     <tr>
-                                        <th scope="row">{{$key}}</th>
+                                        <th scope="row">{{ (($approved_sponsors->currentPage() - 1 ) * $approved_sponsors->perPage() ) + $loop->iteration }}</th>
                                         <td>{{$sponsor->transaction->transaction_id}}</td>
                                         <td>{{$sponsor->user->firstname}}</td>
                                         <td>{{$sponsor->user->lastname}}</td>
@@ -214,11 +218,11 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                            {{$approved_sponsors->links()}}
                         </div>
                     </div>
                 </div>
-                {{$unapproved_vestbank_sponsors->links()}}
-                {{$unapproved_sponsors->links()}}
+
             </div>
         </div>
     </div>

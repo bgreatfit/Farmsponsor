@@ -397,7 +397,9 @@
                                                         </p>
      
                                                         <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
-                                                            {{$sponsor->farmingcycle->name}} starting from {{$sponsor->farmingcycle->start_date->format("F j, Y")}} to {{$sponsor->farmingcycle->due_date->format("F j, Y")}}
+                                                            23 Farming Cycle starting from {{$sponsor->farmingcycle->cycle_start_date->format("F j, Y")}} to {{$sponsor->farmingcycle->cycle_end_date->format("F j, Y")}}
+
+{{--                                                            {{$sponsor->farmingcycle->name}} starting from {{$sponsor->farmingcycle->start_date->format("F j, Y")}} to {{$sponsor->farmingcycle->due_date->format("F j, Y")}}--}}
                                                         </p>
                                                     </td>
                                                 </tr>
