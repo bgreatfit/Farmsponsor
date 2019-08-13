@@ -397,7 +397,7 @@
                                                         </p>
      
                                                         <p class="transactionDateText transactionInfoDetailsFarmCycleInfo">
-                                                            {{$sponsor->farmingcycle->name}} starting from {{$sponsor->farmingcycle->start_date->format("F j, Y")}} to {{$sponsor->farmingcycle->due_date->format("F j, Y")}}
+                                                            {{$sponsor->farmingcycle->name}} starting from {{$sponsor->farmingcycle->cycle_start_date->format("F j, Y")}} to {{$sponsor->farmingcycle->cycle_end_date->format("F j, Y")}}
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -442,10 +442,6 @@
                                                 <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.png')}}" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.png')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                                 <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.png')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-
-                                                <a href="https://www.facebook.com/farmsponsorng" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-fb.svg')}}'" alt="facebook icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-                                                <a href="https://twitter.com/Farmsponsor1" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-ig.svg')}}" alt="instagram icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
-                                                <a href="https://www.instagram.com/farmsponsor" class="fotterSocialsLink" target="_blank"><img src="{{asset('img/email-icon-twt.svg')}}" alt="twitter icon" width="25.9" height="27.5" class="footerSocialsIcon"></a>
                                             </div>
                                         </td>
                                     </tr>

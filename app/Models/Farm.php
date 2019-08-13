@@ -10,7 +10,7 @@ class Farm extends Model
     protected $guarded = [];
 
     protected $dates = [
-        'start_date','due_date', 'payout_date'
+        'start_date','due_date', 'payout_date', 'cycle_start_date', 'cycle_end_date'
     ];
 
     public function isOpen(){
