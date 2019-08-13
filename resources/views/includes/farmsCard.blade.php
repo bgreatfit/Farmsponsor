@@ -19,7 +19,7 @@
                 <p class="farmlist__status--text">
                     @if($farm->due_date->lt(now()))
                     Closed
-                    @elseif($farm->hasExhaustedUnit())
+                    @elseif($farm->isSoldOut())
                     SoldOut
                     @elseif($farm->start_date->lt(now()))
                     Open

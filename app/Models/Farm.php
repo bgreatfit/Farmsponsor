@@ -39,7 +39,7 @@ class Farm extends Model
 
     public function isSoldOut()
     {
-        return $this->sold_out ? true : false;
+        return $this->sold_out == 1 ? true : false;
     }
 
     public function hasExhaustedUnit()
